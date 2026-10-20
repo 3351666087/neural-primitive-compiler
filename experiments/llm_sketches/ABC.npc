@@ -1,0 +1,69 @@
+# LLM-proposed sketches for groups A-C, written by Claude following skills/neural-compiler/SKILL.md.
+# Bias warning: the same model wrote the library, the tasks and the direct designs.
+# Each sketch is recorded as first proposed; revisions get a new name (_llm2, ...).
+
+# A3: latency 1 with four input taps -> primitives cannot do it (each adds a layer); one raw neuron, solver fills weights.
+network A3_llm1 {
+  maxdelay 3
+  inputs a, b
+  neuron n threshold=?[1,3] leak=full
+  synapse a -> n weight=?[-2,2] delay=1
+  synapse b -> n weight=?[-2,2] delay=1..3
+  output y = n
+}
+
+# B2: memory = latch(set=s, rst=r); the answer neuron must see q, r, s and the latch at latency 1.
+network B2_llm1 {
+  maxdelay 2
+  inputs s, r, q
+  inst L = latch() set=s rst=r
+  neuron n threshold=?[1,4] leak=full vmax=4
+  synapse q -> n weight=?[-4,4] delay=1
+  synapse r -> n weight=?[-4,4] delay=1
+  synapse s -> n weight=?[-4,4] delay=1
+  synapse L.out -> n weight=?[-4,4] delay=1
+  output y = n
+}
+
+# B3: latch remembers "an a was seen since reset"; output neuron = a & !r & !latch.
+network B3_llm1 {
+  maxdelay 2
+  inputs a, r
+  inst L = latch() set=a rst=r
+  neuron n threshold=?[1,2] leak=full
+  synapse a -> n weight=?[-2,2] delay=1
+  synapse r -> n weight=?[-2,2] delay=1
+  synapse L.out -> n weight=?[-2,2] delay=1
+  output y = n
+}
+
+# C1: toggle = latch whose set/reset are gated by its own state (feedback across primitives).
+network C1_llm1 {
+  maxdelay 3
+  inputs a
+  inst g1 = gate() in=a inh=L.out
+  inst g2 = and2() a=a b=L.out
+  inst L = ?{latch, latch_lite}() set=g1.out rst=g2.out
+  output y = L.out
+}
+
+# C2: dense parity. Idea: a latch set by every a and reset by every second a (counter k=2);
+# the counter fires one step after the a it counts, so the set path needs a matching delay.
+network C2_llm1 {
+  maxdelay 3
+  inputs a
+  inst d = relay(d=?{1,2}) in=a
+  inst c = counter(k=?{2,3}) in=a rst=_
+  inst L = latch() set=?{d.out, c.out} rst=?{c.out, d.out}
+  output y = L.out
+}
+
+# C3: latch set by a 2-of-3 window detector, reset by a delayed r to keep both paths aligned.
+network C3_llm1 {
+  maxdelay 3
+  inputs a, r
+  inst w = window(k=?{1,2,3}, w=?{2,3}) in=a
+  inst dr = relay(d=?{1,2}) in=r
+  inst L = latch() set=w.out rst=dr.out
+  output y = L.out
+}

@@ -1,0 +1,92 @@
+# Hand-designed ("direct") circuits for the benchmark tasks. Written by the
+# author from the specs; every one is verified by the experiment runner.
+
+network A1_direct {
+  maxdelay 3
+  inputs a, b
+  neuron n threshold=2 leak=full
+  synapse a -> n weight=1 delay=2
+  synapse b -> n weight=1 delay=1
+  output y = n
+}
+
+network A1_prims {
+  maxdelay 3
+  inputs a, b
+  inst d = relay(d=1) in=a
+  inst c = and2() a=d.out b=b
+  output y = c.out
+}
+
+network A2_direct {
+  maxdelay 3
+  inputs a
+  inst w = window(k=2, w=3) in=a
+  output y = w.out
+}
+
+network A3_direct {
+  maxdelay 3
+  inputs a, b
+  neuron n threshold=1 leak=full
+  synapse a -> n weight=1 delay=1
+  synapse b -> n weight=-1 delay=1..3
+  output y = n
+}
+
+network B1_direct {
+  maxdelay 3
+  inputs a, r
+  inst c = counter(k=3) in=a rst=r
+  output y = c.out
+}
+
+network B2_direct {
+  maxdelay 3
+  inputs s, r, q
+  inst L = latch() set=s rst=r
+  neuron n threshold=3 leak=full vmin=0 vmax=4
+  synapse q -> n weight=2 delay=1
+  synapse r -> n weight=-4 delay=1
+  synapse s -> n weight=1 delay=1
+  synapse L.out -> n weight=1 delay=1
+  output y = n
+}
+
+network B2r_direct {
+  maxdelay 3
+  inputs s, r, q
+  inst dq = relay(d=1) in=q
+  inst L = latch() set=s rst=r
+  inst c = and2() a=dq.out b=L.out
+  output y = c.out
+}
+
+network B3_direct {
+  maxdelay 3
+  inputs a, r
+  inst L = latch() set=a rst=r
+  neuron n threshold=1 leak=full
+  synapse a -> n weight=1 delay=1
+  synapse r -> n weight=-1 delay=1
+  synapse L.out -> n weight=-1 delay=1
+  output y = n
+}
+
+network C1_direct {
+  maxdelay 3
+  inputs a
+  inst g1 = gate() in=a inh=L.out
+  inst g2 = and2() a=a b=L.out
+  inst L = latch_lite() set=g1.out rst=g2.out
+  output y = L.out
+}
+
+network C3_direct {
+  maxdelay 3
+  inputs a, r
+  inst w = window(k=2, w=3) in=a
+  inst dr = relay(d=1) in=r
+  inst L = latch() set=w.out rst=dr.out
+  output y = L.out
+}

@@ -1,0 +1,76 @@
+# Benchmark tasks A-C, fixed before the experiment suite was run.
+# Group D (unseen) is generated only after the source tree is frozen: see experiments/D_unseen/PROTOCOL.md.
+
+# ---------------------------------------------------------------- A: simple temporal functions
+spec A1_delayed_coincidence {
+  doc "b fires one step after a (latency 1)."
+  inputs a, b
+  outputs y
+  guarantee y <-> prev(b & prev(a))
+}
+
+spec A2_burst2of3 {
+  doc "At least two a-spikes within the last three steps."
+  inputs a
+  outputs y
+  guarantee y <-> prev(count[3](a) >= 2)
+}
+
+spec A3_a_without_recent_b {
+  doc "a now, and no b now or in the two previous steps."
+  inputs a, b
+  outputs y
+  guarantee y <-> prev(a & !once[0,2](b))
+}
+
+# ---------------------------------------------------------------- B: internal state / short-term memory
+spec B1_count3_reset {
+  doc "Every third a since the last reset r (reset wins ties)."
+  inputs a, r
+  outputs y
+  guarantee y <-> prev(a & !r & modcount[3](a; r) == 0)
+}
+
+spec B2_remember_query {
+  doc "On query q, report whether s has been seen since the last clear r (latency 1)."
+  inputs s, r, q
+  outputs y
+  guarantee y <-> prev(q & since(!r, s & !r))
+}
+
+spec B2r_remember_query_lat2 {
+  doc "Same as B2 with latency 2."
+  inputs s, r, q
+  outputs y
+  guarantee y <-> prev[2](q & since(!r, s & !r))
+}
+
+spec B3_first_since_reset {
+  doc "Novelty detector: only the first a after each reset r."
+  inputs a, r
+  outputs y
+  guarantee y <-> prev(a & !r & !prev(since(!r, a & !r)))
+}
+
+# ---------------------------------------------------------------- C: composite functions with feedback
+spec C1_toggle_sparse {
+  doc "Parity of a (latency 2) when a never fires on consecutive steps."
+  inputs a
+  outputs y
+  assume !(a & prev(a))
+  guarantee y <-> prev[2](modcount[2](a) == 1)
+}
+
+spec C2_parity_dense {
+  doc "Parity of a (latency 2), no input assumption."
+  inputs a
+  outputs y
+  guarantee y <-> prev[2](modcount[2](a) == 1)
+}
+
+spec C3_latched_alarm {
+  doc "Alarm latches when 2 of the last 3 steps had a; cleared by r (latency 2)."
+  inputs a, r
+  outputs y
+  guarantee y <-> prev[2](since(!r, count[3](a) >= 2 & !r))
+}

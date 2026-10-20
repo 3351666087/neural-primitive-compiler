@@ -1,0 +1,718 @@
+{
+  "A3_llm1": {
+    "task": "A3_a_without_recent_b",
+    "status": "SOLVED",
+    "candidates": 1,
+    "solver_iterations": 2,
+    "time_s": 0.018,
+    "assignment": {},
+    "choice_space": 1,
+    "attempts": [
+      {
+        "assignment": {},
+        "status": "SOLVED",
+        "iterations": 2
+      }
+    ],
+    "reverify": {
+      "bmc": "VERIFIED_BOUNDED",
+      "exhaustive": "VERIFIED_BOUNDED",
+      "reach": "VERIFIED_UNBOUNDED"
+    },
+    "stats": {
+      "neurons": 1,
+      "synapses": 4,
+      "max_abs_weight": 2,
+      "max_delay_used": 3,
+      "memoryless_neurons": 1,
+      "recurrent_synapses": 0,
+      "potential_bits": 0,
+      "history_bits": 4,
+      "state_bits": 4
+    },
+    "network": {
+      "format": "npc-network/1",
+      "name": "A3_llm1",
+      "inputs": [
+        "a",
+        "b"
+      ],
+      "outputs": {
+        "y": "n"
+      },
+      "max_delay": 3,
+      "neurons": [
+        {
+          "name": "n",
+          "threshold": 1,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        }
+      ],
+      "synapses": [
+        {
+          "src": "a",
+          "dst": "n",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "b",
+          "dst": "n",
+          "weight": -2,
+          "delay": 1
+        },
+        {
+          "src": "b",
+          "dst": "n",
+          "weight": -2,
+          "delay": 2
+        },
+        {
+          "src": "b",
+          "dst": "n",
+          "weight": -2,
+          "delay": 3
+        }
+      ],
+      "meta": {}
+    }
+  },
+  "B2_llm1": {
+    "task": "B2_remember_query",
+    "status": "SOLVED",
+    "candidates": 1,
+    "solver_iterations": 2,
+    "time_s": 0.051,
+    "assignment": {},
+    "choice_space": 1,
+    "attempts": [
+      {
+        "assignment": {},
+        "status": "SOLVED",
+        "iterations": 2
+      }
+    ],
+    "reverify": {
+      "bmc": "VERIFIED_BOUNDED",
+      "exhaustive": "RESOURCE_LIMIT",
+      "reach": "VERIFIED_UNBOUNDED"
+    },
+    "stats": {
+      "neurons": 2,
+      "synapses": 7,
+      "max_abs_weight": 4,
+      "max_delay_used": 1,
+      "memoryless_neurons": 2,
+      "recurrent_synapses": 2,
+      "potential_bits": 0,
+      "history_bits": 4,
+      "state_bits": 4
+    },
+    "network": {
+      "format": "npc-network/1",
+      "name": "B2_llm1",
+      "inputs": [
+        "s",
+        "r",
+        "q"
+      ],
+      "outputs": {
+        "y": "n"
+      },
+      "max_delay": 2,
+      "neurons": [
+        {
+          "name": "L.m",
+          "threshold": 1,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        },
+        {
+          "name": "n",
+          "threshold": 4,
+          "leak": 4,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 4
+        }
+      ],
+      "synapses": [
+        {
+          "src": "L.m",
+          "dst": "L.m",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "s",
+          "dst": "L.m",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "r",
+          "dst": "L.m",
+          "weight": -2,
+          "delay": 1
+        },
+        {
+          "src": "q",
+          "dst": "n",
+          "weight": 3,
+          "delay": 1
+        },
+        {
+          "src": "r",
+          "dst": "n",
+          "weight": -4,
+          "delay": 1
+        },
+        {
+          "src": "s",
+          "dst": "n",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "L.m",
+          "dst": "n",
+          "weight": 2,
+          "delay": 1
+        }
+      ],
+      "meta": {}
+    }
+  },
+  "B3_llm1": {
+    "task": "B3_first_since_reset",
+    "status": "SOLVED",
+    "candidates": 1,
+    "solver_iterations": 1,
+    "time_s": 0.021,
+    "assignment": {},
+    "choice_space": 1,
+    "attempts": [
+      {
+        "assignment": {},
+        "status": "SOLVED",
+        "iterations": 1
+      }
+    ],
+    "reverify": {
+      "bmc": "VERIFIED_BOUNDED",
+      "exhaustive": "VERIFIED_BOUNDED",
+      "reach": "VERIFIED_UNBOUNDED"
+    },
+    "stats": {
+      "neurons": 2,
+      "synapses": 6,
+      "max_abs_weight": 2,
+      "max_delay_used": 1,
+      "memoryless_neurons": 2,
+      "recurrent_synapses": 2,
+      "potential_bits": 0,
+      "history_bits": 3,
+      "state_bits": 3
+    },
+    "network": {
+      "format": "npc-network/1",
+      "name": "B3_llm1",
+      "inputs": [
+        "a",
+        "r"
+      ],
+      "outputs": {
+        "y": "n"
+      },
+      "max_delay": 2,
+      "neurons": [
+        {
+          "name": "L.m",
+          "threshold": 1,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        },
+        {
+          "name": "n",
+          "threshold": 2,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        }
+      ],
+      "synapses": [
+        {
+          "src": "L.m",
+          "dst": "L.m",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "a",
+          "dst": "L.m",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "r",
+          "dst": "L.m",
+          "weight": -2,
+          "delay": 1
+        },
+        {
+          "src": "a",
+          "dst": "n",
+          "weight": 2,
+          "delay": 1
+        },
+        {
+          "src": "r",
+          "dst": "n",
+          "weight": -1,
+          "delay": 1
+        },
+        {
+          "src": "L.m",
+          "dst": "n",
+          "weight": -1,
+          "delay": 1
+        }
+      ],
+      "meta": {}
+    }
+  },
+  "C1_llm1": {
+    "task": "C1_toggle_sparse",
+    "status": "SOLVED",
+    "candidates": 1,
+    "solver_iterations": 1,
+    "time_s": 0.011,
+    "assignment": {
+      "L.type": "latch"
+    },
+    "choice_space": 2,
+    "attempts": [
+      {
+        "assignment": {
+          "L.type": "latch"
+        },
+        "status": "SOLVED"
+      }
+    ],
+    "reverify": {
+      "bmc": "VERIFIED_BOUNDED",
+      "exhaustive": "VERIFIED_BOUNDED",
+      "reach": "VERIFIED_UNBOUNDED"
+    },
+    "stats": {
+      "neurons": 3,
+      "synapses": 7,
+      "max_abs_weight": 2,
+      "max_delay_used": 1,
+      "memoryless_neurons": 3,
+      "recurrent_synapses": 5,
+      "potential_bits": 0,
+      "history_bits": 4,
+      "state_bits": 4
+    },
+    "network": {
+      "format": "npc-network/1",
+      "name": "C1_llm1",
+      "inputs": [
+        "a"
+      ],
+      "outputs": {
+        "y": "L.m"
+      },
+      "max_delay": 3,
+      "neurons": [
+        {
+          "name": "g1.n",
+          "threshold": 1,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        },
+        {
+          "name": "g2.n",
+          "threshold": 2,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        },
+        {
+          "name": "L.m",
+          "threshold": 1,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        }
+      ],
+      "synapses": [
+        {
+          "src": "a",
+          "dst": "g1.n",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "L.m",
+          "dst": "g1.n",
+          "weight": -1,
+          "delay": 1
+        },
+        {
+          "src": "a",
+          "dst": "g2.n",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "L.m",
+          "dst": "g2.n",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "L.m",
+          "dst": "L.m",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "g1.n",
+          "dst": "L.m",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "g2.n",
+          "dst": "L.m",
+          "weight": -2,
+          "delay": 1
+        }
+      ],
+      "meta": {}
+    }
+  },
+  "C2_llm1": {
+    "task": "C2_parity_dense",
+    "status": "SOLVED",
+    "candidates": 1,
+    "solver_iterations": 1,
+    "time_s": 0.013,
+    "assignment": {
+      "d.d": 1,
+      "c.k": 2,
+      "L<-set": "d.out",
+      "L<-rst": "c.out"
+    },
+    "choice_space": 16,
+    "attempts": [
+      {
+        "assignment": {
+          "d.d": 1,
+          "c.k": 2,
+          "L<-set": "d.out",
+          "L<-rst": "c.out"
+        },
+        "status": "SOLVED"
+      }
+    ],
+    "reverify": {
+      "bmc": "VERIFIED_BOUNDED",
+      "exhaustive": "VERIFIED_BOUNDED",
+      "reach": "VERIFIED_UNBOUNDED"
+    },
+    "stats": {
+      "neurons": 3,
+      "synapses": 5,
+      "max_abs_weight": 2,
+      "max_delay_used": 1,
+      "memoryless_neurons": 2,
+      "recurrent_synapses": 3,
+      "potential_bits": 2,
+      "history_bits": 4,
+      "state_bits": 6
+    },
+    "network": {
+      "format": "npc-network/1",
+      "name": "C2_llm1",
+      "inputs": [
+        "a"
+      ],
+      "outputs": {
+        "y": "L.m"
+      },
+      "max_delay": 3,
+      "neurons": [
+        {
+          "name": "d.n",
+          "threshold": 1,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        },
+        {
+          "name": "c.c",
+          "threshold": 2,
+          "leak": 0,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 2
+        },
+        {
+          "name": "L.m",
+          "threshold": 1,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        }
+      ],
+      "synapses": [
+        {
+          "src": "a",
+          "dst": "d.n",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "a",
+          "dst": "c.c",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "L.m",
+          "dst": "L.m",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "d.n",
+          "dst": "L.m",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "c.c",
+          "dst": "L.m",
+          "weight": -2,
+          "delay": 1
+        }
+      ],
+      "meta": {}
+    }
+  },
+  "C3_llm1": {
+    "task": "C3_latched_alarm",
+    "status": "SOLVED",
+    "candidates": 7,
+    "solver_iterations": 1,
+    "time_s": 0.013,
+    "assignment": {
+      "w.k": 2,
+      "w.w": 3,
+      "dr.d": 1
+    },
+    "choice_space": 12,
+    "attempts": [
+      {
+        "assignment": {
+          "w.k": 1,
+          "w.w": 2,
+          "dr.d": 1
+        },
+        "status": "REJECTED_BY_EXAMPLES"
+      },
+      {
+        "assignment": {
+          "w.k": 1,
+          "w.w": 2,
+          "dr.d": 2
+        },
+        "status": "REJECTED_BY_EXAMPLES"
+      },
+      {
+        "assignment": {
+          "w.k": 1,
+          "w.w": 3,
+          "dr.d": 1
+        },
+        "status": "REJECTED_BY_EXAMPLES"
+      },
+      {
+        "assignment": {
+          "w.k": 1,
+          "w.w": 3,
+          "dr.d": 2
+        },
+        "status": "REJECTED_BY_EXAMPLES"
+      },
+      {
+        "assignment": {
+          "w.k": 2,
+          "w.w": 2,
+          "dr.d": 1
+        },
+        "status": "REJECTED_BY_EXAMPLES"
+      },
+      {
+        "assignment": {
+          "w.k": 2,
+          "w.w": 2,
+          "dr.d": 2
+        },
+        "status": "REJECTED_BY_EXAMPLES"
+      },
+      {
+        "assignment": {
+          "w.k": 2,
+          "w.w": 3,
+          "dr.d": 1
+        },
+        "status": "SOLVED"
+      }
+    ],
+    "reverify": {
+      "bmc": "VERIFIED_BOUNDED",
+      "exhaustive": "VERIFIED_BOUNDED",
+      "reach": "VERIFIED_UNBOUNDED"
+    },
+    "stats": {
+      "neurons": 3,
+      "synapses": 7,
+      "max_abs_weight": 2,
+      "max_delay_used": 3,
+      "memoryless_neurons": 3,
+      "recurrent_synapses": 3,
+      "potential_bits": 0,
+      "history_bits": 7,
+      "state_bits": 7
+    },
+    "network": {
+      "format": "npc-network/1",
+      "name": "C3_llm1",
+      "inputs": [
+        "a",
+        "r"
+      ],
+      "outputs": {
+        "y": "L.m"
+      },
+      "max_delay": 3,
+      "neurons": [
+        {
+          "name": "w.n",
+          "threshold": 2,
+          "leak": 3,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 3
+        },
+        {
+          "name": "dr.n",
+          "threshold": 1,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        },
+        {
+          "name": "L.m",
+          "threshold": 1,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        }
+      ],
+      "synapses": [
+        {
+          "src": "a",
+          "dst": "w.n",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "a",
+          "dst": "w.n",
+          "weight": 1,
+          "delay": 2
+        },
+        {
+          "src": "a",
+          "dst": "w.n",
+          "weight": 1,
+          "delay": 3
+        },
+        {
+          "src": "r",
+          "dst": "dr.n",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "L.m",
+          "dst": "L.m",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "w.n",
+          "dst": "L.m",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "dr.n",
+          "dst": "L.m",
+          "weight": -2,
+          "delay": 1
+        }
+      ],
+      "meta": {}
+    }
+  }
+}

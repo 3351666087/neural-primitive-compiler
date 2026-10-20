@@ -1,0 +1,7 @@
+# Theorem 3 in action: parity with latency 1 needs the newest input with opposite signs
+# after different histories, so no network of any size can implement it.
+spec parity_latency1 {
+  inputs a
+  outputs y
+  guarantee y <-> prev(modcount[2](a) == 1)
+}

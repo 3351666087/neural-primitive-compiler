@@ -1,0 +1,171 @@
+# Standard primitive library.
+#
+# Each primitive is raw neurons + synapses + an explicit contract. A name is
+# never evidence of function: tests/test_primitives.py proves every contract
+# with the unbounded reachability checker over a grid of parameters, and also
+# refutes the "obvious" contract of pairdet.
+#
+# Contracts are written in strict mode (Abadi-Lamport style): the guarantee
+# must hold at t whenever the assumption held at every t' < t. Every contract
+# guarantee has the functional form `out <-> P` with P strictly in the past,
+# which is what compositional verification (compose.py) requires.
+
+primitive relay(d=1) {
+  doc "Delay line: out(t) = in(t-d)."
+  require d >= 1
+  ports in
+  neuron n threshold=1 leak=full
+  synapse in -> n weight=1 delay=d
+  output out = n
+  contract {
+    guarantee out <-> prev[$d](in)
+  }
+}
+
+primitive and2() {
+  doc "Coincidence of two inputs (threshold 2)."
+  ports a, b
+  neuron n threshold=2 leak=full
+  synapse a -> n weight=1 delay=1
+  synapse b -> n weight=1 delay=1
+  output out = n
+  contract {
+    guarantee out <-> prev(a & b)
+  }
+}
+
+primitive or2() {
+  doc "Either input (threshold 1)."
+  ports a, b
+  neuron n threshold=1 leak=full
+  synapse a -> n weight=1 delay=1
+  synapse b -> n weight=1 delay=1
+  output out = n
+  contract {
+    guarantee out <-> prev(a | b)
+  }
+}
+
+primitive gate() {
+  doc "Inhibitory gating: pass `in` unless `inh` fired at the same step."
+  ports in, inh
+  neuron n threshold=1 leak=full
+  synapse in -> n weight=1 delay=1
+  synapse inh -> n weight=-1 delay=1
+  output out = n
+  contract {
+    guarantee out <-> prev(in & !inh)
+  }
+}
+
+primitive inv() {
+  doc "Negation via a tonic bias. Fires at t=0 because nothing has inhibited it yet (weak yesterday)."
+  ports in
+  neuron n threshold=1 leak=full bias=1
+  synapse in -> n weight=-1 delay=1
+  output out = n
+  contract {
+    guarantee out <-> wprev(!in)
+  }
+}
+
+primitive rise() {
+  doc "Rising-edge detector: in now, not one step before."
+  ports in
+  neuron n threshold=1 leak=full
+  synapse in -> n weight=1 delay=1
+  synapse in -> n weight=-1 delay=2
+  output out = n
+  contract {
+    guarantee out <-> prev(in & !prev(in))
+  }
+}
+
+primitive window(k=2, w=3) {
+  doc "Temporal threshold: at least k input spikes in the last w steps (delay-line fan-in)."
+  require k >= 1
+  require w >= k
+  ports in
+  neuron n threshold=k leak=full vmax=w
+  synapse in -> n weight=1 delay=1..w
+  output out = n
+  contract {
+    guarantee out <-> prev(count[$w](in) >= $k)
+  }
+}
+
+primitive compare(w=2, k=1) {
+  doc "Windowed count comparator: #a - #b over the last w steps >= k. Needs a negative floor."
+  require w >= 1
+  require k >= 1
+  require w >= k
+  ports a, b
+  neuron n threshold=k leak=full vmin=-w vmax=w
+  synapse a -> n weight=1 delay=1..w
+  synapse b -> n weight=-1 delay=1..w
+  output out = n
+  contract {
+    guarantee out <-> prev(count[$w](a) - count[$w](b) >= $k)
+  }
+}
+
+primitive counter(k=3) {
+  doc "Perfect integrator with reset: fires on every k-th `in` spike since the last `rst` (reset wins ties)."
+  require k >= 1
+  ports in, rst
+  neuron c threshold=k leak=0 vmin=0 vmax=k
+  synapse in -> c weight=1 delay=1
+  synapse rst -> c weight=-k delay=1
+  output out = c
+  contract {
+    guarantee out <-> prev(in & !rst & modcount[$k](in; rst) == 0)
+  }
+}
+
+primitive latch() {
+  doc "Set/reset memory (bistable stable-state loop): self-excitation holds state, reset wins ties."
+  ports set, rst
+  neuron m threshold=1 leak=full
+  synapse m -> m weight=1 delay=1
+  synapse set -> m weight=1 delay=1
+  synapse rst -> m weight=-2 delay=1
+  output out = m
+  contract {
+    guarantee out <-> prev(since(!rst, set & !rst))
+  }
+}
+
+primitive latch_lite() {
+  doc "Cheaper latch with unit weights; correct only if set and rst never coincide."
+  ports set, rst
+  neuron m threshold=1 leak=full
+  synapse m -> m weight=1 delay=1
+  synapse set -> m weight=1 delay=1
+  synapse rst -> m weight=-1 delay=1
+  output out = m
+  contract {
+    assume !(set & rst)
+    guarantee out <-> prev(since(!rst, set & !rst))
+  }
+}
+
+primitive clock(p=2) {
+  doc "Pacemaker: a biased perfect integrator fires every p steps (first at t=p-1)."
+  require p >= 2
+  neuron c threshold=p leak=0 bias=1 vmax=p
+  output out = c
+  contract {
+    guarantee out <-> prev(modcount[$p](true) == $p - 1)
+  }
+}
+
+primitive pairdet() {
+  doc "Leaky integrator (w=2, leak=1, threshold=3). Looks like 'two consecutive spikes' but resets after firing."
+  ports in
+  neuron n threshold=3 leak=1 vmax=3
+  synapse in -> n weight=2 delay=1
+  output out = n
+  contract {
+    guarantee out <-> prev(in & prev(in) & !out)
+  }
+}

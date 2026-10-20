@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "npc"
+version = "0.1.0"
+description = "Verifiable Neural Primitive Compiler: discrete integrate-and-fire networks, a primitive DSL, SMT/reachability verification and CEGIS synthesis"
+requires-python = ">=3.10"
+dependencies = ["z3-solver>=4.12", "numpy>=1.24"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "hypothesis>=6"]
+
+[project.scripts]
+npc = "npc.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+npc = ["lib/*.npc"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: longer-running tests (deselect with -m 'not slow')"]

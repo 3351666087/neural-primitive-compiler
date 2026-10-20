@@ -1,0 +1,17 @@
+# A toggle (parity of `a`) built from three primitives with feedback through a latch.
+spec parity_sparse {
+  doc "Output tracks the parity of a-spikes, two steps late, if a never fires twice in a row."
+  inputs a
+  outputs y
+  assume !(a & prev(a))
+  guarantee y <-> prev[2](modcount[2](a) == 1)
+}
+
+network toggle_lite {
+  maxdelay 4
+  inputs a
+  inst g1 = gate() in=a inh=L.out
+  inst g2 = and2() a=a b=L.out
+  inst L = latch_lite() set=g1.out rst=g2.out
+  output y = L.out
+}
