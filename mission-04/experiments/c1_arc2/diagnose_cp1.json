@@ -1,0 +1,4358 @@
+{
+ "label": "POST-HOC diagnosis of CP1 (after scoring); does not change any verdict",
+ "sets": {
+  "DEV ARC-AGI-1 training": {
+   "summary": {
+    "tasks": 400,
+    "tasks_with_a_zero_free_training_input": 52,
+    "tasks_whose_most_frequent_input_colour_is_not_0": 81,
+    "law_holding_tasks": 79,
+    "law_holding_only_through_single_block_partitions": 2,
+    "law_holding_with_some_single_block_rule": 27,
+    "law_holding_and_background_not_0": 28
+   },
+   "law_only_via_single_block_ids": [
+    "1cf80156",
+    "25ff71a9"
+   ],
+   "rows": {
+    "007bbfb7": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "00d62c1b": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "017c7c7b": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "025d127b": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "045e512c": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "0520fde7": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "05269061": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "05f2a901": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "06df4c85": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "08ed6ac7": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "09629e4f": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "0962bcdd": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "0a938d79": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "0b148d64": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "COLOUR"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "0ca9ddb6": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "0d3d703e": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG",
+      "COLOUR"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "0dfd9992": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "0e206a2e": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "10fcaaa3": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "11852cab": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1190e5a7": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "137eaa0f": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "150deff5": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "178fcbfb": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1a07d186": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1b2d62fb": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1b60fb0c": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1bfc4729": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1c786137": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1caeab9d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1cf80156": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "COLOUR"
+     ],
+     "law_only_via_single_block": true,
+     "law_via_some_single_block": true
+    },
+    "1e0a9b12": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1e32b0e9": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1f0c79e5": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1f642eb9": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1f85a75f": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "COLOUR"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1f876c06": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1fad071e": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "2013d3e2": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "2204b7a8": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "22168020": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "22233c11": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "2281f1f4": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "228f6490": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "22eb0ac0": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "234bbc79": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "23581191": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "239be575": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "23b5c85d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A8-SAME",
+      "COLOUR"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "253bf280": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "25d487eb": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "25d8a9c8": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "AH-SAME",
+      "AH-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "25ff71a9": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "COLOUR"
+     ],
+     "law_only_via_single_block": true,
+     "law_via_some_single_block": true
+    },
+    "264363fd": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "272f95fa": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "27a28665": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "28bf18c6": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "28e73c20": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "29623171": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "29c11459": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "29ec7d0e": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "2bcee788": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "2bee17df": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "2c608aff": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "2dc579da": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "2dd70a9a": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "2dee498d": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "31aa019c": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "321b1fc6": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "32597951": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3345333e": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3428a4f5": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3618c87e": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "AH-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3631a71a": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "363442ee": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "36d67576": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "36fdfd69": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3906de3d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "39a8645d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A8-SAME",
+      "A8-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "39e1d7f9": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3aa6fb7a": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3ac3eb23": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3af2c5a8": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3bd67248": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3bdb4ada": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3befdf3e": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3c9b0459": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "3de23699": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3e980e27": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3eda0437": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3f7978a0": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "40853293": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "4093f84a": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "41e4d17e": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "4258a5f9": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "4290ef0e": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "42a50994": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "4347f46a": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "444801d8": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "445eab21": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "447fd412": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "44d8ac46": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "44f52bb0": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "4522001f": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "4612dd53": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "46442a0e": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "469497ad": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "46f33fce": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "47c1f68c": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "484b58aa": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "48d8fb45": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A8-SAME"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "4938f0c2": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "496994bd": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "49d1d64f": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "4be741c5": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "4c4377d9": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "4c5c2cf0": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "50846271": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "508bd3b6": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "50cb2852": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "5117e062": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "5168d44c": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "539a4f51": {
+     "zero_free_input": true,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "53b68214": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "543a7ed5": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "54d82841": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "54d9e175": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "5521c0d9": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "5582e5ca": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "5614dbcf": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "56dc2b01": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "56ff96f3": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "57aa92db": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "5ad4f10b": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "5bd6f4ac": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "5c0a986e": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "5c2c9af4": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "5daaa586": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "60b61512": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6150a2bd": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "623ea044": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "62c24649": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "63613498": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6430c8c4": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6455b5f5": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "662c240a": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "67385a82": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "673ef223": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6773b310": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "67a3c6ac": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "67a423a3": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "67e8384a": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "681b3aeb": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6855a6e4": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "68b16354": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "694f12f3": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6a1e5592": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6aa20dc0": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "6b9890af": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6c434453": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6cdd2623": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6cf79266": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6d0160f0": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6d0aefbc": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6d58a25d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6d75e8bb": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6e02f1e3": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6e19193c": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6e82a1ae": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6ecd11f4": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6f8cd79b": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6fa7a44f": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "72322fa7": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "72ca375d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "COLOUR"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "73251a56": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7447852a": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7468f01a": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "746b3537": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "74dd1130": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "75b8110e": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "760b3cac": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "776ffc46": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "77fdfe62": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "780d0b14": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7837ac64": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "794b24be": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7b6016b9": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7b7f7511": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7c008303": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7ddcd7ec": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7df24a62": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7e0986d6": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7f4411dc": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7fe24cdd": {
+     "zero_free_input": true,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "80af3007": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "810b9b61": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "82819916": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "83302e8f": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "834ec97d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "8403a5d5": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "846bdb03": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "855e0971": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "85c4e7cd": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG",
+      "COLOUR"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "868de0fa": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "8731374e": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "88a10436": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "88a62173": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A8-SAME",
+      "A8-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "890034e9": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "8a004b2b": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "8be77c9e": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "8d5021e8": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "8d510a79": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "8e1813be": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "8e5a5113": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "8eb1be9a": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "8efcae92": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "8f2ea7aa": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "90c28cc7": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "90f3ed37": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "913fb3ed": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "91413438": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "91714a58": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "9172f3a0": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "928ad970": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "93b581b8": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "941d9a10": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "94f9d214": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "952a094c": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "9565186b": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "95990924": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "963e52fc": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "97999447": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "97a05b5b": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "98cf29f8": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "995c5fa3": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "99b1bc43": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "99fa7670": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "9aec4887": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "9af7a82c": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "9d9215db": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "9dfd6313": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "9ecd008a": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "9edfc990": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "9f236235": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a1570a43": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a2fd1cf0": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a3325580": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a3df8b1e": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a416b8f3": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a48eeaf7": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a5313dff": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a5f85a15": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a61ba2ce": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a61f2674": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a64e4611": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a65b410d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a68b268e": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a699fb00": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a740d043": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a78176bb": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a79310a0": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a85d4709": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a87f7484": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A8-SAME",
+      "COLOUR"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a8c38be5": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a8d7556c": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a9f96cdd": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "aabf363d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG",
+      "COLOUR"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "aba27056": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ac0a08a4": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ae3edfdc": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ae4f1146": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "aedd82e4": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "af902bf9": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b0c4d837": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b190f7f5": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b1948b0a": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG",
+      "COLOUR"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "b230c067": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b27ca6d3": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b2862040": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "b527c5c6": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b548a754": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b60334d2": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b6afb2da": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b7249182": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b775ac94": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b782dc8a": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b8825c91": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "b8cdaf2b": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b91ae062": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b94a9452": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b9b7f026": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "AH-SAME",
+      "AH-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ba26e723": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "ba97ae07": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "bb43febb": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "bbc9ae5d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "bc1d5164": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "bd4472b8": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "bda2d7a6": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "bdad9b1f": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "be94b721": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "COLOUR"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "beb8660c": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "c0f76784": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "c1d99e64": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "c3e719e8": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "c3f564a4": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "c444b776": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "c59eb873": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "c8cbb738": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "c8f0f002": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG",
+      "COLOUR"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "c909285e": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "c9e6f938": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "c9f8e694": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "caa06a1f": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "cbded52d": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "cce03e0d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "cdecee7f": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ce22a75a": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ce4f8723": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ce602527": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ce9e57f2": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "cf98881b": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d037b0a7": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d06dbe63": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d07ae81c": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "d0f5fe59": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d10ecb37": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d13f3404": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d22278a0": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d23f8c26": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "AH-SAME",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d2abd087": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d364b489": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d406998b": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d43fd935": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d4469b4b": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d4a91cb9": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d4f3cd78": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d511f180": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG",
+      "COLOUR"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "d5d6de2d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d631b094": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d687bc17": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d6ad076f": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d89b689b": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d8c310e9": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d90796e8": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A8-SAME",
+      "AH-SAME",
+      "AV-SAME"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d9f24cd1": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d9fac9be": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "dae9d2b5": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "db3e9e38": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "db93a21d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "dbc1a6ce": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "dc0a314f": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "dc1df850": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "dc433765": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ddf7fa4f": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "de1cd16c": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "AV-SAME"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ded97339": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e179c5f4": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e21d9049": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e26a3af2": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "e3497940": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e40b9e2f": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e48d4e1a": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e5062a87": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e509e548": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e50d258f": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e6721834": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e73095fd": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e76a88a6": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e8593010": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e8dc4411": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "e9614598": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e98196ab": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e9afcf9a": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "ea32f347": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ea786f4a": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "eb281b96": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "eb5a1d5d": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ec883f72": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ecdecbb3": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ed36ccf7": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ef135b50": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "f15e1fac": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "f1cefba8": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "f25fbde4": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "f25ffba3": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "f2829549": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "f35d900a": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "f5b8619d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "f76d97a5": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-SAME",
+      "A8-SAME",
+      "AH-SAME",
+      "AV-SAME",
+      "COLOUR"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "f8a8fe49": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "f8b3ba0a": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "f8c80d96": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "f8ff0b80": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "f9012d9b": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "fafffa47": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "fcb5c309": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "fcc82909": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "feca6190": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ff28f65a": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "ff805c23": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    }
+   }
+  },
+  "CONFIRMATION ARC-AGI-2 evaluation": {
+   "summary": {
+    "tasks": 120,
+    "tasks_with_a_zero_free_training_input": 66,
+    "tasks_whose_most_frequent_input_colour_is_not_0": 80,
+    "law_holding_tasks": 40,
+    "law_holding_only_through_single_block_partitions": 0,
+    "law_holding_with_some_single_block_rule": 36,
+    "law_holding_and_background_not_0": 36
+   },
+   "law_only_via_single_block_ids": [],
+   "rows": {
+    "0934a4d8": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "135a2760": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "136b0064": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "13e47133": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "142ca369": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "16b78196": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "16de56c4": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1818057f": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "195c6913": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "1ae2feb7": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "20270e3b": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "20a9e565": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "21897d95": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "221dfab4": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "247ef758": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "269e22fb": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "271d71e2": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "28a6681f": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "291dc1e1": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "2b83f449": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "2ba387bc": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "2c181942": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "2d0172a1": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "31f7f899": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "332f06d7": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "35ab12c3": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "36a08778": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "38007db0": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3a25b0d8": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3dc255db": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "3e6067c3": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "409aa875": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "446ef5d2": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "45a5af55": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "4a21e3da": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "4c3d4a41": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "4c416de3": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "4c7dc4dd": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "4e34c42c": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "53fb4810": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "5545f144": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "581f7754": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "58490d8a": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "58f5dbd5": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "5961cc34": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "5dbc8537": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "62593bfd": {
+     "zero_free_input": true,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "64efde09": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "65b59efc": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "67e490f4": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6e453dd6": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "6e4f6532": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "6ffbe589": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "71e489b6": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7491f3cf": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7666fa5d": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "78332cb0": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7b0280bc": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7b3084d4": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7b5033c1": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7b80bb43": {
+     "zero_free_input": true,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "7c66cb00": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "7ed72f31": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "800d221b": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "80a900e0": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "8698868d": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "88bcf3b4": {
+     "zero_free_input": true,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "88e364bc": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "89565ca0": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "898e7135": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "8b7bacbf": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "8b9c3697": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "8e5c0c38": {
+     "zero_free_input": true,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "8f215267": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "8f3a5a89": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "9385bd28": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "97d7923e": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "981571dc": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "9aaea919": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "9bbf930d": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "a251c730": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a25697e4": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "a32d8b75": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a395ee82": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "a47bf94d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "a6f40cea": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "aa4ec2a5": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "abc82100": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b0039139": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b10624e5": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "b5ca7ac4": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b6f77b65": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "b99e7126": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "b9e38dc0": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "bf45cf4b": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "c4d067a0": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "c7f57c3e": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "cb2d8a2c": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "cbebaa4b": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d35bdbdc": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A8-SAME",
+      "AH-SAME",
+      "AV-SAME"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d59b0160": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "d8e07eb2": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "da515329": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "db0c5428": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "db695cfb": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "dbff022c": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "dd6b8c4b": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "de809cff": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "dfadab01": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e12f9a14": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "e3721c99": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [
+      "A4-SAME",
+      "A4-NONBG",
+      "A8-SAME",
+      "A8-NONBG",
+      "AH-SAME",
+      "AH-NONBG",
+      "AV-SAME",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e376de54": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [
+      "A4-NONBG",
+      "A8-NONBG",
+      "AH-NONBG",
+      "AV-NONBG"
+     ],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": true
+    },
+    "e8686506": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "e87109e9": {
+     "zero_free_input": false,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "edb79dae": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "eee78d87": {
+     "zero_free_input": true,
+     "background_not_zero": true,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "f560132c": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "f931b4a8": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "faa9f03d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    },
+    "fc7cae8d": {
+     "zero_free_input": false,
+     "background_not_zero": false,
+     "law_rules": [],
+     "law_only_via_single_block": false,
+     "law_via_some_single_block": false
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,225 @@
+{
+ "label": "CONFIRMATION: ARC-AGI-2 public evaluation set, first and only run of the frozen methods",
+ "tasks": 120,
+ "time_s": 655.4,
+ "cp": {
+  "CP1": {
+   "verdict": "FALSIFIED",
+   "true": 40,
+   "shuffled": 13,
+   "ratio": 3.08,
+   "fraction_true": 0.3333
+  },
+  "CP2": {
+   "verdict": "HOLDS",
+   "law_holding": 40,
+   "with_F1_rule": 40,
+   "share": 1.0
+  },
+  "CP3": {
+   "verdict": "HOLDS",
+   "F3_rules_tried_mean": 4.2
+  },
+  "CP4": {
+   "verdict": "INCONCLUSIVE",
+   "tasks": 0,
+   "S2_correct_among_them": 0,
+   "S2_wrong_among_them": 0
+  },
+  "CP5": {
+   "verdict": "HOLDS",
+   "gap_tasks": 40,
+   "explained": 0,
+   "explained_share": 0.0,
+   "categories": {
+    "K: non-uniform recolouring inside blocks": 37,
+    "K: uniform per block, not a function of any attribute": 3
+   },
+   "category_tie": false
+  },
+  "CP6": {
+   "verdict": "INCONCLUSIVE",
+   "F1": {
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 291,
+    "precision": null
+   },
+   "F3": {
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 291,
+    "precision": null
+   },
+   "F3-noselect": {
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 291,
+    "precision": null
+   }
+  },
+  "CP7": {
+   "verdict": "INCONCLUSIVE",
+   "recheck": "HOLDS",
+   "count_part": "INCONCLUSIVE",
+   "M-DISC-fixed": {
+    "correct": 1,
+    "wrong": 0,
+    "abstain": 119,
+    "RESOURCE_LIMIT": 0,
+    "precision": 1.0
+   },
+   "M-DISC-fixed-strict": {
+    "correct": 1,
+    "wrong": 0,
+    "abstain": 119,
+    "RESOURCE_LIMIT": 0,
+    "precision": 1.0
+   },
+   "M-DISC-MDL-fixed": {
+    "correct": 1,
+    "wrong": 0,
+    "abstain": 119,
+    "RESOURCE_LIMIT": 0,
+    "precision": 1.0
+   },
+   "z3_unique_rechecked": {
+    "n": 3,
+    "agree": 3,
+    "other": []
+   }
+  },
+  "CP8": {
+   "verdict": "INCONCLUSIVE",
+   "wrong_part": "HOLDS",
+   "count_part": "INCONCLUSIVE",
+   "count_part_methods": {},
+   "F1": {
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 120,
+    "RESOURCE_LIMIT": 0,
+    "precision": null
+   },
+   "F3": {
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 120,
+    "RESOURCE_LIMIT": 0,
+    "precision": null
+   },
+   "F3-noselect": {
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 120,
+    "RESOURCE_LIMIT": 0,
+    "precision": null
+   },
+   "F4": {
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 120,
+    "RESOURCE_LIMIT": 0,
+    "precision": null
+   },
+   "S0": {
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 120,
+    "RESOURCE_LIMIT": 0,
+    "precision": null
+   },
+   "S1": {
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 120,
+    "RESOURCE_LIMIT": 0,
+    "precision": null
+   },
+   "S2": {
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 120,
+    "RESOURCE_LIMIT": 0,
+    "precision": null
+   },
+   "S3": {
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 120,
+    "RESOURCE_LIMIT": 0,
+    "precision": null
+   },
+   "S4": {
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 120,
+    "RESOURCE_LIMIT": 0,
+    "precision": null
+   }
+  },
+  "CP9": {
+   "verdict": "INCONCLUSIVE",
+   "S1": {
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 120,
+    "RESOURCE_LIMIT": 0,
+    "precision": null
+   },
+   "S4": {
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 120,
+    "RESOURCE_LIMIT": 0,
+    "precision": null
+   }
+  }
+ },
+ "decision": {
+  "rule1_block_representation_enters_formal_system": false,
+  "rule1_block_correct_beyond_mdisc_fixed": [],
+  "rule2_retract_conservation_law_selection": true,
+  "rule3_composition_supported_outside_DEV": false,
+  "rule4_rediscovery_confirmed": true
+ },
+ "correct_tasks": {
+  "F1": [],
+  "F3": [],
+  "F3-noselect": [],
+  "F4": [],
+  "S0": [],
+  "S1": [],
+  "S2": [],
+  "S3": [],
+  "S4": [],
+  "M-DISC-fixed": [
+   "981571dc"
+  ],
+  "M-DISC-fixed-strict": [
+   "981571dc"
+  ],
+  "M-DISC-MDL-fixed": [
+   "981571dc"
+  ]
+ },
+ "wrong_tasks": {
+  "F1": [],
+  "F3": [],
+  "F3-noselect": [],
+  "F4": [],
+  "S0": [],
+  "S1": [],
+  "S2": [],
+  "S3": [],
+  "S4": [],
+  "M-DISC-fixed": [],
+  "M-DISC-fixed-strict": [],
+  "M-DISC-MDL-fixed": []
+ },
+ "resource_limits": {
+  "blocks": [],
+  "loo": [],
+  "mdisc": []
+ }
+}
