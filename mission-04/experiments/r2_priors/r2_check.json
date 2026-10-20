@@ -1,0 +1,30 @@
+{
+ "label": "implementation check on self-made perturbations of DEV tasks; by construction, not evidence",
+ "bg-swap": {
+  "C0_solved_tasks_perturbed": 16,
+  "still_solved_S2": {
+   "C0": 11,
+   "C1": 10,
+   "C3": 15,
+   "C4": 15,
+   "C9": 14
+  }
+ },
+ "global-perm": {
+  "C0_solved_tasks_perturbed": 18,
+  "still_solved_S2": {
+   "C0": 18,
+   "C5": 13,
+   "C6": 18
+  }
+ },
+ "pad-offset": {
+  "C0_solved_tasks_perturbed": 18,
+  "still_solved_S2": {
+   "C0": 18,
+   "C7": 17,
+   "C8": 17,
+   "C9": 16
+  }
+ }
+}
