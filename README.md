@@ -1,40 +1,69 @@
 # Verifiable Neural Primitive Compiler
 
-**Research Mission 01：能否由能力规格直接编译出神经网络，而不针对每个任务重新训练？**
+本仓库围绕一个研究问题：能否由能力规格直接构造出可执行、可验证的神经网络，而不针对每个任务训练权重？研究分两轮进行。Mission 01 以有限状态时序规格为对象，检验"规格 → 网络"的编译路线；Mission 02 在冻结一组原语之后，检验能否对此前未见过的认知功能规格直接构造网络。
 
-这是一个在受限计算模型上检验该路线的实验系统。模型是离散整数积分发放神经元，有 1–3 个输入、几步到十几步的时域，所有实验都在本机 CPU 上运行。系统包括：
+两轮使用同一个计算模型：离散整数积分发放（IF）神经元，所有突触延迟 ≥ 1。全部实验都在本机 CPU 上运行。
 
-- 一个**可执行的语义**（模拟器），
-- 一个**带合同的原语库**和受约束的 **DSL**，
-- **三个相互独立的验证引擎**：Z3 有界模型检测、穷举枚举、显式状态无界可达性，
-- **四种合成器**：模板 CEGIS、参数枚举、原语组合枚举（DAG 和带环两种）、LLM 草图填洞，
-- 一个**不需要搜索的经典 FSM 构造**和**精确的可实现性判定**，
-- 给 LLM 用的 **Skill**：`skills/neural-compiler/SKILL.md`。
+| 研究轮次 | 问题 | 判定 | 主要文档 |
+|---|---|---|---|
+| Mission 01 | 能否由有限状态时序规格直接编译出网络，而不训练？ | 能，但这是经典自动机理论的结论；证据不支持把这条路线外推到更广泛的智能功能 | [evidence-ledger.md](evidence-ledger.md)、[theory.md](theory.md) |
+| Mission 02 | 原语冻结后，能否对未见的认知功能规格直接构造网络？ | 核心假说 INCONCLUSIVE；构造与推导 SUPPORTED_IN_TOY_DOMAIN；"发现了不只是重编码的认知原语" NOT_SUPPORTED | [mission-02/SCIENTIFIC_VERDICT.md](mission-02/SCIENTIFIC_VERDICT.md) |
 
-> **一句话结论**（详见 [evidence-ledger.md](evidence-ledger.md) 与 [theory.md](theory.md)）：
-> 在有限状态的时序规格上，"由规格编译出网络"是**成立的，但这是经典结论**：每个可实现的函数式规格都能不经搜索直接编译，不可实现的可以被精确判定并给出见证，而且整个过程不需要训练。
-> 真正的困难不在"能不能"，而在**规模**：合成是 Σ₂ᴾ 难的；无界验证最坏是 PSPACE 难的，实测中符号方法能多项式地处理有限记忆链，但在长程计数上和显式方法一样爆炸；精确合同的组合推理不改变增长类型；时间动力学换来的是神经元数量上的简洁，而不是新的计算能力。
-> 现有证据**不支持**把这条路线外推到更广泛的智能功能。
+Mission 02 把 Mission 01 的神经元语义、验证引擎和定理 3 当作基础设施使用，没有修改 Mission 01 的源码、冻结记录和原始结果。Mission 02 的 G0 审计发现 Mission 01 有一处输出文字需要限定：`latency1_weights(bound=64)` 给出的"no network of any size"，只在输入数 m ≤ 3 时成立，对一般的 m 只能理解为"在 |参数| ≤ 64 内无解"。Mission 01 实际报告过的不可实现结论都只有 m ≤ 2 个输入，因此仍然成立（[mission-02/G0-audit.md](mission-02/G0-audit.md)）。
 
-## 主要结果（详见 evidence-ledger.md）
+## Mission 01：由时序规格编译神经网络
+
+系统的组成：
+
+- 可执行的语义（模拟器）；
+- 带合同的原语库，以及受约束的 DSL；
+- 三个相互独立的验证引擎：Z3 有界模型检测、穷举枚举、显式状态无界可达性；
+- 四种合成器：模板 CEGIS、参数枚举、原语组合枚举（DAG 与带环两种）、LLM 草图填洞；
+- 不需要搜索的经典 FSM 构造，以及精确的可实现性判定；
+- 供 LLM 使用的 Skill：`skills/neural-compiler/SKILL.md`。
+
+**结论**（详见 [evidence-ledger.md](evidence-ledger.md) 与 [theory.md](theory.md)）。在有限状态的时序规格上，由规格直接编译出网络是可行的，而且整个过程不需要训练：每个可实现的函数式规格都能不经搜索直接编译，不可实现的规格可以被精确判定并给出见证。这是经典自动机理论的结论。困难在于规模。合成是 Σ₂ᴾ 难的，无界验证最坏是 PSPACE 难的。实测中，符号方法能以多项式代价处理有限记忆链，但在长程计数上与显式方法一样爆炸。精确合同下的组合推理不改变增长类型。时间动力学换来的是神经元数量上的简洁，而不是新的计算能力。
 
 | 问题 | 证据 | 结论 |
 |---|---|---|
-| 能否不训练、直接由规格编译？ | 31 个任务（A–C 10 个，D 21 个）全部由经典构造编译，或被定理 3 判定为不可实现；编译结果全部通过无界验证 | 能，但这是经典自动机理论 |
-| 编译出的网络有多大？ | 经典构造 6–258 个神经元，已知最小解 1–3 个 | 差距 4–100 倍，必须靠搜索 |
+| 能否不训练、直接由规格编译？ | 31 个任务（A–C 组 10 个，D 组 21 个）全部由经典构造编译，或被定理 3 判定为不可实现；编译结果全部通过无界验证 | 能，但这是经典自动机理论 |
+| 编译出的网络有多大？ | 经典构造 6–258 个神经元，已知最小解 1–3 个 | 差距 4–100 倍，缩小差距必须靠搜索 |
 | 盲目搜索能走多远？ | CEGIS 在 3 个输入、2 个神经元时常在 240 s 内超时；3 原语带环枚举 160 万+ 候选后超时；D 组 CEGIS 有 8/21 超时 | 规模上限约 2–3 个神经元 |
-| LLM 提议 + 求解器 + 验证器 | 作者本人的 D 组第 1 轮草图 6 中 5；盲测会话（只读 SKILL.md）在 10 个难任务上 10/10 首个提议成功，包括作者失败的 D02（5 个神经元） | 有用，验证器没有误判过一次；仍为同一模型家族，反例修订环节没有被检验 |
-| 动力学有用吗？ | 模 2/3 计数：IF 只需 1 个神经元，无记忆需 2 / ≥ 3 个；窗口类两者相同 | 只在计数状态上有用，信息量不变 |
-| 组合合同降复杂度吗？ | 显式：状态比为 1.0 / 约 0.5，两者都指数增长；符号（k-induction/PDR）：有限记忆链到 N = 64–256，计数链止于 N = 4，合同只改变常数因子 | 精确合同下不能；爆炸取决于记忆的类型 |
+| LLM 提议 + 求解器 + 验证器 | 作者本人的 D 组第 1 轮草图 6 中 5；盲测会话（只读 SKILL.md）在 10 个难任务上 10/10 首个提议成功，包括作者失败的 D02（5 个神经元） | 在这些任务上有效，验证器没有出现一次误判；提议者仍属同一模型家族，反例修订环节没有被检验 |
+| 时间动力学有用吗？ | 模 2/3 计数：IF 只需 1 个神经元，无记忆网络需 2 / ≥ 3 个；窗口类任务两者相同 | 只在计数状态上有用，信息量不变 |
+| 组合合同能降低复杂度吗？ | 显式：状态比为 1.0 / 约 0.5，两者都指数增长；符号（k-induction/PDR）：有限记忆链到 N = 64–256，计数链止于 N = 4，合同只改变常数因子 | 精确合同下不能；爆炸与否取决于记忆的类型 |
 | 名称能当证据吗？ | `pairdet` 的直觉合同被反例 `1110` 驳倒 | 不能 |
 
-## 单命令安装、测试与示例
+## Mission 02：对未见认知功能的直接构造
+
+Mission 02 检验的假说是：存在一套紧凑、可参数化、组合语义可验证的原语，使智能体读取此前未见过的认知功能规格后，只通过实例化与组合原语、不训练权重，就能构造出满足规格的网络。
+
+实验设置分四步。
+
+1. **任务族**。设计阶段使用两个任务族：N×N 网格上的空间工作记忆（"心像变换"），以及对象–属性绑定与关系查询。第三个任务族（网格上的多个对象）只作为未见组合出现。
+2. **原语发现**。原语不是预先命名的，而是从设计任务的黑盒探测中提取：逐个（命令, 坐标）学习更新规则，再归纳成参数化模式。由此得到 CMR（字母门控的并集寄存器）、SEL（门控选择）、ANY（区域 OR 归约）和 GATE（与 / 与非）四个原语，它们作用在带类型的索引空间上，由一个不含用户函数的 JSON IR 组合。
+3. **合同**。原语合同和一个组合定理由 Z3 在任意索引集或任意 N 上证明，每条结论都附有非空性检查与变异检查。
+4. **冻结与评测**。源码冻结后（树哈希 `1c40ea5a…`），由该哈希导出的种子生成 16 个未见任务，比较三条构造路线：A-LLM（读自然语言描述写 IR，程序在任何裁判运行之前提交）、A-auto（只在两个最小规模上做黑盒探测，不使用 LLM）、随机结构基线。
+
+| 问题 | 证据 | 结论 |
+|---|---|---|
+| 黑盒探测能否压缩出跨任务族共享的模式？ | 353 条（坐标, 字母）规则都是"新值 = 若干旧坐标的 OR"这一模板的实例，两个任务族共用；被动学习在 6 个可构造任务中有 3 个过度泛化，主动探测 6/6 正确 | 能，但这个模板就是经典的寄存器更新 |
+| 冻结后能否不求解权重，直接构造未见任务？ | A-LLM 16/16；A-auto 10/16，6 个失败都是安全拒绝（4 个条件命令、2 个 `same` 查询）；随机结构每个任务 0/100 | 在这一任务类中能（差分测试，[E]） |
+| 能否外推到未探测的规模？ | A-auto 构造的 4 个空间任务在 N = 3、5 探测，在 N = 8 不调用 oracle 也正确；事后选定的第三规模上 A-auto 10/10 正确，A-LLM 空间程序在 N = 11 上 8/8 正确 | 能，但规模泛化来自手写的映射词汇 |
+| 逐任务权重搜索（路线 B）的代价？ | N = 2 网格上，4 个神经元的 CEGIS 模板（76 个洞）在 600 s、30 轮反例后超时；HP-2 原语只需 16 个神经元，无需搜索 | 逐任务搜索的路线被淘汰 |
+| 整体功能能否由部件合同推出？ | CMR 合同（P1）与条件命令的组合定理（P4）对任意索引集成立；SEL 合同没有符号证明；编译器的正确性没有证明 | 部分能 |
+| 未见任务的网络是否经过机器验证？ | 符合条件的网络上，无界乘积搜索全部在 2,000,000 个状态的预算处返回 UNKNOWN | 否；未见任务只有差分测试证据 |
+| 这些原语是新的认知计算规律吗？ | CMR、SEL、ANY、GATE 分别对应寄存器加多路选择器、AND-OR 交叉开关、OR 归约、AND / AND-NOT；任务规格已给出每个命令的坐标映射 | 否：目前只得到程序综合的神经实现 |
+
+**结论**（详见 [SCIENTIFIC_VERDICT.md](mission-02/SCIENTIFIC_VERDICT.md) 与 [negative-results.md](mission-02/negative-results.md)）。在冻结后生成的未见任务上，不求解任何权重就能直接构造出通过差分测试的网络。但原语是经典构件的重编码，而规格以机制级的坐标映射给出，构造器所做的是翻译。只要规格停留在机制层面，构造成功率就无法区分"认知原语"与"带神经后端的程序综合"，因此核心假说判为 INCONCLUSIVE。对绘画这类生成性能力，缺口首先在语义（由目标推出机制）和知识（视觉与运动先验，包括映射词汇本身），其次在结构（生成性选择、迭代、计数、非单调更新、索引绑定），而不在计算资源：A-auto 对每个未见任务的构造时间为 0.12–0.61 s。任务书的停止条件在这一玩具域内部分成立，下一轮的修订假设（H-N1 至 H-N4）列在判定文件的 Q6 中。
+
+## 安装、测试与复现
 
 ```bash
 ./run.sh
 ```
 
-它依次执行 `make install`（创建 `.venv` 并安装 `z3-solver numpy pytest hypothesis`）、`make test`（全部测试）和 `make demo`。也可以分步运行：
+`run.sh` 依次执行 `make install`（创建 `.venv`，安装 `z3-solver numpy pytest hypothesis`）、`make test`（两轮的全部 144 个测试）和 `make demo`。也可以分步运行：
 
 ```bash
 make install
@@ -52,9 +81,15 @@ make demo
 make experiments
 ```
 
-已在 Apple M4 MacBook Air（arm64）、Python 3.12.13、z3-solver 5.3.1 上测试，Z3 在 Apple Silicon 上安装和运行都没有问题。
+```bash
+make mission02
+```
+
+`make experiments` 重跑 Mission 01 的实验（A–C 组、规模、Q2、LLM 草图）并生成汇总；`make mission02` 重跑 Mission 02 的 Z3 参数化证明、未见任务全流程和事后第三规模检查。已在 Apple M4 MacBook Air（arm64）、Python 3.12.13、z3-solver 5.3.1 上测试。
 
 ## 快速上手
+
+Mission 01 的命令行工具 `npc`：
 
 ```bash
 .venv/bin/npc primitives
@@ -72,7 +107,13 @@ make experiments
 .venv/bin/npc synth experiments/tasks.npc --spec C2_parity_dense --method cegis --out out/c2.json
 ```
 
-退出码：0 = 已验证/已合成，1 = 有反例/不可实现/已穷尽，2 = 无结论（超时、UNKNOWN、资源上限），3 = 输入错误。
+退出码：0 = 已验证 / 已合成，1 = 有反例 / 不可实现 / 已穷尽，2 = 无结论（超时、UNKNOWN、资源上限），3 = 输入错误。
+
+Mission 02 的参数化证明（输出与 `mission-02/experiments/proofs.txt` 对应）：
+
+```bash
+.venv/bin/python -m cog.proofs
+```
 
 ## 仓库结构
 
@@ -88,30 +129,33 @@ make experiments
 | `src/npc/synth.py` | `cegis`、`minimize_synapses`、`search_neurons`、`enumerate_params`、`compose_dag`、`compose_cyclic`、`sketch` |
 | `src/npc/fsm.py` | 规格 → 最小 Moore 机 → 可实现性判定（定理 3）→ one-hot 经典构造 |
 | `src/npc/cli.py` | 命令行 `npc` |
+| `src/cog/tasks.py` | Mission 02 任务族的参考语义，即规格本身；构造代码不得导入它（由测试强制） |
+| `src/cog/prims.py` | CMR、SEL、ANY、GATE 四个原语模板 |
+| `src/cog/ir.py` | 带类型索引空间上的 JSON IR 及其编译器；没有用户函数，也没有 eval |
+| `src/cog/check.py` | 差分测试、无界乘积搜索 `reach_equiv`、布线自同构检查 |
+| `src/cog/proofs.py` | Z3 参数化证明 P1–P5 |
+| `src/cog/learn.py`、`src/cog/auto.py` | 黑盒结构学习（被动学习与主动探测）和 A-auto 构造路线 |
+| `src/cog/realize.py` | 精确（不设权重界）的延迟 1 可实现性判定 |
+| `src/cog/unseen.py` | 未见任务生成器，与原语一起冻结 |
 | `tests/` | 单元测试、性质测试（hypothesis）、反例测试 |
-| `experiments/` | 任务、手工设计、运行器、原始结果 JSON、D 组协议、LLM 草图 |
-| `skills/neural-compiler/SKILL.md` | LLM 工作流 |
+| `experiments/` | Mission 01 的任务、手工设计、运行器、原始结果 JSON、D 组协议、LLM 草图 |
+| `mission-02/` | Mission 02 的文档、协议与实验；`experiments/` 下是原始 JSON、日志和运行脚本 |
+| `skills/neural-compiler/SKILL.md` | Mission 01 的 LLM 工作流 |
+| `skills/cognitive-compiler/SKILL.md` | Mission 02 的 LLM 工作流：由能力描述写 IR，结论只来自裁判 |
 
 ## 设计决策（以及原因）
 
-1. **所有突触延迟 ≥ 1**。网络因此严格因果：任何反馈环都有良定义的语义，同步更新与神经元顺序无关，而且循环假设–保证推理可以靠对时间的归纳来证明可靠。代价是网络永远不能对同一步的输入作出反应，这一点由定理 3 精确刻画。
-2. **原语用 DSL 本身写成**（神经元 + 突触 + 合同），不能调用宿主语言。参数算术只允许整数 `+ - *`，并用白名单 AST 解析器检查（`tests/test_dsl.py` 检验了无逃逸）。
-3. **名称不是证据**：没有合同的原语会被拒绝；`pairdet`（看起来像"连续两次脉冲检测器"）的直觉合同会被验证器用反例 `in=1110` 驳倒。
-4. **结论分级**：VERIFIED_BOUNDED(T) ≠ VERIFIED_UNBOUNDED；TIMEOUT、UNKNOWN、RESOURCE_LIMIT 都不算通过；CEGIS 的 UNREALIZABLE 只覆盖模板的参数范围，定理 3 的 UNREALIZABLE 覆盖任意规模。
-5. **LLM 只提议**：草图中的选择洞 `?{…}` 和整数洞 `?[lo,hi]` 由工具填充和验证；Skill 禁止 LLM 自行宣布通过。
-
-## Mission 02：认知原语
-
-开发在 `mission-02` 分支上进行，已快进合并到 main（历史不改写）。
-
-Mission 02 检验：一套紧凑、可参数化、组合语义可验证的原语，能否让智能体对**未见的**认知功能规格直接构造网络，而不逐任务训练权重。Mission 01 的结果作为基础设施保留，没有改动。
-
-- 首轮判定见 [mission-02/SCIENTIFIC_VERDICT.md](mission-02/SCIENTIFIC_VERDICT.md)：核心假说 **INCONCLUSIVE**；构造与推导 SUPPORTED_IN_TOY_DOMAIN；"发现了不只是重编码的认知原语" NOT_SUPPORTED。用任务书的话说：**目前只得到程序综合的神经实现**。
-- 冻结后的 16 个未见任务：A-LLM 16/16，A-auto 10/16（都是差分测试 [E]；无界检查在状态预算处 UNKNOWN）。
-- 否定结果见 [mission-02/negative-results.md](mission-02/negative-results.md)；代码在 `src/cog/`，Skill 在 `skills/cognitive-compiler/SKILL.md`。
-- 复现：`make mission02`（Z3 参数化证明、未见任务全流程、事后第三规模检查）。
+1. **所有突触延迟 ≥ 1**。网络因此严格因果：任何反馈环都有良定义的语义，同步更新与神经元顺序无关，循环的假设–保证推理也可以靠对时间的归纳证明是可靠的。代价是网络不能对同一步的输入作出反应，这一点由定理 3 精确刻画。
+2. **原语用 DSL 本身写成**（神经元 + 突触 + 合同），不能调用宿主语言。参数算术只允许整数 `+ - *`，并用白名单 AST 解析器检查（`tests/test_dsl.py` 检验了无逃逸）。Mission 02 的 IR 同样没有逃逸口（`test_ir_has_no_escape_hatch`）。
+3. **名称不是证据**：没有合同的原语会被拒绝；`pairdet`（看起来像"连续两次脉冲检测器"）的直觉合同会被验证器用反例 `in=1110` 驳倒。Mission 02 的任务书同样禁止把"记忆""注意""推理"等功能标签当作已发现的原语。
+4. **结论分级**：VERIFIED_BOUNDED(T) ≠ VERIFIED_UNBOUNDED；TIMEOUT、UNKNOWN、RESOURCE_LIMIT 都不算通过；CEGIS 的 UNREALIZABLE 只覆盖模板的参数范围，定理 3 的 UNREALIZABLE 覆盖任意规模。Mission 02 的每条结论另外标注证据等级：[L] 文献、[P] 纸面论证、[M] 机器检查、[E] 统计实验。
+5. **LLM 只提议**：草图中的选择洞 `?{…}` 和整数洞 `?[lo,hi]` 由工具填充和验证；两个 Skill 都禁止 LLM 自行宣布通过。
+6. **规格与构造分离**：Mission 02 的参考语义 `cog.tasks` 就是规格，构造代码只能把它当黑盒探测，或者读自然语言描述（`test_constructors_never_import_the_spec`）。
+7. **预注册与冻结**：Mission 02 的假设在编写任何原语代码之前写入 `mission-02/hypotheses.md`，之后不改动；未见任务的种子由冻结源码的哈希导出，A-LLM 的程序在任何裁判运行之前提交。
 
 ## 文档
+
+Mission 01：
 
 - [prior-art.md](prior-art.md)：文献审计与新颖性对照（每条引用都标了核查状态）
 - [research-hypotheses.md](research-hypotheses.md)：实验前写下的假设 H1–H8 与证伪条件
@@ -120,9 +164,27 @@ Mission 02 检验：一套紧凑、可参数化、组合语义可验证的原语
 - [limitations.md](limitations.md)：限制与偏差
 - `experiments/results/SUMMARY_ABC.md`、`experiments/results/HYPOTHESES_CHECK.md`、`experiments/D_unseen/SUMMARY.md`：由原始 JSON 自动生成的表格
 
-## 关于 Git
+Mission 02：
 
-开发环境的命令沙箱禁止写入 `.git/config`。获得用户明确许可后，所有 git 操作改在用户的终端面板中执行（不受沙箱限制）。提交历史按阶段记录：工具链 → A–C 结果 → 冻结 → D 组 → 最终评估。D 组的冻结点同时由 SHA-256 清单和一次提交标记。
+- [RESEARCH_NORTH_STAR.md](mission-02/RESEARCH_NORTH_STAR.md)：锁定的研究问题与禁止宣布为成功的情况
+- [hypotheses.md](mission-02/hypotheses.md)：预注册的假设 M2-H1 至 M2-H7、竞争假设与证伪条件
+- [G0-audit.md](mission-02/G0-audit.md)：对 Mission 01 的审计、可信计算基与差距分析
+- [prior-art-map.md](mission-02/prior-art-map.md)：文献对照，分为"已有""可借鉴""尚不确定"三类
+- [cognitive-domain-specs.md](mission-02/cognitive-domain-specs.md)：任务族、难度层级与证伪标准
+- [primitive-candidates.md](mission-02/primitive-candidates.md)：原语发现过程、冻结的原语与被淘汰的候选
+- [compositional-semantics.md](mission-02/compositional-semantics.md)：IR、时序代数、P1–P5 与证据等级划分
+- [protocols/UNSEEN_PROTOCOL.md](mission-02/protocols/UNSEEN_PROTOCOL.md)：未见任务协议及其修正案
+- [negative-results.md](mission-02/negative-results.md)：否定结果与具有欺骗性的成功
+- [SCIENTIFIC_VERDICT.md](mission-02/SCIENTIFIC_VERDICT.md)：首轮科学判定、成本账本与下一轮假设
+- `mission-02/experiments/unseen/SUMMARY.md`：由原始 JSON 自动生成的未见任务表格
+
+## 版本与冻结记录
+
+开发环境的命令沙箱禁止写入 `.git/config`。经用户明确许可，所有 git 操作都在用户的终端面板中执行（不受沙箱限制）。
+
+Mission 01 的提交历史按阶段记录：工具链 → A–C 组结果 → 冻结 → D 组 → 最终评估。D 组的冻结点同时由 SHA-256 清单和一次提交标记。
+
+Mission 02 在 `mission-02` 分支上开发，完成首轮后快进合并到 main，没有改写历史。关键提交依次为：原语与工具冻结（`b49a21a`，树哈希 `1c40ea5a…`，清单见 `mission-02/experiments/unseen/freeze-manifest.json`）；由冻结种子生成未见任务（`bccacf5`）；在任何裁判运行之前提交 A-LLM 程序（`c5dbafe`）；评测结果与科学判定（`b109e0e`）。
 
 ## 许可
 
