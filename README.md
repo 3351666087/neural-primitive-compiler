@@ -100,7 +100,9 @@ make experiments
 4. **结论分级**：VERIFIED_BOUNDED(T) ≠ VERIFIED_UNBOUNDED；TIMEOUT、UNKNOWN、RESOURCE_LIMIT 都不算通过；CEGIS 的 UNREALIZABLE 只覆盖模板的参数范围，定理 3 的 UNREALIZABLE 覆盖任意规模。
 5. **LLM 只提议**：草图中的选择洞 `?{…}` 和整数洞 `?[lo,hi]` 由工具填充和验证；Skill 禁止 LLM 自行宣布通过。
 
-## Mission 02：认知原语（`mission-02` 分支）
+## Mission 02：认知原语
+
+开发在 `mission-02` 分支上进行，已快进合并到 main（历史不改写）。
 
 Mission 02 检验：一套紧凑、可参数化、组合语义可验证的原语，能否让智能体对**未见的**认知功能规格直接构造网络，而不逐任务训练权重。Mission 01 的结果作为基础设施保留，没有改动。
 
