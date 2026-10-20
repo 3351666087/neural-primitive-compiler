@@ -1,0 +1,661 @@
+007bbfb7 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+00d62c1b blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+017c7c7b blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+025d127b blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+045e512c blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+0520fde7 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+05269061 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+05f2a901 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+06df4c85 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+08ed6ac7 blocks: {'F1': 'correct', 'F3': 'correct', 'F3-noselect': 'correct', 'F4': 'correct', 'S0': 'correct', 'S1': 'correct', 'S2': 'correct', 'S3': 'correct', 'S4': 'correct'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+09629e4f blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+0962bcdd blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+0a938d79 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+0b148d64 blocks: {'F1': 'abstain', 'F3': 'correct', 'F3-noselect': 'correct', 'F4': 'abstain', 'S0': 'correct', 'S1': 'abstain', 'S2': 'correct', 'S3': 'correct', 'S4': 'correct'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+0ca9ddb6 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+0d3d703e blocks: {'F1': 'correct', 'F3': 'correct', 'F3-noselect': 'correct', 'F4': 'correct', 'S0': 'correct', 'S1': 'correct', 'S2': 'correct', 'S3': 'correct', 'S4': 'correct'} | mdisc: {'M-DISC-fixed': 'correct', 'M-DISC-fixed-strict': 'correct', 'M-DISC-MDL-fixed': 'correct'}
+0dfd9992 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+0e206a2e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+10fcaaa3 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+11852cab blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1190e5a7 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+137eaa0f blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+150deff5 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+178fcbfb blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1a07d186 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1b2d62fb blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1b60fb0c blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1bfc4729 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1c786137 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1caeab9d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1cf80156 blocks: {'F1': 'correct', 'F3': 'correct', 'F3-noselect': 'correct', 'F4': 'abstain', 'S0': 'correct', 'S1': 'correct', 'S2': 'correct', 'S3': 'correct', 'S4': 'correct'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1e0a9b12 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1e32b0e9 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1f0c79e5 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1f642eb9 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1f85a75f blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'correct', 'S3': 'correct', 'S4': 'correct'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1f876c06 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1fad071e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+2013d3e2 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+2204b7a8 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+22168020 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+22233c11 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+2281f1f4 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+228f6490 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+22eb0ac0 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+234bbc79 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+23581191 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+239be575 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'wrong', 'M-DISC-fixed-strict': 'wrong', 'M-DISC-MDL-fixed': 'wrong'}
+23b5c85d blocks: {'F1': 'correct', 'F3': 'correct', 'F3-noselect': 'correct', 'F4': 'abstain', 'S0': 'correct', 'S1': 'correct', 'S2': 'correct', 'S3': 'correct', 'S4': 'correct'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+253bf280 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+25d487eb blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+25d8a9c8 blocks: {'F1': 'correct', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'correct', 'S2': 'correct', 'S3': 'correct', 'S4': 'correct'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+25ff71a9 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'correct', 'M-DISC-fixed-strict': 'correct', 'M-DISC-MDL-fixed': 'correct'}
+264363fd blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+272f95fa blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+27a28665 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+28bf18c6 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+28e73c20 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+29623171 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+29c11459 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: {'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+29ec7d0e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+2bcee788 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+2bee17df blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+2c608aff blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+2dc579da blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+2dd70a9a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+2dee498d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+31aa019c blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+321b1fc6 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+32597951 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3345333e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3428a4f5 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3618c87e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3631a71a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+363442ee blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+36d67576 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+36fdfd69 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3906de3d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+39a8645d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+39e1d7f9 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3aa6fb7a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3ac3eb23 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3af2c5a8 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3bd67248 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3bdb4ada blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3befdf3e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3c9b0459 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3de23699 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3e980e27 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3eda0437 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+3f7978a0 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+40853293 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+4093f84a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+41e4d17e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+4258a5f9 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+4290ef0e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+42a50994 blocks: {'F1': 'correct', 'F3': 'correct', 'F3-noselect': 'correct', 'F4': 'correct', 'S0': 'correct', 'S1': 'correct', 'S2': 'correct', 'S3': 'correct', 'S4': 'correct'} | mdisc: None
+4347f46a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+444801d8 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+445eab21 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+447fd412 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+44d8ac46 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+44f52bb0 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+4522001f blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+4612dd53 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+46442a0e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+469497ad blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+46f33fce blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+47c1f68c blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+484b58aa blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+48d8fb45 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+4938f0c2 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+496994bd blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+49d1d64f blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+4be741c5 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+4c4377d9 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+4c5c2cf0 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+50846271 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+508bd3b6 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+50cb2852 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+5117e062 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+5168d44c blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+539a4f51 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+53b68214 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+543a7ed5 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+54d82841 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+54d9e175 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+5521c0d9 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+5582e5ca blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+5614dbcf blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+56dc2b01 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+56ff96f3 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+57aa92db blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+5ad4f10b blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+5bd6f4ac blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+5c0a986e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+5c2c9af4 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+5daaa586 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+60b61512 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6150a2bd blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+623ea044 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+62c24649 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+63613498 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6430c8c4 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6455b5f5 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+662c240a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+67385a82 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'correct', 'S3': 'abstain', 'S4': 'correct'} | mdisc: None
+673ef223 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6773b310 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+67a3c6ac blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+67a423a3 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+67e8384a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+681b3aeb blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6855a6e4 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+68b16354 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+694f12f3 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6a1e5592 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6aa20dc0 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6b9890af blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6c434453 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6cdd2623 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6cf79266 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6d0160f0 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6d0aefbc blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6d58a25d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6d75e8bb blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6e02f1e3 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6e19193c blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6e82a1ae blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'correct', 'S3': 'abstain', 'S4': 'correct'} | mdisc: None
+6ecd11f4 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6f8cd79b blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+6fa7a44f blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+72322fa7 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+72ca375d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+73251a56 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+7447852a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+7468f01a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+746b3537 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+74dd1130 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+75b8110e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+760b3cac blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+776ffc46 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+77fdfe62 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+780d0b14 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+7837ac64 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+794b24be blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+7b6016b9 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+7b7f7511 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+7c008303 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+7ddcd7ec blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+7df24a62 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+7e0986d6 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+7f4411dc blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+7fe24cdd blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+80af3007 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+810b9b61 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+82819916 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+83302e8f blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+834ec97d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+8403a5d5 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+846bdb03 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+855e0971 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+85c4e7cd blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+868de0fa blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+8731374e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+88a10436 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+88a62173 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+890034e9 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+8a004b2b blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+8be77c9e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+8d5021e8 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+8d510a79 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+8e1813be blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+8e5a5113 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+8eb1be9a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+8efcae92 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+8f2ea7aa blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+90c28cc7 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+90f3ed37 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+913fb3ed blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+91413438 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+91714a58 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+9172f3a0 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+928ad970 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+93b581b8 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+941d9a10 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+94f9d214 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+952a094c blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+9565186b blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+95990924 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+963e52fc blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+97999447 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+97a05b5b blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+98cf29f8 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+995c5fa3 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+99b1bc43 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+99fa7670 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+9aec4887 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+9af7a82c blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+9d9215db blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+9dfd6313 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+9ecd008a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+9edfc990 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+9f236235 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a1570a43 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a2fd1cf0 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a3325580 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a3df8b1e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a416b8f3 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a48eeaf7 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a5313dff blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a5f85a15 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a61ba2ce blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a61f2674 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a64e4611 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a65b410d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a68b268e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a699fb00 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a740d043 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a78176bb blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a79310a0 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a85d4709 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a87f7484 blocks: {'F1': 'abstain', 'F3': 'correct', 'F3-noselect': 'correct', 'F4': 'abstain', 'S0': 'correct', 'S1': 'abstain', 'S2': 'correct', 'S3': 'correct', 'S4': 'correct'} | mdisc: None
+a8c38be5 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a8d7556c blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+a9f96cdd blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+aabf363d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+aba27056 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ac0a08a4 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ae3edfdc blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ae4f1146 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+aedd82e4 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'correct', 'S3': 'abstain', 'S4': 'correct'} | mdisc: None
+af902bf9 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b0c4d837 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b190f7f5 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b1948b0a blocks: {'F1': 'correct', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'correct', 'S2': 'correct', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b230c067 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'correct'} | mdisc: None
+b27ca6d3 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b2862040 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b527c5c6 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b548a754 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b60334d2 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b6afb2da blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b7249182 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b775ac94 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b782dc8a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b8825c91 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b8cdaf2b blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b91ae062 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b94a9452 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+b9b7f026 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ba26e723 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ba97ae07 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+bb43febb blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+bbc9ae5d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+bc1d5164 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+bd4472b8 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+bda2d7a6 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+bdad9b1f blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+be94b721 blocks: {'F1': 'correct', 'F3': 'correct', 'F3-noselect': 'correct', 'F4': 'abstain', 'S0': 'correct', 'S1': 'correct', 'S2': 'correct', 'S3': 'correct', 'S4': 'correct'} | mdisc: None
+beb8660c blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+c0f76784 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+c1d99e64 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+c3e719e8 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+c3f564a4 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+c444b776 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+c59eb873 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+c8cbb738 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+c8f0f002 blocks: {'F1': 'correct', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'correct', 'S2': 'correct', 'S3': 'abstain', 'S4': 'correct'} | mdisc: None
+c909285e blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'correct', 'S3': 'correct', 'S4': 'correct'} | mdisc: None
+c9e6f938 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+c9f8e694 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+caa06a1f blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+cbded52d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+cce03e0d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+cdecee7f blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ce22a75a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ce4f8723 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ce602527 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ce9e57f2 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+cf98881b blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d037b0a7 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d06dbe63 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d07ae81c blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d0f5fe59 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d10ecb37 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d13f3404 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d22278a0 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d23f8c26 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d2abd087 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d364b489 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d406998b blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d43fd935 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d4469b4b blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d4a91cb9 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d4f3cd78 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d511f180 blocks: {'F1': 'correct', 'F3': 'correct', 'F3-noselect': 'correct', 'F4': 'correct', 'S0': 'correct', 'S1': 'correct', 'S2': 'correct', 'S3': 'correct', 'S4': 'correct'} | mdisc: None
+d5d6de2d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d631b094 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d687bc17 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d6ad076f blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d89b689b blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d8c310e9 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d90796e8 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d9f24cd1 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+d9fac9be blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+dae9d2b5 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+db3e9e38 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+db93a21d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+dbc1a6ce blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+dc0a314f blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+dc1df850 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+dc433765 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ddf7fa4f blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+de1cd16c blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ded97339 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e179c5f4 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e21d9049 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e26a3af2 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e3497940 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e40b9e2f blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e48d4e1a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e5062a87 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e509e548 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e50d258f blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e6721834 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e73095fd blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e76a88a6 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e8593010 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e8dc4411 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e9614598 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e98196ab blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+e9afcf9a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ea32f347 blocks: {'F1': 'correct', 'F3': 'correct', 'F3-noselect': 'correct', 'F4': 'correct', 'S0': 'correct', 'S1': 'correct', 'S2': 'correct', 'S3': 'correct', 'S4': 'correct'} | mdisc: None
+ea786f4a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+eb281b96 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+eb5a1d5d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ec883f72 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ecdecbb3 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ed36ccf7 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ef135b50 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+f15e1fac blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+f1cefba8 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+f25fbde4 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+f25ffba3 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+f2829549 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+f35d900a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+f5b8619d blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+f76d97a5 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+f8a8fe49 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+f8b3ba0a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+f8c80d96 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+f8ff0b80 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+f9012d9b blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+fafffa47 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+fcb5c309 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+fcc82909 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+feca6190 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ff28f65a blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+ff805c23 blocks: {'F1': 'abstain', 'F3': 'abstain', 'F3-noselect': 'abstain', 'F4': 'abstain', 'S0': 'abstain', 'S1': 'abstain', 'S2': 'abstain', 'S3': 'abstain', 'S4': 'abstain'} | mdisc: None
+{
+ "tasks": 400,
+ "block_layer_completed": 400,
+ "block_layer_RESOURCE_LIMIT": [],
+ "F1": {
+  "correct": 11,
+  "wrong": 0,
+  "abstain": 389,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "F3": {
+  "correct": 10,
+  "wrong": 0,
+  "abstain": 390,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "F3-noselect": {
+  "correct": 10,
+  "wrong": 0,
+  "abstain": 390,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "F4": {
+  "correct": 5,
+  "wrong": 0,
+  "abstain": 395,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "S0": {
+  "correct": 10,
+  "wrong": 0,
+  "abstain": 390,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "S1": {
+  "correct": 11,
+  "wrong": 0,
+  "abstain": 389,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "S2": {
+  "correct": 18,
+  "wrong": 0,
+  "abstain": 382,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "S3": {
+  "correct": 13,
+  "wrong": 0,
+  "abstain": 387,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "S4": {
+  "correct": 18,
+  "wrong": 0,
+  "abstain": 382,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "fambase|S2": {
+  "correct": 18,
+  "wrong": 0,
+  "abstain": 382,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "fambase|S0": {
+  "correct": 10,
+  "wrong": 0,
+  "abstain": 390,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "fam+INT|S2": {
+  "correct": 20,
+  "wrong": 0,
+  "abstain": 380,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "fam+INT|S0": {
+  "correct": 11,
+  "wrong": 0,
+  "abstain": 389,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "fam+COUNT|S2": {
+  "correct": 19,
+  "wrong": 1,
+  "abstain": 380,
+  "RESOURCE_LIMIT": 0,
+  "precision": 0.95
+ },
+ "fam+COUNT|S0": {
+  "correct": 11,
+  "wrong": 0,
+  "abstain": 389,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "fam+REL|S2": {
+  "correct": 20,
+  "wrong": 0,
+  "abstain": 380,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "fam+REL|S0": {
+  "correct": 12,
+  "wrong": 0,
+  "abstain": 388,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "fam+POS|S2": {
+  "correct": 19,
+  "wrong": 1,
+  "abstain": 380,
+  "RESOURCE_LIMIT": 0,
+  "precision": 0.95
+ },
+ "fam+POS|S0": {
+  "correct": 11,
+  "wrong": 1,
+  "abstain": 388,
+  "RESOURCE_LIMIT": 0,
+  "precision": 0.917
+ },
+ "fam+ALL|S2": {
+  "correct": 22,
+  "wrong": 2,
+  "abstain": 376,
+  "RESOURCE_LIMIT": 0,
+  "precision": 0.917
+ },
+ "fam+ALL|S0": {
+  "correct": 13,
+  "wrong": 1,
+  "abstain": 386,
+  "RESOURCE_LIMIT": 0,
+  "precision": 0.929
+ },
+ "partsW123|S2": {
+  "correct": 6,
+  "wrong": 0,
+  "abstain": 256,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "partsW123|S0": {
+  "correct": 3,
+  "wrong": 0,
+  "abstain": 259,
+  "RESOURCE_LIMIT": 0,
+  "precision": 1.0
+ },
+ "specificity": {
+  "tasks_with_2plus_pairs": 400,
+  "law_holds_true_pairs": 79,
+  "law_holds_shuffled_pairs": 11,
+  "ratio": 7.18
+ },
+ "law_holding_tasks": 79,
+ "law_holding_with_an_F1_rule": 70,
+ "law_holding_only_non_F1_rules": 9,
+ "F3_rules_tried_mean_on_law_tasks": 5.0,
+ "F3_solved_using_F1_rules": 8,
+ "identifiability_abstentions": {
+  "tasks": 8,
+  "S2_correct_among_them": 8,
+  "S2_wrong_among_them": 0
+ },
+ "gap": {
+  "tasks": 62,
+  "explained_by_attributes_or_parts_S2": 7,
+  "unexplained_categories": {
+   "K: non-uniform recolouring inside blocks": 32,
+   "K: uniform per block, not a function of any attribute": 16,
+   "C only: crop target not selectable by any attribute": 7
+  }
+ },
+ "loo_pairs": {
+  "F1": {
+   "correct": 30,
+   "wrong": 5,
+   "abstain": 1155,
+   "precision": 0.857
+  },
+  "F3": {
+   "correct": 27,
+   "wrong": 4,
+   "abstain": 1159,
+   "precision": 0.871
+  },
+  "F3-noselect": {
+   "correct": 27,
+   "wrong": 6,
+   "abstain": 1157,
+   "precision": 0.818
+  },
+  "tasks": 344,
+  "RESOURCE_LIMIT": []
+ },
+ "M-DISC-fixed": {
+  "correct": 2,
+  "wrong": 1,
+  "abstain": 57,
+  "RESOURCE_LIMIT": 0,
+  "precision": 0.667
+ },
+ "M-DISC-fixed-strict": {
+  "correct": 2,
+  "wrong": 1,
+  "abstain": 57,
+  "RESOURCE_LIMIT": 0,
+  "precision": 0.667
+ },
+ "M-DISC-MDL-fixed": {
+  "correct": 2,
+  "wrong": 1,
+  "abstain": 57,
+  "RESOURCE_LIMIT": 0,
+  "precision": 0.667
+ },
+ "z3_unique_rechecked": {
+  "n": 13,
+  "agree": 13,
+  "other": []
+ },
+ "block_correct_not_mdisc_fixed": [
+  "08ed6ac7",
+  "0b148d64",
+  "1cf80156",
+  "1f85a75f",
+  "23b5c85d",
+  "25d8a9c8",
+  "42a50994",
+  "67385a82",
+  "6e82a1ae",
+  "a87f7484",
+  "aedd82e4",
+  "b1948b0a",
+  "b230c067",
+  "be94b721",
+  "c8f0f002",
+  "c909285e",
+  "d511f180",
+  "ea32f347"
+ ],
+ "mdisc_tasks_run": 60
+}
+exit 0

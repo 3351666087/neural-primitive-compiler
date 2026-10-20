@@ -1,0 +1,17 @@
+{
+ "files": {
+  "mission-04/experiments/c1_arc2/confirm.py": "00200ed3d04038a425e3cfad998a5d56112adb37a70e95274987c4a93f2082bc",
+  "mission-04/experiments/c1_arc2/learned_preferences.json": "74f61ae13f88ad69af46ffea86792ccf3dfd3255cef26b12c2f72d0fbe17a9e7",
+  "mission-04/CONFIRMATION_ARC2.md": "ff52335e7b5c213fa8c3f204ce8a6478c27c14c41c1d39243e8c531e7fe46ba5",
+  "mission-04/experiments/r1_repr/blocks.py": "15d7611d4b64004e3957320d92a6340b94d4a3e2c99181d6b03f1fe25dd01ed6",
+  "mission-04/experiments/r1_repr/run_r1.py": "2b115e71cf031c925ffafc57fb5d9ee4685b85b6b919a1d049c4072e5c83ff0a",
+  "mission-04/experiments/r1_repr/run_r1b.py": "628131903a5aa26d1a0fc352a81668427450254c95284f3bcff15aecd31c035b",
+  "mission-04/experiments/r1_repr/run_r1c.py": "0512e73c6b572d79021558b617275a7fc9939caaf6cc20f84b817cbea4cd6121",
+  "mission-04/experiments/r1_repr/run_r1d.py": "18d3e7f2ed9d2e43ff610532b6238cf009b4d4fc302e8a04573406fac4d9c63e",
+  "mission-04/experiments/a0_uniqueness/uniqueness.py": "56a5c09ca82b5817b4df6804e79e6a2863f57e37e5fd5e59fb3e459995b9aa97",
+  "mission-04/experiments/a0_uniqueness/resolve_unknown.py": "6d527ffce04c53630d1c4b95d3a58e917cb5a929a2481d66ee24304fa1a4197f",
+  "mission-04/experiments/a0_uniqueness/rerun_arc.py": "1b40b2118d8571c9004bf138aa0db22d309ed8d0293024fac6a11784ef20b762",
+  "mission-03/experiments/arc/m_disc.py": "727797f9ac2ee1195f33657725147936fdc24aa6aa4a414ea677b11d337a8a4a"
+ },
+ "frozen_at": "2026-10-20T15:53:08"
+}
