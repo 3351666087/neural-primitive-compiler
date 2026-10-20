@@ -1,0 +1,539 @@
+{
+  "kind": "synth",
+  "environment": {
+    "npc": "0.1.0",
+    "python": "3.12.13",
+    "z3": "5.3.1",
+    "machine": "arm64",
+    "system": "Darwin",
+    "time": "2026-10-20T04:58:45"
+  },
+  "spec": {
+    "name": "D02",
+    "inputs": [
+      "a",
+      "b"
+    ],
+    "outputs": [
+      "y"
+    ],
+    "assume": "true",
+    "guarantee": "y <-> prev(since(once[2,2](modcount[2](a; b) == 0), a))",
+    "warmup": 0,
+    "assume_mode": "inclusive"
+  },
+  "synthesis": {
+    "status": "TIMEOUT",
+    "method": "cegis",
+    "network": null,
+    "stats": null,
+    "iterations": 24,
+    "candidates": 0,
+    "n_examples": 26,
+    "examples": [
+      {
+        "a": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "b": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "b": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "b": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "a": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "b": [
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "b": [
+          0,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "b": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      }
+    ],
+    "synth_time_s": 298.3887,
+    "verify_time_s": 0.7496,
+    "total_time_s": 300.0047,
+    "verification": [],
+    "detail": {
+      "holes": 36,
+      "template": "fc3"
+    },
+    "log": [
+      "iter 1: candidate refuted by bmc (len 5); added counterexample",
+      "iter 2: candidate refuted by bmc (len 5); added counterexample",
+      "iter 3: candidate refuted by bmc (len 3); added counterexample",
+      "iter 4: candidate refuted by bmc (len 3); added counterexample",
+      "iter 5: candidate refuted by bmc (len 7); added counterexample",
+      "iter 6: candidate refuted by bmc (len 4); added counterexample",
+      "iter 7: candidate refuted by bmc (len 4); added counterexample",
+      "iter 8: candidate refuted by bmc (len 6); added counterexample",
+      "iter 9: candidate refuted by bmc (len 7); added counterexample",
+      "iter 10: candidate refuted by bmc (len 7); added counterexample",
+      "iter 11: candidate refuted by bmc (len 5); added counterexample",
+      "iter 12: candidate refuted by bmc (len 6); added counterexample",
+      "iter 13: candidate refuted by bmc (len 4); added counterexample",
+      "iter 14: candidate refuted by bmc (len 8); added counterexample",
+      "iter 15: candidate refuted by bmc (len 5); added counterexample",
+      "iter 16: candidate refuted by bmc (len 6); added counterexample",
+      "iter 17: candidate refuted by bmc (len 7); added counterexample",
+      "iter 18: candidate refuted by bmc (len 6); added counterexample",
+      "iter 19: candidate refuted by bmc (len 4); added counterexample",
+      "iter 20: candidate refuted by bmc (len 8); added counterexample",
+      "iter 21: candidate refuted by bmc (len 8); added counterexample",
+      "iter 22: candidate refuted by bmc (len 7); added counterexample",
+      "iter 23: candidate refuted by bmc (len 7); added counterexample",
+      "iter 24: solver unknown (canceled)"
+    ]
+  },
+  "note": "This is a verification record, not an independently checkable proof object. Re-run `npc verify` on the stored network and spec to re-establish every claim."
+}

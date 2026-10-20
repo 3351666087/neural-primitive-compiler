@@ -33,6 +33,16 @@ CEGIS time = neuron-search time (all sizes tried) + synapse-minimisation time.
 | C2_parity_dense | n=1:UNREALIZABLE, n=2:SOLVED | n=1:UNREALIZABLE, n=2:SOLVED |
 | C3_latched_alarm | n=1:UNREALIZABLE, n=2:SOLVED | n=1:UNREALIZABLE, n=2:SOLVED |
 
+## Q2 sweep: integrate-and-fire vs memoryless-only neurons (CEGIS neuron search, same template ranges)
+
+| task | min FSM states | IF trail | memoryless trail |
+|---|---|---|---|
+| count2_reset | 3 | n=1:SOLVED | n=1:UNREALIZABLE, n=2:SOLVED |
+| count3_reset | 4 | n=1:SOLVED | n=1:UNREALIZABLE, n=2:UNREALIZABLE, n=3:TIMEOUT |
+| count4_reset | 5 | n=1:UNREALIZABLE, n=2:TIMEOUT | n=1:UNREALIZABLE, n=2:UNREALIZABLE, n=3:TIMEOUT |
+| window2of3 | 6 | n=1:SOLVED | n=1:SOLVED |
+| window3of4 | 10 | n=1:UNREALIZABLE, n=2:SOLVED | n=1:UNREALIZABLE, n=2:SOLVED |
+
 ## Q3 scaling: monolithic vs compositional (explicit-state) verification
 
 | family | N | neurons | mono states | mono time s | comp abstract states | comp time s (+proofs) | comp cached s | BMC(N+6) s |

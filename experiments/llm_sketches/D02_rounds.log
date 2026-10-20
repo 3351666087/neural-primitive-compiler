@@ -1,0 +1,17 @@
+spec D02  inputs=['a', 'b'] outputs=['y']
+  guarantee y <-> prev(since(once[2,2](modcount[2](a; b) == 0), a))
+method=sketch status=TIMEOUT iterations=25 candidates=1 examples=27 time=300.02s (synth 300.02s, verify 0.00s)
+wrote experiments/llm_sketches/D02_round3_result.json
+spec D02  inputs=['a', 'b'] outputs=['y']
+  guarantee y <-> prev(since(once[2,2](modcount[2](a; b) == 0), a))
+method=cegis status=TIMEOUT iterations=24 candidates=0 examples=26 time=300.00s (synth 298.39s, verify 0.75s)
+  iter 17: candidate refuted by bmc (len 7); added counterexample
+  iter 18: candidate refuted by bmc (len 6); added counterexample
+  iter 19: candidate refuted by bmc (len 4); added counterexample
+  iter 20: candidate refuted by bmc (len 8); added counterexample
+  iter 21: candidate refuted by bmc (len 8); added counterexample
+  iter 22: candidate refuted by bmc (len 7); added counterexample
+  iter 23: candidate refuted by bmc (len 7); added counterexample
+  iter 24: solver unknown (canceled)
+wrote experiments/D_unseen/D02_cegis_n3_300s.json
+done: 2

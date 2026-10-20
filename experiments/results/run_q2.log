@@ -1,0 +1,11 @@
+count2_reset if SOLVED [{'n': 1, 'status': 'SOLVED', 'iterations': 11, 'time_s': 2.139, 'holes': 10}]
+count2_reset memoryless SOLVED [{'n': 1, 'status': 'UNREALIZABLE', 'iterations': 7, 'time_s': 0.458, 'holes': 10}, {'n': 2, 'status': 'SOLVED', 'iterations': 15, 'time_s': 5.575, 'holes': 22}]
+count3_reset if SOLVED [{'n': 1, 'status': 'SOLVED', 'iterations': 16, 'time_s': 2.989, 'holes': 10}]
+count3_reset memoryless TIMEOUT [{'n': 1, 'status': 'UNREALIZABLE', 'iterations': 7, 'time_s': 0.202, 'holes': 10}, {'n': 2, 'status': 'UNREALIZABLE', 'iterations': 8, 'time_s': 1.996, 'holes': 22}, {'n': 3, 'status': 'TIMEOUT', 'iterations': 21, 'time_s': 237.803, 'holes': 36}]
+count4_reset if TIMEOUT [{'n': 1, 'status': 'UNREALIZABLE', 'iterations': 13, 'time_s': 6.524, 'holes': 10}, {'n': 2, 'status': 'TIMEOUT', 'iterations': 34, 'time_s': 233.477, 'holes': 22}]
+count4_reset memoryless TIMEOUT [{'n': 1, 'status': 'UNREALIZABLE', 'iterations': 5, 'time_s': 0.147, 'holes': 10}, {'n': 2, 'status': 'UNREALIZABLE', 'iterations': 13, 'time_s': 5.105, 'holes': 22}, {'n': 3, 'status': 'TIMEOUT', 'iterations': 23, 'time_s': 234.749, 'holes': 36}]
+window2of3 if SOLVED [{'n': 1, 'status': 'SOLVED', 'iterations': 2, 'time_s': 0.052, 'holes': 7}]
+window2of3 memoryless SOLVED [{'n': 1, 'status': 'SOLVED', 'iterations': 2, 'time_s': 0.031, 'holes': 7}]
+window3of4 if SOLVED [{'n': 1, 'status': 'UNREALIZABLE', 'iterations': 4, 'time_s': 0.148, 'holes': 7}, {'n': 2, 'status': 'SOLVED', 'iterations': 18, 'time_s': 31.389, 'holes': 16}]
+window3of4 memoryless SOLVED [{'n': 1, 'status': 'UNREALIZABLE', 'iterations': 2, 'time_s': 0.028, 'holes': 7}, {'n': 2, 'status': 'SOLVED', 'iterations': 11, 'time_s': 3.804, 'holes': 16}]
+done: 0

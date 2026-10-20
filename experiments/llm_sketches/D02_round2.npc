@@ -1,0 +1,55 @@
+# Round 2 for D02, written AFTER round 1 failed (D02_llm1: UNSAT in its structure) and after seeing that blind
+# CEGIS proved n=2 impossible and timed out at n=3. No solution was visible at that point.
+# Diagnosis (SKILL step 6, start-up class): the spec gates the loop with once[2,2](M), which is FALSE for t < 2,
+# so the "even parity" signal must be silent at start-up. Round 1 encoded it as NOT(odd), which is TRUE at start-up.
+# Fix: a positive even-parity neuron E (2-neuron block E,F with solver-filled weights, bias and initial potential),
+# read by Y with a positive weight: Y(t) = a(t-1) | (E(t-1) & Y(t-1)).
+network D02_llm2 {
+  maxdelay 2
+  inputs a, b
+  neuron Y threshold=?[1,4] leak=full vmax=6
+  neuron E threshold=?[1,3] leak=full bias=?[-1,2] init=?[-2,0] vmin=-3 vmax=4
+  neuron F threshold=?[1,3] leak=full bias=?[-1,2] init=?[-2,0] vmin=-3 vmax=4
+  synapse a -> Y weight=?[0,4] delay=1
+  synapse Y -> Y weight=?[0,3] delay=1
+  synapse E -> Y weight=?[0,3] delay=1
+  synapse a -> E weight=?[-3,3] delay=1..2
+  synapse b -> E weight=?[-3,3] delay=1..2
+  synapse E -> E weight=?[-3,3] delay=1
+  synapse F -> E weight=?[-3,3] delay=1
+  synapse a -> F weight=?[-3,3] delay=1..2
+  synapse b -> F weight=?[-3,3] delay=1..2
+  synapse E -> F weight=?[-3,3] delay=1
+  synapse F -> F weight=?[-3,3] delay=1
+  output y = Y
+}
+
+# Round 3 (after round 2 was also UNSAT in its structure; semantics re-checked against the spec evaluator on
+# 2000 random traces: my reading of D02 is correct, so the block is too small). Same idea, 3-neuron parity block.
+network D02_llm3 {
+  maxdelay 2
+  inputs a, b
+  neuron Y threshold=?[1,4] leak=full vmax=6
+  neuron E threshold=?[1,3] leak=full bias=?[-1,2] init=?[-2,0] vmin=-3 vmax=4
+  neuron F threshold=?[1,3] leak=full bias=?[-1,2] init=?[-2,0] vmin=-3 vmax=4
+  neuron G threshold=?[1,3] leak=full bias=?[-1,2] init=?[-2,0] vmin=-3 vmax=4
+  synapse a -> Y weight=?[0,4] delay=1
+  synapse Y -> Y weight=?[0,3] delay=1
+  synapse E -> Y weight=?[0,3] delay=1
+  synapse a -> E weight=?[-3,3] delay=1..2
+  synapse b -> E weight=?[-3,3] delay=1..2
+  synapse E -> E weight=?[-3,3] delay=1
+  synapse F -> E weight=?[-3,3] delay=1
+  synapse G -> E weight=?[-3,3] delay=1
+  synapse a -> F weight=?[-3,3] delay=1..2
+  synapse b -> F weight=?[-3,3] delay=1..2
+  synapse E -> F weight=?[-3,3] delay=1
+  synapse F -> F weight=?[-3,3] delay=1
+  synapse G -> F weight=?[-3,3] delay=1
+  synapse a -> G weight=?[-3,3] delay=1..2
+  synapse b -> G weight=?[-3,3] delay=1..2
+  synapse E -> G weight=?[-3,3] delay=1
+  synapse F -> G weight=?[-3,3] delay=1
+  synapse G -> G weight=?[-3,3] delay=1
+  output y = Y
+}

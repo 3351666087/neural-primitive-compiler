@@ -24,6 +24,7 @@ demo:
 	$(NPC) realize experiments/tasks.npc --spec C2_parity_dense
 	-$(NPC) synth experiments/tasks.npc --spec C2_parity_dense --method cegis --timeout 120 --out out/C2_cegis.json
 	-$(NPC) realize examples/parity_latency1.npc --spec parity_latency1
+	@echo "(exit code 1 from the last step is expected: Theorem 3 proves parity at latency 1 unrealizable)"
 
 experiments:
 	$(BIN)/python experiments/run_experiments.py abc

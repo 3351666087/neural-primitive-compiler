@@ -1,0 +1,751 @@
+[
+  {
+    "task": "count2_reset",
+    "guarantee": "y <-> prev(a & !r & (modcount[2](a; r) == 0))",
+    "fsm_states": 3,
+    "if": {
+      "status": "SOLVED",
+      "trail": [
+        {
+          "n": 1,
+          "status": "SOLVED",
+          "iterations": 11,
+          "time_s": 2.139,
+          "holes": 10
+        }
+      ],
+      "time_s": 2.14,
+      "stats": {
+        "neurons": 1,
+        "synapses": 2,
+        "max_abs_weight": 3,
+        "max_delay_used": 1,
+        "memoryless_neurons": 0,
+        "recurrent_synapses": 0,
+        "potential_bits": 3,
+        "history_bits": 2,
+        "state_bits": 5
+      },
+      "network": {
+        "format": "npc-network/1",
+        "name": "fc1",
+        "inputs": [
+          "a",
+          "r"
+        ],
+        "outputs": {
+          "y": "n0"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n0",
+            "threshold": 3,
+            "leak": 1,
+            "bias": 1,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "n0",
+            "weight": -3,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    },
+    "memoryless": {
+      "status": "SOLVED",
+      "trail": [
+        {
+          "n": 1,
+          "status": "UNREALIZABLE",
+          "iterations": 7,
+          "time_s": 0.458,
+          "holes": 10
+        },
+        {
+          "n": 2,
+          "status": "SOLVED",
+          "iterations": 15,
+          "time_s": 5.575,
+          "holes": 22
+        }
+      ],
+      "time_s": 6.04,
+      "stats": {
+        "neurons": 2,
+        "synapses": 11,
+        "max_abs_weight": 3,
+        "max_delay_used": 2,
+        "memoryless_neurons": 2,
+        "recurrent_synapses": 4,
+        "potential_bits": 0,
+        "history_bits": 6,
+        "state_bits": 6
+      },
+      "network": {
+        "format": "npc-network/1",
+        "name": "fc2",
+        "inputs": [
+          "a",
+          "r"
+        ],
+        "outputs": {
+          "y": "n0"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n0",
+            "threshold": 3,
+            "leak": 7,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          },
+          {
+            "name": "n1",
+            "threshold": 2,
+            "leak": 7,
+            "bias": 1,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 2,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 1,
+            "delay": 2
+          },
+          {
+            "src": "r",
+            "dst": "n0",
+            "weight": -3,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "n0",
+            "weight": -2,
+            "delay": 2
+          },
+          {
+            "src": "n0",
+            "dst": "n0",
+            "weight": -3,
+            "delay": 1
+          },
+          {
+            "src": "n1",
+            "dst": "n0",
+            "weight": 2,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "n1",
+            "weight": 1,
+            "delay": 2
+          },
+          {
+            "src": "r",
+            "dst": "n1",
+            "weight": -3,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "n1",
+            "weight": -3,
+            "delay": 2
+          },
+          {
+            "src": "n0",
+            "dst": "n1",
+            "weight": -2,
+            "delay": 1
+          },
+          {
+            "src": "n1",
+            "dst": "n1",
+            "weight": 1,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    }
+  },
+  {
+    "task": "count3_reset",
+    "guarantee": "y <-> prev(a & !r & (modcount[3](a; r) == 0))",
+    "fsm_states": 4,
+    "if": {
+      "status": "SOLVED",
+      "trail": [
+        {
+          "n": 1,
+          "status": "SOLVED",
+          "iterations": 16,
+          "time_s": 2.989,
+          "holes": 10
+        }
+      ],
+      "time_s": 2.99,
+      "stats": {
+        "neurons": 1,
+        "synapses": 2,
+        "max_abs_weight": 3,
+        "max_delay_used": 1,
+        "memoryless_neurons": 0,
+        "recurrent_synapses": 0,
+        "potential_bits": 3,
+        "history_bits": 2,
+        "state_bits": 5
+      },
+      "network": {
+        "format": "npc-network/1",
+        "name": "fc1",
+        "inputs": [
+          "a",
+          "r"
+        ],
+        "outputs": {
+          "y": "n0"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n0",
+            "threshold": 4,
+            "leak": 1,
+            "bias": 1,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "n0",
+            "weight": -3,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    },
+    "memoryless": {
+      "status": "TIMEOUT",
+      "trail": [
+        {
+          "n": 1,
+          "status": "UNREALIZABLE",
+          "iterations": 7,
+          "time_s": 0.202,
+          "holes": 10
+        },
+        {
+          "n": 2,
+          "status": "UNREALIZABLE",
+          "iterations": 8,
+          "time_s": 1.996,
+          "holes": 22
+        },
+        {
+          "n": 3,
+          "status": "TIMEOUT",
+          "iterations": 21,
+          "time_s": 237.803,
+          "holes": 36
+        }
+      ],
+      "time_s": 240.02,
+      "stats": null,
+      "network": null
+    }
+  },
+  {
+    "task": "count4_reset",
+    "guarantee": "y <-> prev(a & !r & (modcount[4](a; r) == 0))",
+    "fsm_states": 5,
+    "if": {
+      "status": "TIMEOUT",
+      "trail": [
+        {
+          "n": 1,
+          "status": "UNREALIZABLE",
+          "iterations": 13,
+          "time_s": 6.524,
+          "holes": 10
+        },
+        {
+          "n": 2,
+          "status": "TIMEOUT",
+          "iterations": 34,
+          "time_s": 233.477,
+          "holes": 22
+        }
+      ],
+      "time_s": 240.01,
+      "stats": null,
+      "network": null
+    },
+    "memoryless": {
+      "status": "TIMEOUT",
+      "trail": [
+        {
+          "n": 1,
+          "status": "UNREALIZABLE",
+          "iterations": 5,
+          "time_s": 0.147,
+          "holes": 10
+        },
+        {
+          "n": 2,
+          "status": "UNREALIZABLE",
+          "iterations": 13,
+          "time_s": 5.105,
+          "holes": 22
+        },
+        {
+          "n": 3,
+          "status": "TIMEOUT",
+          "iterations": 23,
+          "time_s": 234.749,
+          "holes": 36
+        }
+      ],
+      "time_s": 240.02,
+      "stats": null,
+      "network": null
+    }
+  },
+  {
+    "task": "window2of3",
+    "guarantee": "y <-> prev(count[3](a) >= 2)",
+    "fsm_states": 6,
+    "if": {
+      "status": "SOLVED",
+      "trail": [
+        {
+          "n": 1,
+          "status": "SOLVED",
+          "iterations": 2,
+          "time_s": 0.052,
+          "holes": 7
+        }
+      ],
+      "time_s": 0.05,
+      "stats": {
+        "neurons": 1,
+        "synapses": 4,
+        "max_abs_weight": 3,
+        "max_delay_used": 3,
+        "memoryless_neurons": 0,
+        "recurrent_synapses": 1,
+        "potential_bits": 3,
+        "history_bits": 4,
+        "state_bits": 7
+      },
+      "network": {
+        "format": "npc-network/1",
+        "name": "fc1",
+        "inputs": [
+          "a"
+        ],
+        "outputs": {
+          "y": "n0"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n0",
+            "threshold": 6,
+            "leak": 4,
+            "bias": 1,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 2,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 3,
+            "delay": 2
+          },
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 3,
+            "delay": 3
+          },
+          {
+            "src": "n0",
+            "dst": "n0",
+            "weight": 1,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    },
+    "memoryless": {
+      "status": "SOLVED",
+      "trail": [
+        {
+          "n": 1,
+          "status": "SOLVED",
+          "iterations": 2,
+          "time_s": 0.031,
+          "holes": 7
+        }
+      ],
+      "time_s": 0.03,
+      "stats": {
+        "neurons": 1,
+        "synapses": 3,
+        "max_abs_weight": 2,
+        "max_delay_used": 3,
+        "memoryless_neurons": 1,
+        "recurrent_synapses": 0,
+        "potential_bits": 0,
+        "history_bits": 3,
+        "state_bits": 3
+      },
+      "network": {
+        "format": "npc-network/1",
+        "name": "fc1",
+        "inputs": [
+          "a"
+        ],
+        "outputs": {
+          "y": "n0"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n0",
+            "threshold": 4,
+            "leak": 7,
+            "bias": 1,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 2,
+            "delay": 2
+          },
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 2,
+            "delay": 3
+          }
+        ],
+        "meta": {}
+      }
+    }
+  },
+  {
+    "task": "window3of4",
+    "guarantee": "y <-> prev(count[4](a) >= 3)",
+    "fsm_states": 10,
+    "if": {
+      "status": "SOLVED",
+      "trail": [
+        {
+          "n": 1,
+          "status": "UNREALIZABLE",
+          "iterations": 4,
+          "time_s": 0.148,
+          "holes": 7
+        },
+        {
+          "n": 2,
+          "status": "SOLVED",
+          "iterations": 18,
+          "time_s": 31.389,
+          "holes": 16
+        }
+      ],
+      "time_s": 31.54,
+      "stats": {
+        "neurons": 2,
+        "synapses": 10,
+        "max_abs_weight": 3,
+        "max_delay_used": 3,
+        "memoryless_neurons": 0,
+        "recurrent_synapses": 4,
+        "potential_bits": 6,
+        "history_bits": 5,
+        "state_bits": 11
+      },
+      "network": {
+        "format": "npc-network/1",
+        "name": "fc2",
+        "inputs": [
+          "a"
+        ],
+        "outputs": {
+          "y": "n0"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n0",
+            "threshold": 7,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          },
+          {
+            "name": "n1",
+            "threshold": 3,
+            "leak": 0,
+            "bias": 1,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 3,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 2,
+            "delay": 2
+          },
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 2,
+            "delay": 3
+          },
+          {
+            "src": "n0",
+            "dst": "n0",
+            "weight": 2,
+            "delay": 1
+          },
+          {
+            "src": "n1",
+            "dst": "n0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "n1",
+            "weight": -3,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "n1",
+            "weight": 3,
+            "delay": 2
+          },
+          {
+            "src": "a",
+            "dst": "n1",
+            "weight": 3,
+            "delay": 3
+          },
+          {
+            "src": "n0",
+            "dst": "n1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "n1",
+            "dst": "n1",
+            "weight": -2,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    },
+    "memoryless": {
+      "status": "SOLVED",
+      "trail": [
+        {
+          "n": 1,
+          "status": "UNREALIZABLE",
+          "iterations": 2,
+          "time_s": 0.028,
+          "holes": 7
+        },
+        {
+          "n": 2,
+          "status": "SOLVED",
+          "iterations": 11,
+          "time_s": 3.804,
+          "holes": 16
+        }
+      ],
+      "time_s": 3.83,
+      "stats": {
+        "neurons": 2,
+        "synapses": 8,
+        "max_abs_weight": 3,
+        "max_delay_used": 3,
+        "memoryless_neurons": 2,
+        "recurrent_synapses": 2,
+        "potential_bits": 0,
+        "history_bits": 4,
+        "state_bits": 4
+      },
+      "network": {
+        "format": "npc-network/1",
+        "name": "fc2",
+        "inputs": [
+          "a"
+        ],
+        "outputs": {
+          "y": "n0"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n0",
+            "threshold": 5,
+            "leak": 7,
+            "bias": 1,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          },
+          {
+            "name": "n1",
+            "threshold": 1,
+            "leak": 7,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 3,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 1,
+            "delay": 2
+          },
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 3,
+            "delay": 3
+          },
+          {
+            "src": "n1",
+            "dst": "n0",
+            "weight": -3,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "n1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "n1",
+            "weight": 1,
+            "delay": 2
+          },
+          {
+            "src": "a",
+            "dst": "n1",
+            "weight": -3,
+            "delay": 3
+          },
+          {
+            "src": "n1",
+            "dst": "n1",
+            "weight": 1,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    }
+  }
+]

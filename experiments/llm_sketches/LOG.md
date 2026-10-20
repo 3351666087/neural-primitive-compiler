@@ -42,3 +42,10 @@ Only `npc realize` was used (SKILL step 3). Predictions written down at the same
 | D18 | `not b(t-5)` from t=5 on | sketch `D18_llm1` (relay + start pulse + biased neuron) |
 | Dhand | latch for "a since r" + integrating output neuron for b-parity, gated by the latch | `Dhand_..._llm1`; fallback `_llm2` with a separate parity neuron |
 | others | plain delays / constants (D00, D03, D04, D07–D11, D15, D19) | trivial, left to the automatic pipeline |
+
+### Outcome summary (group D)
+
+- Round 1: 5 of 6 attempted tasks solved (D06 2n, D16 2n, D17 3n, D18 3n, D-hand 2n); D02 failed (UNSAT in the proposed structure). D-hand fallback `_llm2` also UNSAT.
+- D02 round 2 (start-up fix): UNSAT in structure. Semantics re-checked against the spec evaluator: 0/2000 mismatches, so the reading was right and the decomposition was wrong.
+- D02 round 3 (3-neuron parity block): TIMEOUT at 300 s. Fallback CEGIS with exactly 3 neurons: TIMEOUT at 300 s.
+- Net: an LLM can contribute spec simplification and good decompositions, but it also proposes wrong structures. The solver/verifier caught every one of them (no false acceptances).
