@@ -4,7 +4,7 @@ VENV   := .venv
 BIN    := $(VENV)/bin
 NPC    := $(BIN)/npc
 
-.PHONY: all install test test-fast demo experiments unseen mission02 clean
+.PHONY: all install test test-fast demo experiments unseen mission02 mission03 mission03-arc clean
 
 all: install test demo
 
@@ -40,6 +40,23 @@ mission02:
 	$(BIN)/python -m cog.proofs
 	$(BIN)/python mission-02/experiments/unseen/run_unseen.py run
 	$(BIN)/python mission-02/experiments/unseen/posthoc_third_size.py
+
+mission03:
+	$(BIN)/python mission-03/experiments/p0_leakage/run_leakage.py
+	$(BIN)/python mission-03/experiments/p0_leakage/l2_closure.py
+	$(BIN)/python mission-03/experiments/p1b_concept/run_concept.py
+	$(BIN)/python -c "import sys; sys.path.insert(0, 'mission-03/experiments/p1_composition'); import run_amend34; run_amend34.main(out_name='p1_amend34_v6.json')"
+	$(BIN)/python mission-03/experiments/p1_composition/run_confirm2.py
+	$(BIN)/python mission-03/experiments/p1_composition/run_t2.py
+	$(BIN)/python mission-03/experiments/p2_laws/run_laws.py
+	$(BIN)/python mission-03/experiments/p3_generative/run_gen.py
+	$(BIN)/python mission-03/experiments/p4_closure/run_closure.py
+
+mission03-arc:
+	$(BIN)/python -I mission-03/experiments/arc/run_arc.py selftest
+	$(BIN)/python -I mission-03/experiments/arc/run_arc.py uset
+	$(BIN)/python -I mission-03/experiments/arc/run_arc.py training
+	$(BIN)/python -I mission-03/experiments/arc/run_arc.py evaluation
 
 clean:
 	rm -rf out .pytest_cache .hypothesis
