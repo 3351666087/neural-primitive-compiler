@@ -1,0 +1,350 @@
+{
+ "label": "DRY RUN: self-made twins of ARC-AGI-1 training tasks (DEV); implementation check, not evidence",
+ "pairs": 104,
+ "table": {
+  "a": {
+   "pairs": 34,
+   "blocks-S0-C0": {
+    "canonical_solved": 6,
+    "kept": 3,
+    "retention": 0.5,
+    "twin_solved": 3,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S0-C4": {
+    "canonical_solved": 8,
+    "kept": 7,
+    "retention": 0.875,
+    "twin_solved": 7,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S0-C9": {
+    "canonical_solved": 7,
+    "kept": 6,
+    "retention": 0.857,
+    "twin_solved": 6,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S2-C0": {
+    "canonical_solved": 10,
+    "kept": 6,
+    "retention": 0.6,
+    "twin_solved": 6,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S2-C4": {
+    "canonical_solved": 11,
+    "kept": 11,
+    "retention": 1.0,
+    "twin_solved": 11,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S2-C9": {
+    "canonical_solved": 12,
+    "kept": 12,
+    "retention": 1.0,
+    "twin_solved": 12,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "mdisc-C0": {
+    "canonical_solved": 11,
+    "kept": 10,
+    "retention": 0.909,
+    "twin_solved": 10,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "mdisc-C8": {
+    "canonical_solved": 12,
+    "kept": 9,
+    "retention": 0.75,
+    "twin_solved": 10,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   }
+  },
+  "b": {
+   "pairs": 36,
+   "blocks-S0-C0": {
+    "canonical_solved": 7,
+    "kept": 4,
+    "retention": 0.571,
+    "twin_solved": 4,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S0-C4": {
+    "canonical_solved": 9,
+    "kept": 4,
+    "retention": 0.444,
+    "twin_solved": 4,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S0-C9": {
+    "canonical_solved": 8,
+    "kept": 3,
+    "retention": 0.375,
+    "twin_solved": 3,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S2-C0": {
+    "canonical_solved": 12,
+    "kept": 5,
+    "retention": 0.417,
+    "twin_solved": 5,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S2-C4": {
+    "canonical_solved": 13,
+    "kept": 4,
+    "retention": 0.308,
+    "twin_solved": 5,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S2-C9": {
+    "canonical_solved": 14,
+    "kept": 5,
+    "retention": 0.357,
+    "twin_solved": 6,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "mdisc-C0": {
+    "canonical_solved": 12,
+    "kept": 11,
+    "retention": 0.917,
+    "twin_solved": 11,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "mdisc-C8": {
+    "canonical_solved": 13,
+    "kept": 12,
+    "retention": 0.923,
+    "twin_solved": 13,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   }
+  },
+  "c": {
+   "pairs": 34,
+   "blocks-S0-C0": {
+    "canonical_solved": 6,
+    "kept": 6,
+    "retention": 1.0,
+    "twin_solved": 6,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S0-C4": {
+    "canonical_solved": 8,
+    "kept": 6,
+    "retention": 0.75,
+    "twin_solved": 6,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S0-C9": {
+    "canonical_solved": 7,
+    "kept": 5,
+    "retention": 0.714,
+    "twin_solved": 6,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S2-C0": {
+    "canonical_solved": 10,
+    "kept": 10,
+    "retention": 1.0,
+    "twin_solved": 10,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S2-C4": {
+    "canonical_solved": 11,
+    "kept": 10,
+    "retention": 0.909,
+    "twin_solved": 10,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S2-C9": {
+    "canonical_solved": 12,
+    "kept": 10,
+    "retention": 0.833,
+    "twin_solved": 11,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "mdisc-C0": {
+    "canonical_solved": 11,
+    "kept": 1,
+    "retention": 0.091,
+    "twin_solved": 1,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "mdisc-C8": {
+    "canonical_solved": 12,
+    "kept": 0,
+    "retention": 0.0,
+    "twin_solved": 1,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   }
+  },
+  "multi": {
+   "pairs": 0,
+   "blocks-S0-C0": {
+    "canonical_solved": 0,
+    "kept": 0,
+    "retention": null,
+    "twin_solved": 0,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S0-C4": {
+    "canonical_solved": 0,
+    "kept": 0,
+    "retention": null,
+    "twin_solved": 0,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S0-C9": {
+    "canonical_solved": 0,
+    "kept": 0,
+    "retention": null,
+    "twin_solved": 0,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S2-C0": {
+    "canonical_solved": 0,
+    "kept": 0,
+    "retention": null,
+    "twin_solved": 0,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S2-C4": {
+    "canonical_solved": 0,
+    "kept": 0,
+    "retention": null,
+    "twin_solved": 0,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "blocks-S2-C9": {
+    "canonical_solved": 0,
+    "kept": 0,
+    "retention": null,
+    "twin_solved": 0,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "mdisc-C0": {
+    "canonical_solved": 0,
+    "kept": 0,
+    "retention": null,
+    "twin_solved": 0,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   },
+   "mdisc-C8": {
+    "canonical_solved": 0,
+    "kept": 0,
+    "retention": null,
+    "twin_solved": 0,
+    "twin_wrong": 0,
+    "canonical_wrong": 0
+   }
+  }
+ },
+ "predictions": {
+  "T1": {
+   "verdict": "HOLDS",
+   "C0": 0.5
+  },
+  "T2": {
+   "verdict": "HOLDS",
+   "C0": 0.5,
+   "C4": 0.875
+  },
+  "T3": {
+   "verdict": "HOLDS",
+   "C0": 0.571,
+   "C9": 0.375
+  },
+  "T4": {
+   "verdict": "HOLDS",
+   "parts": [
+    "HOLDS",
+    "HOLDS",
+    "HOLDS"
+   ],
+   "mdisc_C0": 0.091,
+   "mdisc_C8": 0.0,
+   "blocks_C0": 1.0
+  },
+  "T5": {
+   "verdict": "HOLDS",
+   "blocks_part": true,
+   "mdisc_part": true,
+   "twin_wrong": {
+    "blocks-S0-C0": 0,
+    "blocks-S0-C4": 0,
+    "blocks-S0-C9": 0,
+    "blocks-S2-C0": 0,
+    "blocks-S2-C4": 0,
+    "blocks-S2-C9": 0,
+    "mdisc-C0": 0,
+    "mdisc-C8": 0
+   }
+  },
+  "T6": {
+   "verdict": "HOLDS",
+   "blocks_part": true,
+   "mdisc_part": true,
+   "canonical_solved": {
+    "blocks-S0-C0": 7,
+    "blocks-S0-C4": 9,
+    "blocks-S0-C9": 8,
+    "blocks-S2-C0": 12,
+    "blocks-S2-C4": 13,
+    "blocks-S2-C9": 14,
+    "mdisc-C0": 12,
+    "mdisc-C8": 13
+   }
+  },
+  "T7": {
+   "verdict": "HOLDS",
+   "twin_solved": {
+    "blocks-S0-C0": 13,
+    "blocks-S0-C4": 17,
+    "blocks-S0-C9": 15,
+    "blocks-S2-C0": 21,
+    "blocks-S2-C4": 26,
+    "blocks-S2-C9": 29,
+    "mdisc-C0": 22,
+    "mdisc-C8": 24
+   }
+  }
+ },
+ "decisions": {
+  "D1_background_by_evidence_admitted": true,
+  "D2_colour_pooling_admitted": false,
+  "D3_frame_pooling_for_mdisc_admitted": false,
+  "note": "a rule whose class has fewer than MIN_CAN canonical solves for either configuration is not admitted"
+ }
+}
