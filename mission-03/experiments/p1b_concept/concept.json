@@ -1,0 +1,364 @@
+{
+ "rows": [
+  {
+   "uid": "UA0",
+   "command": "CMD3",
+   "true_region_for_scoring_only": "top",
+   "G-free@N3": {
+    "status": "sat",
+    "time_s": 0.0,
+    "region": null,
+    "label_counts": [
+     898,
+     87
+    ],
+    "second_solution": "sat",
+    "second_time_s": 0.0
+   },
+   "G-region@N3": {
+    "status": "sat",
+    "time_s": 0.0,
+    "region": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "label_counts": [
+     726,
+     259
+    ],
+    "second_solution": "unsat",
+    "second_time_s": 0.0
+   },
+   "events@N3": 985,
+   "G-free@N5": {
+    "status": "sat",
+    "time_s": 0.1,
+    "region": null,
+    "label_counts": [
+     892,
+     36
+    ],
+    "second_solution": "sat",
+    "second_time_s": 0.2
+   },
+   "G-region@N5": {
+    "status": "sat",
+    "time_s": 0.1,
+    "region": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      4,
+      0
+     ]
+    ],
+    "label_counts": [
+     628,
+     300
+    ],
+    "second_solution": "unsat",
+    "second_time_s": 0.3
+   },
+   "events@N5": 928,
+   "region_generalisation": {
+    "box_fits": [],
+    "N8": "no box description",
+    "N11": "no box description"
+   }
+  },
+  {
+   "uid": "UA2",
+   "command": "CMD4",
+   "true_region_for_scoring_only": "bottom",
+   "G-free@N3": {
+    "status": "sat",
+    "time_s": 0.0,
+    "region": null,
+    "label_counts": [
+     750,
+     68
+    ],
+    "second_solution": "sat",
+    "second_time_s": 0.0
+   },
+   "G-region@N3": {
+    "status": "sat",
+    "time_s": 0.0,
+    "region": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "label_counts": [
+     624,
+     194
+    ],
+    "second_solution": "unsat",
+    "second_time_s": 0.0
+   },
+   "events@N3": 818,
+   "G-free@N5": {
+    "status": "sat",
+    "time_s": 0.1,
+    "region": null,
+    "label_counts": [
+     774,
+     35
+    ],
+    "second_solution": "sat",
+    "second_time_s": 0.2
+   },
+   "G-region@N5": {
+    "status": "sat",
+    "time_s": 0.1,
+    "region": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      4
+     ]
+    ],
+    "label_counts": [
+     597,
+     212
+    ],
+    "second_solution": "unsat",
+    "second_time_s": 0.3
+   },
+   "events@N5": 809,
+   "region_generalisation": {
+    "box_fits": [],
+    "N8": "no box description",
+    "N11": "no box description"
+   }
+  },
+  {
+   "uid": "UA3",
+   "command": "CMD3",
+   "true_region_for_scoring_only": "top",
+   "G-free@N3": {
+    "status": "sat",
+    "time_s": 0.0,
+    "region": null,
+    "label_counts": [
+     885,
+     100
+    ],
+    "second_solution": "sat",
+    "second_time_s": 0.0
+   },
+   "G-region@N3": {
+    "status": "sat",
+    "time_s": 0.0,
+    "region": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "label_counts": [
+     774,
+     211
+    ],
+    "second_solution": "unsat",
+    "second_time_s": 0.0
+   },
+   "events@N3": 985,
+   "G-free@N5": {
+    "status": "sat",
+    "time_s": 0.1,
+    "region": null,
+    "label_counts": [
+     687,
+     241
+    ],
+    "second_solution": "sat",
+    "second_time_s": 0.3
+   },
+   "G-region@N5": {
+    "status": "sat",
+    "time_s": 0.1,
+    "region": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      4,
+      0
+     ]
+    ],
+    "label_counts": [
+     687,
+     241
+    ],
+    "second_solution": "unsat",
+    "second_time_s": 0.3
+   },
+   "events@N5": 928,
+   "region_generalisation": {
+    "box_fits": [],
+    "N8": "no box description",
+    "N11": "no box description"
+   }
+  },
+  {
+   "uid": "UA4",
+   "command": "CMD4",
+   "true_region_for_scoring_only": "left",
+   "G-free@N3": {
+    "status": "sat",
+    "time_s": 0.0,
+    "region": null,
+    "label_counts": [
+     712,
+     106
+    ],
+    "second_solution": "sat",
+    "second_time_s": 0.0
+   },
+   "G-region@N3": {
+    "status": "sat",
+    "time_s": 0.0,
+    "region": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "label_counts": [
+     698,
+     120
+    ],
+    "second_solution": "unsat",
+    "second_time_s": 0.0
+   },
+   "events@N3": 818,
+   "G-free@N5": {
+    "status": "sat",
+    "time_s": 0.1,
+    "region": null,
+    "label_counts": [
+     654,
+     155
+    ],
+    "second_solution": "sat",
+    "second_time_s": 0.2
+   },
+   "G-region@N5": {
+    "status": "sat",
+    "time_s": 0.1,
+    "region": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ]
+    ],
+    "label_counts": [
+     652,
+     157
+    ],
+    "second_solution": "unsat",
+    "second_time_s": 0.2
+   },
+   "events@N5": 809,
+   "region_generalisation": {
+    "box_fits": [],
+    "N8": "no box description",
+    "N11": "no box description"
+   }
+  }
+ ]
+}
