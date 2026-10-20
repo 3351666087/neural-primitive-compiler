@@ -7,6 +7,7 @@ name = "npc"
 version = "0.1.0"
 description = "Verifiable Neural Primitive Compiler: discrete integrate-and-fire networks, a primitive DSL, SMT/reachability verification and CEGIS synthesis"
 requires-python = ">=3.10"
+license = {text = "MIT"}
 dependencies = ["z3-solver>=4.12", "numpy>=1.24"]
 
 [project.optional-dependencies]
