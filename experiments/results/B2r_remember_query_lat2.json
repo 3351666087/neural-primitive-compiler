@@ -1,0 +1,4412 @@
+{
+  "task": "B2r_remember_query_lat2",
+  "doc": "Same as B2 with latency 2.",
+  "spec": {
+    "name": "B2r_remember_query_lat2",
+    "inputs": [
+      "s",
+      "r",
+      "q"
+    ],
+    "outputs": [
+      "y"
+    ],
+    "assume": "true",
+    "guarantee": "y <-> prev[2](q & since(!r, s & !r))",
+    "warmup": 0,
+    "assume_mode": "inclusive"
+  },
+  "horizon": 8,
+  "fsm": {
+    "machine_states": 6,
+    "minimal_states": 6,
+    "state_bits": 3
+  },
+  "classical": {
+    "info": {
+      "machine_states": 6,
+      "minimal_states": 6,
+      "minimal_state_bits": 3,
+      "status": "COMPILED",
+      "neurons": 50,
+      "W": {
+        "y": [
+          0,
+          0,
+          0
+        ]
+      },
+      "theta": {
+        "y": 1
+      }
+    },
+    "witness": null,
+    "result": {
+      "stats": {
+        "neurons": 50,
+        "synapses": 546,
+        "max_abs_weight": 1,
+        "max_delay_used": 1,
+        "memoryless_neurons": 50,
+        "recurrent_synapses": 402,
+        "potential_bits": 0,
+        "history_bits": 52,
+        "state_bits": 52
+      },
+      "effective_state_bits": 8.618,
+      "reachable_network_states": 393,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 2.1902
+        },
+        "exhaustive": {
+          "status": "RESOURCE_LIMIT",
+          "time_s": 0.0
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0271
+        }
+      },
+      "verify_total_s": 2.2215,
+      "build_time_s": 0.0087,
+      "network": {
+        "format": "npc-network/1",
+        "name": "classical_B2r_remember_query_lat2",
+        "inputs": [
+          "s",
+          "r",
+          "q"
+        ],
+        "outputs": {
+          "y": "Y_y"
+        },
+        "max_delay": 1,
+        "neurons": [
+          {
+            "name": "S",
+            "threshold": 1,
+            "leak": 1,
+            "bias": 0,
+            "reset": 0,
+            "init": 1,
+            "vmin": 0,
+            "vmax": 1
+          },
+          {
+            "name": "N0_000",
+            "threshold": 1,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N0_001",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N0_010",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N0_011",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N0_100",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N0_101",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N0_110",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N0_111",
+            "threshold": 4,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N1_000",
+            "threshold": 1,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N1_001",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N1_010",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N1_011",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N1_100",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N1_101",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N1_110",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N1_111",
+            "threshold": 4,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N2_000",
+            "threshold": 1,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N2_001",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N2_010",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N2_011",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N2_100",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N2_101",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N2_110",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N2_111",
+            "threshold": 4,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N3_000",
+            "threshold": 1,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N3_001",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N3_010",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N3_011",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N3_100",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N3_101",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N3_110",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N3_111",
+            "threshold": 4,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N4_000",
+            "threshold": 1,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N4_001",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N4_010",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N4_011",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N4_100",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N4_101",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N4_110",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N4_111",
+            "threshold": 4,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N5_000",
+            "threshold": 1,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N5_001",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N5_010",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N5_011",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N5_100",
+            "threshold": 2,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N5_101",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N5_110",
+            "threshold": 3,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "N5_111",
+            "threshold": 4,
+            "leak": 4,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 4
+          },
+          {
+            "name": "Y_y",
+            "threshold": 1,
+            "leak": 1,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 1
+          }
+        ],
+        "synapses": [
+          {
+            "src": "s",
+            "dst": "N0_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N0_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N0_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_000",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_001",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_010",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_011",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_110",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_111",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_010",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_011",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_110",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_111",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_010",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_011",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_110",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_111",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_000",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_001",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_010",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_011",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_110",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_111",
+            "dst": "N0_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N0_001",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N0_001",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_000",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_001",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_010",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_011",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_110",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_111",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_010",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_011",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_110",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_111",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_010",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_011",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_110",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_111",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_000",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_001",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_010",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_011",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_110",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_111",
+            "dst": "N0_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N0_010",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N0_010",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_000",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_001",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_010",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_011",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_110",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_111",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_010",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_011",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_110",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_111",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_010",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_011",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_110",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_111",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_000",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_001",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_010",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_011",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_110",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_111",
+            "dst": "N0_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N0_011",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_000",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_001",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_010",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_011",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_110",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_111",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_010",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_011",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_110",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_111",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_010",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_011",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_110",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_111",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_000",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_001",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_010",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_011",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_110",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_111",
+            "dst": "N0_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N0_100",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N0_100",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_000",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_001",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_010",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_011",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_110",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_111",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_010",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_011",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_110",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_111",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_010",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_011",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_110",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_111",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_000",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_001",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_010",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_011",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_110",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_111",
+            "dst": "N0_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N0_101",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_000",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_001",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_010",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_011",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_110",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_111",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_010",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_011",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_110",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_111",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_010",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_011",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_110",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_111",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_000",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_001",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_010",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_011",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_110",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_111",
+            "dst": "N0_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N0_110",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_000",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_001",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_010",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_011",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_110",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_111",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_010",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_011",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_110",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_111",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_010",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_011",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_110",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_111",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_000",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_001",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_010",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_011",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_110",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_111",
+            "dst": "N0_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_000",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_001",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_010",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_011",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_110",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_111",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_010",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_011",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_110",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_111",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_010",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_011",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_110",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_111",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_000",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_001",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_010",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_011",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_110",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_111",
+            "dst": "N0_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N1_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N1_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N1_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_100",
+            "dst": "N1_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_000",
+            "dst": "N1_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_100",
+            "dst": "N1_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_000",
+            "dst": "N1_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_100",
+            "dst": "N1_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_100",
+            "dst": "N1_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N1_001",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N1_001",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N1_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_100",
+            "dst": "N1_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_000",
+            "dst": "N1_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_100",
+            "dst": "N1_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_000",
+            "dst": "N1_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_100",
+            "dst": "N1_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_100",
+            "dst": "N1_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N1_010",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N1_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N1_010",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_100",
+            "dst": "N1_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_000",
+            "dst": "N1_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_100",
+            "dst": "N1_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_000",
+            "dst": "N1_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_100",
+            "dst": "N1_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_100",
+            "dst": "N1_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N1_011",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N1_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N1_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_100",
+            "dst": "N1_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_000",
+            "dst": "N1_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_100",
+            "dst": "N1_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_000",
+            "dst": "N1_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_100",
+            "dst": "N1_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_100",
+            "dst": "N1_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N1_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N1_100",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N1_100",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_100",
+            "dst": "N1_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_000",
+            "dst": "N1_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_100",
+            "dst": "N1_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_000",
+            "dst": "N1_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_100",
+            "dst": "N1_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_100",
+            "dst": "N1_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N1_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N1_101",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N1_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_100",
+            "dst": "N1_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_000",
+            "dst": "N1_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_100",
+            "dst": "N1_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_000",
+            "dst": "N1_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_100",
+            "dst": "N1_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_100",
+            "dst": "N1_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N1_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N1_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N1_110",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_100",
+            "dst": "N1_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_000",
+            "dst": "N1_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_100",
+            "dst": "N1_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_000",
+            "dst": "N1_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_100",
+            "dst": "N1_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_100",
+            "dst": "N1_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N1_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N1_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N1_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_100",
+            "dst": "N1_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_000",
+            "dst": "N1_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_100",
+            "dst": "N1_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_000",
+            "dst": "N1_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_100",
+            "dst": "N1_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_100",
+            "dst": "N1_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N2_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N2_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N2_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_101",
+            "dst": "N2_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_001",
+            "dst": "N2_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_101",
+            "dst": "N2_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_001",
+            "dst": "N2_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_101",
+            "dst": "N2_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_101",
+            "dst": "N2_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N2_001",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N2_001",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N2_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_101",
+            "dst": "N2_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_001",
+            "dst": "N2_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_101",
+            "dst": "N2_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_001",
+            "dst": "N2_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_101",
+            "dst": "N2_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_101",
+            "dst": "N2_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N2_010",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N2_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N2_010",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_101",
+            "dst": "N2_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_001",
+            "dst": "N2_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_101",
+            "dst": "N2_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_001",
+            "dst": "N2_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_101",
+            "dst": "N2_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_101",
+            "dst": "N2_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N2_011",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N2_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N2_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_101",
+            "dst": "N2_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_001",
+            "dst": "N2_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_101",
+            "dst": "N2_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_001",
+            "dst": "N2_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_101",
+            "dst": "N2_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_101",
+            "dst": "N2_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N2_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N2_100",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N2_100",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_101",
+            "dst": "N2_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_001",
+            "dst": "N2_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_101",
+            "dst": "N2_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_001",
+            "dst": "N2_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_101",
+            "dst": "N2_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_101",
+            "dst": "N2_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N2_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N2_101",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N2_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_101",
+            "dst": "N2_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_001",
+            "dst": "N2_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_101",
+            "dst": "N2_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_001",
+            "dst": "N2_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_101",
+            "dst": "N2_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_101",
+            "dst": "N2_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N2_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N2_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N2_110",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_101",
+            "dst": "N2_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_001",
+            "dst": "N2_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_101",
+            "dst": "N2_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_001",
+            "dst": "N2_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_101",
+            "dst": "N2_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_101",
+            "dst": "N2_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N2_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N2_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N2_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_101",
+            "dst": "N2_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_001",
+            "dst": "N2_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_101",
+            "dst": "N2_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_001",
+            "dst": "N2_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_101",
+            "dst": "N2_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_101",
+            "dst": "N2_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N3_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N3_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N3_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_000",
+            "dst": "N3_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_100",
+            "dst": "N3_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_000",
+            "dst": "N3_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_100",
+            "dst": "N3_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N3_001",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N3_001",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N3_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_000",
+            "dst": "N3_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_100",
+            "dst": "N3_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_000",
+            "dst": "N3_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_100",
+            "dst": "N3_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N3_010",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N3_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N3_010",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_000",
+            "dst": "N3_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_100",
+            "dst": "N3_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_000",
+            "dst": "N3_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_100",
+            "dst": "N3_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N3_011",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N3_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N3_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_000",
+            "dst": "N3_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_100",
+            "dst": "N3_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_000",
+            "dst": "N3_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_100",
+            "dst": "N3_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N3_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N3_100",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N3_100",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_000",
+            "dst": "N3_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_100",
+            "dst": "N3_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_000",
+            "dst": "N3_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_100",
+            "dst": "N3_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N3_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N3_101",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N3_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_000",
+            "dst": "N3_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_100",
+            "dst": "N3_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_000",
+            "dst": "N3_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_100",
+            "dst": "N3_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N3_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N3_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N3_110",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_000",
+            "dst": "N3_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_100",
+            "dst": "N3_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_000",
+            "dst": "N3_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_100",
+            "dst": "N3_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N3_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N3_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N3_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_000",
+            "dst": "N3_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_100",
+            "dst": "N3_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_000",
+            "dst": "N3_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_100",
+            "dst": "N3_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N4_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N4_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N4_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_001",
+            "dst": "N4_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_101",
+            "dst": "N4_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_001",
+            "dst": "N4_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_101",
+            "dst": "N4_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N4_001",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N4_001",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N4_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_001",
+            "dst": "N4_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_101",
+            "dst": "N4_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_001",
+            "dst": "N4_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_101",
+            "dst": "N4_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N4_010",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N4_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N4_010",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_001",
+            "dst": "N4_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_101",
+            "dst": "N4_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_001",
+            "dst": "N4_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_101",
+            "dst": "N4_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N4_011",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N4_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N4_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_001",
+            "dst": "N4_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_101",
+            "dst": "N4_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_001",
+            "dst": "N4_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_101",
+            "dst": "N4_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N4_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N4_100",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N4_100",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_001",
+            "dst": "N4_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_101",
+            "dst": "N4_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_001",
+            "dst": "N4_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_101",
+            "dst": "N4_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N4_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N4_101",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N4_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_001",
+            "dst": "N4_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_101",
+            "dst": "N4_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_001",
+            "dst": "N4_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_101",
+            "dst": "N4_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N4_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N4_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N4_110",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_001",
+            "dst": "N4_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_101",
+            "dst": "N4_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_001",
+            "dst": "N4_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_101",
+            "dst": "N4_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N4_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N4_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N4_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_001",
+            "dst": "N4_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_101",
+            "dst": "N4_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_001",
+            "dst": "N4_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_101",
+            "dst": "N4_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N5_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N5_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N5_000",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_010",
+            "dst": "N5_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_011",
+            "dst": "N5_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_110",
+            "dst": "N5_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_111",
+            "dst": "N5_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_010",
+            "dst": "N5_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_011",
+            "dst": "N5_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_110",
+            "dst": "N5_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_111",
+            "dst": "N5_000",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N5_001",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N5_001",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N5_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_010",
+            "dst": "N5_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_011",
+            "dst": "N5_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_110",
+            "dst": "N5_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_111",
+            "dst": "N5_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_010",
+            "dst": "N5_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_011",
+            "dst": "N5_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_110",
+            "dst": "N5_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_111",
+            "dst": "N5_001",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N5_010",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N5_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N5_010",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_010",
+            "dst": "N5_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_011",
+            "dst": "N5_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_110",
+            "dst": "N5_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_111",
+            "dst": "N5_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_010",
+            "dst": "N5_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_011",
+            "dst": "N5_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_110",
+            "dst": "N5_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_111",
+            "dst": "N5_010",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N5_011",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N5_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N5_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_010",
+            "dst": "N5_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_011",
+            "dst": "N5_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_110",
+            "dst": "N5_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_111",
+            "dst": "N5_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_010",
+            "dst": "N5_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_011",
+            "dst": "N5_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_110",
+            "dst": "N5_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_111",
+            "dst": "N5_011",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N5_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N5_100",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N5_100",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_010",
+            "dst": "N5_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_011",
+            "dst": "N5_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_110",
+            "dst": "N5_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_111",
+            "dst": "N5_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_010",
+            "dst": "N5_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_011",
+            "dst": "N5_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_110",
+            "dst": "N5_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_111",
+            "dst": "N5_100",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N5_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N5_101",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N5_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_010",
+            "dst": "N5_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_011",
+            "dst": "N5_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_110",
+            "dst": "N5_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_111",
+            "dst": "N5_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_010",
+            "dst": "N5_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_011",
+            "dst": "N5_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_110",
+            "dst": "N5_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_111",
+            "dst": "N5_101",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N5_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N5_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N5_110",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_010",
+            "dst": "N5_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_011",
+            "dst": "N5_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_110",
+            "dst": "N5_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_111",
+            "dst": "N5_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_010",
+            "dst": "N5_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_011",
+            "dst": "N5_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_110",
+            "dst": "N5_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_111",
+            "dst": "N5_110",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "N5_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N5_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "q",
+            "dst": "N5_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_010",
+            "dst": "N5_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_011",
+            "dst": "N5_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_110",
+            "dst": "N5_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_111",
+            "dst": "N5_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_010",
+            "dst": "N5_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_011",
+            "dst": "N5_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_110",
+            "dst": "N5_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_111",
+            "dst": "N5_111",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_101",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_001",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_101",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_001",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_101",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_001",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_101",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_001",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N4_101",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N5_101",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    }
+  },
+  "direct": {
+    "B2r_direct": {
+      "stats": {
+        "neurons": 3,
+        "synapses": 6,
+        "max_abs_weight": 2,
+        "max_delay_used": 1,
+        "memoryless_neurons": 3,
+        "recurrent_synapses": 3,
+        "potential_bits": 0,
+        "history_bits": 5,
+        "state_bits": 5
+      },
+      "effective_state_bits": 5.0,
+      "reachable_network_states": 32,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0195
+        },
+        "exhaustive": {
+          "status": "RESOURCE_LIMIT",
+          "time_s": 0.0
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0008
+        }
+      },
+      "verify_total_s": 0.0206,
+      "build_time_s": 0.0,
+      "network": {
+        "format": "npc-network/1",
+        "name": "B2r_direct",
+        "inputs": [
+          "s",
+          "r",
+          "q"
+        ],
+        "outputs": {
+          "y": "c.n"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "dq.n",
+            "threshold": 1,
+            "leak": 15,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 15
+          },
+          {
+            "name": "L.m",
+            "threshold": 1,
+            "leak": 15,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 15
+          },
+          {
+            "name": "c.n",
+            "threshold": 2,
+            "leak": 15,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 15
+          }
+        ],
+        "synapses": [
+          {
+            "src": "q",
+            "dst": "dq.n",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "L.m",
+            "dst": "L.m",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "L.m",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "L.m",
+            "weight": -2,
+            "delay": 1
+          },
+          {
+            "src": "dq.n",
+            "dst": "c.n",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "L.m",
+            "dst": "c.n",
+            "weight": 1,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      },
+      "compositional": {
+        "status": "VERIFIED_UNBOUNDED",
+        "abstract_states": 8,
+        "time_s": 0.0003,
+        "proof_time_s": 0.0005
+      }
+    }
+  },
+  "cegis_if": {
+    "status": "TIMEOUT",
+    "method": "cegis",
+    "iterations": 36,
+    "candidates": 0,
+    "counterexamples_used": 37,
+    "synth_time_s": 222.402,
+    "verify_time_s": 0.668,
+    "total_time_s": 240.01,
+    "task_level_parameter_search": "yes: integer parameters found by SMT constraint solving on counterexamples",
+    "gradient_training": false,
+    "detail": {
+      "holes": 28,
+      "template": "fc2",
+      "neuron_search": [
+        {
+          "n": 1,
+          "status": "UNREALIZABLE",
+          "iterations": 25,
+          "time_s": 16.302,
+          "holes": 13
+        },
+        {
+          "n": 2,
+          "status": "TIMEOUT",
+          "iterations": 36,
+          "time_s": 223.698,
+          "holes": 28
+        }
+      ]
+    },
+    "log": [
+      "iter 25: candidate refuted by bmc (len 5); added counterexample",
+      "iter 26: candidate refuted by bmc (len 5); added counterexample",
+      "iter 27: candidate refuted by bmc (len 4); added counterexample",
+      "iter 28: candidate refuted by bmc (len 3); added counterexample",
+      "iter 29: candidate refuted by bmc (len 8); added counterexample",
+      "iter 30: candidate refuted by bmc (len 4); added counterexample",
+      "iter 31: candidate refuted by bmc (len 4); added counterexample",
+      "iter 32: candidate refuted by bmc (len 4); added counterexample",
+      "iter 33: candidate refuted by bmc (len 4); added counterexample",
+      "iter 34: candidate refuted by bmc (len 5); added counterexample",
+      "iter 35: candidate refuted by bmc (len 8); added counterexample",
+      "iter 36: solver unknown (canceled)"
+    ],
+    "neuron_search": [
+      {
+        "n": 1,
+        "status": "UNREALIZABLE",
+        "iterations": 25,
+        "time_s": 16.302,
+        "holes": 13
+      },
+      {
+        "n": 2,
+        "status": "TIMEOUT",
+        "iterations": 36,
+        "time_s": 223.698,
+        "holes": 28
+      }
+    ]
+  },
+  "cegis_memoryless": {
+    "status": "SOLVED",
+    "method": "cegis",
+    "iterations": 42,
+    "candidates": 0,
+    "counterexamples_used": 43,
+    "synth_time_s": 176.687,
+    "verify_time_s": 0.559,
+    "total_time_s": 179.861,
+    "task_level_parameter_search": "yes: as cegis_if, but every neuron forced memoryless (leak=full)",
+    "gradient_training": false,
+    "detail": {
+      "holes": 28,
+      "template": "fc2",
+      "neuron_search": [
+        {
+          "n": 1,
+          "status": "UNREALIZABLE",
+          "iterations": 21,
+          "time_s": 1.795,
+          "holes": 13
+        },
+        {
+          "n": 2,
+          "status": "SOLVED",
+          "iterations": 42,
+          "time_s": 178.049,
+          "holes": 28
+        }
+      ]
+    },
+    "log": [
+      "iter 31: candidate refuted by bmc (len 6); added counterexample",
+      "iter 32: candidate refuted by bmc (len 8); added counterexample",
+      "iter 33: candidate refuted by bmc (len 4); added counterexample",
+      "iter 34: candidate refuted by bmc (len 8); added counterexample",
+      "iter 35: candidate refuted by bmc (len 8); added counterexample",
+      "iter 36: candidate refuted by bmc (len 7); added counterexample",
+      "iter 37: candidate refuted by bmc (len 8); added counterexample",
+      "iter 38: candidate refuted by bmc (len 8); added counterexample",
+      "iter 39: candidate refuted by bmc (len 8); added counterexample",
+      "iter 40: candidate refuted by bmc (len 8); added counterexample",
+      "iter 41: candidate refuted by bmc (len 8); added counterexample",
+      "iter 42: candidate accepted (SOLVED)"
+    ],
+    "result": {
+      "stats": {
+        "neurons": 2,
+        "synapses": 15,
+        "max_abs_weight": 3,
+        "max_delay_used": 3,
+        "memoryless_neurons": 2,
+        "recurrent_synapses": 4,
+        "potential_bits": 0,
+        "history_bits": 10,
+        "state_bits": 10
+      },
+      "effective_state_bits": 8.644,
+      "reachable_network_states": 400,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0148
+        },
+        "exhaustive": {
+          "status": "RESOURCE_LIMIT",
+          "time_s": 0.0
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0112
+        }
+      },
+      "verify_total_s": 0.0263,
+      "build_time_s": 179.8606,
+      "network": {
+        "format": "npc-network/1",
+        "name": "fc2",
+        "inputs": [
+          "s",
+          "r",
+          "q"
+        ],
+        "outputs": {
+          "y": "n0"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n0",
+            "threshold": 5,
+            "leak": 7,
+            "bias": 1,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          },
+          {
+            "name": "n1",
+            "threshold": 2,
+            "leak": 7,
+            "bias": 1,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          }
+        ],
+        "synapses": [
+          {
+            "src": "s",
+            "dst": "n0",
+            "weight": 2,
+            "delay": 2
+          },
+          {
+            "src": "r",
+            "dst": "n0",
+            "weight": -3,
+            "delay": 2
+          },
+          {
+            "src": "r",
+            "dst": "n0",
+            "weight": -1,
+            "delay": 3
+          },
+          {
+            "src": "q",
+            "dst": "n0",
+            "weight": 3,
+            "delay": 2
+          },
+          {
+            "src": "n0",
+            "dst": "n0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "n1",
+            "dst": "n0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "n1",
+            "weight": -3,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "n1",
+            "weight": 3,
+            "delay": 2
+          },
+          {
+            "src": "r",
+            "dst": "n1",
+            "weight": -3,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "n1",
+            "weight": -3,
+            "delay": 2
+          },
+          {
+            "src": "r",
+            "dst": "n1",
+            "weight": -1,
+            "delay": 3
+          },
+          {
+            "src": "q",
+            "dst": "n1",
+            "weight": -3,
+            "delay": 2
+          },
+          {
+            "src": "q",
+            "dst": "n1",
+            "weight": -1,
+            "delay": 3
+          },
+          {
+            "src": "n0",
+            "dst": "n1",
+            "weight": 2,
+            "delay": 1
+          },
+          {
+            "src": "n1",
+            "dst": "n1",
+            "weight": 1,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    },
+    "neuron_search": [
+      {
+        "n": 1,
+        "status": "UNREALIZABLE",
+        "iterations": 21,
+        "time_s": 1.795,
+        "holes": 13
+      },
+      {
+        "n": 2,
+        "status": "SOLVED",
+        "iterations": 42,
+        "time_s": 178.049,
+        "holes": 28
+      }
+    ]
+  },
+  "compose_dag": {
+    "status": "SOLVED",
+    "method": "compose_dag",
+    "iterations": 5,
+    "candidates": 78469,
+    "counterexamples_used": 8,
+    "synth_time_s": 7.618,
+    "verify_time_s": 0.066,
+    "total_time_s": 7.684,
+    "task_level_parameter_search": "structure only: parameters picked from a fixed primitive grid",
+    "gradient_training": false,
+    "detail": {
+      "variants": 24,
+      "max_size": 3,
+      "program": "network synth_B2r_remember_query_lat2 {\n  maxdelay 4\n  inputs s, r, q\n  inst i0 = relay(d=1) in=q\n  inst i1 = latch() set=s rst=r\n  inst i2 = and2() a=i0.out b=i1.out\n  output y = i2.out\n}",
+      "expr": "and2()[relay(d=1)[q], latch()[s, r]]",
+      "restarts": 4
+    },
+    "log": [],
+    "result": {
+      "stats": {
+        "neurons": 3,
+        "synapses": 6,
+        "max_abs_weight": 2,
+        "max_delay_used": 1,
+        "memoryless_neurons": 3,
+        "recurrent_synapses": 3,
+        "potential_bits": 0,
+        "history_bits": 5,
+        "state_bits": 5
+      },
+      "effective_state_bits": 5.0,
+      "reachable_network_states": 32,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0115
+        },
+        "exhaustive": {
+          "status": "RESOURCE_LIMIT",
+          "time_s": 0.0
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0008
+        }
+      },
+      "verify_total_s": 0.0125,
+      "build_time_s": 7.6845,
+      "network": {
+        "format": "npc-network/1",
+        "name": "synth_B2r_remember_query_lat2",
+        "inputs": [
+          "s",
+          "r",
+          "q"
+        ],
+        "outputs": {
+          "y": "i2.n"
+        },
+        "max_delay": 4,
+        "neurons": [
+          {
+            "name": "i0.n",
+            "threshold": 1,
+            "leak": 15,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 15
+          },
+          {
+            "name": "i1.m",
+            "threshold": 1,
+            "leak": 15,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 15
+          },
+          {
+            "name": "i2.n",
+            "threshold": 2,
+            "leak": 15,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 15
+          }
+        ],
+        "synapses": [
+          {
+            "src": "q",
+            "dst": "i0.n",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "i1.m",
+            "dst": "i1.m",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "s",
+            "dst": "i1.m",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "i1.m",
+            "weight": -2,
+            "delay": 1
+          },
+          {
+            "src": "i0.n",
+            "dst": "i2.n",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "i1.m",
+            "dst": "i2.n",
+            "weight": 1,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    }
+  },
+  "wall_time_s": 429.85
+}

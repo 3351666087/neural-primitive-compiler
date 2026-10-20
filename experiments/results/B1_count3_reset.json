@@ -1,0 +1,1337 @@
+{
+  "task": "B1_count3_reset",
+  "doc": "Every third a since the last reset r (reset wins ties).",
+  "spec": {
+    "name": "B1_count3_reset",
+    "inputs": [
+      "a",
+      "r"
+    ],
+    "outputs": [
+      "y"
+    ],
+    "assume": "true",
+    "guarantee": "y <-> prev(a & !r & (modcount[3](a; r) == 0))",
+    "warmup": 0,
+    "assume_mode": "inclusive"
+  },
+  "horizon": 8,
+  "fsm": {
+    "machine_states": 4,
+    "minimal_states": 4,
+    "state_bits": 2
+  },
+  "classical": {
+    "info": {
+      "machine_states": 4,
+      "minimal_states": 4,
+      "minimal_state_bits": 2,
+      "status": "COMPILED",
+      "neurons": 18,
+      "W": {
+        "y": [
+          1,
+          -1
+        ]
+      },
+      "theta": {
+        "y": 1
+      }
+    },
+    "witness": null,
+    "result": {
+      "stats": {
+        "neurons": 18,
+        "synapses": 117,
+        "max_abs_weight": 1,
+        "max_delay_used": 1,
+        "memoryless_neurons": 18,
+        "recurrent_synapses": 83,
+        "potential_bits": 0,
+        "history_bits": 19,
+        "state_bits": 19
+      },
+      "effective_state_bits": 6.109,
+      "reachable_network_states": 69,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0918
+        },
+        "exhaustive": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.1277
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0016
+        }
+      },
+      "verify_total_s": 0.2222,
+      "build_time_s": 0.0024,
+      "network": {
+        "format": "npc-network/1",
+        "name": "classical_B1_count3_reset",
+        "inputs": [
+          "a",
+          "r"
+        ],
+        "outputs": {
+          "y": "Y_y"
+        },
+        "max_delay": 1,
+        "neurons": [
+          {
+            "name": "S",
+            "threshold": 1,
+            "leak": 1,
+            "bias": 0,
+            "reset": 0,
+            "init": 1,
+            "vmin": 0,
+            "vmax": 1
+          },
+          {
+            "name": "N0_00",
+            "threshold": 1,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N0_01",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N0_10",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N0_11",
+            "threshold": 3,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N1_00",
+            "threshold": 1,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N1_01",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N1_10",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N1_11",
+            "threshold": 3,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N2_00",
+            "threshold": 1,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N2_01",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N2_10",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N2_11",
+            "threshold": 3,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N3_00",
+            "threshold": 1,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N3_01",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N3_10",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N3_11",
+            "threshold": 3,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "Y_y",
+            "threshold": 1,
+            "leak": 2,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": -2,
+            "vmax": 1
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "N0_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N0_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_00",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_01",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_11",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_01",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_11",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_01",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_11",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_00",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_01",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_11",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N0_01",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_00",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_01",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_11",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_01",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_11",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_01",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_11",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_00",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_01",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_11",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N0_10",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_00",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_01",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_11",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_01",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_11",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_01",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_11",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_00",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_01",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_11",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_00",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_01",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_11",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_01",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_11",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_01",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_11",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_00",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_01",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_11",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N1_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N1_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_10",
+            "dst": "N1_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_00",
+            "dst": "N1_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_10",
+            "dst": "N1_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N1_01",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N1_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_10",
+            "dst": "N1_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_00",
+            "dst": "N1_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_10",
+            "dst": "N1_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N1_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N1_10",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_10",
+            "dst": "N1_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_00",
+            "dst": "N1_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_10",
+            "dst": "N1_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N1_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N1_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_10",
+            "dst": "N1_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_00",
+            "dst": "N1_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_10",
+            "dst": "N1_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N2_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N2_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N1_10",
+            "dst": "N2_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_00",
+            "dst": "N2_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N2_01",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N2_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_10",
+            "dst": "N2_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_00",
+            "dst": "N2_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N2_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N2_10",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N1_10",
+            "dst": "N2_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_00",
+            "dst": "N2_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N2_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N2_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_10",
+            "dst": "N2_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_00",
+            "dst": "N2_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N3_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N3_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_10",
+            "dst": "N3_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N3_01",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N3_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_10",
+            "dst": "N3_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N3_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N3_10",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_10",
+            "dst": "N3_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N3_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "N3_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_10",
+            "dst": "N3_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_00",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_01",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_10",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_11",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N1_00",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N1_01",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N1_11",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_01",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_10",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_11",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N3_00",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N3_01",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N3_10",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N3_11",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    }
+  },
+  "direct": {
+    "B1_direct": {
+      "stats": {
+        "neurons": 1,
+        "synapses": 2,
+        "max_abs_weight": 3,
+        "max_delay_used": 1,
+        "memoryless_neurons": 0,
+        "recurrent_synapses": 0,
+        "potential_bits": 2,
+        "history_bits": 2,
+        "state_bits": 4
+      },
+      "effective_state_bits": 3.585,
+      "reachable_network_states": 12,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0309
+        },
+        "exhaustive": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0086
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0002
+        }
+      },
+      "verify_total_s": 0.04,
+      "build_time_s": 0.0,
+      "network": {
+        "format": "npc-network/1",
+        "name": "B1_direct",
+        "inputs": [
+          "a",
+          "r"
+        ],
+        "outputs": {
+          "y": "c.c"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "c.c",
+            "threshold": 3,
+            "leak": 0,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "c.c",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "c.c",
+            "weight": -3,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      },
+      "compositional": {
+        "status": "VERIFIED_UNBOUNDED",
+        "abstract_states": 4,
+        "time_s": 0.0001,
+        "proof_time_s": 0.0005
+      }
+    }
+  },
+  "cegis_if": {
+    "status": "SOLVED",
+    "method": "cegis",
+    "iterations": 11,
+    "candidates": 0,
+    "counterexamples_used": 12,
+    "synth_time_s": 1.667,
+    "verify_time_s": 0.205,
+    "total_time_s": 1.926,
+    "task_level_parameter_search": "yes: integer parameters found by SMT constraint solving on counterexamples",
+    "gradient_training": false,
+    "detail": {
+      "holes": 10,
+      "template": "fc1",
+      "neuron_search": [
+        {
+          "n": 1,
+          "status": "SOLVED",
+          "iterations": 11,
+          "time_s": 1.925,
+          "holes": 10
+        }
+      ],
+      "synapse_minimality_proven": true,
+      "minimization_time_s": 0.09
+    },
+    "log": [
+      "iter 1: candidate refuted by bmc (len 4); added counterexample",
+      "iter 2: candidate refuted by bmc (len 5); added counterexample",
+      "iter 3: candidate refuted by bmc (len 7); added counterexample",
+      "iter 4: candidate refuted by bmc (len 6); added counterexample",
+      "iter 5: candidate refuted by bmc (len 6); added counterexample",
+      "iter 6: candidate refuted by bmc (len 8); added counterexample",
+      "iter 7: candidate refuted by bmc (len 5); added counterexample",
+      "iter 8: candidate refuted by bmc (len 8); added counterexample",
+      "iter 9: candidate refuted by bmc (len 8); added counterexample",
+      "iter 10: candidate refuted by bmc (len 8); added counterexample",
+      "iter 11: candidate accepted (SOLVED)"
+    ],
+    "result": {
+      "stats": {
+        "neurons": 1,
+        "synapses": 2,
+        "max_abs_weight": 3,
+        "max_delay_used": 1,
+        "memoryless_neurons": 0,
+        "recurrent_synapses": 0,
+        "potential_bits": 3,
+        "history_bits": 2,
+        "state_bits": 5
+      },
+      "effective_state_bits": 3.585,
+      "reachable_network_states": 12,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0368
+        },
+        "exhaustive": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0091
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0002
+        }
+      },
+      "verify_total_s": 0.0465,
+      "build_time_s": 1.9264,
+      "network": {
+        "format": "npc-network/1",
+        "name": "fc1",
+        "inputs": [
+          "a",
+          "r"
+        ],
+        "outputs": {
+          "y": "n0"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n0",
+            "threshold": 4,
+            "leak": 1,
+            "bias": 1,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "n0",
+            "weight": -3,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    },
+    "neuron_search": [
+      {
+        "n": 1,
+        "status": "SOLVED",
+        "iterations": 11,
+        "time_s": 1.925,
+        "holes": 10
+      }
+    ]
+  },
+  "cegis_memoryless": {
+    "status": "TIMEOUT",
+    "method": "cegis",
+    "iterations": 24,
+    "candidates": 0,
+    "counterexamples_used": 25,
+    "synth_time_s": 235.502,
+    "verify_time_s": 0.409,
+    "total_time_s": 240.012,
+    "task_level_parameter_search": "yes: as cegis_if, but every neuron forced memoryless (leak=full)",
+    "gradient_training": false,
+    "detail": {
+      "holes": 36,
+      "template": "fc3",
+      "neuron_search": [
+        {
+          "n": 1,
+          "status": "UNREALIZABLE",
+          "iterations": 4,
+          "time_s": 0.105,
+          "holes": 10
+        },
+        {
+          "n": 2,
+          "status": "UNREALIZABLE",
+          "iterations": 11,
+          "time_s": 3.288,
+          "holes": 22
+        },
+        {
+          "n": 3,
+          "status": "TIMEOUT",
+          "iterations": 24,
+          "time_s": 236.602,
+          "holes": 36
+        }
+      ]
+    },
+    "log": [
+      "iter 13: candidate refuted by bmc (len 6); added counterexample",
+      "iter 14: candidate refuted by bmc (len 8); added counterexample",
+      "iter 15: candidate refuted by bmc (len 6); added counterexample",
+      "iter 16: candidate refuted by bmc (len 8); added counterexample",
+      "iter 17: candidate refuted by bmc (len 8); added counterexample",
+      "iter 18: candidate refuted by bmc (len 8); added counterexample",
+      "iter 19: candidate refuted by bmc (len 8); added counterexample",
+      "iter 20: candidate refuted by bmc (len 7); added counterexample",
+      "iter 21: candidate refuted by bmc (len 4); added counterexample",
+      "iter 22: candidate refuted by bmc (len 5); added counterexample",
+      "iter 23: candidate refuted by bmc (len 8); added counterexample",
+      "iter 24: solver unknown (canceled)"
+    ],
+    "neuron_search": [
+      {
+        "n": 1,
+        "status": "UNREALIZABLE",
+        "iterations": 4,
+        "time_s": 0.105,
+        "holes": 10
+      },
+      {
+        "n": 2,
+        "status": "UNREALIZABLE",
+        "iterations": 11,
+        "time_s": 3.288,
+        "holes": 22
+      },
+      {
+        "n": 3,
+        "status": "TIMEOUT",
+        "iterations": 24,
+        "time_s": 236.602,
+        "holes": 36
+      }
+    ]
+  },
+  "compose_dag": {
+    "status": "SOLVED",
+    "method": "compose_dag",
+    "iterations": 2,
+    "candidates": 110,
+    "counterexamples_used": 5,
+    "synth_time_s": 0.011,
+    "verify_time_s": 0.041,
+    "total_time_s": 0.053,
+    "task_level_parameter_search": "structure only: parameters picked from a fixed primitive grid",
+    "gradient_training": false,
+    "detail": {
+      "variants": 24,
+      "max_size": 3,
+      "program": "network synth_B1_count3_reset {\n  maxdelay 4\n  inputs a, r\n  inst i0 = counter(k=3) in=a rst=r\n  output y = i0.out\n}",
+      "expr": "counter(k=3)[a, r]",
+      "restarts": 1
+    },
+    "log": [],
+    "result": {
+      "stats": {
+        "neurons": 1,
+        "synapses": 2,
+        "max_abs_weight": 3,
+        "max_delay_used": 1,
+        "memoryless_neurons": 0,
+        "recurrent_synapses": 0,
+        "potential_bits": 2,
+        "history_bits": 2,
+        "state_bits": 4
+      },
+      "effective_state_bits": 3.585,
+      "reachable_network_states": 12,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0305
+        },
+        "exhaustive": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0115
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0002
+        }
+      },
+      "verify_total_s": 0.0425,
+      "build_time_s": 0.0526,
+      "network": {
+        "format": "npc-network/1",
+        "name": "synth_B1_count3_reset",
+        "inputs": [
+          "a",
+          "r"
+        ],
+        "outputs": {
+          "y": "i0.c"
+        },
+        "max_delay": 4,
+        "neurons": [
+          {
+            "name": "i0.c",
+            "threshold": 3,
+            "leak": 0,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "i0.c",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "r",
+            "dst": "i0.c",
+            "weight": -3,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    }
+  },
+  "wall_time_s": 242.44
+}

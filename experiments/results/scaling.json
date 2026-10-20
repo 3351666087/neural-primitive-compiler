@@ -1,0 +1,752 @@
+[
+  {
+    "family": "relay",
+    "N": 1,
+    "neurons": 1,
+    "spec": "y <-> prev[1](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 2,
+      "network_states": 2,
+      "time_s": 0.0
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 2,
+      "abstract_states": 2,
+      "time_s": 0.0,
+      "proof_time_s": 0.0002,
+      "time_s_cached": 0.0001
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 7,
+      "time_s": 0.0038
+    }
+  },
+  {
+    "family": "relay",
+    "N": 2,
+    "neurons": 2,
+    "spec": "y <-> prev[2](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 4,
+      "network_states": 4,
+      "time_s": 0.0
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 4,
+      "abstract_states": 4,
+      "time_s": 0.0,
+      "proof_time_s": 0.0002,
+      "time_s_cached": 0.0002
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 8,
+      "time_s": 0.0035
+    }
+  },
+  {
+    "family": "relay",
+    "N": 3,
+    "neurons": 3,
+    "spec": "y <-> prev[3](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 8,
+      "network_states": 8,
+      "time_s": 0.0001
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 8,
+      "abstract_states": 8,
+      "time_s": 0.0001,
+      "proof_time_s": 0.0003,
+      "time_s_cached": 0.0003
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 9,
+      "time_s": 0.0047
+    }
+  },
+  {
+    "family": "relay",
+    "N": 4,
+    "neurons": 4,
+    "spec": "y <-> prev[4](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 16,
+      "network_states": 16,
+      "time_s": 0.0001
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 16,
+      "abstract_states": 16,
+      "time_s": 0.0001,
+      "proof_time_s": 0.0004,
+      "time_s_cached": 0.0004
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 10,
+      "time_s": 0.0063
+    }
+  },
+  {
+    "family": "relay",
+    "N": 5,
+    "neurons": 5,
+    "spec": "y <-> prev[5](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 32,
+      "network_states": 32,
+      "time_s": 0.0003
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 32,
+      "abstract_states": 32,
+      "time_s": 0.0006,
+      "proof_time_s": 0.0004,
+      "time_s_cached": 0.0006
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 11,
+      "time_s": 0.0083
+    }
+  },
+  {
+    "family": "relay",
+    "N": 6,
+    "neurons": 6,
+    "spec": "y <-> prev[6](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 64,
+      "network_states": 64,
+      "time_s": 0.0004
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 64,
+      "abstract_states": 64,
+      "time_s": 0.0007,
+      "proof_time_s": 0.0005,
+      "time_s_cached": 0.001
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 12,
+      "time_s": 0.0107
+    }
+  },
+  {
+    "family": "relay",
+    "N": 7,
+    "neurons": 7,
+    "spec": "y <-> prev[7](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 128,
+      "network_states": 128,
+      "time_s": 0.0008
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 128,
+      "abstract_states": 128,
+      "time_s": 0.0015,
+      "proof_time_s": 0.0005,
+      "time_s_cached": 0.0019
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 13,
+      "time_s": 0.013
+    }
+  },
+  {
+    "family": "relay",
+    "N": 8,
+    "neurons": 8,
+    "spec": "y <-> prev[8](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 256,
+      "network_states": 256,
+      "time_s": 0.0017
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 256,
+      "abstract_states": 256,
+      "time_s": 0.0034,
+      "proof_time_s": 0.0006,
+      "time_s_cached": 0.0039
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 14,
+      "time_s": 0.0157
+    }
+  },
+  {
+    "family": "relay",
+    "N": 9,
+    "neurons": 9,
+    "spec": "y <-> prev[9](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 512,
+      "network_states": 512,
+      "time_s": 0.0033
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 512,
+      "abstract_states": 512,
+      "time_s": 0.0073,
+      "proof_time_s": 0.0007,
+      "time_s_cached": 0.0077
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 15,
+      "time_s": 0.0199
+    }
+  },
+  {
+    "family": "relay",
+    "N": 10,
+    "neurons": 10,
+    "spec": "y <-> prev[10](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 1024,
+      "network_states": 1024,
+      "time_s": 0.0074
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 1024,
+      "abstract_states": 1024,
+      "time_s": 0.0189,
+      "proof_time_s": 0.0009,
+      "time_s_cached": 0.0165
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 16,
+      "time_s": 0.0227
+    }
+  },
+  {
+    "family": "relay",
+    "N": 11,
+    "neurons": 11,
+    "spec": "y <-> prev[11](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 2048,
+      "network_states": 2048,
+      "time_s": 0.0144
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 2048,
+      "abstract_states": 2048,
+      "time_s": 0.0361,
+      "proof_time_s": 0.0008,
+      "time_s_cached": 0.0354
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 17,
+      "time_s": 0.0264
+    }
+  },
+  {
+    "family": "relay",
+    "N": 12,
+    "neurons": 12,
+    "spec": "y <-> prev[12](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 4096,
+      "network_states": 4096,
+      "time_s": 0.0296
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 4096,
+      "abstract_states": 4096,
+      "time_s": 0.0742,
+      "proof_time_s": 0.003,
+      "time_s_cached": 0.076
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 18,
+      "time_s": 0.0303
+    }
+  },
+  {
+    "family": "relay",
+    "N": 13,
+    "neurons": 13,
+    "spec": "y <-> prev[13](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 8192,
+      "network_states": 8192,
+      "time_s": 0.0653
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 8192,
+      "abstract_states": 8192,
+      "time_s": 0.1634,
+      "proof_time_s": 0.0009,
+      "time_s_cached": 0.1657
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 19,
+      "time_s": 0.0346
+    }
+  },
+  {
+    "family": "relay",
+    "N": 14,
+    "neurons": 14,
+    "spec": "y <-> prev[14](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 16384,
+      "network_states": 16384,
+      "time_s": 0.1313
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 16384,
+      "abstract_states": 16384,
+      "time_s": 0.3511,
+      "proof_time_s": 0.001,
+      "time_s_cached": 0.3531
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 20,
+      "time_s": 0.0398
+    }
+  },
+  {
+    "family": "counter",
+    "N": 1,
+    "neurons": 1,
+    "spec": "y <-> prev[1](a & modcount[2](a) == 0)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 4,
+      "network_states": 4,
+      "time_s": 0.0001
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 3,
+      "abstract_states": 3,
+      "time_s": 0.0,
+      "proof_time_s": 0.0003,
+      "time_s_cached": 0.0002
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 7,
+      "time_s": 0.0081
+    }
+  },
+  {
+    "family": "counter",
+    "N": 2,
+    "neurons": 2,
+    "spec": "y <-> prev[2](a & modcount[4](a) == 0)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 12,
+      "network_states": 12,
+      "time_s": 0.0003
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 8,
+      "abstract_states": 8,
+      "time_s": 0.0001,
+      "proof_time_s": 0.0005,
+      "time_s_cached": 0.0003
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 8,
+      "time_s": 0.0138
+    }
+  },
+  {
+    "family": "counter",
+    "N": 3,
+    "neurons": 3,
+    "spec": "y <-> prev[3](a & modcount[8](a) == 0)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 32,
+      "network_states": 32,
+      "time_s": 0.0002
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 19,
+      "abstract_states": 19,
+      "time_s": 0.0003,
+      "proof_time_s": 0.0006,
+      "time_s_cached": 0.0009
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 9,
+      "time_s": 0.0142
+    }
+  },
+  {
+    "family": "counter",
+    "N": 4,
+    "neurons": 4,
+    "spec": "y <-> prev[4](a & modcount[16](a) == 0)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 76,
+      "network_states": 76,
+      "time_s": 0.0005
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 43,
+      "abstract_states": 43,
+      "time_s": 0.001,
+      "proof_time_s": 0.0007,
+      "time_s_cached": 0.0014
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 10,
+      "time_s": 0.0166
+    }
+  },
+  {
+    "family": "counter",
+    "N": 5,
+    "neurons": 5,
+    "spec": "y <-> prev[5](a & modcount[32](a) == 0)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 172,
+      "network_states": 172,
+      "time_s": 0.0013
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 92,
+      "abstract_states": 92,
+      "time_s": 0.0021,
+      "proof_time_s": 0.0007,
+      "time_s_cached": 0.0027
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 11,
+      "time_s": 0.0191
+    }
+  },
+  {
+    "family": "counter",
+    "N": 6,
+    "neurons": 6,
+    "spec": "y <-> prev[6](a & modcount[64](a) == 0)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 368,
+      "network_states": 368,
+      "time_s": 0.0028
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 192,
+      "abstract_states": 192,
+      "time_s": 0.0052,
+      "proof_time_s": 0.001,
+      "time_s_cached": 0.0057
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 12,
+      "time_s": 0.023
+    }
+  },
+  {
+    "family": "counter",
+    "N": 7,
+    "neurons": 7,
+    "spec": "y <-> prev[7](a & modcount[128](a) == 0)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 768,
+      "network_states": 768,
+      "time_s": 0.0059
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 395,
+      "abstract_states": 395,
+      "time_s": 0.0125,
+      "proof_time_s": 0.0009,
+      "time_s_cached": 0.0132
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 13,
+      "time_s": 0.0272
+    }
+  },
+  {
+    "family": "counter",
+    "N": 8,
+    "neurons": 8,
+    "spec": "y <-> prev[8](a & modcount[256](a) == 0)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 1580,
+      "network_states": 1580,
+      "time_s": 0.0128
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 803,
+      "abstract_states": 803,
+      "time_s": 0.028,
+      "proof_time_s": 0.0011,
+      "time_s_cached": 0.0311
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 14,
+      "time_s": 0.0331
+    }
+  },
+  {
+    "family": "counter",
+    "N": 9,
+    "neurons": 9,
+    "spec": "y <-> prev[9](a & modcount[512](a) == 0)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 3212,
+      "network_states": 3212,
+      "time_s": 0.026
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 1620,
+      "abstract_states": 1620,
+      "time_s": 0.0629,
+      "proof_time_s": 0.0011,
+      "time_s_cached": 0.065
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 15,
+      "time_s": 0.0394
+    }
+  },
+  {
+    "family": "window",
+    "N": 1,
+    "neurons": 1,
+    "spec": "y -> once[1,2](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 4,
+      "network_states": 4,
+      "time_s": 0.0
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 4,
+      "abstract_states": 3,
+      "time_s": 0.0,
+      "proof_time_s": 0.0002,
+      "time_s_cached": 0.0002
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 7,
+      "time_s": 0.0028
+    }
+  },
+  {
+    "family": "window",
+    "N": 2,
+    "neurons": 2,
+    "spec": "y -> once[1,4](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 16,
+      "network_states": 10,
+      "time_s": 0.0001
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 16,
+      "abstract_states": 7,
+      "time_s": 0.0002,
+      "proof_time_s": 0.0004,
+      "time_s_cached": 0.0003
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 8,
+      "time_s": 0.0041
+    }
+  },
+  {
+    "family": "window",
+    "N": 3,
+    "neurons": 3,
+    "spec": "y -> once[1,6](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 64,
+      "network_states": 22,
+      "time_s": 0.0004
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 64,
+      "abstract_states": 15,
+      "time_s": 0.0008,
+      "proof_time_s": 0.0004,
+      "time_s_cached": 0.001
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 9,
+      "time_s": 0.006
+    }
+  },
+  {
+    "family": "window",
+    "N": 4,
+    "neurons": 4,
+    "spec": "y -> once[1,8](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 256,
+      "network_states": 44,
+      "time_s": 0.0015
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 256,
+      "abstract_states": 29,
+      "time_s": 0.0038,
+      "proof_time_s": 0.0005,
+      "time_s_cached": 0.0041
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 10,
+      "time_s": 0.0083
+    }
+  },
+  {
+    "family": "window",
+    "N": 5,
+    "neurons": 5,
+    "spec": "y -> once[1,10](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 1024,
+      "network_states": 82,
+      "time_s": 0.0062
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 1024,
+      "abstract_states": 53,
+      "time_s": 0.0173,
+      "proof_time_s": 0.0006,
+      "time_s_cached": 0.0179
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 11,
+      "time_s": 0.0102
+    }
+  },
+  {
+    "family": "window",
+    "N": 6,
+    "neurons": 6,
+    "spec": "y -> once[1,12](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 4096,
+      "network_states": 144,
+      "time_s": 0.0258
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 4096,
+      "abstract_states": 91,
+      "time_s": 0.0838,
+      "proof_time_s": 0.0007,
+      "time_s_cached": 0.0993
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 12,
+      "time_s": 0.0316
+    }
+  },
+  {
+    "family": "window",
+    "N": 7,
+    "neurons": 7,
+    "spec": "y -> once[1,14](a)",
+    "monolithic": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 16384,
+      "network_states": 242,
+      "time_s": 0.1202
+    },
+    "compositional": {
+      "status": "VERIFIED_UNBOUNDED",
+      "states": 16384,
+      "abstract_states": 151,
+      "time_s": 0.3824,
+      "proof_time_s": 0.0008,
+      "time_s_cached": 0.3864
+    },
+    "bmc": {
+      "status": "VERIFIED_BOUNDED",
+      "horizon": 13,
+      "time_s": 0.0165
+    }
+  }
+]

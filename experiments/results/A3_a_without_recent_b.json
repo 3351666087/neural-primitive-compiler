@@ -1,0 +1,1503 @@
+{
+  "task": "A3_a_without_recent_b",
+  "doc": "a now, and no b now or in the two previous steps.",
+  "spec": {
+    "name": "A3_a_without_recent_b",
+    "inputs": [
+      "a",
+      "b"
+    ],
+    "outputs": [
+      "y"
+    ],
+    "assume": "true",
+    "guarantee": "y <-> prev(a & !once[0,2](b))",
+    "warmup": 0,
+    "assume_mode": "inclusive"
+  },
+  "horizon": 8,
+  "fsm": {
+    "machine_states": 5,
+    "minimal_states": 4,
+    "state_bits": 2
+  },
+  "classical": {
+    "info": {
+      "machine_states": 5,
+      "minimal_states": 4,
+      "minimal_state_bits": 2,
+      "status": "COMPILED",
+      "neurons": 18,
+      "W": {
+        "y": [
+          1,
+          -1
+        ]
+      },
+      "theta": {
+        "y": 1
+      }
+    },
+    "witness": null,
+    "result": {
+      "stats": {
+        "neurons": 18,
+        "synapses": 112,
+        "max_abs_weight": 1,
+        "max_delay_used": 1,
+        "memoryless_neurons": 18,
+        "recurrent_synapses": 78,
+        "potential_bits": 0,
+        "history_bits": 19,
+        "state_bits": 19
+      },
+      "effective_state_bits": 6.109,
+      "reachable_network_states": 69,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0994
+        },
+        "exhaustive": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.1189
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0015
+        }
+      },
+      "verify_total_s": 0.2207,
+      "build_time_s": 0.0024,
+      "network": {
+        "format": "npc-network/1",
+        "name": "classical_A3_a_without_recent_b",
+        "inputs": [
+          "a",
+          "b"
+        ],
+        "outputs": {
+          "y": "Y_y"
+        },
+        "max_delay": 1,
+        "neurons": [
+          {
+            "name": "S",
+            "threshold": 1,
+            "leak": 1,
+            "bias": 0,
+            "reset": 0,
+            "init": 1,
+            "vmin": 0,
+            "vmax": 1
+          },
+          {
+            "name": "N0_00",
+            "threshold": 1,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N0_01",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N0_10",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N0_11",
+            "threshold": 3,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N1_00",
+            "threshold": 1,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N1_01",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N1_10",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N1_11",
+            "threshold": 3,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N2_00",
+            "threshold": 1,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N2_01",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N2_10",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N2_11",
+            "threshold": 3,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N3_00",
+            "threshold": 1,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N3_01",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N3_10",
+            "threshold": 2,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "N3_11",
+            "threshold": 3,
+            "leak": 3,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          },
+          {
+            "name": "Y_y",
+            "threshold": 1,
+            "leak": 2,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": -2,
+            "vmax": 1
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "N0_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N0_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_00",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_00",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_00",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_10",
+            "dst": "N0_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N0_01",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_00",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_00",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_00",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_10",
+            "dst": "N0_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N0_10",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_00",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_00",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_00",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_10",
+            "dst": "N0_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_00",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_00",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_00",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_10",
+            "dst": "N0_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N1_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N1_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_01",
+            "dst": "N1_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_11",
+            "dst": "N1_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_01",
+            "dst": "N1_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_11",
+            "dst": "N1_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_01",
+            "dst": "N1_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_11",
+            "dst": "N1_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_01",
+            "dst": "N1_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_11",
+            "dst": "N1_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N1_01",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N1_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_01",
+            "dst": "N1_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_11",
+            "dst": "N1_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_01",
+            "dst": "N1_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_11",
+            "dst": "N1_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_01",
+            "dst": "N1_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_11",
+            "dst": "N1_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_01",
+            "dst": "N1_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_11",
+            "dst": "N1_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N1_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N1_10",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_01",
+            "dst": "N1_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_11",
+            "dst": "N1_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_01",
+            "dst": "N1_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_11",
+            "dst": "N1_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_01",
+            "dst": "N1_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_11",
+            "dst": "N1_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_01",
+            "dst": "N1_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_11",
+            "dst": "N1_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N1_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N1_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_01",
+            "dst": "N1_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_11",
+            "dst": "N1_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_01",
+            "dst": "N1_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_11",
+            "dst": "N1_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_01",
+            "dst": "N1_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_11",
+            "dst": "N1_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_01",
+            "dst": "N1_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_11",
+            "dst": "N1_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N2_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N2_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_10",
+            "dst": "N2_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_10",
+            "dst": "N2_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N2_01",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N2_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_10",
+            "dst": "N2_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_10",
+            "dst": "N2_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N2_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N2_10",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_10",
+            "dst": "N2_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_10",
+            "dst": "N2_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N2_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N2_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_10",
+            "dst": "N2_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_10",
+            "dst": "N2_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N3_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N3_00",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N1_00",
+            "dst": "N3_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_10",
+            "dst": "N3_00",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N3_01",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N3_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_00",
+            "dst": "N3_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_10",
+            "dst": "N3_01",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N3_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N3_10",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N1_00",
+            "dst": "N3_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_10",
+            "dst": "N3_10",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N3_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "N3_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_00",
+            "dst": "N3_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_10",
+            "dst": "N3_11",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_01",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_11",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N1_00",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N1_01",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N1_10",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N1_11",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_01",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N2_11",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N3_01",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N3_11",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "Y_y",
+            "weight": -1,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    }
+  },
+  "direct": {
+    "A3_direct": {
+      "stats": {
+        "neurons": 1,
+        "synapses": 4,
+        "max_abs_weight": 1,
+        "max_delay_used": 3,
+        "memoryless_neurons": 1,
+        "recurrent_synapses": 0,
+        "potential_bits": 0,
+        "history_bits": 4,
+        "state_bits": 4
+      },
+      "effective_state_bits": 4.0,
+      "reachable_network_states": 16,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0062
+        },
+        "exhaustive": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0086
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0002
+        }
+      },
+      "verify_total_s": 0.0153,
+      "build_time_s": 0.0,
+      "network": {
+        "format": "npc-network/1",
+        "name": "A3_direct",
+        "inputs": [
+          "a",
+          "b"
+        ],
+        "outputs": {
+          "y": "n"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n",
+            "threshold": 1,
+            "leak": 15,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 15
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "n",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "n",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "n",
+            "weight": -1,
+            "delay": 2
+          },
+          {
+            "src": "b",
+            "dst": "n",
+            "weight": -1,
+            "delay": 3
+          }
+        ],
+        "meta": {}
+      }
+    }
+  },
+  "cegis_if": {
+    "status": "SOLVED",
+    "method": "cegis",
+    "iterations": 4,
+    "candidates": 0,
+    "counterexamples_used": 5,
+    "synth_time_s": 0.022,
+    "verify_time_s": 0.028,
+    "total_time_s": 0.063,
+    "task_level_parameter_search": "yes: integer parameters found by SMT constraint solving on counterexamples",
+    "gradient_training": false,
+    "detail": {
+      "holes": 10,
+      "template": "fc1",
+      "neuron_search": [
+        {
+          "n": 1,
+          "status": "SOLVED",
+          "iterations": 4,
+          "time_s": 0.062,
+          "holes": 10
+        }
+      ],
+      "synapse_minimality_proven": true,
+      "minimization_time_s": 0.033
+    },
+    "log": [
+      "iter 1: candidate refuted by bmc (len 2); added counterexample",
+      "iter 2: candidate refuted by bmc (len 4); added counterexample",
+      "iter 3: candidate refuted by bmc (len 4); added counterexample",
+      "iter 4: candidate accepted (SOLVED)"
+    ],
+    "result": {
+      "stats": {
+        "neurons": 1,
+        "synapses": 4,
+        "max_abs_weight": 3,
+        "max_delay_used": 3,
+        "memoryless_neurons": 0,
+        "recurrent_synapses": 0,
+        "potential_bits": 3,
+        "history_bits": 4,
+        "state_bits": 7
+      },
+      "effective_state_bits": 4.0,
+      "reachable_network_states": 16,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0086
+        },
+        "exhaustive": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0086
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0002
+        }
+      },
+      "verify_total_s": 0.0176,
+      "build_time_s": 0.0626,
+      "network": {
+        "format": "npc-network/1",
+        "name": "fc1",
+        "inputs": [
+          "a",
+          "b"
+        ],
+        "outputs": {
+          "y": "n0"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n0",
+            "threshold": 2,
+            "leak": 2,
+            "bias": 1,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "n0",
+            "weight": -3,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "n0",
+            "weight": -3,
+            "delay": 2
+          },
+          {
+            "src": "b",
+            "dst": "n0",
+            "weight": -2,
+            "delay": 3
+          }
+        ],
+        "meta": {}
+      }
+    },
+    "neuron_search": [
+      {
+        "n": 1,
+        "status": "SOLVED",
+        "iterations": 4,
+        "time_s": 0.062,
+        "holes": 10
+      }
+    ]
+  },
+  "cegis_memoryless": {
+    "status": "SOLVED",
+    "method": "cegis",
+    "iterations": 6,
+    "candidates": 0,
+    "counterexamples_used": 7,
+    "synth_time_s": 0.048,
+    "verify_time_s": 0.028,
+    "total_time_s": 0.096,
+    "task_level_parameter_search": "yes: as cegis_if, but every neuron forced memoryless (leak=full)",
+    "gradient_training": false,
+    "detail": {
+      "holes": 10,
+      "template": "fc1",
+      "neuron_search": [
+        {
+          "n": 1,
+          "status": "SOLVED",
+          "iterations": 6,
+          "time_s": 0.095,
+          "holes": 10
+        }
+      ]
+    },
+    "log": [
+      "iter 1: candidate refuted by bmc (len 8); added counterexample",
+      "iter 2: candidate refuted by bmc (len 5); added counterexample",
+      "iter 3: candidate refuted by bmc (len 4); added counterexample",
+      "iter 4: candidate refuted by bmc (len 4); added counterexample",
+      "iter 5: candidate refuted by bmc (len 6); added counterexample",
+      "iter 6: candidate accepted (SOLVED)"
+    ],
+    "result": {
+      "stats": {
+        "neurons": 1,
+        "synapses": 5,
+        "max_abs_weight": 3,
+        "max_delay_used": 3,
+        "memoryless_neurons": 1,
+        "recurrent_synapses": 0,
+        "potential_bits": 0,
+        "history_bits": 5,
+        "state_bits": 5
+      },
+      "effective_state_bits": 5.0,
+      "reachable_network_states": 32,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0043
+        },
+        "exhaustive": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0083
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0006
+        }
+      },
+      "verify_total_s": 0.0134,
+      "build_time_s": 0.0958,
+      "network": {
+        "format": "npc-network/1",
+        "name": "fc1",
+        "inputs": [
+          "a",
+          "b"
+        ],
+        "outputs": {
+          "y": "n0"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n0",
+            "threshold": 1,
+            "leak": 7,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 2,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": -1,
+            "delay": 2
+          },
+          {
+            "src": "b",
+            "dst": "n0",
+            "weight": -3,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "n0",
+            "weight": -3,
+            "delay": 2
+          },
+          {
+            "src": "b",
+            "dst": "n0",
+            "weight": -3,
+            "delay": 3
+          }
+        ],
+        "meta": {}
+      }
+    },
+    "neuron_search": [
+      {
+        "n": 1,
+        "status": "SOLVED",
+        "iterations": 6,
+        "time_s": 0.095,
+        "holes": 10
+      }
+    ]
+  },
+  "compose_dag": {
+    "status": "EXHAUSTED",
+    "method": "compose_dag",
+    "iterations": 0,
+    "candidates": 78795,
+    "counterexamples_used": 4,
+    "synth_time_s": 6.923,
+    "verify_time_s": 0.0,
+    "total_time_s": 6.923,
+    "task_level_parameter_search": "structure only: parameters picked from a fixed primitive grid",
+    "gradient_training": false,
+    "detail": {
+      "variants": 24,
+      "max_size": 3,
+      "restarts": 0
+    },
+    "log": []
+  },
+  "enumerate": {
+    "status": "SOLVED",
+    "method": "enumerate",
+    "iterations": 4,
+    "candidates": 595,
+    "counterexamples_used": 5,
+    "synth_time_s": 0.153,
+    "verify_time_s": 0.03,
+    "total_time_s": 0.183,
+    "task_level_parameter_search": "yes: exhaustive enumeration of integer parameters",
+    "gradient_training": false,
+    "detail": {
+      "holes": 8,
+      "space": 8748
+    },
+    "log": [],
+    "result": {
+      "stats": {
+        "neurons": 1,
+        "synapses": 4,
+        "max_abs_weight": 1,
+        "max_delay_used": 3,
+        "memoryless_neurons": 0,
+        "recurrent_synapses": 0,
+        "potential_bits": 2,
+        "history_bits": 4,
+        "state_bits": 6
+      },
+      "effective_state_bits": 4.0,
+      "reachable_network_states": 16,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0066
+        },
+        "exhaustive": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.008
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0002
+        }
+      },
+      "verify_total_s": 0.015,
+      "build_time_s": 0.1831,
+      "network": {
+        "format": "npc-network/1",
+        "name": "fc1",
+        "inputs": [
+          "a",
+          "b"
+        ],
+        "outputs": {
+          "y": "n0"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n0",
+            "threshold": 1,
+            "leak": 0,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "n0",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "n0",
+            "weight": -1,
+            "delay": 2
+          },
+          {
+            "src": "b",
+            "dst": "n0",
+            "weight": -1,
+            "delay": 3
+          }
+        ],
+        "meta": {}
+      }
+    },
+    "space": 8748
+  },
+  "cegis_same_template": {
+    "status": "SOLVED",
+    "method": "cegis",
+    "iterations": 3,
+    "candidates": 0,
+    "counterexamples_used": 4,
+    "synth_time_s": 0.025,
+    "verify_time_s": 0.02,
+    "total_time_s": 0.062,
+    "task_level_parameter_search": "yes: SMT on the same small template as `enumerate`",
+    "gradient_training": false,
+    "detail": {
+      "holes": 8,
+      "template": "fc1"
+    },
+    "log": [
+      "iter 1: candidate refuted by bmc (len 5); added counterexample",
+      "iter 2: candidate refuted by bmc (len 6); added counterexample",
+      "iter 3: candidate accepted (SOLVED)"
+    ],
+    "result": {
+      "stats": {
+        "neurons": 1,
+        "synapses": 4,
+        "max_abs_weight": 1,
+        "max_delay_used": 3,
+        "memoryless_neurons": 0,
+        "recurrent_synapses": 0,
+        "potential_bits": 2,
+        "history_bits": 4,
+        "state_bits": 6
+      },
+      "effective_state_bits": 4.0,
+      "reachable_network_states": 16,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0073
+        },
+        "exhaustive": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0079
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0002
+        }
+      },
+      "verify_total_s": 0.0156,
+      "build_time_s": 0.0618,
+      "network": {
+        "format": "npc-network/1",
+        "name": "fc1",
+        "inputs": [
+          "a",
+          "b"
+        ],
+        "outputs": {
+          "y": "n0"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n0",
+            "threshold": 1,
+            "leak": 1,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 3
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "n0",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "b",
+            "dst": "n0",
+            "weight": -1,
+            "delay": 2
+          },
+          {
+            "src": "b",
+            "dst": "n0",
+            "weight": -1,
+            "delay": 3
+          }
+        ],
+        "meta": {}
+      }
+    }
+  },
+  "wall_time_s": 7.66
+}

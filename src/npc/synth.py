@@ -266,8 +266,11 @@ def minimize_synapses(template: Network, spec: Spec, first: SynthResult, T: int 
             continue
         proven = r.status == UNREALIZABLE
         break
+    elapsed = time.perf_counter() - t0
     best.detail["synapse_minimality_proven"] = proven
-    best.detail["minimization_time_s"] = round(time.perf_counter() - t0, 3)
+    best.detail["minimization_time_s"] = round(elapsed, 3)
+    best.detail["search_time_s"] = round(first.total_time_s, 3)
+    best.total_time_s = first.total_time_s + elapsed  # search that found the first solution + minimisation
     return best
 
 

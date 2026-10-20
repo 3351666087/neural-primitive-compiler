@@ -99,8 +99,4 @@ make experiments
 
 ## 关于 Git
 
-本次开发环境的沙箱禁止在项目目录内写 `.git/config`，因此仓库没有提交历史，我们也没有绕过这一限制。建立历史：
-
-```bash
-git init && git add -A && git commit -m "Research Mission 01: verifiable neural primitive compiler"
-```
+开发环境的命令沙箱禁止写入 `.git/config`。获得用户明确许可后，所有 git 操作改在用户的终端面板中执行（不受沙箱限制）。提交历史按阶段记录：工具链 → A–C 结果 → 冻结 → D 组 → 最终评估。D 组的冻结点同时由 SHA-256 清单和一次提交标记。

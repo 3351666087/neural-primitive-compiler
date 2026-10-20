@@ -40,6 +40,30 @@ def features(netd):
             "self_loops": len(self_loops), "bias_neurons": [n["name"] for n in ns if n["bias"] != 0]}
 
 
+def ablate(netd, spec):
+    """Which features of a network are load-bearing? Remove each and re-check unboundedly."""
+    import sys
+    sys.path.insert(0, str(ROOT.parent / "src"))
+    from dataclasses import replace
+    from npc.network import Network, full_leak
+    from npc.verify import Status, reach
+    net = Network.from_dict(netd)
+    out = {}
+    for n in net.neurons:
+        if not n.memoryless:
+            alt = replace(n, leak=full_leak(n.vmin, n.vmax), reset=0)
+            m = replace(net, neurons=tuple(alt if x.name == n.name else x for x in net.neurons))
+            out[f"{n.name}: leak->memoryless"] = reach(m, spec).status == Status.VERIFIED_UNBOUNDED
+        if n.bias != 0:
+            m = replace(net, neurons=tuple(replace(x, bias=0) if x.name == n.name else x for x in net.neurons))
+            out[f"{n.name}: bias->0"] = reach(m, spec).status == Status.VERIFIED_UNBOUNDED
+    rec = [s for s in net.synapses if s.src in net.neuron_names]
+    if rec:
+        m = replace(net, synapses=tuple(s for s in net.synapses if s not in rec))
+        out["drop all recurrent synapses"] = reach(m, spec).status == Status.VERIFIED_UNBOUNDED
+    return out
+
+
 def main():
     rows = {}
     for t in TASKS:
@@ -109,6 +133,20 @@ def main():
         e = r["cegis_if"].get("result")
         if e:
             out.append(f"| {t} | {e['stats']['neurons']} | {json.dumps(features(e['network']))} |")
+    import sys
+    sys.path.insert(0, str(ROOT.parent / "src"))
+    from npc.spec import Spec, parse
+    out += ["", "## H6 ablation: does the network still verify (unbounded) after removing a feature?", "",
+            "`True` = feature is NOT needed (an arbitrary solver choice); `False` = load-bearing.", "",
+            "| task | network | ablation results |", "|---|---|---|"]
+    for t, r in rows.items():
+        sd = r["spec"]
+        spec = Spec(sd["name"], tuple(sd["inputs"]), tuple(sd["outputs"]), parse(sd["assume"]), parse(sd["guarantee"]),
+                    sd["warmup"], sd["assume_mode"])
+        for lab in ("cegis_if", "cegis_memoryless"):
+            e = r.get(lab, {}).get("result")
+            if e:
+                out.append(f"| {t} | {lab} | {json.dumps(ablate(e['network'], spec))} |")
     (RES / "HYPOTHESES_CHECK.md").write_text("\n".join(out) + "\n")
     print("\n".join(out))
 

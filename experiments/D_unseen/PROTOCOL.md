@@ -5,6 +5,8 @@ Goal: reduce the risk that the synthesiser was tuned to the demo tasks.
 1. **Freeze.** After groups A–C have run, and before any group-D task exists, `run_unseen.py freeze`
    hashes every file under `src/npc/` (sorted path + SHA-256 of content) into
    `freeze-manifest.json`. The tree hash is the SHA-256 of the concatenated per-file lines.
+   The manifest is committed to git on its own (commit message starts with "Freeze") before
+   `generate` is run, so the history also shows the code existed before the tasks did.
 2. **Generate.** `run_unseen.py generate` refuses to run unless the current `src/npc/` matches the
    manifest. It derives the seed as `int(tree_hash[:16], 16)` and draws 20 specs from the fixed
    generator below. Any later change to the compiler changes the seed, and therefore the tasks,

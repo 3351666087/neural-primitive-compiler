@@ -1,0 +1,820 @@
+{
+  "task": "C2_parity_dense",
+  "doc": "Parity of a (latency 2), no input assumption.",
+  "spec": {
+    "name": "C2_parity_dense",
+    "inputs": [
+      "a"
+    ],
+    "outputs": [
+      "y"
+    ],
+    "assume": "true",
+    "guarantee": "y <-> prev[2](modcount[2](a) == 1)",
+    "warmup": 0,
+    "assume_mode": "inclusive"
+  },
+  "horizon": 8,
+  "fsm": {
+    "machine_states": 4,
+    "minimal_states": 4,
+    "state_bits": 2
+  },
+  "classical": {
+    "info": {
+      "machine_states": 4,
+      "minimal_states": 4,
+      "minimal_state_bits": 2,
+      "status": "COMPILED",
+      "neurons": 10,
+      "W": {
+        "y": [
+          0
+        ]
+      },
+      "theta": {
+        "y": 1
+      }
+    },
+    "witness": null,
+    "result": {
+      "stats": {
+        "neurons": 10,
+        "synapses": 30,
+        "max_abs_weight": 1,
+        "max_delay_used": 1,
+        "memoryless_neurons": 10,
+        "recurrent_synapses": 22,
+        "potential_bits": 0,
+        "history_bits": 10,
+        "state_bits": 10
+      },
+      "effective_state_bits": 4.248,
+      "reachable_network_states": 19,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0223
+        },
+        "exhaustive": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0005
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0002
+        }
+      },
+      "verify_total_s": 0.0232,
+      "build_time_s": 0.0026,
+      "network": {
+        "format": "npc-network/1",
+        "name": "classical_C2_parity_dense",
+        "inputs": [
+          "a"
+        ],
+        "outputs": {
+          "y": "Y_y"
+        },
+        "max_delay": 1,
+        "neurons": [
+          {
+            "name": "S",
+            "threshold": 1,
+            "leak": 1,
+            "bias": 0,
+            "reset": 0,
+            "init": 1,
+            "vmin": 0,
+            "vmax": 1
+          },
+          {
+            "name": "N0_0",
+            "threshold": 1,
+            "leak": 2,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 2
+          },
+          {
+            "name": "N0_1",
+            "threshold": 2,
+            "leak": 2,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 2
+          },
+          {
+            "name": "N1_0",
+            "threshold": 1,
+            "leak": 2,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 2
+          },
+          {
+            "name": "N1_1",
+            "threshold": 2,
+            "leak": 2,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 2
+          },
+          {
+            "name": "N2_0",
+            "threshold": 1,
+            "leak": 2,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 2
+          },
+          {
+            "name": "N2_1",
+            "threshold": 2,
+            "leak": 2,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 2
+          },
+          {
+            "name": "N3_0",
+            "threshold": 1,
+            "leak": 2,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 2
+          },
+          {
+            "name": "N3_1",
+            "threshold": 2,
+            "leak": 2,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 2
+          },
+          {
+            "name": "Y_y",
+            "threshold": 1,
+            "leak": 1,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 1
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "N0_0",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_0",
+            "dst": "N0_0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_0",
+            "dst": "N0_0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N0_1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "S",
+            "dst": "N0_1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_0",
+            "dst": "N0_1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_0",
+            "dst": "N0_1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N1_0",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N0_1",
+            "dst": "N1_0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_1",
+            "dst": "N1_0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N1_1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_1",
+            "dst": "N1_1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_1",
+            "dst": "N1_1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N2_0",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N1_0",
+            "dst": "N2_0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_0",
+            "dst": "N2_0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N2_1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_0",
+            "dst": "N2_1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_0",
+            "dst": "N2_1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N3_0",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "N1_1",
+            "dst": "N3_0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_1",
+            "dst": "N3_0",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "N3_1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_1",
+            "dst": "N3_1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_1",
+            "dst": "N3_1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N0_1",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N1_0",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N2_0",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "N3_1",
+            "dst": "Y_y",
+            "weight": 1,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    }
+  },
+  "direct": {},
+  "cegis_if": {
+    "status": "SOLVED",
+    "method": "cegis+min",
+    "iterations": 1,
+    "candidates": 0,
+    "counterexamples_used": 9,
+    "synth_time_s": 0.257,
+    "verify_time_s": 0.017,
+    "total_time_s": 0.314,
+    "task_level_parameter_search": "yes: integer parameters found by SMT constraint solving on counterexamples",
+    "gradient_training": false,
+    "detail": {
+      "holes": 16,
+      "template": "fc2",
+      "synapse_minimality_proven": true,
+      "minimization_time_s": 1.125
+    },
+    "log": [
+      "iter 1: candidate accepted (SOLVED)"
+    ],
+    "result": {
+      "stats": {
+        "neurons": 2,
+        "synapses": 4,
+        "max_abs_weight": 3,
+        "max_delay_used": 2,
+        "memoryless_neurons": 0,
+        "recurrent_synapses": 2,
+        "potential_bits": 6,
+        "history_bits": 4,
+        "state_bits": 10
+      },
+      "effective_state_bits": 3.585,
+      "reachable_network_states": 12,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0181
+        },
+        "exhaustive": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0004
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0001
+        }
+      },
+      "verify_total_s": 0.0188,
+      "build_time_s": 0.3142,
+      "network": {
+        "format": "npc-network/1",
+        "name": "fc2",
+        "inputs": [
+          "a"
+        ],
+        "outputs": {
+          "y": "n0"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n0",
+            "threshold": 3,
+            "leak": 1,
+            "bias": 1,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          },
+          {
+            "name": "n1",
+            "threshold": 5,
+            "leak": 1,
+            "bias": 1,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": 2,
+            "delay": 2
+          },
+          {
+            "src": "n0",
+            "dst": "n0",
+            "weight": 2,
+            "delay": 1
+          },
+          {
+            "src": "n1",
+            "dst": "n0",
+            "weight": -3,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "n1",
+            "weight": 2,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    },
+    "neuron_search": [
+      {
+        "n": 1,
+        "status": "UNREALIZABLE",
+        "iterations": 1,
+        "time_s": 0.026,
+        "holes": 7
+      },
+      {
+        "n": 2,
+        "status": "SOLVED",
+        "iterations": 8,
+        "time_s": 3.441,
+        "holes": 16
+      }
+    ]
+  },
+  "cegis_memoryless": {
+    "status": "SOLVED",
+    "method": "cegis",
+    "iterations": 2,
+    "candidates": 0,
+    "counterexamples_used": 3,
+    "synth_time_s": 0.231,
+    "verify_time_s": 0.017,
+    "total_time_s": 0.282,
+    "task_level_parameter_search": "yes: as cegis_if, but every neuron forced memoryless (leak=full)",
+    "gradient_training": false,
+    "detail": {
+      "holes": 16,
+      "template": "fc2",
+      "neuron_search": [
+        {
+          "n": 1,
+          "status": "UNREALIZABLE",
+          "iterations": 1,
+          "time_s": 0.014,
+          "holes": 7
+        },
+        {
+          "n": 2,
+          "status": "SOLVED",
+          "iterations": 2,
+          "time_s": 0.267,
+          "holes": 16
+        }
+      ]
+    },
+    "log": [
+      "iter 1: candidate refuted by bmc (len 5); added counterexample",
+      "iter 2: candidate accepted (SOLVED)"
+    ],
+    "result": {
+      "stats": {
+        "neurons": 2,
+        "synapses": 7,
+        "max_abs_weight": 3,
+        "max_delay_used": 2,
+        "memoryless_neurons": 2,
+        "recurrent_synapses": 4,
+        "potential_bits": 0,
+        "history_bits": 4,
+        "state_bits": 4
+      },
+      "effective_state_bits": 3.0,
+      "reachable_network_states": 8,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0083
+        },
+        "exhaustive": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0003
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0001
+        }
+      },
+      "verify_total_s": 0.009,
+      "build_time_s": 0.2819,
+      "network": {
+        "format": "npc-network/1",
+        "name": "fc2",
+        "inputs": [
+          "a"
+        ],
+        "outputs": {
+          "y": "n0"
+        },
+        "max_delay": 3,
+        "neurons": [
+          {
+            "name": "n0",
+            "threshold": 2,
+            "leak": 7,
+            "bias": 1,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          },
+          {
+            "name": "n1",
+            "threshold": 1,
+            "leak": 7,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 7
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "n0",
+            "weight": -2,
+            "delay": 2
+          },
+          {
+            "src": "n0",
+            "dst": "n0",
+            "weight": 2,
+            "delay": 1
+          },
+          {
+            "src": "n1",
+            "dst": "n0",
+            "weight": 3,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "n1",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "n1",
+            "weight": 1,
+            "delay": 2
+          },
+          {
+            "src": "n0",
+            "dst": "n1",
+            "weight": -1,
+            "delay": 1
+          },
+          {
+            "src": "n1",
+            "dst": "n1",
+            "weight": -3,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    },
+    "neuron_search": [
+      {
+        "n": 1,
+        "status": "UNREALIZABLE",
+        "iterations": 1,
+        "time_s": 0.014,
+        "holes": 7
+      },
+      {
+        "n": 2,
+        "status": "SOLVED",
+        "iterations": 2,
+        "time_s": 0.267,
+        "holes": 16
+      }
+    ]
+  },
+  "compose_dag": {
+    "status": "SOLVED",
+    "method": "compose_dag",
+    "iterations": 1,
+    "candidates": 14015,
+    "counterexamples_used": 4,
+    "synth_time_s": 1.344,
+    "verify_time_s": 0.012,
+    "total_time_s": 1.356,
+    "task_level_parameter_search": "structure only: parameters picked from a fixed primitive grid",
+    "gradient_training": false,
+    "detail": {
+      "variants": 24,
+      "max_size": 3,
+      "program": "network synth_C2_parity_dense {\n  maxdelay 4\n  inputs a\n  inst i0 = relay(d=1) in=a\n  inst i1 = counter(k=2) in=a rst=_\n  inst i2 = latch() set=i0.out rst=i1.out\n  output y = i2.out\n}",
+      "expr": "latch()[relay(d=1)[a], counter(k=2)[a, _]]",
+      "restarts": 0
+    },
+    "log": [],
+    "result": {
+      "stats": {
+        "neurons": 3,
+        "synapses": 5,
+        "max_abs_weight": 2,
+        "max_delay_used": 1,
+        "memoryless_neurons": 2,
+        "recurrent_synapses": 3,
+        "potential_bits": 2,
+        "history_bits": 4,
+        "state_bits": 6
+      },
+      "effective_state_bits": 3.0,
+      "reachable_network_states": 8,
+      "verification": {
+        "bmc": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0116
+        },
+        "exhaustive": {
+          "status": "VERIFIED_BOUNDED",
+          "time_s": 0.0003
+        },
+        "reach": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0001
+        }
+      },
+      "verify_total_s": 0.0123,
+      "build_time_s": 1.3564,
+      "network": {
+        "format": "npc-network/1",
+        "name": "synth_C2_parity_dense",
+        "inputs": [
+          "a"
+        ],
+        "outputs": {
+          "y": "i2.m"
+        },
+        "max_delay": 4,
+        "neurons": [
+          {
+            "name": "i0.n",
+            "threshold": 1,
+            "leak": 15,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 15
+          },
+          {
+            "name": "i1.c",
+            "threshold": 2,
+            "leak": 0,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 2
+          },
+          {
+            "name": "i2.m",
+            "threshold": 1,
+            "leak": 15,
+            "bias": 0,
+            "reset": 0,
+            "init": 0,
+            "vmin": 0,
+            "vmax": 15
+          }
+        ],
+        "synapses": [
+          {
+            "src": "a",
+            "dst": "i0.n",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "a",
+            "dst": "i1.c",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "i2.m",
+            "dst": "i2.m",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "i0.n",
+            "dst": "i2.m",
+            "weight": 1,
+            "delay": 1
+          },
+          {
+            "src": "i1.c",
+            "dst": "i2.m",
+            "weight": -2,
+            "delay": 1
+          }
+        ],
+        "meta": {}
+      }
+    }
+  },
+  "compose_cyclic_k2": {
+    "status": "EXHAUSTED",
+    "method": "compose_cyclic",
+    "iterations": 0,
+    "candidates": 49284,
+    "counterexamples_used": 4,
+    "synth_time_s": 9.97,
+    "verify_time_s": 0.0,
+    "total_time_s": 9.97,
+    "task_level_parameter_search": "structure only: parameters picked from a fixed grid",
+    "gradient_training": false,
+    "detail": {
+      "k": 2,
+      "variants": 24
+    },
+    "log": []
+  },
+  "compose_cyclic_k3": {
+    "status": "TIMEOUT",
+    "method": "compose_cyclic",
+    "iterations": 0,
+    "candidates": 1634816,
+    "counterexamples_used": 4,
+    "synth_time_s": 240.0,
+    "verify_time_s": 0.0,
+    "total_time_s": 240.0,
+    "task_level_parameter_search": "structure only: parameters picked from a fixed grid",
+    "gradient_training": false,
+    "detail": {
+      "k": 3,
+      "variants": 24
+    },
+    "log": []
+  },
+  "wall_time_s": 256.27
+}
