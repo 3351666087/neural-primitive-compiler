@@ -1,0 +1,6687 @@
+{
+ "label": "POST-HOC RE-EVALUATION on a split already used once in Mission 03; not a held-out result",
+ "split": "evaluation",
+ "summary": {
+  "M03-M-DISC": {
+   "correct": 6,
+   "wrong": 1,
+   "abstain": 393,
+   "error": 0,
+   "precision": 0.857
+  },
+  "M03-M-DISC-MDL": {
+   "correct": 12,
+   "wrong": 4,
+   "abstain": 384,
+   "error": 0,
+   "precision": 0.75
+  },
+  "M-DISC-fixed": {
+   "correct": 6,
+   "wrong": 1,
+   "abstain": 393,
+   "error": 0,
+   "precision": 0.857
+  },
+  "M-DISC-fixed-strict": {
+   "correct": 4,
+   "wrong": 1,
+   "abstain": 395,
+   "error": 0,
+   "precision": 0.8
+  },
+  "M-DISC-MDL-fixed": {
+   "correct": 10,
+   "wrong": 2,
+   "abstain": 388,
+   "error": 0,
+   "precision": 0.833
+  }
+ },
+ "changed_vs_M03": {
+  "7953d61e": {
+   "M03": "abstain",
+   "fixed": "correct",
+   "why": "answered"
+  },
+  "833dafe3": {
+   "M03": "correct",
+   "fixed": "abstain",
+   "why": "UNKNOWN"
+  }
+ },
+ "rows": {
+  "00576224": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "009d5c81": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "00dbd492": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "03560426": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "05a7bcf2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "0607ce86": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "0692e18c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "070dd51e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "08573cc6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "0934a4d8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "09c534e7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "0a1d4ef5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "0a2355a6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "0b17323b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "0bb8deee": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "0becf7df": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "0c786b71": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "UNKNOWN",
+    "uniqueness": [
+     "UNKNOWN"
+    ],
+    "time_s": 62.08
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "UNKNOWN",
+    "uniqueness": [
+     "UNKNOWN"
+    ],
+    "time_s": 61.284
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "UNKNOWN",
+    "uniqueness": [
+     "UNKNOWN"
+    ],
+    "time_s": 62.523
+   }
+  },
+  "0c9aba6e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "0d87d2a6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "0e671a1a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "0f63c0b9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "103eff5b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "11e1fe23": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "12422b43": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "12997ef3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "12eac192": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "136b0064": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "13713586": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "137f0df0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "140c817e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "14754a24": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "15113be4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "15663ba9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "15696249": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "16b78196": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "17b80ad2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "17cae0c1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "18419cfa": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "184a9768": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "195ba7dc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "1990f7a8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "19bb5feb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "wrong",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "UNKNOWN",
+    "uniqueness": [
+     "UNKNOWN"
+    ],
+    "time_s": 60.777
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "UNKNOWN",
+    "uniqueness": [
+     "UNKNOWN"
+    ],
+    "time_s": 61.159
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "UNKNOWN",
+    "uniqueness": [
+     "UNKNOWN"
+    ],
+    "time_s": 60.796
+   }
+  },
+  "1a2e2828": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "wrong",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "AMBIGUOUS",
+    "uniqueness": [
+     "AMBIGUOUS"
+    ],
+    "time_s": 0.871
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "AMBIGUOUS",
+    "uniqueness": [
+     "AMBIGUOUS"
+    ],
+    "time_s": 0.87
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "AMBIGUOUS",
+    "uniqueness": [
+     "AMBIGUOUS"
+    ],
+    "time_s": 1.222
+   }
+  },
+  "1a6449f1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "1acc24af": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "1c02dbbe": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "1c0d0a4b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "1c56ad9f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "1d0a4b61": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "1d398264": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "1da012fc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "1e81d6f9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "1e97544e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "2037f2c7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "2072aba6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "UNKNOWN",
+    "uniqueness": [
+     "UNKNOWN"
+    ],
+    "time_s": 60.402
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "UNKNOWN",
+    "uniqueness": [
+     "UNKNOWN"
+    ],
+    "time_s": 60.488
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 0.952
+   }
+  },
+  "20818e16": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "20981f0e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "212895b5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "21f83797": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "22a4bbc2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "25094a63": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "2546ccf6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "256b0a75": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "2685904e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "2697da3f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "2753e76c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "27a77e38": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "27f8ce4f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "281123b4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "292dd178": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "29700607": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "2a5f8217": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "2b01abd0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "2c0b0aff": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "2c737e39": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "2f0c5170": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "310f3251": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "3194b014": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "conflict",
+    "uniqueness": [
+     "conflict"
+    ],
+    "time_s": 0.677
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "conflict",
+    "uniqueness": [
+     "conflict"
+    ],
+    "time_s": 0.674
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "UNKNOWN (no defined shortest cover)",
+    "uniqueness": [
+     "UNKNOWN (no defined shortest cover)"
+    ],
+    "time_s": 1.512
+   }
+  },
+  "319f2597": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "31adaf00": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "31d5ba1a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "32e9702f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "332efdb3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "3391f8c0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "33b52de3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "3490cc26": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "34b99a2b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "351d6448": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "358ba94e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "37d3e8b2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "3979b1a8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "3a301edc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "3b4c2228": {
+   "M03-M-DISC": "wrong",
+   "M03-M-DISC-MDL": "wrong",
+   "M-DISC-fixed": {
+    "status": "wrong",
+    "reason": "AMBIGUOUS/UNIQUE",
+    "uniqueness": [
+     "UNIQUE",
+     "AMBIGUOUS"
+    ],
+    "time_s": 8.94
+   },
+   "M-DISC-fixed-strict": {
+    "status": "wrong",
+    "reason": "AMBIGUOUS/UNIQUE",
+    "uniqueness": [
+     "UNIQUE",
+     "AMBIGUOUS"
+    ],
+    "time_s": 14.661
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "wrong",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE",
+     "UNIQUE"
+    ],
+    "time_s": 0.91
+   }
+  },
+  "3d31c5b3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "3ed85e70": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "3ee1011a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "3f23242b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "40f6cd08": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "414297c0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "423a55dc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "42918530": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "42a15761": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "4364c1c4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "456873bc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "45737921": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "45bbe264": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "477d2879": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "47996f11": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "48131b3c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "4852f2fa": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "48f8583b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "4aab4007": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "4acc7107": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "4b6b68e5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "4c177718": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "4cd1b7b2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "4e45f183": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "4e469f39": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "4f537728": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "4ff4c9da": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "505fff84": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "506d28a5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "50a16a69": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "50aad11f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "50f325b5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "516b51b7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "5207a7b5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "5289ad53": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "52fd389e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "54db823b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "55059096": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "551d5bf1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "55783887": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "575b1a71": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "5783df64": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "5833af48": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "58743b76": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "58e15b12": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "59341089": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "UNKNOWN",
+    "uniqueness": [
+     "UNKNOWN"
+    ],
+    "time_s": 60.415
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "UNKNOWN",
+    "uniqueness": [
+     "UNKNOWN"
+    ],
+    "time_s": 60.407
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 0.801
+   }
+  },
+  "5a5a2103": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "5af49b42": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "5b526a93": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "5b692c0f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "5b6cbef5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "5d2a5c43": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "5ffb2104": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "604001fa": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "60a26a3e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "60c09cac": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 6.889
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "UNKNOWN (colour not determined by the data)",
+    "uniqueness": [
+     "UNKNOWN (colour not determined by the data)"
+    ],
+    "time_s": 0.139
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 0.56
+   }
+  },
+  "626c0bcc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "62ab2642": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "62b74c02": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "639f5a19": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "642248e4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "642d658d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "conflict",
+    "uniqueness": [
+     "conflict"
+    ],
+    "time_s": 0.541
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "conflict",
+    "uniqueness": [
+     "conflict"
+    ],
+    "time_s": 0.539
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "AMBIGUOUS",
+    "uniqueness": [
+     "AMBIGUOUS"
+    ],
+    "time_s": 1.239
+   }
+  },
+  "64a7c07e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "66e6c45b": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 0.23
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "UNKNOWN (colour not determined by the data)",
+    "uniqueness": [
+     "UNKNOWN (colour not determined by the data)"
+    ],
+    "time_s": 0.128
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 0.298
+   }
+  },
+  "66f2d22f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "67636eac": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "67b4a34d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "67c52801": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "68b67ca3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "692cd3b6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "695367ec": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "696d4842": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "69889d6e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "6a11f6da": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "6ad5bdfd": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "6df30ad6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "6ea4a07e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "6f473927": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "7039b2d7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "705a3229": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "712bf12e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "72207abc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "72a961c9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "73182012": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "73c3b0d8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "73ccf9c2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "759f3fd3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "762cd429": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "770cc55f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "782b5218": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "79369cc6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "7953d61e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 0.436
+   },
+   "M-DISC-fixed-strict": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 0.468
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 0.456
+   }
+  },
+  "79fb03f4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "7bb29440": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "7c8af763": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "7c9b52a0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "7d18a6fb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "7d1f7ee8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "7d419a02": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "7e02026e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "7ee1c6ea": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "817e6c09": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "81c0276b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "833dafe3": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "UNKNOWN",
+    "uniqueness": [
+     "UNKNOWN"
+    ],
+    "time_s": 60.607
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "UNKNOWN (colour not determined by the data)",
+    "uniqueness": [
+     "UNKNOWN (colour not determined by the data)"
+    ],
+    "time_s": 0.229
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "UNKNOWN",
+    "uniqueness": [
+     "UNKNOWN"
+    ],
+    "time_s": 61.38
+   }
+  },
+  "845d6e51": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "84db8fc4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "84f2aca1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "8597cfd7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "85b81ff1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "85fa5666": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "8719f442": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "88207623": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "891232d6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "896d5239": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "8a371977": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "8b28cd80": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "8ba14f53": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "8cb8642d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "8dae5dfc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "8e2edd66": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "8ee62060": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "8fbca751": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "90347967": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "903d1b4a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "9110e3c5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "917bccba": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "929ab4e9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "92e50de0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "9356391f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "93b4f4b3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "93c31fbe": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "94133066": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "94414823": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "94be5b80": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "95a58926": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "963f59bc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "96a8c0cd": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "97239e3d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "9772c176": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "981571dc": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 1.26
+   },
+   "M-DISC-fixed-strict": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 1.269
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 1.883
+   }
+  },
+  "992798f6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "99306f82": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "9a4bb226": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "9b2a60aa": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "9b365c51": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "9b4c17c4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "9bebae7a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "9c1e755f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "9c56f360": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "9caba7c3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "9ddd00f0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "AMBIGUOUS",
+    "uniqueness": [
+     "AMBIGUOUS"
+    ],
+    "time_s": 0.54
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "UNKNOWN (colour not determined by the data)",
+    "uniqueness": [
+     "UNKNOWN (colour not determined by the data)"
+    ],
+    "time_s": 0.234
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "AMBIGUOUS",
+    "uniqueness": [
+     "AMBIGUOUS"
+    ],
+    "time_s": 0.864
+   }
+  },
+  "9def23fe": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "9f27f097": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "a04b2602": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "a096bf4d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "a3f84088": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "a406ac07": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "a57f2f04": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "a59b95c0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "a680ac02": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "a8610ef7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "a934301b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "aa18de87": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "aa300dc3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "aa4ec2a5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "aab50785": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "ac0c5833": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "ac2e8ecf": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "ac3e2b04": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "ac605cbb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "ad7e01d0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "ae58858e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "aee291af": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "af22c60d": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 1.275
+   },
+   "M-DISC-fixed-strict": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 1.266
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 1.867
+   }
+  },
+  "af24b4cc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "b0722778": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "b0f4d537": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "b15fca0b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "b1fc8b8e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "b20f7c8b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "b457fec5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "b4a43f3b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "b7999b51": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "b7cb93ac": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "b7f8a4d8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "b7fb29bc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "b942fd60": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "b9630600": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "ba9d41b8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "baf41dbf": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "bb52a14b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "bbb1b8b6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "bc4146bd": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "bcb3040b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "bd14c3bf": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "be03b35f": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 0.527
+   },
+   "M-DISC-fixed-strict": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 0.439
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 0.582
+   }
+  },
+  "bf32578f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "bf699163": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "bf89d739": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "c074846d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "c1990cce": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "c3202e5a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "c35c1b4c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "c48954c1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "c62e2108": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "c64f1187": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "c658a4bd": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "c663677b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "c6e1b8da": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "c7d4e6ad": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "c87289bb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "c8b7cc0f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "c92b942c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "c97c0139": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "ca8de6ea": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "ca8f78db": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "AMBIGUOUS",
+    "uniqueness": [
+     "AMBIGUOUS"
+    ],
+    "time_s": 20.36
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "UNKNOWN (colour not determined by the data)",
+    "uniqueness": [
+     "UNKNOWN (colour not determined by the data)"
+    ],
+    "time_s": 11.75
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 28.083
+   }
+  },
+  "cad67732": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "cb227835": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "ccd554ac": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "cd3c21df": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "ce039d91": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "ce8d95cc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "cf133acc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "cfb2ce5a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "d017b73f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "d19f7514": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "d282b262": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "d2acf2cb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "d304284e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "d37a1ef5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "d47aa2ff": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "d492a647": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "d4b1c2b1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "d4c90558": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "d56f2372": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "d5c634a2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "d931c21c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "d94c3b52": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "da2b0fe3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "da515329": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "dc2aa30b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "dc2e9a9d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "dd2401ed": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "de493100": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "df8cc377": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e0fb7511": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e133d23d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "wrong",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "UNKNOWN",
+    "uniqueness": [
+     "UNKNOWN"
+    ],
+    "time_s": 60.81
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "UNKNOWN",
+    "uniqueness": [
+     "UNKNOWN"
+    ],
+    "time_s": 60.854
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "wrong",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 3.568
+   }
+  },
+  "e1baa8a4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "e1d2900e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e2092e0c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e21a174a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e345f17b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e4075551": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e41c6fd3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e57337a4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e5790162": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e5c44e8f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e619ca6e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e633a9e5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e66aafb8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "e681b708": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e69241bd": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e6de6e8f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e74e1818": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e760a62e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e7639916": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e78887d1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e7a25a18": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "e7b06bea": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e7dd8335": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e872b94a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "e88171ec": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e95e3d8e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e99362f0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e9ac8c9e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e9b4f6fc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "e9bb6954": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "e9c9d9a1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "ea959feb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "ea9794b1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "ecaa0ec1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "ed74f2f2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "ed98d772": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "UNKNOWN",
+    "uniqueness": [
+     "UNKNOWN"
+    ],
+    "time_s": 60.853
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "UNKNOWN (colour not determined by the data)",
+    "uniqueness": [
+     "UNKNOWN (colour not determined by the data)"
+    ],
+    "time_s": 0.37
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "correct",
+    "reason": "answered",
+    "uniqueness": [
+     "UNIQUE"
+    ],
+    "time_s": 1.875
+   }
+  },
+  "ef26cbf6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "f0afb749": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "f0df5ff0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "f21745ec": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "f3b10344": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "f3cdc58f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "f3e62deb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "f4081712": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "f45f5ca7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "f5aa3634": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no size rule (unchanged by construction)"
+   }
+  },
+  "f5c89df1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "f823c43c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "f83cb3f6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "f8be4b64": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "f9a67cb5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "f9d67f8b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "fafd9572": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "fb791726": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "fc754716": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "fd096ab6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "fd4b2b02": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "fe9372f3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "fea12743": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  },
+  "ff72ca3e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-fixed-strict": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   },
+   "M-DISC-MDL-fixed": {
+    "status": "abstain",
+    "reason": "no cover (unchanged by construction)"
+   }
+  }
+ },
+ "time_s": 1037.2
+}

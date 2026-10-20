@@ -1,0 +1,154 @@
+training cross-check agree 97 disagree []
+evaluation cross-check agree 33 disagree [{'task': 'ca8f78db', 'variant': 'M-DISC-MDL-fixed', 'z3': 'UNIQUE', 'enumeration': 'UNKNOWN (budget)'}]
+{
+ "summary": {
+  "training|M03-M-DISC": {
+   "label": "DEV split (as in Mission 03)",
+   "correct": 29,
+   "wrong": 2,
+   "abstain": 369,
+   "error": 0,
+   "precision": 0.935
+  },
+  "training|M03-M-DISC-MDL": {
+   "label": "DEV split (as in Mission 03)",
+   "correct": 36,
+   "wrong": 3,
+   "abstain": 361,
+   "error": 0,
+   "precision": 0.923
+  },
+  "training|M-DISC-fixed": {
+   "label": "DEV split (as in Mission 03)",
+   "correct": 33,
+   "wrong": 2,
+   "abstain": 365,
+   "error": 0,
+   "precision": 0.943
+  },
+  "training|M-DISC-fixed-strict": {
+   "label": "DEV split (as in Mission 03)",
+   "correct": 19,
+   "wrong": 2,
+   "abstain": 379,
+   "error": 0,
+   "precision": 0.905
+  },
+  "training|M-DISC-MDL-fixed": {
+   "label": "DEV split (as in Mission 03)",
+   "correct": 35,
+   "wrong": 2,
+   "abstain": 363,
+   "error": 0,
+   "precision": 0.946
+  },
+  "evaluation|M03-M-DISC": {
+   "label": "POST-HOC RE-EVALUATION on a split already used once in Mission 03; not a held-out result",
+   "correct": 6,
+   "wrong": 1,
+   "abstain": 393,
+   "error": 0,
+   "precision": 0.857
+  },
+  "evaluation|M03-M-DISC-MDL": {
+   "label": "POST-HOC RE-EVALUATION on a split already used once in Mission 03; not a held-out result",
+   "correct": 12,
+   "wrong": 4,
+   "abstain": 384,
+   "error": 0,
+   "precision": 0.75
+  },
+  "evaluation|M-DISC-fixed": {
+   "label": "POST-HOC RE-EVALUATION on a split already used once in Mission 03; not a held-out result",
+   "correct": 11,
+   "wrong": 1,
+   "abstain": 388,
+   "error": 0,
+   "precision": 0.917
+  },
+  "evaluation|M-DISC-fixed-strict": {
+   "label": "POST-HOC RE-EVALUATION on a split already used once in Mission 03; not a held-out result",
+   "correct": 7,
+   "wrong": 1,
+   "abstain": 392,
+   "error": 0,
+   "precision": 0.875
+  },
+  "evaluation|M-DISC-MDL-fixed": {
+   "label": "POST-HOC RE-EVALUATION on a split already used once in Mission 03; not a held-out result",
+   "correct": 12,
+   "wrong": 2,
+   "abstain": 386,
+   "error": 0,
+   "precision": 0.857
+  }
+ },
+ "changed_vs_M03": {
+  "training|M-DISC-fixed": {
+   "3af2c5a8": [
+    "abstain",
+    "correct"
+   ],
+   "62c24649": [
+    "abstain",
+    "correct"
+   ],
+   "67e8384a": [
+    "abstain",
+    "correct"
+   ],
+   "7fe24cdd": [
+    "abstain",
+    "correct"
+   ]
+  },
+  "training|M-DISC-MDL-fixed": {
+   "88a62173": [
+    "correct",
+    "abstain"
+   ],
+   "963e52fc": [
+    "wrong",
+    "correct"
+   ],
+   "de1cd16c": [
+    "correct",
+    "abstain"
+   ]
+  },
+  "evaluation|M-DISC-fixed": {
+   "0c786b71": [
+    "abstain",
+    "correct"
+   ],
+   "2072aba6": [
+    "abstain",
+    "correct"
+   ],
+   "59341089": [
+    "abstain",
+    "correct"
+   ],
+   "7953d61e": [
+    "abstain",
+    "correct"
+   ],
+   "ed98d772": [
+    "abstain",
+    "correct"
+   ]
+  },
+  "evaluation|M-DISC-MDL-fixed": {
+   "19bb5feb": [
+    "wrong",
+    "abstain"
+   ],
+   "1a2e2828": [
+    "wrong",
+    "abstain"
+   ]
+  }
+ },
+ "time_s": 367.7
+}
+exit 0

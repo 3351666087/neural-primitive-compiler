@@ -17409,6 +17409,47 @@
    }
   }
  },
- "f2a": "run separately: run_r1.py f2a",
- "time_s": 13.6
+ "f2a": {
+  "fold0->fold1": {
+   "macros": 0,
+   "macro_sizes": [],
+   "fold_b_tasks_gained_upper_bound": []
+  },
+  "fold1->fold0": {
+   "macros": 0,
+   "macro_sizes": [],
+   "fold_b_tasks_gained_upper_bound": []
+  }
+ },
+ "time_s": 13.6,
+ "mdisc_fixed_answered": [
+  "0d3d703e",
+  "239be575",
+  "25ff71a9",
+  "2dee498d",
+  "3af2c5a8",
+  "3c9b0459",
+  "496994bd",
+  "4c4377d9",
+  "6150a2bd",
+  "67a3c6ac",
+  "68b16354",
+  "6d0aefbc",
+  "74dd1130",
+  "8e5a5113",
+  "9dfd6313",
+  "a416b8f3",
+  "a79310a0",
+  "b1948b0a",
+  "c59eb873",
+  "c8f0f002",
+  "c9e6f938",
+  "d10ecb37",
+  "d511f180",
+  "d9fac9be",
+  "dae9d2b5",
+  "e3497940",
+  "ed36ccf7",
+  "f25ffba3"
+ ]
 }

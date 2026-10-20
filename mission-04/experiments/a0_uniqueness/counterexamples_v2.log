@@ -1,0 +1,68 @@
+{
+ "C2_cap": {
+  "minimum_covers_exist": 225,
+  "returned_by_m03": 200,
+  "complete_reference": true,
+  "consequence": "uniqueness was checked on the first 200 covers only; a 201st cover with a different prediction would not be seen"
+ },
+ "C3_islice": {
+  "combinations": 343,
+  "inspected_by_m03_mdl": 256
+ },
+ "C4_colour_extension": {
+  "m03_answer": [
+   [
+    2,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    1
+   ],
+   [
+    0,
+    0,
+    0
+   ]
+  ],
+  "fixed_prior_mode": "answered",
+  "fixed_strict_mode": "UNKNOWN (colour not determined by the data)",
+  "note": "a colour function with sigma(1)=1 and sigma(2)=c for any c is equally consistent with training"
+ },
+ "C5_size_rule": {
+  "simplest_rules_rows": [
+   [
+    0,
+    1,
+    0
+   ],
+   [
+    1,
+    0,
+    0
+   ]
+  ],
+  "all_consistent_row_rules": 3,
+  "test_rows_by_consistent_rules": [
+   3,
+   5
+  ],
+  "m03_test_shape": [
+   5,
+   5
+  ]
+ }
+}
+{
+ "trials": 300,
+ "old_answered": 250,
+ "pruning_hid_ambiguity": 10,
+ "verified": 10,
+ "witness_uses_dominated_group": 10,
+ "cap_involved": 0,
+ "old_answer_wrong_among_those": 4,
+ "time_s": 875.2
+}
+exit 0

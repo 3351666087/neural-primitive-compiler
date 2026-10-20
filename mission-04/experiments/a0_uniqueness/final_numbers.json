@@ -1,0 +1,5776 @@
+{
+ "labels": {
+  "training": "DEV split (as in Mission 03)",
+  "evaluation": "POST-HOC RE-EVALUATION on a split already used once in Mission 03; not a held-out result"
+ },
+ "cross_check": {
+  "training": {
+   "agree": 97,
+   "disagree": []
+  },
+  "evaluation": {
+   "agree": 33,
+   "disagree": [
+    {
+     "task": "ca8f78db",
+     "variant": "M-DISC-MDL-fixed",
+     "z3": "UNIQUE",
+     "enumeration": "UNKNOWN (budget)"
+    }
+   ]
+  }
+ },
+ "summary": {
+  "training|M03-M-DISC": {
+   "label": "DEV split (as in Mission 03)",
+   "correct": 29,
+   "wrong": 2,
+   "abstain": 369,
+   "error": 0,
+   "precision": 0.935
+  },
+  "training|M03-M-DISC-MDL": {
+   "label": "DEV split (as in Mission 03)",
+   "correct": 36,
+   "wrong": 3,
+   "abstain": 361,
+   "error": 0,
+   "precision": 0.923
+  },
+  "training|M-DISC-fixed": {
+   "label": "DEV split (as in Mission 03)",
+   "correct": 33,
+   "wrong": 2,
+   "abstain": 365,
+   "error": 0,
+   "precision": 0.943
+  },
+  "training|M-DISC-fixed-strict": {
+   "label": "DEV split (as in Mission 03)",
+   "correct": 19,
+   "wrong": 2,
+   "abstain": 379,
+   "error": 0,
+   "precision": 0.905
+  },
+  "training|M-DISC-MDL-fixed": {
+   "label": "DEV split (as in Mission 03)",
+   "correct": 35,
+   "wrong": 2,
+   "abstain": 363,
+   "error": 0,
+   "precision": 0.946
+  },
+  "evaluation|M03-M-DISC": {
+   "label": "POST-HOC RE-EVALUATION on a split already used once in Mission 03; not a held-out result",
+   "correct": 6,
+   "wrong": 1,
+   "abstain": 393,
+   "error": 0,
+   "precision": 0.857
+  },
+  "evaluation|M03-M-DISC-MDL": {
+   "label": "POST-HOC RE-EVALUATION on a split already used once in Mission 03; not a held-out result",
+   "correct": 12,
+   "wrong": 4,
+   "abstain": 384,
+   "error": 0,
+   "precision": 0.75
+  },
+  "evaluation|M-DISC-fixed": {
+   "label": "POST-HOC RE-EVALUATION on a split already used once in Mission 03; not a held-out result",
+   "correct": 11,
+   "wrong": 1,
+   "abstain": 388,
+   "error": 0,
+   "precision": 0.917
+  },
+  "evaluation|M-DISC-fixed-strict": {
+   "label": "POST-HOC RE-EVALUATION on a split already used once in Mission 03; not a held-out result",
+   "correct": 7,
+   "wrong": 1,
+   "abstain": 392,
+   "error": 0,
+   "precision": 0.875
+  },
+  "evaluation|M-DISC-MDL-fixed": {
+   "label": "POST-HOC RE-EVALUATION on a split already used once in Mission 03; not a held-out result",
+   "correct": 12,
+   "wrong": 2,
+   "abstain": 386,
+   "error": 0,
+   "precision": 0.857
+  }
+ },
+ "changed_vs_M03": {
+  "training|M-DISC-fixed": {
+   "3af2c5a8": [
+    "abstain",
+    "correct"
+   ],
+   "62c24649": [
+    "abstain",
+    "correct"
+   ],
+   "67e8384a": [
+    "abstain",
+    "correct"
+   ],
+   "7fe24cdd": [
+    "abstain",
+    "correct"
+   ]
+  },
+  "training|M-DISC-MDL-fixed": {
+   "88a62173": [
+    "correct",
+    "abstain"
+   ],
+   "963e52fc": [
+    "wrong",
+    "correct"
+   ],
+   "de1cd16c": [
+    "correct",
+    "abstain"
+   ]
+  },
+  "evaluation|M-DISC-fixed": {
+   "0c786b71": [
+    "abstain",
+    "correct"
+   ],
+   "2072aba6": [
+    "abstain",
+    "correct"
+   ],
+   "59341089": [
+    "abstain",
+    "correct"
+   ],
+   "7953d61e": [
+    "abstain",
+    "correct"
+   ],
+   "ed98d772": [
+    "abstain",
+    "correct"
+   ]
+  },
+  "evaluation|M-DISC-MDL-fixed": {
+   "19bb5feb": [
+    "wrong",
+    "abstain"
+   ],
+   "1a2e2828": [
+    "wrong",
+    "abstain"
+   ]
+  }
+ },
+ "rows_training": {
+  "007bbfb7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "00d62c1b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "017c7c7b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "025d127b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "045e512c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0520fde7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "05269061": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "05f2a901": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "06df4c85": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "08ed6ac7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "09629e4f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0962bcdd": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0a938d79": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0b148d64": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0ca9ddb6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0d3d703e": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "0dfd9992": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0e206a2e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "10fcaaa3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "11852cab": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1190e5a7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "137eaa0f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "150deff5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "178fcbfb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1a07d186": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1b2d62fb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1b60fb0c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1bfc4729": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1c786137": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1caeab9d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1cf80156": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1e0a9b12": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1e32b0e9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1f0c79e5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1f642eb9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1f85a75f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1f876c06": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1fad071e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2013d3e2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2204b7a8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "22168020": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "22233c11": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2281f1f4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "228f6490": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "22eb0ac0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "234bbc79": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "23581191": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "239be575": {
+   "M03-M-DISC": "wrong",
+   "M03-M-DISC-MDL": "wrong",
+   "M-DISC-fixed": "wrong",
+   "M-DISC-fixed-strict": "wrong",
+   "M-DISC-MDL-fixed": "wrong"
+  },
+  "23b5c85d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "253bf280": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "25d487eb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "25d8a9c8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "25ff71a9": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "264363fd": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "272f95fa": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "27a28665": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "28bf18c6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "28e73c20": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "29623171": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "29c11459": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "29ec7d0e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2bcee788": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2bee17df": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2c608aff": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2dc579da": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2dd70a9a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2dee498d": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "31aa019c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "321b1fc6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "32597951": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3345333e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3428a4f5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3618c87e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3631a71a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "363442ee": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "36d67576": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "36fdfd69": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3906de3d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "39a8645d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "39e1d7f9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3aa6fb7a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3ac3eb23": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3af2c5a8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "3bd67248": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3bdb4ada": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3befdf3e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3c9b0459": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "3de23699": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3e980e27": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3eda0437": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3f7978a0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "40853293": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4093f84a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "41e4d17e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4258a5f9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4290ef0e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "42a50994": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4347f46a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "444801d8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "445eab21": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "447fd412": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "44d8ac46": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "44f52bb0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4522001f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4612dd53": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "46442a0e": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "469497ad": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "46f33fce": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "47c1f68c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "484b58aa": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "48d8fb45": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4938f0c2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "496994bd": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "49d1d64f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4be741c5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4c4377d9": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "4c5c2cf0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "50846271": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "508bd3b6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "50cb2852": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5117e062": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5168d44c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "539a4f51": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "53b68214": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "543a7ed5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "54d82841": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "54d9e175": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5521c0d9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5582e5ca": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5614dbcf": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "56dc2b01": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "56ff96f3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "57aa92db": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5ad4f10b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5bd6f4ac": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5c0a986e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5c2c9af4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5daaa586": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "60b61512": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6150a2bd": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "623ea044": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "62c24649": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "63613498": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6430c8c4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6455b5f5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "662c240a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "67385a82": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "673ef223": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6773b310": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "67a3c6ac": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "67a423a3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "67e8384a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "681b3aeb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6855a6e4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "68b16354": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "694f12f3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6a1e5592": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6aa20dc0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6b9890af": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6c434453": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6cdd2623": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6cf79266": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6d0160f0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6d0aefbc": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "6d58a25d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6d75e8bb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6e02f1e3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6e19193c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6e82a1ae": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6ecd11f4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6f8cd79b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6fa7a44f": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "72322fa7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "72ca375d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "73251a56": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7447852a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7468f01a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "746b3537": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "74dd1130": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "75b8110e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "760b3cac": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "776ffc46": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "77fdfe62": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "780d0b14": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7837ac64": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "794b24be": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7b6016b9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7b7f7511": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7c008303": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7ddcd7ec": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7df24a62": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7e0986d6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7f4411dc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7fe24cdd": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "80af3007": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "810b9b61": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "82819916": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "83302e8f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "834ec97d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8403a5d5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "846bdb03": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "855e0971": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "85c4e7cd": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "868de0fa": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8731374e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "88a10436": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "88a62173": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "890034e9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8a004b2b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8be77c9e": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "8d5021e8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8d510a79": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8e1813be": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8e5a5113": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "8eb1be9a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8efcae92": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8f2ea7aa": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "90c28cc7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "90f3ed37": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "913fb3ed": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "91413438": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "91714a58": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9172f3a0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "928ad970": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "93b581b8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "941d9a10": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "94f9d214": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "952a094c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9565186b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "95990924": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "963e52fc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "wrong",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "97999447": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "97a05b5b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "98cf29f8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "995c5fa3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "99b1bc43": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "99fa7670": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9aec4887": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9af7a82c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9d9215db": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9dfd6313": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "9ecd008a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9edfc990": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9f236235": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a1570a43": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a2fd1cf0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a3325580": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a3df8b1e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a416b8f3": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "a48eeaf7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a5313dff": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a5f85a15": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a61ba2ce": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a61f2674": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a64e4611": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a65b410d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a68b268e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a699fb00": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a740d043": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a78176bb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a79310a0": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "a85d4709": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a87f7484": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a8c38be5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a8d7556c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a9f96cdd": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "aabf363d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "aba27056": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ac0a08a4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ae3edfdc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ae4f1146": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "aedd82e4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "af902bf9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b0c4d837": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b190f7f5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b1948b0a": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "b230c067": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b27ca6d3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b2862040": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b527c5c6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b548a754": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b60334d2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b6afb2da": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b7249182": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b775ac94": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b782dc8a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b8825c91": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b8cdaf2b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b91ae062": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b94a9452": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b9b7f026": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ba26e723": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ba97ae07": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "bb43febb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "bbc9ae5d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "bc1d5164": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "bd4472b8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "bda2d7a6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "bdad9b1f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "be94b721": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "beb8660c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c0f76784": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c1d99e64": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c3e719e8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c3f564a4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c444b776": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c59eb873": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "c8cbb738": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c8f0f002": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "c909285e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c9e6f938": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "c9f8e694": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "caa06a1f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "cbded52d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "cce03e0d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "cdecee7f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ce22a75a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ce4f8723": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ce602527": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ce9e57f2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "cf98881b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d037b0a7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "d06dbe63": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d07ae81c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d0f5fe59": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d10ecb37": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "d13f3404": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d22278a0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d23f8c26": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d2abd087": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d364b489": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d406998b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d43fd935": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d4469b4b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d4a91cb9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d4f3cd78": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d511f180": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "d5d6de2d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d631b094": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d687bc17": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d6ad076f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d89b689b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d8c310e9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d90796e8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d9f24cd1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d9fac9be": {
+   "M03-M-DISC": "wrong",
+   "M03-M-DISC-MDL": "wrong",
+   "M-DISC-fixed": "wrong",
+   "M-DISC-fixed-strict": "wrong",
+   "M-DISC-MDL-fixed": "wrong"
+  },
+  "dae9d2b5": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "db3e9e38": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "db93a21d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "dbc1a6ce": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "dc0a314f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "dc1df850": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "dc433765": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ddf7fa4f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "de1cd16c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ded97339": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e179c5f4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e21d9049": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e26a3af2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e3497940": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "e40b9e2f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e48d4e1a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e5062a87": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e509e548": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e50d258f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e6721834": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e73095fd": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e76a88a6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e8593010": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e8dc4411": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e9614598": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e98196ab": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e9afcf9a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ea32f347": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ea786f4a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "eb281b96": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "eb5a1d5d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ec883f72": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ecdecbb3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ed36ccf7": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "ef135b50": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f15e1fac": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f1cefba8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f25fbde4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f25ffba3": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "f2829549": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f35d900a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f5b8619d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f76d97a5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f8a8fe49": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f8b3ba0a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f8c80d96": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f8ff0b80": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f9012d9b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "fafffa47": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "fcb5c309": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "fcc82909": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "feca6190": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ff28f65a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ff805c23": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  }
+ },
+ "rows_evaluation": {
+  "00576224": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "009d5c81": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "00dbd492": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "03560426": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "05a7bcf2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0607ce86": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0692e18c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "070dd51e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "08573cc6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0934a4d8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "09c534e7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0a1d4ef5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0a2355a6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0b17323b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0bb8deee": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0becf7df": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0c786b71": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "0c9aba6e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0d87d2a6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0e671a1a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "0f63c0b9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "103eff5b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "11e1fe23": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "12422b43": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "12997ef3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "12eac192": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "136b0064": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "13713586": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "137f0df0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "140c817e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "14754a24": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "15113be4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "15663ba9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "15696249": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "16b78196": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "17b80ad2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "17cae0c1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "18419cfa": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "184a9768": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "195ba7dc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1990f7a8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "19bb5feb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "wrong",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1a2e2828": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "wrong",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1a6449f1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1acc24af": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1c02dbbe": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1c0d0a4b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1c56ad9f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1d0a4b61": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1d398264": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1da012fc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1e81d6f9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "1e97544e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2037f2c7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2072aba6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "20818e16": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "20981f0e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "212895b5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "21f83797": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "22a4bbc2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "25094a63": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2546ccf6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "256b0a75": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2685904e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2697da3f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2753e76c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "27a77e38": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "27f8ce4f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "281123b4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "292dd178": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "29700607": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2a5f8217": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2b01abd0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2c0b0aff": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2c737e39": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "2f0c5170": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "310f3251": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3194b014": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "319f2597": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "31adaf00": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "31d5ba1a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "32e9702f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "332efdb3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3391f8c0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "33b52de3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3490cc26": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "34b99a2b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "351d6448": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "358ba94e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "37d3e8b2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3979b1a8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3a301edc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3b4c2228": {
+   "M03-M-DISC": "wrong",
+   "M03-M-DISC-MDL": "wrong",
+   "M-DISC-fixed": "wrong",
+   "M-DISC-fixed-strict": "wrong",
+   "M-DISC-MDL-fixed": "wrong"
+  },
+  "3d31c5b3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3ed85e70": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3ee1011a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "3f23242b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "40f6cd08": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "414297c0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "423a55dc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "42918530": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "42a15761": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4364c1c4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "456873bc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "45737921": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "45bbe264": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "477d2879": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "47996f11": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "48131b3c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4852f2fa": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "48f8583b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4aab4007": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4acc7107": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4b6b68e5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4c177718": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4cd1b7b2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4e45f183": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4e469f39": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4f537728": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "4ff4c9da": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "505fff84": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "506d28a5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "50a16a69": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "50aad11f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "50f325b5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "516b51b7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5207a7b5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5289ad53": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "52fd389e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "54db823b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "55059096": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "551d5bf1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "55783887": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "575b1a71": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5783df64": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5833af48": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "58743b76": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "58e15b12": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "59341089": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "5a5a2103": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5af49b42": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5b526a93": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5b692c0f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5b6cbef5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5d2a5c43": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "5ffb2104": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "604001fa": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "60a26a3e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "60c09cac": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "626c0bcc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "62ab2642": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "62b74c02": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "639f5a19": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "642248e4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "642d658d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "64a7c07e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "66e6c45b": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "66f2d22f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "67636eac": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "67b4a34d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "67c52801": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "68b67ca3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "692cd3b6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "695367ec": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "696d4842": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "69889d6e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6a11f6da": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6ad5bdfd": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6df30ad6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6ea4a07e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "6f473927": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7039b2d7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "705a3229": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "712bf12e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "72207abc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "72a961c9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "73182012": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "73c3b0d8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "73ccf9c2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "759f3fd3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "762cd429": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "770cc55f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "782b5218": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "79369cc6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7953d61e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "79fb03f4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7bb29440": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7c8af763": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7c9b52a0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7d18a6fb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7d1f7ee8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7d419a02": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7e02026e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "7ee1c6ea": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "817e6c09": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "81c0276b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "833dafe3": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "845d6e51": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "84db8fc4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "84f2aca1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8597cfd7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "85b81ff1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "85fa5666": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8719f442": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "88207623": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "891232d6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "896d5239": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8a371977": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8b28cd80": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8ba14f53": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8cb8642d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8dae5dfc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8e2edd66": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8ee62060": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "8fbca751": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "90347967": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "903d1b4a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9110e3c5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "917bccba": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "929ab4e9": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "92e50de0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9356391f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "93b4f4b3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "93c31fbe": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "94133066": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "94414823": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "94be5b80": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "95a58926": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "963f59bc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "96a8c0cd": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "97239e3d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9772c176": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "981571dc": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "992798f6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "99306f82": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9a4bb226": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9b2a60aa": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9b365c51": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9b4c17c4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9bebae7a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9c1e755f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9c56f360": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9caba7c3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9ddd00f0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9def23fe": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "9f27f097": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a04b2602": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a096bf4d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a3f84088": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a406ac07": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a57f2f04": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a59b95c0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a680ac02": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a8610ef7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "a934301b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "aa18de87": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "aa300dc3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "aa4ec2a5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "aab50785": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ac0c5833": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ac2e8ecf": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ac3e2b04": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ac605cbb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ad7e01d0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ae58858e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "aee291af": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "af22c60d": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "af24b4cc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b0722778": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b0f4d537": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b15fca0b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b1fc8b8e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b20f7c8b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b457fec5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b4a43f3b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b7999b51": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b7cb93ac": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b7f8a4d8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b7fb29bc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b942fd60": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "b9630600": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ba9d41b8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "baf41dbf": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "bb52a14b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "bbb1b8b6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "bc4146bd": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "bcb3040b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "bd14c3bf": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "be03b35f": {
+   "M03-M-DISC": "correct",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "correct",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "bf32578f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "bf699163": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "bf89d739": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c074846d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c1990cce": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c3202e5a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c35c1b4c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c48954c1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c62e2108": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c64f1187": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c658a4bd": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c663677b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c6e1b8da": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c7d4e6ad": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c87289bb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c8b7cc0f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c92b942c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "c97c0139": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ca8de6ea": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ca8f78db": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "cad67732": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "cb227835": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ccd554ac": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "cd3c21df": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ce039d91": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ce8d95cc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "cf133acc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "cfb2ce5a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d017b73f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d19f7514": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d282b262": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d2acf2cb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d304284e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d37a1ef5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d47aa2ff": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d492a647": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d4b1c2b1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d4c90558": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d56f2372": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d5c634a2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d931c21c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "d94c3b52": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "da2b0fe3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "da515329": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "dc2aa30b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "dc2e9a9d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "dd2401ed": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "de493100": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "df8cc377": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e0fb7511": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e133d23d": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "wrong",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "wrong"
+  },
+  "e1baa8a4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e1d2900e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e2092e0c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e21a174a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e345f17b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e4075551": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e41c6fd3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e57337a4": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e5790162": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e5c44e8f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e619ca6e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e633a9e5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e66aafb8": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e681b708": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e69241bd": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e6de6e8f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e74e1818": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e760a62e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e7639916": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e78887d1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e7a25a18": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e7b06bea": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e7dd8335": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e872b94a": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e88171ec": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e95e3d8e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e99362f0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e9ac8c9e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e9b4f6fc": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e9bb6954": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "e9c9d9a1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ea959feb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ea9794b1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ecaa0ec1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ed74f2f2": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ed98d772": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "correct",
+   "M-DISC-fixed": "correct",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "correct"
+  },
+  "ef26cbf6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f0afb749": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f0df5ff0": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f21745ec": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f3b10344": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f3cdc58f": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f3e62deb": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f4081712": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f45f5ca7": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f5aa3634": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f5c89df1": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f823c43c": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f83cb3f6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f8be4b64": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f9a67cb5": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "f9d67f8b": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "fafd9572": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "fb791726": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "fc754716": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "fd096ab6": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "fd4b2b02": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "fe9372f3": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "fea12743": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  },
+  "ff72ca3e": {
+   "M03-M-DISC": "abstain",
+   "M03-M-DISC-MDL": "abstain",
+   "M-DISC-fixed": "abstain",
+   "M-DISC-fixed-strict": "abstain",
+   "M-DISC-MDL-fixed": "abstain"
+  }
+ },
+ "time_s": 367.7
+}

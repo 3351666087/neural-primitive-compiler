@@ -1,0 +1,72 @@
+0c786b71 {'M03-M-DISC': 'abstain', 'M03-M-DISC-MDL': 'correct', 'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+19bb5feb {'M03-M-DISC': 'abstain', 'M03-M-DISC-MDL': 'wrong', 'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+1a2e2828 {'M03-M-DISC': 'abstain', 'M03-M-DISC-MDL': 'wrong', 'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+2072aba6 {'M03-M-DISC': 'abstain', 'M03-M-DISC-MDL': 'correct', 'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'correct'}
+3194b014 {'M03-M-DISC': 'abstain', 'M03-M-DISC-MDL': 'abstain', 'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+3b4c2228 {'M03-M-DISC': 'wrong', 'M03-M-DISC-MDL': 'wrong', 'M-DISC-fixed': 'wrong', 'M-DISC-fixed-strict': 'wrong', 'M-DISC-MDL-fixed': 'wrong'}
+59341089 {'M03-M-DISC': 'abstain', 'M03-M-DISC-MDL': 'correct', 'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'correct'}
+60c09cac {'M03-M-DISC': 'correct', 'M03-M-DISC-MDL': 'correct', 'M-DISC-fixed': 'correct', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'correct'}
+642d658d {'M03-M-DISC': 'abstain', 'M03-M-DISC-MDL': 'abstain', 'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+66e6c45b {'M03-M-DISC': 'correct', 'M03-M-DISC-MDL': 'correct', 'M-DISC-fixed': 'correct', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'correct'}
+7953d61e {'M03-M-DISC': 'abstain', 'M03-M-DISC-MDL': 'correct', 'M-DISC-fixed': 'correct', 'M-DISC-fixed-strict': 'correct', 'M-DISC-MDL-fixed': 'correct'}
+833dafe3 {'M03-M-DISC': 'correct', 'M03-M-DISC-MDL': 'correct', 'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+981571dc {'M03-M-DISC': 'correct', 'M03-M-DISC-MDL': 'correct', 'M-DISC-fixed': 'correct', 'M-DISC-fixed-strict': 'correct', 'M-DISC-MDL-fixed': 'correct'}
+9ddd00f0 {'M03-M-DISC': 'abstain', 'M03-M-DISC-MDL': 'abstain', 'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'abstain'}
+af22c60d {'M03-M-DISC': 'correct', 'M03-M-DISC-MDL': 'correct', 'M-DISC-fixed': 'correct', 'M-DISC-fixed-strict': 'correct', 'M-DISC-MDL-fixed': 'correct'}
+be03b35f {'M03-M-DISC': 'correct', 'M03-M-DISC-MDL': 'correct', 'M-DISC-fixed': 'correct', 'M-DISC-fixed-strict': 'correct', 'M-DISC-MDL-fixed': 'correct'}
+ca8f78db {'M03-M-DISC': 'abstain', 'M03-M-DISC-MDL': 'correct', 'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'correct'}
+e133d23d {'M03-M-DISC': 'abstain', 'M03-M-DISC-MDL': 'wrong', 'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'wrong'}
+ed98d772 {'M03-M-DISC': 'abstain', 'M03-M-DISC-MDL': 'correct', 'M-DISC-fixed': 'abstain', 'M-DISC-fixed-strict': 'abstain', 'M-DISC-MDL-fixed': 'correct'}
+{
+ "label": "POST-HOC RE-EVALUATION on a split already used once in Mission 03; not a held-out result",
+ "summary": {
+  "M03-M-DISC": {
+   "correct": 6,
+   "wrong": 1,
+   "abstain": 393,
+   "error": 0,
+   "precision": 0.857
+  },
+  "M03-M-DISC-MDL": {
+   "correct": 12,
+   "wrong": 4,
+   "abstain": 384,
+   "error": 0,
+   "precision": 0.75
+  },
+  "M-DISC-fixed": {
+   "correct": 6,
+   "wrong": 1,
+   "abstain": 393,
+   "error": 0,
+   "precision": 0.857
+  },
+  "M-DISC-fixed-strict": {
+   "correct": 4,
+   "wrong": 1,
+   "abstain": 395,
+   "error": 0,
+   "precision": 0.8
+  },
+  "M-DISC-MDL-fixed": {
+   "correct": 10,
+   "wrong": 2,
+   "abstain": 388,
+   "error": 0,
+   "precision": 0.833
+  }
+ },
+ "changed_vs_M03": {
+  "7953d61e": {
+   "M03": "abstain",
+   "fixed": "correct",
+   "why": "answered"
+  },
+  "833dafe3": {
+   "M03": "correct",
+   "fixed": "abstain",
+   "why": "UNKNOWN"
+  }
+ }
+}
+exit 0

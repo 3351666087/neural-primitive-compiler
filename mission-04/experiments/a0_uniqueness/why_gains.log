@@ -1,0 +1,11 @@
+training 3af2c5a8 [{'limit_256_hit': True, 'undefined_prediction': False, 'distinct_before_stop': 0}]
+training 62c24649 [{'limit_256_hit': True, 'undefined_prediction': False, 'distinct_before_stop': 0}]
+training 67e8384a [{'limit_256_hit': True, 'undefined_prediction': False, 'distinct_before_stop': 0}]
+training 7fe24cdd [{'limit_256_hit': True, 'undefined_prediction': False, 'distinct_before_stop': 0}]
+evaluation 0c786b71 [{'limit_256_hit': True, 'undefined_prediction': False, 'distinct_before_stop': 0}]
+evaluation 2072aba6 [{'limit_256_hit': True, 'undefined_prediction': False, 'distinct_before_stop': 0}]
+evaluation 59341089 [{'limit_256_hit': True, 'undefined_prediction': False, 'distinct_before_stop': 0}]
+evaluation 7953d61e [{'limit_256_hit': True, 'undefined_prediction': False, 'distinct_before_stop': 0}]
+evaluation ed98d772 [{'limit_256_hit': True, 'undefined_prediction': False, 'distinct_before_stop': 0}]
+{"training": {"M-DISC-fixed": ["2013d3e2", "445eab21", "54d82841", "5614dbcf", "5ad4f10b", "b9b7f026", "d23f8c26", "de1cd16c", "e9afcf9a", "f8b3ba0a"], "M-DISC-fixed-strict": ["2013d3e2", "445eab21", "54d82841", "5614dbcf", "5ad4f10b", "b9b7f026", "d23f8c26", "de1cd16c", "e9afcf9a", "f8b3ba0a"], "M-DISC-MDL-fixed": ["54d82841"]}, "evaluation": {"M-DISC-fixed": ["3194b014", "642d658d"], "M-DISC-fixed-strict": ["3194b014", "642d658d"], "M-DISC-MDL-fixed": []}}
+exit 0
