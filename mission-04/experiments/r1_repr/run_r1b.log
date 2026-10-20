@@ -1,0 +1,249 @@
+{
+ "label": "ARC-AGI-1 training split, DEV; S4 uses the other half's test outputs as feedback",
+ "summary": {
+  "S0": {
+   "correct": 10,
+   "wrong": 0,
+   "abstain": 390,
+   "precision": 1.0
+  },
+  "S1": {
+   "correct": 11,
+   "wrong": 0,
+   "abstain": 389,
+   "precision": 1.0
+  },
+  "S2": {
+   "correct": 18,
+   "wrong": 0,
+   "abstain": 382,
+   "precision": 1.0
+  },
+  "S3": {
+   "correct": 13,
+   "wrong": 0,
+   "abstain": 387,
+   "precision": 1.0
+  },
+  "S4": {
+   "correct": 13,
+   "wrong": 0,
+   "abstain": 387,
+   "precision": 1.0
+  }
+ },
+ "diagnostic_tasks": {
+  "25d8a9c8": {
+   "S0": "abstain",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "b1948b0a": {
+   "S0": "abstain",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "c8f0f002": {
+   "S0": "abstain",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "0b148d64": {
+   "S0": "correct",
+   "S1": "abstain",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "a87f7484": {
+   "S0": "correct",
+   "S1": "abstain",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  }
+ },
+ "S4_minus_S1": [
+  "0b148d64",
+  "1f85a75f",
+  "a87f7484",
+  "c909285e"
+ ],
+ "S1_minus_S4": [
+  "42a50994",
+  "b1948b0a"
+ ],
+ "S2_minus_S0": [
+  "1f85a75f",
+  "25d8a9c8",
+  "67385a82",
+  "6e82a1ae",
+  "aedd82e4",
+  "b1948b0a",
+  "c8f0f002",
+  "c909285e"
+ ],
+ "wrong": {
+  "S0": [],
+  "S1": [],
+  "S2": [],
+  "S3": [],
+  "S4": []
+ },
+ "top_types_S4": {
+  "fold0": [
+   [
+    [
+     "COLOUR",
+     "CROP-box",
+     "is_smallest",
+     "eq"
+    ],
+    3
+   ],
+   [
+    [
+     "A8-SAME",
+     "CROP-block",
+     "is_smallest",
+     "eq"
+    ],
+    3
+   ],
+   [
+    [
+     "A8-SAME",
+     "CROP-box",
+     "is_smallest",
+     "eq"
+    ],
+    3
+   ],
+   [
+    [
+     "COLOUR",
+     "CROP-block",
+     "is_smallest",
+     "eq"
+    ],
+    3
+   ],
+   [
+    [
+     "COLOUR",
+     "CROP-block",
+     "bbox_w",
+     "min"
+    ],
+    2
+   ],
+   [
+    [
+     "A8-SAME",
+     "CROP-box",
+     "bbox_h",
+     "min"
+    ],
+    2
+   ],
+   [
+    [
+     "A4-SAME",
+     "CROP-box",
+     "bbox_w",
+     "min"
+    ],
+    2
+   ],
+   [
+    [
+     "A4-SAME",
+     "CROP-block",
+     "bbox_h",
+     "min"
+    ],
+    2
+   ]
+  ],
+  "fold1": [
+   [
+    [
+     "COLOUR",
+     "CROP-box",
+     "is_smallest",
+     "eq"
+    ],
+    3
+   ],
+   [
+    [
+     "COLOUR",
+     "CROP-box",
+     "bbox_w",
+     "min"
+    ],
+    3
+   ],
+   [
+    [
+     "COLOUR",
+     "CROP-box",
+     "size_rank",
+     "max"
+    ],
+    3
+   ],
+   [
+    [
+     "COLOUR",
+     "CROP-box",
+     "bbox_h",
+     "min"
+    ],
+    3
+   ],
+   [
+    [
+     "COLOUR",
+     "CROP-box",
+     "size",
+     "min"
+    ],
+    3
+   ],
+   [
+    [
+     "A4-SAME",
+     "CROP-box",
+     "size_rank",
+     "eq"
+    ],
+    3
+   ],
+   [
+    [
+     "A8-SAME",
+     "CROP-box",
+     "size_rank",
+     "eq"
+    ],
+    3
+   ],
+   [
+    [
+     "A4-SAME",
+     "RECOLOUR",
+     "size_rank"
+    ],
+    2
+   ]
+  ]
+ },
+ "time_s": 7.6
+}

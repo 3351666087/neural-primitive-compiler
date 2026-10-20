@@ -1,0 +1,3051 @@
+{
+ "label": "ARC-AGI-1 training split, DEV; S4 uses the other half's test outputs as feedback",
+ "summary": {
+  "S0": {
+   "correct": 10,
+   "wrong": 0,
+   "abstain": 390,
+   "precision": 1.0
+  },
+  "S1": {
+   "correct": 11,
+   "wrong": 0,
+   "abstain": 389,
+   "precision": 1.0
+  },
+  "S2": {
+   "correct": 18,
+   "wrong": 0,
+   "abstain": 382,
+   "precision": 1.0
+  },
+  "S3": {
+   "correct": 13,
+   "wrong": 0,
+   "abstain": 387,
+   "precision": 1.0
+  },
+  "S4": {
+   "correct": 13,
+   "wrong": 0,
+   "abstain": 387,
+   "precision": 1.0
+  }
+ },
+ "diagnostic_tasks": {
+  "25d8a9c8": {
+   "S0": "abstain",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "b1948b0a": {
+   "S0": "abstain",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "c8f0f002": {
+   "S0": "abstain",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "0b148d64": {
+   "S0": "correct",
+   "S1": "abstain",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "a87f7484": {
+   "S0": "correct",
+   "S1": "abstain",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  }
+ },
+ "S4_minus_S1": [
+  "0b148d64",
+  "1f85a75f",
+  "a87f7484",
+  "c909285e"
+ ],
+ "S1_minus_S4": [
+  "42a50994",
+  "b1948b0a"
+ ],
+ "S2_minus_S0": [
+  "1f85a75f",
+  "25d8a9c8",
+  "67385a82",
+  "6e82a1ae",
+  "aedd82e4",
+  "b1948b0a",
+  "c8f0f002",
+  "c909285e"
+ ],
+ "wrong": {
+  "S0": [],
+  "S1": [],
+  "S2": [],
+  "S3": [],
+  "S4": []
+ },
+ "top_types_S4": {
+  "fold0": [
+   [
+    [
+     "COLOUR",
+     "CROP-box",
+     "is_smallest",
+     "eq"
+    ],
+    3
+   ],
+   [
+    [
+     "A8-SAME",
+     "CROP-block",
+     "is_smallest",
+     "eq"
+    ],
+    3
+   ],
+   [
+    [
+     "A8-SAME",
+     "CROP-box",
+     "is_smallest",
+     "eq"
+    ],
+    3
+   ],
+   [
+    [
+     "COLOUR",
+     "CROP-block",
+     "is_smallest",
+     "eq"
+    ],
+    3
+   ],
+   [
+    [
+     "COLOUR",
+     "CROP-block",
+     "bbox_w",
+     "min"
+    ],
+    2
+   ],
+   [
+    [
+     "A8-SAME",
+     "CROP-box",
+     "bbox_h",
+     "min"
+    ],
+    2
+   ],
+   [
+    [
+     "A4-SAME",
+     "CROP-box",
+     "bbox_w",
+     "min"
+    ],
+    2
+   ],
+   [
+    [
+     "A4-SAME",
+     "CROP-block",
+     "bbox_h",
+     "min"
+    ],
+    2
+   ]
+  ],
+  "fold1": [
+   [
+    [
+     "COLOUR",
+     "CROP-box",
+     "is_smallest",
+     "eq"
+    ],
+    3
+   ],
+   [
+    [
+     "COLOUR",
+     "CROP-box",
+     "bbox_w",
+     "min"
+    ],
+    3
+   ],
+   [
+    [
+     "COLOUR",
+     "CROP-box",
+     "size_rank",
+     "max"
+    ],
+    3
+   ],
+   [
+    [
+     "COLOUR",
+     "CROP-box",
+     "bbox_h",
+     "min"
+    ],
+    3
+   ],
+   [
+    [
+     "COLOUR",
+     "CROP-box",
+     "size",
+     "min"
+    ],
+    3
+   ],
+   [
+    [
+     "A4-SAME",
+     "CROP-box",
+     "size_rank",
+     "eq"
+    ],
+    3
+   ],
+   [
+    [
+     "A8-SAME",
+     "CROP-box",
+     "size_rank",
+     "eq"
+    ],
+    3
+   ],
+   [
+    [
+     "A4-SAME",
+     "RECOLOUR",
+     "size_rank"
+    ],
+    2
+   ]
+  ]
+ },
+ "rows": {
+  "007bbfb7": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "00d62c1b": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "017c7c7b": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "025d127b": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "045e512c": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "0520fde7": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "05269061": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "05f2a901": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "06df4c85": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "08ed6ac7": {
+   "S0": "correct",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "09629e4f": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "0962bcdd": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "0a938d79": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "0b148d64": {
+   "S0": "correct",
+   "S1": "abstain",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "0ca9ddb6": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "0d3d703e": {
+   "S0": "correct",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "0dfd9992": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "0e206a2e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "10fcaaa3": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "11852cab": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "1190e5a7": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "137eaa0f": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "150deff5": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "178fcbfb": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "1a07d186": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "1b2d62fb": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "1b60fb0c": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "1bfc4729": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "1c786137": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "1caeab9d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "1cf80156": {
+   "S0": "correct",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "1e0a9b12": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "1e32b0e9": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "1f0c79e5": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "1f642eb9": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "1f85a75f": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "1f876c06": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "1fad071e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "2013d3e2": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "2204b7a8": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "22168020": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "22233c11": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "2281f1f4": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "228f6490": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "22eb0ac0": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "234bbc79": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "23581191": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "239be575": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "23b5c85d": {
+   "S0": "correct",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "253bf280": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "25d487eb": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "25d8a9c8": {
+   "S0": "abstain",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "25ff71a9": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "264363fd": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "272f95fa": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "27a28665": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "28bf18c6": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "28e73c20": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "29623171": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "29c11459": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "29ec7d0e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "2bcee788": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "2bee17df": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "2c608aff": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "2dc579da": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "2dd70a9a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "2dee498d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "31aa019c": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "321b1fc6": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "32597951": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3345333e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3428a4f5": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3618c87e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3631a71a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "363442ee": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "36d67576": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "36fdfd69": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3906de3d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "39a8645d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "39e1d7f9": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3aa6fb7a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3ac3eb23": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3af2c5a8": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3bd67248": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3bdb4ada": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3befdf3e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3c9b0459": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3de23699": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3e980e27": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3eda0437": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "3f7978a0": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "40853293": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "4093f84a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "41e4d17e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "4258a5f9": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "4290ef0e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "42a50994": {
+   "S0": "correct",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "4347f46a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "444801d8": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "445eab21": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "447fd412": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "44d8ac46": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "44f52bb0": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "4522001f": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "4612dd53": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "46442a0e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "469497ad": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "46f33fce": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "47c1f68c": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "484b58aa": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "48d8fb45": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "4938f0c2": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "496994bd": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "49d1d64f": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "4be741c5": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "4c4377d9": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "4c5c2cf0": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "50846271": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "508bd3b6": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "50cb2852": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "5117e062": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "5168d44c": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "539a4f51": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "53b68214": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "543a7ed5": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "54d82841": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "54d9e175": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "5521c0d9": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "5582e5ca": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "5614dbcf": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "56dc2b01": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "56ff96f3": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "57aa92db": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "5ad4f10b": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "5bd6f4ac": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "5c0a986e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "5c2c9af4": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "5daaa586": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "60b61512": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6150a2bd": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "623ea044": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "62c24649": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "63613498": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6430c8c4": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6455b5f5": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "662c240a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "67385a82": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "correct",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "673ef223": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6773b310": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "67a3c6ac": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "67a423a3": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "67e8384a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "681b3aeb": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6855a6e4": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "68b16354": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "694f12f3": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6a1e5592": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6aa20dc0": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6b9890af": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6c434453": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6cdd2623": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6cf79266": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6d0160f0": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6d0aefbc": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6d58a25d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6d75e8bb": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6e02f1e3": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6e19193c": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6e82a1ae": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "correct",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6ecd11f4": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6f8cd79b": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "6fa7a44f": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "72322fa7": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "72ca375d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "73251a56": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "7447852a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "7468f01a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "746b3537": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "74dd1130": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "75b8110e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "760b3cac": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "776ffc46": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "77fdfe62": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "780d0b14": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "7837ac64": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "794b24be": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "7b6016b9": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "7b7f7511": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "7c008303": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "7ddcd7ec": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "7df24a62": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "7e0986d6": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "7f4411dc": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "7fe24cdd": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "80af3007": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "810b9b61": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "82819916": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "83302e8f": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "834ec97d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "8403a5d5": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "846bdb03": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "855e0971": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "85c4e7cd": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "868de0fa": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "8731374e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "88a10436": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "88a62173": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "890034e9": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "8a004b2b": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "8be77c9e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "8d5021e8": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "8d510a79": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "8e1813be": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "8e5a5113": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "8eb1be9a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "8efcae92": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "8f2ea7aa": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "90c28cc7": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "90f3ed37": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "913fb3ed": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "91413438": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "91714a58": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "9172f3a0": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "928ad970": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "93b581b8": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "941d9a10": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "94f9d214": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "952a094c": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "9565186b": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "95990924": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "963e52fc": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "97999447": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "97a05b5b": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "98cf29f8": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "995c5fa3": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "99b1bc43": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "99fa7670": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "9aec4887": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "9af7a82c": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "9d9215db": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "9dfd6313": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "9ecd008a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "9edfc990": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "9f236235": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a1570a43": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a2fd1cf0": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a3325580": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a3df8b1e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a416b8f3": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a48eeaf7": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a5313dff": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a5f85a15": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a61ba2ce": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a61f2674": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a64e4611": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a65b410d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a68b268e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a699fb00": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a740d043": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a78176bb": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a79310a0": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a85d4709": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a87f7484": {
+   "S0": "correct",
+   "S1": "abstain",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "a8c38be5": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a8d7556c": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "a9f96cdd": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "aabf363d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "aba27056": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ac0a08a4": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ae3edfdc": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ae4f1146": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "aedd82e4": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "correct",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "af902bf9": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b0c4d837": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b190f7f5": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b1948b0a": {
+   "S0": "abstain",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b230c067": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b27ca6d3": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b2862040": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b527c5c6": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b548a754": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b60334d2": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b6afb2da": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b7249182": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b775ac94": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b782dc8a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b8825c91": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b8cdaf2b": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b91ae062": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b94a9452": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "b9b7f026": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ba26e723": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ba97ae07": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "bb43febb": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "bbc9ae5d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "bc1d5164": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "bd4472b8": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "bda2d7a6": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "bdad9b1f": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "be94b721": {
+   "S0": "correct",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "beb8660c": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "c0f76784": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "c1d99e64": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "c3e719e8": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "c3f564a4": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "c444b776": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "c59eb873": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "c8cbb738": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "c8f0f002": {
+   "S0": "abstain",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "c909285e": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "c9e6f938": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "c9f8e694": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "caa06a1f": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "cbded52d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "cce03e0d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "cdecee7f": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ce22a75a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ce4f8723": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ce602527": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ce9e57f2": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "cf98881b": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d037b0a7": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d06dbe63": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d07ae81c": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d0f5fe59": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d10ecb37": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d13f3404": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d22278a0": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d23f8c26": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d2abd087": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d364b489": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d406998b": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d43fd935": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d4469b4b": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d4a91cb9": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d4f3cd78": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d511f180": {
+   "S0": "correct",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "d5d6de2d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d631b094": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d687bc17": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d6ad076f": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d89b689b": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d8c310e9": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d90796e8": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d9f24cd1": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "d9fac9be": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "dae9d2b5": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "db3e9e38": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "db93a21d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "dbc1a6ce": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "dc0a314f": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "dc1df850": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "dc433765": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ddf7fa4f": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "de1cd16c": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ded97339": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e179c5f4": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e21d9049": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e26a3af2": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e3497940": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e40b9e2f": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e48d4e1a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e5062a87": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e509e548": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e50d258f": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e6721834": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e73095fd": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e76a88a6": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e8593010": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e8dc4411": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e9614598": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e98196ab": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "e9afcf9a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ea32f347": {
+   "S0": "correct",
+   "S1": "correct",
+   "S2": "correct",
+   "S3": "correct",
+   "S4": "correct"
+  },
+  "ea786f4a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "eb281b96": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "eb5a1d5d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ec883f72": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ecdecbb3": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ed36ccf7": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ef135b50": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "f15e1fac": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "f1cefba8": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "f25fbde4": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "f25ffba3": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "f2829549": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "f35d900a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "f5b8619d": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "f76d97a5": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "f8a8fe49": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "f8b3ba0a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "f8c80d96": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "f8ff0b80": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "f9012d9b": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "fafffa47": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "fcb5c309": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "fcc82909": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "feca6190": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ff28f65a": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  },
+  "ff805c23": {
+   "S0": "abstain",
+   "S1": "abstain",
+   "S2": "abstain",
+   "S3": "abstain",
+   "S4": "abstain"
+  }
+ },
+ "time_s": 7.6
+}

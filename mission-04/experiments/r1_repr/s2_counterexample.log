@@ -1,0 +1,3 @@
+S0 (strict): abstain
+determined explanation types: ['colour', 'is_largest', 'is_smallest', 'size_rank']
+S2 (permissive): wrong (the generator's answer for the size-3 block is colour 5 )
