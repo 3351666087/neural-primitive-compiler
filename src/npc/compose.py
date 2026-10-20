@@ -17,6 +17,8 @@ strictly earlier values, so circular (feedback) bindings are sound.
 The abstract system is explored with the same explicit-state engine as the
 monolithic check. Its states are tuples of contract-monitor states rather than
 neuron potentials/spike histories, which is what the Q3 experiment compares.
+``compositional_symbolic`` checks the same abstract system with the symbolic
+unbounded engines (k-induction or Spacer/PDR) instead.
 """
 
 from __future__ import annotations
@@ -27,8 +29,10 @@ from typing import Any, Mapping
 
 from .dsl import DSLError, Library, NetworkDef, flatten
 from .network import Network
+import z3
+
 from .spec import FALSE, F, Monitor, Spec, atom, strictly_past, subst
-from .verify import Result, Status, explore, reach
+from .verify import Result, Status, SymMonitor, explore, kinduction_system, pdr_system, reach
 
 _PROOF_CACHE: dict[tuple, Result] = {}
 
@@ -123,6 +127,40 @@ class AbstractSystem:
         return tuple(mon.step(st, val)[0] for (_, mon), st in zip(self.defs, state))
 
 
+class SymAbstractSystem:
+    """Symbolic twin of AbstractSystem (same monitors, same slot layout) for kinduction_system / pdr_system."""
+
+    def __init__(self, system: AbstractSystem):
+        self.inputs = system.inputs
+        self.signals = system.signals
+        self.port_alias = system.port_alias
+        self.defs = [(name, SymMonitor(mon.root, f"D{j}_")) for j, (name, mon) in enumerate(system.defs)]
+        self.cuts = [0]
+        for _, sm in self.defs:
+            self.cuts.append(self.cuts[-1] + len(sm.components))
+        self.components = [c for _, sm in self.defs for c in sm.components]
+        self._dummy = {k: z3.BoolVal(False) for k in system._dummy}
+
+    def _parts(self, s):
+        return [s[a:b] for a, b in zip(self.cuts, self.cuts[1:])]
+
+    def init_values(self):
+        return [v for _, sm in self.defs for v in sm.init]
+
+    def fire(self, s):
+        vals = {}
+        for (name, sm), part in zip(self.defs, self._parts(s)):
+            vals[name] = sm.step(part, self._dummy)[1]  # strictly past: independent of current values
+        for o, sig in self.port_alias.items():
+            vals[o] = vals[sig]
+        return vals, vals
+
+    def advance(self, s, aux, x):
+        val = dict(x)
+        val.update(aux)
+        return [v for (_, sm), part in zip(self.defs, self._parts(s)) for v in sm.step(part, val)[0]]
+
+
 @dataclass
 class CompositionalResult:
     result: Result
@@ -137,25 +175,62 @@ class CompositionalResult:
         return "\n".join(lines)
 
 
-def compositional_verify(lib: Library, nd: NetworkDef, spec: Spec, assignment: Mapping[str, Any] | None = None,
-                         max_states: int = 2_000_000, timeout_s: float = 120.0) -> CompositionalResult:
-    t0 = time.perf_counter()
-    system = AbstractSystem(lib, nd, assignment)
+_COMPOSED_SCOPE = ("all input traces, every length, for the flattened network - derived from per-primitive "
+                   "unbounded contract proofs plus an unbounded check of the contract-level system")
+
+
+def _prove_components(lib: Library, system: AbstractSystem, spec: Spec, engine: str):
     proofs = {}
     for iname, (prim, args) in system.contracts.items():
         r = prove_primitive(lib, prim, args)
         proofs[f"{iname}={prim}{args}"] = r
         if r.status != Status.VERIFIED_UNBOUNDED:
-            res = Result(Status.UNKNOWN, "compositional", "contract of a component is not proven", 0.0,
+            res = Result(Status.UNKNOWN, engine, "contract of a component is not proven", 0.0,
                          stats={"reason": f"contract of {iname} not proven: {r.status.value}"})
-            return CompositionalResult(res, proofs)
-    t1 = time.perf_counter()
+            return proofs, res
     missing = set(spec.outputs) - set(system.port_alias)
     if missing:
         raise DSLError(f"network lacks outputs {sorted(missing)}")
+    return proofs, None
+
+
+def compositional_verify(lib: Library, nd: NetworkDef, spec: Spec, assignment: Mapping[str, Any] | None = None,
+                         max_states: int = 2_000_000, timeout_s: float = 120.0) -> CompositionalResult:
+    t0 = time.perf_counter()
+    system = AbstractSystem(lib, nd, assignment)
+    proofs, failed = _prove_components(lib, system, spec, "compositional")
+    if failed is not None:
+        return CompositionalResult(failed, proofs)
+    t1 = time.perf_counter()
     res = explore(system, spec, system.obligations, max_states=max_states, timeout_s=timeout_s,
                   replay_net=system.flat.network, engine="compositional")
     if res.status == Status.VERIFIED_UNBOUNDED:
-        res.scope = ("all input traces, every length, for the flattened network - derived from per-primitive "
-                     "unbounded contract proofs plus an unbounded check of the contract-level system")
+        res.scope = _COMPOSED_SCOPE
+    return CompositionalResult(res, proofs, time.perf_counter() - t1, t1 - t0)
+
+
+def compositional_symbolic(lib: Library, nd: NetworkDef, spec: Spec, engine: str = "kind",
+                           assignment: Mapping[str, Any] | None = None, k_max: int = 200,
+                           timeout_s: float = 120.0) -> CompositionalResult:
+    """compositional_verify with the contract-level system checked by k-induction ("kind") or
+    Spacer ("pdr") instead of explicit-state search. Primitive contracts are still proved (cached)
+    by explicit reachability; counterexamples are replayed on the flattened network."""
+    t0 = time.perf_counter()
+    system = AbstractSystem(lib, nd, assignment)
+    name = f"compositional-{engine}"
+    proofs, failed = _prove_components(lib, system, spec, name)
+    if failed is not None:
+        return CompositionalResult(failed, proofs)
+    t1 = time.perf_counter()
+    sym = SymAbstractSystem(system)
+    if engine == "kind":
+        res = kinduction_system(sym, spec, system.obligations, k_max=k_max, timeout_s=timeout_s,
+                                replay_net=system.flat.network, engine=name)
+    elif engine == "pdr":
+        res = pdr_system(sym, spec, system.obligations, timeout_s=timeout_s, replay_net=system.flat.network,
+                         engine=name)
+    else:
+        raise ValueError(f"unknown symbolic engine {engine}")
+    if res.status == Status.VERIFIED_UNBOUNDED:
+        res.scope = _COMPOSED_SCOPE
     return CompositionalResult(res, proofs, time.perf_counter() - t1, t1 - t0)

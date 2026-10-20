@@ -1,0 +1,7 @@
+# Syntax discovery only (not a task proposal): learn the network grammar from parser errors.
+network probe1 {
+  inputs s, r, q
+  inst m = latch(set=s, rst=r)
+  inst g = and2(a=q, b=m.out)
+  output y = g.out
+}

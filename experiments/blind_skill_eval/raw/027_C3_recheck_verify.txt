@@ -1,0 +1,4 @@
+$ npc verify experiments/tasks.npc --net-json experiments/blind_skill_eval/rec/C3_p1.json --spec C3_latched_alarm --horizon 10 --out experiments/blind_skill_eval/rec/C3_p1_reverify.json
+# task=C3_recheck start=2026-10-20T05:12:05Z
+error: unsupported format None
+# exit=3 seconds=0.1

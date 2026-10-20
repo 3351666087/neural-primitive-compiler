@@ -1,0 +1,1214 @@
+{
+  "kind": "synth",
+  "environment": {
+    "npc": "0.1.0",
+    "python": "3.12.13",
+    "z3": "5.3.1",
+    "machine": "arm64",
+    "system": "Darwin",
+    "time": "2026-10-20T05:11:41"
+  },
+  "spec": {
+    "name": "Dhand_second_b_after_a",
+    "inputs": [
+      "a",
+      "b",
+      "r"
+    ],
+    "outputs": [
+      "y"
+    ],
+    "assume": "true",
+    "guarantee": "y <-> prev(b & !a & !r & since(!r, a & !r) & (modcount[2](b; a | r) == 0))",
+    "warmup": 0,
+    "assume_mode": "inclusive"
+  },
+  "network": {
+    "format": "npc-network/1",
+    "name": "Dhand_p1",
+    "inputs": [
+      "a",
+      "b",
+      "r"
+    ],
+    "outputs": {
+      "y": "yn"
+    },
+    "max_delay": 8,
+    "neurons": [
+      {
+        "name": "u",
+        "threshold": 1,
+        "leak": 15,
+        "bias": 0,
+        "reset": 0,
+        "init": 0,
+        "vmin": 0,
+        "vmax": 15
+      },
+      {
+        "name": "v",
+        "threshold": 2,
+        "leak": 15,
+        "bias": 0,
+        "reset": 0,
+        "init": 0,
+        "vmin": 0,
+        "vmax": 15
+      },
+      {
+        "name": "x",
+        "threshold": 2,
+        "leak": 15,
+        "bias": 0,
+        "reset": 0,
+        "init": 0,
+        "vmin": 0,
+        "vmax": 15
+      },
+      {
+        "name": "w",
+        "threshold": 1,
+        "leak": 15,
+        "bias": 0,
+        "reset": 0,
+        "init": 0,
+        "vmin": 0,
+        "vmax": 15
+      },
+      {
+        "name": "yn",
+        "threshold": 2,
+        "leak": 15,
+        "bias": 0,
+        "reset": 0,
+        "init": 0,
+        "vmin": 0,
+        "vmax": 15
+      }
+    ],
+    "synapses": [
+      {
+        "src": "u",
+        "dst": "u",
+        "weight": 1,
+        "delay": 1
+      },
+      {
+        "src": "v",
+        "dst": "u",
+        "weight": -1,
+        "delay": 1
+      },
+      {
+        "src": "a",
+        "dst": "u",
+        "weight": -3,
+        "delay": 1
+      },
+      {
+        "src": "r",
+        "dst": "u",
+        "weight": -3,
+        "delay": 1
+      },
+      {
+        "src": "b",
+        "dst": "u",
+        "weight": 2,
+        "delay": 1
+      },
+      {
+        "src": "x",
+        "dst": "v",
+        "weight": -3,
+        "delay": 1
+      },
+      {
+        "src": "yn",
+        "dst": "v",
+        "weight": -1,
+        "delay": 1
+      },
+      {
+        "src": "w",
+        "dst": "v",
+        "weight": -1,
+        "delay": 1
+      },
+      {
+        "src": "a",
+        "dst": "v",
+        "weight": 1,
+        "delay": 1
+      },
+      {
+        "src": "r",
+        "dst": "v",
+        "weight": -2,
+        "delay": 1
+      },
+      {
+        "src": "b",
+        "dst": "v",
+        "weight": 2,
+        "delay": 1
+      },
+      {
+        "src": "x",
+        "dst": "x",
+        "weight": 2,
+        "delay": 1
+      },
+      {
+        "src": "yn",
+        "dst": "x",
+        "weight": 2,
+        "delay": 1
+      },
+      {
+        "src": "w",
+        "dst": "x",
+        "weight": 2,
+        "delay": 1
+      },
+      {
+        "src": "a",
+        "dst": "x",
+        "weight": -1,
+        "delay": 1
+      },
+      {
+        "src": "r",
+        "dst": "x",
+        "weight": -3,
+        "delay": 1
+      },
+      {
+        "src": "b",
+        "dst": "x",
+        "weight": -3,
+        "delay": 1
+      },
+      {
+        "src": "a",
+        "dst": "w",
+        "weight": 1,
+        "delay": 1
+      },
+      {
+        "src": "r",
+        "dst": "w",
+        "weight": -3,
+        "delay": 1
+      },
+      {
+        "src": "u",
+        "dst": "yn",
+        "weight": 1,
+        "delay": 1
+      },
+      {
+        "src": "v",
+        "dst": "yn",
+        "weight": -3,
+        "delay": 1
+      },
+      {
+        "src": "a",
+        "dst": "yn",
+        "weight": -3,
+        "delay": 1
+      },
+      {
+        "src": "r",
+        "dst": "yn",
+        "weight": -3,
+        "delay": 1
+      },
+      {
+        "src": "b",
+        "dst": "yn",
+        "weight": 1,
+        "delay": 1
+      }
+    ],
+    "meta": {}
+  },
+  "network_sha256": "7294c4b079097e3737f9ea1393d45fe73803c561f215dbaace57034a9471cd8d",
+  "network_stats": {
+    "neurons": 5,
+    "synapses": 24,
+    "max_abs_weight": 3,
+    "max_delay_used": 1,
+    "memoryless_neurons": 5,
+    "recurrent_synapses": 10,
+    "potential_bits": 0,
+    "history_bits": 8,
+    "state_bits": 8
+  },
+  "synthesis": {
+    "status": "SOLVED",
+    "method": "sketch",
+    "network": {
+      "format": "npc-network/1",
+      "name": "Dhand_p1",
+      "inputs": [
+        "a",
+        "b",
+        "r"
+      ],
+      "outputs": {
+        "y": "yn"
+      },
+      "max_delay": 8,
+      "neurons": [
+        {
+          "name": "u",
+          "threshold": 1,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        },
+        {
+          "name": "v",
+          "threshold": 2,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        },
+        {
+          "name": "x",
+          "threshold": 2,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        },
+        {
+          "name": "w",
+          "threshold": 1,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        },
+        {
+          "name": "yn",
+          "threshold": 2,
+          "leak": 15,
+          "bias": 0,
+          "reset": 0,
+          "init": 0,
+          "vmin": 0,
+          "vmax": 15
+        }
+      ],
+      "synapses": [
+        {
+          "src": "u",
+          "dst": "u",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "v",
+          "dst": "u",
+          "weight": -1,
+          "delay": 1
+        },
+        {
+          "src": "a",
+          "dst": "u",
+          "weight": -3,
+          "delay": 1
+        },
+        {
+          "src": "r",
+          "dst": "u",
+          "weight": -3,
+          "delay": 1
+        },
+        {
+          "src": "b",
+          "dst": "u",
+          "weight": 2,
+          "delay": 1
+        },
+        {
+          "src": "x",
+          "dst": "v",
+          "weight": -3,
+          "delay": 1
+        },
+        {
+          "src": "yn",
+          "dst": "v",
+          "weight": -1,
+          "delay": 1
+        },
+        {
+          "src": "w",
+          "dst": "v",
+          "weight": -1,
+          "delay": 1
+        },
+        {
+          "src": "a",
+          "dst": "v",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "r",
+          "dst": "v",
+          "weight": -2,
+          "delay": 1
+        },
+        {
+          "src": "b",
+          "dst": "v",
+          "weight": 2,
+          "delay": 1
+        },
+        {
+          "src": "x",
+          "dst": "x",
+          "weight": 2,
+          "delay": 1
+        },
+        {
+          "src": "yn",
+          "dst": "x",
+          "weight": 2,
+          "delay": 1
+        },
+        {
+          "src": "w",
+          "dst": "x",
+          "weight": 2,
+          "delay": 1
+        },
+        {
+          "src": "a",
+          "dst": "x",
+          "weight": -1,
+          "delay": 1
+        },
+        {
+          "src": "r",
+          "dst": "x",
+          "weight": -3,
+          "delay": 1
+        },
+        {
+          "src": "b",
+          "dst": "x",
+          "weight": -3,
+          "delay": 1
+        },
+        {
+          "src": "a",
+          "dst": "w",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "r",
+          "dst": "w",
+          "weight": -3,
+          "delay": 1
+        },
+        {
+          "src": "u",
+          "dst": "yn",
+          "weight": 1,
+          "delay": 1
+        },
+        {
+          "src": "v",
+          "dst": "yn",
+          "weight": -3,
+          "delay": 1
+        },
+        {
+          "src": "a",
+          "dst": "yn",
+          "weight": -3,
+          "delay": 1
+        },
+        {
+          "src": "r",
+          "dst": "yn",
+          "weight": -3,
+          "delay": 1
+        },
+        {
+          "src": "b",
+          "dst": "yn",
+          "weight": 1,
+          "delay": 1
+        }
+      ],
+      "meta": {}
+    },
+    "stats": {
+      "neurons": 5,
+      "synapses": 24,
+      "max_abs_weight": 3,
+      "max_delay_used": 1,
+      "memoryless_neurons": 5,
+      "recurrent_synapses": 10,
+      "potential_bits": 0,
+      "history_bits": 8,
+      "state_bits": 8
+    },
+    "iterations": 21,
+    "candidates": 1,
+    "n_examples": 23,
+    "examples": [
+      {
+        "a": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "b": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "r": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "a": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "a": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "r": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "r": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "b": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "r": [
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "a": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "synth_time_s": 20.8157,
+    "verify_time_s": 0.0,
+    "total_time_s": 20.8157,
+    "verification": [
+      {
+        "status": "VERIFIED_BOUNDED",
+        "engine": "bmc",
+        "scope": "all binary input traces over ['a', 'b', 'r'] of length 8 (steps 0..7); says nothing about later steps",
+        "time_s": 0.093030208023265,
+        "horizon": 8,
+        "counterexample": null,
+        "violation_time": null,
+        "stats": {
+          "neuron_steps": 40,
+          "constraints": 40
+        }
+      },
+      {
+        "status": "VERIFIED_UNBOUNDED",
+        "engine": "reach",
+        "scope": "all binary input traces over ['a', 'b', 'r'], every length (finite-state proof)",
+        "time_s": 0.0022378750145435333,
+        "horizon": null,
+        "counterexample": null,
+        "violation_time": null,
+        "stats": {
+          "product_states": 60,
+          "system_states": 56,
+          "effective_state_bits": 5.807,
+          "bfs_depth": 4
+        }
+      }
+    ],
+    "detail": {
+      "choice_holes": 0,
+      "choice_space": 1,
+      "assignment": {},
+      "attempts": [
+        {
+          "assignment": {},
+          "status": "SOLVED",
+          "iterations": 21
+        }
+      ]
+    },
+    "log": []
+  },
+  "note": "This is a verification record, not an independently checkable proof object. Re-run `npc verify` on the stored network and spec to re-establish every claim."
+}

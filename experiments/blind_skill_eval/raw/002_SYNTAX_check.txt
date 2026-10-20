@@ -1,0 +1,4 @@
+$ npc check experiments/blind_skill_eval/syntax_probe.npc
+# task=SYNTAX start=2026-10-20T05:05:21Z
+error: experiments/blind_skill_eval/syntax_probe.npc: in network probe1: unknown parameter 's' in 's'
+# exit=3 seconds=0.1

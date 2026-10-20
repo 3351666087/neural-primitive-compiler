@@ -1,0 +1,9 @@
+$ npc verify experiments/D_unseen/tasks.npc --net-json experiments/blind_skill_eval/rec/D18_p1.net.json --spec D18 --horizon 10 --out experiments/blind_skill_eval/rec/D18_p1_reverify.json
+# task=D18_recheck start=2026-10-20T05:12:19Z
+spec D18  inputs=['a', 'b'] outputs=['y']
+  guarantee y <-> prev[2](prev[3](!b))
+[bmc] VERIFIED_BOUNDED (0.006s) - holds for all binary input traces over ['a', 'b'] of length 10 (steps 0..9); says nothing about later steps
+[exhaustive] VERIFIED_BOUNDED (0.441s) - holds for all binary input traces over ['a', 'b'] of length 10 (steps 0..9); says nothing about later steps
+[reach] VERIFIED_UNBOUNDED (0.001s) - holds for all binary input traces over ['a', 'b'], every length (finite-state proof)
+wrote experiments/blind_skill_eval/rec/D18_p1_reverify.json
+# exit=0 seconds=0.55

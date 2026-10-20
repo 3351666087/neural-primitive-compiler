@@ -1,0 +1,4 @@
+$ npc verify experiments/D_unseen/tasks.npc --net-json experiments/blind_skill_eval/rec/D18_p1.json --spec D18 --horizon 10 --out experiments/blind_skill_eval/rec/D18_p1_reverify.json
+# task=D18_recheck start=2026-10-20T05:12:05Z
+error: unsupported format None
+# exit=3 seconds=0.1

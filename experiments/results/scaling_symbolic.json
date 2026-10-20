@@ -1,0 +1,4677 @@
+{
+  "meta": {
+    "budget_s_per_engine_per_N": 120.0,
+    "max_states_explicit": 3000000,
+    "k_max": "unbounded (deadline only)",
+    "z3": "5.3.1",
+    "python": "3.12.13",
+    "machine": "arm64",
+    "date": "2026-10-20",
+    "src_tree_sha256": "29e40b3b1a95d056393c39f7e9c814fc53ae83b2a2ddc7ebec8ee0c6db963f14",
+    "freeze_manifest_tree_sha256": "8a163fab2eef498a547da1b02cebb90e513a66269da93dc9bfa96b8e5d002d7e",
+    "post_freeze_tree": true,
+    "finished": true
+  },
+  "rows": [
+    {
+      "family": "relay",
+      "N": 1,
+      "neurons": 1,
+      "spec": "y <-> prev[1](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0001,
+          "product_states": 2,
+          "system_states": 2
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0,
+          "product_states": 2,
+          "system_states": 2
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0034,
+          "k": 0,
+          "closed_by": "induction",
+          "bounded_safe_upto": 0,
+          "state_components": 2,
+          "simple_path_constraints": 0,
+          "solver_checks": 2,
+          "solver_time_s": 0.0003,
+          "phase_time_s": {
+            "base": 0.001,
+            "step": 0.0007,
+            "forward": 0.0
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.005,
+          "state_components": 2,
+          "solver_checks": 4,
+          "solver_time_s": 0.0032,
+          "invariant_size": 17,
+          "certificate": "checked",
+          "spacer_time_s": 0.003
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0011,
+          "k": 0,
+          "closed_by": "induction",
+          "bounded_safe_upto": 0,
+          "state_components": 2,
+          "simple_path_constraints": 0,
+          "solver_checks": 2,
+          "solver_time_s": 0.0001,
+          "phase_time_s": {
+            "base": 0.0005,
+            "step": 0.0005,
+            "forward": 0.0
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0034,
+          "state_components": 2,
+          "solver_checks": 4,
+          "solver_time_s": 0.0021,
+          "invariant_size": 18,
+          "certificate": "checked",
+          "spacer_time_s": 0.0022
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 2,
+      "neurons": 2,
+      "spec": "y <-> prev[2](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0,
+          "product_states": 4,
+          "system_states": 4
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0,
+          "product_states": 4,
+          "system_states": 4
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0034,
+          "k": 1,
+          "closed_by": "induction",
+          "bounded_safe_upto": 1,
+          "state_components": 4,
+          "simple_path_constraints": 1,
+          "solver_checks": 6,
+          "solver_time_s": 0.0003,
+          "phase_time_s": {
+            "base": 0.0013,
+            "step": 0.0014,
+            "forward": 0.0004
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0059,
+          "state_components": 4,
+          "solver_checks": 4,
+          "solver_time_s": 0.0041,
+          "invariant_size": 44,
+          "certificate": "checked",
+          "spacer_time_s": 0.0037
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0021,
+          "k": 1,
+          "closed_by": "induction",
+          "bounded_safe_upto": 1,
+          "state_components": 4,
+          "simple_path_constraints": 1,
+          "solver_checks": 6,
+          "solver_time_s": 0.0003,
+          "phase_time_s": {
+            "base": 0.0007,
+            "step": 0.0009,
+            "forward": 0.0004
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0043,
+          "state_components": 4,
+          "solver_checks": 4,
+          "solver_time_s": 0.0028,
+          "invariant_size": 43,
+          "certificate": "checked",
+          "spacer_time_s": 0.0032
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 3,
+      "neurons": 3,
+      "spec": "y <-> prev[3](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0001,
+          "product_states": 8,
+          "system_states": 8
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0001,
+          "product_states": 8,
+          "system_states": 8
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0056,
+          "k": 2,
+          "closed_by": "induction",
+          "bounded_safe_upto": 2,
+          "state_components": 6,
+          "simple_path_constraints": 1,
+          "solver_checks": 9,
+          "solver_time_s": 0.0004,
+          "phase_time_s": {
+            "base": 0.0021,
+            "step": 0.0025,
+            "forward": 0.0006
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0071,
+          "state_components": 6,
+          "solver_checks": 4,
+          "solver_time_s": 0.0049,
+          "invariant_size": 74,
+          "certificate": "checked",
+          "spacer_time_s": 0.0048
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0032,
+          "k": 2,
+          "closed_by": "induction",
+          "bounded_safe_upto": 2,
+          "state_components": 6,
+          "simple_path_constraints": 1,
+          "solver_checks": 9,
+          "solver_time_s": 0.0004,
+          "phase_time_s": {
+            "base": 0.0011,
+            "step": 0.0014,
+            "forward": 0.0006
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0057,
+          "state_components": 6,
+          "solver_checks": 4,
+          "solver_time_s": 0.004,
+          "invariant_size": 71,
+          "certificate": "checked",
+          "spacer_time_s": 0.0044
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 4,
+      "neurons": 4,
+      "spec": "y <-> prev[4](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0001,
+          "product_states": 16,
+          "system_states": 16
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0001,
+          "product_states": 16,
+          "system_states": 16
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.009,
+          "k": 3,
+          "closed_by": "induction",
+          "bounded_safe_upto": 3,
+          "state_components": 8,
+          "simple_path_constraints": 1,
+          "solver_checks": 12,
+          "solver_time_s": 0.0006,
+          "phase_time_s": {
+            "base": 0.0033,
+            "step": 0.004,
+            "forward": 0.0011
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0089,
+          "state_components": 8,
+          "solver_checks": 4,
+          "solver_time_s": 0.0063,
+          "invariant_size": 100,
+          "certificate": "checked",
+          "spacer_time_s": 0.0064
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0063,
+          "k": 3,
+          "closed_by": "induction",
+          "bounded_safe_upto": 3,
+          "state_components": 8,
+          "simple_path_constraints": 1,
+          "solver_checks": 12,
+          "solver_time_s": 0.0008,
+          "phase_time_s": {
+            "base": 0.0019,
+            "step": 0.0026,
+            "forward": 0.0016
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0095,
+          "state_components": 8,
+          "solver_checks": 4,
+          "solver_time_s": 0.0073,
+          "invariant_size": 95,
+          "certificate": "checked",
+          "spacer_time_s": 0.0079
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 5,
+      "neurons": 5,
+      "spec": "y <-> prev[5](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0002,
+          "product_states": 32,
+          "system_states": 32
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0004,
+          "product_states": 32,
+          "system_states": 32
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0139,
+          "k": 4,
+          "closed_by": "induction",
+          "bounded_safe_upto": 4,
+          "state_components": 10,
+          "simple_path_constraints": 1,
+          "solver_checks": 15,
+          "solver_time_s": 0.001,
+          "phase_time_s": {
+            "base": 0.0049,
+            "step": 0.0064,
+            "forward": 0.0018
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0117,
+          "state_components": 10,
+          "solver_checks": 4,
+          "solver_time_s": 0.0086,
+          "invariant_size": 126,
+          "certificate": "checked",
+          "spacer_time_s": 0.0089
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0072,
+          "k": 4,
+          "closed_by": "induction",
+          "bounded_safe_upto": 4,
+          "state_components": 10,
+          "simple_path_constraints": 1,
+          "solver_checks": 15,
+          "solver_time_s": 0.0009,
+          "phase_time_s": {
+            "base": 0.0019,
+            "step": 0.0034,
+            "forward": 0.0018
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0095,
+          "state_components": 10,
+          "solver_checks": 4,
+          "solver_time_s": 0.0073,
+          "invariant_size": 119,
+          "certificate": "checked",
+          "spacer_time_s": 0.0078
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 6,
+      "neurons": 6,
+      "spec": "y <-> prev[6](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0004,
+          "product_states": 64,
+          "system_states": 64
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0007,
+          "product_states": 64,
+          "system_states": 64
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0192,
+          "k": 5,
+          "closed_by": "induction",
+          "bounded_safe_upto": 5,
+          "state_components": 12,
+          "simple_path_constraints": 1,
+          "solver_checks": 18,
+          "solver_time_s": 0.0012,
+          "phase_time_s": {
+            "base": 0.0066,
+            "step": 0.0091,
+            "forward": 0.0027
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0139,
+          "state_components": 12,
+          "solver_checks": 4,
+          "solver_time_s": 0.0105,
+          "invariant_size": 152,
+          "certificate": "checked",
+          "spacer_time_s": 0.0111
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0096,
+          "k": 5,
+          "closed_by": "induction",
+          "bounded_safe_upto": 5,
+          "state_components": 12,
+          "simple_path_constraints": 1,
+          "solver_checks": 18,
+          "solver_time_s": 0.001,
+          "phase_time_s": {
+            "base": 0.0023,
+            "step": 0.0045,
+            "forward": 0.0026
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0116,
+          "state_components": 12,
+          "solver_checks": 4,
+          "solver_time_s": 0.0093,
+          "invariant_size": 143,
+          "certificate": "checked",
+          "spacer_time_s": 0.01
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 7,
+      "neurons": 7,
+      "spec": "y <-> prev[7](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0008,
+          "product_states": 128,
+          "system_states": 128
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0015,
+          "product_states": 128,
+          "system_states": 128
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0248,
+          "k": 6,
+          "closed_by": "induction",
+          "bounded_safe_upto": 6,
+          "state_components": 14,
+          "simple_path_constraints": 1,
+          "solver_checks": 21,
+          "solver_time_s": 0.0012,
+          "phase_time_s": {
+            "base": 0.0083,
+            "step": 0.0118,
+            "forward": 0.0038
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0162,
+          "state_components": 14,
+          "solver_checks": 4,
+          "solver_time_s": 0.0128,
+          "invariant_size": 178,
+          "certificate": "checked",
+          "spacer_time_s": 0.0135
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0127,
+          "k": 6,
+          "closed_by": "induction",
+          "bounded_safe_upto": 6,
+          "state_components": 14,
+          "simple_path_constraints": 1,
+          "solver_checks": 21,
+          "solver_time_s": 0.0011,
+          "phase_time_s": {
+            "base": 0.0028,
+            "step": 0.0061,
+            "forward": 0.0037
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0142,
+          "state_components": 14,
+          "solver_checks": 4,
+          "solver_time_s": 0.0117,
+          "invariant_size": 167,
+          "certificate": "checked",
+          "spacer_time_s": 0.0125
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 8,
+      "neurons": 8,
+      "spec": "y <-> prev[8](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0016,
+          "product_states": 256,
+          "system_states": 256
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0033,
+          "product_states": 256,
+          "system_states": 256
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0319,
+          "k": 7,
+          "closed_by": "induction",
+          "bounded_safe_upto": 7,
+          "state_components": 16,
+          "simple_path_constraints": 1,
+          "solver_checks": 24,
+          "solver_time_s": 0.0015,
+          "phase_time_s": {
+            "base": 0.0103,
+            "step": 0.0153,
+            "forward": 0.0052
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0193,
+          "state_components": 16,
+          "solver_checks": 4,
+          "solver_time_s": 0.0156,
+          "invariant_size": 204,
+          "certificate": "checked",
+          "spacer_time_s": 0.0165
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0165,
+          "k": 7,
+          "closed_by": "induction",
+          "bounded_safe_upto": 7,
+          "state_components": 16,
+          "simple_path_constraints": 1,
+          "solver_checks": 24,
+          "solver_time_s": 0.0013,
+          "phase_time_s": {
+            "base": 0.0032,
+            "step": 0.0079,
+            "forward": 0.0051
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0176,
+          "state_components": 16,
+          "solver_checks": 4,
+          "solver_time_s": 0.0148,
+          "invariant_size": 191,
+          "certificate": "checked",
+          "spacer_time_s": 0.0157
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 9,
+      "neurons": 9,
+      "spec": "y <-> prev[9](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0033,
+          "product_states": 512,
+          "system_states": 512
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0072,
+          "product_states": 512,
+          "system_states": 512
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0405,
+          "k": 8,
+          "closed_by": "induction",
+          "bounded_safe_upto": 8,
+          "state_components": 18,
+          "simple_path_constraints": 1,
+          "solver_checks": 27,
+          "solver_time_s": 0.0017,
+          "phase_time_s": {
+            "base": 0.0127,
+            "step": 0.0196,
+            "forward": 0.007
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0232,
+          "state_components": 18,
+          "solver_checks": 4,
+          "solver_time_s": 0.0192,
+          "invariant_size": 230,
+          "certificate": "checked",
+          "spacer_time_s": 0.0202
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0215,
+          "k": 8,
+          "closed_by": "induction",
+          "bounded_safe_upto": 8,
+          "state_components": 18,
+          "simple_path_constraints": 1,
+          "solver_checks": 27,
+          "solver_time_s": 0.0016,
+          "phase_time_s": {
+            "base": 0.0039,
+            "step": 0.0104,
+            "forward": 0.007
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0208,
+          "state_components": 18,
+          "solver_checks": 4,
+          "solver_time_s": 0.018,
+          "invariant_size": 215,
+          "certificate": "checked",
+          "spacer_time_s": 0.0189
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 10,
+      "neurons": 10,
+      "spec": "y <-> prev[10](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0069,
+          "product_states": 1024,
+          "system_states": 1024
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0182,
+          "product_states": 1024,
+          "system_states": 1024
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0516,
+          "k": 9,
+          "closed_by": "induction",
+          "bounded_safe_upto": 9,
+          "state_components": 20,
+          "simple_path_constraints": 1,
+          "solver_checks": 30,
+          "solver_time_s": 0.0021,
+          "phase_time_s": {
+            "base": 0.0159,
+            "step": 0.0249,
+            "forward": 0.0094
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0276,
+          "state_components": 20,
+          "solver_checks": 4,
+          "solver_time_s": 0.0234,
+          "invariant_size": 256,
+          "certificate": "checked",
+          "spacer_time_s": 0.0247
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0273,
+          "k": 9,
+          "closed_by": "induction",
+          "bounded_safe_upto": 9,
+          "state_components": 20,
+          "simple_path_constraints": 1,
+          "solver_checks": 30,
+          "solver_time_s": 0.0018,
+          "phase_time_s": {
+            "base": 0.0044,
+            "step": 0.0134,
+            "forward": 0.0093
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0249,
+          "state_components": 20,
+          "solver_checks": 4,
+          "solver_time_s": 0.0219,
+          "invariant_size": 239,
+          "certificate": "checked",
+          "spacer_time_s": 0.023
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 11,
+      "neurons": 11,
+      "spec": "y <-> prev[11](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0145,
+          "product_states": 2048,
+          "system_states": 2048
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0338,
+          "product_states": 2048,
+          "system_states": 2048
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0628,
+          "k": 10,
+          "closed_by": "induction",
+          "bounded_safe_upto": 10,
+          "state_components": 22,
+          "simple_path_constraints": 1,
+          "solver_checks": 33,
+          "solver_time_s": 0.0024,
+          "phase_time_s": {
+            "base": 0.0186,
+            "step": 0.0306,
+            "forward": 0.0122
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0327,
+          "state_components": 22,
+          "solver_checks": 4,
+          "solver_time_s": 0.0281,
+          "invariant_size": 283,
+          "certificate": "checked",
+          "spacer_time_s": 0.0296
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0344,
+          "k": 10,
+          "closed_by": "induction",
+          "bounded_safe_upto": 10,
+          "state_components": 22,
+          "simple_path_constraints": 1,
+          "solver_checks": 33,
+          "solver_time_s": 0.0021,
+          "phase_time_s": {
+            "base": 0.0052,
+            "step": 0.0168,
+            "forward": 0.0122
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0301,
+          "state_components": 22,
+          "solver_checks": 4,
+          "solver_time_s": 0.0268,
+          "invariant_size": 265,
+          "certificate": "checked",
+          "spacer_time_s": 0.0281
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 12,
+      "neurons": 12,
+      "spec": "y <-> prev[12](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0296,
+          "product_states": 4096,
+          "system_states": 4096
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0734,
+          "product_states": 4096,
+          "system_states": 4096
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0755,
+          "k": 11,
+          "closed_by": "induction",
+          "bounded_safe_upto": 11,
+          "state_components": 24,
+          "simple_path_constraints": 1,
+          "solver_checks": 36,
+          "solver_time_s": 0.0027,
+          "phase_time_s": {
+            "base": 0.0218,
+            "step": 0.037,
+            "forward": 0.0152
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0377,
+          "state_components": 24,
+          "solver_checks": 4,
+          "solver_time_s": 0.033,
+          "invariant_size": 311,
+          "certificate": "checked",
+          "spacer_time_s": 0.0346
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0421,
+          "k": 11,
+          "closed_by": "induction",
+          "bounded_safe_upto": 11,
+          "state_components": 24,
+          "simple_path_constraints": 1,
+          "solver_checks": 36,
+          "solver_time_s": 0.0024,
+          "phase_time_s": {
+            "base": 0.0058,
+            "step": 0.0208,
+            "forward": 0.0152
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0351,
+          "state_components": 24,
+          "solver_checks": 4,
+          "solver_time_s": 0.0318,
+          "invariant_size": 291,
+          "certificate": "checked",
+          "spacer_time_s": 0.033
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 14,
+      "neurons": 14,
+      "spec": "y <-> prev[14](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1325,
+          "product_states": 16384,
+          "system_states": 16384
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.3454,
+          "product_states": 16384,
+          "system_states": 16384
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1075,
+          "k": 13,
+          "closed_by": "induction",
+          "bounded_safe_upto": 13,
+          "state_components": 28,
+          "simple_path_constraints": 1,
+          "solver_checks": 42,
+          "solver_time_s": 0.0035,
+          "phase_time_s": {
+            "base": 0.0291,
+            "step": 0.0529,
+            "forward": 0.0237
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0514,
+          "state_components": 28,
+          "solver_checks": 4,
+          "solver_time_s": 0.0459,
+          "invariant_size": 367,
+          "certificate": "checked",
+          "spacer_time_s": 0.048
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0624,
+          "k": 13,
+          "closed_by": "induction",
+          "bounded_safe_upto": 13,
+          "state_components": 28,
+          "simple_path_constraints": 1,
+          "solver_checks": 42,
+          "solver_time_s": 0.0029,
+          "phase_time_s": {
+            "base": 0.0074,
+            "step": 0.0311,
+            "forward": 0.0237
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0503,
+          "state_components": 28,
+          "solver_checks": 4,
+          "solver_time_s": 0.0464,
+          "invariant_size": 343,
+          "certificate": "checked",
+          "spacer_time_s": 0.0478
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 16,
+      "neurons": 16,
+      "spec": "y <-> prev[16](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.5948,
+          "product_states": 65536,
+          "system_states": 65536
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.6173,
+          "product_states": 65536,
+          "system_states": 65536
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1434,
+          "k": 15,
+          "closed_by": "induction",
+          "bounded_safe_upto": 15,
+          "state_components": 32,
+          "simple_path_constraints": 1,
+          "solver_checks": 48,
+          "solver_time_s": 0.0041,
+          "phase_time_s": {
+            "base": 0.0367,
+            "step": 0.071,
+            "forward": 0.0336
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0662,
+          "state_components": 32,
+          "solver_checks": 4,
+          "solver_time_s": 0.0603,
+          "invariant_size": 423,
+          "certificate": "checked",
+          "spacer_time_s": 0.0627
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0872,
+          "k": 15,
+          "closed_by": "induction",
+          "bounded_safe_upto": 15,
+          "state_components": 32,
+          "simple_path_constraints": 1,
+          "solver_checks": 48,
+          "solver_time_s": 0.0038,
+          "phase_time_s": {
+            "base": 0.0092,
+            "step": 0.0435,
+            "forward": 0.0342
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.074,
+          "state_components": 32,
+          "solver_checks": 4,
+          "solver_time_s": 0.0693,
+          "invariant_size": 395,
+          "certificate": "checked",
+          "spacer_time_s": 0.0709
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 20,
+      "neurons": 20,
+      "spec": "y <-> prev[20](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 13.9669,
+          "product_states": 1048576,
+          "system_states": 1048576
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 45.7484,
+          "product_states": 1048576,
+          "system_states": 1048576
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.2529,
+          "k": 19,
+          "closed_by": "induction",
+          "bounded_safe_upto": 19,
+          "state_components": 40,
+          "simple_path_constraints": 1,
+          "solver_checks": 60,
+          "solver_time_s": 0.0071,
+          "phase_time_s": {
+            "base": 0.0591,
+            "step": 0.1245,
+            "forward": 0.0658
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1161,
+          "state_components": 40,
+          "solver_checks": 4,
+          "solver_time_s": 0.1086,
+          "invariant_size": 535,
+          "certificate": "checked",
+          "spacer_time_s": 0.112
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1592,
+          "k": 19,
+          "closed_by": "induction",
+          "bounded_safe_upto": 19,
+          "state_components": 40,
+          "simple_path_constraints": 1,
+          "solver_checks": 60,
+          "solver_time_s": 0.0059,
+          "phase_time_s": {
+            "base": 0.0141,
+            "step": 0.079,
+            "forward": 0.0658
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1163,
+          "state_components": 40,
+          "solver_checks": 4,
+          "solver_time_s": 0.1112,
+          "invariant_size": 499,
+          "certificate": "checked",
+          "spacer_time_s": 0.1132
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 24,
+      "neurons": 24,
+      "spec": "y <-> prev[24](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "RESOURCE_LIMIT",
+          "time_s": 38.7294
+        },
+        "explicit_contract": {
+          "status": "TIMEOUT",
+          "time_s": 120.2457
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.3904,
+          "k": 23,
+          "closed_by": "induction",
+          "bounded_safe_upto": 23,
+          "state_components": 48,
+          "simple_path_constraints": 1,
+          "solver_checks": 72,
+          "solver_time_s": 0.0092,
+          "phase_time_s": {
+            "base": 0.0817,
+            "step": 0.1945,
+            "forward": 0.1101
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1756,
+          "state_components": 48,
+          "solver_checks": 4,
+          "solver_time_s": 0.1671,
+          "invariant_size": 647,
+          "certificate": "checked",
+          "spacer_time_s": 0.1711
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.2593,
+          "k": 23,
+          "closed_by": "induction",
+          "bounded_safe_upto": 23,
+          "state_components": 48,
+          "simple_path_constraints": 1,
+          "solver_checks": 72,
+          "solver_time_s": 0.008,
+          "phase_time_s": {
+            "base": 0.0188,
+            "step": 0.1295,
+            "forward": 0.1107
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1713,
+          "state_components": 48,
+          "solver_checks": 4,
+          "solver_time_s": 0.1654,
+          "invariant_size": 603,
+          "certificate": "checked",
+          "spacer_time_s": 0.1679
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 28,
+      "neurons": 28,
+      "spec": "y <-> prev[28](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.5742,
+          "k": 27,
+          "closed_by": "induction",
+          "bounded_safe_upto": 27,
+          "state_components": 56,
+          "simple_path_constraints": 1,
+          "solver_checks": 84,
+          "solver_time_s": 0.0118,
+          "phase_time_s": {
+            "base": 0.1126,
+            "step": 0.2855,
+            "forward": 0.1728
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.2545,
+          "state_components": 56,
+          "solver_checks": 4,
+          "solver_time_s": 0.2447,
+          "invariant_size": 759,
+          "certificate": "checked",
+          "spacer_time_s": 0.2496
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.3941,
+          "k": 27,
+          "closed_by": "induction",
+          "bounded_safe_upto": 27,
+          "state_components": 56,
+          "simple_path_constraints": 1,
+          "solver_checks": 84,
+          "solver_time_s": 0.0102,
+          "phase_time_s": {
+            "base": 0.0239,
+            "step": 0.1972,
+            "forward": 0.1726
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.2548,
+          "state_components": 56,
+          "solver_checks": 4,
+          "solver_time_s": 0.2483,
+          "invariant_size": 707,
+          "certificate": "checked",
+          "spacer_time_s": 0.251
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 32,
+      "neurons": 32,
+      "spec": "y <-> prev[32](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.8229,
+          "k": 31,
+          "closed_by": "induction",
+          "bounded_safe_upto": 31,
+          "state_components": 64,
+          "simple_path_constraints": 1,
+          "solver_checks": 96,
+          "solver_time_s": 0.0179,
+          "phase_time_s": {
+            "base": 0.1464,
+            "step": 0.4112,
+            "forward": 0.2612
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.3672,
+          "state_components": 64,
+          "solver_checks": 4,
+          "solver_time_s": 0.3561,
+          "invariant_size": 871,
+          "certificate": "checked",
+          "spacer_time_s": 0.3618
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.5738,
+          "k": 31,
+          "closed_by": "induction",
+          "bounded_safe_upto": 31,
+          "state_components": 64,
+          "simple_path_constraints": 1,
+          "solver_checks": 96,
+          "solver_time_s": 0.0131,
+          "phase_time_s": {
+            "base": 0.0308,
+            "step": 0.2872,
+            "forward": 0.2553
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.3532,
+          "state_components": 64,
+          "solver_checks": 4,
+          "solver_time_s": 0.3461,
+          "invariant_size": 811,
+          "certificate": "checked",
+          "spacer_time_s": 0.3491
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 40,
+      "neurons": 40,
+      "spec": "y <-> prev[40](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.4634,
+          "k": 39,
+          "closed_by": "induction",
+          "bounded_safe_upto": 39,
+          "state_components": 80,
+          "simple_path_constraints": 1,
+          "solver_checks": 120,
+          "solver_time_s": 0.0248,
+          "phase_time_s": {
+            "base": 0.2267,
+            "step": 0.729,
+            "forward": 0.5028
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.7658,
+          "state_components": 80,
+          "solver_checks": 4,
+          "solver_time_s": 0.7522,
+          "invariant_size": 1095,
+          "certificate": "checked",
+          "spacer_time_s": 0.7596
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.1168,
+          "k": 39,
+          "closed_by": "induction",
+          "bounded_safe_upto": 39,
+          "state_components": 80,
+          "simple_path_constraints": 1,
+          "solver_checks": 120,
+          "solver_time_s": 0.0247,
+          "phase_time_s": {
+            "base": 0.0484,
+            "step": 0.5582,
+            "forward": 0.5095
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.6853,
+          "state_components": 80,
+          "solver_checks": 4,
+          "solver_time_s": 0.6766,
+          "invariant_size": 1019,
+          "certificate": "checked",
+          "spacer_time_s": 0.6802
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 48,
+      "neurons": 48,
+      "spec": "y <-> prev[48](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 2.4601,
+          "k": 47,
+          "closed_by": "induction",
+          "bounded_safe_upto": 47,
+          "state_components": 96,
+          "simple_path_constraints": 1,
+          "solver_checks": 144,
+          "solver_time_s": 0.042,
+          "phase_time_s": {
+            "base": 0.334,
+            "step": 1.22,
+            "forward": 0.8996
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.1701,
+          "state_components": 96,
+          "solver_checks": 4,
+          "solver_time_s": 1.1532,
+          "invariant_size": 1319,
+          "certificate": "checked",
+          "spacer_time_s": 1.1628
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.9614,
+          "k": 47,
+          "closed_by": "induction",
+          "bounded_safe_upto": 47,
+          "state_components": 96,
+          "simple_path_constraints": 1,
+          "solver_checks": 144,
+          "solver_time_s": 0.0399,
+          "phase_time_s": {
+            "base": 0.0695,
+            "step": 0.9985,
+            "forward": 0.8927
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.1365,
+          "state_components": 96,
+          "solver_checks": 4,
+          "solver_time_s": 1.1236,
+          "invariant_size": 1227,
+          "certificate": "checked",
+          "spacer_time_s": 1.1282
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 56,
+      "neurons": 56,
+      "spec": "y <-> prev[56](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 3.6856,
+          "k": 55,
+          "closed_by": "induction",
+          "bounded_safe_upto": 55,
+          "state_components": 112,
+          "simple_path_constraints": 1,
+          "solver_checks": 168,
+          "solver_time_s": 0.0623,
+          "phase_time_s": {
+            "base": 0.4531,
+            "step": 1.828,
+            "forward": 1.3978
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.7627,
+          "state_components": 112,
+          "solver_checks": 4,
+          "solver_time_s": 1.7443,
+          "invariant_size": 1543,
+          "certificate": "checked",
+          "spacer_time_s": 1.7549
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 2.9411,
+          "k": 55,
+          "closed_by": "induction",
+          "bounded_safe_upto": 55,
+          "state_components": 112,
+          "simple_path_constraints": 1,
+          "solver_checks": 168,
+          "solver_time_s": 0.0526,
+          "phase_time_s": {
+            "base": 0.0876,
+            "step": 1.4743,
+            "forward": 1.3783
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.8407,
+          "state_components": 112,
+          "solver_checks": 4,
+          "solver_time_s": 1.8286,
+          "invariant_size": 1435,
+          "certificate": "checked",
+          "spacer_time_s": 1.8341
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 64,
+      "neurons": 64,
+      "spec": "y <-> prev[64](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 5.2993,
+          "k": 63,
+          "closed_by": "induction",
+          "bounded_safe_upto": 63,
+          "state_components": 128,
+          "simple_path_constraints": 1,
+          "solver_checks": 192,
+          "solver_time_s": 0.0842,
+          "phase_time_s": {
+            "base": 0.576,
+            "step": 2.6548,
+            "forward": 2.0606
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 2.6782,
+          "state_components": 128,
+          "solver_checks": 4,
+          "solver_time_s": 2.6574,
+          "invariant_size": 1767,
+          "certificate": "checked",
+          "spacer_time_s": 2.6695
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 4.4049,
+          "k": 63,
+          "closed_by": "induction",
+          "bounded_safe_upto": 63,
+          "state_components": 128,
+          "simple_path_constraints": 1,
+          "solver_checks": 192,
+          "solver_time_s": 0.0898,
+          "phase_time_s": {
+            "base": 0.1165,
+            "step": 2.1917,
+            "forward": 2.0955
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 2.5947,
+          "state_components": 128,
+          "solver_checks": 4,
+          "solver_time_s": 2.5821,
+          "invariant_size": 1643,
+          "certificate": "checked",
+          "spacer_time_s": 2.5877
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 80,
+      "neurons": 80,
+      "spec": "y <-> prev[80](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 9.6148,
+          "k": 79,
+          "closed_by": "induction",
+          "bounded_safe_upto": 79,
+          "state_components": 160,
+          "simple_path_constraints": 1,
+          "solver_checks": 240,
+          "solver_time_s": 0.1233,
+          "phase_time_s": {
+            "base": 0.8719,
+            "step": 4.839,
+            "forward": 3.8941
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 5.1469,
+          "state_components": 160,
+          "solver_checks": 4,
+          "solver_time_s": 5.1213,
+          "invariant_size": 2215,
+          "certificate": "checked",
+          "spacer_time_s": 5.1363
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 8.6936,
+          "k": 79,
+          "closed_by": "induction",
+          "bounded_safe_upto": 79,
+          "state_components": 160,
+          "simple_path_constraints": 1,
+          "solver_checks": 240,
+          "solver_time_s": 0.1276,
+          "phase_time_s": {
+            "base": 0.197,
+            "step": 4.3893,
+            "forward": 4.1061
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 5.9919,
+          "state_components": 160,
+          "solver_checks": 4,
+          "solver_time_s": 5.9756,
+          "invariant_size": 2059,
+          "certificate": "checked",
+          "spacer_time_s": 5.9823
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 96,
+      "neurons": 96,
+      "spec": "y <-> prev[96](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 16.6897,
+          "k": 95,
+          "closed_by": "induction",
+          "bounded_safe_upto": 95,
+          "state_components": 192,
+          "simple_path_constraints": 1,
+          "solver_checks": 288,
+          "solver_time_s": 0.2308,
+          "phase_time_s": {
+            "base": 1.3224,
+            "step": 8.29,
+            "forward": 7.0652
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 9.3521,
+          "state_components": 192,
+          "solver_checks": 4,
+          "solver_time_s": 9.3215,
+          "invariant_size": 2663,
+          "certificate": "checked",
+          "spacer_time_s": 9.3399
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 14.6341,
+          "k": 95,
+          "closed_by": "induction",
+          "bounded_safe_upto": 95,
+          "state_components": 192,
+          "simple_path_constraints": 1,
+          "solver_checks": 288,
+          "solver_time_s": 0.2119,
+          "phase_time_s": {
+            "base": 0.2614,
+            "step": 7.3459,
+            "forward": 7.0253
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 9.7808,
+          "state_components": 192,
+          "solver_checks": 4,
+          "solver_time_s": 9.7621,
+          "invariant_size": 2475,
+          "certificate": "checked",
+          "spacer_time_s": 9.7705
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 112,
+      "neurons": 112,
+      "spec": "y <-> prev[112](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 27.5522,
+          "k": 111,
+          "closed_by": "induction",
+          "bounded_safe_upto": 111,
+          "state_components": 224,
+          "simple_path_constraints": 1,
+          "solver_checks": 336,
+          "solver_time_s": 0.3567,
+          "phase_time_s": {
+            "base": 1.9479,
+            "step": 13.8144,
+            "forward": 11.776
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 17.3192,
+          "state_components": 224,
+          "solver_checks": 4,
+          "solver_time_s": 17.2828,
+          "invariant_size": 3134,
+          "certificate": "checked",
+          "spacer_time_s": 17.3052
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 27.2077,
+          "k": 111,
+          "closed_by": "induction",
+          "bounded_safe_upto": 111,
+          "state_components": 224,
+          "simple_path_constraints": 1,
+          "solver_checks": 336,
+          "solver_time_s": 0.3476,
+          "phase_time_s": {
+            "base": 0.4169,
+            "step": 13.6643,
+            "forward": 13.1246
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 15.8772,
+          "state_components": 224,
+          "solver_checks": 4,
+          "solver_time_s": 15.8555,
+          "invariant_size": 2915,
+          "certificate": "checked",
+          "spacer_time_s": 15.8651
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 128,
+      "neurons": 128,
+      "spec": "y <-> prev[128](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 43.3013,
+          "k": 127,
+          "closed_by": "induction",
+          "bounded_safe_upto": 127,
+          "state_components": 256,
+          "simple_path_constraints": 1,
+          "solver_checks": 384,
+          "solver_time_s": 0.5405,
+          "phase_time_s": {
+            "base": 2.758,
+            "step": 21.6357,
+            "forward": 18.8918
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 27.6971,
+          "state_components": 256,
+          "solver_checks": 4,
+          "solver_time_s": 27.6562,
+          "invariant_size": 3614,
+          "certificate": "checked",
+          "spacer_time_s": 27.6793
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 40.2301,
+          "k": 127,
+          "closed_by": "induction",
+          "bounded_safe_upto": 127,
+          "state_components": 256,
+          "simple_path_constraints": 1,
+          "solver_checks": 384,
+          "solver_time_s": 0.4901,
+          "phase_time_s": {
+            "base": 0.5625,
+            "step": 20.1839,
+            "forward": 19.4813
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 22.8917,
+          "state_components": 256,
+          "solver_checks": 4,
+          "solver_time_s": 22.8651,
+          "invariant_size": 3363,
+          "certificate": "checked",
+          "spacer_time_s": 22.8783
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 160,
+      "neurons": 160,
+      "spec": "y <-> prev[160](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 82.4333,
+          "k": 159,
+          "closed_by": "induction",
+          "bounded_safe_upto": 159,
+          "state_components": 320,
+          "simple_path_constraints": 1,
+          "solver_checks": 480,
+          "solver_time_s": 0.9041,
+          "phase_time_s": {
+            "base": 3.9593,
+            "step": 41.5268,
+            "forward": 36.9276
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 69.2012,
+          "state_components": 320,
+          "solver_checks": 4,
+          "solver_time_s": 69.1402,
+          "invariant_size": 3700,
+          "certificate": "checked",
+          "spacer_time_s": 69.1739
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 73.3456,
+          "k": 159,
+          "closed_by": "induction",
+          "bounded_safe_upto": 159,
+          "state_components": 320,
+          "simple_path_constraints": 1,
+          "solver_checks": 480,
+          "solver_time_s": 0.913,
+          "phase_time_s": {
+            "base": 0.7525,
+            "step": 36.605,
+            "forward": 35.9854
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 59.165,
+          "state_components": 320,
+          "solver_checks": 4,
+          "solver_time_s": 59.1302,
+          "invariant_size": 3441,
+          "certificate": "checked",
+          "spacer_time_s": 59.1477
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 192,
+      "neurons": 192,
+      "spec": "y <-> prev[192](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "TIMEOUT",
+          "time_s": 120.5107,
+          "k": 189,
+          "closed_by": null,
+          "bounded_safe_upto": 188,
+          "state_components": 384,
+          "simple_path_constraints": 1,
+          "solver_checks": 568,
+          "solver_time_s": 1.4092,
+          "phase_time_s": {
+            "base": 5.031270621577278,
+            "step": 60.42947254644241,
+            "forward": 55.00378716830164
+          },
+          "reason": "base case k=189: timeout"
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 108.7646,
+          "state_components": 384,
+          "solver_checks": 4,
+          "solver_time_s": 108.7003,
+          "invariant_size": 3730,
+          "certificate": "checked",
+          "spacer_time_s": 108.7433
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 114.6358,
+          "k": 191,
+          "closed_by": "induction",
+          "bounded_safe_upto": 191,
+          "state_components": 384,
+          "simple_path_constraints": 1,
+          "solver_checks": 576,
+          "solver_time_s": 1.4242,
+          "phase_time_s": {
+            "base": 1.0024,
+            "step": 57.5285,
+            "forward": 56.1017
+          }
+        },
+        "pdr_contract": {
+          "status": "TIMEOUT",
+          "time_s": 120.0056,
+          "state_components": 384,
+          "solver_checks": 1,
+          "solver_time_s": 119.9856,
+          "spacer_time_s": 120.0055,
+          "reason": "spacer: timeout"
+        }
+      }
+    },
+    {
+      "family": "relay",
+      "N": 256,
+      "neurons": 256,
+      "spec": "y <-> prev[256](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "TIMEOUT",
+          "time_s": 120.0098,
+          "state_components": 512,
+          "solver_checks": 1,
+          "solver_time_s": 119.9535,
+          "spacer_time_s": 120.0097,
+          "reason": "spacer: timeout"
+        },
+        "kind_contract": {
+          "status": "TIMEOUT",
+          "time_s": 120.6394,
+          "k": 167,
+          "closed_by": null,
+          "bounded_safe_upto": 167,
+          "state_components": 512,
+          "simple_path_constraints": 1,
+          "solver_checks": 504,
+          "solver_time_s": 1.6636,
+          "phase_time_s": {
+            "base": 1.1318499076878652,
+            "step": 61.154091291478835,
+            "forward": 58.349769326276146
+          },
+          "reason": "forward check k=167: timeout"
+        },
+        "pdr_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        }
+      }
+    },
+    {
+      "family": "counter",
+      "N": 1,
+      "neurons": 1,
+      "spec": "y <-> prev[1](a & modcount[2](a) == 0)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0001,
+          "product_states": 4,
+          "system_states": 4
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0,
+          "product_states": 3,
+          "system_states": 3
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0239,
+          "k": 2,
+          "closed_by": "induction",
+          "bounded_safe_upto": 2,
+          "state_components": 4,
+          "simple_path_constraints": 2,
+          "solver_checks": 10,
+          "solver_time_s": 0.0109,
+          "phase_time_s": {
+            "base": 0.004,
+            "step": 0.0107,
+            "forward": 0.0031
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1534,
+          "state_components": 4,
+          "solver_checks": 4,
+          "solver_time_s": 0.1475,
+          "invariant_size": 432,
+          "certificate": "checked",
+          "spacer_time_s": 0.1326
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0183,
+          "k": 2,
+          "closed_by": "induction",
+          "bounded_safe_upto": 2,
+          "state_components": 4,
+          "simple_path_constraints": 4,
+          "solver_checks": 12,
+          "solver_time_s": 0.0103,
+          "phase_time_s": {
+            "base": 0.0037,
+            "step": 0.0101,
+            "forward": 0.0037
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1047,
+          "state_components": 4,
+          "solver_checks": 4,
+          "solver_time_s": 0.1012,
+          "invariant_size": 193,
+          "certificate": "checked",
+          "spacer_time_s": 0.0891
+        }
+      }
+    },
+    {
+      "family": "counter",
+      "N": 2,
+      "neurons": 2,
+      "spec": "y <-> prev[2](a & modcount[4](a) == 0)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0001,
+          "product_states": 12,
+          "system_states": 12
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0001,
+          "product_states": 8,
+          "system_states": 8
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1987,
+          "k": 9,
+          "closed_by": "induction",
+          "bounded_safe_upto": 9,
+          "state_components": 7,
+          "simple_path_constraints": 19,
+          "solver_checks": 48,
+          "solver_time_s": 0.1473,
+          "phase_time_s": {
+            "base": 0.0353,
+            "step": 0.123,
+            "forward": 0.0393
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.4791,
+          "state_components": 7,
+          "solver_checks": 4,
+          "solver_time_s": 0.4696,
+          "invariant_size": 1781,
+          "certificate": "checked",
+          "spacer_time_s": 0.4507
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0684,
+          "k": 6,
+          "closed_by": "forward",
+          "bounded_safe_upto": 6,
+          "state_components": 7,
+          "simple_path_constraints": 11,
+          "solver_checks": 32,
+          "solver_time_s": 0.0372,
+          "phase_time_s": {
+            "base": 0.0103,
+            "step": 0.0312,
+            "forward": 0.0259
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.2782,
+          "state_components": 7,
+          "solver_checks": 4,
+          "solver_time_s": 0.272,
+          "invariant_size": 761,
+          "certificate": "checked",
+          "spacer_time_s": 0.2617
+        }
+      }
+    },
+    {
+      "family": "counter",
+      "N": 3,
+      "neurons": 3,
+      "spec": "y <-> prev[3](a & modcount[8](a) == 0)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0002,
+          "product_states": 32,
+          "system_states": 32
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0003,
+          "product_states": 19,
+          "system_states": 19
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 7.7079,
+          "k": 22,
+          "closed_by": "induction",
+          "bounded_safe_upto": 22,
+          "state_components": 10,
+          "simple_path_constraints": 116,
+          "solver_checks": 184,
+          "solver_time_s": 7.29,
+          "phase_time_s": {
+            "base": 1.9139,
+            "step": 2.752,
+            "forward": 3.0407
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 3.0936,
+          "state_components": 10,
+          "solver_checks": 4,
+          "solver_time_s": 3.077,
+          "invariant_size": 3825,
+          "certificate": "checked",
+          "spacer_time_s": 3.0536
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.0829,
+          "k": 14,
+          "closed_by": "forward",
+          "bounded_safe_upto": 14,
+          "state_components": 10,
+          "simple_path_constraints": 48,
+          "solver_checks": 93,
+          "solver_time_s": 0.9253,
+          "phase_time_s": {
+            "base": 0.1002,
+            "step": 0.477,
+            "forward": 0.5044
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.67,
+          "state_components": 10,
+          "solver_checks": 4,
+          "solver_time_s": 1.6579,
+          "invariant_size": 2235,
+          "certificate": "checked",
+          "spacer_time_s": 1.6419
+        }
+      }
+    },
+    {
+      "family": "counter",
+      "N": 4,
+      "neurons": 4,
+      "spec": "y <-> prev[4](a & modcount[16](a) == 0)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0006,
+          "product_states": 76,
+          "system_states": 76
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0009,
+          "product_states": 43,
+          "system_states": 43
+        },
+        "kind_mono": {
+          "status": "TIMEOUT",
+          "time_s": 120.0094,
+          "k": 28,
+          "closed_by": null,
+          "bounded_safe_upto": 27,
+          "state_components": 13,
+          "simple_path_constraints": 53,
+          "solver_checks": 138,
+          "solver_time_s": 119.5826,
+          "phase_time_s": {
+            "base": 63.60213091573678,
+            "step": 2.373373834299855,
+            "forward": 1.081991168204695
+          },
+          "reason": "base case k=28: canceled"
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 72.6671,
+          "state_components": 13,
+          "solver_checks": 4,
+          "solver_time_s": 72.6173,
+          "invariant_size": 6129,
+          "certificate": "checked",
+          "spacer_time_s": 72.3848
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 33.9602,
+          "k": 30,
+          "closed_by": "forward",
+          "bounded_safe_upto": 30,
+          "state_components": 13,
+          "simple_path_constraints": 114,
+          "solver_checks": 207,
+          "solver_time_s": 33.2433,
+          "phase_time_s": {
+            "base": 10.0045,
+            "step": 8.8022,
+            "forward": 15.1518
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 36.9189,
+          "state_components": 13,
+          "solver_checks": 4,
+          "solver_time_s": 36.8857,
+          "invariant_size": 5817,
+          "certificate": "checked",
+          "spacer_time_s": 36.8687
+        }
+      }
+    },
+    {
+      "family": "counter",
+      "N": 5,
+      "neurons": 5,
+      "spec": "y <-> prev[5](a & modcount[32](a) == 0)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0013,
+          "product_states": 172,
+          "system_states": 172
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0022,
+          "product_states": 92,
+          "system_states": 92
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "TIMEOUT",
+          "time_s": 120.0048,
+          "state_components": 16,
+          "solver_checks": 1,
+          "solver_time_s": 120.0018,
+          "spacer_time_s": 120.0047,
+          "reason": "spacer: timeout"
+        },
+        "kind_contract": {
+          "status": "TIMEOUT",
+          "time_s": 120.0011,
+          "k": 41,
+          "closed_by": null,
+          "bounded_safe_upto": 40,
+          "state_components": 16,
+          "simple_path_constraints": 69,
+          "solver_checks": 193,
+          "solver_time_s": 119.1691,
+          "phase_time_s": {
+            "base": 44.89028978603892,
+            "step": 10.274263127008453,
+            "forward": 4.728275040048175
+          },
+          "reason": "base case k=41: canceled"
+        },
+        "pdr_contract": {
+          "status": "TIMEOUT",
+          "time_s": 120.0105,
+          "state_components": 16,
+          "solver_checks": 1,
+          "solver_time_s": 120.0075,
+          "spacer_time_s": 120.0104,
+          "reason": "spacer: timeout"
+        }
+      }
+    },
+    {
+      "family": "counter",
+      "N": 6,
+      "neurons": 6,
+      "spec": "y <-> prev[6](a & modcount[64](a) == 0)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0029,
+          "product_states": 368,
+          "system_states": 368
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0054,
+          "product_states": 192,
+          "system_states": 192
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        }
+      }
+    },
+    {
+      "family": "counter",
+      "N": 7,
+      "neurons": 7,
+      "spec": "y <-> prev[7](a & modcount[128](a) == 0)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0059,
+          "product_states": 768,
+          "system_states": 768
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0123,
+          "product_states": 395,
+          "system_states": 395
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        }
+      }
+    },
+    {
+      "family": "counter",
+      "N": 8,
+      "neurons": 8,
+      "spec": "y <-> prev[8](a & modcount[256](a) == 0)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0124,
+          "product_states": 1580,
+          "system_states": 1580
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0282,
+          "product_states": 803,
+          "system_states": 803
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        }
+      }
+    },
+    {
+      "family": "counter",
+      "N": 9,
+      "neurons": 9,
+      "spec": "y <-> prev[9](a & modcount[512](a) == 0)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0264,
+          "product_states": 3212,
+          "system_states": 3212
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0671,
+          "product_states": 1620,
+          "system_states": 1620
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        }
+      }
+    },
+    {
+      "family": "counter",
+      "N": 10,
+      "neurons": 10,
+      "spec": "y <-> prev[10](a & modcount[1024](a) == 0)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.055,
+          "product_states": 6480,
+          "system_states": 6480
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1413,
+          "product_states": 3256,
+          "system_states": 3256
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        }
+      }
+    },
+    {
+      "family": "counter",
+      "N": 11,
+      "neurons": 11,
+      "spec": "y <-> prev[11](a & modcount[2048](a) == 0)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1199,
+          "product_states": 13024,
+          "system_states": 13024
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.3086,
+          "product_states": 6531,
+          "system_states": 6531
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        }
+      }
+    },
+    {
+      "family": "counter",
+      "N": 12,
+      "neurons": 12,
+      "spec": "y <-> prev[12](a & modcount[4096](a) == 0)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.2452,
+          "product_states": 26124,
+          "system_states": 26124
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.6639,
+          "product_states": 13086,
+          "system_states": 13086
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        }
+      }
+    },
+    {
+      "family": "counter",
+      "N": 14,
+      "neurons": 14,
+      "spec": "y <-> prev[14](a & modcount[16384](a) == 0)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.0756,
+          "product_states": 104788,
+          "system_states": 104788
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 3.0909,
+          "product_states": 52421,
+          "system_states": 52421
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        }
+      }
+    },
+    {
+      "family": "counter",
+      "N": 16,
+      "neurons": 16,
+      "spec": "y <-> prev[16](a & modcount[65536](a) == 0)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 4.9552,
+          "product_states": 419488,
+          "system_states": 419488
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 14.712,
+          "product_states": 209776,
+          "system_states": 209776
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        }
+      }
+    },
+    {
+      "family": "counter",
+      "N": 20,
+      "neurons": 20,
+      "spec": "y <-> prev[20](a & modcount[1048576](a) == 0)",
+      "engines": {
+        "explicit_mono": {
+          "status": "RESOURCE_LIMIT",
+          "time_s": 59.0192
+        },
+        "explicit_contract": {
+          "status": "TIMEOUT",
+          "time_s": 120.0636
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 1,
+      "neurons": 1,
+      "spec": "y -> once[1,2](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0001,
+          "product_states": 4,
+          "system_states": 4
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0,
+          "product_states": 4,
+          "system_states": 3
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0102,
+          "k": 0,
+          "closed_by": "induction",
+          "bounded_safe_upto": 0,
+          "state_components": 4,
+          "simple_path_constraints": 0,
+          "solver_checks": 2,
+          "solver_time_s": 0.0063,
+          "phase_time_s": {
+            "base": 0.0046,
+            "step": 0.0048,
+            "forward": 0.0
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.061,
+          "state_components": 4,
+          "solver_checks": 4,
+          "solver_time_s": 0.0581,
+          "invariant_size": 24,
+          "certificate": "checked",
+          "spacer_time_s": 0.0533
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.006,
+          "k": 0,
+          "closed_by": "induction",
+          "bounded_safe_upto": 0,
+          "state_components": 4,
+          "simple_path_constraints": 0,
+          "solver_checks": 2,
+          "solver_time_s": 0.0043,
+          "phase_time_s": {
+            "base": 0.0019,
+            "step": 0.0038,
+            "forward": 0.0
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0503,
+          "state_components": 4,
+          "solver_checks": 4,
+          "solver_time_s": 0.048,
+          "invariant_size": 25,
+          "certificate": "checked",
+          "spacer_time_s": 0.0434
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 2,
+      "neurons": 2,
+      "spec": "y -> once[1,4](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0001,
+          "product_states": 16,
+          "system_states": 10
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0002,
+          "product_states": 16,
+          "system_states": 7
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0111,
+          "k": 1,
+          "closed_by": "induction",
+          "bounded_safe_upto": 1,
+          "state_components": 8,
+          "simple_path_constraints": 1,
+          "solver_checks": 6,
+          "solver_time_s": 0.0057,
+          "phase_time_s": {
+            "base": 0.0036,
+            "step": 0.006,
+            "forward": 0.0009
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0745,
+          "state_components": 8,
+          "solver_checks": 4,
+          "solver_time_s": 0.0714,
+          "invariant_size": 51,
+          "certificate": "checked",
+          "spacer_time_s": 0.0645
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0101,
+          "k": 1,
+          "closed_by": "induction",
+          "bounded_safe_upto": 1,
+          "state_components": 8,
+          "simple_path_constraints": 1,
+          "solver_checks": 6,
+          "solver_time_s": 0.0055,
+          "phase_time_s": {
+            "base": 0.0034,
+            "step": 0.0052,
+            "forward": 0.001
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0791,
+          "state_components": 8,
+          "solver_checks": 4,
+          "solver_time_s": 0.0761,
+          "invariant_size": 57,
+          "certificate": "checked",
+          "spacer_time_s": 0.0703
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 3,
+      "neurons": 3,
+      "spec": "y -> once[1,6](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0004,
+          "product_states": 64,
+          "system_states": 22
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0007,
+          "product_states": 64,
+          "system_states": 15
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0168,
+          "k": 2,
+          "closed_by": "induction",
+          "bounded_safe_upto": 2,
+          "state_components": 12,
+          "simple_path_constraints": 1,
+          "solver_checks": 9,
+          "solver_time_s": 0.0072,
+          "phase_time_s": {
+            "base": 0.005,
+            "step": 0.0088,
+            "forward": 0.0024
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.081,
+          "state_components": 12,
+          "solver_checks": 4,
+          "solver_time_s": 0.077,
+          "invariant_size": 88,
+          "certificate": "checked",
+          "spacer_time_s": 0.0689
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0148,
+          "k": 2,
+          "closed_by": "induction",
+          "bounded_safe_upto": 2,
+          "state_components": 12,
+          "simple_path_constraints": 1,
+          "solver_checks": 9,
+          "solver_time_s": 0.0066,
+          "phase_time_s": {
+            "base": 0.0047,
+            "step": 0.0078,
+            "forward": 0.0018
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.2135,
+          "state_components": 12,
+          "solver_checks": 4,
+          "solver_time_s": 0.2092,
+          "invariant_size": 125,
+          "certificate": "checked",
+          "spacer_time_s": 0.073
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 4,
+      "neurons": 4,
+      "spec": "y -> once[1,8](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0015,
+          "product_states": 256,
+          "system_states": 44
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0039,
+          "product_states": 256,
+          "system_states": 29
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0236,
+          "k": 3,
+          "closed_by": "induction",
+          "bounded_safe_upto": 3,
+          "state_components": 16,
+          "simple_path_constraints": 1,
+          "solver_checks": 12,
+          "solver_time_s": 0.0099,
+          "phase_time_s": {
+            "base": 0.0064,
+            "step": 0.0134,
+            "forward": 0.003
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0859,
+          "state_components": 16,
+          "solver_checks": 4,
+          "solver_time_s": 0.0817,
+          "invariant_size": 121,
+          "certificate": "checked",
+          "spacer_time_s": 0.0682
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0229,
+          "k": 3,
+          "closed_by": "induction",
+          "bounded_safe_upto": 3,
+          "state_components": 16,
+          "simple_path_constraints": 1,
+          "solver_checks": 12,
+          "solver_time_s": 0.0099,
+          "phase_time_s": {
+            "base": 0.0054,
+            "step": 0.0119,
+            "forward": 0.0049
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0903,
+          "state_components": 16,
+          "solver_checks": 4,
+          "solver_time_s": 0.086,
+          "invariant_size": 123,
+          "certificate": "checked",
+          "spacer_time_s": 0.0758
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 5,
+      "neurons": 5,
+      "spec": "y -> once[1,10](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0064,
+          "product_states": 1024,
+          "system_states": 82
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0172,
+          "product_states": 1024,
+          "system_states": 53
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0319,
+          "k": 4,
+          "closed_by": "induction",
+          "bounded_safe_upto": 4,
+          "state_components": 20,
+          "simple_path_constraints": 1,
+          "solver_checks": 15,
+          "solver_time_s": 0.0112,
+          "phase_time_s": {
+            "base": 0.0067,
+            "step": 0.0179,
+            "forward": 0.0062
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0975,
+          "state_components": 20,
+          "solver_checks": 4,
+          "solver_time_s": 0.0924,
+          "invariant_size": 245,
+          "certificate": "checked",
+          "spacer_time_s": 0.0793
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0302,
+          "k": 4,
+          "closed_by": "induction",
+          "bounded_safe_upto": 4,
+          "state_components": 20,
+          "simple_path_constraints": 1,
+          "solver_checks": 15,
+          "solver_time_s": 0.0113,
+          "phase_time_s": {
+            "base": 0.0078,
+            "step": 0.0156,
+            "forward": 0.006
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1002,
+          "state_components": 20,
+          "solver_checks": 4,
+          "solver_time_s": 0.0949,
+          "invariant_size": 154,
+          "certificate": "checked",
+          "spacer_time_s": 0.0845
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 6,
+      "neurons": 6,
+      "spec": "y -> once[1,12](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.027,
+          "product_states": 4096,
+          "system_states": 144
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.082,
+          "product_states": 4096,
+          "system_states": 91
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0448,
+          "k": 5,
+          "closed_by": "induction",
+          "bounded_safe_upto": 5,
+          "state_components": 24,
+          "simple_path_constraints": 1,
+          "solver_checks": 18,
+          "solver_time_s": 0.016,
+          "phase_time_s": {
+            "base": 0.0107,
+            "step": 0.0251,
+            "forward": 0.0079
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0995,
+          "state_components": 24,
+          "solver_checks": 4,
+          "solver_time_s": 0.0941,
+          "invariant_size": 226,
+          "certificate": "checked",
+          "spacer_time_s": 0.0815
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0404,
+          "k": 5,
+          "closed_by": "induction",
+          "bounded_safe_upto": 5,
+          "state_components": 24,
+          "simple_path_constraints": 1,
+          "solver_checks": 18,
+          "solver_time_s": 0.0139,
+          "phase_time_s": {
+            "base": 0.0098,
+            "step": 0.0216,
+            "forward": 0.0079
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0971,
+          "state_components": 24,
+          "solver_checks": 4,
+          "solver_time_s": 0.0918,
+          "invariant_size": 187,
+          "certificate": "checked",
+          "spacer_time_s": 0.0819
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 7,
+      "neurons": 7,
+      "spec": "y -> once[1,14](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1166,
+          "product_states": 16384,
+          "system_states": 242
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.3753,
+          "product_states": 16384,
+          "system_states": 151
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0588,
+          "k": 6,
+          "closed_by": "induction",
+          "bounded_safe_upto": 6,
+          "state_components": 28,
+          "simple_path_constraints": 1,
+          "solver_checks": 21,
+          "solver_time_s": 0.0199,
+          "phase_time_s": {
+            "base": 0.0119,
+            "step": 0.0336,
+            "forward": 0.0119
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1102,
+          "state_components": 28,
+          "solver_checks": 4,
+          "solver_time_s": 0.1041,
+          "invariant_size": 315,
+          "certificate": "checked",
+          "spacer_time_s": 0.0917
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0515,
+          "k": 6,
+          "closed_by": "induction",
+          "bounded_safe_upto": 6,
+          "state_components": 28,
+          "simple_path_constraints": 1,
+          "solver_checks": 21,
+          "solver_time_s": 0.0156,
+          "phase_time_s": {
+            "base": 0.0124,
+            "step": 0.0273,
+            "forward": 0.0106
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1094,
+          "state_components": 28,
+          "solver_checks": 4,
+          "solver_time_s": 0.1037,
+          "invariant_size": 334,
+          "certificate": "checked",
+          "spacer_time_s": 0.0945
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 8,
+      "neurons": 8,
+      "spec": "y -> once[1,16](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.4881,
+          "product_states": 65536,
+          "system_states": 392
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.7296,
+          "product_states": 65536,
+          "system_states": 241
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0791,
+          "k": 7,
+          "closed_by": "induction",
+          "bounded_safe_upto": 7,
+          "state_components": 32,
+          "simple_path_constraints": 1,
+          "solver_checks": 24,
+          "solver_time_s": 0.0276,
+          "phase_time_s": {
+            "base": 0.0167,
+            "step": 0.0467,
+            "forward": 0.0141
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.098,
+          "state_components": 32,
+          "solver_checks": 4,
+          "solver_time_s": 0.0911,
+          "invariant_size": 441,
+          "certificate": "checked",
+          "spacer_time_s": 0.0785
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0688,
+          "k": 7,
+          "closed_by": "induction",
+          "bounded_safe_upto": 7,
+          "state_components": 32,
+          "simple_path_constraints": 1,
+          "solver_checks": 24,
+          "solver_time_s": 0.0205,
+          "phase_time_s": {
+            "base": 0.0146,
+            "step": 0.0387,
+            "forward": 0.0141
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1109,
+          "state_components": 32,
+          "solver_checks": 4,
+          "solver_time_s": 0.1044,
+          "invariant_size": 448,
+          "certificate": "checked",
+          "spacer_time_s": 0.0943
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 9,
+      "neurons": 9,
+      "spec": "y -> once[1,18](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 2.2006,
+          "product_states": 262144,
+          "system_states": 616
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 8.1453,
+          "product_states": 262144,
+          "system_states": 375
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1044,
+          "k": 8,
+          "closed_by": "induction",
+          "bounded_safe_upto": 8,
+          "state_components": 36,
+          "simple_path_constraints": 1,
+          "solver_checks": 27,
+          "solver_time_s": 0.0385,
+          "phase_time_s": {
+            "base": 0.0193,
+            "step": 0.0656,
+            "forward": 0.0177
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1035,
+          "state_components": 36,
+          "solver_checks": 4,
+          "solver_time_s": 0.0968,
+          "invariant_size": 331,
+          "certificate": "checked",
+          "spacer_time_s": 0.0847
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.0873,
+          "k": 8,
+          "closed_by": "induction",
+          "bounded_safe_upto": 8,
+          "state_components": 36,
+          "simple_path_constraints": 1,
+          "solver_checks": 27,
+          "solver_time_s": 0.0258,
+          "phase_time_s": {
+            "base": 0.0184,
+            "step": 0.0484,
+            "forward": 0.0191
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1191,
+          "state_components": 36,
+          "solver_checks": 4,
+          "solver_time_s": 0.1122,
+          "invariant_size": 433,
+          "certificate": "checked",
+          "spacer_time_s": 0.1017
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 10,
+      "neurons": 10,
+      "spec": "y -> once[1,20](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 10.5368,
+          "product_states": 1048576,
+          "system_states": 942
+        },
+        "explicit_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 43.1862,
+          "product_states": 1048576,
+          "system_states": 567
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.143,
+          "k": 9,
+          "closed_by": "induction",
+          "bounded_safe_upto": 9,
+          "state_components": 40,
+          "simple_path_constraints": 1,
+          "solver_checks": 30,
+          "solver_time_s": 0.0555,
+          "phase_time_s": {
+            "base": 0.0265,
+            "step": 0.0891,
+            "forward": 0.0247
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1297,
+          "state_components": 40,
+          "solver_checks": 4,
+          "solver_time_s": 0.1218,
+          "invariant_size": 619,
+          "certificate": "checked",
+          "spacer_time_s": 0.1069
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.107,
+          "k": 9,
+          "closed_by": "induction",
+          "bounded_safe_upto": 9,
+          "state_components": 40,
+          "simple_path_constraints": 1,
+          "solver_checks": 30,
+          "solver_time_s": 0.0291,
+          "phase_time_s": {
+            "base": 0.0214,
+            "step": 0.0594,
+            "forward": 0.0246
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1289,
+          "state_components": 40,
+          "solver_checks": 4,
+          "solver_time_s": 0.1216,
+          "invariant_size": 514,
+          "certificate": "checked",
+          "spacer_time_s": 0.1129
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 11,
+      "neurons": 11,
+      "spec": "y -> once[1,22](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "RESOURCE_LIMIT",
+          "time_s": 26.8226
+        },
+        "explicit_contract": {
+          "status": "TIMEOUT",
+          "time_s": 120.0368
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.17,
+          "k": 10,
+          "closed_by": "induction",
+          "bounded_safe_upto": 10,
+          "state_components": 44,
+          "simple_path_constraints": 1,
+          "solver_checks": 33,
+          "solver_time_s": 0.0647,
+          "phase_time_s": {
+            "base": 0.0291,
+            "step": 0.1075,
+            "forward": 0.0307
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1208,
+          "state_components": 44,
+          "solver_checks": 4,
+          "solver_time_s": 0.1126,
+          "invariant_size": 565,
+          "certificate": "checked",
+          "spacer_time_s": 0.0968
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1328,
+          "k": 10,
+          "closed_by": "induction",
+          "bounded_safe_upto": 10,
+          "state_components": 44,
+          "simple_path_constraints": 1,
+          "solver_checks": 33,
+          "solver_time_s": 0.0328,
+          "phase_time_s": {
+            "base": 0.0247,
+            "step": 0.0745,
+            "forward": 0.0317
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1074,
+          "state_components": 44,
+          "solver_checks": 4,
+          "solver_time_s": 0.0997,
+          "invariant_size": 385,
+          "certificate": "checked",
+          "spacer_time_s": 0.0909
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 12,
+      "neurons": 12,
+      "spec": "y -> once[1,24](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.2041,
+          "k": 11,
+          "closed_by": "induction",
+          "bounded_safe_upto": 11,
+          "state_components": 48,
+          "simple_path_constraints": 1,
+          "solver_checks": 36,
+          "solver_time_s": 0.0791,
+          "phase_time_s": {
+            "base": 0.0313,
+            "step": 0.1316,
+            "forward": 0.0391
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1046,
+          "state_components": 48,
+          "solver_checks": 4,
+          "solver_time_s": 0.0965,
+          "invariant_size": 435,
+          "certificate": "checked",
+          "spacer_time_s": 0.0877
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1641,
+          "k": 11,
+          "closed_by": "induction",
+          "bounded_safe_upto": 11,
+          "state_components": 48,
+          "simple_path_constraints": 1,
+          "solver_checks": 36,
+          "solver_time_s": 0.0469,
+          "phase_time_s": {
+            "base": 0.0288,
+            "step": 0.0948,
+            "forward": 0.0387
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1375,
+          "state_components": 48,
+          "solver_checks": 4,
+          "solver_time_s": 0.1291,
+          "invariant_size": 648,
+          "certificate": "checked",
+          "spacer_time_s": 0.1195
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 14,
+      "neurons": 14,
+      "spec": "y -> once[1,28](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.3354,
+          "k": 13,
+          "closed_by": "induction",
+          "bounded_safe_upto": 13,
+          "state_components": 56,
+          "simple_path_constraints": 1,
+          "solver_checks": 42,
+          "solver_time_s": 0.1559,
+          "phase_time_s": {
+            "base": 0.0434,
+            "step": 0.231,
+            "forward": 0.0586
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.162,
+          "state_components": 56,
+          "solver_checks": 4,
+          "solver_time_s": 0.1524,
+          "invariant_size": 633,
+          "certificate": "checked",
+          "spacer_time_s": 0.1416
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.228,
+          "k": 13,
+          "closed_by": "induction",
+          "bounded_safe_upto": 13,
+          "state_components": 56,
+          "simple_path_constraints": 1,
+          "solver_checks": 42,
+          "solver_time_s": 0.0605,
+          "phase_time_s": {
+            "base": 0.0388,
+            "step": 0.132,
+            "forward": 0.0551
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1939,
+          "state_components": 56,
+          "solver_checks": 4,
+          "solver_time_s": 0.1845,
+          "invariant_size": 917,
+          "certificate": "checked",
+          "spacer_time_s": 0.1773
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 16,
+      "neurons": 16,
+      "spec": "y -> once[1,32](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.5014,
+          "k": 15,
+          "closed_by": "induction",
+          "bounded_safe_upto": 15,
+          "state_components": 64,
+          "simple_path_constraints": 1,
+          "solver_checks": 48,
+          "solver_time_s": 0.2506,
+          "phase_time_s": {
+            "base": 0.0563,
+            "step": 0.3567,
+            "forward": 0.0857
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1871,
+          "state_components": 64,
+          "solver_checks": 4,
+          "solver_time_s": 0.1756,
+          "invariant_size": 1342,
+          "certificate": "checked",
+          "spacer_time_s": 0.1638
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.3393,
+          "k": 15,
+          "closed_by": "induction",
+          "bounded_safe_upto": 15,
+          "state_components": 64,
+          "simple_path_constraints": 1,
+          "solver_checks": 48,
+          "solver_time_s": 0.1006,
+          "phase_time_s": {
+            "base": 0.0537,
+            "step": 0.202,
+            "forward": 0.0812
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.1577,
+          "state_components": 64,
+          "solver_checks": 4,
+          "solver_time_s": 0.1478,
+          "invariant_size": 679,
+          "certificate": "checked",
+          "spacer_time_s": 0.1398
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 20,
+      "neurons": 20,
+      "spec": "y -> once[1,40](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.9441,
+          "k": 19,
+          "closed_by": "induction",
+          "bounded_safe_upto": 19,
+          "state_components": 80,
+          "simple_path_constraints": 1,
+          "solver_checks": 60,
+          "solver_time_s": 0.5162,
+          "phase_time_s": {
+            "base": 0.0853,
+            "step": 0.6778,
+            "forward": 0.1777
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.2753,
+          "state_components": 80,
+          "solver_checks": 4,
+          "solver_time_s": 0.2623,
+          "invariant_size": 1481,
+          "certificate": "checked",
+          "spacer_time_s": 0.253
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.5906,
+          "k": 19,
+          "closed_by": "induction",
+          "bounded_safe_upto": 19,
+          "state_components": 80,
+          "simple_path_constraints": 1,
+          "solver_checks": 60,
+          "solver_time_s": 0.1786,
+          "phase_time_s": {
+            "base": 0.0765,
+            "step": 0.3586,
+            "forward": 0.1523
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.2191,
+          "state_components": 80,
+          "solver_checks": 4,
+          "solver_time_s": 0.2069,
+          "invariant_size": 1010,
+          "certificate": "checked",
+          "spacer_time_s": 0.1987
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 24,
+      "neurons": 24,
+      "spec": "y -> once[1,48](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.7569,
+          "k": 23,
+          "closed_by": "induction",
+          "bounded_safe_upto": 23,
+          "state_components": 96,
+          "simple_path_constraints": 1,
+          "solver_checks": 72,
+          "solver_time_s": 1.0604,
+          "phase_time_s": {
+            "base": 0.1217,
+            "step": 1.3188,
+            "forward": 0.3122
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.3188,
+          "state_components": 96,
+          "solver_checks": 4,
+          "solver_time_s": 0.3044,
+          "invariant_size": 1163,
+          "certificate": "checked",
+          "spacer_time_s": 0.295
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.0723,
+          "k": 23,
+          "closed_by": "induction",
+          "bounded_safe_upto": 23,
+          "state_components": 96,
+          "simple_path_constraints": 1,
+          "solver_checks": 72,
+          "solver_time_s": 0.418,
+          "phase_time_s": {
+            "base": 0.1085,
+            "step": 0.7151,
+            "forward": 0.245
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.366,
+          "state_components": 96,
+          "solver_checks": 4,
+          "solver_time_s": 0.3507,
+          "invariant_size": 1833,
+          "certificate": "checked",
+          "spacer_time_s": 0.3426
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 28,
+      "neurons": 28,
+      "spec": "y -> once[1,56](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 2.8936,
+          "k": 27,
+          "closed_by": "induction",
+          "bounded_safe_upto": 27,
+          "state_components": 112,
+          "simple_path_constraints": 1,
+          "solver_checks": 84,
+          "solver_time_s": 1.8576,
+          "phase_time_s": {
+            "base": 0.1798,
+            "step": 2.2266,
+            "forward": 0.4825
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.3966,
+          "state_components": 112,
+          "solver_checks": 4,
+          "solver_time_s": 0.3778,
+          "invariant_size": 2798,
+          "certificate": "checked",
+          "spacer_time_s": 0.3674
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.4845,
+          "k": 27,
+          "closed_by": "induction",
+          "bounded_safe_upto": 27,
+          "state_components": 112,
+          "simple_path_constraints": 1,
+          "solver_checks": 84,
+          "solver_time_s": 0.503,
+          "phase_time_s": {
+            "base": 0.144,
+            "step": 0.9334,
+            "forward": 0.403
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.2835,
+          "state_components": 112,
+          "solver_checks": 4,
+          "solver_time_s": 0.2681,
+          "invariant_size": 1171,
+          "certificate": "checked",
+          "spacer_time_s": 0.2617
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 32,
+      "neurons": 32,
+      "spec": "y -> once[1,64](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 4.935,
+          "k": 31,
+          "closed_by": "induction",
+          "bounded_safe_upto": 31,
+          "state_components": 128,
+          "simple_path_constraints": 1,
+          "solver_checks": 96,
+          "solver_time_s": 3.4461,
+          "phase_time_s": {
+            "base": 0.2247,
+            "step": 3.9553,
+            "forward": 0.7495
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.3896,
+          "state_components": 128,
+          "solver_checks": 4,
+          "solver_time_s": 0.3709,
+          "invariant_size": 1822,
+          "certificate": "checked",
+          "spacer_time_s": 0.3624
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 2.4555,
+          "k": 31,
+          "closed_by": "induction",
+          "bounded_safe_upto": 31,
+          "state_components": 128,
+          "simple_path_constraints": 1,
+          "solver_checks": 96,
+          "solver_time_s": 1.0607,
+          "phase_time_s": {
+            "base": 0.1929,
+            "step": 1.6925,
+            "forward": 0.5654
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.4048,
+          "state_components": 128,
+          "solver_checks": 4,
+          "solver_time_s": 0.3854,
+          "invariant_size": 2399,
+          "certificate": "checked",
+          "spacer_time_s": 0.3793
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 40,
+      "neurons": 40,
+      "spec": "y -> once[1,80](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 10.6275,
+          "k": 39,
+          "closed_by": "induction",
+          "bounded_safe_upto": 39,
+          "state_components": 160,
+          "simple_path_constraints": 1,
+          "solver_checks": 120,
+          "solver_time_s": 7.9839,
+          "phase_time_s": {
+            "base": 0.3338,
+            "step": 8.7964,
+            "forward": 1.4905
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.7345,
+          "state_components": 160,
+          "solver_checks": 4,
+          "solver_time_s": 0.7109,
+          "invariant_size": 2621,
+          "certificate": "checked",
+          "spacer_time_s": 0.7001
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 4.8052,
+          "k": 39,
+          "closed_by": "induction",
+          "bounded_safe_upto": 39,
+          "state_components": 160,
+          "simple_path_constraints": 1,
+          "solver_checks": 120,
+          "solver_time_s": 2.2461,
+          "phase_time_s": {
+            "base": 0.2963,
+            "step": 3.4377,
+            "forward": 1.0652
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 0.8915,
+          "state_components": 160,
+          "solver_checks": 4,
+          "solver_time_s": 0.8663,
+          "invariant_size": 3666,
+          "certificate": "checked",
+          "spacer_time_s": 0.8595
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 48,
+      "neurons": 48,
+      "spec": "y -> once[1,96](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 20.7635,
+          "k": 47,
+          "closed_by": "induction",
+          "bounded_safe_upto": 47,
+          "state_components": 192,
+          "simple_path_constraints": 1,
+          "solver_checks": 144,
+          "solver_time_s": 16.4219,
+          "phase_time_s": {
+            "base": 0.4763,
+            "step": 17.4679,
+            "forward": 2.8112
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.0819,
+          "state_components": 192,
+          "solver_checks": 4,
+          "solver_time_s": 1.0557,
+          "invariant_size": 2559,
+          "certificate": "checked",
+          "spacer_time_s": 1.0484
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 7.1405,
+          "k": 47,
+          "closed_by": "induction",
+          "bounded_safe_upto": 47,
+          "state_components": 192,
+          "simple_path_constraints": 1,
+          "solver_checks": 144,
+          "solver_time_s": 2.8787,
+          "phase_time_s": {
+            "base": 0.4253,
+            "step": 4.8827,
+            "forward": 1.8254
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.2763,
+          "state_components": 192,
+          "solver_checks": 4,
+          "solver_time_s": 1.2443,
+          "invariant_size": 5541,
+          "certificate": "checked",
+          "spacer_time_s": 1.2365
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 56,
+      "neurons": 56,
+      "spec": "y -> once[1,112](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 38.7192,
+          "k": 55,
+          "closed_by": "induction",
+          "bounded_safe_upto": 55,
+          "state_components": 224,
+          "simple_path_constraints": 1,
+          "solver_checks": 168,
+          "solver_time_s": 32.0657,
+          "phase_time_s": {
+            "base": 0.6428,
+            "step": 33.1976,
+            "forward": 4.8692
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.6859,
+          "state_components": 224,
+          "solver_checks": 4,
+          "solver_time_s": 1.65,
+          "invariant_size": 5851,
+          "certificate": "checked",
+          "spacer_time_s": 1.6365
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 11.7153,
+          "k": 55,
+          "closed_by": "induction",
+          "bounded_safe_upto": 55,
+          "state_components": 224,
+          "simple_path_constraints": 1,
+          "solver_checks": 168,
+          "solver_time_s": 5.2246,
+          "phase_time_s": {
+            "base": 0.5729,
+            "step": 8.2616,
+            "forward": 2.8726
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.8094,
+          "state_components": 224,
+          "solver_checks": 4,
+          "solver_time_s": 1.7757,
+          "invariant_size": 5155,
+          "certificate": "checked",
+          "spacer_time_s": 1.7724
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 64,
+      "neurons": 64,
+      "spec": "y -> once[1,128](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 67.3289,
+          "k": 63,
+          "closed_by": "induction",
+          "bounded_safe_upto": 63,
+          "state_components": 256,
+          "simple_path_constraints": 1,
+          "solver_checks": 192,
+          "solver_time_s": 57.6424,
+          "phase_time_s": {
+            "base": 0.8432,
+            "step": 58.8837,
+            "forward": 7.5914
+          }
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.6121,
+          "state_components": 256,
+          "solver_checks": 4,
+          "solver_time_s": 1.5737,
+          "invariant_size": 5570,
+          "certificate": "checked",
+          "spacer_time_s": 1.5595
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 18.9089,
+          "k": 63,
+          "closed_by": "induction",
+          "bounded_safe_upto": 63,
+          "state_components": 256,
+          "simple_path_constraints": 1,
+          "solver_checks": 192,
+          "solver_time_s": 9.423,
+          "phase_time_s": {
+            "base": 0.7403,
+            "step": 13.8908,
+            "forward": 4.2682
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 1.4176,
+          "state_components": 256,
+          "solver_checks": 4,
+          "solver_time_s": 1.3806,
+          "invariant_size": 5109,
+          "certificate": "checked",
+          "spacer_time_s": 1.3715
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 80,
+      "neurons": 80,
+      "spec": "y -> once[1,160](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "TIMEOUT",
+          "time_s": 120.0096,
+          "k": 66,
+          "closed_by": null,
+          "bounded_safe_upto": 66,
+          "state_components": 320,
+          "simple_path_constraints": 1,
+          "solver_checks": 201,
+          "solver_time_s": 106.8088,
+          "phase_time_s": {
+            "base": 1.097910129581578,
+            "step": 108.8543186194729,
+            "forward": 10.043854705290869
+          },
+          "reason": "induction step k=66: canceled"
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 2.9725,
+          "state_components": 320,
+          "solver_checks": 4,
+          "solver_time_s": 2.9274,
+          "invariant_size": 5761,
+          "certificate": "checked",
+          "spacer_time_s": 2.9166
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 36.8945,
+          "k": 79,
+          "closed_by": "induction",
+          "bounded_safe_upto": 79,
+          "state_components": 320,
+          "simple_path_constraints": 1,
+          "solver_checks": 240,
+          "solver_time_s": 19.0303,
+          "phase_time_s": {
+            "base": 1.1726,
+            "step": 27.2635,
+            "forward": 8.4468
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 2.8561,
+          "state_components": 320,
+          "solver_checks": 4,
+          "solver_time_s": 2.8127,
+          "invariant_size": 5419,
+          "certificate": "checked",
+          "spacer_time_s": 2.808
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 96,
+      "neurons": 96,
+      "spec": "y -> once[1,192](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 4.9089,
+          "state_components": 384,
+          "solver_checks": 4,
+          "solver_time_s": 4.8559,
+          "invariant_size": 6047,
+          "certificate": "checked",
+          "spacer_time_s": 4.8569
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 52.0329,
+          "k": 95,
+          "closed_by": "induction",
+          "bounded_safe_upto": 95,
+          "state_components": 384,
+          "simple_path_constraints": 1,
+          "solver_checks": 288,
+          "solver_time_s": 21.6388,
+          "phase_time_s": {
+            "base": 1.6936,
+            "step": 35.9386,
+            "forward": 14.3863
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 4.8858,
+          "state_components": 384,
+          "solver_checks": 4,
+          "solver_time_s": 4.8363,
+          "invariant_size": 5313,
+          "certificate": "checked",
+          "spacer_time_s": 4.8298
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 112,
+      "neurons": 112,
+      "spec": "y -> once[1,224](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 6.9643,
+          "state_components": 448,
+          "solver_checks": 4,
+          "solver_time_s": 6.9048,
+          "invariant_size": 6081,
+          "certificate": "checked",
+          "spacer_time_s": 6.9031
+        },
+        "kind_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 92.3004,
+          "k": 111,
+          "closed_by": "induction",
+          "bounded_safe_upto": 111,
+          "state_components": 448,
+          "simple_path_constraints": 1,
+          "solver_checks": 336,
+          "solver_time_s": 44.4212,
+          "phase_time_s": {
+            "base": 2.3082,
+            "step": 67.1678,
+            "forward": 22.8081
+          }
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 5.0312,
+          "state_components": 448,
+          "solver_checks": 4,
+          "solver_time_s": 4.9768,
+          "invariant_size": 4958,
+          "certificate": "checked",
+          "spacer_time_s": 4.9704
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 128,
+      "neurons": 128,
+      "spec": "y -> once[1,256](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 11.569,
+          "state_components": 512,
+          "solver_checks": 4,
+          "solver_time_s": 11.4988,
+          "invariant_size": 6490,
+          "certificate": "checked",
+          "spacer_time_s": 11.4969
+        },
+        "kind_contract": {
+          "status": "TIMEOUT",
+          "time_s": 120.0129,
+          "k": 110,
+          "closed_by": null,
+          "bounded_safe_upto": 110,
+          "state_components": 512,
+          "simple_path_constraints": 1,
+          "solver_checks": 333,
+          "solver_time_s": 66.0533,
+          "phase_time_s": {
+            "base": 2.582777961739339,
+            "step": 91.91537170030642,
+            "forward": 25.49587437591981
+          },
+          "reason": "induction step k=110: canceled"
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 17.8153,
+          "state_components": 512,
+          "solver_checks": 4,
+          "solver_time_s": 17.7501,
+          "invariant_size": 6609,
+          "certificate": "checked",
+          "spacer_time_s": 17.7153
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 160,
+      "neurons": 160,
+      "spec": "y -> once[1,320](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 18.2023,
+          "state_components": 640,
+          "solver_checks": 4,
+          "solver_time_s": 18.1215,
+          "invariant_size": 6834,
+          "certificate": "checked",
+          "spacer_time_s": 18.1193
+        },
+        "kind_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 20.1638,
+          "state_components": 640,
+          "solver_checks": 4,
+          "solver_time_s": 20.0862,
+          "invariant_size": 5739,
+          "certificate": "checked",
+          "spacer_time_s": 20.0907
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 192,
+      "neurons": 192,
+      "spec": "y -> once[1,384](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 36.2352,
+          "state_components": 768,
+          "solver_checks": 4,
+          "solver_time_s": 36.1398,
+          "invariant_size": 7288,
+          "certificate": "checked",
+          "spacer_time_s": 36.1284
+        },
+        "kind_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_contract": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 20.1066,
+          "state_components": 768,
+          "solver_checks": 4,
+          "solver_time_s": 20.0212,
+          "invariant_size": 5336,
+          "certificate": "checked",
+          "spacer_time_s": 20.0344
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 256,
+      "neurons": 256,
+      "spec": "y -> once[1,512](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "VERIFIED_UNBOUNDED",
+          "time_s": 61.005,
+          "state_components": 1024,
+          "solver_checks": 4,
+          "solver_time_s": 60.8805,
+          "invariant_size": 7606,
+          "certificate": "checked",
+          "spacer_time_s": 60.8464
+        },
+        "kind_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_contract": {
+          "status": "TIMEOUT",
+          "time_s": 120.0023,
+          "state_components": 1024,
+          "solver_checks": 1,
+          "solver_time_s": 119.9159,
+          "spacer_time_s": 120.0023,
+          "reason": "spacer: timeout"
+        }
+      }
+    },
+    {
+      "family": "window",
+      "N": 320,
+      "neurons": 320,
+      "spec": "y -> once[1,640](a)",
+      "engines": {
+        "explicit_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "explicit_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "kind_mono": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_mono": {
+          "status": "TIMEOUT",
+          "time_s": 120.0104,
+          "state_components": 1280,
+          "solver_checks": 1,
+          "solver_time_s": 119.894,
+          "spacer_time_s": 120.0104,
+          "reason": "spacer: timeout"
+        },
+        "kind_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        },
+        "pdr_contract": {
+          "status": "SKIPPED",
+          "reason": "no proof at a smaller N"
+        }
+      }
+    }
+  ]
+}

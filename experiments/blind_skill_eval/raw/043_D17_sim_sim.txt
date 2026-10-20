@@ -1,0 +1,9 @@
+$ npc sim --net-json experiments/blind_skill_eval/rec/D17_p1.net.json --input a=000000000000 --input b=000010000000 --steps 12
+# task=D17_sim start=2026-10-20T05:13:11Z
+    012345678901
+ a |............
+ b |....1.......
+ d |111111111111
+yn |..11......1.
+ y*|..11......1.
+# exit=0 seconds=0.16

@@ -1,0 +1,9 @@
+$ npc verify experiments/tasks.npc --net-json experiments/blind_skill_eval/rec/C2_p1.net.json --spec C2_parity_dense --horizon 10 --out experiments/blind_skill_eval/rec/C2_p1_reverify.json
+# task=C2_recheck start=2026-10-20T05:12:16Z
+spec C2_parity_dense  inputs=['a'] outputs=['y']
+  guarantee y <-> prev[2](modcount[2](a) == 1)
+[bmc] VERIFIED_BOUNDED (0.016s) - holds for all binary input traces over ['a'] of length 10 (steps 0..9); says nothing about later steps
+[exhaustive] VERIFIED_BOUNDED (0.001s) - holds for all binary input traces over ['a'] of length 10 (steps 0..9); says nothing about later steps
+[reach] VERIFIED_UNBOUNDED (0.000s) - holds for all binary input traces over ['a'], every length (finite-state proof)
+wrote experiments/blind_skill_eval/rec/C2_p1_reverify.json
+# exit=0 seconds=0.12

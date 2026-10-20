@@ -1,0 +1,19 @@
+$ npc realize experiments/tasks.npc --spec C2_parity_dense
+# task=C2 start=2026-10-20T05:07:09Z
+machine states: 4, minimal: 4, state bits: 2
+{
+  "machine_states": 4,
+  "minimal_states": 4,
+  "minimal_state_bits": 2,
+  "status": "COMPILED",
+  "neurons": 10,
+  "W": {
+    "y": [
+      0
+    ]
+  },
+  "theta": {
+    "y": 1
+  }
+}
+# exit=0 seconds=0.2

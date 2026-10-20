@@ -1,0 +1,267 @@
+{
+  "kind": "verify",
+  "environment": {
+    "npc": "0.1.0",
+    "python": "3.12.13",
+    "z3": "5.3.1",
+    "machine": "arm64",
+    "system": "Darwin",
+    "time": "2026-10-20T05:12:18"
+  },
+  "spec": {
+    "name": "D02",
+    "inputs": [
+      "a",
+      "b"
+    ],
+    "outputs": [
+      "y"
+    ],
+    "assume": "true",
+    "guarantee": "y <-> prev(since(once[2,2](modcount[2](a; b) == 0), a))",
+    "warmup": 0,
+    "assume_mode": "inclusive"
+  },
+  "network": {
+    "format": "npc-network/1",
+    "name": "D02_p1",
+    "inputs": [
+      "a",
+      "b"
+    ],
+    "outputs": {
+      "y": "yn"
+    },
+    "max_delay": 8,
+    "neurons": [
+      {
+        "name": "d",
+        "threshold": 1,
+        "leak": 15,
+        "bias": 1,
+        "reset": 0,
+        "init": 0,
+        "vmin": 0,
+        "vmax": 15
+      },
+      {
+        "name": "m1",
+        "threshold": 1,
+        "leak": 15,
+        "bias": 0,
+        "reset": 0,
+        "init": 0,
+        "vmin": 0,
+        "vmax": 15
+      },
+      {
+        "name": "m2",
+        "threshold": 3,
+        "leak": 15,
+        "bias": 0,
+        "reset": 0,
+        "init": 0,
+        "vmin": 0,
+        "vmax": 15
+      },
+      {
+        "name": "o",
+        "threshold": 2,
+        "leak": 15,
+        "bias": 0,
+        "reset": 0,
+        "init": 0,
+        "vmin": 0,
+        "vmax": 15
+      },
+      {
+        "name": "yn",
+        "threshold": 4,
+        "leak": 15,
+        "bias": 0,
+        "reset": 0,
+        "init": 0,
+        "vmin": 0,
+        "vmax": 15
+      }
+    ],
+    "synapses": [
+      {
+        "src": "o",
+        "dst": "m1",
+        "weight": 2,
+        "delay": 1
+      },
+      {
+        "src": "a",
+        "dst": "m1",
+        "weight": -2,
+        "delay": 1
+      },
+      {
+        "src": "a",
+        "dst": "m1",
+        "weight": 1,
+        "delay": 2
+      },
+      {
+        "src": "b",
+        "dst": "m1",
+        "weight": -3,
+        "delay": 1
+      },
+      {
+        "src": "b",
+        "dst": "m1",
+        "weight": -3,
+        "delay": 2
+      },
+      {
+        "src": "o",
+        "dst": "m2",
+        "weight": 2,
+        "delay": 1
+      },
+      {
+        "src": "a",
+        "dst": "m2",
+        "weight": 1,
+        "delay": 1
+      },
+      {
+        "src": "a",
+        "dst": "m2",
+        "weight": 2,
+        "delay": 2
+      },
+      {
+        "src": "b",
+        "dst": "m2",
+        "weight": -2,
+        "delay": 1
+      },
+      {
+        "src": "b",
+        "dst": "m2",
+        "weight": 3,
+        "delay": 2
+      },
+      {
+        "src": "o",
+        "dst": "o",
+        "weight": -1,
+        "delay": 2
+      },
+      {
+        "src": "a",
+        "dst": "o",
+        "weight": 2,
+        "delay": 2
+      },
+      {
+        "src": "b",
+        "dst": "o",
+        "weight": -4,
+        "delay": 2
+      },
+      {
+        "src": "b",
+        "dst": "o",
+        "weight": 3,
+        "delay": 3
+      },
+      {
+        "src": "m1",
+        "dst": "o",
+        "weight": 3,
+        "delay": 1
+      },
+      {
+        "src": "m2",
+        "dst": "o",
+        "weight": -2,
+        "delay": 1
+      },
+      {
+        "src": "a",
+        "dst": "yn",
+        "weight": 4,
+        "delay": 1
+      },
+      {
+        "src": "yn",
+        "dst": "yn",
+        "weight": 2,
+        "delay": 1
+      },
+      {
+        "src": "d",
+        "dst": "yn",
+        "weight": 3,
+        "delay": 3
+      },
+      {
+        "src": "o",
+        "dst": "yn",
+        "weight": -2,
+        "delay": 1
+      }
+    ],
+    "meta": {}
+  },
+  "network_sha256": "d7c3b1db29ec9cb863b202a18524bafa43e40a0f1fb61a2be25e5ecf12600d5f",
+  "network_stats": {
+    "neurons": 5,
+    "synapses": 20,
+    "max_abs_weight": 4,
+    "max_delay_used": 3,
+    "memoryless_neurons": 5,
+    "recurrent_synapses": 8,
+    "potential_bits": 0,
+    "history_bits": 13,
+    "state_bits": 13
+  },
+  "results": [
+    {
+      "status": "VERIFIED_BOUNDED",
+      "engine": "bmc",
+      "scope": "all binary input traces over ['a', 'b'] of length 10 (steps 0..9); says nothing about later steps",
+      "time_s": 0.12678883306216449,
+      "horizon": 10,
+      "counterexample": null,
+      "violation_time": null,
+      "stats": {
+        "neuron_steps": 50,
+        "constraints": 50
+      }
+    },
+    {
+      "status": "VERIFIED_BOUNDED",
+      "engine": "exhaustive",
+      "scope": "all binary input traces over ['a', 'b'] of length 10 (steps 0..9); says nothing about later steps",
+      "time_s": 1.052316416054964,
+      "horizon": 10,
+      "counterexample": null,
+      "violation_time": null,
+      "stats": {
+        "traces": 1048576
+      }
+    },
+    {
+      "status": "VERIFIED_UNBOUNDED",
+      "engine": "reach",
+      "scope": "all binary input traces over ['a', 'b'], every length (finite-state proof)",
+      "time_s": 0.0022717079846188426,
+      "horizon": null,
+      "counterexample": null,
+      "violation_time": null,
+      "stats": {
+        "product_states": 153,
+        "system_states": 153,
+        "effective_state_bits": 7.257,
+        "bfs_depth": 5
+      }
+    }
+  ],
+  "note": "This is a verification record, not an independently checkable proof object. Re-run `npc verify` on the stored network and spec to re-establish every claim."
+}

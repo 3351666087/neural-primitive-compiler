@@ -1,0 +1,21 @@
+$ npc realize experiments/D_unseen/hand.npc --spec Dhand_second_b_after_a
+# task=Dhand start=2026-10-20T05:11:09Z
+machine states: 5, minimal: 4, state bits: 2
+{
+  "machine_states": 5,
+  "minimal_states": 4,
+  "minimal_state_bits": 2,
+  "status": "COMPILED",
+  "neurons": 34,
+  "W": {
+    "y": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  "theta": {
+    "y": 1
+  }
+}
+# exit=0 seconds=0.18

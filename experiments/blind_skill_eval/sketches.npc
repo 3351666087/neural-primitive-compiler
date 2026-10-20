@@ -1,0 +1,221 @@
+# Blind skill evaluation: every proposal written while following skills/neural-compiler/SKILL.md.
+# Naming: <TASK>_p<k> is the k-th proposal for TASK. Failed proposals are kept.
+# Written without reading experiments/designs.npc, experiments/llm_sketches/ or any results.
+
+# ---------------------------------------------------------------- B2_remember_query
+# realize: COMPILED, minimal 3 states (2 state bits).
+# p1 idea: mem(t) = since(!r, s&!r). latch(set=s,rst=r).out(t) = mem(t-1).
+# y(t) = q(t-1) & !r(t-1) & (s(t-1) | mem(t-2)), and mem(t-2) = m.out(t-1),
+# so one readout neuron sees q, s, r, m.out all at delay 1. Weights/threshold left to Z3.
+network B2_p1 {
+  inputs s, r, q
+  inst m = latch() set=s rst=r
+  neuron yn threshold=?[1,4] leak=full
+  synapse q -> yn weight=?[-4,4] delay=1
+  synapse s -> yn weight=?[-4,4] delay=1
+  synapse r -> yn weight=?[-4,4] delay=1
+  synapse m.out -> yn weight=?[-4,4] delay=1
+  output y = yn
+}
+
+# ---------------------------------------------------------------- B3_first_since_reset
+# realize: COMPILED, minimal 3 states.
+# p1 idea: F(t) = since(!r, a&!r); latch(set=a,rst=r).out(t) = F(t-1).
+# y(t) = a(t-1) & !r(t-1) & !F(t-2) = a & !r & !m.out, all read at delay 1 by one neuron.
+network B3_p1 {
+  inputs a, r
+  inst m = latch() set=a rst=r
+  neuron yn threshold=?[1,3] leak=full
+  synapse a -> yn weight=?[-3,3] delay=1
+  synapse r -> yn weight=?[-3,3] delay=1
+  synapse m.out -> yn weight=?[-3,3] delay=1
+  output y = yn
+}
+
+# ---------------------------------------------------------------- C1_toggle_sparse
+# realize: COMPILED, minimal 4 states (2 state bits).
+# p1 idea: p(t) = P(t-2) where P = parity of a. P(t-2) = P(t-3) xor a(t-2) is not a single
+# threshold function, so a helper h(t) = a(t-1) & p(t-1) marks "a arrives while parity is 1".
+# Under !(a & prev(a)), a(t-2) implies !a(t-3), so P(t-3) = P(t-4) = p(t-2) and
+# p(t) = p(t-1) + a(t-2) - 2 h(t-1) >= 1. Delays fixed; weights/thresholds left to Z3.
+network C1_p1 {
+  inputs a
+  neuron h threshold=?[1,3] leak=full
+  neuron p threshold=?[1,3] leak=full
+  synapse a -> h weight=?[-3,3] delay=1
+  synapse p -> h weight=?[-3,3] delay=1
+  synapse p -> p weight=?[-3,3] delay=1
+  synapse a -> p weight=?[-3,3] delay=2
+  synapse h -> p weight=?[-3,3] delay=1
+  output y = p
+}
+
+# ---------------------------------------------------------------- C2_parity_dense
+# realize: COMPILED, minimal 4 states (2 state bits).
+# p1 idea: P(t-2) = P(t-4) xor a(t-3) xor a(t-2). 3-input parity = [x+y+z - 2*maj(x,y,z) >= 1].
+# m(t-1) = maj(p(t-2), a(t-3), a(t-2)) reads p@d1, a@d2, a@d1.
+# p(t) reads p@d2 (= P(t-4)), a@d3, a@d2, m@d1. Delays fixed; weights/thresholds left to Z3.
+network C2_p1 {
+  inputs a
+  neuron m threshold=?[1,3] leak=full
+  neuron p threshold=?[1,3] leak=full
+  synapse p -> m weight=?[-3,3] delay=1
+  synapse a -> m weight=?[-3,3] delay=2
+  synapse a -> m weight=?[-3,3] delay=1
+  synapse p -> p weight=?[-3,3] delay=2
+  synapse a -> p weight=?[-3,3] delay=3
+  synapse a -> p weight=?[-3,3] delay=2
+  synapse m -> p weight=?[-3,3] delay=1
+  output y = p
+}
+
+# ---------------------------------------------------------------- C3_latched_alarm
+# realize: COMPILED, minimal 12 states (4 state bits).
+# p1 idea: M(t) = since(!r, E & !r), E(t) = count[3](a)(t) >= 2; y(t) = M(t-2).
+# M(t-2) = !r(t-2) & (E(t-2) | M(t-3)), E(t-2) = a(t-2)+a(t-3)+a(t-4) >= 2.
+# One neuron: self-loop @d1 (= M(t-3)), a @d2,d3,d4, r @d2 strongly inhibitory.
+# The history bits of the delay lines hold the window, so no separate window neuron.
+network C3_p1 {
+  inputs a, r
+  neuron m threshold=?[1,4] leak=full
+  synapse m -> m weight=?[-5,5] delay=1
+  synapse a -> m weight=?[-5,5] delay=2
+  synapse a -> m weight=?[-5,5] delay=3
+  synapse a -> m weight=?[-5,5] delay=4
+  synapse r -> m weight=?[-5,5] delay=2
+  output y = m
+}
+
+# ---------------------------------------------------------------- D02
+# spec: y <-> prev(since(once[2,2](modcount[2](a; b) == 0), a))
+# realize: COMPILED, minimal 7 states (3 state bits).
+# Reading: c(t) = parity of a since last b (b resets, wins); Z(t) = !c(t).
+# S(t) = a(t) | (S(t-1) & Z(t-2) & t>=2); y(t) = S(t-1) = a(t-1) | (y(t-1) & !c(t-3) & t>=3).
+# p1 idea:
+#   o(t) = c(t-2): latency-2 parity with reset, pipelined as in C2:
+#     c(t-2) = !b(t-2) & (b(t-3) ? a(t-2) : c(t-4) ^ a(t-3) ^ a(t-2)); o reads o@d2, a@d2,d3, b@d2,d3
+#     plus two hidden units m1, m2 (read o@d1, a@d1,d2, b@d1,d2) - Z3 chooses all weights.
+#   d: tonic neuron (fires every step); y reads d@d3 so the hold term is enabled only for t>=3.
+#   y = [a@1 + y@1 + d@3 - o@1 ...] weights solved by Z3.
+network D02_p1 {
+  inputs a, b
+  neuron d threshold=1 leak=full bias=1
+  neuron m1 threshold=?[1,4] leak=full
+  neuron m2 threshold=?[1,4] leak=full
+  neuron o threshold=?[1,4] leak=full
+  neuron yn threshold=?[1,4] leak=full
+  synapse o -> m1 weight=?[-3,3] delay=1
+  synapse a -> m1 weight=?[-3,3] delay=1
+  synapse a -> m1 weight=?[-3,3] delay=2
+  synapse b -> m1 weight=?[-3,3] delay=1
+  synapse b -> m1 weight=?[-3,3] delay=2
+  synapse o -> m2 weight=?[-3,3] delay=1
+  synapse a -> m2 weight=?[-3,3] delay=1
+  synapse a -> m2 weight=?[-3,3] delay=2
+  synapse b -> m2 weight=?[-3,3] delay=1
+  synapse b -> m2 weight=?[-3,3] delay=2
+  synapse o -> o weight=?[-3,3] delay=2
+  synapse a -> o weight=?[-3,3] delay=2
+  synapse a -> o weight=?[-3,3] delay=3
+  synapse b -> o weight=?[-4,4] delay=2
+  synapse b -> o weight=?[-3,3] delay=3
+  synapse m1 -> o weight=?[-3,3] delay=1
+  synapse m2 -> o weight=?[-3,3] delay=1
+  synapse a -> yn weight=?[-4,4] delay=1
+  synapse yn -> yn weight=?[-4,4] delay=1
+  synapse d -> yn weight=?[-4,4] delay=3
+  synapse o -> yn weight=?[-4,4] delay=1
+  output y = yn
+}
+
+# ---------------------------------------------------------------- D06
+# spec: y <-> prev(once[1,2](modcount[3](a; a) == 1) <-> wprev[3](b & a))
+# realize: COMPILED, minimal 16 states (4 state bits).
+# Reading: modcount[3](a; a) resets on every a and adds 0 otherwise, so it is always 0 and
+# "== 1" is never true; the left side is false. Then y(t) = prev(!wprev[3](a & b))
+# = (t >= 4) & !(a(t-4) & b(t-4)). (This reading is checked by the verifier, not assumed.)
+# p1: tonic neuron d gives the t>=4 enable via delay 4; y reads a@4, b@4 inhibitory.
+network D06_p1 {
+  inputs a, b
+  neuron d threshold=1 leak=full bias=1
+  neuron yn threshold=?[1,3] leak=full
+  synapse d -> yn weight=?[-3,3] delay=4
+  synapse a -> yn weight=?[-3,3] delay=4
+  synapse b -> yn weight=?[-3,3] delay=4
+  output y = yn
+}
+
+# ---------------------------------------------------------------- D17
+# spec: y <-> prev[2](wprev[2](prev[2](b)))
+# realize: COMPILED, minimal 64 states (6 state bits).
+# Reading: wprev[2] is true for its first 2 steps, prev[2] false for its first 2 steps, so
+# y(t) = (t in {2,3}) | (t >= 6 & b(t-6)); y is 0 at t = 0,1,4,5.
+# p1: tonic neuron d; y = [d@2 - d@4 + b@6 >= 1] (d@k = 1 iff t >= k). Weights left to Z3.
+network D17_p1 {
+  inputs a, b
+  neuron d threshold=1 leak=full bias=1
+  neuron yn threshold=?[1,3] leak=full
+  synapse d -> yn weight=?[-3,3] delay=2
+  synapse d -> yn weight=?[-3,3] delay=4
+  synapse b -> yn weight=?[-3,3] delay=6
+  output y = yn
+}
+
+# ---------------------------------------------------------------- D18
+# spec: y <-> prev[2](prev[3](!b))
+# realize: COMPILED, minimal 32 states (5 state bits).
+# Reading: y(t) = (t >= 5) & !b(t-5). The "t >= 5" part matters: !b alone would fire at start-up.
+# p1: tonic neuron d; y = [d@5 - b@5 >= 1]. Weights left to Z3.
+network D18_p1 {
+  inputs a, b
+  neuron d threshold=1 leak=full bias=1
+  neuron yn threshold=?[1,3] leak=full
+  synapse d -> yn weight=?[-3,3] delay=5
+  synapse b -> yn weight=?[-3,3] delay=5
+  output y = yn
+}
+
+# ---------------------------------------------------------------- Dhand_second_b_after_a
+# spec: y <-> prev(b & !a & !r & since(!r, a & !r) & modcount[2](b; a | r) == 0)
+# realize: COMPILED, minimal 4 states (2 state bits).
+# Reading: A = since(!r, a&!r); c = parity of b since last (a|r). When b & !a & !r, A(t)=A(t-1)
+# and c(t)==0 iff c(t-1)==1, so y(t) = b(t-1) & !a(t-1) & !r(t-1) & Q(t-2), with
+# Q = A & odd(c), R = A & even(c). Q(t-1) and R(t-1) cannot each be one neuron at latency 1
+# (xor with the newest b), so each is split by the last input (one-hot, mutually exclusive):
+#   u(t)  = !a&!r&!b (t-1) & Q(t-2)     v(t)  = !a&!r&b (t-1) & R(t-2)     -> Q(t-1) = u|v
+#   x(t)  = !a&!r&!b (t-1) & R(t-2)     yn(t) = !a&!r&b (t-1) & Q(t-2)
+#   w(t)  = a&!r (t-1)                                                    -> R(t-1) = x|yn|w
+# and the output is exactly yn. All taps at delay 1; weights/thresholds left to Z3.
+network Dhand_p1 {
+  inputs a, b, r
+  neuron u threshold=?[1,3] leak=full
+  neuron v threshold=?[1,3] leak=full
+  neuron x threshold=?[1,3] leak=full
+  neuron w threshold=?[1,3] leak=full
+  neuron yn threshold=?[1,3] leak=full
+  synapse u -> u weight=?[-3,3] delay=1
+  synapse v -> u weight=?[-3,3] delay=1
+  synapse a -> u weight=?[-3,3] delay=1
+  synapse r -> u weight=?[-3,3] delay=1
+  synapse b -> u weight=?[-3,3] delay=1
+  synapse x -> v weight=?[-3,3] delay=1
+  synapse yn -> v weight=?[-3,3] delay=1
+  synapse w -> v weight=?[-3,3] delay=1
+  synapse a -> v weight=?[-3,3] delay=1
+  synapse r -> v weight=?[-3,3] delay=1
+  synapse b -> v weight=?[-3,3] delay=1
+  synapse x -> x weight=?[-3,3] delay=1
+  synapse yn -> x weight=?[-3,3] delay=1
+  synapse w -> x weight=?[-3,3] delay=1
+  synapse a -> x weight=?[-3,3] delay=1
+  synapse r -> x weight=?[-3,3] delay=1
+  synapse b -> x weight=?[-3,3] delay=1
+  synapse a -> w weight=?[-3,3] delay=1
+  synapse r -> w weight=?[-3,3] delay=1
+  synapse u -> yn weight=?[-3,3] delay=1
+  synapse v -> yn weight=?[-3,3] delay=1
+  synapse a -> yn weight=?[-3,3] delay=1
+  synapse r -> yn weight=?[-3,3] delay=1
+  synapse b -> yn weight=?[-3,3] delay=1
+  output y = yn
+}

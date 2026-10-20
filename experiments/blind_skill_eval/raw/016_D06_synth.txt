@@ -1,0 +1,16 @@
+$ npc synth experiments/D_unseen/tasks.npc experiments/blind_skill_eval/sketches.npc --spec D06 --method sketch --sketch D06_p1 --out experiments/blind_skill_eval/rec/D06_p1.json
+# task=D06 start=2026-10-20T05:10:04Z
+spec D06  inputs=['a', 'b'] outputs=['y']
+  guarantee y <-> prev(once[1,2](modcount[3](a; a) == 1) <-> wprev[3](b & a))
+method=sketch status=SOLVED iterations=1 candidates=1 examples=3 time=0.03s (synth 0.03s, verify 0.00s)
+network D06_p1  (inputs: a, b; max_delay=8)
+  neuron d: threshold=1 leak=full bias=1 reset=0 init=0 range=[0,15]
+  neuron yn: threshold=1 leak=full bias=0 reset=0 init=0 range=[0,15]
+  synapse d -> yn  w=+2 d=4
+  synapse a -> yn  w=-1 d=4
+  synapse b -> yn  w=-1 d=4
+  output y = yn
+[bmc] VERIFIED_BOUNDED (0.004s) - holds for all binary input traces over ['a', 'b'] of length 8 (steps 0..7); says nothing about later steps
+[reach] VERIFIED_UNBOUNDED (0.005s) - holds for all binary input traces over ['a', 'b'], every length (finite-state proof)
+wrote experiments/blind_skill_eval/rec/D06_p1.json
+# exit=0 seconds=0.16

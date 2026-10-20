@@ -1,0 +1,78 @@
+{
+ "format": "npc-network/1",
+ "name": "C2_p1",
+ "inputs": [
+  "a"
+ ],
+ "outputs": {
+  "y": "p"
+ },
+ "max_delay": 8,
+ "neurons": [
+  {
+   "name": "m",
+   "threshold": 1,
+   "leak": 15,
+   "bias": 0,
+   "reset": 0,
+   "init": 0,
+   "vmin": 0,
+   "vmax": 15
+  },
+  {
+   "name": "p",
+   "threshold": 1,
+   "leak": 15,
+   "bias": 0,
+   "reset": 0,
+   "init": 0,
+   "vmin": 0,
+   "vmax": 15
+  }
+ ],
+ "synapses": [
+  {
+   "src": "p",
+   "dst": "m",
+   "weight": 2,
+   "delay": 1
+  },
+  {
+   "src": "a",
+   "dst": "m",
+   "weight": -3,
+   "delay": 2
+  },
+  {
+   "src": "a",
+   "dst": "m",
+   "weight": 2,
+   "delay": 1
+  },
+  {
+   "src": "p",
+   "dst": "p",
+   "weight": -1,
+   "delay": 2
+  },
+  {
+   "src": "a",
+   "dst": "p",
+   "weight": 1,
+   "delay": 3
+  },
+  {
+   "src": "a",
+   "dst": "p",
+   "weight": -2,
+   "delay": 2
+  },
+  {
+   "src": "m",
+   "dst": "p",
+   "weight": 3,
+   "delay": 1
+  }
+ ],
+ "meta": {}
+}

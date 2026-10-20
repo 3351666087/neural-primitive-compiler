@@ -1,0 +1,17 @@
+$ npc synth experiments/tasks.npc experiments/blind_skill_eval/sketches.npc --spec C3_latched_alarm --method sketch --sketch C3_p1 --out experiments/blind_skill_eval/rec/C3_p1.json
+# task=C3 start=2026-10-20T05:07:36Z
+spec C3_latched_alarm  inputs=['a', 'r'] outputs=['y']
+  guarantee y <-> prev[2](since(!r, (count[3](a) >= 2) & !r))
+method=sketch status=SOLVED iterations=7 candidates=1 examples=9 time=0.07s (synth 0.07s, verify 0.00s)
+network C3_p1  (inputs: a, r; max_delay=8)
+  neuron m: threshold=2 leak=full bias=0 reset=0 init=0 range=[0,15]
+  synapse m -> m  w=+3 d=1
+  synapse a -> m  w=+1 d=2
+  synapse a -> m  w=+1 d=3
+  synapse a -> m  w=+1 d=4
+  synapse r -> m  w=-5 d=2
+  output y = m
+[bmc] VERIFIED_BOUNDED (0.005s) - holds for all binary input traces over ['a', 'r'] of length 8 (steps 0..7); says nothing about later steps
+[reach] VERIFIED_UNBOUNDED (0.002s) - holds for all binary input traces over ['a', 'r'], every length (finite-state proof)
+wrote experiments/blind_skill_eval/rec/C3_p1.json
+# exit=0 seconds=0.17

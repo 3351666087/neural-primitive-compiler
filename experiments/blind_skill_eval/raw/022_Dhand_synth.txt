@@ -1,0 +1,40 @@
+$ npc synth experiments/D_unseen/hand.npc experiments/blind_skill_eval/sketches.npc --spec Dhand_second_b_after_a --method sketch --sketch Dhand_p1 --out experiments/blind_skill_eval/rec/Dhand_p1.json
+# task=Dhand start=2026-10-20T05:11:20Z
+spec Dhand_second_b_after_a  inputs=['a', 'b', 'r'] outputs=['y']
+  guarantee y <-> prev(b & !a & !r & since(!r, a & !r) & (modcount[2](b; a | r) == 0))
+method=sketch status=SOLVED iterations=21 candidates=1 examples=23 time=20.82s (synth 20.82s, verify 0.00s)
+network Dhand_p1  (inputs: a, b, r; max_delay=8)
+  neuron u: threshold=1 leak=full bias=0 reset=0 init=0 range=[0,15]
+  neuron v: threshold=2 leak=full bias=0 reset=0 init=0 range=[0,15]
+  neuron x: threshold=2 leak=full bias=0 reset=0 init=0 range=[0,15]
+  neuron w: threshold=1 leak=full bias=0 reset=0 init=0 range=[0,15]
+  neuron yn: threshold=2 leak=full bias=0 reset=0 init=0 range=[0,15]
+  synapse u -> u  w=+1 d=1
+  synapse v -> u  w=-1 d=1
+  synapse a -> u  w=-3 d=1
+  synapse r -> u  w=-3 d=1
+  synapse b -> u  w=+2 d=1
+  synapse x -> v  w=-3 d=1
+  synapse yn -> v  w=-1 d=1
+  synapse w -> v  w=-1 d=1
+  synapse a -> v  w=+1 d=1
+  synapse r -> v  w=-2 d=1
+  synapse b -> v  w=+2 d=1
+  synapse x -> x  w=+2 d=1
+  synapse yn -> x  w=+2 d=1
+  synapse w -> x  w=+2 d=1
+  synapse a -> x  w=-1 d=1
+  synapse r -> x  w=-3 d=1
+  synapse b -> x  w=-3 d=1
+  synapse a -> w  w=+1 d=1
+  synapse r -> w  w=-3 d=1
+  synapse u -> yn  w=+1 d=1
+  synapse v -> yn  w=-3 d=1
+  synapse a -> yn  w=-3 d=1
+  synapse r -> yn  w=-3 d=1
+  synapse b -> yn  w=+1 d=1
+  output y = yn
+[bmc] VERIFIED_BOUNDED (0.093s) - holds for all binary input traces over ['a', 'b', 'r'] of length 8 (steps 0..7); says nothing about later steps
+[reach] VERIFIED_UNBOUNDED (0.002s) - holds for all binary input traces over ['a', 'b', 'r'], every length (finite-state proof)
+wrote experiments/blind_skill_eval/rec/Dhand_p1.json
+# exit=0 seconds=21.01

@@ -1,0 +1,15 @@
+$ npc synth experiments/D_unseen/tasks.npc experiments/blind_skill_eval/sketches.npc --spec D18 --method sketch --sketch D18_p1 --out experiments/blind_skill_eval/rec/D18_p1.json
+# task=D18 start=2026-10-20T05:10:31Z
+spec D18  inputs=['a', 'b'] outputs=['y']
+  guarantee y <-> prev[2](prev[3](!b))
+method=sketch status=SOLVED iterations=1 candidates=1 examples=3 time=0.01s (synth 0.01s, verify 0.00s)
+network D18_p1  (inputs: a, b; max_delay=8)
+  neuron d: threshold=1 leak=full bias=1 reset=0 init=0 range=[0,15]
+  neuron yn: threshold=1 leak=full bias=0 reset=0 init=0 range=[0,15]
+  synapse d -> yn  w=+1 d=5
+  synapse b -> yn  w=-1 d=5
+  output y = yn
+[bmc] VERIFIED_BOUNDED (0.004s) - holds for all binary input traces over ['a', 'b'] of length 8 (steps 0..7); says nothing about later steps
+[reach] VERIFIED_UNBOUNDED (0.001s) - holds for all binary input traces over ['a', 'b'], every length (finite-state proof)
+wrote experiments/blind_skill_eval/rec/D18_p1.json
+# exit=0 seconds=0.11

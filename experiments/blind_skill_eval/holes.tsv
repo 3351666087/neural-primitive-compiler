@@ -1,0 +1,11 @@
+sketch	int_holes	discrete_choices	raw_int_space	synapse_lines
+B2_p1	5	0	2.6e+04	4
+B3_p1	4	0	1.0e+03	3
+C1_p1	7	0	1.5e+05	5
+C2_p1	9	0	7.4e+06	7
+C3_p1	6	0	6.4e+05	5
+D02_p1	25	0	5.0e+20	21
+D06_p1	4	0	1.0e+03	3
+D17_p1	4	0	1.0e+03	3
+D18_p1	3	0	1.5e+02	2
+Dhand_p1	29	0	4.7e+22	24

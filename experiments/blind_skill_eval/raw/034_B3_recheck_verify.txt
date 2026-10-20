@@ -1,0 +1,9 @@
+$ npc verify experiments/tasks.npc --net-json experiments/blind_skill_eval/rec/B3_p1.net.json --spec B3_first_since_reset --horizon 10 --out experiments/blind_skill_eval/rec/B3_p1_reverify.json
+# task=B3_recheck start=2026-10-20T05:12:15Z
+spec B3_first_since_reset  inputs=['a', 'r'] outputs=['y']
+  guarantee y <-> prev(a & !r & !prev(since(!r, a & !r)))
+[bmc] VERIFIED_BOUNDED (0.033s) - holds for all binary input traces over ['a', 'r'] of length 10 (steps 0..9); says nothing about later steps
+[exhaustive] VERIFIED_BOUNDED (0.575s) - holds for all binary input traces over ['a', 'r'] of length 10 (steps 0..9); says nothing about later steps
+[reach] VERIFIED_UNBOUNDED (0.000s) - holds for all binary input traces over ['a', 'r'], every length (finite-state proof)
+wrote experiments/blind_skill_eval/rec/B3_p1_reverify.json
+# exit=0 seconds=0.72

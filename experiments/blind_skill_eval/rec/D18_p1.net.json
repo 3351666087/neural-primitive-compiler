@@ -1,0 +1,49 @@
+{
+ "format": "npc-network/1",
+ "name": "D18_p1",
+ "inputs": [
+  "a",
+  "b"
+ ],
+ "outputs": {
+  "y": "yn"
+ },
+ "max_delay": 8,
+ "neurons": [
+  {
+   "name": "d",
+   "threshold": 1,
+   "leak": 15,
+   "bias": 1,
+   "reset": 0,
+   "init": 0,
+   "vmin": 0,
+   "vmax": 15
+  },
+  {
+   "name": "yn",
+   "threshold": 1,
+   "leak": 15,
+   "bias": 0,
+   "reset": 0,
+   "init": 0,
+   "vmin": 0,
+   "vmax": 15
+  }
+ ],
+ "synapses": [
+  {
+   "src": "d",
+   "dst": "yn",
+   "weight": 1,
+   "delay": 5
+  },
+  {
+   "src": "b",
+   "dst": "yn",
+   "weight": -1,
+   "delay": 5
+  }
+ ],
+ "meta": {}
+}

@@ -1,0 +1,187 @@
+{
+ "format": "npc-network/1",
+ "name": "D02_p1",
+ "inputs": [
+  "a",
+  "b"
+ ],
+ "outputs": {
+  "y": "yn"
+ },
+ "max_delay": 8,
+ "neurons": [
+  {
+   "name": "d",
+   "threshold": 1,
+   "leak": 15,
+   "bias": 1,
+   "reset": 0,
+   "init": 0,
+   "vmin": 0,
+   "vmax": 15
+  },
+  {
+   "name": "m1",
+   "threshold": 1,
+   "leak": 15,
+   "bias": 0,
+   "reset": 0,
+   "init": 0,
+   "vmin": 0,
+   "vmax": 15
+  },
+  {
+   "name": "m2",
+   "threshold": 3,
+   "leak": 15,
+   "bias": 0,
+   "reset": 0,
+   "init": 0,
+   "vmin": 0,
+   "vmax": 15
+  },
+  {
+   "name": "o",
+   "threshold": 2,
+   "leak": 15,
+   "bias": 0,
+   "reset": 0,
+   "init": 0,
+   "vmin": 0,
+   "vmax": 15
+  },
+  {
+   "name": "yn",
+   "threshold": 4,
+   "leak": 15,
+   "bias": 0,
+   "reset": 0,
+   "init": 0,
+   "vmin": 0,
+   "vmax": 15
+  }
+ ],
+ "synapses": [
+  {
+   "src": "o",
+   "dst": "m1",
+   "weight": 2,
+   "delay": 1
+  },
+  {
+   "src": "a",
+   "dst": "m1",
+   "weight": -2,
+   "delay": 1
+  },
+  {
+   "src": "a",
+   "dst": "m1",
+   "weight": 1,
+   "delay": 2
+  },
+  {
+   "src": "b",
+   "dst": "m1",
+   "weight": -3,
+   "delay": 1
+  },
+  {
+   "src": "b",
+   "dst": "m1",
+   "weight": -3,
+   "delay": 2
+  },
+  {
+   "src": "o",
+   "dst": "m2",
+   "weight": 2,
+   "delay": 1
+  },
+  {
+   "src": "a",
+   "dst": "m2",
+   "weight": 1,
+   "delay": 1
+  },
+  {
+   "src": "a",
+   "dst": "m2",
+   "weight": 2,
+   "delay": 2
+  },
+  {
+   "src": "b",
+   "dst": "m2",
+   "weight": -2,
+   "delay": 1
+  },
+  {
+   "src": "b",
+   "dst": "m2",
+   "weight": 3,
+   "delay": 2
+  },
+  {
+   "src": "o",
+   "dst": "o",
+   "weight": -1,
+   "delay": 2
+  },
+  {
+   "src": "a",
+   "dst": "o",
+   "weight": 2,
+   "delay": 2
+  },
+  {
+   "src": "b",
+   "dst": "o",
+   "weight": -4,
+   "delay": 2
+  },
+  {
+   "src": "b",
+   "dst": "o",
+   "weight": 3,
+   "delay": 3
+  },
+  {
+   "src": "m1",
+   "dst": "o",
+   "weight": 3,
+   "delay": 1
+  },
+  {
+   "src": "m2",
+   "dst": "o",
+   "weight": -2,
+   "delay": 1
+  },
+  {
+   "src": "a",
+   "dst": "yn",
+   "weight": 4,
+   "delay": 1
+  },
+  {
+   "src": "yn",
+   "dst": "yn",
+   "weight": 2,
+   "delay": 1
+  },
+  {
+   "src": "d",
+   "dst": "yn",
+   "weight": 3,
+   "delay": 3
+  },
+  {
+   "src": "o",
+   "dst": "yn",
+   "weight": -2,
+   "delay": 1
+  }
+ ],
+ "meta": {}
+}

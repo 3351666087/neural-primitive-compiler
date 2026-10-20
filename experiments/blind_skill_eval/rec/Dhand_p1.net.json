@@ -1,0 +1,212 @@
+{
+ "format": "npc-network/1",
+ "name": "Dhand_p1",
+ "inputs": [
+  "a",
+  "b",
+  "r"
+ ],
+ "outputs": {
+  "y": "yn"
+ },
+ "max_delay": 8,
+ "neurons": [
+  {
+   "name": "u",
+   "threshold": 1,
+   "leak": 15,
+   "bias": 0,
+   "reset": 0,
+   "init": 0,
+   "vmin": 0,
+   "vmax": 15
+  },
+  {
+   "name": "v",
+   "threshold": 2,
+   "leak": 15,
+   "bias": 0,
+   "reset": 0,
+   "init": 0,
+   "vmin": 0,
+   "vmax": 15
+  },
+  {
+   "name": "x",
+   "threshold": 2,
+   "leak": 15,
+   "bias": 0,
+   "reset": 0,
+   "init": 0,
+   "vmin": 0,
+   "vmax": 15
+  },
+  {
+   "name": "w",
+   "threshold": 1,
+   "leak": 15,
+   "bias": 0,
+   "reset": 0,
+   "init": 0,
+   "vmin": 0,
+   "vmax": 15
+  },
+  {
+   "name": "yn",
+   "threshold": 2,
+   "leak": 15,
+   "bias": 0,
+   "reset": 0,
+   "init": 0,
+   "vmin": 0,
+   "vmax": 15
+  }
+ ],
+ "synapses": [
+  {
+   "src": "u",
+   "dst": "u",
+   "weight": 1,
+   "delay": 1
+  },
+  {
+   "src": "v",
+   "dst": "u",
+   "weight": -1,
+   "delay": 1
+  },
+  {
+   "src": "a",
+   "dst": "u",
+   "weight": -3,
+   "delay": 1
+  },
+  {
+   "src": "r",
+   "dst": "u",
+   "weight": -3,
+   "delay": 1
+  },
+  {
+   "src": "b",
+   "dst": "u",
+   "weight": 2,
+   "delay": 1
+  },
+  {
+   "src": "x",
+   "dst": "v",
+   "weight": -3,
+   "delay": 1
+  },
+  {
+   "src": "yn",
+   "dst": "v",
+   "weight": -1,
+   "delay": 1
+  },
+  {
+   "src": "w",
+   "dst": "v",
+   "weight": -1,
+   "delay": 1
+  },
+  {
+   "src": "a",
+   "dst": "v",
+   "weight": 1,
+   "delay": 1
+  },
+  {
+   "src": "r",
+   "dst": "v",
+   "weight": -2,
+   "delay": 1
+  },
+  {
+   "src": "b",
+   "dst": "v",
+   "weight": 2,
+   "delay": 1
+  },
+  {
+   "src": "x",
+   "dst": "x",
+   "weight": 2,
+   "delay": 1
+  },
+  {
+   "src": "yn",
+   "dst": "x",
+   "weight": 2,
+   "delay": 1
+  },
+  {
+   "src": "w",
+   "dst": "x",
+   "weight": 2,
+   "delay": 1
+  },
+  {
+   "src": "a",
+   "dst": "x",
+   "weight": -1,
+   "delay": 1
+  },
+  {
+   "src": "r",
+   "dst": "x",
+   "weight": -3,
+   "delay": 1
+  },
+  {
+   "src": "b",
+   "dst": "x",
+   "weight": -3,
+   "delay": 1
+  },
+  {
+   "src": "a",
+   "dst": "w",
+   "weight": 1,
+   "delay": 1
+  },
+  {
+   "src": "r",
+   "dst": "w",
+   "weight": -3,
+   "delay": 1
+  },
+  {
+   "src": "u",
+   "dst": "yn",
+   "weight": 1,
+   "delay": 1
+  },
+  {
+   "src": "v",
+   "dst": "yn",
+   "weight": -3,
+   "delay": 1
+  },
+  {
+   "src": "a",
+   "dst": "yn",
+   "weight": -3,
+   "delay": 1
+  },
+  {
+   "src": "r",
+   "dst": "yn",
+   "weight": -3,
+   "delay": 1
+  },
+  {
+   "src": "b",
+   "dst": "yn",
+   "weight": 1,
+   "delay": 1
+  }
+ ],
+ "meta": {}
+}

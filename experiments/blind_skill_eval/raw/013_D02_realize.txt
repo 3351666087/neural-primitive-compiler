@@ -1,0 +1,20 @@
+$ npc realize experiments/D_unseen/tasks.npc --spec D02
+# task=D02 start=2026-10-20T05:08:31Z
+machine states: 8, minimal: 7, state bits: 3
+{
+  "machine_states": 8,
+  "minimal_states": 7,
+  "minimal_state_bits": 3,
+  "status": "COMPILED",
+  "neurons": 30,
+  "W": {
+    "y": [
+      1,
+      0
+    ]
+  },
+  "theta": {
+    "y": 1
+  }
+}
+# exit=0 seconds=0.2

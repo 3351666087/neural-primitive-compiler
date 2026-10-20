@@ -1,0 +1,19 @@
+$ npc synth experiments/tasks.npc experiments/blind_skill_eval/sketches.npc --spec C1_toggle_sparse --method sketch --sketch C1_p1 --out experiments/blind_skill_eval/rec/C1_p1.json
+# task=C1 start=2026-10-20T05:06:44Z
+spec C1_toggle_sparse  inputs=['a'] outputs=['y']
+  assume    !(a & prev(a))   [inclusive]
+  guarantee y <-> prev[2](modcount[2](a) == 1)
+method=sketch status=SOLVED iterations=1 candidates=1 examples=3 time=0.03s (synth 0.03s, verify 0.00s)
+network C1_p1  (inputs: a; max_delay=8)
+  neuron h: threshold=2 leak=full bias=0 reset=0 init=0 range=[0,15]
+  neuron p: threshold=1 leak=full bias=0 reset=0 init=0 range=[0,15]
+  synapse a -> h  w=+1 d=1
+  synapse p -> h  w=+1 d=1
+  synapse p -> p  w=+1 d=1
+  synapse a -> p  w=+1 d=2
+  synapse h -> p  w=-2 d=1
+  output y = p
+[bmc] VERIFIED_BOUNDED (0.007s) - holds for all binary input traces over ['a'] satisfying the assumption of length 8 (steps 0..7); says nothing about later steps
+[reach] VERIFIED_UNBOUNDED (0.000s) - holds for all binary input traces over ['a'] satisfying the assumption, every length (finite-state proof)
+wrote experiments/blind_skill_eval/rec/C1_p1.json
+# exit=0 seconds=0.15

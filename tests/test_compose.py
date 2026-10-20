@@ -4,7 +4,7 @@ import random
 
 from hypothesis import given, settings, strategies as st
 
-from npc.compose import compositional_verify
+from npc.compose import compositional_symbolic, compositional_verify
 from npc.dsl import InstDecl, NetworkDef, flatten, load_with_stdlib, parse_library
 from npc.gen import random_formula
 from npc.spec import F, Prev, Spec, TRUE, atom, make_spec
@@ -59,3 +59,22 @@ def test_compositional_never_contradicts_monolithic(seed):
     m = reach(flatten(LIB, nd).network, sp)
     if c.result.status in (Status.VERIFIED_UNBOUNDED, Status.COUNTEREXAMPLE):
         assert c.result.status == m.status
+
+
+@settings(max_examples=40, deadline=None)
+@given(st.integers(min_value=0, max_value=10**9))
+def test_symbolic_compositional_never_contradicts_monolithic(seed):
+    """Same random compositions (with feedback) as above, contract-level system checked by kind / pdr."""
+    rng = random.Random(seed)
+    nd = random_composition(rng, rng.randint(1, 3))
+    phi = random_formula(rng, ["a", "b"], depth=2, unbounded=False)
+    g = F("iff", (atom("y"), Prev(phi, rng.randint(1, 2)))) if rng.random() < 0.7 else \
+        random_formula(rng, ["a", "b", "y"], depth=2, unbounded=False)
+    sp = Spec("r", ("a", "b"), ("y",), TRUE, g)
+    m = reach(flatten(LIB, nd).network, sp)
+    for engine in ("kind", "pdr"):
+        c = compositional_symbolic(LIB, nd, sp, engine=engine, timeout_s=20).result
+        if c.status in (Status.VERIFIED_UNBOUNDED, Status.COUNTEREXAMPLE):
+            assert c.status == m.status, (engine, c.status, m.status)
+        if c.status == Status.COUNTEREXAMPLE:
+            assert c.violation_time == m.violation_time

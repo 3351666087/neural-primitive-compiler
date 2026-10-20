@@ -1,0 +1,19 @@
+$ npc synth experiments/tasks.npc experiments/blind_skill_eval/sketches.npc --spec B3_first_since_reset --method sketch --sketch B3_p1 --out experiments/blind_skill_eval/rec/B3_p1.json
+# task=B3 start=2026-10-20T05:06:18Z
+spec B3_first_since_reset  inputs=['a', 'r'] outputs=['y']
+  guarantee y <-> prev(a & !r & !prev(since(!r, a & !r)))
+method=sketch status=SOLVED iterations=1 candidates=1 examples=3 time=0.02s (synth 0.02s, verify 0.00s)
+network B3_p1  (inputs: a, r; max_delay=8)
+  neuron m.m: threshold=1 leak=full bias=0 reset=0 init=0 range=[0,15]
+  neuron yn: threshold=1 leak=full bias=0 reset=0 init=0 range=[0,15]
+  synapse m.m -> m.m  w=+1 d=1
+  synapse a -> m.m  w=+1 d=1
+  synapse r -> m.m  w=-2 d=1
+  synapse a -> yn  w=+1 d=1
+  synapse r -> yn  w=-1 d=1
+  synapse m.m -> yn  w=-1 d=1
+  output y = yn
+[bmc] VERIFIED_BOUNDED (0.008s) - holds for all binary input traces over ['a', 'r'] of length 8 (steps 0..7); says nothing about later steps
+[reach] VERIFIED_UNBOUNDED (0.000s) - holds for all binary input traces over ['a', 'r'], every length (finite-state proof)
+wrote experiments/blind_skill_eval/rec/B3_p1.json
+# exit=0 seconds=0.12

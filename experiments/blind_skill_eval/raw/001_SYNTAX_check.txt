@@ -1,0 +1,4 @@
+$ npc check experiments/blind_skill_eval/syntax_probe.npc
+# task=SYNTAX start=2026-10-20T05:05:17Z
+error: experiments/blind_skill_eval/syntax_probe.npc: in network probe1: line 4: unknown network statement 'outputs'
+# exit=3 seconds=0.17

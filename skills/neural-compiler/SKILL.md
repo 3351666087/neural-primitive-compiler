@@ -36,7 +36,36 @@ by the verifier**. You are a proposer. You are never the judge.
 | fill holes in your sketch | `npc synth FILE.npc --spec S --method sketch --sketch N --out rec.json` |
 | search with no proposal from you | `npc synth FILE.npc --spec S --method cegis` (or `compose`, `cyclic`, `classical`) |
 
-Exit codes: 0 verified/solved, 1 counterexample/unrealizable/exhausted, 2 no conclusion, 3 input error.
+Exit codes: 0 verified/solved (an unbounded proof counts even if a bounded engine hit a resource
+limit), 1 counterexample/unrealizable/exhausted, 2 no conclusion, 3 input error. Still read every
+engine's status line: the exit code is a summary, not the evidence.
+
+## Network syntax (.npc)
+
+```
+network N {
+  maxdelay 3                       # largest synaptic delay allowed in this network
+  inputs a, b                      # input channels (there is no `outputs` line)
+  inst L = latch() set=a rst=b     # a primitive instance; ports bound to inputs, instance outputs or `_`
+  inst c = counter(k=3) in=a rst=_ # parameters in (...), `_` = port left silent
+  neuron n threshold=2 leak=full   # a raw neuron (fields below)
+  synapse a -> n weight=1 delay=1  # sources: inputs, raw neurons, instance outputs like L.out
+  synapse b -> n weight=-1 delay=1..3   # one synapse per delay in the range
+  output y = n                     # or: output y = L.out
+}
+```
+
+Raw neuron fields (all integers; defaults in brackets): `threshold` (required, 1..vmax), `leak` [0]
+(linear decay toward 0 per step; `full` = memoryless), `bias` [0] (added every step, so a biased
+neuron can fire at t=0), `reset` [0] (potential after a spike), `init` [0] (potential at t=0; e.g.
+`init=1 threshold=1` with no inputs gives a one-shot start pulse at t=0, and a negative `init` with
+`vmin<0` keeps a biased neuron silent at t=0), `vmin` [0], `vmax` [15] (the potential is clipped to
+this range; `vmin<0` lets inhibition be stored).
+
+Holes for sketches: any numeric field or weight may be `?[lo,hi]` (Z3 solves it); a parameter,
+binding, output or primitive type may be `?{x, y, z}` (enumerated).
+
+`--out rec.json` writes a record that `npc verify --net-json rec.json` accepts directly.
 
 ## Workflow
 
@@ -121,5 +150,6 @@ Give the user:
 - It cannot handle requirements that need unbounded counting or real-valued signals, or any
   "intelligence" that cannot be written as a finite-state temporal spec.
 - Bigger networks: CEGIS is practical for a few neurons; explicit-state verification explodes
-  roughly as 2^(state bits).
+  roughly as 2^(state bits). For long delay chains, add `--engines bmc,kind,pdr` (symbolic unbounded
+  engines); they scale much further on finite-memory structures but not on long-range counting.
 - It verifies the ideal semantics only.

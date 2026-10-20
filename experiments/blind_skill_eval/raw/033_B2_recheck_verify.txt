@@ -1,0 +1,9 @@
+$ npc verify experiments/tasks.npc --net-json experiments/blind_skill_eval/rec/B2_p1.net.json --spec B2_remember_query --horizon 10 --out experiments/blind_skill_eval/rec/B2_p1_reverify.json
+# task=B2_recheck start=2026-10-20T05:12:15Z
+spec B2_remember_query  inputs=['s', 'r', 'q'] outputs=['y']
+  guarantee y <-> prev(q & since(!r, s & !r))
+[bmc] VERIFIED_BOUNDED (0.051s) - holds for all binary input traces over ['s', 'r', 'q'] of length 10 (steps 0..9); says nothing about later steps
+[exhaustive] RESOURCE_LIMIT (0.000s) - NO CONCLUSION {'traces_needed': 1073741824, 'max_traces': 1048576}
+[reach] VERIFIED_UNBOUNDED (0.000s) - holds for all binary input traces over ['s', 'r', 'q'], every length (finite-state proof)
+wrote experiments/blind_skill_eval/rec/B2_p1_reverify.json
+# exit=2 seconds=0.19

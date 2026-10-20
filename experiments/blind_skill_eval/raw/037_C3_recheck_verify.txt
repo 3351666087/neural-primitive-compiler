@@ -1,0 +1,9 @@
+$ npc verify experiments/tasks.npc --net-json experiments/blind_skill_eval/rec/C3_p1.net.json --spec C3_latched_alarm --horizon 10 --out experiments/blind_skill_eval/rec/C3_p1_reverify.json
+# task=C3_recheck start=2026-10-20T05:12:16Z
+spec C3_latched_alarm  inputs=['a', 'r'] outputs=['y']
+  guarantee y <-> prev[2](since(!r, (count[3](a) >= 2) & !r))
+[bmc] VERIFIED_BOUNDED (0.011s) - holds for all binary input traces over ['a', 'r'] of length 10 (steps 0..9); says nothing about later steps
+[exhaustive] VERIFIED_BOUNDED (0.270s) - holds for all binary input traces over ['a', 'r'] of length 10 (steps 0..9); says nothing about later steps
+[reach] VERIFIED_UNBOUNDED (0.002s) - holds for all binary input traces over ['a', 'r'], every length (finite-state proof)
+wrote experiments/blind_skill_eval/rec/C3_p1_reverify.json
+# exit=0 seconds=0.39

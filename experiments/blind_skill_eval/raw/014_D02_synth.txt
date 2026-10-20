@@ -1,0 +1,36 @@
+$ npc synth experiments/D_unseen/tasks.npc experiments/blind_skill_eval/sketches.npc --spec D02 --method sketch --sketch D02_p1 --out experiments/blind_skill_eval/rec/D02_p1.json
+# task=D02 start=2026-10-20T05:09:41Z
+spec D02  inputs=['a', 'b'] outputs=['y']
+  guarantee y <-> prev(since(once[2,2](modcount[2](a; b) == 0), a))
+method=sketch status=SOLVED iterations=13 candidates=1 examples=15 time=5.60s (synth 5.60s, verify 0.00s)
+network D02_p1  (inputs: a, b; max_delay=8)
+  neuron d: threshold=1 leak=full bias=1 reset=0 init=0 range=[0,15]
+  neuron m1: threshold=1 leak=full bias=0 reset=0 init=0 range=[0,15]
+  neuron m2: threshold=3 leak=full bias=0 reset=0 init=0 range=[0,15]
+  neuron o: threshold=2 leak=full bias=0 reset=0 init=0 range=[0,15]
+  neuron yn: threshold=4 leak=full bias=0 reset=0 init=0 range=[0,15]
+  synapse o -> m1  w=+2 d=1
+  synapse a -> m1  w=-2 d=1
+  synapse a -> m1  w=+1 d=2
+  synapse b -> m1  w=-3 d=1
+  synapse b -> m1  w=-3 d=2
+  synapse o -> m2  w=+2 d=1
+  synapse a -> m2  w=+1 d=1
+  synapse a -> m2  w=+2 d=2
+  synapse b -> m2  w=-2 d=1
+  synapse b -> m2  w=+3 d=2
+  synapse o -> o  w=-1 d=2
+  synapse a -> o  w=+2 d=2
+  synapse b -> o  w=-4 d=2
+  synapse b -> o  w=+3 d=3
+  synapse m1 -> o  w=+3 d=1
+  synapse m2 -> o  w=-2 d=1
+  synapse a -> yn  w=+4 d=1
+  synapse yn -> yn  w=+2 d=1
+  synapse d -> yn  w=+3 d=3
+  synapse o -> yn  w=-2 d=1
+  output y = yn
+[bmc] VERIFIED_BOUNDED (0.023s) - holds for all binary input traces over ['a', 'b'] of length 8 (steps 0..7); says nothing about later steps
+[reach] VERIFIED_UNBOUNDED (0.002s) - holds for all binary input traces over ['a', 'b'], every length (finite-state proof)
+wrote experiments/blind_skill_eval/rec/D02_p1.json
+# exit=0 seconds=5.78

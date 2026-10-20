@@ -2,6 +2,7 @@
 
   python experiments/run_experiments.py abc        # groups A-C, all baselines and synthesisers
   python experiments/run_experiments.py scaling    # Q3: monolithic vs compositional verification cost
+  python experiments/run_experiments.py scaling_symbolic   # H4 re-test: same chains, symbolic unbounded engines
   python experiments/run_experiments.py summary    # regenerate markdown tables from raw JSON
 
 Raw results go to experiments/results/*.json. Nothing here trains parameters by
@@ -13,6 +14,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import platform
 import sys
 import time
 import traceback
@@ -21,14 +23,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT.parent / "src"))
 
-from npc.compose import compositional_verify  # noqa: E402
+from npc.compose import compositional_symbolic, compositional_verify  # noqa: E402
 from npc.dsl import InstDecl, NetworkDef, flatten, load_with_stdlib  # noqa: E402
 from npc.fsm import NotCausal, NotFunctional, classical_network, machine_from_spec, minimize  # noqa: E402
 from npc.network import full_leak  # noqa: E402
 from npc.spec import make_spec  # noqa: E402
 from npc.synth import (compose_cyclic, compose_dag, enumerate_params, fully_connected,  # noqa: E402
                        minimize_synapses, search_neurons)
-from npc.verify import Status, bmc, reach, verify_all  # noqa: E402
+from npc.verify import Status, bmc, kinduction, pdr, reach, verify_all  # noqa: E402
 
 RES = ROOT / "results"
 TASKS = ["A1_delayed_coincidence", "A2_burst2of3", "A3_a_without_recent_b",
@@ -169,14 +171,16 @@ def chain(prim, args, N, ports):
     return nd
 
 
+SCALING_FAMILIES = [("relay", {"d": 1}, ["in"], lambda N: f"y <-> prev[{N}](a)", 14),
+                    ("counter", {"k": 2}, ["in", "rst"], lambda N: f"y <-> prev[{N}](a & modcount[{2 ** N}](a) == 0)", 9),
+                    ("window", {"k": 2, "w": 2}, ["in"], None, 7)]
+
+
 def part_scaling(args):
     from npc import compose
     lib = load_with_stdlib()
     rows = []
-    fams = [("relay", {"d": 1}, ["in"], lambda N: f"y <-> prev[{N}](a)", 14),
-            ("counter", {"k": 2}, ["in", "rst"], lambda N: f"y <-> prev[{N}](a & modcount[{2 ** N}](a) == 0)", 9),
-            ("window", {"k": 2, "w": 2}, ["in"], None, 7)]
-    for prim, pargs, ports, specf, Nmax in fams:
+    for prim, pargs, ports, specf, Nmax in SCALING_FAMILIES:
         for N in range(1, Nmax + 1):
             nd = chain(prim, pargs, N, ports)
             net = flatten(lib, nd).network
@@ -204,6 +208,82 @@ def part_scaling(args):
             if mono.status != Status.VERIFIED_UNBOUNDED and comp.result.status != Status.VERIFIED_UNBOUNDED:
                 break
     (RES / "scaling.json").write_text(json.dumps(rows, indent=2))
+
+
+# ------------------------------------------------- H4 re-test: symbolic unbounded engines
+SYMBOLIC_NS = list(range(1, 13)) + [14, 16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 96, 112, 128, 160, 192, 256, 320, 384, 512]
+
+
+def _tree_record():
+    sys.path.insert(0, str(ROOT / "D_unseen"))
+    from run_unseen import MANIFEST, tree_hash
+    h, _ = tree_hash()
+    frozen = json.loads(MANIFEST.read_text())["tree_sha256"]
+    return {"src_tree_sha256": h, "freeze_manifest_tree_sha256": frozen, "post_freeze_tree": h != frozen}
+
+
+def _sym_entry(r, extra=None):
+    keep = ("k", "closed_by", "bounded_safe_upto", "state_components", "simple_path_constraints", "solver_checks",
+            "solver_time_s", "phase_time_s", "invariant_size", "certificate", "spacer_time_s", "reason",
+            "product_states", "system_states")
+    e = {"status": r.status.value, "time_s": round(r.time_s, 4), **{k: r.stats[k] for k in keep if k in r.stats}}
+    if r.status == Status.COUNTEREXAMPLE:
+        e["violation_time"] = r.violation_time
+    e.update(extra or {})
+    return e
+
+
+def part_scaling_symbolic(args):
+    """Same N-stage chains and specs as `scaling`; every engine gets its own args.budget (120 s) per N.
+    Engines: explicit monolithic / contract-level (re-run as the baseline on this tree), k-induction and
+    Spacer/PDR on the monolithic network and on the contract-level system. An engine is dropped for
+    larger N after its first result that is not a proof (TIMEOUT / UNKNOWN / RESOURCE_LIMIT); a family
+    stops when every engine has been dropped or SYMBOLIC_NS is exhausted."""
+    from npc import compose
+    lib = load_with_stdlib()
+    import z3
+    meta = {"budget_s_per_engine_per_N": args.budget, "max_states_explicit": 3_000_000, "k_max": "unbounded (deadline only)",
+            "z3": z3.get_version_string(), "python": platform.python_version(), "machine": platform.machine(),
+            "date": time.strftime("%Y-%m-%d"), **_tree_record()}
+    print(json.dumps(meta), flush=True)
+    engines = {
+        "explicit_mono": lambda nd, net, sp: reach(net, sp, max_states=3_000_000, timeout_s=args.budget),
+        "explicit_contract": lambda nd, net, sp: compositional_verify(lib, nd, sp, max_states=3_000_000,
+                                                                      timeout_s=args.budget).result,
+        "kind_mono": lambda nd, net, sp: kinduction(net, sp, k_max=10**9, timeout_s=args.budget),
+        "pdr_mono": lambda nd, net, sp: pdr(net, sp, timeout_s=args.budget),
+        "kind_contract": lambda nd, net, sp: compositional_symbolic(lib, nd, sp, "kind", k_max=10**9,
+                                                                    timeout_s=args.budget).result,
+        "pdr_contract": lambda nd, net, sp: compositional_symbolic(lib, nd, sp, "pdr", timeout_s=args.budget).result,
+    }
+    rows = []
+    out = RES / "scaling_symbolic.json"
+    for prim, pargs, ports, specf, _ in SCALING_FAMILIES:
+        if specf is None:  # same spec as part_scaling uses for windows
+            specf = lambda N: "y -> once[1,%d](a)" % (2 * N)
+        alive = dict.fromkeys(engines, True)
+        for N in SYMBOLIC_NS:
+            if not any(alive.values()):
+                break
+            nd = chain(prim, pargs, N, ports)
+            net = flatten(lib, nd).network
+            sp = make_spec(f"chain{N}", ["a"], ["y"], specf(N))
+            row = {"family": prim, "N": N, "neurons": len(net.neurons), "spec": specf(N), "engines": {}}
+            for name, run in engines.items():
+                if not alive[name]:
+                    row["engines"][name] = {"status": "SKIPPED", "reason": "no proof at a smaller N"}
+                    continue
+                compose._PROOF_CACHE.clear()
+                r = run(nd, net, sp)
+                row["engines"][name] = _sym_entry(r)
+                if r.status != Status.VERIFIED_UNBOUNDED:
+                    alive[name] = False
+            rows.append(row)
+            print(json.dumps({"family": prim, "N": N, **{k: (v["status"][:8], v.get("time_s"), v.get("k"))
+                                                         for k, v in row["engines"].items()}}), flush=True)
+            out.write_text(json.dumps({"meta": meta, "rows": rows}, indent=2))
+    meta["finished"] = True
+    out.write_text(json.dumps({"meta": meta, "rows": rows}, indent=2))
 
 
 # ---------------------------------------------------------------- Q2 sweep
@@ -309,11 +389,15 @@ def part_summary(args):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("part", choices=["abc", "scaling", "q2", "summary"])
+    ap.add_argument("part", choices=["abc", "scaling", "scaling_symbolic", "q2", "summary"])
     ap.add_argument("--tasks", nargs="*")
-    ap.add_argument("--budget", type=float, default=240.0, help="seconds per searcher per task")
+    ap.add_argument("--budget", type=float, default=None,
+                    help="seconds per searcher per task (default 240; 120 per engine per N for scaling_symbolic)")
     args = ap.parse_args()
-    {"abc": part_abc, "scaling": part_scaling, "q2": part_q2, "summary": part_summary}[args.part](args)
+    if args.budget is None:
+        args.budget = 120.0 if args.part == "scaling_symbolic" else 240.0
+    {"abc": part_abc, "scaling": part_scaling, "scaling_symbolic": part_scaling_symbolic, "q2": part_q2,
+     "summary": part_summary}[args.part](args)
 
 
 if __name__ == "__main__":

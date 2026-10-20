@@ -64,7 +64,10 @@ def _load(args):
 
 def _network(lib, args) -> Network:
     if getattr(args, "net_json", None):
-        return Network.from_json(Path(args.net_json).read_text())
+        data = json.loads(Path(args.net_json).read_text())
+        if "network" in data and isinstance(data["network"], dict):  # a record written by --out
+            data = data["network"]
+        return Network.from_dict(data)
     if not args.network:
         raise DSLError("give --network NAME or --net-json FILE")
     return flatten(lib, lib.networks[args.network]).network
@@ -138,9 +141,11 @@ def cmd_sim(args) -> int:
 
 
 def _status_code(results) -> int:
+    """1 if any engine refuted the spec; 0 if an unbounded proof exists (it covers every bounded check)
+    or every engine verified; 2 otherwise (no conclusion)."""
     if any(r.status == Status.COUNTEREXAMPLE for r in results):
         return 1
-    if all(r.verified for r in results):
+    if any(r.status == Status.VERIFIED_UNBOUNDED for r in results) or all(r.verified for r in results):
         return 0
     return 2
 

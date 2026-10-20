@@ -1,0 +1,20 @@
+$ npc synth experiments/tasks.npc experiments/blind_skill_eval/sketches.npc --spec C2_parity_dense --method sketch --sketch C2_p1 --out experiments/blind_skill_eval/rec/C2_p1.json
+# task=C2 start=2026-10-20T05:07:15Z
+spec C2_parity_dense  inputs=['a'] outputs=['y']
+  guarantee y <-> prev[2](modcount[2](a) == 1)
+method=sketch status=SOLVED iterations=1 candidates=1 examples=3 time=0.03s (synth 0.03s, verify 0.00s)
+network C2_p1  (inputs: a; max_delay=8)
+  neuron m: threshold=1 leak=full bias=0 reset=0 init=0 range=[0,15]
+  neuron p: threshold=1 leak=full bias=0 reset=0 init=0 range=[0,15]
+  synapse p -> m  w=+2 d=1
+  synapse a -> m  w=-3 d=2
+  synapse a -> m  w=+2 d=1
+  synapse p -> p  w=-1 d=2
+  synapse a -> p  w=+1 d=3
+  synapse a -> p  w=-2 d=2
+  synapse m -> p  w=+3 d=1
+  output y = p
+[bmc] VERIFIED_BOUNDED (0.009s) - holds for all binary input traces over ['a'] of length 8 (steps 0..7); says nothing about later steps
+[reach] VERIFIED_UNBOUNDED (0.000s) - holds for all binary input traces over ['a'], every length (finite-state proof)
+wrote experiments/blind_skill_eval/rec/C2_p1.json
+# exit=0 seconds=0.15
