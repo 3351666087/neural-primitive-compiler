@@ -153,9 +153,12 @@ def cmd_run(args):
         print("  A_auto:", auto["status"], auto["reason"], [(p["size"], p.get("differential")) for p in auto["per_size"]], flush=True)
         # A-LLM
         if u.uid in llm:
-            prog = llm[u.uid]
-            lr = {"ir_tokens": ir_size(prog), "per_size": []}
+            entry = llm[u.uid]
+            progs = [entry["program"] if "program" in entry else entry["per_size"][str(tuple(s) if isinstance(s, list) else s)]
+                     for s in u.sizes]
+            lr = {"ir_tokens": [ir_size(p) for p in progs], "per_size_programs": "per_size" in entry, "per_size": []}
             for i, t in enumerate(tasks):
+                prog = progs[i]
                 try:
                     net = compile_ir(prog, t.interface())
                     lr["per_size"].append({"size": str(u.sizes[i]), "neurons": len(net.neurons), "synapses": len(net.synapses),

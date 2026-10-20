@@ -25,3 +25,13 @@
 Known weaknesses: the generator, the vocabulary, the primitives and the LLM programs were written by the
 same model; the hash proves which code produced the results, not that the author did not iterate before
 freezing. Two-move composite commands are "new combinations" only relative to the design tasks.
+
+## Amendment 1 (made after task generation, before any constructor or judge ran on unseen tasks)
+
+While writing the A-LLM programs, Claude found that the frozen IR has no construct for indexed command
+families (STOREk, PLACEk, outputs topk): a single program cannot serve sizes with different object counts.
+The automatic route has such families (anti-unified rules in `cog.auto`), but they live outside the IR.
+Change: `llm_programs.json` may give either one size-independent `program` (used for every size; all spatial
+tasks) or `per_size` programs, one per listed size, each written from the natural-language description
+(binding and objects-on-grid tasks). Only `run_unseen.py` (outside the frozen tree) was edited, to read that
+format. The missing IR construct is recorded as a negative result (negative-results.md, N-IR-1).

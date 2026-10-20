@@ -1,0 +1,2220 @@
+{
+ "UA0": {
+  "program": {
+   "name": "llm",
+   "max_delay": 6,
+   "nodes": [
+    {
+     "id": "mem",
+     "op": "CMR",
+     "letters": {
+      "LOAD": {
+       "map": [
+        "load",
+        "see"
+       ]
+      },
+      "CMD0": {
+       "map": [
+        "compose",
+        [
+         "shift",
+         0,
+         1,
+         "clip"
+        ],
+        [
+         "rot90"
+        ]
+       ]
+      },
+      "CMD1": {
+       "map": [
+        "rot180"
+       ]
+      },
+      "CMD2": {
+       "map": [
+        "compose",
+        [
+         "fliph"
+        ],
+        [
+         "shift",
+         1,
+         0,
+         "wrap"
+        ]
+       ]
+      },
+      "condA": {
+       "map": [
+        "shift",
+        -1,
+        0,
+        "clip"
+       ]
+      },
+      "condB": {
+       "map": [
+        "dilate"
+       ]
+      }
+     }
+    },
+    {
+     "id": "condR",
+     "op": "ANY",
+     "of": "mem",
+     "where": {
+      "row": 0
+     },
+     "delay": 1
+    },
+    {
+     "id": "condA",
+     "op": "GATE",
+     "pos": [
+      [
+       "CMD3",
+       4
+      ],
+      [
+       "condR",
+       1
+      ]
+     ]
+    },
+    {
+     "id": "condB",
+     "op": "GATE",
+     "pos": [
+      [
+       "CMD3",
+       4
+      ]
+     ],
+     "neg": [
+      [
+       "condR",
+       1
+      ]
+     ]
+    }
+   ],
+   "outputs": {
+    "img": "mem"
+   }
+  }
+ },
+ "UA1": {
+  "program": {
+   "name": "llm",
+   "max_delay": 6,
+   "nodes": [
+    {
+     "id": "mem",
+     "op": "CMR",
+     "letters": {
+      "LOAD": {
+       "map": [
+        "load",
+        "see"
+       ]
+      },
+      "CMD0": {
+       "map": [
+        "shift",
+        -1,
+        0,
+        "clip"
+       ]
+      },
+      "CMD1": {
+       "map": [
+        "shift",
+        -1,
+        0,
+        "clip"
+       ]
+      },
+      "CMD2": {
+       "map": [
+        "shift",
+        0,
+        1,
+        "clip"
+       ]
+      }
+     }
+    }
+   ],
+   "outputs": {
+    "img": "mem"
+   }
+  }
+ },
+ "UA2": {
+  "program": {
+   "name": "llm",
+   "max_delay": 6,
+   "nodes": [
+    {
+     "id": "mem",
+     "op": "CMR",
+     "letters": {
+      "LOAD": {
+       "map": [
+        "load",
+        "see"
+       ]
+      },
+      "CMD0": {
+       "map": [
+        "compose",
+        [
+         "rot270"
+        ],
+        [
+         "rot270"
+        ]
+       ]
+      },
+      "CMD1": {
+       "map": [
+        "transpose"
+       ]
+      },
+      "CMD2": {
+       "map": [
+        "compose",
+        [
+         "dilate"
+        ],
+        [
+         "shift",
+         -1,
+         0,
+         "clip"
+        ]
+       ]
+      },
+      "CMD3": {
+       "map": [
+        "compose",
+        [
+         "rot270"
+        ],
+        [
+         "transpose"
+        ]
+       ]
+      },
+      "condA": {
+       "map": [
+        "shift",
+        -1,
+        0,
+        "clip"
+       ]
+      },
+      "condB": {
+       "map": [
+        "shift",
+        1,
+        0,
+        "wrap"
+       ]
+      }
+     }
+    },
+    {
+     "id": "condR",
+     "op": "ANY",
+     "of": "mem",
+     "where": {
+      "row": "last"
+     },
+     "delay": 1
+    },
+    {
+     "id": "condA",
+     "op": "GATE",
+     "pos": [
+      [
+       "CMD4",
+       4
+      ],
+      [
+       "condR",
+       1
+      ]
+     ]
+    },
+    {
+     "id": "condB",
+     "op": "GATE",
+     "pos": [
+      [
+       "CMD4",
+       4
+      ]
+     ],
+     "neg": [
+      [
+       "condR",
+       1
+      ]
+     ]
+    },
+    {
+     "id": "any_all",
+     "op": "ANY",
+     "of": "mem",
+     "where": {
+      "all": true
+     },
+     "delay": 1
+    },
+    {
+     "id": "cellon",
+     "op": "SEL",
+     "of": "mem",
+     "select": "qcell",
+     "axis": "all",
+     "delay": 2,
+     "xdelay": 1
+    }
+   ],
+   "outputs": {
+    "img": "mem",
+    "any_all": "any_all",
+    "cellon": "cellon"
+   }
+  }
+ },
+ "UA3": {
+  "program": {
+   "name": "llm",
+   "max_delay": 6,
+   "nodes": [
+    {
+     "id": "mem",
+     "op": "CMR",
+     "letters": {
+      "LOAD": {
+       "map": [
+        "load",
+        "see"
+       ]
+      },
+      "CMD0": {
+       "map": [
+        "compose",
+        [
+         "rot90"
+        ],
+        [
+         "transpose"
+        ]
+       ]
+      },
+      "CMD1": {
+       "map": [
+        "compose",
+        [
+         "shift",
+         0,
+         -1,
+         "clip"
+        ],
+        [
+         "fliph"
+        ]
+       ]
+      },
+      "CMD2": {
+       "map": [
+        "shift",
+        0,
+        1,
+        "clip"
+       ]
+      },
+      "condA": {
+       "map": [
+        "rot90"
+       ]
+      },
+      "condB": {
+       "map": [
+        "fliph"
+       ]
+      }
+     }
+    },
+    {
+     "id": "condR",
+     "op": "ANY",
+     "of": "mem",
+     "where": {
+      "row": 0
+     },
+     "delay": 1
+    },
+    {
+     "id": "condA",
+     "op": "GATE",
+     "pos": [
+      [
+       "CMD3",
+       4
+      ],
+      [
+       "condR",
+       1
+      ]
+     ]
+    },
+    {
+     "id": "condB",
+     "op": "GATE",
+     "pos": [
+      [
+       "CMD3",
+       4
+      ]
+     ],
+     "neg": [
+      [
+       "condR",
+       1
+      ]
+     ]
+    },
+    {
+     "id": "any_all",
+     "op": "ANY",
+     "of": "mem",
+     "where": {
+      "all": true
+     },
+     "delay": 1
+    }
+   ],
+   "outputs": {
+    "img": "mem",
+    "any_all": "any_all"
+   }
+  }
+ },
+ "UA4": {
+  "program": {
+   "name": "llm",
+   "max_delay": 6,
+   "nodes": [
+    {
+     "id": "mem",
+     "op": "CMR",
+     "letters": {
+      "LOAD": {
+       "map": [
+        "load",
+        "see"
+       ]
+      },
+      "CMD0": {
+       "map": [
+        "compose",
+        [
+         "rot270"
+        ],
+        [
+         "transpose"
+        ]
+       ]
+      },
+      "CMD1": {
+       "map": [
+        "rot180"
+       ]
+      },
+      "CMD2": {
+       "map": [
+        "compose",
+        [
+         "shift",
+         0,
+         -1,
+         "clip"
+        ],
+        [
+         "shift",
+         1,
+         0,
+         "clip"
+        ]
+       ]
+      },
+      "CMD3": {
+       "map": [
+        "shift",
+        1,
+        0,
+        "clip"
+       ]
+      },
+      "condA": {
+       "map": [
+        "flipv"
+       ]
+      },
+      "condB": {
+       "map": [
+        "shift",
+        0,
+        -1,
+        "clip"
+       ]
+      }
+     }
+    },
+    {
+     "id": "condR",
+     "op": "ANY",
+     "of": "mem",
+     "where": {
+      "col": 0
+     },
+     "delay": 1
+    },
+    {
+     "id": "condA",
+     "op": "GATE",
+     "pos": [
+      [
+       "CMD4",
+       4
+      ],
+      [
+       "condR",
+       1
+      ]
+     ]
+    },
+    {
+     "id": "condB",
+     "op": "GATE",
+     "pos": [
+      [
+       "CMD4",
+       4
+      ]
+     ],
+     "neg": [
+      [
+       "condR",
+       1
+      ]
+     ]
+    },
+    {
+     "id": "any_bottom",
+     "op": "ANY",
+     "of": "mem",
+     "where": {
+      "row": "last"
+     },
+     "delay": 1
+    },
+    {
+     "id": "cellon",
+     "op": "SEL",
+     "of": "mem",
+     "select": "qcell",
+     "axis": "all",
+     "delay": 2,
+     "xdelay": 1
+    }
+   ],
+   "outputs": {
+    "img": "mem",
+    "any_bottom": "any_bottom",
+    "cellon": "cellon"
+   }
+  }
+ },
+ "UA5": {
+  "program": {
+   "name": "llm",
+   "max_delay": 6,
+   "nodes": [
+    {
+     "id": "mem",
+     "op": "CMR",
+     "letters": {
+      "LOAD": {
+       "map": [
+        "load",
+        "see"
+       ]
+      },
+      "CMD0": {
+       "map": [
+        "compose",
+        [
+         "transpose"
+        ],
+        [
+         "fliph"
+        ]
+       ]
+      },
+      "CMD1": {
+       "map": [
+        "compose",
+        [
+         "dilate"
+        ],
+        [
+         "shift",
+         0,
+         1,
+         "clip"
+        ]
+       ]
+      },
+      "CMD2": {
+       "map": [
+        "flipv"
+       ]
+      },
+      "CMD3": {
+       "map": [
+        "transpose"
+       ]
+      }
+     }
+    }
+   ],
+   "outputs": {
+    "img": "mem"
+   }
+  }
+ },
+ "UA6": {
+  "program": {
+   "name": "llm",
+   "max_delay": 6,
+   "nodes": [
+    {
+     "id": "mem",
+     "op": "CMR",
+     "letters": {
+      "LOAD": {
+       "map": [
+        "load",
+        "see"
+       ]
+      },
+      "CMD0": {
+       "map": [
+        "transpose"
+       ]
+      },
+      "CMD1": {
+       "map": [
+        "shift",
+        0,
+        -1,
+        "clip"
+       ]
+      }
+     }
+    },
+    {
+     "id": "any_bottom",
+     "op": "ANY",
+     "of": "mem",
+     "where": {
+      "row": "last"
+     },
+     "delay": 1
+    }
+   ],
+   "outputs": {
+    "img": "mem",
+    "any_bottom": "any_bottom"
+   }
+  }
+ },
+ "UA7": {
+  "program": {
+   "name": "llm",
+   "max_delay": 6,
+   "nodes": [
+    {
+     "id": "mem",
+     "op": "CMR",
+     "letters": {
+      "LOAD": {
+       "map": [
+        "load",
+        "see"
+       ]
+      },
+      "CMD0": {
+       "map": [
+        "compose",
+        [
+         "shift",
+         -1,
+         0,
+         "clip"
+        ],
+        [
+         "fliph"
+        ]
+       ]
+      },
+      "CMD1": {
+       "map": [
+        "rot270"
+       ]
+      }
+     }
+    },
+    {
+     "id": "any_left",
+     "op": "ANY",
+     "of": "mem",
+     "where": {
+      "col": 0
+     },
+     "delay": 1
+    }
+   ],
+   "outputs": {
+    "img": "mem",
+    "any_left": "any_left"
+   }
+  }
+ },
+ "UB0": {
+  "per_size": {
+   "(2, 2)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "STORE0": {
+        "map": [
+         "store_row",
+         0,
+         "val"
+        ]
+       },
+       "STORE1": {
+        "map": [
+         "store_row",
+         1,
+         "val"
+        ]
+       },
+       "SWAP01": {
+        "map": [
+         "swap_rows",
+         0,
+         1
+        ]
+       }
+      }
+     },
+     {
+      "id": "va",
+      "op": "SEL",
+      "of": "mem",
+      "select": "qa",
+      "axis": 0,
+      "delay": 2,
+      "xdelay": 1
+     },
+     {
+      "id": "vb",
+      "op": "SEL",
+      "of": "mem",
+      "select": "qb",
+      "axis": 0,
+      "delay": 2,
+      "xdelay": 1
+     },
+     {
+      "id": "both",
+      "op": "GATE",
+      "pos": [
+       [
+        "va",
+        1
+       ],
+       [
+        "vb",
+        1
+       ]
+      ]
+     },
+     {
+      "id": "same",
+      "op": "ANY",
+      "of": "both",
+      "where": {
+       "all": true
+      },
+      "delay": 1
+     }
+    ],
+    "outputs": {
+     "img": "mem",
+     "same": "same"
+    }
+   },
+   "(4, 3)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "STORE0": {
+        "map": [
+         "store_row",
+         0,
+         "val"
+        ]
+       },
+       "STORE1": {
+        "map": [
+         "store_row",
+         1,
+         "val"
+        ]
+       },
+       "SWAP01": {
+        "map": [
+         "swap_rows",
+         0,
+         1
+        ]
+       },
+       "STORE2": {
+        "map": [
+         "store_row",
+         2,
+         "val"
+        ]
+       },
+       "SWAP02": {
+        "map": [
+         "swap_rows",
+         0,
+         2
+        ]
+       },
+       "SWAP12": {
+        "map": [
+         "swap_rows",
+         1,
+         2
+        ]
+       },
+       "STORE3": {
+        "map": [
+         "store_row",
+         3,
+         "val"
+        ]
+       },
+       "SWAP03": {
+        "map": [
+         "swap_rows",
+         0,
+         3
+        ]
+       },
+       "SWAP13": {
+        "map": [
+         "swap_rows",
+         1,
+         3
+        ]
+       },
+       "SWAP23": {
+        "map": [
+         "swap_rows",
+         2,
+         3
+        ]
+       }
+      }
+     },
+     {
+      "id": "va",
+      "op": "SEL",
+      "of": "mem",
+      "select": "qa",
+      "axis": 0,
+      "delay": 2,
+      "xdelay": 1
+     },
+     {
+      "id": "vb",
+      "op": "SEL",
+      "of": "mem",
+      "select": "qb",
+      "axis": 0,
+      "delay": 2,
+      "xdelay": 1
+     },
+     {
+      "id": "both",
+      "op": "GATE",
+      "pos": [
+       [
+        "va",
+        1
+       ],
+       [
+        "vb",
+        1
+       ]
+      ]
+     },
+     {
+      "id": "same",
+      "op": "ANY",
+      "of": "both",
+      "where": {
+       "all": true
+      },
+      "delay": 1
+     }
+    ],
+    "outputs": {
+     "img": "mem",
+     "same": "same"
+    }
+   }
+  }
+ },
+ "UB1": {
+  "per_size": {
+   "(2, 3)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "STORE0": {
+        "map": [
+         "store_row",
+         0,
+         "val"
+        ]
+       },
+       "COPY10": {
+        "map": [
+         "copy_row",
+         1,
+         0
+        ]
+       },
+       "STORE1": {
+        "map": [
+         "store_row",
+         1,
+         "val"
+        ]
+       },
+       "COPY01": {
+        "map": [
+         "copy_row",
+         0,
+         1
+        ]
+       }
+      }
+     },
+     {
+      "id": "va",
+      "op": "SEL",
+      "of": "mem",
+      "select": "qa",
+      "axis": 0,
+      "delay": 2,
+      "xdelay": 1
+     },
+     {
+      "id": "vb",
+      "op": "SEL",
+      "of": "mem",
+      "select": "qb",
+      "axis": 0,
+      "delay": 2,
+      "xdelay": 1
+     },
+     {
+      "id": "both",
+      "op": "GATE",
+      "pos": [
+       [
+        "va",
+        1
+       ],
+       [
+        "vb",
+        1
+       ]
+      ]
+     },
+     {
+      "id": "same",
+      "op": "ANY",
+      "of": "both",
+      "where": {
+       "all": true
+      },
+      "delay": 1
+     }
+    ],
+    "outputs": {
+     "img": "mem",
+     "same": "same"
+    }
+   },
+   "(4, 4)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "STORE0": {
+        "map": [
+         "store_row",
+         0,
+         "val"
+        ]
+       },
+       "COPY10": {
+        "map": [
+         "copy_row",
+         1,
+         0
+        ]
+       },
+       "COPY20": {
+        "map": [
+         "copy_row",
+         2,
+         0
+        ]
+       },
+       "COPY30": {
+        "map": [
+         "copy_row",
+         3,
+         0
+        ]
+       },
+       "STORE1": {
+        "map": [
+         "store_row",
+         1,
+         "val"
+        ]
+       },
+       "COPY01": {
+        "map": [
+         "copy_row",
+         0,
+         1
+        ]
+       },
+       "COPY21": {
+        "map": [
+         "copy_row",
+         2,
+         1
+        ]
+       },
+       "COPY31": {
+        "map": [
+         "copy_row",
+         3,
+         1
+        ]
+       },
+       "STORE2": {
+        "map": [
+         "store_row",
+         2,
+         "val"
+        ]
+       },
+       "COPY02": {
+        "map": [
+         "copy_row",
+         0,
+         2
+        ]
+       },
+       "COPY12": {
+        "map": [
+         "copy_row",
+         1,
+         2
+        ]
+       },
+       "COPY32": {
+        "map": [
+         "copy_row",
+         3,
+         2
+        ]
+       },
+       "STORE3": {
+        "map": [
+         "store_row",
+         3,
+         "val"
+        ]
+       },
+       "COPY03": {
+        "map": [
+         "copy_row",
+         0,
+         3
+        ]
+       },
+       "COPY13": {
+        "map": [
+         "copy_row",
+         1,
+         3
+        ]
+       },
+       "COPY23": {
+        "map": [
+         "copy_row",
+         2,
+         3
+        ]
+       }
+      }
+     },
+     {
+      "id": "va",
+      "op": "SEL",
+      "of": "mem",
+      "select": "qa",
+      "axis": 0,
+      "delay": 2,
+      "xdelay": 1
+     },
+     {
+      "id": "vb",
+      "op": "SEL",
+      "of": "mem",
+      "select": "qb",
+      "axis": 0,
+      "delay": 2,
+      "xdelay": 1
+     },
+     {
+      "id": "both",
+      "op": "GATE",
+      "pos": [
+       [
+        "va",
+        1
+       ],
+       [
+        "vb",
+        1
+       ]
+      ]
+     },
+     {
+      "id": "same",
+      "op": "ANY",
+      "of": "both",
+      "where": {
+       "all": true
+      },
+      "delay": 1
+     }
+    ],
+    "outputs": {
+     "img": "mem",
+     "same": "same"
+    }
+   }
+  }
+ },
+ "UB2": {
+  "per_size": {
+   "(3, 3)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "STORE0": {
+        "map": [
+         "store_row",
+         0,
+         "val"
+        ]
+       },
+       "CLEAR0": {
+        "map": [
+         "clear_row",
+         0
+        ]
+       },
+       "STORE1": {
+        "map": [
+         "store_row",
+         1,
+         "val"
+        ]
+       },
+       "CLEAR1": {
+        "map": [
+         "clear_row",
+         1
+        ]
+       },
+       "STORE2": {
+        "map": [
+         "store_row",
+         2,
+         "val"
+        ]
+       },
+       "CLEAR2": {
+        "map": [
+         "clear_row",
+         2
+        ]
+       }
+      }
+     },
+     {
+      "id": "who",
+      "op": "SEL",
+      "of": "mem",
+      "select": "qval",
+      "axis": 1,
+      "delay": 2,
+      "xdelay": 1
+     }
+    ],
+    "outputs": {
+     "img": "mem",
+     "who": "who"
+    }
+   },
+   "(5, 4)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "STORE0": {
+        "map": [
+         "store_row",
+         0,
+         "val"
+        ]
+       },
+       "CLEAR0": {
+        "map": [
+         "clear_row",
+         0
+        ]
+       },
+       "STORE1": {
+        "map": [
+         "store_row",
+         1,
+         "val"
+        ]
+       },
+       "CLEAR1": {
+        "map": [
+         "clear_row",
+         1
+        ]
+       },
+       "STORE2": {
+        "map": [
+         "store_row",
+         2,
+         "val"
+        ]
+       },
+       "CLEAR2": {
+        "map": [
+         "clear_row",
+         2
+        ]
+       },
+       "STORE3": {
+        "map": [
+         "store_row",
+         3,
+         "val"
+        ]
+       },
+       "CLEAR3": {
+        "map": [
+         "clear_row",
+         3
+        ]
+       },
+       "STORE4": {
+        "map": [
+         "store_row",
+         4,
+         "val"
+        ]
+       },
+       "CLEAR4": {
+        "map": [
+         "clear_row",
+         4
+        ]
+       }
+      }
+     },
+     {
+      "id": "who",
+      "op": "SEL",
+      "of": "mem",
+      "select": "qval",
+      "axis": 1,
+      "delay": 2,
+      "xdelay": 1
+     }
+    ],
+    "outputs": {
+     "img": "mem",
+     "who": "who"
+    }
+   }
+  }
+ },
+ "UB3": {
+  "per_size": {
+   "(3, 3)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "STORE0": {
+        "map": [
+         "store_row",
+         0,
+         "val"
+        ]
+       },
+       "STORE1": {
+        "map": [
+         "store_row",
+         1,
+         "val"
+        ]
+       },
+       "SWAP01": {
+        "map": [
+         "swap_rows",
+         0,
+         1
+        ]
+       },
+       "STORE2": {
+        "map": [
+         "store_row",
+         2,
+         "val"
+        ]
+       },
+       "SWAP02": {
+        "map": [
+         "swap_rows",
+         0,
+         2
+        ]
+       },
+       "SWAP12": {
+        "map": [
+         "swap_rows",
+         1,
+         2
+        ]
+       }
+      }
+     },
+     {
+      "id": "valueof",
+      "op": "SEL",
+      "of": "mem",
+      "select": "qobj",
+      "axis": 0,
+      "delay": 2,
+      "xdelay": 1
+     },
+     {
+      "id": "who",
+      "op": "SEL",
+      "of": "mem",
+      "select": "qval",
+      "axis": 1,
+      "delay": 2,
+      "xdelay": 1
+     }
+    ],
+    "outputs": {
+     "img": "mem",
+     "valueof": "valueof",
+     "who": "who"
+    }
+   },
+   "(5, 4)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "STORE0": {
+        "map": [
+         "store_row",
+         0,
+         "val"
+        ]
+       },
+       "STORE1": {
+        "map": [
+         "store_row",
+         1,
+         "val"
+        ]
+       },
+       "SWAP01": {
+        "map": [
+         "swap_rows",
+         0,
+         1
+        ]
+       },
+       "STORE2": {
+        "map": [
+         "store_row",
+         2,
+         "val"
+        ]
+       },
+       "SWAP02": {
+        "map": [
+         "swap_rows",
+         0,
+         2
+        ]
+       },
+       "SWAP12": {
+        "map": [
+         "swap_rows",
+         1,
+         2
+        ]
+       },
+       "STORE3": {
+        "map": [
+         "store_row",
+         3,
+         "val"
+        ]
+       },
+       "SWAP03": {
+        "map": [
+         "swap_rows",
+         0,
+         3
+        ]
+       },
+       "SWAP13": {
+        "map": [
+         "swap_rows",
+         1,
+         3
+        ]
+       },
+       "SWAP23": {
+        "map": [
+         "swap_rows",
+         2,
+         3
+        ]
+       },
+       "STORE4": {
+        "map": [
+         "store_row",
+         4,
+         "val"
+        ]
+       },
+       "SWAP04": {
+        "map": [
+         "swap_rows",
+         0,
+         4
+        ]
+       },
+       "SWAP14": {
+        "map": [
+         "swap_rows",
+         1,
+         4
+        ]
+       },
+       "SWAP24": {
+        "map": [
+         "swap_rows",
+         2,
+         4
+        ]
+       },
+       "SWAP34": {
+        "map": [
+         "swap_rows",
+         3,
+         4
+        ]
+       }
+      }
+     },
+     {
+      "id": "valueof",
+      "op": "SEL",
+      "of": "mem",
+      "select": "qobj",
+      "axis": 0,
+      "delay": 2,
+      "xdelay": 1
+     },
+     {
+      "id": "who",
+      "op": "SEL",
+      "of": "mem",
+      "select": "qval",
+      "axis": 1,
+      "delay": 2,
+      "xdelay": 1
+     }
+    ],
+    "outputs": {
+     "img": "mem",
+     "valueof": "valueof",
+     "who": "who"
+    }
+   }
+  }
+ },
+ "UAB0": {
+  "per_size": {
+   "(2, 3)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "PLACE0": {
+        "map": [
+         "place",
+         0,
+         "see"
+        ]
+       },
+       "ROT2700": {
+        "map": [
+         "on_slice",
+         0,
+         [
+          "rot270"
+         ]
+        ]
+       },
+       "ROT900": {
+        "map": [
+         "on_slice",
+         0,
+         [
+          "rot90"
+         ]
+        ]
+       },
+       "PLACE1": {
+        "map": [
+         "place",
+         1,
+         "see"
+        ]
+       },
+       "ROT2701": {
+        "map": [
+         "on_slice",
+         1,
+         [
+          "rot270"
+         ]
+        ]
+       },
+       "ROT901": {
+        "map": [
+         "on_slice",
+         1,
+         [
+          "rot90"
+         ]
+        ]
+       }
+      }
+     }
+    ],
+    "outputs": {
+     "img": "mem"
+    }
+   },
+   "(3, 5)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "PLACE0": {
+        "map": [
+         "place",
+         0,
+         "see"
+        ]
+       },
+       "ROT2700": {
+        "map": [
+         "on_slice",
+         0,
+         [
+          "rot270"
+         ]
+        ]
+       },
+       "ROT900": {
+        "map": [
+         "on_slice",
+         0,
+         [
+          "rot90"
+         ]
+        ]
+       },
+       "PLACE1": {
+        "map": [
+         "place",
+         1,
+         "see"
+        ]
+       },
+       "ROT2701": {
+        "map": [
+         "on_slice",
+         1,
+         [
+          "rot270"
+         ]
+        ]
+       },
+       "ROT901": {
+        "map": [
+         "on_slice",
+         1,
+         [
+          "rot90"
+         ]
+        ]
+       },
+       "PLACE2": {
+        "map": [
+         "place",
+         2,
+         "see"
+        ]
+       },
+       "ROT2702": {
+        "map": [
+         "on_slice",
+         2,
+         [
+          "rot270"
+         ]
+        ]
+       },
+       "ROT902": {
+        "map": [
+         "on_slice",
+         2,
+         [
+          "rot90"
+         ]
+        ]
+       }
+      }
+     }
+    ],
+    "outputs": {
+     "img": "mem"
+    }
+   }
+  }
+ },
+ "UAB1": {
+  "per_size": {
+   "(2, 3)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "PLACE0": {
+        "map": [
+         "place",
+         0,
+         "see"
+        ]
+       },
+       "FLIPH0": {
+        "map": [
+         "on_slice",
+         0,
+         [
+          "fliph"
+         ]
+        ]
+       },
+       "PLACE1": {
+        "map": [
+         "place",
+         1,
+         "see"
+        ]
+       },
+       "FLIPH1": {
+        "map": [
+         "on_slice",
+         1,
+         [
+          "fliph"
+         ]
+        ]
+       }
+      }
+     },
+     {
+      "id": "top0",
+      "op": "ANY",
+      "of": "mem",
+      "where": {
+       "slice": [
+        0,
+        0
+       ],
+       "row": 0
+      },
+      "delay": 1
+     },
+     {
+      "id": "top1",
+      "op": "ANY",
+      "of": "mem",
+      "where": {
+       "slice": [
+        0,
+        1
+       ],
+       "row": 0
+      },
+      "delay": 1
+     }
+    ],
+    "outputs": {
+     "img": "mem",
+     "top0": "top0",
+     "top1": "top1"
+    }
+   },
+   "(3, 5)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "PLACE0": {
+        "map": [
+         "place",
+         0,
+         "see"
+        ]
+       },
+       "FLIPH0": {
+        "map": [
+         "on_slice",
+         0,
+         [
+          "fliph"
+         ]
+        ]
+       },
+       "PLACE1": {
+        "map": [
+         "place",
+         1,
+         "see"
+        ]
+       },
+       "FLIPH1": {
+        "map": [
+         "on_slice",
+         1,
+         [
+          "fliph"
+         ]
+        ]
+       },
+       "PLACE2": {
+        "map": [
+         "place",
+         2,
+         "see"
+        ]
+       },
+       "FLIPH2": {
+        "map": [
+         "on_slice",
+         2,
+         [
+          "fliph"
+         ]
+        ]
+       }
+      }
+     },
+     {
+      "id": "top0",
+      "op": "ANY",
+      "of": "mem",
+      "where": {
+       "slice": [
+        0,
+        0
+       ],
+       "row": 0
+      },
+      "delay": 1
+     },
+     {
+      "id": "top1",
+      "op": "ANY",
+      "of": "mem",
+      "where": {
+       "slice": [
+        0,
+        1
+       ],
+       "row": 0
+      },
+      "delay": 1
+     },
+     {
+      "id": "top2",
+      "op": "ANY",
+      "of": "mem",
+      "where": {
+       "slice": [
+        0,
+        2
+       ],
+       "row": 0
+      },
+      "delay": 1
+     }
+    ],
+    "outputs": {
+     "img": "mem",
+     "top0": "top0",
+     "top1": "top1",
+     "top2": "top2"
+    }
+   }
+  }
+ },
+ "UAB2": {
+  "per_size": {
+   "(2, 3)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "PLACE0": {
+        "map": [
+         "place",
+         0,
+         "see"
+        ]
+       },
+       "RIGHT0": {
+        "map": [
+         "on_slice",
+         0,
+         [
+          "shift",
+          1,
+          0,
+          "clip"
+         ]
+        ]
+       },
+       "PLACE1": {
+        "map": [
+         "place",
+         1,
+         "see"
+        ]
+       },
+       "RIGHT1": {
+        "map": [
+         "on_slice",
+         1,
+         [
+          "shift",
+          1,
+          0,
+          "clip"
+         ]
+        ]
+       }
+      }
+     },
+     {
+      "id": "top0",
+      "op": "ANY",
+      "of": "mem",
+      "where": {
+       "slice": [
+        0,
+        0
+       ],
+       "row": 0
+      },
+      "delay": 1
+     },
+     {
+      "id": "top1",
+      "op": "ANY",
+      "of": "mem",
+      "where": {
+       "slice": [
+        0,
+        1
+       ],
+       "row": 0
+      },
+      "delay": 1
+     }
+    ],
+    "outputs": {
+     "img": "mem",
+     "top0": "top0",
+     "top1": "top1"
+    }
+   },
+   "(3, 5)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "PLACE0": {
+        "map": [
+         "place",
+         0,
+         "see"
+        ]
+       },
+       "RIGHT0": {
+        "map": [
+         "on_slice",
+         0,
+         [
+          "shift",
+          1,
+          0,
+          "clip"
+         ]
+        ]
+       },
+       "PLACE1": {
+        "map": [
+         "place",
+         1,
+         "see"
+        ]
+       },
+       "RIGHT1": {
+        "map": [
+         "on_slice",
+         1,
+         [
+          "shift",
+          1,
+          0,
+          "clip"
+         ]
+        ]
+       },
+       "PLACE2": {
+        "map": [
+         "place",
+         2,
+         "see"
+        ]
+       },
+       "RIGHT2": {
+        "map": [
+         "on_slice",
+         2,
+         [
+          "shift",
+          1,
+          0,
+          "clip"
+         ]
+        ]
+       }
+      }
+     },
+     {
+      "id": "top0",
+      "op": "ANY",
+      "of": "mem",
+      "where": {
+       "slice": [
+        0,
+        0
+       ],
+       "row": 0
+      },
+      "delay": 1
+     },
+     {
+      "id": "top1",
+      "op": "ANY",
+      "of": "mem",
+      "where": {
+       "slice": [
+        0,
+        1
+       ],
+       "row": 0
+      },
+      "delay": 1
+     },
+     {
+      "id": "top2",
+      "op": "ANY",
+      "of": "mem",
+      "where": {
+       "slice": [
+        0,
+        2
+       ],
+       "row": 0
+      },
+      "delay": 1
+     }
+    ],
+    "outputs": {
+     "img": "mem",
+     "top0": "top0",
+     "top1": "top1",
+     "top2": "top2"
+    }
+   }
+  }
+ },
+ "UAB3": {
+  "per_size": {
+   "(2, 3)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "PLACE0": {
+        "map": [
+         "place",
+         0,
+         "see"
+        ]
+       },
+       "LEFT0": {
+        "map": [
+         "on_slice",
+         0,
+         [
+          "shift",
+          -1,
+          0,
+          "clip"
+         ]
+        ]
+       },
+       "PLACE1": {
+        "map": [
+         "place",
+         1,
+         "see"
+        ]
+       },
+       "LEFT1": {
+        "map": [
+         "on_slice",
+         1,
+         [
+          "shift",
+          -1,
+          0,
+          "clip"
+         ]
+        ]
+       }
+      }
+     }
+    ],
+    "outputs": {
+     "img": "mem"
+    }
+   },
+   "(3, 5)": {
+    "name": "llm",
+    "max_delay": 6,
+    "nodes": [
+     {
+      "id": "mem",
+      "op": "CMR",
+      "letters": {
+       "PLACE0": {
+        "map": [
+         "place",
+         0,
+         "see"
+        ]
+       },
+       "LEFT0": {
+        "map": [
+         "on_slice",
+         0,
+         [
+          "shift",
+          -1,
+          0,
+          "clip"
+         ]
+        ]
+       },
+       "PLACE1": {
+        "map": [
+         "place",
+         1,
+         "see"
+        ]
+       },
+       "LEFT1": {
+        "map": [
+         "on_slice",
+         1,
+         [
+          "shift",
+          -1,
+          0,
+          "clip"
+         ]
+        ]
+       },
+       "PLACE2": {
+        "map": [
+         "place",
+         2,
+         "see"
+        ]
+       },
+       "LEFT2": {
+        "map": [
+         "on_slice",
+         2,
+         [
+          "shift",
+          -1,
+          0,
+          "clip"
+         ]
+        ]
+       }
+      }
+     }
+    ],
+    "outputs": {
+     "img": "mem"
+    }
+   }
+  }
+ }
+}
