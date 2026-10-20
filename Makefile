@@ -4,7 +4,7 @@ VENV   := .venv
 BIN    := $(VENV)/bin
 NPC    := $(BIN)/npc
 
-.PHONY: all install test test-fast demo experiments unseen clean
+.PHONY: all install test test-fast demo experiments unseen mission02 clean
 
 all: install test demo
 
@@ -35,6 +35,11 @@ experiments:
 
 unseen:
 	$(BIN)/python experiments/D_unseen/run_unseen.py run
+
+mission02:
+	$(BIN)/python -m cog.proofs
+	$(BIN)/python mission-02/experiments/unseen/run_unseen.py run
+	$(BIN)/python mission-02/experiments/unseen/posthoc_third_size.py
 
 clean:
 	rm -rf out .pytest_cache .hypothesis

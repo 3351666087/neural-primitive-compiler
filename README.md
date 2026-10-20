@@ -100,6 +100,15 @@ make experiments
 4. **结论分级**：VERIFIED_BOUNDED(T) ≠ VERIFIED_UNBOUNDED；TIMEOUT、UNKNOWN、RESOURCE_LIMIT 都不算通过；CEGIS 的 UNREALIZABLE 只覆盖模板的参数范围，定理 3 的 UNREALIZABLE 覆盖任意规模。
 5. **LLM 只提议**：草图中的选择洞 `?{…}` 和整数洞 `?[lo,hi]` 由工具填充和验证；Skill 禁止 LLM 自行宣布通过。
 
+## Mission 02：认知原语（`mission-02` 分支）
+
+Mission 02 检验：一套紧凑、可参数化、组合语义可验证的原语，能否让智能体对**未见的**认知功能规格直接构造网络，而不逐任务训练权重。Mission 01 的结果作为基础设施保留，没有改动。
+
+- 首轮判定见 [mission-02/SCIENTIFIC_VERDICT.md](mission-02/SCIENTIFIC_VERDICT.md)：核心假说 **INCONCLUSIVE**；构造与推导 SUPPORTED_IN_TOY_DOMAIN；"发现了不只是重编码的认知原语" NOT_SUPPORTED。用任务书的话说：**目前只得到程序综合的神经实现**。
+- 冻结后的 16 个未见任务：A-LLM 16/16，A-auto 10/16（都是差分测试 [E]；无界检查在状态预算处 UNKNOWN）。
+- 否定结果见 [mission-02/negative-results.md](mission-02/negative-results.md)；代码在 `src/cog/`，Skill 在 `skills/cognitive-compiler/SKILL.md`。
+- 复现：`make mission02`（Z3 参数化证明、未见任务全流程、事后第三规模检查）。
+
 ## 文档
 
 - [prior-art.md](prior-art.md)：文献审计与新颖性对照（每条引用都标了核查状态）

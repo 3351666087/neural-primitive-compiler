@@ -1,0 +1,1579 @@
+{
+  "tree_sha256": "1c40ea5a815b416b28c44a0a1cb79c454ba4dc8064560b75c2f7cb67bfb91419",
+  "rows": [
+    {
+      "uid": "UA0",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "DOWN",
+              "ROT90"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "ROT180"
+            ]
+          ],
+          [
+            "CMD2",
+            [
+              "FLIPH",
+              "RIGHTWRAP"
+            ]
+          ]
+        ],
+        "queries": [],
+        "cond": [
+          "CMD3",
+          "top",
+          [
+            "LEFT"
+          ],
+          [
+            "DILATE"
+          ],
+          4
+        ]
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "FAIL",
+          "reason": "conditional command CMD3: data-dependent, outside the union schema (needs a gated composition)",
+          "oracle_traces": 1212,
+          "vocab_candidates": 8,
+          "construct_time_s": 0.18,
+          "per_size": [],
+          "success_all_sizes": false
+        },
+        "A_llm": {
+          "ir_tokens": [
+            59,
+            59,
+            59
+          ],
+          "per_size_programs": false,
+          "per_size": [
+            {
+              "size": "3",
+              "neurons": 69,
+              "synapses": 631,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null,
+              "reach_equiv": null,
+              "reach_states": 2000001
+            },
+            {
+              "size": "5",
+              "neurons": 193,
+              "synapses": 1945,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "8",
+              "neurons": 499,
+              "synapses": 5266,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 243
+        }
+      },
+      "fsm_onehot_neurons": [
+        "2.65e+05",
+        "1.13e+15",
+        "3.4e+38"
+      ]
+    },
+    {
+      "uid": "UA1",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "LEFT"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "LEFT"
+            ]
+          ],
+          [
+            "CMD2",
+            [
+              "DOWN"
+            ]
+          ]
+        ],
+        "queries": [],
+        "cond": null
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "BUILT",
+          "reason": "",
+          "oracle_traces": 1212,
+          "vocab_candidates": 8,
+          "construct_time_s": 0.22,
+          "per_size": [
+            {
+              "size": "3",
+              "neurons": 45,
+              "synapses": 211,
+              "ir_tokens": 27,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null,
+              "reach_equiv": null,
+              "reach_states": 2000001
+            },
+            {
+              "size": "5",
+              "neurons": 135,
+              "synapses": 689,
+              "ir_tokens": 27,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "8",
+              "neurons": 360,
+              "synapses": 1916,
+              "ir_tokens": 27,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "A_llm": {
+          "ir_tokens": [
+            27,
+            27,
+            27
+          ],
+          "per_size_programs": false,
+          "per_size": [
+            {
+              "size": "3",
+              "neurons": 45,
+              "synapses": 211,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null,
+              "reach_equiv": null,
+              "reach_states": 2000001
+            },
+            {
+              "size": "5",
+              "neurons": 135,
+              "synapses": 689,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "8",
+              "neurons": 360,
+              "synapses": 1916,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 243
+        }
+      },
+      "fsm_onehot_neurons": [
+        "2.64e+05",
+        "1.13e+15",
+        "3.4e+38"
+      ]
+    },
+    {
+      "uid": "UA2",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "ROT270",
+              "ROT270"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "TRANSPOSE"
+            ]
+          ],
+          [
+            "CMD2",
+            [
+              "DILATE",
+              "LEFT"
+            ]
+          ],
+          [
+            "CMD3",
+            [
+              "ROT270",
+              "TRANSPOSE"
+            ]
+          ]
+        ],
+        "queries": [
+          "cell",
+          "all"
+        ],
+        "cond": [
+          "CMD4",
+          "bottom",
+          [
+            "LEFT"
+          ],
+          [
+            "RIGHTWRAP"
+          ],
+          4
+        ]
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "FAIL",
+          "reason": "conditional command CMD4: data-dependent, outside the union schema (needs a gated composition)",
+          "oracle_traces": 2728,
+          "vocab_candidates": 10,
+          "construct_time_s": 0.37,
+          "per_size": [],
+          "success_all_sizes": false
+        },
+        "A_llm": {
+          "ir_tokens": [
+            78,
+            78,
+            78
+          ],
+          "per_size_programs": false,
+          "per_size": [
+            {
+              "size": "3",
+              "neurons": 89,
+              "synapses": 774,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "5",
+              "neurons": 245,
+              "synapses": 2424,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "8",
+              "neurons": 629,
+              "synapses": 6624,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 243
+        }
+      },
+      "fsm_onehot_neurons": [
+        "2.65e+05",
+        "1.13e+15",
+        "3.4e+38"
+      ]
+    },
+    {
+      "uid": "UA3",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "ROT90",
+              "TRANSPOSE"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "UP",
+              "FLIPH"
+            ]
+          ],
+          [
+            "CMD2",
+            [
+              "DOWN"
+            ]
+          ]
+        ],
+        "queries": [
+          "all"
+        ],
+        "cond": [
+          "CMD3",
+          "top",
+          [
+            "ROT90"
+          ],
+          [
+            "FLIPH"
+          ],
+          4
+        ]
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "FAIL",
+          "reason": "conditional command CMD3: data-dependent, outside the union schema (needs a gated composition)",
+          "oracle_traces": 1246,
+          "vocab_candidates": 8,
+          "construct_time_s": 0.18,
+          "per_size": [],
+          "success_all_sizes": false
+        },
+        "A_llm": {
+          "ir_tokens": [
+            62,
+            62,
+            62
+          ],
+          "per_size_programs": false,
+          "per_size": [
+            {
+              "size": "3",
+              "neurons": 70,
+              "synapses": 490,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null,
+              "reach_equiv": null,
+              "reach_states": 2000001
+            },
+            {
+              "size": "5",
+              "neurons": 194,
+              "synapses": 1444,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "8",
+              "neurons": 500,
+              "synapses": 3820,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 243
+        }
+      },
+      "fsm_onehot_neurons": [
+        "2.65e+05",
+        "1.13e+15",
+        "3.4e+38"
+      ]
+    },
+    {
+      "uid": "UA4",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "ROT270",
+              "TRANSPOSE"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "ROT180"
+            ]
+          ],
+          [
+            "CMD2",
+            [
+              "UP",
+              "RIGHT"
+            ]
+          ],
+          [
+            "CMD3",
+            [
+              "RIGHT"
+            ]
+          ]
+        ],
+        "queries": [
+          "cell",
+          "bottom"
+        ],
+        "cond": [
+          "CMD4",
+          "left",
+          [
+            "FLIPV"
+          ],
+          [
+            "UP"
+          ],
+          4
+        ]
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "FAIL",
+          "reason": "conditional command CMD4: data-dependent, outside the union schema (needs a gated composition)",
+          "oracle_traces": 2728,
+          "vocab_candidates": 10,
+          "construct_time_s": 0.37,
+          "per_size": [],
+          "success_all_sizes": false
+        },
+        "A_llm": {
+          "ir_tokens": [
+            79,
+            79,
+            79
+          ],
+          "per_size_programs": false,
+          "per_size": [
+            {
+              "size": "3",
+              "neurons": 84,
+              "synapses": 569,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "5",
+              "neurons": 236,
+              "synapses": 1749,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "8",
+              "neurons": 614,
+              "synapses": 4749,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 243
+        }
+      },
+      "fsm_onehot_neurons": [
+        "2.65e+05",
+        "1.13e+15",
+        "3.4e+38"
+      ]
+    },
+    {
+      "uid": "UA5",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "TRANSPOSE",
+              "FLIPH"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "DILATE",
+              "DOWN"
+            ]
+          ],
+          [
+            "CMD2",
+            [
+              "FLIPV"
+            ]
+          ],
+          [
+            "CMD3",
+            [
+              "TRANSPOSE"
+            ]
+          ]
+        ],
+        "queries": [],
+        "cond": null
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "BUILT",
+          "reason": "",
+          "oracle_traces": 1248,
+          "vocab_candidates": 10,
+          "construct_time_s": 0.21,
+          "per_size": [
+            {
+              "size": "3",
+              "neurons": 60,
+              "synapses": 479,
+              "ir_tokens": 26,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null,
+              "reach_equiv": null,
+              "reach_states": 2000001
+            },
+            {
+              "size": "5",
+              "neurons": 170,
+              "synapses": 1499,
+              "ir_tokens": 26,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "8",
+              "neurons": 440,
+              "synapses": 4094,
+              "ir_tokens": 26,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "A_llm": {
+          "ir_tokens": [
+            28,
+            28,
+            28
+          ],
+          "per_size_programs": false,
+          "per_size": [
+            {
+              "size": "3",
+              "neurons": 60,
+              "synapses": 479,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null,
+              "reach_equiv": null,
+              "reach_states": 2000001
+            },
+            {
+              "size": "5",
+              "neurons": 170,
+              "synapses": 1499,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "8",
+              "neurons": 440,
+              "synapses": 4094,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 243
+        }
+      },
+      "fsm_onehot_neurons": [
+        "2.65e+05",
+        "1.13e+15",
+        "3.4e+38"
+      ]
+    },
+    {
+      "uid": "UA6",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "TRANSPOSE"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "UP"
+            ]
+          ]
+        ],
+        "queries": [
+          "bottom"
+        ],
+        "cond": null
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "BUILT",
+          "reason": "",
+          "oracle_traces": 1210,
+          "vocab_candidates": 8,
+          "construct_time_s": 0.21,
+          "per_size": [
+            {
+              "size": "3",
+              "neurons": 43,
+              "synapses": 183,
+              "ir_tokens": 24,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null,
+              "reach_equiv": null,
+              "reach_states": 2000001
+            },
+            {
+              "size": "5",
+              "neurons": 121,
+              "synapses": 535,
+              "ir_tokens": 24,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "8",
+              "neurons": 313,
+              "synapses": 1408,
+              "ir_tokens": 24,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "A_llm": {
+          "ir_tokens": [
+            24,
+            24,
+            24
+          ],
+          "per_size_programs": false,
+          "per_size": [
+            {
+              "size": "3",
+              "neurons": 43,
+              "synapses": 183,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null,
+              "reach_equiv": null,
+              "reach_states": 2000001
+            },
+            {
+              "size": "5",
+              "neurons": 121,
+              "synapses": 535,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "8",
+              "neurons": 313,
+              "synapses": 1408,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 243
+        }
+      },
+      "fsm_onehot_neurons": [
+        "2.64e+05",
+        "1.13e+15",
+        "3.4e+38"
+      ]
+    },
+    {
+      "uid": "UA7",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "LEFT",
+              "FLIPH"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "ROT270"
+            ]
+          ]
+        ],
+        "queries": [
+          "left"
+        ],
+        "cond": null
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "BUILT",
+          "reason": "",
+          "oracle_traces": 1210,
+          "vocab_candidates": 9,
+          "construct_time_s": 0.22,
+          "per_size": [
+            {
+              "size": "3",
+              "neurons": 43,
+              "synapses": 186,
+              "ir_tokens": 26,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null,
+              "reach_equiv": null,
+              "reach_states": 2000001
+            },
+            {
+              "size": "5",
+              "neurons": 121,
+              "synapses": 540,
+              "ir_tokens": 26,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "8",
+              "neurons": 313,
+              "synapses": 1416,
+              "ir_tokens": 26,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "A_llm": {
+          "ir_tokens": [
+            26,
+            26,
+            26
+          ],
+          "per_size_programs": false,
+          "per_size": [
+            {
+              "size": "3",
+              "neurons": 43,
+              "synapses": 186,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null,
+              "reach_equiv": null,
+              "reach_states": 2000001
+            },
+            {
+              "size": "5",
+              "neurons": 121,
+              "synapses": 540,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "8",
+              "neurons": 313,
+              "synapses": 1416,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 243
+        }
+      },
+      "fsm_onehot_neurons": [
+        "2.64e+05",
+        "1.13e+15",
+        "3.4e+38"
+      ]
+    },
+    {
+      "uid": "UB0",
+      "family": "B",
+      "params": {
+        "ops": [
+          "STORE",
+          "SWAP"
+        ],
+        "queries": [
+          "same"
+        ]
+      },
+      "sizes": [
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "FAIL",
+          "reason": "output same: not a disjunction of coordinates or selector-gated coordinates",
+          "oracle_traces": 1305,
+          "vocab_candidates": 13,
+          "construct_time_s": 0.12,
+          "per_size": [],
+          "success_all_sizes": false
+        },
+        "A_llm": {
+          "ir_tokens": [
+            48,
+            83
+          ],
+          "per_size_programs": true,
+          "per_size": [
+            {
+              "size": "(2, 2)",
+              "neurons": 35,
+              "synapses": 122,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "(4, 3)",
+              "neurons": 178,
+              "synapses": 1785,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 11
+        }
+      },
+      "fsm_onehot_neurons": [
+        "54",
+        "4.86e+03"
+      ]
+    },
+    {
+      "uid": "UB1",
+      "family": "B",
+      "params": {
+        "ops": [
+          "STORE",
+          "COPY"
+        ],
+        "queries": [
+          "same"
+        ]
+      },
+      "sizes": [
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "FAIL",
+          "reason": "output same: not a disjunction of coordinates or selector-gated coordinates",
+          "oracle_traces": 1518,
+          "vocab_candidates": 20,
+          "construct_time_s": 0.15,
+          "per_size": [],
+          "success_all_sizes": false
+        },
+        "A_llm": {
+          "ir_tokens": [
+            53,
+            113
+          ],
+          "per_size_programs": true,
+          "per_size": [
+            {
+              "size": "(2, 3)",
+              "neurons": 58,
+              "synapses": 249,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "(4, 4)",
+              "neurons": 333,
+              "synapses": 5260,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 11
+        }
+      },
+      "fsm_onehot_neurons": [
+        "144",
+        "1.81e+04"
+      ]
+    },
+    {
+      "uid": "UB2",
+      "family": "B",
+      "params": {
+        "ops": [
+          "STORE",
+          "CLEAR"
+        ],
+        "queries": [
+          "who"
+        ]
+      },
+      "sizes": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "BUILT",
+          "reason": "",
+          "oracle_traces": 1464,
+          "vocab_candidates": 18,
+          "construct_time_s": 0.23,
+          "per_size": [
+            {
+              "size": "(3, 3)",
+              "neurons": 75,
+              "synapses": 459,
+              "ir_tokens": 40,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "(5, 4)",
+              "neurons": 245,
+              "synapses": 2460,
+              "ir_tokens": 58,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "A_llm": {
+          "ir_tokens": [
+            40,
+            58
+          ],
+          "per_size_programs": true,
+          "per_size": [
+            {
+              "size": "(3, 3)",
+              "neurons": 75,
+              "synapses": 459,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "(5, 4)",
+              "neurons": 245,
+              "synapses": 2460,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 23
+        }
+      },
+      "fsm_onehot_neurons": [
+        "832",
+        "8.12e+04"
+      ]
+    },
+    {
+      "uid": "UB3",
+      "family": "B",
+      "params": {
+        "ops": [
+          "STORE",
+          "SWAP"
+        ],
+        "queries": [
+          "value",
+          "who"
+        ]
+      },
+      "sizes": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "BUILT",
+          "reason": "",
+          "oracle_traces": 1959,
+          "vocab_candidates": 26,
+          "construct_time_s": 0.36,
+          "per_size": [
+            {
+              "size": "(3, 3)",
+              "neurons": 96,
+              "synapses": 612,
+              "ir_tokens": 51,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "(5, 4)",
+              "neurons": 389,
+              "synapses": 5860,
+              "ir_tokens": 96,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "A_llm": {
+          "ir_tokens": [
+            51,
+            96
+          ],
+          "per_size_programs": true,
+          "per_size": [
+            {
+              "size": "(3, 3)",
+              "neurons": 96,
+              "synapses": 612,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "(5, 4)",
+              "neurons": 389,
+              "synapses": 5860,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 23
+        }
+      },
+      "fsm_onehot_neurons": [
+        "832",
+        "9.69e+04"
+      ]
+    },
+    {
+      "uid": "UAB0",
+      "family": "AB",
+      "params": {
+        "cmds": [
+          "ROT270",
+          "ROT90"
+        ],
+        "queries": []
+      },
+      "sizes": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "BUILT",
+          "reason": "",
+          "oracle_traces": 1984,
+          "vocab_candidates": 15,
+          "construct_time_s": 0.52,
+          "per_size": [
+            {
+              "size": "(2, 3)",
+              "neurons": 144,
+              "synapses": 1116,
+              "ir_tokens": 35,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "(3, 5)",
+              "neurons": 825,
+              "synapses": 8925,
+              "ir_tokens": 50,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "A_llm": {
+          "ir_tokens": [
+            35,
+            50
+          ],
+          "per_size_programs": true,
+          "per_size": [
+            {
+              "size": "(2, 3)",
+              "neurons": 144,
+              "synapses": 1116,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "(3, 5)",
+              "neurons": 825,
+              "synapses": 8925,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 36
+        }
+      },
+      "fsm_onehot_neurons": [
+        "2.7e+08",
+        "3.8e+30"
+      ]
+    },
+    {
+      "uid": "UAB1",
+      "family": "AB",
+      "params": {
+        "cmds": [
+          "FLIPH"
+        ],
+        "queries": [
+          "toptouch"
+        ]
+      },
+      "sizes": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "BUILT",
+          "reason": "",
+          "oracle_traces": 1979,
+          "vocab_candidates": 17,
+          "construct_time_s": 0.61,
+          "per_size": [
+            {
+              "size": "(2, 3)",
+              "neurons": 110,
+              "synapses": 618,
+              "ir_tokens": 45,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "(3, 5)",
+              "neurons": 603,
+              "synapses": 4665,
+              "ir_tokens": 65,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "A_llm": {
+          "ir_tokens": [
+            43,
+            62
+          ],
+          "per_size_programs": true,
+          "per_size": [
+            {
+              "size": "(2, 3)",
+              "neurons": 110,
+              "synapses": 618,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "(3, 5)",
+              "neurons": 603,
+              "synapses": 4665,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 36
+        }
+      },
+      "fsm_onehot_neurons": [
+        "2.69e+08",
+        "3.8e+30"
+      ]
+    },
+    {
+      "uid": "UAB2",
+      "family": "AB",
+      "params": {
+        "cmds": [
+          "RIGHT"
+        ],
+        "queries": [
+          "toptouch"
+        ]
+      },
+      "sizes": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "BUILT",
+          "reason": "",
+          "oracle_traces": 1979,
+          "vocab_candidates": 17,
+          "construct_time_s": 0.58,
+          "per_size": [
+            {
+              "size": "(2, 3)",
+              "neurons": 104,
+              "synapses": 552,
+              "ir_tokens": 51,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "(3, 5)",
+              "neurons": 588,
+              "synapses": 4440,
+              "ir_tokens": 74,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "A_llm": {
+          "ir_tokens": [
+            49,
+            71
+          ],
+          "per_size_programs": true,
+          "per_size": [
+            {
+              "size": "(2, 3)",
+              "neurons": 104,
+              "synapses": 552,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "(3, 5)",
+              "neurons": 588,
+              "synapses": 4440,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 36
+        }
+      },
+      "fsm_onehot_neurons": [
+        "2.69e+08",
+        "3.8e+30"
+      ]
+    },
+    {
+      "uid": "UAB3",
+      "family": "AB",
+      "params": {
+        "cmds": [
+          "LEFT"
+        ],
+        "queries": []
+      },
+      "sizes": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "routes": {
+        "A_auto": {
+          "status": "BUILT",
+          "reason": "",
+          "oracle_traces": 1718,
+          "vocab_candidates": 10,
+          "construct_time_s": 0.52,
+          "per_size": [
+            {
+              "size": "(2, 3)",
+              "neurons": 102,
+              "synapses": 546,
+              "ir_tokens": 31,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "(3, 5)",
+              "neurons": 585,
+              "synapses": 4425,
+              "ir_tokens": 44,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "A_llm": {
+          "ir_tokens": [
+            31,
+            44
+          ],
+          "per_size_programs": true,
+          "per_size": [
+            {
+              "size": "(2, 3)",
+              "neurons": 102,
+              "synapses": 546,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            },
+            {
+              "size": "(3, 5)",
+              "neurons": 585,
+              "synapses": 4425,
+              "differential": true,
+              "failing": 0,
+              "counterexample": null
+            }
+          ],
+          "success_all_sizes": true
+        },
+        "random_structure": {
+          "samples": 100,
+          "correct_on_state_image": 0,
+          "vocab_size": 36
+        }
+      },
+      "fsm_onehot_neurons": [
+        "2.69e+08",
+        "3.8e+30"
+      ]
+    }
+  ]
+}

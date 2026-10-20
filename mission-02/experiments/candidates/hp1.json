@@ -1,0 +1,14 @@
+{
+  "spec_check": "VERIFIED_BOUNDED",
+  "hp2_neurons": 16,
+  "search": [
+    {
+      "n": 4,
+      "status": "TIMEOUT",
+      "iterations": 30,
+      "time_s": 600.0,
+      "holes": 76
+    }
+  ],
+  "total_time_s": 600.0
+}

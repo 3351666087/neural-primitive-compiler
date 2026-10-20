@@ -1,0 +1,85 @@
+=== UA0 A {'commands': [('CMD0', ['DOWN', 'ROT90']), ('CMD1', ['ROT180']), ('CMD2', ['FLIPH', 'RIGHTWRAP'])], 'queries': [], 'cond': ('CMD3', 'top', ['LEFT'], ['DILATE'], 4)}
+  A_auto: FAIL conditional command CMD3: data-dependent, outside the union schema (needs a gated composition) []
+  A_llm: [('3', True, None, None), ('5', True, None, None), ('8', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 243}
+=== UA1 A {'commands': [('CMD0', ['LEFT']), ('CMD1', ['LEFT']), ('CMD2', ['DOWN'])], 'queries': [], 'cond': None}
+  A_auto: BUILT  [('3', True), ('5', True), ('8', True)]
+  A_llm: [('3', True, None, None), ('5', True, None, None), ('8', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 243}
+=== UA2 A {'commands': [('CMD0', ['ROT270', 'ROT270']), ('CMD1', ['TRANSPOSE']), ('CMD2', ['DILATE', 'LEFT']), ('CMD3', ['ROT270', 'TRANSPOSE'])], 'queries': ['cell', 'all'], 'cond': ('CMD4', 'bottom', ['LEFT'], ['RIGHTWRAP'], 4)}
+  A_auto: FAIL conditional command CMD4: data-dependent, outside the union schema (needs a gated composition) []
+  A_llm: [('3', True, None, None), ('5', True, None, None), ('8', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 243}
+=== UA3 A {'commands': [('CMD0', ['ROT90', 'TRANSPOSE']), ('CMD1', ['UP', 'FLIPH']), ('CMD2', ['DOWN'])], 'queries': ['all'], 'cond': ('CMD3', 'top', ['ROT90'], ['FLIPH'], 4)}
+  A_auto: FAIL conditional command CMD3: data-dependent, outside the union schema (needs a gated composition) []
+  A_llm: [('3', True, None, None), ('5', True, None, None), ('8', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 243}
+=== UA4 A {'commands': [('CMD0', ['ROT270', 'TRANSPOSE']), ('CMD1', ['ROT180']), ('CMD2', ['UP', 'RIGHT']), ('CMD3', ['RIGHT'])], 'queries': ['cell', 'bottom'], 'cond': ('CMD4', 'left', ['FLIPV'], ['UP'], 4)}
+  A_auto: FAIL conditional command CMD4: data-dependent, outside the union schema (needs a gated composition) []
+  A_llm: [('3', True, None, None), ('5', True, None, None), ('8', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 243}
+=== UA5 A {'commands': [('CMD0', ['TRANSPOSE', 'FLIPH']), ('CMD1', ['DILATE', 'DOWN']), ('CMD2', ['FLIPV']), ('CMD3', ['TRANSPOSE'])], 'queries': [], 'cond': None}
+  A_auto: BUILT  [('3', True), ('5', True), ('8', True)]
+  A_llm: [('3', True, None, None), ('5', True, None, None), ('8', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 243}
+=== UA6 A {'commands': [('CMD0', ['TRANSPOSE']), ('CMD1', ['UP'])], 'queries': ['bottom'], 'cond': None}
+  A_auto: BUILT  [('3', True), ('5', True), ('8', True)]
+  A_llm: [('3', True, None, None), ('5', True, None, None), ('8', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 243}
+=== UA7 A {'commands': [('CMD0', ['LEFT', 'FLIPH']), ('CMD1', ['ROT270'])], 'queries': ['left'], 'cond': None}
+  A_auto: BUILT  [('3', True), ('5', True), ('8', True)]
+  A_llm: [('3', True, None, None), ('5', True, None, None), ('8', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 243}
+=== UB0 B {'ops': ['STORE', 'SWAP'], 'queries': ['same']}
+  A_auto: FAIL output same: not a disjunction of coordinates or selector-gated coordinates []
+  A_llm: [('(2, 2)', True, None, None), ('(4, 3)', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 11}
+=== UB1 B {'ops': ['STORE', 'COPY'], 'queries': ['same']}
+  A_auto: FAIL output same: not a disjunction of coordinates or selector-gated coordinates []
+  A_llm: [('(2, 3)', True, None, None), ('(4, 4)', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 11}
+=== UB2 B {'ops': ['STORE', 'CLEAR'], 'queries': ['who']}
+  A_auto: BUILT  [('(3, 3)', True), ('(5, 4)', True)]
+  A_llm: [('(3, 3)', True, None, None), ('(5, 4)', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 23}
+=== UB3 B {'ops': ['STORE', 'SWAP'], 'queries': ['value', 'who']}
+  A_auto: BUILT  [('(3, 3)', True), ('(5, 4)', True)]
+  A_llm: [('(3, 3)', True, None, None), ('(5, 4)', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 23}
+=== UAB0 AB {'cmds': ['ROT270', 'ROT90'], 'queries': []}
+  A_auto: BUILT  [('(2, 3)', True), ('(3, 5)', True)]
+  A_llm: [('(2, 3)', True, None, None), ('(3, 5)', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 36}
+=== UAB1 AB {'cmds': ['FLIPH'], 'queries': ['toptouch']}
+  A_auto: BUILT  [('(2, 3)', True), ('(3, 5)', True)]
+  A_llm: [('(2, 3)', True, None, None), ('(3, 5)', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 36}
+=== UAB2 AB {'cmds': ['RIGHT'], 'queries': ['toptouch']}
+  A_auto: BUILT  [('(2, 3)', True), ('(3, 5)', True)]
+  A_llm: [('(2, 3)', True, None, None), ('(3, 5)', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 36}
+=== UAB3 AB {'cmds': ['LEFT'], 'queries': []}
+  A_auto: BUILT  [('(2, 3)', True), ('(3, 5)', True)]
+  A_llm: [('(2, 3)', True, None, None), ('(3, 5)', True, None, None)]
+  random: {'samples': 100, 'correct_on_state_image': 0, 'vocab_size': 36}
+# Unseen tasks (strict route A)
+
+| task | family | params | A-auto | A-LLM | random structure (img only) | one-hot FSM neurons (by size) |
+|---|---|---|---|---|---|---|
+| UA0 | A | `{"commands": [["CMD0", ["DOWN", "ROT90"]], ["CMD1", ["ROT180"]], ["CMD2", ["FLIPH", "RIGHTWRAP"]]], "queries": [], "cond` | FAIL conditional command CMD3: data-dependent, outside the union schema (needs a gate | OK 3:ok, 5:ok, 8:ok | 0/100 | 2.65e+05, 1.13e+15, 3.4e+38 |
+| UA1 | A | `{"commands": [["CMD0", ["LEFT"]], ["CMD1", ["LEFT"]], ["CMD2", ["DOWN"]]], "queries": [], "cond": null}` | OK 3:45n, 5:135n, 8:360n | OK 3:ok, 5:ok, 8:ok | 0/100 | 2.64e+05, 1.13e+15, 3.4e+38 |
+| UA2 | A | `{"commands": [["CMD0", ["ROT270", "ROT270"]], ["CMD1", ["TRANSPOSE"]], ["CMD2", ["DILATE", "LEFT"]], ["CMD3", ["ROT270",` | FAIL conditional command CMD4: data-dependent, outside the union schema (needs a gate | OK 3:ok, 5:ok, 8:ok | 0/100 | 2.65e+05, 1.13e+15, 3.4e+38 |
+| UA3 | A | `{"commands": [["CMD0", ["ROT90", "TRANSPOSE"]], ["CMD1", ["UP", "FLIPH"]], ["CMD2", ["DOWN"]]], "queries": ["all"], "con` | FAIL conditional command CMD3: data-dependent, outside the union schema (needs a gate | OK 3:ok, 5:ok, 8:ok | 0/100 | 2.65e+05, 1.13e+15, 3.4e+38 |
+| UA4 | A | `{"commands": [["CMD0", ["ROT270", "TRANSPOSE"]], ["CMD1", ["ROT180"]], ["CMD2", ["UP", "RIGHT"]], ["CMD3", ["RIGHT"]]], ` | FAIL conditional command CMD4: data-dependent, outside the union schema (needs a gate | OK 3:ok, 5:ok, 8:ok | 0/100 | 2.65e+05, 1.13e+15, 3.4e+38 |
+| UA5 | A | `{"commands": [["CMD0", ["TRANSPOSE", "FLIPH"]], ["CMD1", ["DILATE", "DOWN"]], ["CMD2", ["FLIPV"]], ["CMD3", ["TRANSPOSE"` | OK 3:60n, 5:170n, 8:440n | OK 3:ok, 5:ok, 8:ok | 0/100 | 2.65e+05, 1.13e+15, 3.4e+38 |
+| UA6 | A | `{"commands": [["CMD0", ["TRANSPOSE"]], ["CMD1", ["UP"]]], "queries": ["bottom"], "cond": null}` | OK 3:43n, 5:121n, 8:313n | OK 3:ok, 5:ok, 8:ok | 0/100 | 2.64e+05, 1.13e+15, 3.4e+38 |
+| UA7 | A | `{"commands": [["CMD0", ["LEFT", "FLIPH"]], ["CMD1", ["ROT270"]]], "queries": ["left"], "cond": null}` | OK 3:43n, 5:121n, 8:313n | OK 3:ok, 5:ok, 8:ok | 0/100 | 2.64e+05, 1.13e+15, 3.4e+38 |
+| UB0 | B | `{"ops": ["STORE", "SWAP"], "queries": ["same"]}` | FAIL output same: not a disjunction of coordinates or selector-gated coordinates | OK (2, 2):ok, (4, 3):ok | 0/100 | 54, 4.86e+03 |
+| UB1 | B | `{"ops": ["STORE", "COPY"], "queries": ["same"]}` | FAIL output same: not a disjunction of coordinates or selector-gated coordinates | OK (2, 3):ok, (4, 4):ok | 0/100 | 144, 1.81e+04 |
+| UB2 | B | `{"ops": ["STORE", "CLEAR"], "queries": ["who"]}` | OK (3, 3):75n, (5, 4):245n | OK (3, 3):ok, (5, 4):ok | 0/100 | 832, 8.12e+04 |
+| UB3 | B | `{"ops": ["STORE", "SWAP"], "queries": ["value", "who"]}` | OK (3, 3):96n, (5, 4):389n | OK (3, 3):ok, (5, 4):ok | 0/100 | 832, 9.69e+04 |
+| UAB0 | AB | `{"cmds": ["ROT270", "ROT90"], "queries": []}` | OK (2, 3):144n, (3, 5):825n | OK (2, 3):ok, (3, 5):ok | 0/100 | 2.7e+08, 3.8e+30 |
+| UAB1 | AB | `{"cmds": ["FLIPH"], "queries": ["toptouch"]}` | OK (2, 3):110n, (3, 5):603n | OK (2, 3):ok, (3, 5):ok | 0/100 | 2.69e+08, 3.8e+30 |
+| UAB2 | AB | `{"cmds": ["RIGHT"], "queries": ["toptouch"]}` | OK (2, 3):104n, (3, 5):588n | OK (2, 3):ok, (3, 5):ok | 0/100 | 2.69e+08, 3.8e+30 |
+| UAB3 | AB | `{"cmds": ["LEFT"], "queries": []}` | OK (2, 3):102n, (3, 5):585n | OK (2, 3):ok, (3, 5):ok | 0/100 | 2.69e+08, 3.8e+30 |
+done: 0
