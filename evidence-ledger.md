@@ -122,7 +122,7 @@ N 级串联，单体显式状态 vs 合同层显式状态，均为无界验证�
 
 ## 8. D 组：冻结后生成的未见任务（`experiments/D_unseen/`）
 
-时间顺序，可在 git 中核对：`522f7b8` 冻结编译器（tree `8a163fab…`）→ `c02f5f8` 生成 20 个随机任务、写入 1 个手写任务、写入 LLM 草图（写草图时只用过 `npc realize`）→ 运行全部方法。所有产出的网络都经过新调用的无界可达性验证。经典构造、CEGIS 与组合方法的预算为每任务 120 s（组合 60 s）。
+时间顺序，可在 git 中核对：`8b6ad35` 冻结编译器（tree `8a163fab…`）→ `4d390e8` 生成 20 个随机任务、写入 1 个手写任务、写入 LLM 草图（写草图时只用过 `npc realize`）→ 运行全部方法。所有产出的网络都经过新调用的无界可达性验证。经典构造、CEGIS 与组合方法的预算为每任务 120 s（组合 60 s）。
 
 | 任务 | 最小 FSM 状态 | 经典构造 | CEGIS (n ≤ 3) | 原语组合 | LLM 草图（第 1 轮） |
 |---|---|---|---|---|---|
@@ -209,7 +209,7 @@ N 级串联，单体显式状态 vs 合同层显式状态，均为无界验证�
 
 ## 11. H4 复测：符号无界验证（**冻结后的代码树**；原始数据 `experiments/results/scaling_symbolic.json`）
 
-> **来源声明（冻结后）**：本节所有结果都来自 D 组冻结（提交 `522f7b8`，tree `8a163fab…`）**之后**修改过的 `src/npc`。改动只有两处：`verify.py` 新增符号引擎（`SymNetSystem`、`SymMonitor`、`SymProduct`、`kinduction`、`pdr`），并把 `verify_all` / `check_consistency` 扩展到这两个引擎；`compose.py` 新增 `SymAbstractSystem` 和 `compositional_symbolic`。运行时的树哈希为 `29e40b3b1a95d056393c39f7e9c814fc53ae83b2a2ddc7ebec8ee0c6db963f14`（见 JSON 的 `meta.src_tree_sha256`），**不等于**冻结清单 `experiments/D_unseen/freeze-manifest.json`。**D 组没有重跑**，§8 的结论仍然只对应冻结树；`run_unseen.py run` 现在会因哈希不符而拒绝运行，这是预期行为。§1–§10 的其他数字也没有重跑，只有本节的显式状态基线在新树上重跑了一次，用来和符号引擎在同一台机器、同一棵树上对照。
+> **来源声明（冻结后）**：本节所有结果都来自 D 组冻结（提交 `8b6ad35`，tree `8a163fab…`）**之后**修改过的 `src/npc`。改动只有两处：`verify.py` 新增符号引擎（`SymNetSystem`、`SymMonitor`、`SymProduct`、`kinduction`、`pdr`），并把 `verify_all` / `check_consistency` 扩展到这两个引擎；`compose.py` 新增 `SymAbstractSystem` 和 `compositional_symbolic`。运行时的树哈希为 `29e40b3b1a95d056393c39f7e9c814fc53ae83b2a2ddc7ebec8ee0c6db963f14`（见 JSON 的 `meta.src_tree_sha256`），**不等于**冻结清单 `experiments/D_unseen/freeze-manifest.json`。**D 组没有重跑**，§8 的结论仍然只对应冻结树；`run_unseen.py run` 现在会因哈希不符而拒绝运行，这是预期行为。§1–§10 的其他数字也没有重跑，只有本节的显式状态基线在新树上重跑了一次，用来和符号引擎在同一台机器、同一棵树上对照。
 
 **引擎**（`src/npc/verify.py`）
 
