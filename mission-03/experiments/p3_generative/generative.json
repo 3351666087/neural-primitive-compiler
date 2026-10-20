@@ -1,0 +1,537 @@
+{
+ "rows": [
+  {
+   "N": 5,
+   "family": "shape",
+   "instances": 100,
+   "ground_truth": {
+    "feasible": 100,
+    "infeasible": 0,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 100,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 100,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 7.2
+  },
+  {
+   "N": 5,
+   "family": "symshape",
+   "instances": 100,
+   "ground_truth": {
+    "feasible": 100,
+    "infeasible": 0,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 100,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 99,
+    "dead end": 1,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 3.3
+  },
+  {
+   "N": 5,
+   "family": "loop",
+   "instances": 100,
+   "ground_truth": {
+    "feasible": 100,
+    "infeasible": 0,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 100,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 100,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 4.9
+  },
+  {
+   "N": 5,
+   "family": "path",
+   "instances": 100,
+   "ground_truth": {
+    "feasible": 89,
+    "infeasible": 11,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 48,
+    "dead end": 52,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 89,
+    "dead end": 0,
+    "refused": 11,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 11,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 17.1
+  },
+  {
+   "N": 5,
+   "family": "perm",
+   "instances": 50,
+   "ground_truth": {
+    "feasible": 50,
+    "infeasible": 0,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 50,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 50,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 6.0
+  },
+  {
+   "N": 5,
+   "family": "queens",
+   "instances": 50,
+   "ground_truth": {
+    "feasible": 50,
+    "infeasible": 0,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 35,
+    "dead end": 15,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 35,
+    "dead end": 15,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 6.0
+  },
+  {
+   "N": 6,
+   "family": "shape",
+   "instances": 100,
+   "ground_truth": {
+    "feasible": 100,
+    "infeasible": 0,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 100,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 100,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 10.1
+  },
+  {
+   "N": 6,
+   "family": "symshape",
+   "instances": 100,
+   "ground_truth": {
+    "feasible": 57,
+    "infeasible": 43,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 57,
+    "dead end": 43,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 57,
+    "dead end": 43,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 43
+   },
+   "B3_mean_nodes": 282.2
+  },
+  {
+   "N": 6,
+   "family": "loop",
+   "instances": 100,
+   "ground_truth": {
+    "feasible": 100,
+    "infeasible": 0,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 100,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 100,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 8.6
+  },
+  {
+   "N": 6,
+   "family": "path",
+   "instances": 100,
+   "ground_truth": {
+    "feasible": 90,
+    "infeasible": 10,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 34,
+    "dead end": 66,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 90,
+    "dead end": 0,
+    "refused": 10,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 10,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 24.4
+  },
+  {
+   "N": 6,
+   "family": "perm",
+   "instances": 50,
+   "ground_truth": {
+    "feasible": 50,
+    "infeasible": 0,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 50,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 50,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 7.0
+  },
+  {
+   "N": 6,
+   "family": "queens",
+   "instances": 50,
+   "ground_truth": {
+    "feasible": 50,
+    "infeasible": 0,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 5,
+    "dead end": 45,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 7,
+    "dead end": 43,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 32.0
+  },
+  {
+   "N": 7,
+   "family": "shape",
+   "instances": 100,
+   "ground_truth": {
+    "feasible": 100,
+    "infeasible": 0,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 100,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 100,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 12.8
+  },
+  {
+   "N": 7,
+   "family": "symshape",
+   "instances": 100,
+   "ground_truth": {
+    "feasible": 100,
+    "infeasible": 0,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 99,
+    "dead end": 1,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 98,
+    "dead end": 2,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 7.4
+  },
+  {
+   "N": 7,
+   "family": "loop",
+   "instances": 100,
+   "ground_truth": {
+    "feasible": 100,
+    "infeasible": 0,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 100,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 100,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 13.0
+  },
+  {
+   "N": 7,
+   "family": "path",
+   "instances": 100,
+   "ground_truth": {
+    "feasible": 97,
+    "infeasible": 3,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 33,
+    "dead end": 67,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 97,
+    "dead end": 0,
+    "refused": 3,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 3,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 35.3
+  },
+  {
+   "N": 7,
+   "family": "perm",
+   "instances": 50,
+   "ground_truth": {
+    "feasible": 50,
+    "infeasible": 0,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 50,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 50,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 8.0
+  },
+  {
+   "N": 7,
+   "family": "queens",
+   "instances": 50,
+   "ground_truth": {
+    "feasible": 50,
+    "infeasible": 0,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 13,
+    "dead end": 37,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 20,
+    "dead end": 30,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 10.0
+  },
+  {
+   "N": 8,
+   "family": "shape",
+   "instances": 100,
+   "ground_truth": {
+    "feasible": 100,
+    "infeasible": 0,
+    "budget": 0
+   },
+   "B1": {
+    "ok": 100,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2": {
+    "ok": 100,
+    "dead end": 0,
+    "refused": 0,
+    "no seed": 0
+   },
+   "B2_feasibility_judgement": {
+    "refused_feasible": 0,
+    "refused_infeasible": 0,
+    "accepted_infeasible": 0
+   },
+   "B3_mean_nodes": 17.0
+  }
+ ],
+ "note": "written from run.log after the run was stopped at N = 8 symshape (RESOURCE_LIMIT)"
+}
