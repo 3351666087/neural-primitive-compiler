@@ -1,0 +1,1766 @@
+{
+ "script_sha256": "a66b9f004f0065a1466a3c7de2d056e33ae22a19ed003eb7c61621dbd864160d",
+ "train": {
+  "T0": {
+   "commands": [
+    [
+     "CMD0",
+     [
+      "ROT180"
+     ]
+    ],
+    [
+     "CMD1",
+     [
+      "FLIPV"
+     ]
+    ]
+   ],
+   "cond": [
+    "CMD2",
+    [
+     "0",
+     "N-1",
+     "0",
+     "0"
+    ],
+    [
+     "UP"
+    ],
+    [
+     "RIGHT"
+    ],
+    3
+   ]
+  },
+  "T1": {
+   "commands": [
+    [
+     "CMD0",
+     [
+      "RIGHTWRAP"
+     ]
+    ],
+    [
+     "CMD1",
+     [
+      "ROT270"
+     ]
+    ]
+   ],
+   "cond": [
+    "CMD2",
+    [
+     "0",
+     "1",
+     "0",
+     "1"
+    ],
+    [
+     "FLIPH"
+    ],
+    [
+     "LEFT"
+    ],
+    3
+   ]
+  },
+  "T2": {
+   "commands": [
+    [
+     "CMD0",
+     [
+      "ROT180"
+     ]
+    ],
+    [
+     "CMD1",
+     [
+      "DOWN"
+     ]
+    ]
+   ],
+   "cond": [
+    "CMD2",
+    [
+     "0",
+     "N-1",
+     "0",
+     "0"
+    ],
+    [
+     "LEFT"
+    ],
+    [
+     "ROT90"
+    ],
+    4
+   ]
+  },
+  "T3": {
+   "commands": [
+    [
+     "CMD0",
+     [
+      "UP"
+     ]
+    ],
+    [
+     "CMD1",
+     [
+      "RIGHT"
+     ]
+    ]
+   ],
+   "cond": [
+    "CMD2",
+    [
+     "0",
+     "1",
+     "0",
+     "1"
+    ],
+    [
+     "TRANSPOSE"
+    ],
+    [
+     "DOWN"
+    ],
+    3
+   ]
+  },
+  "T4": {
+   "commands": [
+    [
+     "CMD0",
+     [
+      "DILATE"
+     ]
+    ],
+    [
+     "CMD1",
+     [
+      "RIGHT"
+     ]
+    ]
+   ],
+   "cond": [
+    "CMD2",
+    [
+     "0",
+     "N-1",
+     "0",
+     "0"
+    ],
+    [
+     "DILATE"
+    ],
+    [
+     "ROT180"
+    ],
+    4
+   ]
+  },
+  "T5": {
+   "commands": [
+    [
+     "CMD0",
+     [
+      "DOWN"
+     ]
+    ],
+    [
+     "CMD1",
+     [
+      "RIGHT"
+     ]
+    ]
+   ],
+   "cond": [
+    "CMD2",
+    [
+     "0",
+     "1",
+     "0",
+     "1"
+    ],
+    [
+     "LEFT"
+    ],
+    [
+     "FLIPV"
+    ],
+    4
+   ]
+  }
+ },
+ "test": {
+  "H0": {
+   "commands": [
+    [
+     "CMD0",
+     [
+      "DOWN"
+     ]
+    ],
+    [
+     "CMD1",
+     [
+      "LEFT"
+     ]
+    ]
+   ],
+   "cond": [
+    "CMD2",
+    [
+     "0",
+     "N-1",
+     "N-1",
+     "N-1"
+    ],
+    [
+     "RIGHTWRAP"
+    ],
+    [
+     "TRANSPOSE"
+    ],
+    4
+   ]
+  },
+  "H1": {
+   "commands": [
+    [
+     "CMD0",
+     [
+      "DOWN"
+     ]
+    ],
+    [
+     "CMD1",
+     [
+      "ROT90"
+     ]
+    ]
+   ],
+   "cond": [
+    "CMD2",
+    [
+     "0",
+     "0",
+     "0",
+     "N-1"
+    ],
+    [
+     "DOWN"
+    ],
+    [
+     "DILATE"
+    ],
+    4
+   ]
+  },
+  "H2": {
+   "commands": [
+    [
+     "CMD0",
+     [
+      "FLIPV"
+     ]
+    ],
+    [
+     "CMD1",
+     [
+      "ROT270"
+     ]
+    ]
+   ],
+   "cond": [
+    "CMD2",
+    [
+     "N-2",
+     "N-1",
+     "N-2",
+     "N-1"
+    ],
+    [
+     "ROT270"
+    ],
+    [
+     "LEFT"
+    ],
+    4
+   ]
+  },
+  "H3": {
+   "commands": [
+    [
+     "CMD0",
+     [
+      "ROT90"
+     ]
+    ],
+    [
+     "CMD1",
+     [
+      "TRANSPOSE"
+     ]
+    ]
+   ],
+   "cond": [
+    "CMD2",
+    [
+     "N-1",
+     "N-1",
+     "0",
+     "N-1"
+    ],
+    [
+     "LEFT"
+    ],
+    [
+     "UP"
+    ],
+    3
+   ]
+  },
+  "H4": {
+   "commands": [
+    [
+     "CMD0",
+     [
+      "FLIPV"
+     ]
+    ],
+    [
+     "CMD1",
+     [
+      "DOWN"
+     ]
+    ]
+   ],
+   "cond": [
+    "CMD2",
+    [
+     "0",
+     "N-1",
+     "1",
+     "1"
+    ],
+    [
+     "RIGHTWRAP"
+    ],
+    [
+     "LEFT"
+    ],
+    4
+   ]
+  },
+  "H5": {
+   "commands": [
+    [
+     "CMD0",
+     [
+      "DOWN"
+     ]
+    ],
+    [
+     "CMD1",
+     [
+      "ROT270"
+     ]
+    ]
+   ],
+   "cond": [
+    "CMD2",
+    [
+     "1",
+     "2",
+     "0",
+     "1"
+    ],
+    [
+     "TRANSPOSE"
+    ],
+    [
+     "RIGHT"
+    ],
+    4
+   ]
+  }
+ },
+ "libraries": {
+  "L_mem": [
+   [
+    "0",
+    "1",
+    "0",
+    "1"
+   ],
+   [
+    "0",
+    "N-1",
+    "0",
+    "0"
+   ]
+  ],
+  "L_D4": [
+   [
+    "0",
+    "N-1",
+    "N-1",
+    "N-1"
+   ],
+   [
+    "0",
+    "1",
+    "N-2",
+    "N-1"
+   ],
+   [
+    "0",
+    "0",
+    "0",
+    "N-1"
+   ],
+   [
+    "N-2",
+    "N-1",
+    "0",
+    "1"
+   ],
+   [
+    "0",
+    "N-1",
+    "0",
+    "0"
+   ],
+   [
+    "N-1",
+    "N-1",
+    "0",
+    "N-1"
+   ],
+   [
+    "0",
+    "1",
+    "0",
+    "1"
+   ],
+   [
+    "N-2",
+    "N-1",
+    "N-2",
+    "N-1"
+   ]
+  ],
+  "L_disc": [
+   [
+    "1",
+    "1",
+    "N-2",
+    "N-1"
+   ],
+   [
+    "2",
+    "N-1",
+    "0",
+    "1"
+   ],
+   [
+    "N-3",
+    "N-2",
+    "N-3",
+    "N-2"
+   ],
+   [
+    "1",
+    "N-1",
+    "0",
+    "2"
+   ],
+   [
+    "0",
+    "1",
+    "N-3",
+    "N-2"
+   ],
+   [
+    "N-1",
+    "N-1",
+    "0",
+    "N-2"
+   ],
+   [
+    "0",
+    "N-1",
+    "N-1",
+    "N-1"
+   ],
+   [
+    "N-2",
+    "N-1",
+    "0",
+    "0"
+   ],
+   [
+    "2",
+    "2",
+    "0",
+    "N-1"
+   ],
+   [
+    "N-2",
+    "N-1",
+    "0",
+    "N-1"
+   ],
+   [
+    "0",
+    "2",
+    "0",
+    "N-1"
+   ],
+   [
+    "0",
+    "0",
+    "0",
+    "N-1"
+   ],
+   [
+    "0",
+    "N-1",
+    "N-3",
+    "N-2"
+   ],
+   [
+    "N-2",
+    "N-1",
+    "0",
+    "1"
+   ],
+   [
+    "1",
+    "N-1",
+    "N-2",
+    "N-1"
+   ],
+   [
+    "N-2",
+    "N-1",
+    "N-2",
+    "N-1"
+   ],
+   [
+    "0",
+    "N-1",
+    "N-3",
+    "N-3"
+   ],
+   [
+    "0",
+    "N-1",
+    "N-2",
+    "N-1"
+   ],
+   [
+    "0",
+    "1",
+    "0",
+    "0"
+   ],
+   [
+    "0",
+    "0",
+    "N-2",
+    "N-1"
+   ],
+   [
+    "0",
+    "0",
+    "0",
+    "N-2"
+   ],
+   [
+    "N-1",
+    "N-1",
+    "0",
+    "N-1"
+   ],
+   [
+    "N-1",
+    "N-1",
+    "N-3",
+    "N-2"
+   ],
+   [
+    "1",
+    "N-1",
+    "N-2",
+    "N-2"
+   ],
+   [
+    "0",
+    "1",
+    "0",
+    "N-1"
+   ],
+   [
+    "1",
+    "2",
+    "1",
+    "1"
+   ],
+   [
+    "0",
+    "N-1",
+    "2",
+    "2"
+   ],
+   [
+    "N-3",
+    "N-2",
+    "0",
+    "1"
+   ],
+   [
+    "N-1",
+    "N-1",
+    "0",
+    "1"
+   ],
+   [
+    "0",
+    "0",
+    "0",
+    "N-3"
+   ],
+   [
+    "0",
+    "N-1",
+    "N-2",
+    "N-2"
+   ],
+   [
+    "N-3",
+    "N-2",
+    "N-2",
+    "N-1"
+   ],
+   [
+    "0",
+    "1",
+    "N-2",
+    "N-1"
+   ],
+   [
+    "0",
+    "1",
+    "0",
+    "N-2"
+   ],
+   [
+    "0",
+    "N-1",
+    "N-3",
+    "N-1"
+   ],
+   [
+    "0",
+    "N-1",
+    "0",
+    "0"
+   ],
+   [
+    "0",
+    "N-1",
+    "0",
+    "2"
+   ],
+   [
+    "2",
+    "N-1",
+    "1",
+    "1"
+   ],
+   [
+    "0",
+    "1",
+    "2",
+    "2"
+   ],
+   [
+    "0",
+    "1",
+    "N-2",
+    "N-2"
+   ],
+   [
+    "0",
+    "N-1",
+    "0",
+    "1"
+   ],
+   [
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   [
+    "1",
+    "2",
+    "1",
+    "2"
+   ],
+   [
+    "0",
+    "0",
+    "1",
+    "N-1"
+   ],
+   [
+    "0",
+    "N-3",
+    "N-1",
+    "N-1"
+   ],
+   [
+    "N-1",
+    "N-1",
+    "N-2",
+    "N-1"
+   ],
+   [
+    "1",
+    "1",
+    "0",
+    "N-2"
+   ],
+   [
+    "1",
+    "2",
+    "N-1",
+    "N-1"
+   ],
+   [
+    "0",
+    "1",
+    "0",
+    "1"
+   ],
+   [
+    "1",
+    "2",
+    "0",
+    "0"
+   ],
+   [
+    "1",
+    "1",
+    "1",
+    "N-1"
+   ],
+   [
+    "0",
+    "N-2",
+    "N-1",
+    "N-1"
+   ],
+   [
+    "1",
+    "2",
+    "0",
+    "N-1"
+   ],
+   [
+    "0",
+    "1",
+    "1",
+    "N-1"
+   ],
+   [
+    "1",
+    "2",
+    "0",
+    "1"
+   ],
+   [
+    "N-2",
+    "N-2",
+    "0",
+    "N-1"
+   ],
+   [
+    "2",
+    "N-1",
+    "N-1",
+    "N-1"
+   ],
+   [
+    "1",
+    "2",
+    "N-2",
+    "N-1"
+   ],
+   [
+    "1",
+    "2",
+    "N-3",
+    "N-2"
+   ],
+   [
+    "2",
+    "N-1",
+    "0",
+    "0"
+   ],
+   [
+    "1",
+    "N-1",
+    "1",
+    "2"
+   ],
+   [
+    "N-2",
+    "N-1",
+    "1",
+    "2"
+   ],
+   [
+    "1",
+    "1",
+    "0",
+    "N-1"
+   ],
+   [
+    "1",
+    "N-1",
+    "2",
+    "2"
+   ],
+   [
+    "1",
+    "N-1",
+    "1",
+    "1"
+   ],
+   [
+    "0",
+    "0",
+    "2",
+    "N-1"
+   ],
+   [
+    "N-2",
+    "N-1",
+    "N-1",
+    "N-1"
+   ],
+   [
+    "1",
+    "N-1",
+    "0",
+    "0"
+   ],
+   [
+    "0",
+    "N-1",
+    "1",
+    "1"
+   ],
+   [
+    "0",
+    "N-2",
+    "N-2",
+    "N-2"
+   ],
+   [
+    "N-1",
+    "N-1",
+    "1",
+    "N-1"
+   ],
+   [
+    "0",
+    "0",
+    "N-1",
+    "N-1"
+   ],
+   [
+    "1",
+    "N-1",
+    "N-1",
+    "N-1"
+   ],
+   [
+    "0",
+    "1",
+    "1",
+    "2"
+   ],
+   [
+    "1",
+    "N-1",
+    "0",
+    "1"
+   ],
+   [
+    "0",
+    "N-2",
+    "0",
+    "0"
+   ],
+   [
+    "N-3",
+    "N-2",
+    "N-1",
+    "N-1"
+   ],
+   [
+    "0",
+    "1",
+    "1",
+    "1"
+   ],
+   [
+    "N-1",
+    "N-1",
+    "N-1",
+    "N-1"
+   ],
+   [
+    "N-2",
+    "N-1",
+    "N-3",
+    "N-2"
+   ],
+   [
+    "0",
+    "1",
+    "N-1",
+    "N-1"
+   ],
+   [
+    "0",
+    "0",
+    "N-3",
+    "N-2"
+   ],
+   [
+    "0",
+    "N-1",
+    "1",
+    "2"
+   ],
+   [
+    "0",
+    "N-2",
+    "N-2",
+    "N-1"
+   ],
+   [
+    "N-2",
+    "N-1",
+    "N-2",
+    "N-2"
+   ]
+  ],
+  "L_rand_size": 8,
+  "L_generic_size": 1296,
+  "train_regions_found": {
+   "T0": [
+    [
+     "0",
+     "N-1",
+     "0",
+     "0"
+    ]
+   ],
+   "T1": [
+    [
+     "0",
+     "1",
+     "0",
+     "1"
+    ]
+   ],
+   "T2": [
+    [
+     "0",
+     "N-1",
+     "0",
+     "0"
+    ]
+   ],
+   "T3": [
+    [
+     "0",
+     "1",
+     "0",
+     "1"
+    ]
+   ],
+   "T4": [
+    [
+     "0",
+     "N-1",
+     "0",
+     "0"
+    ]
+   ],
+   "T5": [
+    [
+     "0",
+     "1",
+     "0",
+     "1"
+    ]
+   ]
+  },
+  "discovered_maps": [
+   [
+    "T0",
+    "ROT180"
+   ],
+   [
+    "T0",
+    "FLIPV"
+   ],
+   [
+    "T1",
+    "RIGHTWRAP"
+   ],
+   [
+    "T1",
+    "ROT270"
+   ],
+   [
+    "T2",
+    "ROT180"
+   ],
+   [
+    "T2",
+    "DOWN"
+   ],
+   [
+    "T3",
+    "UP"
+   ],
+   [
+    "T3",
+    "RIGHT"
+   ],
+   [
+    "T4",
+    "DILATE"
+   ],
+   [
+    "T4",
+    "RIGHT"
+   ],
+   [
+    "T5",
+    "DOWN"
+   ],
+   [
+    "T5",
+    "RIGHT"
+   ]
+  ]
+ },
+ "coverage": {
+  "bottom row": {
+   "L_D4": true,
+   "L_disc": true,
+   "L_mem": false
+  },
+  "left column": {
+   "L_D4": true,
+   "L_disc": true,
+   "L_mem": false
+  },
+  "bottom-right 2x2": {
+   "L_D4": true,
+   "L_disc": true,
+   "L_mem": false
+  },
+  "right column": {
+   "L_D4": true,
+   "L_disc": true,
+   "L_mem": false
+  },
+  "second row": {
+   "L_D4": false,
+   "L_disc": true,
+   "L_mem": false
+  },
+  "top-left 2x2 moved right": {
+   "L_D4": false,
+   "L_disc": true,
+   "L_mem": false
+  }
+ },
+ "rows": [
+  {
+   "task": "H0",
+   "region": "bottom row",
+   "kind": "D4",
+   "n_traces": 10,
+   "events": {
+    "3": 10,
+    "5": 10
+   },
+   "L_mem": "ambiguous (truth absent)",
+   "L_D4": "ambiguous",
+   "L_disc": "ambiguous",
+   "L_rand": [
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)"
+   ],
+   "L_generic": "ambiguous",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H0",
+   "region": "bottom row",
+   "kind": "D4",
+   "n_traces": 30,
+   "events": {
+    "3": 30,
+    "5": 26
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "ambiguous",
+   "L_rand": [
+    "none",
+    "wrong",
+    "wrong",
+    "none",
+    "none"
+   ],
+   "L_generic": "ambiguous",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H0",
+   "region": "bottom row",
+   "kind": "D4",
+   "n_traces": 100,
+   "events": {
+    "3": 112,
+    "5": 100
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H0",
+   "region": "bottom row",
+   "kind": "D4",
+   "n_traces": 300,
+   "events": {
+    "3": 322,
+    "5": 316
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "correct"
+  },
+  {
+   "task": "H0",
+   "region": "bottom row",
+   "kind": "D4",
+   "n_traces": 1000,
+   "events": {
+    "3": 1079,
+    "5": 1068
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "correct"
+  },
+  {
+   "task": "H1",
+   "region": "left column",
+   "kind": "D4",
+   "n_traces": 10,
+   "events": {
+    "3": 10,
+    "5": 10
+   },
+   "L_mem": "wrong",
+   "L_D4": "ambiguous",
+   "L_disc": "ambiguous",
+   "L_rand": [
+    "wrong",
+    "wrong",
+    "wrong",
+    "wrong",
+    "wrong"
+   ],
+   "L_generic": "ambiguous",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H1",
+   "region": "left column",
+   "kind": "D4",
+   "n_traces": 30,
+   "events": {
+    "3": 30,
+    "5": 26
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "ambiguous",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "ambiguous",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H1",
+   "region": "left column",
+   "kind": "D4",
+   "n_traces": 100,
+   "events": {
+    "3": 112,
+    "5": 100
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "ambiguous",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H1",
+   "region": "left column",
+   "kind": "D4",
+   "n_traces": 300,
+   "events": {
+    "3": 322,
+    "5": 316
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "correct"
+  },
+  {
+   "task": "H1",
+   "region": "left column",
+   "kind": "D4",
+   "n_traces": 1000,
+   "events": {
+    "3": 1079,
+    "5": 1068
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "correct"
+  },
+  {
+   "task": "H2",
+   "region": "bottom-right 2x2",
+   "kind": "D4",
+   "n_traces": 10,
+   "events": {
+    "3": 10,
+    "5": 10
+   },
+   "L_mem": "none",
+   "L_D4": "ambiguous",
+   "L_disc": "ambiguous",
+   "L_rand": [
+    "none",
+    "wrong",
+    "wrong",
+    "none",
+    "none"
+   ],
+   "L_generic": "ambiguous",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H2",
+   "region": "bottom-right 2x2",
+   "kind": "D4",
+   "n_traces": 30,
+   "events": {
+    "3": 30,
+    "5": 26
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H2",
+   "region": "bottom-right 2x2",
+   "kind": "D4",
+   "n_traces": 100,
+   "events": {
+    "3": 112,
+    "5": 100
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H2",
+   "region": "bottom-right 2x2",
+   "kind": "D4",
+   "n_traces": 300,
+   "events": {
+    "3": 322,
+    "5": 316
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "correct"
+  },
+  {
+   "task": "H2",
+   "region": "bottom-right 2x2",
+   "kind": "D4",
+   "n_traces": 1000,
+   "events": {
+    "3": 1079,
+    "5": 1068
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "correct"
+  },
+  {
+   "task": "H3",
+   "region": "right column",
+   "kind": "D4",
+   "n_traces": 10,
+   "events": {
+    "3": 10,
+    "5": 8
+   },
+   "L_mem": "ambiguous (truth absent)",
+   "L_D4": "ambiguous",
+   "L_disc": "ambiguous",
+   "L_rand": [
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)"
+   ],
+   "L_generic": "ambiguous",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H3",
+   "region": "right column",
+   "kind": "D4",
+   "n_traces": 30,
+   "events": {
+    "3": 37,
+    "5": 33
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "ambiguous",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H3",
+   "region": "right column",
+   "kind": "D4",
+   "n_traces": 100,
+   "events": {
+    "3": 124,
+    "5": 125
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "correct"
+  },
+  {
+   "task": "H3",
+   "region": "right column",
+   "kind": "D4",
+   "n_traces": 300,
+   "events": {
+    "3": 381,
+    "5": 385
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "correct"
+  },
+  {
+   "task": "H3",
+   "region": "right column",
+   "kind": "D4",
+   "n_traces": 1000,
+   "events": {
+    "3": 1271,
+    "5": 1262
+   },
+   "L_mem": "none",
+   "L_D4": "correct",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "correct"
+  },
+  {
+   "task": "H4",
+   "region": "second row",
+   "kind": "shift",
+   "n_traces": 10,
+   "events": {
+    "3": 10,
+    "5": 10
+   },
+   "L_mem": "ambiguous (truth absent)",
+   "L_D4": "ambiguous (truth absent)",
+   "L_disc": "ambiguous",
+   "L_rand": [
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)"
+   ],
+   "L_generic": "ambiguous",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H4",
+   "region": "second row",
+   "kind": "shift",
+   "n_traces": 30,
+   "events": {
+    "3": 30,
+    "5": 26
+   },
+   "L_mem": "none",
+   "L_D4": "none",
+   "L_disc": "ambiguous",
+   "L_rand": [
+    "none",
+    "ambiguous (truth absent)",
+    "wrong",
+    "none",
+    "none"
+   ],
+   "L_generic": "ambiguous",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H4",
+   "region": "second row",
+   "kind": "shift",
+   "n_traces": 100,
+   "events": {
+    "3": 112,
+    "5": 100
+   },
+   "L_mem": "none",
+   "L_D4": "none",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H4",
+   "region": "second row",
+   "kind": "shift",
+   "n_traces": 300,
+   "events": {
+    "3": 322,
+    "5": 316
+   },
+   "L_mem": "none",
+   "L_D4": "none",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "correct"
+  },
+  {
+   "task": "H4",
+   "region": "second row",
+   "kind": "shift",
+   "n_traces": 1000,
+   "events": {
+    "3": 1079,
+    "5": 1068
+   },
+   "L_mem": "none",
+   "L_D4": "none",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "correct"
+  },
+  {
+   "task": "H5",
+   "region": "top-left 2x2 moved right",
+   "kind": "shift",
+   "n_traces": 10,
+   "events": {
+    "3": 10,
+    "5": 10
+   },
+   "L_mem": "ambiguous (truth absent)",
+   "L_D4": "ambiguous (truth absent)",
+   "L_disc": "ambiguous",
+   "L_rand": [
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)",
+    "ambiguous (truth absent)"
+   ],
+   "L_generic": "ambiguous",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H5",
+   "region": "top-left 2x2 moved right",
+   "kind": "shift",
+   "n_traces": 30,
+   "events": {
+    "3": 30,
+    "5": 26
+   },
+   "L_mem": "none",
+   "L_D4": "none",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "ambiguous",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H5",
+   "region": "top-left 2x2 moved right",
+   "kind": "shift",
+   "n_traces": 100,
+   "events": {
+    "3": 112,
+    "5": 100
+   },
+   "L_mem": "none",
+   "L_D4": "none",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "ambiguous"
+  },
+  {
+   "task": "H5",
+   "region": "top-left 2x2 moved right",
+   "kind": "shift",
+   "n_traces": 300,
+   "events": {
+    "3": 322,
+    "5": 316
+   },
+   "L_mem": "none",
+   "L_D4": "none",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "correct"
+  },
+  {
+   "task": "H5",
+   "region": "top-left 2x2 moved right",
+   "kind": "shift",
+   "n_traces": 1000,
+   "events": {
+    "3": 1079,
+    "5": 1068
+   },
+   "L_mem": "none",
+   "L_D4": "none",
+   "L_disc": "correct",
+   "L_rand": [
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
+   ],
+   "L_generic": "correct",
+   "L_none": "correct"
+  }
+ ],
+ "time_s": 96.1
+}
