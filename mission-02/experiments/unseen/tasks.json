@@ -1,0 +1,1531 @@
+{
+  "seed": 2035884706009661803,
+  "tree_sha256": "1c40ea5a815b416b28c44a0a1cb79c454ba4dc8064560b75c2f7cb67bfb91419",
+  "tasks": [
+    {
+      "uid": "UA0",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "DOWN",
+              "ROT90"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "ROT180"
+            ]
+          ],
+          [
+            "CMD2",
+            [
+              "FLIPH",
+              "RIGHTWRAP"
+            ]
+          ]
+        ],
+        "queries": [],
+        "cond": [
+          "CMD3",
+          "top",
+          [
+            "LEFT"
+          ],
+          [
+            "DILATE"
+          ],
+          4
+        ]
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "interface_smallest": {
+        "name": "UA0@3",
+        "state_space": {
+          "kind": "grid",
+          "dims": [
+            3
+          ]
+        },
+        "letters": [
+          {
+            "name": "LOAD",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "CMD0",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD1",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD2",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD3",
+            "data": null,
+            "cond_delay": 4
+          }
+        ],
+        "data": {
+          "see": {
+            "kind": "grid",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "queries": {},
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          }
+        ],
+        "description": "A 3x3 grid (x left-to-right, y top-to-bottom). LOAD stores the shape shown on `see`. Output img continuously shows the remembered shape 2 steps late. Command CMD0: move the shape one cell down; cells pushed past the border disappear, then rotate the remembered shape 90 degrees clockwise about the grid centre. Command CMD1: rotate the shape 180 degrees. Command CMD2: mirror the shape left-right, then move the shape one cell right, wrapping around the right border. Command CMD3: if the shape has a cell in the top row, then move the shape one cell left; cells pushed past the border disappear; otherwise thicken the shape: every on cell also turns on its 4 neighbours. Decided on the shape just before the command; the result appears as the state 4 steps later; the environment sends no other command in between."
+      }
+    },
+    {
+      "uid": "UA1",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "LEFT"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "LEFT"
+            ]
+          ],
+          [
+            "CMD2",
+            [
+              "DOWN"
+            ]
+          ]
+        ],
+        "queries": [],
+        "cond": null
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "interface_smallest": {
+        "name": "UA1@3",
+        "state_space": {
+          "kind": "grid",
+          "dims": [
+            3
+          ]
+        },
+        "letters": [
+          {
+            "name": "LOAD",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "CMD0",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD1",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD2",
+            "data": null,
+            "cond_delay": null
+          }
+        ],
+        "data": {
+          "see": {
+            "kind": "grid",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "queries": {},
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          }
+        ],
+        "description": "A 3x3 grid (x left-to-right, y top-to-bottom). LOAD stores the shape shown on `see`. Output img continuously shows the remembered shape 2 steps late. Command CMD0: move the shape one cell left; cells pushed past the border disappear. Command CMD1: move the shape one cell left; cells pushed past the border disappear. Command CMD2: move the shape one cell down; cells pushed past the border disappear."
+      }
+    },
+    {
+      "uid": "UA2",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "ROT270",
+              "ROT270"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "TRANSPOSE"
+            ]
+          ],
+          [
+            "CMD2",
+            [
+              "DILATE",
+              "LEFT"
+            ]
+          ],
+          [
+            "CMD3",
+            [
+              "ROT270",
+              "TRANSPOSE"
+            ]
+          ]
+        ],
+        "queries": [
+          "cell",
+          "all"
+        ],
+        "cond": [
+          "CMD4",
+          "bottom",
+          [
+            "LEFT"
+          ],
+          [
+            "RIGHTWRAP"
+          ],
+          4
+        ]
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "interface_smallest": {
+        "name": "UA2@3",
+        "state_space": {
+          "kind": "grid",
+          "dims": [
+            3
+          ]
+        },
+        "letters": [
+          {
+            "name": "LOAD",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "CMD0",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD1",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD2",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD3",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD4",
+            "data": null,
+            "cond_delay": 4
+          }
+        ],
+        "data": {
+          "see": {
+            "kind": "grid",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "queries": {
+          "qcell": {
+            "kind": "grid",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          },
+          {
+            "name": "cellon",
+            "kind": "sel",
+            "lag": 3,
+            "space": null
+          },
+          {
+            "name": "any_all",
+            "kind": "any",
+            "lag": 3,
+            "space": null
+          }
+        ],
+        "description": "A 3x3 grid (x left-to-right, y top-to-bottom). LOAD stores the shape shown on `see`. Output img continuously shows the remembered shape 2 steps late. Command CMD0: rotate the shape 90 degrees counter-clockwise, then rotate the shape 90 degrees counter-clockwise. Command CMD1: reflect the shape across the main diagonal (x <-> y). Command CMD2: thicken the shape: every on cell also turns on its 4 neighbours, then move the shape one cell left; cells pushed past the border disappear. Command CMD3: rotate the shape 90 degrees counter-clockwise, then reflect the shape across the main diagonal (x <-> y). Query qcell (one cell): output cellon = whether that cell is on, 3 steps after the query, as of just before the query. Output any_all: 1 iff the shape has a cell in anywhere, 3 steps late. Command CMD4: if the shape has a cell in the bottom row, then move the shape one cell left; cells pushed past the border disappear; otherwise move the shape one cell right, wrapping around the right border. Decided on the shape just before the command; the result appears as the state 4 steps later; the environment sends no other command in between."
+      }
+    },
+    {
+      "uid": "UA3",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "ROT90",
+              "TRANSPOSE"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "UP",
+              "FLIPH"
+            ]
+          ],
+          [
+            "CMD2",
+            [
+              "DOWN"
+            ]
+          ]
+        ],
+        "queries": [
+          "all"
+        ],
+        "cond": [
+          "CMD3",
+          "top",
+          [
+            "ROT90"
+          ],
+          [
+            "FLIPH"
+          ],
+          4
+        ]
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "interface_smallest": {
+        "name": "UA3@3",
+        "state_space": {
+          "kind": "grid",
+          "dims": [
+            3
+          ]
+        },
+        "letters": [
+          {
+            "name": "LOAD",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "CMD0",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD1",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD2",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD3",
+            "data": null,
+            "cond_delay": 4
+          }
+        ],
+        "data": {
+          "see": {
+            "kind": "grid",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "queries": {},
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          },
+          {
+            "name": "any_all",
+            "kind": "any",
+            "lag": 3,
+            "space": null
+          }
+        ],
+        "description": "A 3x3 grid (x left-to-right, y top-to-bottom). LOAD stores the shape shown on `see`. Output img continuously shows the remembered shape 2 steps late. Command CMD0: rotate the remembered shape 90 degrees clockwise about the grid centre, then reflect the shape across the main diagonal (x <-> y). Command CMD1: move the shape one cell up; cells pushed past the border disappear, then mirror the shape left-right. Command CMD2: move the shape one cell down; cells pushed past the border disappear. Output any_all: 1 iff the shape has a cell in anywhere, 3 steps late. Command CMD3: if the shape has a cell in the top row, then rotate the remembered shape 90 degrees clockwise about the grid centre; otherwise mirror the shape left-right. Decided on the shape just before the command; the result appears as the state 4 steps later; the environment sends no other command in between."
+      }
+    },
+    {
+      "uid": "UA4",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "ROT270",
+              "TRANSPOSE"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "ROT180"
+            ]
+          ],
+          [
+            "CMD2",
+            [
+              "UP",
+              "RIGHT"
+            ]
+          ],
+          [
+            "CMD3",
+            [
+              "RIGHT"
+            ]
+          ]
+        ],
+        "queries": [
+          "cell",
+          "bottom"
+        ],
+        "cond": [
+          "CMD4",
+          "left",
+          [
+            "FLIPV"
+          ],
+          [
+            "UP"
+          ],
+          4
+        ]
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "interface_smallest": {
+        "name": "UA4@3",
+        "state_space": {
+          "kind": "grid",
+          "dims": [
+            3
+          ]
+        },
+        "letters": [
+          {
+            "name": "LOAD",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "CMD0",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD1",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD2",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD3",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD4",
+            "data": null,
+            "cond_delay": 4
+          }
+        ],
+        "data": {
+          "see": {
+            "kind": "grid",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "queries": {
+          "qcell": {
+            "kind": "grid",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          },
+          {
+            "name": "cellon",
+            "kind": "sel",
+            "lag": 3,
+            "space": null
+          },
+          {
+            "name": "any_bottom",
+            "kind": "any",
+            "lag": 3,
+            "space": null
+          }
+        ],
+        "description": "A 3x3 grid (x left-to-right, y top-to-bottom). LOAD stores the shape shown on `see`. Output img continuously shows the remembered shape 2 steps late. Command CMD0: rotate the shape 90 degrees counter-clockwise, then reflect the shape across the main diagonal (x <-> y). Command CMD1: rotate the shape 180 degrees. Command CMD2: move the shape one cell up; cells pushed past the border disappear, then move the shape one cell right; cells pushed past the border disappear. Command CMD3: move the shape one cell right; cells pushed past the border disappear. Query qcell (one cell): output cellon = whether that cell is on, 3 steps after the query, as of just before the query. Output any_bottom: 1 iff the shape has a cell in the bottom row, 3 steps late. Command CMD4: if the shape has a cell in the left column, then mirror the shape top-bottom; otherwise move the shape one cell up; cells pushed past the border disappear. Decided on the shape just before the command; the result appears as the state 4 steps later; the environment sends no other command in between."
+      }
+    },
+    {
+      "uid": "UA5",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "TRANSPOSE",
+              "FLIPH"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "DILATE",
+              "DOWN"
+            ]
+          ],
+          [
+            "CMD2",
+            [
+              "FLIPV"
+            ]
+          ],
+          [
+            "CMD3",
+            [
+              "TRANSPOSE"
+            ]
+          ]
+        ],
+        "queries": [],
+        "cond": null
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "interface_smallest": {
+        "name": "UA5@3",
+        "state_space": {
+          "kind": "grid",
+          "dims": [
+            3
+          ]
+        },
+        "letters": [
+          {
+            "name": "LOAD",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "CMD0",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD1",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD2",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD3",
+            "data": null,
+            "cond_delay": null
+          }
+        ],
+        "data": {
+          "see": {
+            "kind": "grid",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "queries": {},
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          }
+        ],
+        "description": "A 3x3 grid (x left-to-right, y top-to-bottom). LOAD stores the shape shown on `see`. Output img continuously shows the remembered shape 2 steps late. Command CMD0: reflect the shape across the main diagonal (x <-> y), then mirror the shape left-right. Command CMD1: thicken the shape: every on cell also turns on its 4 neighbours, then move the shape one cell down; cells pushed past the border disappear. Command CMD2: mirror the shape top-bottom. Command CMD3: reflect the shape across the main diagonal (x <-> y)."
+      }
+    },
+    {
+      "uid": "UA6",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "TRANSPOSE"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "UP"
+            ]
+          ]
+        ],
+        "queries": [
+          "bottom"
+        ],
+        "cond": null
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "interface_smallest": {
+        "name": "UA6@3",
+        "state_space": {
+          "kind": "grid",
+          "dims": [
+            3
+          ]
+        },
+        "letters": [
+          {
+            "name": "LOAD",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "CMD0",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD1",
+            "data": null,
+            "cond_delay": null
+          }
+        ],
+        "data": {
+          "see": {
+            "kind": "grid",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "queries": {},
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          },
+          {
+            "name": "any_bottom",
+            "kind": "any",
+            "lag": 3,
+            "space": null
+          }
+        ],
+        "description": "A 3x3 grid (x left-to-right, y top-to-bottom). LOAD stores the shape shown on `see`. Output img continuously shows the remembered shape 2 steps late. Command CMD0: reflect the shape across the main diagonal (x <-> y). Command CMD1: move the shape one cell up; cells pushed past the border disappear. Output any_bottom: 1 iff the shape has a cell in the bottom row, 3 steps late."
+      }
+    },
+    {
+      "uid": "UA7",
+      "family": "A",
+      "params": {
+        "commands": [
+          [
+            "CMD0",
+            [
+              "LEFT",
+              "FLIPH"
+            ]
+          ],
+          [
+            "CMD1",
+            [
+              "ROT270"
+            ]
+          ]
+        ],
+        "queries": [
+          "left"
+        ],
+        "cond": null
+      },
+      "sizes": [
+        3,
+        5,
+        8
+      ],
+      "interface_smallest": {
+        "name": "UA7@3",
+        "state_space": {
+          "kind": "grid",
+          "dims": [
+            3
+          ]
+        },
+        "letters": [
+          {
+            "name": "LOAD",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "CMD0",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CMD1",
+            "data": null,
+            "cond_delay": null
+          }
+        ],
+        "data": {
+          "see": {
+            "kind": "grid",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "queries": {},
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          },
+          {
+            "name": "any_left",
+            "kind": "any",
+            "lag": 3,
+            "space": null
+          }
+        ],
+        "description": "A 3x3 grid (x left-to-right, y top-to-bottom). LOAD stores the shape shown on `see`. Output img continuously shows the remembered shape 2 steps late. Command CMD0: move the shape one cell left; cells pushed past the border disappear, then mirror the shape left-right. Command CMD1: rotate the shape 90 degrees counter-clockwise. Output any_left: 1 iff the shape has a cell in the left column, 3 steps late."
+      }
+    },
+    {
+      "uid": "UB0",
+      "family": "B",
+      "params": {
+        "ops": [
+          "STORE",
+          "SWAP"
+        ],
+        "queries": [
+          "same"
+        ]
+      },
+      "sizes": [
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "interface_smallest": {
+        "name": "UB0@2x2",
+        "state_space": {
+          "kind": "table",
+          "dims": [
+            2,
+            2
+          ]
+        },
+        "letters": [
+          {
+            "name": "STORE0",
+            "data": "val",
+            "cond_delay": null
+          },
+          {
+            "name": "STORE1",
+            "data": "val",
+            "cond_delay": null
+          },
+          {
+            "name": "SWAP01",
+            "data": null,
+            "cond_delay": null
+          }
+        ],
+        "data": {
+          "val": {
+            "kind": "vec",
+            "dims": [
+              2
+            ]
+          }
+        },
+        "queries": {
+          "qa": {
+            "kind": "vec",
+            "dims": [
+              2
+            ]
+          },
+          "qb": {
+            "kind": "vec",
+            "dims": [
+              2
+            ]
+          }
+        },
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          },
+          {
+            "name": "same",
+            "kind": "match",
+            "lag": 5,
+            "space": null
+          }
+        ],
+        "description": "2 objects (slots 0..1), each holding at most one of 2 values. Output `img` shows the object-value table 2 steps late. STOREk: object k now holds the value shown on `val` (one-hot). SWAPjk: objects j and k exchange their values. Queries qa, qb (one object each, same step): output same = 1 iff both objects hold the same value, 5 steps after the query, as of just before it."
+      }
+    },
+    {
+      "uid": "UB1",
+      "family": "B",
+      "params": {
+        "ops": [
+          "STORE",
+          "COPY"
+        ],
+        "queries": [
+          "same"
+        ]
+      },
+      "sizes": [
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "interface_smallest": {
+        "name": "UB1@2x3",
+        "state_space": {
+          "kind": "table",
+          "dims": [
+            2,
+            3
+          ]
+        },
+        "letters": [
+          {
+            "name": "STORE0",
+            "data": "val",
+            "cond_delay": null
+          },
+          {
+            "name": "STORE1",
+            "data": "val",
+            "cond_delay": null
+          },
+          {
+            "name": "COPY01",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "COPY10",
+            "data": null,
+            "cond_delay": null
+          }
+        ],
+        "data": {
+          "val": {
+            "kind": "vec",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "queries": {
+          "qa": {
+            "kind": "vec",
+            "dims": [
+              2
+            ]
+          },
+          "qb": {
+            "kind": "vec",
+            "dims": [
+              2
+            ]
+          }
+        },
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          },
+          {
+            "name": "same",
+            "kind": "match",
+            "lag": 5,
+            "space": null
+          }
+        ],
+        "description": "2 objects (slots 0..1), each holding at most one of 3 values. Output `img` shows the object-value table 2 steps late. STOREk: object k now holds the value shown on `val` (one-hot). COPYjk: object k gets a copy of object j's value (or becomes empty if j is empty). Queries qa, qb (one object each, same step): output same = 1 iff both objects hold the same value, 5 steps after the query, as of just before it."
+      }
+    },
+    {
+      "uid": "UB2",
+      "family": "B",
+      "params": {
+        "ops": [
+          "STORE",
+          "CLEAR"
+        ],
+        "queries": [
+          "who"
+        ]
+      },
+      "sizes": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "interface_smallest": {
+        "name": "UB2@3x3",
+        "state_space": {
+          "kind": "table",
+          "dims": [
+            3,
+            3
+          ]
+        },
+        "letters": [
+          {
+            "name": "STORE0",
+            "data": "val",
+            "cond_delay": null
+          },
+          {
+            "name": "STORE1",
+            "data": "val",
+            "cond_delay": null
+          },
+          {
+            "name": "STORE2",
+            "data": "val",
+            "cond_delay": null
+          },
+          {
+            "name": "CLEAR0",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CLEAR1",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "CLEAR2",
+            "data": null,
+            "cond_delay": null
+          }
+        ],
+        "data": {
+          "val": {
+            "kind": "vec",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "queries": {
+          "qval": {
+            "kind": "vec",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          },
+          {
+            "name": "who",
+            "kind": "sel",
+            "lag": 3,
+            "space": {
+              "kind": "vec",
+              "dims": [
+                3
+              ]
+            }
+          }
+        ],
+        "description": "3 objects (slots 0..2), each holding at most one of 3 values. Output `img` shows the object-value table 2 steps late. STOREk: object k now holds the value shown on `val` (one-hot). CLEARk: object k becomes empty. Query qval (one value): output who marks every object holding that value, 3 steps after the query, as of just before the query."
+      }
+    },
+    {
+      "uid": "UB3",
+      "family": "B",
+      "params": {
+        "ops": [
+          "STORE",
+          "SWAP"
+        ],
+        "queries": [
+          "value",
+          "who"
+        ]
+      },
+      "sizes": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "interface_smallest": {
+        "name": "UB3@3x3",
+        "state_space": {
+          "kind": "table",
+          "dims": [
+            3,
+            3
+          ]
+        },
+        "letters": [
+          {
+            "name": "STORE0",
+            "data": "val",
+            "cond_delay": null
+          },
+          {
+            "name": "STORE1",
+            "data": "val",
+            "cond_delay": null
+          },
+          {
+            "name": "STORE2",
+            "data": "val",
+            "cond_delay": null
+          },
+          {
+            "name": "SWAP01",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "SWAP02",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "SWAP12",
+            "data": null,
+            "cond_delay": null
+          }
+        ],
+        "data": {
+          "val": {
+            "kind": "vec",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "queries": {
+          "qobj": {
+            "kind": "vec",
+            "dims": [
+              3
+            ]
+          },
+          "qval": {
+            "kind": "vec",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          },
+          {
+            "name": "valueof",
+            "kind": "sel",
+            "lag": 3,
+            "space": {
+              "kind": "vec",
+              "dims": [
+                3
+              ]
+            }
+          },
+          {
+            "name": "who",
+            "kind": "sel",
+            "lag": 3,
+            "space": {
+              "kind": "vec",
+              "dims": [
+                3
+              ]
+            }
+          }
+        ],
+        "description": "3 objects (slots 0..2), each holding at most one of 3 values. Output `img` shows the object-value table 2 steps late. STOREk: object k now holds the value shown on `val` (one-hot). SWAPjk: objects j and k exchange their values. Query qobj (one object): output valueof shows that object's value (one-hot), 3 steps after the query, as of just before the query. Query qval (one value): output who marks every object holding that value, 3 steps after the query, as of just before the query."
+      }
+    },
+    {
+      "uid": "UAB0",
+      "family": "AB",
+      "params": {
+        "cmds": [
+          "ROT270",
+          "ROT90"
+        ],
+        "queries": []
+      },
+      "sizes": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "interface_smallest": {
+        "name": "UAB0@2x3",
+        "state_space": {
+          "kind": "objgrid",
+          "dims": [
+            2,
+            3
+          ]
+        },
+        "letters": [
+          {
+            "name": "PLACE0",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "PLACE1",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "ROT2700",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "ROT2701",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "ROT900",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "ROT901",
+            "data": null,
+            "cond_delay": null
+          }
+        ],
+        "data": {
+          "see": {
+            "kind": "grid",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "queries": {},
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          }
+        ],
+        "description": "2 objects on a 3x3 grid (x left-to-right, y top-to-bottom); objects may overlap. Output img shows, for each object k and cell (x, y), whether object k covers it, 2 steps late. PLACEk: object k's shape becomes the shape shown on `see`. ROT270k: rotate the shape 90 degrees counter-clockwise -- applied to object k only. ROT90k: rotate the remembered shape 90 degrees clockwise about the grid centre -- applied to object k only."
+      }
+    },
+    {
+      "uid": "UAB1",
+      "family": "AB",
+      "params": {
+        "cmds": [
+          "FLIPH"
+        ],
+        "queries": [
+          "toptouch"
+        ]
+      },
+      "sizes": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "interface_smallest": {
+        "name": "UAB1@2x3",
+        "state_space": {
+          "kind": "objgrid",
+          "dims": [
+            2,
+            3
+          ]
+        },
+        "letters": [
+          {
+            "name": "PLACE0",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "PLACE1",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "FLIPH0",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "FLIPH1",
+            "data": null,
+            "cond_delay": null
+          }
+        ],
+        "data": {
+          "see": {
+            "kind": "grid",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "queries": {},
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          },
+          {
+            "name": "top0",
+            "kind": "any",
+            "lag": 3,
+            "space": null
+          },
+          {
+            "name": "top1",
+            "kind": "any",
+            "lag": 3,
+            "space": null
+          }
+        ],
+        "description": "2 objects on a 3x3 grid (x left-to-right, y top-to-bottom); objects may overlap. Output img shows, for each object k and cell (x, y), whether object k covers it, 2 steps late. PLACEk: object k's shape becomes the shape shown on `see`. FLIPHk: mirror the shape left-right -- applied to object k only. Outputs topk: 1 iff object k has a cell in the top row, 3 steps late."
+      }
+    },
+    {
+      "uid": "UAB2",
+      "family": "AB",
+      "params": {
+        "cmds": [
+          "RIGHT"
+        ],
+        "queries": [
+          "toptouch"
+        ]
+      },
+      "sizes": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "interface_smallest": {
+        "name": "UAB2@2x3",
+        "state_space": {
+          "kind": "objgrid",
+          "dims": [
+            2,
+            3
+          ]
+        },
+        "letters": [
+          {
+            "name": "PLACE0",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "PLACE1",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "RIGHT0",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "RIGHT1",
+            "data": null,
+            "cond_delay": null
+          }
+        ],
+        "data": {
+          "see": {
+            "kind": "grid",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "queries": {},
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          },
+          {
+            "name": "top0",
+            "kind": "any",
+            "lag": 3,
+            "space": null
+          },
+          {
+            "name": "top1",
+            "kind": "any",
+            "lag": 3,
+            "space": null
+          }
+        ],
+        "description": "2 objects on a 3x3 grid (x left-to-right, y top-to-bottom); objects may overlap. Output img shows, for each object k and cell (x, y), whether object k covers it, 2 steps late. PLACEk: object k's shape becomes the shape shown on `see`. RIGHTk: move the shape one cell right; cells pushed past the border disappear -- applied to object k only. Outputs topk: 1 iff object k has a cell in the top row, 3 steps late."
+      }
+    },
+    {
+      "uid": "UAB3",
+      "family": "AB",
+      "params": {
+        "cmds": [
+          "LEFT"
+        ],
+        "queries": []
+      },
+      "sizes": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "interface_smallest": {
+        "name": "UAB3@2x3",
+        "state_space": {
+          "kind": "objgrid",
+          "dims": [
+            2,
+            3
+          ]
+        },
+        "letters": [
+          {
+            "name": "PLACE0",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "PLACE1",
+            "data": "see",
+            "cond_delay": null
+          },
+          {
+            "name": "LEFT0",
+            "data": null,
+            "cond_delay": null
+          },
+          {
+            "name": "LEFT1",
+            "data": null,
+            "cond_delay": null
+          }
+        ],
+        "data": {
+          "see": {
+            "kind": "grid",
+            "dims": [
+              3
+            ]
+          }
+        },
+        "queries": {},
+        "outputs": [
+          {
+            "name": "img",
+            "kind": "img",
+            "lag": 2,
+            "space": null
+          }
+        ],
+        "description": "2 objects on a 3x3 grid (x left-to-right, y top-to-bottom); objects may overlap. Output img shows, for each object k and cell (x, y), whether object k covers it, 2 steps late. PLACEk: object k's shape becomes the shape shown on `see`. LEFTk: move the shape one cell left; cells pushed past the border disappear -- applied to object k only."
+      }
+    }
+  ]
+}
