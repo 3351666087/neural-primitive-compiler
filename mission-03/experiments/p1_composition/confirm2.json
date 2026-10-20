@@ -1,0 +1,677 @@
+{
+ "rows": [
+  {
+   "uid": "C0",
+   "command": "CMD2",
+   "delays_consistent": [
+    3
+   ],
+   "identified_d": 3,
+   "events": {
+    "3": 1271,
+    "5": 1262
+   },
+   "E-latent": "rejected",
+   "E-union": "rejected",
+   "E-mono": "rejected",
+   "guard_family": {
+    "consistent_guards": [
+     "ANY col0"
+    ],
+    "detail": {
+     "ANY col0": {
+      "status": "consistent",
+      "covers": {
+       "True": 1,
+       "False": 1
+      },
+      "pieces": {
+       "True": 5,
+       "False": 1
+      },
+      "fit_s": 2.3,
+      "N8": {
+       "hypotheses": 1,
+       "wrong_per_hypothesis": [
+        0
+       ],
+       "events": 397
+      },
+      "N11": {
+       "hypotheses": 1,
+       "wrong_per_hypothesis": [
+        0
+       ],
+       "events": 391
+      }
+     }
+    },
+    "rejected": {
+     "ANY row0": "ANY row0: not a union map",
+     "ANY row-1": "ANY row-1: not a union map",
+     "ANY col-1": "ANY col-1: not a union map",
+     "ANY row1": "ANY row1: not a union map",
+     "ANY row-2": "ANY row-2: not a union map",
+     "ANY col1": "ANY col1: not a union map",
+     "ANY col-2": "ANY col-2: not a union map",
+     "ANY diag": "ANY diag: not a union map",
+     "ANY anti": "ANY anti: not a union map",
+     "ANY all": "ANY all: not a union map",
+     "ALL row0": "ALL row0: not a union map",
+     "ALL row-1": "ALL row-1: not a union map",
+     "ALL col0": "ALL col0: not a union map",
+     "ALL col-1": "ALL col-1: not a union map",
+     "ALL row1": "ALL row1: not a union map",
+     "ALL row-2": "ALL row-2: not a union map",
+     "ALL col1": "ALL col1: not a union map",
+     "ALL col-2": "ALL col-2: not a union map",
+     "ALL diag": "ALL diag: not a union map",
+     "ALL anti": "ALL anti: not a union map",
+     "ALL all": "ALL all: not a union map"
+    }
+   },
+   "region_invention": {
+    "unique_at_probe_sizes": true,
+    "region_sizes": {
+     "3": 3,
+     "5": 5
+    },
+    "interval_descriptions": [
+     [
+      "0",
+      "0",
+      "0",
+      "N-1"
+     ]
+    ],
+    "region_N8_distinct_predictions": 1,
+    "region_N11_distinct_predictions": 1,
+    "status": "consistent",
+    "covers": {
+     "True": 1,
+     "False": 1
+    },
+    "pieces": {
+     "True": 5,
+     "False": 1
+    },
+    "fit_s": 2.3,
+    "N8": {
+     "hypotheses": 1,
+     "wrong_per_hypothesis": [
+      0
+     ],
+     "events": 397
+    },
+    "N11": {
+     "hypotheses": 1,
+     "wrong_per_hypothesis": [
+      0
+     ],
+     "events": 391
+    }
+   }
+  },
+  {
+   "uid": "C1",
+   "command": "CMD2",
+   "delays_consistent": [
+    3
+   ],
+   "identified_d": 3,
+   "events": {
+    "3": 1271,
+    "5": 1262
+   },
+   "E-latent": "rejected",
+   "E-union": "rejected",
+   "E-mono": "rejected",
+   "guard_family": {
+    "consistent_guards": [
+     "ANY row0"
+    ],
+    "detail": {
+     "ANY row0": {
+      "status": "consistent",
+      "covers": {
+       "True": 1,
+       "False": 1
+      },
+      "pieces": {
+       "True": 5,
+       "False": 1
+      },
+      "fit_s": 2.3,
+      "N8": {
+       "hypotheses": 1,
+       "wrong_per_hypothesis": [
+        0
+       ],
+       "events": 397
+      },
+      "N11": {
+       "hypotheses": 1,
+       "wrong_per_hypothesis": [
+        0
+       ],
+       "events": 391
+      }
+     }
+    },
+    "rejected": {
+     "ANY row-1": "ANY row-1: not a union map",
+     "ANY col0": "ANY col0: not a union map",
+     "ANY col-1": "ANY col-1: not a union map",
+     "ANY row1": "ANY row1: not a union map",
+     "ANY row-2": "ANY row-2: not a union map",
+     "ANY col1": "ANY col1: not a union map",
+     "ANY col-2": "ANY col-2: not a union map",
+     "ANY diag": "ANY diag: not a union map",
+     "ANY anti": "ANY anti: not a union map",
+     "ANY all": "ANY all: not a union map",
+     "ALL row0": "ALL row0: not a union map",
+     "ALL row-1": "ALL row-1: not a union map",
+     "ALL col0": "ALL col0: not a union map",
+     "ALL col-1": "ALL col-1: not a union map",
+     "ALL row1": "ALL row1: not a union map",
+     "ALL row-2": "ALL row-2: not a union map",
+     "ALL col1": "ALL col1: not a union map",
+     "ALL col-2": "ALL col-2: not a union map",
+     "ALL diag": "ALL diag: not a union map",
+     "ALL anti": "ALL anti: not a union map",
+     "ALL all": "ALL all: not a union map"
+    }
+   },
+   "region_invention": {
+    "unique_at_probe_sizes": true,
+    "region_sizes": {
+     "3": 3,
+     "5": 5
+    },
+    "interval_descriptions": [
+     [
+      "0",
+      "N-1",
+      "0",
+      "0"
+     ]
+    ],
+    "region_N8_distinct_predictions": 1,
+    "region_N11_distinct_predictions": 1,
+    "status": "consistent",
+    "covers": {
+     "True": 1,
+     "False": 1
+    },
+    "pieces": {
+     "True": 5,
+     "False": 1
+    },
+    "fit_s": 2.2,
+    "N8": {
+     "hypotheses": 1,
+     "wrong_per_hypothesis": [
+      0
+     ],
+     "events": 397
+    },
+    "N11": {
+     "hypotheses": 1,
+     "wrong_per_hypothesis": [
+      0
+     ],
+     "events": 391
+    }
+   }
+  },
+  {
+   "uid": "C2",
+   "command": "CMD2",
+   "delays_consistent": [
+    4
+   ],
+   "identified_d": 4,
+   "events": {
+    "3": 1079,
+    "5": 1068
+   },
+   "E-latent": "rejected",
+   "E-union": "rejected",
+   "E-mono": "rejected",
+   "guard_family": {
+    "consistent_guards": [
+     "ANY col0"
+    ],
+    "detail": {
+     "ANY col0": {
+      "status": "consistent",
+      "covers": {
+       "True": 1,
+       "False": 1
+      },
+      "pieces": {
+       "True": 1,
+       "False": 1
+      },
+      "fit_s": 1.8,
+      "N8": {
+       "hypotheses": 1,
+       "wrong_per_hypothesis": [
+        0
+       ],
+       "events": 330
+      },
+      "N11": {
+       "hypotheses": 1,
+       "wrong_per_hypothesis": [
+        0
+       ],
+       "events": 321
+      }
+     }
+    },
+    "rejected": {
+     "ANY row0": "ANY row0: not a union map",
+     "ANY row-1": "ANY row-1: not a union map",
+     "ANY col-1": "ANY col-1: not a union map",
+     "ANY row1": "ANY row1: not a union map",
+     "ANY row-2": "ANY row-2: not a union map",
+     "ANY col1": "ANY col1: not a union map",
+     "ANY col-2": "ANY col-2: not a union map",
+     "ANY diag": "ANY diag: not a union map",
+     "ANY anti": "ANY anti: not a union map",
+     "ANY all": "ANY all: not a union map",
+     "ALL row0": "ALL row0: not a union map",
+     "ALL row-1": "ALL row-1: not a union map",
+     "ALL col0": "ALL col0: not a union map",
+     "ALL col-1": "ALL col-1: not a union map",
+     "ALL row1": "ALL row1: not a union map",
+     "ALL row-2": "ALL row-2: a branch has no events",
+     "ALL col1": "ALL col1: not a union map",
+     "ALL col-2": "ALL col-2: not a union map",
+     "ALL diag": "ALL diag: not a union map",
+     "ALL anti": "ALL anti: a branch has no events",
+     "ALL all": "ALL all: a branch has no events"
+    }
+   },
+   "region_invention": {
+    "unique_at_probe_sizes": true,
+    "region_sizes": {
+     "3": 3,
+     "5": 5
+    },
+    "interval_descriptions": [
+     [
+      "0",
+      "0",
+      "0",
+      "N-1"
+     ]
+    ],
+    "region_N8_distinct_predictions": 1,
+    "region_N11_distinct_predictions": 1,
+    "status": "consistent",
+    "covers": {
+     "True": 1,
+     "False": 1
+    },
+    "pieces": {
+     "True": 1,
+     "False": 1
+    },
+    "fit_s": 1.8,
+    "N8": {
+     "hypotheses": 1,
+     "wrong_per_hypothesis": [
+      0
+     ],
+     "events": 330
+    },
+    "N11": {
+     "hypotheses": 1,
+     "wrong_per_hypothesis": [
+      0
+     ],
+     "events": 321
+    }
+   }
+  },
+  {
+   "uid": "C3",
+   "command": "CMD2",
+   "delays_consistent": [
+    4
+   ],
+   "identified_d": 4,
+   "events": {
+    "3": 1079,
+    "5": 1068
+   },
+   "E-latent": "rejected",
+   "E-union": "rejected",
+   "E-mono": "consistent",
+   "guard_family": {
+    "consistent_guards": [
+     "ANY row0"
+    ],
+    "detail": {
+     "ANY row0": {
+      "status": "consistent",
+      "covers": {
+       "True": 1,
+       "False": 1
+      },
+      "pieces": {
+       "True": 1,
+       "False": 1
+      },
+      "fit_s": 1.8,
+      "N8": {
+       "hypotheses": 1,
+       "wrong_per_hypothesis": [
+        0
+       ],
+       "events": 330
+      },
+      "N11": {
+       "hypotheses": 1,
+       "wrong_per_hypothesis": [
+        0
+       ],
+       "events": 321
+      }
+     }
+    },
+    "rejected": {
+     "ANY row-1": "ANY row-1: not a union map",
+     "ANY col0": "ANY col0: not a union map",
+     "ANY col-1": "ANY col-1: not a union map",
+     "ANY row1": "ANY row1: not a union map",
+     "ANY row-2": "ANY row-2: not a union map",
+     "ANY col1": "ANY col1: not a union map",
+     "ANY col-2": "ANY col-2: not a union map",
+     "ANY diag": "ANY diag: not a union map",
+     "ANY anti": "ANY anti: not a union map",
+     "ANY all": "ANY all: not a union map",
+     "ALL row0": "ALL row0: not a union map",
+     "ALL row-1": "ALL row-1: not a union map",
+     "ALL col0": "ALL col0: a branch has no events",
+     "ALL col-1": "ALL col-1: not a union map",
+     "ALL row1": "ALL row1: a branch has no events",
+     "ALL row-2": "ALL row-2: a branch has no events",
+     "ALL col1": "ALL col1: not a union map",
+     "ALL col-2": "ALL col-2: not a union map",
+     "ALL diag": "ALL diag: not a union map",
+     "ALL anti": "ALL anti: not a union map",
+     "ALL all": "ALL all: a branch has no events"
+    }
+   },
+   "region_invention": {
+    "unique_at_probe_sizes": true,
+    "region_sizes": {
+     "3": 3,
+     "5": 5
+    },
+    "interval_descriptions": [
+     [
+      "0",
+      "N-1",
+      "0",
+      "0"
+     ]
+    ],
+    "region_N8_distinct_predictions": 1,
+    "region_N11_distinct_predictions": 1,
+    "status": "consistent",
+    "covers": {
+     "True": 1,
+     "False": 1
+    },
+    "pieces": {
+     "True": 1,
+     "False": 1
+    },
+    "fit_s": 1.8,
+    "N8": {
+     "hypotheses": 1,
+     "wrong_per_hypothesis": [
+      0
+     ],
+     "events": 330
+    },
+    "N11": {
+     "hypotheses": 1,
+     "wrong_per_hypothesis": [
+      0
+     ],
+     "events": 321
+    }
+   }
+  },
+  {
+   "uid": "C4",
+   "command": "CMD2",
+   "delays_consistent": [
+    4
+   ],
+   "identified_d": 4,
+   "events": {
+    "3": 1079,
+    "5": 1068
+   },
+   "E-latent": "rejected",
+   "E-union": "rejected",
+   "E-mono": "rejected",
+   "guard_family": {
+    "consistent_guards": [
+     "ANY col0"
+    ],
+    "detail": {
+     "ANY col0": {
+      "status": "consistent",
+      "covers": {
+       "True": 1,
+       "False": 1
+      },
+      "pieces": {
+       "True": 1,
+       "False": 1
+      },
+      "fit_s": 1.8,
+      "N8": {
+       "hypotheses": 1,
+       "wrong_per_hypothesis": [
+        0
+       ],
+       "events": 330
+      },
+      "N11": {
+       "hypotheses": 1,
+       "wrong_per_hypothesis": [
+        0
+       ],
+       "events": 321
+      }
+     }
+    },
+    "rejected": {
+     "ANY row0": "ANY row0: not a union map",
+     "ANY row-1": "ANY row-1: not a union map",
+     "ANY col-1": "ANY col-1: not a union map",
+     "ANY row1": "ANY row1: not a union map",
+     "ANY row-2": "ANY row-2: not a union map",
+     "ANY col1": "ANY col1: not a union map",
+     "ANY col-2": "ANY col-2: not a union map",
+     "ANY diag": "ANY diag: not a union map",
+     "ANY anti": "ANY anti: not a union map",
+     "ANY all": "ANY all: not a union map",
+     "ALL row0": "ALL row0: not a union map",
+     "ALL row-1": "ALL row-1: not a union map",
+     "ALL col0": "ALL col0: a branch has no events",
+     "ALL col-1": "ALL col-1: not a union map",
+     "ALL row1": "ALL row1: not a union map",
+     "ALL row-2": "ALL row-2: not a union map",
+     "ALL col1": "ALL col1: not a union map",
+     "ALL col-2": "ALL col-2: not a union map",
+     "ALL diag": "ALL diag: not a union map",
+     "ALL anti": "ALL anti: a branch has no events",
+     "ALL all": "ALL all: a branch has no events"
+    }
+   },
+   "region_invention": {
+    "unique_at_probe_sizes": true,
+    "region_sizes": {
+     "3": 3,
+     "5": 5
+    },
+    "interval_descriptions": [
+     [
+      "0",
+      "0",
+      "0",
+      "N-1"
+     ]
+    ],
+    "region_N8_distinct_predictions": 1,
+    "region_N11_distinct_predictions": 1,
+    "status": "consistent",
+    "covers": {
+     "True": 1,
+     "False": 1
+    },
+    "pieces": {
+     "True": 1,
+     "False": 1
+    },
+    "fit_s": 1.9,
+    "N8": {
+     "hypotheses": 1,
+     "wrong_per_hypothesis": [
+      0
+     ],
+     "events": 330
+    },
+    "N11": {
+     "hypotheses": 1,
+     "wrong_per_hypothesis": [
+      0
+     ],
+     "events": 321
+    }
+   }
+  },
+  {
+   "uid": "C5",
+   "command": "CMD2",
+   "delays_consistent": [
+    4
+   ],
+   "identified_d": 4,
+   "events": {
+    "3": 1079,
+    "5": 1068
+   },
+   "E-latent": "rejected",
+   "E-union": "rejected",
+   "E-mono": "rejected",
+   "guard_family": {
+    "consistent_guards": [
+     "ANY row0"
+    ],
+    "detail": {
+     "ANY row0": {
+      "status": "consistent",
+      "covers": {
+       "True": 1,
+       "False": 1
+      },
+      "pieces": {
+       "True": 1,
+       "False": 1
+      },
+      "fit_s": 1.9,
+      "N8": {
+       "hypotheses": 1,
+       "wrong_per_hypothesis": [
+        0
+       ],
+       "events": 330
+      },
+      "N11": {
+       "hypotheses": 1,
+       "wrong_per_hypothesis": [
+        0
+       ],
+       "events": 321
+      }
+     }
+    },
+    "rejected": {
+     "ANY row-1": "ANY row-1: not a union map",
+     "ANY col0": "ANY col0: not a union map",
+     "ANY col-1": "ANY col-1: not a union map",
+     "ANY row1": "ANY row1: not a union map",
+     "ANY row-2": "ANY row-2: not a union map",
+     "ANY col1": "ANY col1: not a union map",
+     "ANY col-2": "ANY col-2: not a union map",
+     "ANY diag": "ANY diag: not a union map",
+     "ANY anti": "ANY anti: not a union map",
+     "ANY all": "ANY all: not a union map",
+     "ALL row0": "ALL row0: not a union map",
+     "ALL row-1": "ALL row-1: a branch has no events",
+     "ALL col0": "ALL col0: not a union map",
+     "ALL col-1": "ALL col-1: not a union map",
+     "ALL row1": "ALL row1: a branch has no events",
+     "ALL row-2": "ALL row-2: not a union map",
+     "ALL col1": "ALL col1: not a union map",
+     "ALL col-2": "ALL col-2: not a union map",
+     "ALL diag": "ALL diag: not a union map",
+     "ALL anti": "ALL anti: a branch has no events",
+     "ALL all": "ALL all: a branch has no events"
+    }
+   },
+   "region_invention": {
+    "unique_at_probe_sizes": true,
+    "region_sizes": {
+     "3": 3,
+     "5": 5
+    },
+    "interval_descriptions": [
+     [
+      "0",
+      "N-1",
+      "0",
+      "0"
+     ]
+    ],
+    "region_N8_distinct_predictions": 1,
+    "region_N11_distinct_predictions": 1,
+    "status": "consistent",
+    "covers": {
+     "True": 1,
+     "False": 1
+    },
+    "pieces": {
+     "True": 1,
+     "False": 1
+    },
+    "fit_s": 1.4,
+    "N8": {
+     "hypotheses": 1,
+     "wrong_per_hypothesis": [
+      0
+     ],
+     "events": 330
+    },
+    "N11": {
+     "hypotheses": 1,
+     "wrong_per_hypothesis": [
+      0
+     ],
+     "events": 321
+    }
+   }
+  }
+ ],
+ "time_s": 59.9
+}
