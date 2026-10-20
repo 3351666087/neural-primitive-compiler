@@ -1,0 +1,164 @@
+{
+  "random": [
+    {
+      "m": 1,
+      "specs": 60,
+      "not_causal": 0,
+      "agree64": 60,
+      "disagree64": 0,
+      "disagree_b1": 2,
+      "disagree_b2": 0,
+      "exact_realizable": 56,
+      "max_abs_W_exact": 1,
+      "provably_complete_64": true
+    },
+    {
+      "m": 2,
+      "specs": 60,
+      "not_causal": 0,
+      "agree64": 60,
+      "disagree64": 0,
+      "disagree_b1": 6,
+      "disagree_b2": 0,
+      "exact_realizable": 53,
+      "max_abs_W_exact": 2,
+      "provably_complete_64": true
+    },
+    {
+      "m": 3,
+      "specs": 60,
+      "not_causal": 0,
+      "agree64": 60,
+      "disagree64": 0,
+      "disagree_b1": 7,
+      "disagree_b2": 1,
+      "exact_realizable": 54,
+      "max_abs_W_exact": 2,
+      "provably_complete_64": true
+    },
+    {
+      "m": 4,
+      "specs": 60,
+      "not_causal": 0,
+      "agree64": 60,
+      "disagree64": 0,
+      "disagree_b1": 7,
+      "disagree_b2": 0,
+      "exact_realizable": 51,
+      "max_abs_W_exact": 2,
+      "provably_complete_64": false
+    },
+    {
+      "m": 5,
+      "specs": 60,
+      "not_causal": 0,
+      "agree64": 60,
+      "disagree64": 0,
+      "disagree_b1": 9,
+      "disagree_b2": 2,
+      "exact_realizable": 49,
+      "max_abs_W_exact": 2,
+      "provably_complete_64": false
+    }
+  ],
+  "witness_comparison": [
+    {
+      "k_bits": 4,
+      "m_inputs": 8,
+      "letters": 256,
+      "bounded64_realizable": true,
+      "exact_realizable": true,
+      "exact_W": [
+        1,
+        2,
+        4,
+        8,
+        -1,
+        -2,
+        -4,
+        -8
+      ],
+      "time_machine_s": 0.0,
+      "time_bounded_s": 0.09,
+      "time_exact_s": 0.09
+    },
+    {
+      "k_bits": 6,
+      "m_inputs": 12,
+      "letters": 4096,
+      "bounded64_realizable": true,
+      "exact_realizable": true,
+      "exact_W": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        -1,
+        -2,
+        -4,
+        -8,
+        -16,
+        -32
+      ],
+      "time_machine_s": 0.06,
+      "time_bounded_s": 2.0,
+      "time_exact_s": 2.06
+    },
+    {
+      "k_bits": 7,
+      "m_inputs": 14,
+      "letters": 16384,
+      "bounded64_realizable": true,
+      "exact_realizable": true,
+      "exact_W": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        -1,
+        -2,
+        -4,
+        -8,
+        -16,
+        -32,
+        -64
+      ],
+      "time_machine_s": 0.26,
+      "time_bounded_s": 9.22,
+      "time_exact_s": 9.7
+    },
+    {
+      "k_bits": 8,
+      "m_inputs": 16,
+      "letters": 65536,
+      "bounded64_realizable": false,
+      "exact_realizable": true,
+      "exact_W": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        -1,
+        -2,
+        -4,
+        -8,
+        -16,
+        -32,
+        -64,
+        -128
+      ],
+      "time_machine_s": 1.19,
+      "time_bounded_s": 42.21,
+      "time_exact_s": 52.01
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{"task": "A2", "letters": {"LOAD": {"rule_shapes": {"load": 4}, "relation": "load/mixed"}, "ROT90": {"rule_shapes": {"copy": 4}, "relation": "permutation"}, "FLIPH": {"rule_shapes": {"copy": 4}, "relation": "permutation"}, "RIGHT": {"rule_shapes": {"zero": 2, "copy": 2}, "relation": "partial-map"}, "DILATE": {"rule_shapes": {"union": 4}, "relation": "relation (union)"}}, "outputs": {"any_top": ["any"], "cellon": ["sel"]}, "description_bits": {"flat_fsm": 1344, "union_tables": 102}}
+{"task": "A3", "letters": {"LOAD": {"rule_shapes": {"load": 9}, "relation": "load/mixed"}, "ROT90": {"rule_shapes": {"copy": 9}, "relation": "permutation"}, "FLIPH": {"rule_shapes": {"copy": 9}, "relation": "permutation"}, "RIGHT": {"rule_shapes": {"zero": 3, "copy": 6}, "relation": "partial-map"}, "DILATE": {"rule_shapes": {"union": 9}, "relation": "relation (union)"}}, "outputs": {"any_top": ["any"], "cellon": ["sel"]}, "description_bits": {"flat_fsm": 2382336, "union_tables": 325}}
+{"task": "A4", "letters": {"LOAD": {"rule_shapes": {"load": 16}, "relation": "load/mixed"}, "ROT90": {"rule_shapes": {"copy": 16}, "relation": "permutation"}, "FLIPH": {"rule_shapes": {"copy": 16}, "relation": "permutation"}, "RIGHT": {"rule_shapes": {"zero": 4, "copy": 12}, "relation": "partial-map"}, "DILATE": {"rule_shapes": {"union": 16}, "relation": "relation (union)"}}, "outputs": {"any_top": ["any"], "cellon": ["sel"]}, "description_bits": {"flat_fsm": 68724719616, "union_tables": 706}}
+{"task": "B2x2", "letters": {"STORE0": {"rule_shapes": {"load": 2, "copy": 2}, "relation": "load/mixed"}, "STORE1": {"rule_shapes": {"copy": 2, "load": 2}, "relation": "load/mixed"}, "SWAP01": {"rule_shapes": {"copy": 4}, "relation": "permutation"}, "COPY01": {"rule_shapes": {"copy": 4}, "relation": "many-to-one map"}, "COPY10": {"rule_shapes": {"copy": 4}, "relation": "many-to-one map"}, "CLEAR0": {"rule_shapes": {"zero": 2, "copy": 2}, "relation": "partial-map"}, "CLEAR1": {"rule_shapes": {"copy": 2, "zero": 2}, "relation": "partial-map"}}, "outputs": {"valueof": ["sel"], "who": ["sel"], "sa
+{"task": "B3x3", "letters": {"STORE0": {"rule_shapes": {"load": 3, "copy": 6}, "relation": "load/mixed"}, "STORE1": {"rule_shapes": {"copy": 6, "load": 3}, "relation": "load/mixed"}, "STORE2": {"rule_shapes": {"copy": 6, "load": 3}, "relation": "load/mixed"}, "SWAP01": {"rule_shapes": {"copy": 9}, "relation": "permutation"}, "SWAP02": {"rule_shapes": {"copy": 9}, "relation": "permutation"}, "SWAP12": {"rule_shapes": {"copy": 9}, "relation": "permutation"}, "COPY01": {"rule_shapes": {"copy": 9}, "relation": "many-to-one map"}, "COPY02": {"rule_shapes": {"copy": 9}, "relation": "many-to-one map"
+{"task": "A3cond", "letters": {"LOAD": {"rule_shapes": {"load": 9}, "relation": "load/mixed"}, "ROT90": {"rule_shapes": {"copy": 9}, "relation": "permutation"}, "FLIPV": {"rule_shapes": {"copy": 9}, "relation": "permutation"}, "COND": "nonlinear"}, "outputs": {"any_top": ["any"]}, "description_bits": {"flat_fsm": 2377728, "union_tables": 142}}
+{"task": "A3invert", "letters": {"LOAD": {"rule_shapes": {"load": 9}, "relation": "load/mixed"}, "ROT90": {"rule_shapes": {"copy": 9}, "relation": "permutation"}, "INVERT": "nonlinear"}, "outputs": {}, "description_bits": {"flat_fsm": 2373120, "union_tables": 94}}
+{
+  "rule_shapes_all": {
+    "load": 60,
+    "copy": 242,
+    "zero": 22,
+    "union": 29,
+    "nonlinear": 2
+  },
+  "rule_shapes_by_family": {
+    "A": {
+      "load": 47,
+      "copy": 105,
+      "zero": 9,
+      "union": 29,
+      "nonlinear": 2
+    },
+    "B": {
+      "load": 13,
+      "copy": 137,
+      "zero": 13
+    }
+  },
+  "letter_relation_classes_by_family": {
+    "A": {
+      "load/mixed": 5,
+      "permutation": 9,
+      "partial-map": 3,
+      "relation (union)": 3
+    },
+    "B": {
+      "load/mixed": 5,
+      "permutation": 4,
+      "many-to-one map": 8,
+      "partial-map": 5
+    }
+  },
+  "output_shapes": {
+    "any": 4,
+    "sel": 7,
+    "nonlinear": 2
+  },
+  "letters_nonlinear": [
+    [
+      "A3cond",
+      "COND"
+    ],
+    [
+      "A3invert",
+      "INVERT"
+    ]
+  ],
+  "outputs_nonlinear": [
+    [
+      "B2x2",
+      "same"
+    ],
+    [
+      "B3x3",
+      "same"
+    ]
+  ],
+  "union_template_coverage_letters": "353 coordinate rules fit; 2 letters do not"
+}
+{
+ "A:DILATE": {
+  "sizes": [
+   "A2",
+   "A3",
+   "A4"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['dilate']"
+  ]
+ },
+ "A:FLIPH": {
+  "sizes": [
+   "A2",
+   "A3",
+   "A4"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['compose', ['flipv'], ['rot180']]",
+   "['compose', ['rot180'], ['flipv']]",
+   "['compose', ['rot270'], ['transpose']]",
+   "['compose', ['transpose'], ['rot90']]",
+   "['fliph']"
+  ]
+ },
+ "A:FLIPV": {
+  "sizes": [
+   "A3cond"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['compose', ['fliph'], ['rot180']]",
+   "['compose', ['rot180'], ['fliph']]",
+   "['compose', ['rot90'], ['transpose']]",
+   "['compose', ['transpose'], ['rot270']]",
+   "['flipv']"
+  ]
+ },
+ "A:LOAD": {
+  "sizes": [
+   "A2",
+   "A3",
+   "A4",
+   "A3cond",
+   "A3invert"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['load', 'see']"
+  ]
+ },
+ "A:RIGHT": {
+  "sizes": [
+   "A2",
+   "A3",
+   "A4"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['shift', 1, 0, 'clip']"
+  ]
+ },
+ "A:ROT90": {
+  "sizes": [
+   "A2",
+   "A3",
+   "A4",
+   "A3cond",
+   "A3invert"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['compose', ['flipv'], ['transpose']]",
+   "['compose', ['rot180'], ['rot270']]",
+   "['compose', ['rot270'], ['rot180']]",
+   "['compose', ['transpose'], ['fliph']]",
+   "['rot90']"
+  ]
+ },
+ "B:CLEAR0": {
+  "sizes": [
+   "B2x2",
+   "B3x3"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['clear_row', 0]"
+  ]
+ },
+ "B:CLEAR1": {
+  "sizes": [
+   "B2x2",
+   "B3x3"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['clear_row', 1]"
+  ]
+ },
+ "B:CLEAR2": {
+  "sizes": [
+   "B3x3"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['clear_row', 2]"
+  ]
+ },
+ "B:COPY01": {
+  "sizes": [
+   "B2x2",
+   "B3x3"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['copy_row', 0, 1]"
+  ]
+ },
+ "B:COPY02": {
+  "sizes": [
+   "B3x3"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['copy_row', 0, 2]"
+  ]
+ },
+ "B:COPY10": {
+  "sizes": [
+   "B2x2",
+   "B3x3"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['copy_row', 1, 0]"
+  ]
+ },
+ "B:COPY12": {
+  "sizes": [
+   "B3x3"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['copy_row', 1, 2]"
+  ]
+ },
+ "B:COPY20": {
+  "sizes": [
+   "B3x3"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['copy_row', 2, 0]"
+  ]
+ },
+ "B:COPY21": {
+  "sizes": [
+   "B3x3"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['copy_row', 2, 1]"
+  ]
+ },
+ "B:STORE0": {
+  "sizes": [
+   "B2x2",
+   "B3x3"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['store_row', 0, 'val']"
+  ]
+ },
+ "B:STORE1": {
+  "sizes": [
+   "B2x2",
+   "B3x3"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['store_row', 1, 'val']"
+  ]
+ },
+ "B:STORE2": {
+  "sizes": [
+   "B3x3"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['store_row', 2, 'val']"
+  ]
+ },
+ "B:SWAP01": {
+  "sizes": [
+   "B2x2",
+   "B3x3"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['swap_rows', 0, 1]"
+  ]
+ },
+ "B:SWAP02": {
+  "sizes": [
+   "B3x3"
+  ],
+  "vocabulary_matches_at_every_size": [
+   "['swap_rows', 0, 2]"
+  ]
+ 

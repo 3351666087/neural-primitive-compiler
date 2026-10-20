@@ -1,0 +1,371 @@
+{
+  "E1_certificate": [
+    {
+      "K": 2,
+      "V": 2,
+      "true_states": 9,
+      "distinct_superposition_codes": 8,
+      "bits_needed_by_any_code": 3.17,
+      "superposition_bits": 4,
+      "product_code_bits": 4,
+      "collision": {
+        "code": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "state_a": [
+          0,
+          1
+        ],
+        "state_b": [
+          1,
+          0
+        ],
+        "object_queried": 0,
+        "answer_a": 0,
+        "answer_b": 1
+      }
+    },
+    {
+      "K": 3,
+      "V": 3,
+      "true_states": 64,
+      "distinct_superposition_codes": 35,
+      "bits_needed_by_any_code": 6.0,
+      "superposition_bits": 6,
+      "product_code_bits": 9,
+      "collision": {
+        "code": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "state_a": [
+          null,
+          0,
+          1
+        ],
+        "state_b": [
+          null,
+          1,
+          0
+        ],
+        "object_queried": 1,
+        "answer_a": 0,
+        "answer_b": 1
+      }
+    },
+    {
+      "K": 4,
+      "V": 4,
+      "true_states": 625,
+      "distinct_superposition_codes": 148,
+      "bits_needed_by_any_code": 9.29,
+      "superposition_bits": 8,
+      "product_code_bits": 16,
+      "collision": {
+        "code": [
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "state_a": [
+          null,
+          null,
+          0,
+          1
+        ],
+        "state_b": [
+          null,
+          null,
+          1,
+          0
+        ],
+        "object_queried": 2,
+        "answer_a": 0,
+        "answer_b": 1
+      }
+    }
+  ],
+  "E1_network": {
+    "neurons": 21,
+    "differential_ok": false,
+    "failing_traces": 360,
+    "counterexample": {
+      "output": "valueof_0",
+      "t": 9,
+      "trace": {
+        "STORE0": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "STORE1": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "val_0": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "val_1": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "qobj_0": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "qobj_1": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "got": 1,
+      "want": 0
+    }
+  },
+  "E2_group_shortcut": {
+    "shortcut: offsets cancel -> identity": {
+      "differential_ok": false,
+      "failing_traces": 121,
+      "counterexample": {
+        "output": "img_3_3",
+        "t": 9,
+        "trace": {
+          "LOAD": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "RIGHT": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "LEFT": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "RL": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "see_2_0": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "see_1_1": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "see_2_1": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "see_3_1": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "see_0_2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "see_2_2": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "see_3_2": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "see_1_3": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "see_3_3": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "got": 1,
+        "want": 0
+      }
+    },
+    "pullback composition": {
+      "differential_ok": true,
+      "failing_traces": 0,
+      "counterexample": null
+    }
+  },
+  "E3_invert": {
+    "learner_verdict_INVERT": "nonlinear",
+    "learner_verdict_ROT90": "union-table",
+    "ir_vocabulary_has_complement": false
+  }
+}

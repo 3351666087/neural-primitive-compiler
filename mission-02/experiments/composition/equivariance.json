@@ -1,0 +1,57 @@
+[
+  {
+    "task": "B_3x3_STORE_SWAP_COPY_CLEAR",
+    "sigma": "swap objects 0,1",
+    "structural": true,
+    "behavioural": true,
+    "synapses": 2349
+  },
+  {
+    "task": "B_3x3_STORE_SWAP_COPY_CLEAR",
+    "sigma": "cycle all objects",
+    "structural": true,
+    "behavioural": true,
+    "synapses": 2349
+  },
+  {
+    "task": "B_5x4_STORE_SWAP_COPY_CLEAR",
+    "sigma": "swap objects 0,1",
+    "structural": true,
+    "behavioural": true,
+    "synapses": 33720
+  },
+  {
+    "task": "B_5x4_STORE_SWAP_COPY_CLEAR",
+    "sigma": "cycle all objects",
+    "structural": true,
+    "behavioural": true,
+    "synapses": 33720
+  },
+  {
+    "task": "A_3_ROT90_FLIPH_FLIPV",
+    "sigma": "rotate grid 90 deg (FLIPH<->FLIPV)",
+    "structural": true,
+    "behavioural": true,
+    "synapses": 306
+  },
+  {
+    "task": "A_4_ROT90_FLIPH_FLIPV",
+    "sigma": "rotate grid 90 deg (FLIPH<->FLIPV)",
+    "structural": true,
+    "behavioural": true,
+    "synapses": 544
+  },
+  {
+    "task": "A_7_ROT90_FLIPH_FLIPV",
+    "sigma": "rotate grid 90 deg (FLIPH<->FLIPV)",
+    "structural": true,
+    "behavioural": true,
+    "synapses": 1666
+  },
+  {
+    "task": "A_4_ROT90_FLIPH",
+    "sigma": "rotate grid 90 deg, letter set not closed (control)",
+    "structural": false,
+    "reason": "rename is not a bijection on signals"
+  }
+]
