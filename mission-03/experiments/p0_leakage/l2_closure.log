@@ -1,0 +1,27 @@
+{'uid': 'UA0', 'command': 'CMD0', 'moves': ['DOWN', 'ROT90'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA0', 'command': 'CMD1', 'moves': ['ROT180'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA0', 'command': 'CMD2', 'moves': ['FLIPH', 'RIGHTWRAP'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA1', 'command': 'CMD0', 'moves': ['LEFT'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA1', 'command': 'CMD1', 'moves': ['LEFT'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA1', 'command': 'CMD2', 'moves': ['DOWN'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA2', 'command': 'CMD0', 'moves': ['ROT270', 'ROT270'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA2', 'command': 'CMD1', 'moves': ['TRANSPOSE'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA2', 'command': 'CMD2', 'moves': ['DILATE', 'LEFT'], 'pieces_consistent': 22, 'minimal_covers': 1, 'cover_size': 5, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA2', 'command': 'CMD3', 'moves': ['ROT270', 'TRANSPOSE'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA3', 'command': 'CMD0', 'moves': ['ROT90', 'TRANSPOSE'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA3', 'command': 'CMD1', 'moves': ['UP', 'FLIPH'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA3', 'command': 'CMD2', 'moves': ['DOWN'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA4', 'command': 'CMD0', 'moves': ['ROT270', 'TRANSPOSE'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA4', 'command': 'CMD1', 'moves': ['ROT180'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA4', 'command': 'CMD2', 'moves': ['UP', 'RIGHT'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA4', 'command': 'CMD3', 'moves': ['RIGHT'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA5', 'command': 'CMD0', 'moves': ['TRANSPOSE', 'FLIPH'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA5', 'command': 'CMD1', 'moves': ['DILATE', 'DOWN'], 'pieces_consistent': 21, 'minimal_covers': 1, 'cover_size': 5, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA5', 'command': 'CMD2', 'moves': ['FLIPV'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA5', 'command': 'CMD3', 'moves': ['TRANSPOSE'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA6', 'command': 'CMD0', 'moves': ['TRANSPOSE'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA6', 'command': 'CMD1', 'moves': ['UP'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA7', 'command': 'CMD0', 'moves': ['LEFT', 'FLIPH'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'uid': 'UA7', 'command': 'CMD1', 'moves': ['ROT270'], 'pieces_consistent': 1, 'minimal_covers': 1, 'cover_size': 1, 'covers_correct_at_horizon': 1, 'verdict': 'correct'}
+{'commands': 25, 'correct': 25, 'ambiguous': 0, 'no_cover': 0, 'wrong': 0, 'time_s': 12.4}
+exit 0

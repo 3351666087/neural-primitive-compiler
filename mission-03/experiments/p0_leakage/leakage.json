@@ -1,0 +1,674 @@
+{
+ "L1": {
+  "rows": [
+   {
+    "uid": "UA0",
+    "identical_to_llm_program": true
+   },
+   {
+    "uid": "UA1",
+    "identical_to_llm_program": true
+   },
+   {
+    "uid": "UA2",
+    "identical_to_llm_program": true
+   },
+   {
+    "uid": "UA3",
+    "identical_to_llm_program": true
+   },
+   {
+    "uid": "UA4",
+    "identical_to_llm_program": true
+   },
+   {
+    "uid": "UA5",
+    "identical_to_llm_program": true
+   },
+   {
+    "uid": "UA6",
+    "identical_to_llm_program": true
+   },
+   {
+    "uid": "UA7",
+    "identical_to_llm_program": true
+   },
+   {
+    "uid": "UB0",
+    "identical_to_llm_program": true
+   },
+   {
+    "uid": "UB1",
+    "identical_to_llm_program": true
+   },
+   {
+    "uid": "UB2",
+    "identical_to_llm_program": true
+   },
+   {
+    "uid": "UB3",
+    "identical_to_llm_program": true
+   },
+   {
+    "uid": "UAB0",
+    "identical_to_llm_program": true
+   },
+   {
+    "uid": "UAB1",
+    "identical_to_llm_program": true
+   },
+   {
+    "uid": "UAB2",
+    "identical_to_llm_program": true
+   },
+   {
+    "uid": "UAB3",
+    "identical_to_llm_program": true
+   }
+  ],
+  "identical": 16,
+  "total": 16
+ },
+ "L2": {
+  "rows": [
+   {
+    "uid": "UA0",
+    "command": "CMD0",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 4,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA0",
+    "command": "CMD1",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 5,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA0",
+    "command": "CMD2",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 7,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA0",
+    "command": "CMD3",
+    "conditional": true,
+    "generic": "table not learned (outside the union schema)",
+    "vocab": "table not learned (outside the union schema)"
+   },
+   {
+    "uid": "UA1",
+    "command": "CMD0",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 4,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA1",
+    "command": "CMD1",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 4,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA1",
+    "command": "CMD2",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 4,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA2",
+    "command": "CMD0",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 5,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA2",
+    "command": "CMD1",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 5,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA2",
+    "command": "CMD2",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 21,
+    "generic_minimal_covers": 0,
+    "generic_union_size": null,
+    "generic_N8": "no cover",
+    "generic_N11": "no cover",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA2",
+    "command": "CMD3",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 5,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA2",
+    "command": "CMD4",
+    "conditional": true,
+    "generic": "table not learned (outside the union schema)",
+    "vocab": "table not learned (outside the union schema)"
+   },
+   {
+    "uid": "UA3",
+    "command": "CMD0",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 5,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA3",
+    "command": "CMD1",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 4,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA3",
+    "command": "CMD2",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 4,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA3",
+    "command": "CMD3",
+    "conditional": true,
+    "generic": "table not learned (outside the union schema)",
+    "vocab": "table not learned (outside the union schema)"
+   },
+   {
+    "uid": "UA4",
+    "command": "CMD0",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 5,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA4",
+    "command": "CMD1",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 5,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA4",
+    "command": "CMD2",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 2,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA4",
+    "command": "CMD3",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 4,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA4",
+    "command": "CMD4",
+    "conditional": true,
+    "generic": "table not learned (outside the union schema)",
+    "vocab": "table not learned (outside the union schema)"
+   },
+   {
+    "uid": "UA5",
+    "command": "CMD0",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 5,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA5",
+    "command": "CMD1",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 19,
+    "generic_minimal_covers": 0,
+    "generic_union_size": null,
+    "generic_N8": "no cover",
+    "generic_N11": "no cover",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA5",
+    "command": "CMD2",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 5,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA5",
+    "command": "CMD3",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 5,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA6",
+    "command": "CMD0",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 5,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA6",
+    "command": "CMD1",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 4,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA7",
+    "command": "CMD0",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 4,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   },
+   {
+    "uid": "UA7",
+    "command": "CMD1",
+    "conditional": false,
+    "probe_tables_correct": true,
+    "generic_candidates_consistent": 5,
+    "generic_minimal_covers": 1,
+    "generic_union_size": 1,
+    "generic_N8": "correct",
+    "generic_N11": "correct",
+    "vocab": "match"
+   }
+  ],
+  "probe_traces_note": "same probe procedure as A-auto (300 passive traces + singleton probes per size)",
+  "generic_family_size": 8000,
+  "generic_correct_at_N8_and_N11": 23,
+  "vocab_match": 25,
+  "commands": 29
+ },
+ "L3": {
+  "rows": [
+   {
+    "uid": "UA0",
+    "status": "FAIL",
+    "reason": "conditional command CMD3: data-dependent, outside the union schema (needs a gated composition)",
+    "oracle_traces": 2400,
+    "per_size": [],
+    "success_all_sizes": false
+   },
+   {
+    "uid": "UA1",
+    "status": "BUILT",
+    "reason": "",
+    "oracle_traces": 2400,
+    "per_size": [
+     {
+      "size": "3",
+      "differential": true,
+      "failing": 0
+     },
+     {
+      "size": "5",
+      "differential": true,
+      "failing": 0
+     },
+     {
+      "size": "8",
+      "differential": true,
+      "failing": 0
+     }
+    ],
+    "success_all_sizes": true
+   },
+   {
+    "uid": "UA2",
+    "status": "FAIL",
+    "reason": "conditional command CMD4: data-dependent, outside the union schema (needs a gated composition)",
+    "oracle_traces": 2400,
+    "per_size": [],
+    "success_all_sizes": false
+   },
+   {
+    "uid": "UA3",
+    "status": "FAIL",
+    "reason": "conditional command CMD3: data-dependent, outside the union schema (needs a gated composition)",
+    "oracle_traces": 2400,
+    "per_size": [],
+    "success_all_sizes": false
+   },
+   {
+    "uid": "UA4",
+    "status": "FAIL",
+    "reason": "conditional command CMD4: data-dependent, outside the union schema (needs a gated composition)",
+    "oracle_traces": 2400,
+    "per_size": [],
+    "success_all_sizes": false
+   },
+   {
+    "uid": "UA5",
+    "status": "BUILT",
+    "reason": "",
+    "oracle_traces": 2400,
+    "per_size": [
+     {
+      "size": "3",
+      "differential": true,
+      "failing": 0
+     },
+     {
+      "size": "5",
+      "differential": true,
+      "failing": 0
+     },
+     {
+      "size": "8",
+      "differential": true,
+      "failing": 0
+     }
+    ],
+    "success_all_sizes": true
+   },
+   {
+    "uid": "UA6",
+    "status": "BUILT",
+    "reason": "",
+    "oracle_traces": 2400,
+    "per_size": [
+     {
+      "size": "3",
+      "differential": true,
+      "failing": 0
+     },
+     {
+      "size": "5",
+      "differential": true,
+      "failing": 0
+     },
+     {
+      "size": "8",
+      "differential": true,
+      "failing": 0
+     }
+    ],
+    "success_all_sizes": true
+   },
+   {
+    "uid": "UA7",
+    "status": "BUILT",
+    "reason": "",
+    "oracle_traces": 2400,
+    "per_size": [
+     {
+      "size": "3",
+      "differential": true,
+      "failing": 0
+     },
+     {
+      "size": "5",
+      "differential": true,
+      "failing": 0
+     },
+     {
+      "size": "8",
+      "differential": true,
+      "failing": 0
+     }
+    ],
+    "success_all_sizes": true
+   },
+   {
+    "uid": "UB0",
+    "status": "FAIL",
+    "reason": "output same: not a disjunction of coordinates or selector-gated coordinates",
+    "oracle_traces": 2400,
+    "per_size": [],
+    "success_all_sizes": false
+   },
+   {
+    "uid": "UB1",
+    "status": "FAIL",
+    "reason": "output same: not a disjunction of coordinates or selector-gated coordinates",
+    "oracle_traces": 2400,
+    "per_size": [],
+    "success_all_sizes": false
+   },
+   {
+    "uid": "UB2",
+    "status": "BUILT",
+    "reason": "",
+    "oracle_traces": 2400,
+    "per_size": [
+     {
+      "size": "(3, 3)",
+      "differential": true,
+      "failing": 0
+     },
+     {
+      "size": "(5, 4)",
+      "differential": true,
+      "failing": 0
+     }
+    ],
+    "success_all_sizes": true
+   },
+   {
+    "uid": "UB3",
+    "status": "BUILT",
+    "reason": "",
+    "oracle_traces": 2400,
+    "per_size": [
+     {
+      "size": "(3, 3)",
+      "differential": true,
+      "failing": 0
+     },
+     {
+      "size": "(5, 4)",
+      "differential": true,
+      "failing": 0
+     }
+    ],
+    "success_all_sizes": true
+   },
+   {
+    "uid": "UAB0",
+    "status": "BUILT",
+    "reason": "",
+    "oracle_traces": 2400,
+    "per_size": [
+     {
+      "size": "(2, 3)",
+      "differential": true,
+      "failing": 0
+     },
+     {
+      "size": "(3, 5)",
+      "differential": true,
+      "failing": 0
+     }
+    ],
+    "success_all_sizes": true
+   },
+   {
+    "uid": "UAB1",
+    "status": "BUILT",
+    "reason": "",
+    "oracle_traces": 2400,
+    "per_size": [
+     {
+      "size": "(2, 3)",
+      "differential": true,
+      "failing": 0
+     },
+     {
+      "size": "(3, 5)",
+      "differential": true,
+      "failing": 0
+     }
+    ],
+    "success_all_sizes": true
+   },
+   {
+    "uid": "UAB2",
+    "status": "BUILT",
+    "reason": "",
+    "oracle_traces": 2400,
+    "per_size": [
+     {
+      "size": "(2, 3)",
+      "differential": true,
+      "failing": 0
+     },
+     {
+      "size": "(3, 5)",
+      "differential": true,
+      "failing": 0
+     }
+    ],
+    "success_all_sizes": true
+   },
+   {
+    "uid": "UAB3",
+    "status": "BUILT",
+    "reason": "",
+    "oracle_traces": 2400,
+    "per_size": [
+     {
+      "size": "(2, 3)",
+      "differential": true,
+      "failing": 0
+     },
+     {
+      "size": "(3, 5)",
+      "differential": true,
+      "failing": 0
+     }
+    ],
+    "success_all_sizes": true
+   }
+  ],
+  "n_passive_per_size": 1000,
+  "success": 10
+ },
+ "time_s": 24.8
+}

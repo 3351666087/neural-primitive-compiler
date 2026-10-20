@@ -1,0 +1,20 @@
+L1 16 / 16
+L2 generic correct at N=8,11: 23 / 29  vocab match: 25
+L3 UA0 FAIL conditional command CMD3: data-dependent, outside the union schema (ne []
+L3 UA1 BUILT  [('3', True), ('5', True), ('8', True)]
+L3 UA2 FAIL conditional command CMD4: data-dependent, outside the union schema (ne []
+L3 UA3 FAIL conditional command CMD3: data-dependent, outside the union schema (ne []
+L3 UA4 FAIL conditional command CMD4: data-dependent, outside the union schema (ne []
+L3 UA5 BUILT  [('3', True), ('5', True), ('8', True)]
+L3 UA6 BUILT  [('3', True), ('5', True), ('8', True)]
+L3 UA7 BUILT  [('3', True), ('5', True), ('8', True)]
+L3 UB0 FAIL output same: not a disjunction of coordinates or selector-gated coordi []
+L3 UB1 FAIL output same: not a disjunction of coordinates or selector-gated coordi []
+L3 UB2 BUILT  [('(3, 3)', True), ('(5, 4)', True)]
+L3 UB3 BUILT  [('(3, 3)', True), ('(5, 4)', True)]
+L3 UAB0 BUILT  [('(2, 3)', True), ('(3, 5)', True)]
+L3 UAB1 BUILT  [('(2, 3)', True), ('(3, 5)', True)]
+L3 UAB2 BUILT  [('(2, 3)', True), ('(3, 5)', True)]
+L3 UAB3 BUILT  [('(2, 3)', True), ('(3, 5)', True)]
+L3 passive-only success: 10 / 16
+exit 0
