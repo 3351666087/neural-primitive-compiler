@@ -1,0 +1,45 @@
+{
+ "T2": [
+  {
+   "uid": "UB0",
+   "sizes": [
+    "(2, 2)",
+    "(4, 3)"
+   ],
+   "third_size": "(5, 4)",
+   "terms": 913,
+   "candidates_tried": 16434,
+   "search_s": 1.5,
+   "first_consistent_at_candidate": 12779,
+   "F-sel": "rejected",
+   "F-comp_consistent": [
+    "('ANY', ('AND', ('SEL0', ('qa',), ('M',)), ('SEL0', ('qb',), ('M',)))) L=5 delta=1"
+   ],
+   "third_size_wrong": [
+    0
+   ],
+   "verdict": "all consistent compositions correct at the third size"
+  },
+  {
+   "uid": "UB1",
+   "sizes": [
+    "(2, 3)",
+    "(4, 4)"
+   ],
+   "third_size": "(5, 5)",
+   "terms": 913,
+   "candidates_tried": 16434,
+   "search_s": 1.6,
+   "first_consistent_at_candidate": 12779,
+   "F-sel": "rejected",
+   "F-comp_consistent": [
+    "('ANY', ('AND', ('SEL0', ('qa',), ('M',)), ('SEL0', ('qb',), ('M',)))) L=5 delta=1"
+   ],
+   "third_size_wrong": [
+    0
+   ],
+   "verdict": "all consistent compositions correct at the third size"
+  }
+ ],
+ "time_s": 4.1
+}

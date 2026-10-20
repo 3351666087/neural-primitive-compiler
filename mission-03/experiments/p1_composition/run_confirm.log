@@ -1,0 +1,8 @@
+frozen code sha256 f7f524e50a4834752d69a0efb7fb8c13b6aeceaf909ab2efbf8fe586ad3ecb20
+C0 {'commands': [('CMD0', ['RIGHT']), ('CMD1', ['DILATE'])], 'cond': ('CMD2', 'left', ['DILATE'], ['FLIPV'], 3)}
+C1 {'commands': [('CMD0', ['RIGHT']), ('CMD1', ['FLIPH'])], 'cond': ('CMD2', 'top', ['DILATE'], ['ROT180'], 3)}
+C2 {'commands': [('CMD0', ['RIGHT']), ('CMD1', ['ROT270'])], 'cond': ('CMD2', 'left', ['RIGHTWRAP'], ['FLIPH'], 4)}
+C3 {'commands': [('CMD0', ['FLIPV']), ('CMD1', ['RIGHT'])], 'cond': ('CMD2', 'top', ['RIGHTWRAP'], ['RIGHT'], 4)}
+C4 {'commands': [('CMD0', ['DOWN']), ('CMD1', ['FLIPH'])], 'cond': ('CMD2', 'left', ['RIGHTWRAP'], ['LEFT'], 4)}
+C5 {'commands': [('CMD0', ['RIGHTWRAP']), ('CMD1', ['TRANSPOSE'])], 'cond': ('CMD2', 'top', ['TRANSPOSE'], ['RIGHTWRAP'], 4)}
+STOPPED at 2026-10-20T12:27Z with no task result: task C0 exceeded the 10-minute budget; diagnosis in EXPLORATION_LEDGER.md round 3; superseded by run_confirm2.py on the same six tasks (protocol amendment 6)

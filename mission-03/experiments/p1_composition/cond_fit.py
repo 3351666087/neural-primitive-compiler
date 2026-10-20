@@ -39,8 +39,16 @@ def describe_region(regions: dict) -> list:
     return [d for d in INTERVALS if all(interval_region(d, N) == R for N, R in regions.items())]
 
 
+BUDGET_S = 60.0   # amendment 6: per branch fit; exceeding it -> UNKNOWN
+
+
+class Budget(Exception):
+    pass
+
+
 def branch_fit(parts_by_size: dict, coords: dict):
     """parts_by_size[N] = events (pre, post) of one branch. Returns (pieces, covers) or (None, reason)."""
+    deadline = time.perf_counter() + BUDGET_S
     allowed, reqs = {}, {}
     for N, ev in parts_by_size.items():
         rel = learn_union(ev, coords[N])
@@ -69,6 +77,8 @@ def branch_fit(parts_by_size: dict, coords: dict):
 
     def rec(chosen, cov, k):
         nonlocal best
+        if time.perf_counter() > deadline:
+            raise Budget()
         if best is not None and k > best:
             return
         miss = next(((N, (~cov[N]) & full[N]) for N in PROBES if cov[N] != full[N]), None)
@@ -86,7 +96,10 @@ def branch_fit(parts_by_size: dict, coords: dict):
             if m[N] & low and idx not in chosen:
                 rec(chosen + [idx], {M: cov[M] | m[M] for M in PROBES}, k + 1)
 
-    rec([], {N: 0 for N in PROBES}, 0)
+    try:
+        rec([], {N: 0 for N in PROBES}, 0)
+    except Budget:
+        return None, f"UNKNOWN (budget {BUDGET_S:.0f} s)"
     covers = sorted(set(found))
     if not covers:
         return None, "no cover with <= 5 pieces"
@@ -132,12 +145,16 @@ def explain(u, name, data, solve_region=None, stash=None):
 
     def route(label, guard_fn_by_size, guard_at):
         t0 = time.perf_counter()
-        fits = {}
-        for side in (True, False):
+        fits, sides = {}, {}
+        for side in (True, False):   # amendment 6: cheap union checks on both sides before any geometric fit
             parts = {N: [(pre, post) for pre, post in pairs[N] if guard_fn_by_size[N](pre) == side] for N in PROBES}
             if not all(parts.values()):
                 return {"status": f"{label}: a branch has no events"}
-            fit, why = branch_fit(parts, coords)
+            if any(learn_union(parts[N], coords[N]) is None for N in PROBES):
+                return {"status": f"{label}: not a union map"}
+            sides[side] = parts
+        for side in (True, False):
+            fit, why = branch_fit(sides[side], coords)
             if fit is None:
                 return {"status": f"{label}: {why}"}
             fits[side] = fit
