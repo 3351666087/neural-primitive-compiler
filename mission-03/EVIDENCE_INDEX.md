@@ -15,3 +15,4 @@
 | `same`：16,434 个组合中唯一一致者，第三规模全对 | `p1_composition/run_t2.py` | `p1_t2.json`、`run_t2.log` |
 | 概念发明：G-free 不可识别，G-region 唯一可识别；盒形先验推广失败 | `p1b_concept/run_concept.py` | `p1b_concept/concept.json`、`p1b_concept/run.log` |
 | 协议、预测与 6 个修正案的提交顺序 | — | `git log mission-03`：协议提交早于先导实验；每个修正案都在相应结果之前单独提交 |
+| ARC-AGI-1 公开任务的来源、许可与完整性（400 + 400 个任务，结构检查全部通过） | `arc_intake/manifest.py` | `../external/arc-agi-1/MANIFEST.json`、`../external/ARC_PROVENANCE.md` |
