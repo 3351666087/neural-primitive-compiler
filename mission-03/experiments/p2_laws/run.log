@@ -1,0 +1,104 @@
+rot90 {'zero': True, 'join': True, 'monotone': True, 'antitone': False, 'extensive': False, 'contractive': False, 'idempotent': False, 'D4-equivariant': False, 'locality_radius': 3} TE False
+shift-right-clip {'zero': True, 'join': True, 'monotone': True, 'antitone': False, 'extensive': False, 'contractive': False, 'idempotent': False, 'D4-equivariant': False, 'locality_radius': 1} TE True
+dilate {'zero': True, 'join': True, 'monotone': True, 'antitone': False, 'extensive': True, 'contractive': False, 'idempotent': False, 'D4-equivariant': True, 'locality_radius': 1} TE True
+row-occupancy {'zero': True, 'join': True, 'monotone': True, 'antitone': False, 'extensive': True, 'contractive': False, 'idempotent': True, 'D4-equivariant': False, 'locality_radius': 3} TE False
+identity {'zero': True, 'join': True, 'monotone': True, 'antitone': False, 'extensive': True, 'contractive': True, 'idempotent': True, 'D4-equivariant': True, 'locality_radius': 0} TE True
+cond(top: fliph | down) {'zero': True, 'join': False, 'monotone': False, 'antitone': False, 'extensive': False, 'contractive': False, 'idempotent': False, 'D4-equivariant': False, 'locality_radius': 3} TE False
+invert {'zero': False, 'join': False, 'monotone': False, 'antitone': True, 'extensive': False, 'contractive': False, 'idempotent': False, 'D4-equivariant': True, 'locality_radius': 0} TE False
+fill-holes {'zero': True, 'join': False, 'monotone': True, 'antitone': False, 'extensive': True, 'contractive': False, 'idempotent': True, 'D4-equivariant': True, 'locality_radius': 2} TE True
+bounding-box fill {'zero': True, 'join': False, 'monotone': True, 'antitone': False, 'extensive': True, 'contractive': False, 'idempotent': True, 'D4-equivariant': True, 'locality_radius': 3} TE True
+row interval fill {'zero': True, 'join': False, 'monotone': True, 'antitone': False, 'extensive': True, 'contractive': False, 'idempotent': True, 'D4-equivariant': False, 'locality_radius': 2} TE True
+gravity {'zero': True, 'join': False, 'monotone': True, 'antitone': False, 'extensive': False, 'contractive': False, 'idempotent': True, 'D4-equivariant': False, 'locality_radius': 3} TE False
+majority {'zero': True, 'join': False, 'monotone': True, 'antitone': False, 'extensive': False, 'contractive': False, 'idempotent': True, 'D4-equivariant': True, 'locality_radius': 3} TE True
+outline {'zero': True, 'join': False, 'monotone': False, 'antitone': False, 'extensive': False, 'contractive': True, 'idempotent': True, 'D4-equivariant': True, 'locality_radius': 1} TE True
+erode {'zero': True, 'join': False, 'monotone': True, 'antitone': False, 'extensive': False, 'contractive': True, 'idempotent': False, 'D4-equivariant': True, 'locality_radius': 1} TE True
+xor-shift {'zero': True, 'join': False, 'monotone': False, 'antitone': False, 'extensive': False, 'contractive': False, 'idempotent': False, 'D4-equivariant': False, 'locality_radius': 1} TE True
+evidence N 5 done 8.9
+evidence N 8 done 83.5
+collisions: []
+size-stable signatures: 7 / 15
+N5|cond(top: fliph | down)|monotone|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N5|cond(top: fliph | down)|monotone|iid {'detected': '10/10', 'median_obs': 35, 'cap': 2000}
+N5|cond(top: fliph | down)|monotone|coherent {'detected': '10/10', 'median_obs': 160, 'cap': 4000}
+N5|cond(top: fliph | down)|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N5|cond(top: fliph | down)|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|cond(top: fliph | down)|join|coherent {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N5|invert|monotone|active {'detected': '10/10', 'median_obs': 2, 'cap': 4000}
+N5|invert|monotone|iid {'detected': '10/10', 'median_obs': 27, 'cap': 2000}
+N5|invert|monotone|coherent {'detected': '10/10', 'median_obs': 2, 'cap': 4000}
+N5|invert|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N5|invert|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|invert|join|coherent {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|fill-holes|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N5|fill-holes|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|fill-holes|join|coherent {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|bounding-box fill|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N5|bounding-box fill|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|bounding-box fill|join|coherent {'detected': '10/10', 'median_obs': 125, 'cap': 4000}
+N5|row interval fill|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N5|row interval fill|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|row interval fill|join|coherent {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|gravity|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N5|gravity|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|gravity|join|coherent {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|majority|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N5|majority|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|majority|join|coherent {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|outline|monotone|active {'detected': '10/10', 'median_obs': 78, 'cap': 4000}
+N5|outline|monotone|iid {'detected': '10/10', 'median_obs': 136, 'cap': 2000}
+N5|outline|monotone|coherent {'detected': '10/10', 'median_obs': 11, 'cap': 4000}
+N5|outline|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N5|outline|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|outline|join|coherent {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|erode|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N5|erode|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|erode|join|coherent {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N5|xor-shift|monotone|active {'detected': '10/10', 'median_obs': 4, 'cap': 4000}
+N5|xor-shift|monotone|iid {'detected': '10/10', 'median_obs': 29, 'cap': 2000}
+N5|xor-shift|monotone|coherent {'detected': '10/10', 'median_obs': 2, 'cap': 4000}
+N5|xor-shift|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N5|xor-shift|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N5|xor-shift|join|coherent {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N8|cond(top: fliph | down)|monotone|active {'detected': '10/10', 'median_obs': 268, 'cap': 4000}
+N8|cond(top: fliph | down)|monotone|iid {'detected': '0/10', 'median_obs': None, 'cap': 2000}
+N8|cond(top: fliph | down)|monotone|coherent {'detected': '8/10', 'median_obs': 1296, 'cap': 4000}
+N8|cond(top: fliph | down)|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N8|cond(top: fliph | down)|join|iid {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N8|cond(top: fliph | down)|join|coherent {'detected': '5/10', 'median_obs': 950, 'cap': 4000}
+N8|invert|monotone|active {'detected': '10/10', 'median_obs': 2, 'cap': 4000}
+N8|invert|monotone|iid {'detected': '1/10', 'median_obs': 1201, 'cap': 2000}
+N8|invert|monotone|coherent {'detected': '10/10', 'median_obs': 2, 'cap': 4000}
+N8|invert|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N8|invert|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N8|invert|join|coherent {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N8|fill-holes|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N8|fill-holes|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N8|fill-holes|join|coherent {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N8|bounding-box fill|join|active {'detected': '10/10', 'median_obs': 100, 'cap': 4000}
+N8|bounding-box fill|join|iid {'detected': '10/10', 'median_obs': 75, 'cap': 4000}
+N8|bounding-box fill|join|coherent {'detected': '9/10', 'median_obs': 1300, 'cap': 4000}
+N8|row interval fill|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N8|row interval fill|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N8|row interval fill|join|coherent {'detected': '10/10', 'median_obs': 100, 'cap': 4000}
+N8|gravity|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N8|gravity|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N8|gravity|join|coherent {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N8|majority|join|active {'detected': '10/10', 'median_obs': 150, 'cap': 4000}
+N8|majority|join|iid {'detected': '10/10', 'median_obs': 225, 'cap': 4000}
+N8|majority|join|coherent {'detected': '10/10', 'median_obs': 75, 'cap': 4000}
+N8|outline|monotone|active {'detected': '10/10', 'median_obs': 46, 'cap': 4000}
+N8|outline|monotone|iid {'detected': '1/10', 'median_obs': 1483, 'cap': 2000}
+N8|outline|monotone|coherent {'detected': '10/10', 'median_obs': 20, 'cap': 4000}
+N8|outline|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N8|outline|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N8|outline|join|coherent {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N8|erode|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N8|erode|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N8|erode|join|coherent {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N8|xor-shift|monotone|active {'detected': '10/10', 'median_obs': 2, 'cap': 4000}
+N8|xor-shift|monotone|iid {'detected': '3/10', 'median_obs': 1431, 'cap': 2000}
+N8|xor-shift|monotone|coherent {'detected': '10/10', 'median_obs': 2, 'cap': 4000}
+N8|xor-shift|join|active {'detected': '10/10', 'median_obs': 50, 'cap': 4000}
+N8|xor-shift|join|iid {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+N8|xor-shift|join|coherent {'detected': '10/10', 'median_obs': 25, 'cap': 4000}
+exit 0

@@ -1,0 +1,835 @@
+{
+ "signatures": {
+  "rot90": {
+   "schema": "union map (relation)",
+   "N3": {
+    "zero": true,
+    "join": true,
+    "monotone": true,
+    "antitone": false,
+    "extensive": false,
+    "contractive": false,
+    "idempotent": false,
+    "D4-equivariant": false,
+    "locality_radius": 2
+   },
+   "N4": {
+    "zero": true,
+    "join": true,
+    "monotone": true,
+    "antitone": false,
+    "extensive": false,
+    "contractive": false,
+    "idempotent": false,
+    "D4-equivariant": false,
+    "locality_radius": 3
+   },
+   "interior_translation_N5": false
+  },
+  "shift-right-clip": {
+   "schema": "union map (relation)",
+   "N3": {
+    "zero": true,
+    "join": true,
+    "monotone": true,
+    "antitone": false,
+    "extensive": false,
+    "contractive": false,
+    "idempotent": false,
+    "D4-equivariant": false,
+    "locality_radius": 1
+   },
+   "N4": {
+    "zero": true,
+    "join": true,
+    "monotone": true,
+    "antitone": false,
+    "extensive": false,
+    "contractive": false,
+    "idempotent": false,
+    "D4-equivariant": false,
+    "locality_radius": 1
+   },
+   "interior_translation_N5": true
+  },
+  "dilate": {
+   "schema": "union map (relation)",
+   "N3": {
+    "zero": true,
+    "join": true,
+    "monotone": true,
+    "antitone": false,
+    "extensive": true,
+    "contractive": false,
+    "idempotent": false,
+    "D4-equivariant": true,
+    "locality_radius": 1
+   },
+   "N4": {
+    "zero": true,
+    "join": true,
+    "monotone": true,
+    "antitone": false,
+    "extensive": true,
+    "contractive": false,
+    "idempotent": false,
+    "D4-equivariant": true,
+    "locality_radius": 1
+   },
+   "interior_translation_N5": true
+  },
+  "row-occupancy": {
+   "schema": "union map (relation)",
+   "N3": {
+    "zero": true,
+    "join": true,
+    "monotone": true,
+    "antitone": false,
+    "extensive": true,
+    "contractive": false,
+    "idempotent": true,
+    "D4-equivariant": false,
+    "locality_radius": 2
+   },
+   "N4": {
+    "zero": true,
+    "join": true,
+    "monotone": true,
+    "antitone": false,
+    "extensive": true,
+    "contractive": false,
+    "idempotent": true,
+    "D4-equivariant": false,
+    "locality_radius": 3
+   },
+   "interior_translation_N5": false
+  },
+  "identity": {
+   "schema": "union map (relation)",
+   "N3": {
+    "zero": true,
+    "join": true,
+    "monotone": true,
+    "antitone": false,
+    "extensive": true,
+    "contractive": true,
+    "idempotent": true,
+    "D4-equivariant": true,
+    "locality_radius": 0
+   },
+   "N4": {
+    "zero": true,
+    "join": true,
+    "monotone": true,
+    "antitone": false,
+    "extensive": true,
+    "contractive": true,
+    "idempotent": true,
+    "D4-equivariant": true,
+    "locality_radius": 0
+   },
+   "interior_translation_N5": true
+  },
+  "cond(top: fliph | down)": {
+   "schema": "guarded union map",
+   "N3": {
+    "zero": true,
+    "join": false,
+    "monotone": false,
+    "antitone": false,
+    "extensive": false,
+    "contractive": false,
+    "idempotent": false,
+    "D4-equivariant": false,
+    "locality_radius": 2
+   },
+   "N4": {
+    "zero": true,
+    "join": false,
+    "monotone": false,
+    "antitone": false,
+    "extensive": false,
+    "contractive": false,
+    "idempotent": false,
+    "D4-equivariant": false,
+    "locality_radius": 3
+   },
+   "interior_translation_N5": false
+  },
+  "invert": {
+   "schema": "complement of a union map",
+   "N3": {
+    "zero": false,
+    "join": false,
+    "monotone": false,
+    "antitone": true,
+    "extensive": false,
+    "contractive": false,
+    "idempotent": false,
+    "D4-equivariant": true,
+    "locality_radius": 0
+   },
+   "N4": {
+    "zero": false,
+    "join": false,
+    "monotone": false,
+    "antitone": true,
+    "extensive": false,
+    "contractive": false,
+    "idempotent": false,
+    "D4-equivariant": true,
+    "locality_radius": 0
+   },
+   "interior_translation_N5": false
+  },
+  "fill-holes": {
+   "schema": "greatest fixpoint of a local rule (border reachability)",
+   "N3": {
+    "zero": true,
+    "join": false,
+    "monotone": true,
+    "antitone": false,
+    "extensive": true,
+    "contractive": false,
+    "idempotent": true,
+    "D4-equivariant": true,
+    "locality_radius": 1
+   },
+   "N4": {
+    "zero": true,
+    "join": false,
+    "monotone": true,
+    "antitone": false,
+    "extensive": true,
+    "contractive": false,
+    "idempotent": true,
+    "D4-equivariant": true,
+    "locality_radius": 2
+   },
+   "interior_translation_N5": true
+  },
+  "bounding-box fill": {
+   "schema": "interval closure on both axes (min/max)",
+   "N3": {
+    "zero": true,
+    "join": false,
+    "monotone": true,
+    "antitone": false,
+    "extensive": true,
+    "contractive": false,
+    "idempotent": true,
+    "D4-equivariant": true,
+    "locality_radius": 2
+   },
+   "N4": {
+    "zero": true,
+    "join": false,
+    "monotone": true,
+    "antitone": false,
+    "extensive": true,
+    "contractive": false,
+    "idempotent": true,
+    "D4-equivariant": true,
+    "locality_radius": 3
+   },
+   "interior_translation_N5": true
+  },
+  "row interval fill": {
+   "schema": "interval closure per row",
+   "N3": {
+    "zero": true,
+    "join": false,
+    "monotone": true,
+    "antitone": false,
+    "extensive": true,
+    "contractive": false,
+    "idempotent": true,
+    "D4-equivariant": false,
+    "locality_radius": 1
+   },
+   "N4": {
+    "zero": true,
+    "join": false,
+    "monotone": true,
+    "antitone": false,
+    "extensive": true,
+    "contractive": false,
+    "idempotent": true,
+    "D4-equivariant": false,
+    "locality_radius": 2
+   },
+   "interior_translation_N5": true
+  },
+  "gravity": {
+   "schema": "per-column count, then placement",
+   "N3": {
+    "zero": true,
+    "join": false,
+    "monotone": true,
+    "antitone": false,
+    "extensive": false,
+    "contractive": false,
+    "idempotent": true,
+    "D4-equivariant": false,
+    "locality_radius": 2
+   },
+   "N4": {
+    "zero": true,
+    "join": false,
+    "monotone": true,
+    "antitone": false,
+    "extensive": false,
+    "contractive": false,
+    "idempotent": true,
+    "D4-equivariant": false,
+    "locality_radius": 3
+   },
+   "interior_translation_N5": false
+  },
+  "majority": {
+   "schema": "global count threshold",
+   "N3": {
+    "zero": true,
+    "join": false,
+    "monotone": true,
+    "antitone": false,
+    "extensive": false,
+    "contractive": false,
+    "idempotent": true,
+    "D4-equivariant": true,
+    "locality_radius": 2
+   },
+   "N4": {
+    "zero": true,
+    "join": false,
+    "monotone": true,
+    "antitone": false,
+    "extensive": false,
+    "contractive": false,
+    "idempotent": true,
+    "D4-equivariant": true,
+    "locality_radius": 3
+   },
+   "interior_translation_N5": true
+  },
+  "outline": {
+   "schema": "local, non-monotone (S minus its interior)",
+   "N3": {
+    "zero": true,
+    "join": false,
+    "monotone": false,
+    "antitone": false,
+    "extensive": false,
+    "contractive": true,
+    "idempotent": true,
+    "D4-equivariant": true,
+    "locality_radius": 1
+   },
+   "N4": {
+    "zero": true,
+    "join": false,
+    "monotone": false,
+    "antitone": false,
+    "extensive": false,
+    "contractive": true,
+    "idempotent": true,
+    "D4-equivariant": true,
+    "locality_radius": 1
+   },
+   "interior_translation_N5": true
+  },
+  "erode": {
+   "schema": "local AND of neighbours",
+   "N3": {
+    "zero": true,
+    "join": false,
+    "monotone": true,
+    "antitone": false,
+    "extensive": false,
+    "contractive": true,
+    "idempotent": false,
+    "D4-equivariant": true,
+    "locality_radius": 1
+   },
+   "N4": {
+    "zero": true,
+    "join": false,
+    "monotone": true,
+    "antitone": false,
+    "extensive": false,
+    "contractive": true,
+    "idempotent": false,
+    "D4-equivariant": true,
+    "locality_radius": 1
+   },
+   "interior_translation_N5": true
+  },
+  "xor-shift": {
+   "schema": "local XOR",
+   "N3": {
+    "zero": true,
+    "join": false,
+    "monotone": false,
+    "antitone": false,
+    "extensive": false,
+    "contractive": false,
+    "idempotent": false,
+    "D4-equivariant": false,
+    "locality_radius": 1
+   },
+   "N4": {
+    "zero": true,
+    "join": false,
+    "monotone": false,
+    "antitone": false,
+    "extensive": false,
+    "contractive": false,
+    "idempotent": false,
+    "D4-equivariant": false,
+    "locality_radius": 1
+   },
+   "interior_translation_N5": true
+  }
+ },
+ "collisions": [],
+ "signature_same_at_N3_and_N4": {
+  "rot90": false,
+  "shift-right-clip": true,
+  "dilate": true,
+  "row-occupancy": false,
+  "identity": true,
+  "cond(top: fliph | down)": false,
+  "invert": true,
+  "fill-holes": false,
+  "bounding-box fill": false,
+  "row interval fill": false,
+  "gravity": false,
+  "majority": false,
+  "outline": true,
+  "erode": true,
+  "xor-shift": true
+ },
+ "evidence": {
+  "N5|cond(top: fliph | down)|monotone|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N5|cond(top: fliph | down)|monotone|iid": {
+   "detected": "10/10",
+   "median_obs": 35,
+   "cap": 2000
+  },
+  "N5|cond(top: fliph | down)|monotone|coherent": {
+   "detected": "10/10",
+   "median_obs": 160,
+   "cap": 4000
+  },
+  "N5|cond(top: fliph | down)|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N5|cond(top: fliph | down)|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|cond(top: fliph | down)|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N5|invert|monotone|active": {
+   "detected": "10/10",
+   "median_obs": 2,
+   "cap": 4000
+  },
+  "N5|invert|monotone|iid": {
+   "detected": "10/10",
+   "median_obs": 27,
+   "cap": 2000
+  },
+  "N5|invert|monotone|coherent": {
+   "detected": "10/10",
+   "median_obs": 2,
+   "cap": 4000
+  },
+  "N5|invert|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N5|invert|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|invert|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|fill-holes|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N5|fill-holes|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|fill-holes|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|bounding-box fill|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N5|bounding-box fill|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|bounding-box fill|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 125,
+   "cap": 4000
+  },
+  "N5|row interval fill|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N5|row interval fill|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|row interval fill|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|gravity|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N5|gravity|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|gravity|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|majority|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N5|majority|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|majority|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|outline|monotone|active": {
+   "detected": "10/10",
+   "median_obs": 78,
+   "cap": 4000
+  },
+  "N5|outline|monotone|iid": {
+   "detected": "10/10",
+   "median_obs": 136,
+   "cap": 2000
+  },
+  "N5|outline|monotone|coherent": {
+   "detected": "10/10",
+   "median_obs": 11,
+   "cap": 4000
+  },
+  "N5|outline|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N5|outline|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|outline|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|erode|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N5|erode|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|erode|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N5|xor-shift|monotone|active": {
+   "detected": "10/10",
+   "median_obs": 4,
+   "cap": 4000
+  },
+  "N5|xor-shift|monotone|iid": {
+   "detected": "10/10",
+   "median_obs": 29,
+   "cap": 2000
+  },
+  "N5|xor-shift|monotone|coherent": {
+   "detected": "10/10",
+   "median_obs": 2,
+   "cap": 4000
+  },
+  "N5|xor-shift|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N5|xor-shift|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N5|xor-shift|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N8|cond(top: fliph | down)|monotone|active": {
+   "detected": "10/10",
+   "median_obs": 268,
+   "cap": 4000
+  },
+  "N8|cond(top: fliph | down)|monotone|iid": {
+   "detected": "0/10",
+   "median_obs": null,
+   "cap": 2000
+  },
+  "N8|cond(top: fliph | down)|monotone|coherent": {
+   "detected": "8/10",
+   "median_obs": 1296,
+   "cap": 4000
+  },
+  "N8|cond(top: fliph | down)|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N8|cond(top: fliph | down)|join|iid": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N8|cond(top: fliph | down)|join|coherent": {
+   "detected": "5/10",
+   "median_obs": 950,
+   "cap": 4000
+  },
+  "N8|invert|monotone|active": {
+   "detected": "10/10",
+   "median_obs": 2,
+   "cap": 4000
+  },
+  "N8|invert|monotone|iid": {
+   "detected": "1/10",
+   "median_obs": 1201,
+   "cap": 2000
+  },
+  "N8|invert|monotone|coherent": {
+   "detected": "10/10",
+   "median_obs": 2,
+   "cap": 4000
+  },
+  "N8|invert|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N8|invert|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N8|invert|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N8|fill-holes|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N8|fill-holes|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N8|fill-holes|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N8|bounding-box fill|join|active": {
+   "detected": "10/10",
+   "median_obs": 100,
+   "cap": 4000
+  },
+  "N8|bounding-box fill|join|iid": {
+   "detected": "10/10",
+   "median_obs": 75,
+   "cap": 4000
+  },
+  "N8|bounding-box fill|join|coherent": {
+   "detected": "9/10",
+   "median_obs": 1300,
+   "cap": 4000
+  },
+  "N8|row interval fill|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N8|row interval fill|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N8|row interval fill|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 100,
+   "cap": 4000
+  },
+  "N8|gravity|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N8|gravity|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N8|gravity|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N8|majority|join|active": {
+   "detected": "10/10",
+   "median_obs": 150,
+   "cap": 4000
+  },
+  "N8|majority|join|iid": {
+   "detected": "10/10",
+   "median_obs": 225,
+   "cap": 4000
+  },
+  "N8|majority|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 75,
+   "cap": 4000
+  },
+  "N8|outline|monotone|active": {
+   "detected": "10/10",
+   "median_obs": 46,
+   "cap": 4000
+  },
+  "N8|outline|monotone|iid": {
+   "detected": "1/10",
+   "median_obs": 1483,
+   "cap": 2000
+  },
+  "N8|outline|monotone|coherent": {
+   "detected": "10/10",
+   "median_obs": 20,
+   "cap": 4000
+  },
+  "N8|outline|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N8|outline|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N8|outline|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N8|erode|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N8|erode|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N8|erode|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N8|xor-shift|monotone|active": {
+   "detected": "10/10",
+   "median_obs": 2,
+   "cap": 4000
+  },
+  "N8|xor-shift|monotone|iid": {
+   "detected": "3/10",
+   "median_obs": 1431,
+   "cap": 2000
+  },
+  "N8|xor-shift|monotone|coherent": {
+   "detected": "10/10",
+   "median_obs": 2,
+   "cap": 4000
+  },
+  "N8|xor-shift|join|active": {
+   "detected": "10/10",
+   "median_obs": 50,
+   "cap": 4000
+  },
+  "N8|xor-shift|join|iid": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  },
+  "N8|xor-shift|join|coherent": {
+   "detected": "10/10",
+   "median_obs": 25,
+   "cap": 4000
+  }
+ },
+ "time_s": 83.5
+}
