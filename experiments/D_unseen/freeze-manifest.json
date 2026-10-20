@@ -1,0 +1,20 @@
+{
+  "tree_sha256": "8a163fab2eef498a547da1b02cebb90e513a66269da93dc9bfa96b8e5d002d7e",
+  "frozen_at": "2026-10-20T04:24:07",
+  "files": {
+    "src/npc/__init__.py": "33bce995c8f235923daea3911c0724bf646b4f507907d0c2516aa2ca2de500c3",
+    "src/npc/__main__.py": "596a5321cd46ecd0e98a7380c1d43b7e4fc2bde635718297c1103ac17bdf6e31",
+    "src/npc/cli.py": "7d7c4e27954a3d96abce126b518910d24e1e7d4b450bcf78952c60bfb4f01c5f",
+    "src/npc/compose.py": "6ab65bb43c37ba210385194621dc2e802541c68334fd41020ebad5982b72f084",
+    "src/npc/dsl.py": "75eba4ed45fe3671ecb0749b3802f62bc065d50eed697e25be12f30bb35d02ae",
+    "src/npc/fsm.py": "10c741f9974c32276467cb77c955547906c5a7cfdab105f1244e1e5b37236bc0",
+    "src/npc/gen.py": "96fdcf90e6dc5b9b87ed010d958b0b4bbe867a290718db9b4bbb400b365fc2ba",
+    "src/npc/lib/primitives.npc": "af631774d934c1b8e9cc8cce1c769c566f6cfcacc9249be993fb2ec58188ab7a",
+    "src/npc/network.py": "c3a959bd7c5d1c45258a4f0e11afd4d12ecfbb5182d5c1a1ee2a62e11850b406",
+    "src/npc/simulator.py": "99acbbb712ac6e3c4da97108117ba88e1e9faa8d62b5425e50373e200dcd2df9",
+    "src/npc/smt.py": "d01032f69bd2f25bb4125462f8c88fe16010366cc0590ef32cd5d0319ede5e71",
+    "src/npc/spec.py": "be3e88caeeaa8f906b2ea88c4d529c7203c591be688e439ec0033b823aa03491",
+    "src/npc/synth.py": "315f0cd49e7c37c109dc4eb5eb0e61747b1f322f2ed1bd347fc72e196eb046a5",
+    "src/npc/verify.py": "0952ee8c36253e555fcc13d727e185c360263754f5beaad9472c1e5f5423e5e7"
+  }
+}
