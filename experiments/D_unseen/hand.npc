@@ -1,0 +1,8 @@
+# D-hand: written after the freeze (manifest 8a163fab, commit 522f7b8), at 2026-10-20T04:26:20Z.
+# Needs state (memory of a, parity of b) and gating, with three inputs.
+spec Dhand_second_b_after_a {
+  doc "Once an a has occurred (and no r since), fire on every 2nd b; an a or r restarts the b count; r also clears the memory of a."
+  inputs a, b, r
+  outputs y
+  guarantee y <-> prev(b & !a & !r & since(!r, a & !r) & modcount[2](b; a | r) == 0)
+}

@@ -22,3 +22,23 @@ solver*, not whether an LLM can find that decomposition. Group D is the less bia
 
 Group D proposals are appended below once the D tasks exist (written **before** the automatic
 searchers were run on D).
+
+## Group D (sketches in `D_sketches.npc`)
+
+Written after the freeze (`522f7b8`) and task generation, before any automatic searcher ran on D.
+Only `npc realize` was used (SKILL step 3). Predictions written down at the same time:
+
+| task | LLM reading of the spec | LLM verdict before running searchers |
+|---|---|---|
+| D01 | reset `count[3](b) >= 0` is always true, so the counter never reaches 1: y never fires | trivial (no sketch) |
+| D05 | parity-like `modcount[4](b) == 0` at latency 1: the newest b raises the output after 3 b's but lowers it after 0 | UNREALIZABLE (confirmed by `realize`) |
+| D12 | "exactly 2 b in the last 4 steps" at latency 1: non-monotone in the newest b | UNREALIZABLE (confirmed) |
+| D13 | `once(b) ^ a`: XOR with the newest a | UNREALIZABLE (confirmed) |
+| D14 | `a(t-3) <-> a(t-1)` at latency 1: XNOR with the newest a | UNREALIZABLE (confirmed) |
+| D02 | latch-like loop gated by a parity-with-reset signal delayed by 3 | sketch `D02_llm1` (3 raw neurons, structure fixed, 21 integer holes) |
+| D06 | NAND of 4-step-old inputs, silent for t < 4 | sketch `D06_llm1` (start pulse + 1 neuron) |
+| D16 | `b(t-5) or b(t-6)` | sketch `D16_llm1` (relay + window, 6 choices) |
+| D17 | start-up bump at t=2,3 then `b(t-6)` | sketch `D17_llm1` (relay + start pulse + 1 neuron) |
+| D18 | `not b(t-5)` from t=5 on | sketch `D18_llm1` (relay + start pulse + biased neuron) |
+| Dhand | latch for "a since r" + integrating output neuron for b-parity, gated by the latch | `Dhand_..._llm1`; fallback `_llm2` with a separate parity neuron |
+| others | plain delays / constants (D00, D03, D04, D07–D11, D15, D19) | trivial, left to the automatic pipeline |

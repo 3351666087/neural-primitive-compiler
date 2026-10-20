@@ -1,0 +1,111 @@
+# LLM sketches for group D, written by Claude following SKILL.md AFTER the freeze (522f7b8) and AFTER
+# generating the tasks, but BEFORE any automatic searcher (cegis / compose / classical network) was run
+# on group D. The only tool used while writing them was `npc realize` (SKILL step 3), which reported
+# D05, D12, D13, D14 UNREALIZABLE (no sketch is proposed for those) and the others COMPILED.
+# Naming: <task>_llmN. Every sketch is run by run_unseen.py, whatever the outcome.
+
+# D02: y(t) = S(t-1), S(t) = a(t) | (M(t-2) & S(t-1)), M = "even number of a since the last b".
+# Plan: Y(t) = a(t-1) | (M(t-3) & Y(t-1)); M(t-3) comes from a parity-with-reset block whose output O
+# represents "odd" two steps late, read with delay 1 and a negative weight. Structure fixed, weights solved.
+network D02_llm1 {
+  maxdelay 3
+  inputs a, b
+  neuron Y threshold=?[1,4] leak=full vmin=-4 vmax=6
+  neuron P threshold=?[1,3] leak=?[0,3] vmin=0 vmax=3
+  neuron Q threshold=?[1,3] leak=?[0,3] vmin=0 vmax=3
+  synapse a -> Y weight=?[0,4] delay=1
+  synapse Y -> Y weight=?[0,3] delay=1
+  synapse Q -> Y weight=?[-3,0] delay=1
+  synapse a -> P weight=?[-2,2] delay=1..2
+  synapse b -> P weight=?[-3,0] delay=1
+  synapse P -> P weight=?[-2,2] delay=1
+  synapse Q -> P weight=?[-2,2] delay=1
+  synapse a -> Q weight=?[-2,2] delay=1..2
+  synapse b -> Q weight=?[-3,0] delay=1..2
+  synapse P -> Q weight=?[-2,2] delay=1
+  synapse Q -> Q weight=?[-2,2] delay=1
+  output y = Y
+}
+
+# D06: y(t) = (t >= 4) & !(a(t-4) & b(t-4)). A NAND neuron on 4-step-old inputs, kept silent for t < 4 by a
+# start pulse S (fires only at t=0) inhibiting it at delays 1..3, and by a negative initial potential at t=0.
+network D06_llm1 {
+  maxdelay 4
+  inputs a, b
+  neuron S threshold=1 leak=1 init=1 vmax=1
+  neuron Y threshold=?[1,3] leak=full bias=?[0,3] init=?[-3,0] vmin=-3 vmax=3
+  synapse a -> Y weight=?[-2,0] delay=4
+  synapse b -> Y weight=?[-2,0] delay=4
+  synapse S -> Y weight=?[-3,0] delay=1..3
+  output y = Y
+}
+
+# D16: y(t) = b(t-5) | b(t-6): a delay line into a 1-of-w window.
+network D16_llm1 {
+  maxdelay 4
+  inputs a, b
+  inst d = relay(d=?{3,4,5}) in=b
+  inst w = window(k=1, w=?{2,3}) in=d.out
+  output y = w.out
+}
+
+# D17: y = 0,0,1,1,0,0 for t = 0..5, then y(t) = b(t-6). Start pulse S makes the t=2,3 bump; a relay
+# supplies b(t-3), read again with delay 3.
+network D17_llm1 {
+  maxdelay 3
+  inputs a, b
+  inst d = relay(d=3) in=b
+  neuron S threshold=1 leak=1 init=1 vmax=1
+  neuron Y threshold=?[1,2] leak=full vmax=3
+  synapse d.out -> Y weight=?[0,2] delay=3
+  synapse S -> Y weight=?[0,2] delay=2..3
+  output y = Y
+}
+
+# D18: y(t) = !b(t-5) for t >= 5, else 0. Biased NOT neuron on b(t-5) (relay d=2 read with delay 3),
+# silenced for t < 5 by a start pulse (delays 1..4) and a negative initial potential.
+network D18_llm1 {
+  maxdelay 4
+  inputs a, b
+  inst d = relay(d=2) in=b
+  neuron S threshold=1 leak=1 init=1 vmax=1
+  neuron Y threshold=1 leak=full bias=?[0,2] init=?[-2,0] vmin=-3 vmax=2
+  synapse d.out -> Y weight=?[-2,0] delay=3
+  synapse S -> Y weight=?[-3,0] delay=1..4
+  output y = Y
+}
+
+# D-hand: y(t) = b & !a & !r & since(!r, a & !r) & [2nd b since last a|r], all at t-1.
+# Memory of "a since r" = latch(set=a, rst=r). The b-parity can live in the output neuron itself as a
+# perfect integrator (reset by a or r, like `counter`), gated by the latch. Weights/threshold/range solved.
+network Dhand_second_b_after_a_llm1 {
+  maxdelay 2
+  inputs a, b, r
+  inst L = latch() set=a rst=r
+  neuron Y threshold=?[1,6] leak=?[0,2] vmin=0 vmax=?[2,6]
+  synapse b -> Y weight=?[0,3] delay=1
+  synapse a -> Y weight=?[-6,0] delay=1
+  synapse r -> Y weight=?[-6,0] delay=1
+  synapse L.out -> Y weight=?[-3,4] delay=1
+  output y = Y
+}
+
+# Fallback for D-hand if llm1 fails: a separate parity counter C (reset by a or r) and an output neuron
+# that combines the fresh b with C and the latch.
+network Dhand_second_b_after_a_llm2 {
+  maxdelay 2
+  inputs a, b, r
+  inst L = latch() set=a rst=r
+  neuron C threshold=1 leak=full vmax=3
+  neuron Y threshold=?[1,4] leak=full vmin=-6 vmax=6
+  synapse C -> C weight=?[-2,2] delay=1
+  synapse b -> C weight=?[-2,2] delay=1
+  synapse a -> C weight=?[-3,0] delay=1
+  synapse r -> C weight=?[-3,0] delay=1
+  synapse b -> Y weight=?[0,3] delay=1
+  synapse a -> Y weight=?[-6,0] delay=1
+  synapse r -> Y weight=?[-6,0] delay=1
+  synapse C -> Y weight=?[-3,3] delay=1
+  synapse L.out -> Y weight=?[0,3] delay=1
+  output y = Y
+}
