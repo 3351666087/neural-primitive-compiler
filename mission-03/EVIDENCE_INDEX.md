@@ -16,3 +16,9 @@
 | 概念发明：G-free 不可识别，G-region 唯一可识别；盒形先验推广失败 | `p1b_concept/run_concept.py` | `p1b_concept/concept.json`、`p1b_concept/run.log` |
 | 协议、预测与 6 个修正案的提交顺序 | — | `git log mission-03`：协议提交早于先导实验；每个修正案都在相应结果之前单独提交 |
 | ARC-AGI-1 公开任务的来源、许可与完整性（400 + 400 个任务，结构检查全部通过） | `arc_intake/manifest.py` | `../external/arc-agi-1/MANIFEST.json`、`../external/ARC_PROVENANCE.md` |
+| P2 定律签名：N = 4 上无碰撞（与规模无关的定律下填洞与包围盒填充碰撞）；被动取证成本 | `p2_laws/run_laws.py` | `p2_laws/laws.json`、`p2_laws/run.log` |
+| P3 生成性构造：死路率与可行性判断（N = 5–7 完整，N = 8 部分，记录 RESOURCE_LIMIT） | `p3_generative/run_gen.py` | `p3_generative/generative.json`、`p3_generative/run.log` |
+| R6 先验封闭性：6 种先验 × 5 种数据量 × 6 个持出任务 | `p4_closure/run_closure.py`（哈希决定任务） | `p4_closure/closure.json`、`p4_closure/run.log` |
+| ARC 自检与 U 集（合成，DEV） | `arc/run_arc.py selftest`、`uset` | `arc/arc_selftest.json`、`arc/arc_uset.json` |
+| ARC 训练集（开发） | `arc/run_arc.py training` | `arc/arc_training.json`、`arc/run_training.log` |
+| ARC 持出集（冻结后运行一次） | `arc/run_arc.py evaluation`（核对 `arc_freeze.json`） | `arc/arc_evaluation.json`、`arc/run_evaluation.log` |
