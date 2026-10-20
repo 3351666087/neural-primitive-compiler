@@ -1,0 +1,379 @@
+{
+ "label": "DRY RUN on ARC-AGI-1 training (DEV); S3/S4 in-sample (preferences learned on these tasks); M-DISC on the first 60 ids only",
+ "tasks": 400,
+ "time_s": 355.3,
+ "cp": {
+  "CP1": {
+   "verdict": "HOLDS",
+   "true": 79,
+   "shuffled": 11,
+   "ratio": 7.18,
+   "fraction_true": 0.1975
+  },
+  "CP2": {
+   "verdict": "HOLDS",
+   "law_holding": 79,
+   "with_F1_rule": 70,
+   "share": 0.886
+  },
+  "CP3": {
+   "verdict": "HOLDS",
+   "F3_rules_tried_mean": 5.0
+  },
+  "CP4": {
+   "verdict": "HOLDS",
+   "tasks": 8,
+   "S2_correct_among_them": 8,
+   "S2_wrong_among_them": 0
+  },
+  "CP5": {
+   "verdict": "HOLDS",
+   "gap_tasks": 62,
+   "explained": 7,
+   "explained_share": 0.113,
+   "categories": {
+    "K: non-uniform recolouring inside blocks": 32,
+    "K: uniform per block, not a function of any attribute": 16,
+    "C only: crop target not selectable by any attribute": 7
+   },
+   "category_tie": false
+  },
+  "CP6": {
+   "verdict": "HOLDS",
+   "F1": {
+    "correct": 30,
+    "wrong": 5,
+    "abstain": 1155,
+    "precision": 0.857
+   },
+   "F3": {
+    "correct": 27,
+    "wrong": 4,
+    "abstain": 1159,
+    "precision": 0.871
+   },
+   "F3-noselect": {
+    "correct": 27,
+    "wrong": 6,
+    "abstain": 1157,
+    "precision": 0.818
+   }
+  },
+  "CP7": {
+   "verdict": "HOLDS",
+   "recheck": "HOLDS",
+   "count_part": "HOLDS",
+   "M-DISC-fixed": {
+    "correct": 2,
+    "wrong": 1,
+    "abstain": 57,
+    "RESOURCE_LIMIT": 0,
+    "precision": 0.667
+   },
+   "M-DISC-fixed-strict": {
+    "correct": 2,
+    "wrong": 1,
+    "abstain": 57,
+    "RESOURCE_LIMIT": 0,
+    "precision": 0.667
+   },
+   "M-DISC-MDL-fixed": {
+    "correct": 2,
+    "wrong": 1,
+    "abstain": 57,
+    "RESOURCE_LIMIT": 0,
+    "precision": 0.667
+   },
+   "z3_unique_rechecked": {
+    "n": 13,
+    "agree": 13,
+    "other": []
+   }
+  },
+  "CP8": {
+   "verdict": "FALSIFIED",
+   "wrong_part": "HOLDS",
+   "count_part": "FALSIFIED",
+   "count_part_methods": {
+    "F1": false,
+    "F3": false,
+    "F3-noselect": false,
+    "F4": false,
+    "S0": false,
+    "S1": false,
+    "S2": false,
+    "S3": false,
+    "S4": false
+   },
+   "F1": {
+    "correct": 11,
+    "wrong": 0,
+    "abstain": 389,
+    "RESOURCE_LIMIT": 0,
+    "precision": 1.0
+   },
+   "F3": {
+    "correct": 10,
+    "wrong": 0,
+    "abstain": 390,
+    "RESOURCE_LIMIT": 0,
+    "precision": 1.0
+   },
+   "F3-noselect": {
+    "correct": 10,
+    "wrong": 0,
+    "abstain": 390,
+    "RESOURCE_LIMIT": 0,
+    "precision": 1.0
+   },
+   "F4": {
+    "correct": 5,
+    "wrong": 0,
+    "abstain": 395,
+    "RESOURCE_LIMIT": 0,
+    "precision": 1.0
+   },
+   "S0": {
+    "correct": 10,
+    "wrong": 0,
+    "abstain": 390,
+    "RESOURCE_LIMIT": 0,
+    "precision": 1.0
+   },
+   "S1": {
+    "correct": 11,
+    "wrong": 0,
+    "abstain": 389,
+    "RESOURCE_LIMIT": 0,
+    "precision": 1.0
+   },
+   "S2": {
+    "correct": 18,
+    "wrong": 0,
+    "abstain": 382,
+    "RESOURCE_LIMIT": 0,
+    "precision": 1.0
+   },
+   "S3": {
+    "correct": 13,
+    "wrong": 0,
+    "abstain": 387,
+    "RESOURCE_LIMIT": 0,
+    "precision": 1.0
+   },
+   "S4": {
+    "correct": 18,
+    "wrong": 0,
+    "abstain": 382,
+    "RESOURCE_LIMIT": 0,
+    "precision": 1.0
+   }
+  },
+  "CP9": {
+   "verdict": "HOLDS",
+   "S1": {
+    "correct": 11,
+    "wrong": 0,
+    "abstain": 389,
+    "RESOURCE_LIMIT": 0,
+    "precision": 1.0
+   },
+   "S4": {
+    "correct": 18,
+    "wrong": 0,
+    "abstain": 382,
+    "RESOURCE_LIMIT": 0,
+    "precision": 1.0
+   }
+  }
+ },
+ "decision": {
+  "rule1_block_representation_enters_formal_system": true,
+  "rule1_block_correct_beyond_mdisc_fixed": [
+   "08ed6ac7",
+   "0b148d64",
+   "1cf80156",
+   "1f85a75f",
+   "23b5c85d",
+   "25d8a9c8",
+   "42a50994",
+   "67385a82",
+   "6e82a1ae",
+   "a87f7484",
+   "aedd82e4",
+   "b1948b0a",
+   "b230c067",
+   "be94b721",
+   "c8f0f002",
+   "c909285e",
+   "d511f180",
+   "ea32f347"
+  ],
+  "rule2_retract_conservation_law_selection": false,
+  "rule3_composition_supported_outside_DEV": true,
+  "rule4_rediscovery_confirmed": true
+ },
+ "correct_tasks": {
+  "F1": [
+   "08ed6ac7",
+   "0d3d703e",
+   "1cf80156",
+   "23b5c85d",
+   "25d8a9c8",
+   "42a50994",
+   "b1948b0a",
+   "be94b721",
+   "c8f0f002",
+   "d511f180",
+   "ea32f347"
+  ],
+  "F3": [
+   "08ed6ac7",
+   "0b148d64",
+   "0d3d703e",
+   "1cf80156",
+   "23b5c85d",
+   "42a50994",
+   "a87f7484",
+   "be94b721",
+   "d511f180",
+   "ea32f347"
+  ],
+  "F3-noselect": [
+   "08ed6ac7",
+   "0b148d64",
+   "0d3d703e",
+   "1cf80156",
+   "23b5c85d",
+   "42a50994",
+   "a87f7484",
+   "be94b721",
+   "d511f180",
+   "ea32f347"
+  ],
+  "F4": [
+   "08ed6ac7",
+   "0d3d703e",
+   "42a50994",
+   "d511f180",
+   "ea32f347"
+  ],
+  "S0": [
+   "08ed6ac7",
+   "0b148d64",
+   "0d3d703e",
+   "1cf80156",
+   "23b5c85d",
+   "42a50994",
+   "a87f7484",
+   "be94b721",
+   "d511f180",
+   "ea32f347"
+  ],
+  "S1": [
+   "08ed6ac7",
+   "0d3d703e",
+   "1cf80156",
+   "23b5c85d",
+   "25d8a9c8",
+   "42a50994",
+   "b1948b0a",
+   "be94b721",
+   "c8f0f002",
+   "d511f180",
+   "ea32f347"
+  ],
+  "S2": [
+   "08ed6ac7",
+   "0b148d64",
+   "0d3d703e",
+   "1cf80156",
+   "1f85a75f",
+   "23b5c85d",
+   "25d8a9c8",
+   "42a50994",
+   "67385a82",
+   "6e82a1ae",
+   "a87f7484",
+   "aedd82e4",
+   "b1948b0a",
+   "be94b721",
+   "c8f0f002",
+   "c909285e",
+   "d511f180",
+   "ea32f347"
+  ],
+  "S3": [
+   "08ed6ac7",
+   "0b148d64",
+   "0d3d703e",
+   "1cf80156",
+   "1f85a75f",
+   "23b5c85d",
+   "25d8a9c8",
+   "42a50994",
+   "a87f7484",
+   "be94b721",
+   "c909285e",
+   "d511f180",
+   "ea32f347"
+  ],
+  "S4": [
+   "08ed6ac7",
+   "0b148d64",
+   "0d3d703e",
+   "1cf80156",
+   "1f85a75f",
+   "23b5c85d",
+   "25d8a9c8",
+   "42a50994",
+   "67385a82",
+   "6e82a1ae",
+   "a87f7484",
+   "aedd82e4",
+   "b230c067",
+   "be94b721",
+   "c8f0f002",
+   "c909285e",
+   "d511f180",
+   "ea32f347"
+  ],
+  "M-DISC-fixed": [
+   "0d3d703e",
+   "25ff71a9"
+  ],
+  "M-DISC-fixed-strict": [
+   "0d3d703e",
+   "25ff71a9"
+  ],
+  "M-DISC-MDL-fixed": [
+   "0d3d703e",
+   "25ff71a9"
+  ]
+ },
+ "wrong_tasks": {
+  "F1": [],
+  "F3": [],
+  "F3-noselect": [],
+  "F4": [],
+  "S0": [],
+  "S1": [],
+  "S2": [],
+  "S3": [],
+  "S4": [],
+  "M-DISC-fixed": [
+   "239be575"
+  ],
+  "M-DISC-fixed-strict": [
+   "239be575"
+  ],
+  "M-DISC-MDL-fixed": [
+   "239be575"
+  ]
+ },
+ "resource_limits": {
+  "blocks": [],
+  "loo": [],
+  "mdisc": []
+ }
+}
