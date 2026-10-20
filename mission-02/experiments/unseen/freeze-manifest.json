@@ -1,0 +1,30 @@
+{
+  "tree_sha256": "1c40ea5a815b416b28c44a0a1cb79c454ba4dc8064560b75c2f7cb67bfb91419",
+  "frozen_at": "2026-10-20T10:49:50",
+  "files": {
+    "src/cog/__init__.py": "ba25a914d631ddb6cb023deea133aea334917521ba42074ae19a920b7330fa26",
+    "src/cog/auto.py": "3d4879586aa6558a1d2744e82f864b6d056605aeee9025473ebe43c32cd09de2",
+    "src/cog/check.py": "ed21fbc1db60626b43a2f5439dae20d2cf1987b3dcebe7222a305adcf941a768",
+    "src/cog/ir.py": "c7392f4bbd6dcbb3486e075ebaf6fbdd15cfa03330ea3bbce7c67ee2da40033f",
+    "src/cog/learn.py": "19d1af309150130f5aa129a785ebcf101ace6a6013b5eee6da98f46e99d2659e",
+    "src/cog/prims.py": "28bfab351fcbb5c59c581c71eee1bdac27d143057d2f4cc93cda0bbc70a858fa",
+    "src/cog/proofs.py": "737fc9c20662ebdb835d7b18f527dc344e01a7dbf27aab60a8422872440f4d18",
+    "src/cog/realize.py": "ad9b336ad4e2905c6f8c9ec419ed02fdfc690ede6420b9eab51d840992733d5b",
+    "src/cog/tasks.py": "5c7f5275e3392f6aeff3701b61b0d80e41cffc74cf44dc8c29b0cbf584ada061",
+    "src/cog/unseen.py": "631f79e942909e02ec1253a149efaa9ba2aa5ab3b90029cff178be0032a1b187",
+    "src/npc/__init__.py": "33bce995c8f235923daea3911c0724bf646b4f507907d0c2516aa2ca2de500c3",
+    "src/npc/__main__.py": "596a5321cd46ecd0e98a7380c1d43b7e4fc2bde635718297c1103ac17bdf6e31",
+    "src/npc/cli.py": "7ef50f953593f0d7224126781265fe5d7dd9b5914b63d3f1503dc6d1751324aa",
+    "src/npc/compose.py": "20626e63c8b3ae0ecbc8e3015d2a1f473e0220de34b71c17a2e75db08d015f3a",
+    "src/npc/dsl.py": "75eba4ed45fe3671ecb0749b3802f62bc065d50eed697e25be12f30bb35d02ae",
+    "src/npc/fsm.py": "10c741f9974c32276467cb77c955547906c5a7cfdab105f1244e1e5b37236bc0",
+    "src/npc/gen.py": "96fdcf90e6dc5b9b87ed010d958b0b4bbe867a290718db9b4bbb400b365fc2ba",
+    "src/npc/lib/primitives.npc": "af631774d934c1b8e9cc8cce1c769c566f6cfcacc9249be993fb2ec58188ab7a",
+    "src/npc/network.py": "c3a959bd7c5d1c45258a4f0e11afd4d12ecfbb5182d5c1a1ee2a62e11850b406",
+    "src/npc/simulator.py": "99acbbb712ac6e3c4da97108117ba88e1e9faa8d62b5425e50373e200dcd2df9",
+    "src/npc/smt.py": "d01032f69bd2f25bb4125462f8c88fe16010366cc0590ef32cd5d0319ede5e71",
+    "src/npc/spec.py": "be3e88caeeaa8f906b2ea88c4d529c7203c591be688e439ec0033b823aa03491",
+    "src/npc/synth.py": "315f0cd49e7c37c109dc4eb5eb0e61747b1f322f2ed1bd347fc72e196eb046a5",
+    "src/npc/verify.py": "35d026bff229608cc1bf97665df3231bc276f127b3a971739398ea5b4521cba8"
+  }
+}
