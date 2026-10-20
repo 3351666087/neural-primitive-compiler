@@ -1,0 +1,2 @@
+007bbfb7 {'M-DISC': 'abstain', 'M-DISC-MDL': 'abstain', 'A1-no-far-anchors': 'abstain', 'A2-translations-only': 'abstain', 'A3-no-uniqueness': 'abstain', 'B-SAME': 'abstain', 'B-RICH': 'abstain', 'B-TRIVIAL-identity': 'wrong', 'B-TRIVIAL-first-output': 'wrong'}
+00d62c1b {'M-DISC': 'abstain', 'M-DISC-MDL': 'abstain', 'A1-no-far-anchors': 'abstain', 'A2-translations-only': 'abstain', 'A3-no-uniqueness': 'abstain', 'B-SAME': 'abstain', 'B-RICH': 'correct', 'B-TRIVIAL-identity': 'wrong', 'B-TRIVIAL-first-output': 'wrong'}

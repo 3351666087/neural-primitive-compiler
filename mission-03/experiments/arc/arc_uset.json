@@ -1,0 +1,1694 @@
+{
+ "mode": "uset",
+ "solver_hashes": {
+  "m_disc.py": "727797f9ac2ee1195f33657725147936fdc24aa6aa4a414ea677b11d337a8a4a",
+  "b_dsl.py": "a842db219753ee3e40b80b13b5c3929b274ad0cfa9ca913d21bb86e59dfe13ec",
+  "run_arc.py": "b26e82c97a714915a5ddfc8fe9ce0c6f0039077aa8239ce879346eb37deb515d"
+ },
+ "summary": {
+  "M-DISC": {
+   "tasks": 20,
+   "correct": 0,
+   "wrong": 0,
+   "abstain": 20,
+   "solve_rate": 0.0,
+   "precision": null,
+   "mean_time_s": 0.408
+  },
+  "M-DISC-MDL": {
+   "tasks": 20,
+   "correct": 4,
+   "wrong": 4,
+   "abstain": 12,
+   "solve_rate": 0.2,
+   "precision": 0.5,
+   "mean_time_s": 0.409
+  },
+  "A1-no-far-anchors": {
+   "tasks": 20,
+   "correct": 2,
+   "wrong": 1,
+   "abstain": 17,
+   "solve_rate": 0.1,
+   "precision": 0.667,
+   "mean_time_s": 0.018
+  },
+  "A2-translations-only": {
+   "tasks": 20,
+   "correct": 0,
+   "wrong": 1,
+   "abstain": 19,
+   "solve_rate": 0.0,
+   "precision": 0.0,
+   "mean_time_s": 0.046
+  },
+  "A3-no-uniqueness": {
+   "tasks": 20,
+   "correct": 5,
+   "wrong": 15,
+   "abstain": 0,
+   "solve_rate": 0.25,
+   "precision": 0.25,
+   "mean_time_s": 0.417
+  },
+  "B-SAME": {
+   "tasks": 20,
+   "correct": 5,
+   "wrong": 15,
+   "abstain": 0,
+   "solve_rate": 0.25,
+   "precision": 0.25,
+   "mean_time_s": 0.0
+  },
+  "B-RICH": {
+   "tasks": 20,
+   "correct": 5,
+   "wrong": 15,
+   "abstain": 0,
+   "solve_rate": 0.25,
+   "precision": 0.25,
+   "mean_time_s": 0.0
+  },
+  "B-TRIVIAL-identity": {
+   "tasks": 20,
+   "correct": 0,
+   "wrong": 20,
+   "abstain": 0,
+   "solve_rate": 0.0,
+   "precision": 0.0,
+   "mean_time_s": 0.0
+  },
+  "B-TRIVIAL-first-output": {
+   "tasks": 20,
+   "correct": 0,
+   "wrong": 20,
+   "abstain": 0,
+   "solve_rate": 0.0,
+   "precision": 0.0,
+   "mean_time_s": 0.0
+  }
+ },
+ "rows": {
+  "U0:flipV|rot270": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.356,
+    "info": {
+     "pieces": 1608,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "abstain",
+    "time_s": 0.342,
+    "info": {
+     "pieces": 1608,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.02,
+    "info": {
+     "pieces": 108,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.041,
+    "info": {
+     "pieces": 106,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "wrong",
+    "time_s": 0.348,
+    "info": {
+     "pieces": 1608,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot270"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot270"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U1:transpose|rot90": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.459,
+    "info": {
+     "pieces": 551,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "correct",
+    "time_s": 0.497,
+    "info": {
+     "pieces": 551,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "correct",
+    "time_s": 0.016,
+    "info": {
+     "pieces": 18,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.061,
+    "info": {
+     "pieces": 25,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "wrong",
+    "time_s": 0.511,
+    "info": {
+     "pieces": 551,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot90"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot90"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U2:flipV|rot90": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.344,
+    "info": {
+     "pieces": 2522,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "abstain",
+    "time_s": 0.341,
+    "info": {
+     "pieces": 2522,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.02,
+    "info": {
+     "pieces": 86,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.033,
+    "info": {
+     "pieces": 55,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "wrong",
+    "time_s": 0.338,
+    "info": {
+     "pieces": 2522,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot90"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot90"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U3:rot180|antitranspose": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.407,
+    "info": {
+     "pieces": 704,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "abstain",
+    "time_s": 0.41,
+    "info": {
+     "pieces": 704,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.018,
+    "info": {
+     "pieces": 64,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.049,
+    "info": {
+     "pieces": 34,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "correct",
+    "time_s": 0.402,
+    "info": {
+     "pieces": 704,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "correct",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot180"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "correct",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot180"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U4:flipH|rot270": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.461,
+    "info": {
+     "pieces": 666,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "abstain",
+    "time_s": 0.464,
+    "info": {
+     "pieces": 666,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.016,
+    "info": {
+     "pieces": 34,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.056,
+    "info": {
+     "pieces": 6,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "wrong",
+    "time_s": 0.457,
+    "info": {
+     "pieces": 666,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot270"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot270"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U5:flipV|rot90": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.402,
+    "info": {
+     "pieces": 1370,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "abstain",
+    "time_s": 0.405,
+    "info": {
+     "pieces": 1370,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.015,
+    "info": {
+     "pieces": 30,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.047,
+    "info": {
+     "pieces": 58,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "wrong",
+    "time_s": 0.558,
+    "info": {
+     "pieces": 1370,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot90"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot90"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U6:antitranspose|rot90": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.51,
+    "info": {
+     "pieces": 1117,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "wrong",
+    "time_s": 0.482,
+    "info": {
+     "pieces": 1117,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.015,
+    "info": {
+     "pieces": 19,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.058,
+    "info": {
+     "pieces": 54,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "wrong",
+    "time_s": 0.483,
+    "info": {
+     "pieces": 1117,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot90"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot90"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U7:rot180|flipH": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.482,
+    "info": {
+     "pieces": 756,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "wrong",
+    "time_s": 0.475,
+    "info": {
+     "pieces": 756,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.016,
+    "info": {
+     "pieces": 47,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.059,
+    "info": {
+     "pieces": 56,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "correct",
+    "time_s": 0.481,
+    "info": {
+     "pieces": 756,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "correct",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot180"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "correct",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot180"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U8:flipV|flipH": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.464,
+    "info": {
+     "pieces": 819,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "abstain",
+    "time_s": 0.488,
+    "info": {
+     "pieces": 819,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.015,
+    "info": {
+     "pieces": 6,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.058,
+    "info": {
+     "pieces": 18,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "wrong",
+    "time_s": 0.485,
+    "info": {
+     "pieces": 819,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "flipH"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "flipH"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U9:rot90|rot270": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.4,
+    "info": {
+     "pieces": 4249,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "abstain",
+    "time_s": 0.379,
+    "info": {
+     "pieces": 4249,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.024,
+    "info": {
+     "pieces": 228,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.036,
+    "info": {
+     "pieces": 205,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "correct",
+    "time_s": 0.382,
+    "info": {
+     "pieces": 4249,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "correct",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot90"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "correct",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot90"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U10:flipV|flipH": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.366,
+    "info": {
+     "pieces": 4102,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "abstain",
+    "time_s": 0.368,
+    "info": {
+     "pieces": 4102,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.022,
+    "info": {
+     "pieces": 183,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.035,
+    "info": {
+     "pieces": 159,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "wrong",
+    "time_s": 0.375,
+    "info": {
+     "pieces": 4102,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "flipH"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "flipH"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U11:rot180|flipV": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.327,
+    "info": {
+     "pieces": 3018,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "wrong",
+    "time_s": 0.342,
+    "info": {
+     "pieces": 3018,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.02,
+    "info": {
+     "pieces": 141,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.034,
+    "info": {
+     "pieces": 160,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "correct",
+    "time_s": 0.338,
+    "info": {
+     "pieces": 3018,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "correct",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot180"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "correct",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot180"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U12:rot180|rot270": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.437,
+    "info": {
+     "pieces": 1728,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "wrong",
+    "time_s": 0.439,
+    "info": {
+     "pieces": 1728,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "wrong",
+    "time_s": 0.018,
+    "info": {
+     "pieces": 49,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "A2-translations-only": {
+    "status": "wrong",
+    "time_s": 0.049,
+    "info": {
+     "pieces": 79,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "wrong",
+    "time_s": 0.457,
+    "info": {
+     "pieces": 1728,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "identity"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "identity"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U13:rot90|flipH": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.354,
+    "info": {
+     "pieces": 1870,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "abstain",
+    "time_s": 0.379,
+    "info": {
+     "pieces": 1870,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.019,
+    "info": {
+     "pieces": 104,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.042,
+    "info": {
+     "pieces": 90,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "correct",
+    "time_s": 0.355,
+    "info": {
+     "pieces": 1870,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "correct",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot90"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "correct",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot90"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U14:transpose|flipV": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.413,
+    "info": {
+     "pieces": 1438,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "correct",
+    "time_s": 0.408,
+    "info": {
+     "pieces": 1438,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "correct",
+    "time_s": 0.016,
+    "info": {
+     "pieces": 56,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.049,
+    "info": {
+     "pieces": 79,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "wrong",
+    "time_s": 0.412,
+    "info": {
+     "pieces": 1438,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "flipH"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "flipH"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U15:flipV|rot180": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.394,
+    "info": {
+     "pieces": 4107,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "correct",
+    "time_s": 0.378,
+    "info": {
+     "pieces": 4107,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.021,
+    "info": {
+     "pieces": 121,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.034,
+    "info": {
+     "pieces": 148,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "wrong",
+    "time_s": 0.378,
+    "info": {
+     "pieces": 4107,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot180"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot180"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U16:flipV|rot90": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.417,
+    "info": {
+     "pieces": 1608,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "abstain",
+    "time_s": 0.419,
+    "info": {
+     "pieces": 1608,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.016,
+    "info": {
+     "pieces": 34,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.053,
+    "info": {
+     "pieces": 101,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "wrong",
+    "time_s": 0.417,
+    "info": {
+     "pieces": 1608,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot90"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot90"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U17:antitranspose|rot180": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.483,
+    "info": {
+     "pieces": 840,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "abstain",
+    "time_s": 0.482,
+    "info": {
+     "pieces": 840,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.017,
+    "info": {
+     "pieces": 60,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.059,
+    "info": {
+     "pieces": 92,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "wrong",
+    "time_s": 0.466,
+    "info": {
+     "pieces": 840,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot180"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot180"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U18:flipV|rot270": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.368,
+    "info": {
+     "pieces": 2300,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "abstain",
+    "time_s": 0.363,
+    "info": {
+     "pieces": 2300,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.022,
+    "info": {
+     "pieces": 174,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.043,
+    "info": {
+     "pieces": 201,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "wrong",
+    "time_s": 0.372,
+    "info": {
+     "pieces": 2300,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot270"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot270"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  },
+  "U19:flipH|rot180": {
+   "M-DISC": {
+    "status": "abstain",
+    "time_s": 0.324,
+    "info": {
+     "pieces": 2482,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "M-DISC-MDL": {
+    "status": "correct",
+    "time_s": 0.314,
+    "info": {
+     "pieces": 2482,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "A1-no-far-anchors": {
+    "status": "abstain",
+    "time_s": 0.023,
+    "info": {
+     "pieces": 108,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "ambiguous or unseen colour"
+    }
+   },
+   "A2-translations-only": {
+    "status": "abstain",
+    "time_s": 0.033,
+    "info": {
+     "pieces": 98,
+     "min_covers": 0,
+     "cover_size": null,
+     "reason": "no cover"
+    }
+   },
+   "A3-no-uniqueness": {
+    "status": "wrong",
+    "time_s": 0.331,
+    "info": {
+     "pieces": 2482,
+     "min_covers": 1,
+     "cover_size": 1,
+     "reason": "answered"
+    }
+   },
+   "B-SAME": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot180"
+     ]
+    }
+   },
+   "B-RICH": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {
+     "program": [
+      "rot180"
+     ]
+    }
+   },
+   "B-TRIVIAL-identity": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   },
+   "B-TRIVIAL-first-output": {
+    "status": "wrong",
+    "time_s": 0.0,
+    "info": {}
+   }
+  }
+ },
+ "time_s": 26.0
+}
