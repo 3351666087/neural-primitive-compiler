@@ -32,6 +32,7 @@ DATA = REPO / "mission-03" / "external" / "arc-agi-1" / "data"
 M03 = REPO / "mission-03" / "experiments" / "arc"
 LABEL = {"training": "DEV split (as in Mission 03)",
          "evaluation": "POST-HOC RE-EVALUATION on a split already used once in Mission 03; not a held-out result"}
+UNCHANGED = {"no cover", "no size rule", "empty outputs"}
 VARIANTS = {"M-DISC-fixed": dict(colour_mode="prior"), "M-DISC-fixed-strict": dict(colour_mode="strict"),
             "M-DISC-MDL-fixed": dict(colour_mode="prior", tiebreak="mdl")}
 
@@ -57,6 +58,13 @@ def main(split):
         tid = f.stem
         train, tests = load(f)
         row = {"M03-M-DISC": hist[tid]["M-DISC"]["status"], "M03-M-DISC-MDL": hist[tid]["M-DISC-MDL"]["status"]}
+        reason = hist[tid]["M-DISC"]["info"].get("reason")
+        if reason in UNCHANGED:
+            # identical pieces, covers and size rule in the old and the fixed solver: abstains by construction
+            for name in VARIANTS:
+                row[name] = {"status": "abstain", "reason": f"{reason} (unchanged by construction)"}
+            rows[tid] = row
+            continue
         for name, kw in VARIANTS.items():
             t1 = time.perf_counter()
             try:

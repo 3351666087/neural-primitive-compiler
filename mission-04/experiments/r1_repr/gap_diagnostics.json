@@ -1,0 +1,925 @@
+{
+ "label": "ARC-AGI-1 training split, DEV; descriptive only",
+ "unexplained_gap_tasks": 57,
+ "categories": {
+  "K: non-uniform recolouring inside blocks": 34,
+  "K: uniform per block, not a function of any attribute": 16,
+  "C only: crop target not selectable by any attribute": 7
+ },
+ "rows": {
+  "150deff5": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "1f642eb9": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "2204b7a8": {
+   "law_K_rules": [
+    "A4-SAME",
+    "A4-NONBG",
+    "A8-SAME",
+    "A8-NONBG",
+    "AH-SAME",
+    "AH-NONBG",
+    "AV-SAME",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  },
+  "25ff71a9": {
+   "law_K_rules": [],
+   "law_C_rules": [
+    "A4-SAME",
+    "A4-NONBG",
+    "A8-SAME",
+    "A8-NONBG",
+    "COLOUR"
+   ],
+   "same_size": true,
+   "category": "C only: crop target not selectable by any attribute"
+  },
+  "264363fd": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "2c608aff": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "321b1fc6": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": true,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "32597951": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "3618c87e": {
+   "law_K_rules": [
+    "AH-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "AH-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": true,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "36fdfd69": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "39a8645d": {
+   "law_K_rules": [],
+   "law_C_rules": [
+    "A8-SAME",
+    "A8-NONBG"
+   ],
+   "same_size": false,
+   "category": "C only: crop target not selectable by any attribute"
+  },
+  "3c9b0459": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "41e4d17e": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "48d8fb45": {
+   "law_K_rules": [],
+   "law_C_rules": [
+    "A8-SAME"
+   ],
+   "same_size": false,
+   "category": "C only: crop target not selectable by any attribute"
+  },
+  "50846271": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "50cb2852": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "543a7ed5": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "63613498": {
+   "law_K_rules": [
+    "A4-SAME",
+    "A4-NONBG",
+    "A8-SAME",
+    "A8-NONBG",
+    "AH-SAME",
+    "AH-NONBG",
+    "AV-SAME",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  },
+  "67a3c6ac": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "68b16354": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "694f12f3": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "6aa20dc0": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "74dd1130": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "776ffc46": {
+   "law_K_rules": [
+    "A4-SAME",
+    "A4-NONBG",
+    "A8-SAME",
+    "A8-NONBG",
+    "AH-SAME",
+    "AH-NONBG",
+    "AV-SAME",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  },
+  "85c4e7cd": {
+   "law_K_rules": [
+    "A4-SAME",
+    "A4-NONBG",
+    "A8-SAME",
+    "A8-NONBG",
+    "AH-SAME",
+    "AH-NONBG",
+    "AV-SAME",
+    "AV-NONBG",
+    "COLOUR"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  },
+  "9565186b": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "a5f85a15": {
+   "law_K_rules": [
+    "A4-SAME",
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-SAME",
+    "AH-NONBG",
+    "AV-SAME",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  },
+  "a61f2674": {
+   "law_K_rules": [
+    "A4-SAME",
+    "A4-NONBG",
+    "A8-SAME",
+    "A8-NONBG",
+    "AH-SAME",
+    "AH-NONBG",
+    "AV-SAME",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": true,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  },
+  "aabf363d": {
+   "law_K_rules": [
+    "A4-SAME",
+    "A4-NONBG",
+    "A8-SAME",
+    "A8-NONBG",
+    "AH-SAME",
+    "AH-NONBG",
+    "AV-SAME",
+    "AV-NONBG",
+    "COLOUR"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": true,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  },
+  "ae4f1146": {
+   "law_K_rules": [],
+   "law_C_rules": [
+    "A4-NONBG"
+   ],
+   "same_size": false,
+   "category": "C only: crop target not selectable by any attribute"
+  },
+  "b230c067": {
+   "law_K_rules": [
+    "A4-SAME",
+    "A4-NONBG",
+    "A8-SAME",
+    "A8-NONBG",
+    "AH-SAME",
+    "AH-NONBG",
+    "AV-SAME",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  },
+  "b2862040": {
+   "law_K_rules": [
+    "A4-SAME",
+    "A4-NONBG",
+    "A8-SAME",
+    "A8-NONBG",
+    "AH-SAME",
+    "AH-NONBG",
+    "AV-SAME",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  },
+  "b6afb2da": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "b8825c91": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "b9b7f026": {
+   "law_K_rules": [],
+   "law_C_rules": [
+    "AH-SAME",
+    "AH-NONBG"
+   ],
+   "same_size": false,
+   "category": "C only: crop target not selectable by any attribute"
+  },
+  "ba26e723": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-SAME",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "ba97ae07": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "bb43febb": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "c9f8e694": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "caa06a1f": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "cbded52d": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "ce9e57f2": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-SAME",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "d07ae81c": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "d23f8c26": {
+   "law_K_rules": [
+    "A4-SAME",
+    "AH-SAME",
+    "AV-SAME",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": true,
+   "blocks_recoloured": false,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  },
+  "d2abd087": {
+   "law_K_rules": [
+    "A4-SAME",
+    "A4-NONBG",
+    "A8-SAME",
+    "A8-NONBG",
+    "AH-SAME",
+    "AH-NONBG",
+    "AV-SAME",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  },
+  "d406998b": {
+   "law_K_rules": [
+    "A4-SAME",
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-SAME",
+    "AH-NONBG",
+    "AV-SAME",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  },
+  "d89b689b": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": true,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "d90796e8": {
+   "law_K_rules": [
+    "A4-SAME",
+    "A8-SAME",
+    "AH-SAME",
+    "AV-SAME"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": true,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  },
+  "ddf7fa4f": {
+   "law_K_rules": [
+    "A4-SAME",
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-SAME",
+    "AH-NONBG",
+    "AV-SAME",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  },
+  "de1cd16c": {
+   "law_K_rules": [],
+   "law_C_rules": [
+    "AV-SAME"
+   ],
+   "same_size": false,
+   "category": "C only: crop target not selectable by any attribute"
+  },
+  "e26a3af2": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "e509e548": {
+   "law_K_rules": [
+    "A4-SAME",
+    "A4-NONBG",
+    "A8-SAME",
+    "A8-NONBG",
+    "AH-SAME",
+    "AH-NONBG",
+    "AV-SAME",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  },
+  "e50d258f": {
+   "law_K_rules": [],
+   "law_C_rules": [
+    "A4-NONBG",
+    "A8-NONBG"
+   ],
+   "same_size": false,
+   "category": "C only: crop target not selectable by any attribute"
+  },
+  "e76a88a6": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "e8dc4411": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "e9afcf9a": {
+   "law_K_rules": [
+    "A4-NONBG",
+    "A8-NONBG",
+    "AH-NONBG",
+    "AV-SAME",
+    "AV-NONBG"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-NONBG",
+   "uniform_per_block": false,
+   "blocks_deleted": false,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: non-uniform recolouring inside blocks"
+  },
+  "f76d97a5": {
+   "law_K_rules": [
+    "A4-SAME",
+    "A8-SAME",
+    "AH-SAME",
+    "AV-SAME",
+    "COLOUR"
+   ],
+   "law_C_rules": [],
+   "same_size": true,
+   "rule": "A4-SAME",
+   "uniform_per_block": true,
+   "blocks_deleted": true,
+   "blocks_recoloured": true,
+   "cells_added_outside_blocks": false,
+   "category": "K: uniform per block, not a function of any attribute"
+  }
+ }
+}

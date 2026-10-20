@@ -79,29 +79,38 @@ def c1(n_trials=300, seed=0):
         answered += 1
         new, ninfo = U.solve_fixed(train, [TI])
         if new[0] is None and "AMBIGUOUS" in ninfo.get("reason", ""):
-            # independent cross-check without Z3: every minimum cover over ALL groups (no pruning, no cap)
+            # independent certificate check of the Z3 verdict: rebuild the witness and verify it by direct computation
+            mats = [tuple(tuple(k * v for v in r) for r in Mx) for k in (1, 2, 3) for Mx in M.D4M]
+            pieces = M.admissible_pieces(train, mats, M.translations())
             groups = {}
-            for pc in M.admissible_pieces(train, [tuple(tuple(k * v for v in r) for r in Mx) for k in (1, 2, 3) for Mx in M.D4M],
-                                          M.translations()):
+            for pc in pieces:
                 groups.setdefault(M.coverage(pc, train), []).append(pc)
             gl = list(groups.items())
-            covers, complete = U.all_min_covers_exhaustive(gl, M.requirement(train), limit=20000)
+            need = M.requirement(train)
+            k_star = len(M.min_covers(gl, need)[0])
             shape = M.apply_size(M.size_rules(train), TI)
-            preds = set()
-            import itertools as _it
-            for cv in covers:
-                for combo in _it.islice(_it.product(*[gl[i][1] for i in cv]), 64):
-                    pr = M.predict(combo, TI, shape)
-                    preds.add(None if pr is None else pr.tobytes())
-            found.append({"verified_by_exhaustive_enumeration": complete and len(preds) > 1,
-                          "exhaustive_min_covers": len(covers), "distinct_predictions": len(preds),"train_sizes": [I.shape for I, _ in train], "test_size": TI.shape,
+            st, wit = U.check_unique(pieces, train, TI, shape, k_star, old[0], "prior")
+            chosen = [pieces[i] for i in (wit or [])]
+            cov = 0
+            for pc in chosen:
+                cov |= M.coverage(pc, train)
+            alt = M.predict(chosen, TI, shape) if chosen else None
+            verified = (st == "AMBIGUOUS" and len(chosen) == k_star and (need & ~cov) == 0
+                        and (alt is None or not np.array_equal(alt, old[0])))
+            in_pruned_search = all(any(pc in g[1] for g in [gl[i] for i in range(len(gl))
+                                   if not any((gl[i][0] | o[0]) == o[0] and o[0] != gl[i][0] for o in gl)]) for pc in chosen)
+            found.append({"witness_verified": bool(verified), "witness_uses_dominated_group": not in_pruned_search,
+                          "witness_prediction_conflicts": alt is None,
+                          "witness_prediction_correct": alt is not None and alt.shape == TO.shape and bool((alt == TO).all()),
+                          "train_sizes": [I.shape for I, _ in train], "test_size": TI.shape,
                           "old_answer_correct": bool((old[0] == TO).all()) if old[0].shape == TO.shape else False,
                           "generator": [[list(map(list, Mx)), list(E)] for Mx, E in gen],
                           "train": [[I.tolist(), O.tolist()] for I, O in train], "test": [TI.tolist(), TO.tolist()],
                           "old_min_covers": info["min_covers"]})
     found.sort(key=lambda f: sum(np.array(f["train"][k][0]).size for k in range(3)))
     return {"trials": tried, "old_answered": answered, "pruning_hid_ambiguity": len(found),
-            "verified": sum(f["verified_by_exhaustive_enumeration"] for f in found),
+            "verified": sum(f["witness_verified"] for f in found),
+            "witness_uses_dominated_group": sum(f["witness_uses_dominated_group"] for f in found),
             "cap_involved": sum(f["old_min_covers"] >= 200 for f in found),
             "old_answer_wrong_among_those": sum(not f["old_answer_correct"] for f in found),
             "smallest": found[:1], "time_s": round(time.perf_counter() - t0, 1)}
