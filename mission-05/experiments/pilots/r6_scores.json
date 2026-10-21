@@ -1,0 +1,216 @@
+{
+ "H1": {
+  "verdict": "HOLDS",
+  "disc-1000": {
+   "pairs": {
+    "ORDER:O1": 2,
+    "ORDER:O2": 1,
+    "ZONE:Z1:left:2": 1,
+    "ZONE:Z1:left:half": 1,
+    "ZONE:Z1:right:2": 1,
+    "ZONE:Z1:right:half": 1,
+    "ZONE:Z2:left:2": 6,
+    "ZONE:Z2:left:half": 6,
+    "ZONE:Z2:right:2": 6,
+    "ZONE:Z2:right:half": 6,
+    "GROUP:G1": 4,
+    "GROUP:G2": 4
+   },
+   "no_rules": [],
+   "disagreements": 0,
+   "examples": {}
+  },
+  "five-1000": {
+   "pairs": {
+    "ORDER:O1": 2,
+    "ORDER:O2": 1,
+    "ZONE:Z1:left:2": 1,
+    "ZONE:Z1:left:half": 1,
+    "ZONE:Z1:right:2": 1,
+    "ZONE:Z1:right:half": 1,
+    "ZONE:Z2:left:2": 6,
+    "ZONE:Z2:left:half": 6,
+    "ZONE:Z2:right:2": 6,
+    "ZONE:Z2:right:half": 6,
+    "GROUP:G1": 4,
+    "GROUP:G2": 4
+   },
+   "no_rules": [],
+   "disagreements": 0,
+   "examples": {}
+  }
+ },
+ "H2": {
+  "verdict": "FALSIFIED",
+  "disc-1000": {
+   "dangerous_vs_T7": 0,
+   "agreement_with_TZ": 0.8796296296296297,
+   "dangerous_vs_TZ": 0,
+   "list": []
+  },
+  "five-1000": {
+   "dangerous_vs_T7": 0,
+   "agreement_with_TZ": 0.8796296296296297,
+   "dangerous_vs_TZ": 0,
+   "list": []
+  }
+ },
+ "H3": {
+  "verdict": "FALSIFIED",
+  "late": {
+   "disc-1000": [
+    "GROUP:G1 / OOW(X1,G1)",
+    "GROUP:G1 / OOW(X1,G2)",
+    "GROUP:G1 / OOW(X2,G1)",
+    "GROUP:G1 / OOW(X2,G2)",
+    "GROUP:G1 / OUT(A1,left,half)",
+    "GROUP:G1 / OUT(X1,left,half)",
+    "GROUP:G1 / OUT(X2,left,half)",
+    "GROUP:G2 / OOW(X1,G1)",
+    "GROUP:G2 / OOW(X1,G2)",
+    "GROUP:G2 / OOW(X2,G1)",
+    "GROUP:G2 / OOW(X2,G2)",
+    "GROUP:G2 / OUT(A1,right,half)",
+    "GROUP:G2 / OUT(X1,right,half)",
+    "GROUP:G2 / OUT(X2,right,half)",
+    "ZONE:Z2:left:2 / OOW(X1,G1)",
+    "ZONE:Z2:left:2 / OOW(X1,G2)",
+    "ZONE:Z2:left:2 / OOW(X2,G2)",
+    "ZONE:Z2:left:2 / OUT(A1,right,half)",
+    "ZONE:Z2:left:2 / OUT(X1,right,half)",
+    "ZONE:Z2:left:2 / OUT(X2,right,half)",
+    "ZONE:Z2:left:half / OOW(A1,G1)",
+    "ZONE:Z2:left:half / OOW(X1,G1)",
+    "ZONE:Z2:left:half / OOW(X1,G2)",
+    "ZONE:Z2:left:half / OOW(X2,G2)",
+    "ZONE:Z2:left:half / OUT(A1,right,2)",
+    "ZONE:Z2:left:half / OUT(X1,right,2)",
+    "ZONE:Z2:left:half / OUT(X2,right,2)",
+    "ZONE:Z2:right:2 / OOW(X1,G1)",
+    "ZONE:Z2:right:2 / OOW(X1,G2)",
+    "ZONE:Z2:right:2 / OOW(X2,G1)",
+    "ZONE:Z2:right:2 / OUT(A1,left,half)",
+    "ZONE:Z2:right:2 / OUT(X1,left,half)",
+    "ZONE:Z2:right:2 / OUT(X2,left,half)",
+    "ZONE:Z2:right:half / OOW(A1,G2)",
+    "ZONE:Z2:right:half / OOW(X1,G1)",
+    "ZONE:Z2:right:half / OOW(X1,G2)",
+    "ZONE:Z2:right:half / OOW(X2,G1)",
+    "ZONE:Z2:right:half / OUT(A1,left,2)",
+    "ZONE:Z2:right:half / OUT(X1,left,2)",
+    "ZONE:Z2:right:half / OUT(X2,left,2)"
+   ],
+   "five-1000": [
+    "GROUP:G1 / OOW(X1,G1)",
+    "GROUP:G1 / OOW(X1,G2)",
+    "GROUP:G1 / OOW(X2,G1)",
+    "GROUP:G1 / OOW(X2,G2)",
+    "GROUP:G1 / OUT(A1,left,half)",
+    "GROUP:G1 / OUT(X1,left,half)",
+    "GROUP:G1 / OUT(X2,left,half)",
+    "GROUP:G2 / OOW(X1,G1)",
+    "GROUP:G2 / OOW(X1,G2)",
+    "GROUP:G2 / OOW(X2,G1)",
+    "GROUP:G2 / OOW(X2,G2)",
+    "GROUP:G2 / OUT(A1,right,half)",
+    "GROUP:G2 / OUT(X1,right,half)",
+    "GROUP:G2 / OUT(X2,right,half)",
+    "ZONE:Z2:left:2 / OOW(X1,G1)",
+    "ZONE:Z2:left:2 / OOW(X1,G2)",
+    "ZONE:Z2:left:2 / OOW(X2,G2)",
+    "ZONE:Z2:left:2 / OUT(A1,right,half)",
+    "ZONE:Z2:left:2 / OUT(X1,right,half)",
+    "ZONE:Z2:left:2 / OUT(X2,right,half)",
+    "ZONE:Z2:left:half / OOW(A1,G1)",
+    "ZONE:Z2:left:half / OOW(X1,G1)",
+    "ZONE:Z2:left:half / OOW(X1,G2)",
+    "ZONE:Z2:left:half / OOW(X2,G2)",
+    "ZONE:Z2:left:half / OUT(A1,right,2)",
+    "ZONE:Z2:left:half / OUT(X1,right,2)",
+    "ZONE:Z2:left:half / OUT(X2,right,2)",
+    "ZONE:Z2:right:2 / OOW(X1,G1)",
+    "ZONE:Z2:right:2 / OOW(X1,G2)",
+    "ZONE:Z2:right:2 / OOW(X2,G1)",
+    "ZONE:Z2:right:2 / OUT(A1,left,half)",
+    "ZONE:Z2:right:2 / OUT(X1,left,half)",
+    "ZONE:Z2:right:2 / OUT(X2,left,half)",
+    "ZONE:Z2:right:half / OOW(A1,G2)",
+    "ZONE:Z2:right:half / OOW(X1,G1)",
+    "ZONE:Z2:right:half / OOW(X1,G2)",
+    "ZONE:Z2:right:half / OOW(X2,G1)",
+    "ZONE:Z2:right:half / OUT(A1,left,2)",
+    "ZONE:Z2:right:half / OUT(X1,left,2)",
+    "ZONE:Z2:right:half / OUT(X2,left,2)"
+   ]
+  }
+ },
+ "H4": {
+  "verdict": "HOLDS",
+  "disc-1000_dangerous": 0,
+  "five-1000_dangerous": 19,
+  "mirror_law_mismatches": {
+   "disc-1000": 0,
+   "five-1000": 0
+  },
+  "disc-1000_list": [],
+  "S-fact_reference_dangerous": {
+   "disc-1000": 1,
+   "five-1000": 23
+  }
+ },
+ "H5": {
+  "verdict": "HOLDS",
+  "disc-1000": {
+   "constructed": 30,
+   "same_as_TZ": true,
+   "wrong": [],
+   "rejected_under_TZ": []
+  },
+  "five-1000": {
+   "constructed": 30,
+   "same_as_TZ": true,
+   "wrong": [],
+   "rejected_under_TZ": []
+  }
+ },
+ "H6": {
+  "verdict": "FALSIFIED",
+  "five-200": {
+   "dangerous": 0,
+   "constructed": 30,
+   "same_as_TZ": true,
+   "wrong": [],
+   "rejected_under_TZ": [],
+   "agreement_with_TZ": 0.8587962962962963,
+   "no_rules": []
+  },
+  "five-50": {
+   "dangerous": 2,
+   "constructed": 21,
+   "same_as_TZ": false,
+   "wrong": [],
+   "rejected_under_TZ": [],
+   "agreement_with_TZ": 0.6759259259259259,
+   "no_rules": []
+  }
+ },
+ "H7": {
+  "verdict": "HOLDS",
+  "disc-1000": {
+   "learn": 2.8533519999999997,
+   "simulate": 52.032436000000004
+  },
+  "five-1000": {
+   "learn": 0.9872439999999987,
+   "simulate": 52.032436000000004
+  },
+  "five-200": {
+   "learn": 0.19419000000000253,
+   "simulate": 52.032436000000004
+  },
+  "five-50": {
+   "learn": 0.04931000000000196,
+   "simulate": 60.51216799999999
+  }
+ }
+}

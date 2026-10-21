@@ -1,0 +1,113 @@
+{
+ "label": "POST-HOC diagnostics of round 6",
+ "a": {
+  "vs_T7": {
+   "entries": 432,
+   "equal": 432,
+   "dangerous": 0,
+   "conservative": 0,
+   "dangerous_by_type": {},
+   "agreement": 1.0,
+   "dangerous_fraction": 0.0
+  },
+  "vs_TZ": {
+   "entries": 432,
+   "equal": 428,
+   "dangerous": 4,
+   "conservative": 0,
+   "dangerous_by_type": {
+    "OOW": 4
+   },
+   "dangerous_list": [
+    "ZONE:Z1:left:2 / OOW(A1,G1): learned 0, reference 1",
+    "ZONE:Z1:right:2 / OOW(A1,G2): learned 0, reference 1",
+    "ZONE:Z2:left:2 / OOW(A1,G1): learned -1, reference 1",
+    "ZONE:Z2:right:2 / OOW(A1,G2): learned -1, reference 1"
+   ],
+   "agreement": 0.9907407407407407,
+   "dangerous_fraction": 0.009259259259259259
+  },
+  "entries_with_new_combination_at_N7": [
+   "GROUP:G1 / KD{A1<X1;A1<X2;X1<X2}",
+   "GROUP:G1 / KD{A1<X1;A1<X2;X2<X1}",
+   "GROUP:G1 / KD{A1<X1;A1<X2}",
+   "GROUP:G1 / KD{A1<X1;X2<A1;X2<X1}",
+   "GROUP:G1 / KD{A1<X1;X2<X1}",
+   "GROUP:G1 / KD{A1<X1}",
+   "GROUP:G1 / KD{A1<X2;X1<A1;X1<X2}",
+   "GROUP:G1 / KD{A1<X2;X1<X2}",
+   "GROUP:G1 / KD{A1<X2}",
+   "GROUP:G1 / KD{X1<A1;X1<X2;X2<A1}",
+   "GROUP:G1 / KD{X1<A1;X1<X2}",
+   "GROUP:G1 / KD{X1<A1;X2<A1;X2<X1}",
+   "GROUP:G1 / KD{X1<A1;X2<A1}",
+   "GROUP:G1 / KD{X1<A1}",
+   "GROUP:G1 / KD{X1<X2}",
+   "GROUP:G1 / KD{X2<A1;X2<X1}",
+   "GROUP:G1 / KD{X2<A1}",
+   "GROUP:G1 / KD{X2<X1}",
+   "GROUP:G1 / OOW(X1,G1)",
+   "GROUP:G1 / OOW(X1,G2)",
+   "GROUP:G1 / OOW(X2,G1)",
+   "GROUP:G1 / OOW(X2,G2)",
+   "GROUP:G1 / OUT(A1,left,half)",
+   "GROUP:G1 / OUT(X1,left,half)",
+   "GROUP:G1 / OUT(X2,left,half)",
+   "GROUP:G2 / KD{A1<X1;A1<X2;X1<X2}",
+   "GROUP:G2 / KD{A1<X1;A1<X2;X2<X1}",
+   "GROUP:G2 / KD{A1<X1;A1<X2}",
+   "GROUP:G2 / KD{A1<X1;X2<A1;X2<X1}",
+   "GROUP:G2 / KD{A1<X1;X2<X1}",
+   "GROUP:G2 / KD{A1<X1}",
+   "GROUP:G2 / KD{A1<X2;X1<A1;X1<X2}",
+   "GROUP:G2 / KD{A1<X2;X1<X2}",
+   "GROUP:G2 / KD{A1<X2}",
+   "GROUP:G2 / KD{X1<A1;X1<X2;X2<A1}",
+   "GROUP:G2 / KD{X1<A1;X1<X2}",
+   "GROUP:G2 / KD{X1<A1;X2<A1;X2<X1}",
+   "GROUP:G2 / KD{X1<A1;X2<A1}",
+   "GROUP:G2 / KD{X1<A1}",
+   "GROUP:G2 / KD{X1<X2}",
+   "GROUP:G2 / KD{X2<A1;X2<X1}",
+   "GROUP:G2 / KD{X2<A1}",
+   "GROUP:G2 / KD{X2<X1}",
+   "GROUP:G2 / OOW(X1,G1)",
+   "GROUP:G2 / OOW(X1,G2)",
+   "GROUP:G2 / OOW(X2,G1)",
+   "GROUP:G2 / OOW(X2,G2)",
+   "GROUP:G2 / OUT(A1,right,half)",
+   "GROUP:G2 / OUT(X1,right,half)",
+   "GROUP:G2 / OUT(X2,right,half)",
+   "ZONE:Z1:left:2 / OOW(X1,G2)",
+   "ZONE:Z1:left:2 / OOW(X2,G2)",
+   "ZONE:Z1:left:half / OOW(X1,G1)",
+   "ZONE:Z1:right:2 / OOW(X1,G1)",
+   "ZONE:Z1:right:2 / OOW(X2,G1)",
+   "ZONE:Z1:right:half / OOW(X1,G2)",
+   "ZONE:Z2:left:2 / OOW(X2,G2)",
+   "ZONE:Z2:left:half / OOW(X1,G1)",
+   "ZONE:Z2:left:half / OOW(X1,G2)",
+   "ZONE:Z2:left:half / OOW(X2,G2)",
+   "ZONE:Z2:right:2 / OOW(X2,G1)",
+   "ZONE:Z2:right:half / OOW(X1,G1)",
+   "ZONE:Z2:right:half / OOW(X1,G2)",
+   "ZONE:Z2:right:half / OOW(X2,G1)"
+  ]
+ },
+ "b": {
+  "classes_of_dangerous": {
+   "GROUP:G2 / KD{X1<X2}": "t",
+   "GROUP:G2 / KD{X2<X1}": "t"
+  },
+  "entries_with_holdout_errors": [
+   "GROUP:G2 / KD{X1<X2}",
+   "GROUP:G2 / KD{X2<X1}"
+  ],
+  "holdout": {
+   "predicted": 84472,
+   "unpredicted": 1928,
+   "errors": 44
+  }
+ },
+ "cpu_s": 103.2
+}

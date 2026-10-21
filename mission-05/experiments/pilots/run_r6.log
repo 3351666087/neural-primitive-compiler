@@ -1,0 +1,16 @@
+disc-1000 version-space pairs {'ORDER:O1': 2, 'ORDER:O2': 1, 'ZONE:Z1:left:2': 1, 'ZONE:Z1:left:half': 1, 'ZONE:Z1:right:2': 1, 'ZONE:Z1:right:half': 1, 'ZONE:Z2:left:2': 6, 'ZONE:Z2:left:half': 6, 'ZONE:Z2:right:2': 6, 'ZONE:Z2:right:half': 6, 'GROUP:G1': 4, 'GROUP:G2': 4} cpu 2.9
+five-1000 version-space pairs {'ORDER:O1': 2, 'ORDER:O2': 1, 'ZONE:Z1:left:2': 1, 'ZONE:Z1:left:half': 1, 'ZONE:Z1:right:2': 1, 'ZONE:Z1:right:half': 1, 'ZONE:Z2:left:2': 6, 'ZONE:Z2:left:half': 6, 'ZONE:Z2:right:2': 6, 'ZONE:Z2:right:half': 6, 'GROUP:G1': 4, 'GROUP:G2': 4} cpu 1.0
+five-200 version-space pairs {'ORDER:O1': 2, 'ORDER:O2': 1, 'ZONE:Z1:left:2': 1, 'ZONE:Z1:left:half': 1, 'ZONE:Z1:right:2': 1, 'ZONE:Z1:right:half': 1, 'ZONE:Z2:left:2': 6, 'ZONE:Z2:left:half': 6, 'ZONE:Z2:right:2': 6, 'ZONE:Z2:right:half': 6, 'GROUP:G1': 4, 'GROUP:G2': 4} cpu 0.2
+five-50 version-space pairs {'ORDER:O1': 4, 'ORDER:O2': 1, 'ZONE:Z1:left:2': 2, 'ZONE:Z1:left:half': 2, 'ZONE:Z1:right:2': 4, 'ZONE:Z1:right:half': 2, 'ZONE:Z2:left:2': 6, 'ZONE:Z2:left:half': 12, 'ZONE:Z2:right:2': 6, 'ZONE:Z2:right:half': 12, 'GROUP:G1': 5, 'GROUP:G2': 5} cpu 0.0
+disc-1000 simulated 52.0 s; H1 disagreements 0 ; new at N=7 40
+five-50 simulated 60.5 s; H1 disagreements 115276 ; new at N=7 40
+disc-1000 B-RULE dangerous vs T7 0 agreement TZ 0.88 B-SYM dangerous vs T7 0
+five-1000 B-RULE dangerous vs T7 0 agreement TZ 0.88 B-SYM dangerous vs T7 19
+five-200 B-RULE dangerous vs T7 0 agreement TZ 0.859
+five-50 B-RULE dangerous vs T7 2 agreement TZ 0.676
+A-P' disc-1000 constructed 30 wrong 0 rejected under TZ 0
+A-P' five-1000 constructed 30 wrong 0 rejected under TZ 0
+A-P' five-200 constructed 30 wrong 0 rejected under TZ 0
+A-P' five-50 constructed 21 wrong 0 rejected under TZ 0
+done 170.5 s; newly judged plans 19
+exit 0
