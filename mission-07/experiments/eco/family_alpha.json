@@ -1,0 +1,395 @@
+{
+ "name": "alpha",
+ "author": "designer (this session), development family",
+ "interior_walls": 6,
+ "phase": {
+  "every": 4000,
+  "k": 2
+ },
+ "kinds": {
+  "tree": {
+   "solid": true
+  },
+  "stone": {
+   "solid": true,
+   "latent": {
+    "charge": {
+     "domain": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "init": 0
+    }
+   }
+  },
+  "fruit": {
+   "pickable": true,
+   "consumable": {
+    "need": "food",
+    "amount": 30,
+    "vanish": true
+   }
+  },
+  "lamp": {
+   "solid": true,
+   "latent": {
+    "armed": {
+     "domain": [
+      0,
+      1
+     ],
+     "init": 0
+    }
+   }
+  },
+  "spring": {
+   "visibility": "revealed",
+   "consumable": {
+    "need": "water",
+    "amount": 40,
+    "cooldown": 0
+   }
+  },
+  "puddle": {
+   "consumable": {
+    "need": "water",
+    "amount": 12,
+    "cooldown": 200
+   }
+  }
+ },
+ "placement": {
+  "tree": 3,
+  "stone": 5,
+  "lamp": 3,
+  "spring": 3,
+  "puddle": 2,
+  "fruit": 1
+ },
+ "placement_constraints": [
+  {
+   "type": "near",
+   "kind": "spring",
+   "to": "lamp",
+   "dist": 2
+  },
+  {
+   "type": "near",
+   "kind": "stone",
+   "to": "lamp",
+   "dist": 1,
+   "count": 2
+  },
+  {
+   "type": "near",
+   "kind": "tree",
+   "to": "stone",
+   "dist": 2,
+   "count": 2,
+   "target_offset": 2
+  }
+ ],
+ "rules": [
+  {
+   "on": "poke",
+   "kind": "stone",
+   "effects": [
+    [
+     "inc",
+     "self",
+     "charge",
+     1,
+     0,
+     3
+    ],
+    [
+     "mark",
+     "poke"
+    ]
+   ]
+  },
+  {
+   "on": "tick",
+   "kind": "stone",
+   "guard": [
+    "and",
+    [
+     ">",
+     [
+      "latent",
+      "self",
+      "charge"
+     ],
+     0
+    ],
+    [
+     ">=",
+     [
+      "since",
+      "poke"
+     ],
+     25
+    ]
+   ],
+   "effects": [
+    [
+     "inc",
+     "self",
+     "charge",
+     -1,
+     0,
+     3
+    ],
+    [
+     "mark",
+     "poke"
+    ]
+   ]
+  },
+  {
+   "on": "tick",
+   "kind": "tree",
+   "guard": [
+    "and",
+    [
+     "==",
+     [
+      "phase"
+     ],
+     0
+    ],
+    [
+     "exists_near",
+     "stone",
+     2,
+     [
+      ">=",
+      [
+       "latent",
+       "it",
+       "charge"
+      ],
+      3
+     ]
+    ]
+   ],
+   "effects": [
+    [
+     "set",
+     [
+      "nearest",
+      "stone",
+      2,
+      [
+       ">=",
+       [
+        "latent",
+        "it",
+        "charge"
+       ],
+       3
+      ]
+     ],
+     "charge",
+     0
+    ],
+    [
+     "delay",
+     4,
+     [
+      "spawn",
+      "fruit",
+      "self",
+      1
+     ]
+    ],
+    [
+     "log",
+     "charged_fruit"
+    ]
+   ]
+  },
+  {
+   "on": "tick",
+   "kind": "tree",
+   "guard": [
+    "and",
+    [
+     "==",
+     [
+      "phase"
+     ],
+     1
+    ],
+    [
+     "exists_near",
+     "stone",
+     2,
+     [
+      ">=",
+      [
+       "latent",
+       "it",
+       "charge"
+      ],
+      2
+     ]
+    ]
+   ],
+   "effects": [
+    [
+     "set",
+     [
+      "nearest",
+      "stone",
+      2,
+      [
+       ">=",
+       [
+        "latent",
+        "it",
+        "charge"
+       ],
+       2
+      ]
+     ],
+     "charge",
+     0
+    ],
+    [
+     "delay",
+     4,
+     [
+      "spawn",
+      "fruit",
+      "self",
+      1
+     ]
+    ],
+    [
+     "log",
+     "charged_fruit"
+    ]
+   ]
+  },
+  {
+   "on": "tick",
+   "kind": "tree",
+   "guard": [
+    "chance",
+    0.0015
+   ],
+   "effects": [
+    [
+     "spawn",
+     "fruit",
+     "self",
+     1
+    ],
+    [
+     "log",
+     "spont_fruit"
+    ]
+   ]
+  },
+  {
+   "on": "poke",
+   "kind": "lamp",
+   "guard": [
+    "==",
+    [
+     "latent",
+     "self",
+     "armed"
+    ],
+    1
+   ],
+   "effects": [
+    [
+     "reveal",
+     "spring",
+     2,
+     80
+    ],
+    [
+     "set",
+     "self",
+     "armed",
+     0
+    ],
+    [
+     "log",
+     "spring_reveal"
+    ]
+   ]
+  },
+  {
+   "on": "poke",
+   "kind": "lamp",
+   "guard": [
+    "exists_near",
+    "stone",
+    1,
+    [
+     ">=",
+     [
+      "latent",
+      "it",
+      "charge"
+     ],
+     2
+    ]
+   ],
+   "effects": [
+    [
+     "set",
+     "self",
+     "armed",
+     1
+    ],
+    [
+     "mark",
+     "arm"
+    ],
+    [
+     "log",
+     "arm"
+    ]
+   ]
+  },
+  {
+   "on": "tick",
+   "kind": "lamp",
+   "guard": [
+    "and",
+    [
+     "==",
+     [
+      "latent",
+      "self",
+      "armed"
+     ],
+     1
+    ],
+    [
+     ">=",
+     [
+      "since",
+      "arm"
+     ],
+     150
+    ]
+   ],
+   "effects": [
+    [
+     "set",
+     "self",
+     "armed",
+     0
+    ]
+   ]
+  }
+ ]
+}

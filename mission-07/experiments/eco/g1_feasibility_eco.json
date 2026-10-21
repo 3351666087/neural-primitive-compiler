@@ -1,0 +1,440 @@
+{
+ "family": "alpha",
+ "seeds": [
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108,
+  109
+ ],
+ "deterministic": true,
+ "random_policy_steps_per_s": 27367,
+ "base_rates": {
+  "events_total_over_200k_steps": {
+   "spawn": 818,
+   "spont_fruit": 886,
+   "consume": 990,
+   "life_reset": 219,
+   "charged_fruit": 274,
+   "arm": 17,
+   "reveal": 12,
+   "spring_reveal": 11
+  },
+  "mean_frac_steps": {
+   "charge>=3": 0.00454,
+   "charge>=2": 0.033979999999999996,
+   "armed": 0.005695
+  },
+  "lives_total": 219,
+  "per_seed": [
+   {
+    "seed": 100,
+    "events": {
+     "spawn": 92,
+     "spont_fruit": 90,
+     "consume": 114,
+     "life_reset": 21,
+     "charged_fruit": 28,
+     "arm": 9,
+     "reveal": 4,
+     "spring_reveal": 4
+    },
+    "frac_steps": {
+     "charge>=3": 0.01015,
+     "charge>=2": 0.0517,
+     "armed": 0.03325
+    },
+    "lives": 21
+   },
+   {
+    "seed": 101,
+    "events": {
+     "consume": 83,
+     "spawn": 59,
+     "spont_fruit": 71,
+     "life_reset": 22,
+     "charged_fruit": 25,
+     "arm": 1,
+     "reveal": 2,
+     "spring_reveal": 1
+    },
+    "frac_steps": {
+     "charge>=3": 0.0,
+     "charge>=2": 0.0132,
+     "armed": 0.00015
+    },
+    "lives": 22
+   },
+   {
+    "seed": 102,
+    "events": {
+     "spawn": 87,
+     "spont_fruit": 87,
+     "life_reset": 22,
+     "charged_fruit": 26,
+     "consume": 105,
+     "arm": 3,
+     "reveal": 3,
+     "spring_reveal": 3
+    },
+    "frac_steps": {
+     "charge>=3": 0.00835,
+     "charge>=2": 0.03695,
+     "armed": 0.0122
+    },
+    "lives": 22
+   },
+   {
+    "seed": 103,
+    "events": {
+     "consume": 69,
+     "spawn": 38,
+     "spont_fruit": 101,
+     "life_reset": 21,
+     "charged_fruit": 39
+    },
+    "frac_steps": {
+     "charge>=3": 0.0,
+     "charge>=2": 0.02235,
+     "armed": 0.0
+    },
+    "lives": 21
+   },
+   {
+    "seed": 104,
+    "events": {
+     "consume": 121,
+     "spawn": 105,
+     "spont_fruit": 91,
+     "charged_fruit": 17,
+     "life_reset": 22
+    },
+    "frac_steps": {
+     "charge>=3": 0.0059,
+     "charge>=2": 0.04255,
+     "armed": 0.0
+    },
+    "lives": 22
+   },
+   {
+    "seed": 105,
+    "events": {
+     "spawn": 77,
+     "spont_fruit": 100,
+     "consume": 72,
+     "life_reset": 24,
+     "charged_fruit": 14,
+     "arm": 1
+    },
+    "frac_steps": {
+     "charge>=3": 0.0063,
+     "charge>=2": 0.038,
+     "armed": 0.00745
+    },
+    "lives": 24
+   },
+   {
+    "seed": 106,
+    "events": {
+     "spawn": 107,
+     "spont_fruit": 98,
+     "life_reset": 21,
+     "consume": 130,
+     "charged_fruit": 22
+    },
+    "frac_steps": {
+     "charge>=3": 0.0,
+     "charge>=2": 0.00915,
+     "armed": 0.0
+    },
+    "lives": 21
+   },
+   {
+    "seed": 107,
+    "events": {
+     "spawn": 76,
+     "spont_fruit": 83,
+     "consume": 89,
+     "charged_fruit": 38,
+     "life_reset": 22
+    },
+    "frac_steps": {
+     "charge>=3": 0.0,
+     "charge>=2": 0.0228,
+     "armed": 0.0
+    },
+    "lives": 22
+   },
+   {
+    "seed": 108,
+    "events": {
+     "spawn": 71,
+     "spont_fruit": 78,
+     "consume": 86,
+     "life_reset": 22,
+     "charged_fruit": 12,
+     "arm": 3,
+     "reveal": 3,
+     "spring_reveal": 3
+    },
+    "frac_steps": {
+     "charge>=3": 0.0087,
+     "charge>=2": 0.05335,
+     "armed": 0.0039
+    },
+    "lives": 22
+   },
+   {
+    "seed": 109,
+    "events": {
+     "consume": 121,
+     "spawn": 106,
+     "spont_fruit": 87,
+     "life_reset": 22,
+     "charged_fruit": 53
+    },
+    "frac_steps": {
+     "charge>=3": 0.006,
+     "charge>=2": 0.04975,
+     "armed": 0.0
+    },
+    "lives": 22
+   }
+  ]
+ },
+ "witness_pairs": {
+  "per_seed": [
+   {
+    "seed": 100,
+    "stone.charge": true,
+    "lamp.armed": true,
+    "spring.place": true,
+    "spring.place_detail": {
+     "positives": 60,
+     "rows": 232,
+     "expressible_within_bound": false,
+     "best_precision_recall": [
+      0.25862068965517243,
+      1.0
+     ],
+     "literals_searched": 2,
+     "k": 3
+    }
+   },
+   {
+    "seed": 101,
+    "stone.charge": true,
+    "lamp.armed": true,
+    "spring.place": true,
+    "spring.place_detail": {
+     "positives": 44,
+     "rows": 236,
+     "expressible_within_bound": false,
+     "best_precision_recall": [
+      0.2631578947368421,
+      0.9090909090909091
+     ],
+     "literals_searched": 3,
+     "k": 3
+    }
+   },
+   {
+    "seed": 102,
+    "stone.charge": true,
+    "lamp.armed": true,
+    "spring.place": true,
+    "spring.place_detail": {
+     "positives": 60,
+     "rows": 232,
+     "expressible_within_bound": false,
+     "best_precision_recall": [
+      0.25862068965517243,
+      1.0
+     ],
+     "literals_searched": 2,
+     "k": 3
+    }
+   },
+   {
+    "seed": 103,
+    "stone.charge": true,
+    "lamp.armed": true,
+    "spring.place": true,
+    "spring.place_detail": {
+     "positives": 64,
+     "rows": 232,
+     "expressible_within_bound": false,
+     "best_precision_recall": [
+      0.27586206896551724,
+      1.0
+     ],
+     "literals_searched": 2,
+     "k": 3
+    }
+   },
+   {
+    "seed": 104,
+    "stone.charge": true,
+    "lamp.armed": true,
+    "spring.place": true,
+    "spring.place_detail": {
+     "positives": 24,
+     "rows": 232,
+     "expressible_within_bound": false,
+     "best_precision_recall": [
+      0.5454545454545454,
+      1.0
+     ],
+     "literals_searched": 10,
+     "k": 3
+    }
+   },
+   {
+    "seed": 105,
+    "stone.charge": true,
+    "lamp.armed": true,
+    "spring.place": true,
+    "spring.place_detail": {
+     "positives": 40,
+     "rows": 232,
+     "expressible_within_bound": false,
+     "best_precision_recall": [
+      0.36,
+      0.9
+     ],
+     "literals_searched": 4,
+     "k": 3
+    }
+   },
+   {
+    "seed": 106,
+    "stone.charge": true,
+    "lamp.armed": true,
+    "spring.place": true,
+    "spring.place_detail": {
+     "positives": 36,
+     "rows": 232,
+     "expressible_within_bound": false,
+     "best_precision_recall": [
+      0.375,
+      1.0
+     ],
+     "literals_searched": 3,
+     "k": 3
+    }
+   },
+   {
+    "seed": 107,
+    "stone.charge": true,
+    "lamp.armed": true,
+    "spring.place": true,
+    "spring.place_detail": {
+     "positives": 64,
+     "rows": 232,
+     "expressible_within_bound": false,
+     "best_precision_recall": [
+      0.27586206896551724,
+      1.0
+     ],
+     "literals_searched": 2,
+     "k": 3
+    }
+   },
+   {
+    "seed": 108,
+    "stone.charge": true,
+    "lamp.armed": true,
+    "spring.place": true,
+    "spring.place_detail": {
+     "positives": 48,
+     "rows": 232,
+     "expressible_within_bound": false,
+     "best_precision_recall": [
+      0.3793103448275862,
+      0.9166666666666666
+     ],
+     "literals_searched": 3,
+     "k": 3
+    }
+   },
+   {
+    "seed": 109,
+    "stone.charge": true,
+    "lamp.armed": true,
+    "spring.place": true,
+    "spring.place_detail": {
+     "positives": 60,
+     "rows": 232,
+     "expressible_within_bound": false,
+     "best_precision_recall": [
+      0.25862068965517243,
+      1.0
+     ],
+     "literals_searched": 2,
+     "k": 3
+    }
+   }
+  ],
+  "count": {
+   "stone.charge": 10,
+   "lamp.armed": 10,
+   "spring.place": 10
+  }
+ },
+ "oracle_control": [
+  {
+   "seed": 100,
+   "charged_fruit_steps": 18,
+   "spring_reveal_steps": 15
+  },
+  {
+   "seed": 101,
+   "charged_fruit_steps": 19,
+   "spring_reveal_steps": 15
+  },
+  {
+   "seed": 102,
+   "charged_fruit_steps": 21,
+   "spring_reveal_steps": 23
+  },
+  {
+   "seed": 103,
+   "charged_fruit_steps": 19,
+   "spring_reveal_steps": 16
+  },
+  {
+   "seed": 104,
+   "spring_reveal_steps": 11
+  },
+  {
+   "seed": 105,
+   "charged_fruit_steps": 11,
+   "spring_reveal_steps": 12
+  },
+  {
+   "seed": 106,
+   "charged_fruit_steps": 19,
+   "spring_reveal_steps": 18
+  },
+  {
+   "seed": 107,
+   "charged_fruit_steps": 12,
+   "spring_reveal_steps": 9
+  },
+  {
+   "seed": 108,
+   "charged_fruit_steps": 12,
+   "spring_reveal_steps": 12
+  },
+  {
+   "seed": 109,
+   "charged_fruit_steps": 20,
+   "spring_reveal_steps": 19
+  }
+ ]
+}
