@@ -37,3 +37,13 @@
 
 - `dev.json` 进入仓库之前，要核对其 SHA-256 等于 `d8f892f5e70cb8e3e2d924059a61c440bc62bf0757324049f468c7669047e1ec`。
 - `heldout.json` 留在保管人目录中，Gate 4 时由用户决定交给裁判，并核对 `MANIFEST.json` 中记录的哈希。
+
+## dev.json 入库（2026-10-21，经用户批准）
+
+- 只复制了 `/Users/null3351/Code/m06-custodian/dev.json`，放到 `mission-06/external/workarena_split/dev.json`；未接触 `heldout.json`。
+- 读取之前核对 SHA-256：`d8f892f5e70cb8e3e2d924059a61c440bc62bf0757324049f468c7669047e1ec`，与保管人报告一致。
+- 内容与报告一致：
+  - 216 个开发族，各类别为 41 / 25 / 100 / 15 / 35，分别在 4 / 5 / 7 / 2 / 5 个桶中；
+  - 33 个 L1 原子任务；
+  - 每个族都有 L2 与 L3 的 ID；
+  - 没有种子或其他持出字段。

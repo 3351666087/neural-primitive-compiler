@@ -1,0 +1,1553 @@
+{
+ "families": [
+  {
+   "L2": "workarena.servicenow.workload-balancing-large-l2",
+   "L3": "workarena.servicenow.workload-balancing-large-l3",
+   "bucket": 1,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.workload-balancing-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.workload-balancing-medium-l2",
+   "L3": "workarena.servicenow.workload-balancing-medium-l3",
+   "bucket": 1,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.workload-balancing-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.workload-balancing-small-l2",
+   "L3": "workarena.servicenow.workload-balancing-small-l3",
+   "bucket": 1,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.workload-balancing-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.priority-assignment-large-l2",
+   "L3": "workarena.servicenow.priority-assignment-large-l3",
+   "bucket": 2,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.priority-assignment-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.priority-assignment-medium-l2",
+   "L3": "workarena.servicenow.priority-assignment-medium-l3",
+   "bucket": 2,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.priority-assignment-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.priority-assignment-small-l2",
+   "L3": "workarena.servicenow.priority-assignment-small-l3",
+   "bucket": 2,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.priority-assignment-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.work-assignment-large-l2",
+   "L3": "workarena.servicenow.work-assignment-large-l3",
+   "bucket": 2,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.work-assignment-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.work-assignment-medium-l2",
+   "L3": "workarena.servicenow.work-assignment-medium-l3",
+   "bucket": 2,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.work-assignment-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.work-assignment-small-l2",
+   "L3": "workarena.servicenow.work-assignment-small-l3",
+   "bucket": 2,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.work-assignment-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-fix-priority-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-fix-priority-uniform-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-fix-priority-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-fix-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-fix-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-fix-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-fix-tight-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-fix-tight-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-fix-tight-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-fix-tight-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-fix-tight-uniform-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-fix-tight-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-fix-wide-priority-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-fix-wide-priority-uniform-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-fix-wide-priority-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-fix-wide-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-fix-wide-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-fix-wide-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-fix-wide-schedule-tight-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-fix-wide-schedule-tight-uniform-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-fix-wide-schedule-tight-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-fix-wide-tight-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-fix-wide-tight-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-fix-wide-tight-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-priority-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-priority-uniform-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-priority-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-tight-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-tight-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-tight-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-tight-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-tight-uniform-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-tight-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-wide-priority-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-wide-priority-uniform-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-wide-priority-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-wide-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-wide-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-wide-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-wide-schedule-tight-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-wide-schedule-tight-uniform-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-wide-schedule-tight-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.two-changes-wide-tight-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.two-changes-wide-tight-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 5,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.two-changes-wide-tight-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-fix-priority-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-fix-priority-uniform-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-fix-priority-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-fix-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-fix-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-fix-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-fix-tight-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-fix-tight-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-fix-tight-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-fix-tight-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-fix-tight-uniform-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-fix-tight-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-fix-wide-priority-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-fix-wide-priority-uniform-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-fix-wide-priority-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-fix-wide-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-fix-wide-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-fix-wide-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-fix-wide-schedule-tight-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-fix-wide-schedule-tight-uniform-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-fix-wide-schedule-tight-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-fix-wide-tight-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-fix-wide-tight-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-fix-wide-tight-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-priority-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-priority-uniform-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-priority-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-tight-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-tight-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-tight-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-tight-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-tight-uniform-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-tight-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-wide-priority-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-wide-priority-uniform-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-wide-priority-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-wide-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-wide-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-wide-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-wide-schedule-tight-uniform-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-wide-schedule-tight-uniform-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-wide-schedule-tight-uniform-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.three-changes-wide-tight-priority-varied-risk-change-request-scheduling-l2",
+   "L3": "workarena.servicenow.three-changes-wide-tight-priority-varied-risk-change-request-scheduling-l3",
+   "bucket": 6,
+   "category": "planning_and_problem_solving",
+   "family": "workarena.servicenow.three-changes-wide-tight-priority-varied-risk-change-request-scheduling-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-min-create-incident-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-min-create-incident-l3",
+   "bucket": 1,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-min-create-incident-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-max-filter-asset-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-max-filter-asset-list-l3",
+   "bucket": 4,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-max-filter-asset-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-max-filter-hardware-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-max-filter-hardware-list-l3",
+   "bucket": 4,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-max-filter-hardware-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-max-filter-incident-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-max-filter-incident-list-l3",
+   "bucket": 4,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-max-filter-incident-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-max-filter-user-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-max-filter-user-list-l3",
+   "bucket": 4,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-max-filter-user-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-apple-ipad3-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-apple-ipad3-l3",
+   "bucket": 5,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-apple-ipad3-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-apple-iphone13-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-apple-iphone13-l3",
+   "bucket": 5,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-apple-iphone13-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-apple-iphone13pro-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-apple-iphone13pro-l3",
+   "bucket": 5,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-apple-iphone13pro-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-apple-watch-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-apple-watch-l3",
+   "bucket": 5,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-apple-watch-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-apple-watch2-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-apple-watch2-l3",
+   "bucket": 5,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-apple-watch2-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-galaxy-note20-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-galaxy-note20-l3",
+   "bucket": 5,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-galaxy-note20-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-google-nexus7-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-google-nexus7-l3",
+   "bucket": 5,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-google-nexus7-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-microsoft-surface-pro3-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-microsoft-surface-pro3-l3",
+   "bucket": 5,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-microsoft-surface-pro3-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-pixel4a-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-pixel4a-l3",
+   "bucket": 5,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-pixel4a-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-windows-surface-pro4-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-windows-surface-pro4-l3",
+   "bucket": 5,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-max-request-windows-surface-pro4-LX"
+  },
+  {
+   "L2": "workarena.servicenow.get-warranty-expiration-date-l2",
+   "L3": "workarena.servicenow.get-warranty-expiration-date-l3",
+   "bucket": 6,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.get-warranty-expiration-date-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-requested-items-and-order-apple-mac-book-pro15-l2",
+   "L3": "workarena.servicenow.filter-requested-items-and-order-apple-mac-book-pro15-l3",
+   "bucket": 7,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.filter-requested-items-and-order-apple-mac-book-pro15-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-requested-items-and-order-apple-watch-l2",
+   "L3": "workarena.servicenow.filter-requested-items-and-order-apple-watch-l3",
+   "bucket": 7,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.filter-requested-items-and-order-apple-watch-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-requested-items-and-order-developer-laptop-l2",
+   "L3": "workarena.servicenow.filter-requested-items-and-order-developer-laptop-l3",
+   "bucket": 7,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.filter-requested-items-and-order-developer-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-requested-items-and-order-development-laptop-p-c-l2",
+   "L3": "workarena.servicenow.filter-requested-items-and-order-development-laptop-p-c-l3",
+   "bucket": 7,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.filter-requested-items-and-order-development-laptop-p-c-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-requested-items-and-order-ipad-mini-l2",
+   "L3": "workarena.servicenow.filter-requested-items-and-order-ipad-mini-l3",
+   "bucket": 7,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.filter-requested-items-and-order-ipad-mini-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-requested-items-and-order-ipad-pro-l2",
+   "L3": "workarena.servicenow.filter-requested-items-and-order-ipad-pro-l3",
+   "bucket": 7,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.filter-requested-items-and-order-ipad-pro-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-requested-items-and-order-loaner-laptop-l2",
+   "L3": "workarena.servicenow.filter-requested-items-and-order-loaner-laptop-l3",
+   "bucket": 7,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.filter-requested-items-and-order-loaner-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-requested-items-and-order-sales-laptop-l2",
+   "L3": "workarena.servicenow.filter-requested-items-and-order-sales-laptop-l3",
+   "bucket": 7,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.filter-requested-items-and-order-sales-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-requested-items-and-order-standard-laptop-l2",
+   "L3": "workarena.servicenow.filter-requested-items-and-order-standard-laptop-l3",
+   "bucket": 7,
+   "category": "information_retrieval",
+   "family": "workarena.servicenow.filter-requested-items-and-order-standard-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.amount-based-expense-management-large-l2",
+   "L3": "workarena.servicenow.amount-based-expense-management-large-l3",
+   "bucket": 0,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.amount-based-expense-management-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.amount-based-expense-management-medium-l2",
+   "L3": "workarena.servicenow.amount-based-expense-management-medium-l3",
+   "bucket": 0,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.amount-based-expense-management-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.amount-based-expense-management-small-l2",
+   "L3": "workarena.servicenow.amount-based-expense-management-small-l3",
+   "bucket": 0,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.amount-based-expense-management-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.basic-expense-management-large-l2",
+   "L3": "workarena.servicenow.basic-expense-management-large-l3",
+   "bucket": 0,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.basic-expense-management-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.basic-expense-management-medium-l2",
+   "L3": "workarena.servicenow.basic-expense-management-medium-l3",
+   "bucket": 0,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.basic-expense-management-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.basic-expense-management-small-l2",
+   "L3": "workarena.servicenow.basic-expense-management-small-l3",
+   "bucket": 0,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.basic-expense-management-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.date-based-expense-management-large-l2",
+   "L3": "workarena.servicenow.date-based-expense-management-large-l3",
+   "bucket": 0,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.date-based-expense-management-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.date-based-expense-management-medium-l2",
+   "L3": "workarena.servicenow.date-based-expense-management-medium-l3",
+   "bucket": 0,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.date-based-expense-management-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.date-based-expense-management-small-l2",
+   "L3": "workarena.servicenow.date-based-expense-management-small-l3",
+   "bucket": 0,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.date-based-expense-management-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.easy-expense-management-large-l2",
+   "L3": "workarena.servicenow.easy-expense-management-large-l3",
+   "bucket": 0,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.easy-expense-management-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.easy-expense-management-medium-l2",
+   "L3": "workarena.servicenow.easy-expense-management-medium-l3",
+   "bucket": 0,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.easy-expense-management-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.easy-expense-management-small-l2",
+   "L3": "workarena.servicenow.easy-expense-management-small-l3",
+   "bucket": 0,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.easy-expense-management-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-random-expenses-and-delete-wrong-investments-large-l2",
+   "L3": "workarena.servicenow.filter-random-expenses-and-delete-wrong-investments-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-random-expenses-and-delete-wrong-investments-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-random-expenses-and-delete-wrong-investments-medium-l2",
+   "L3": "workarena.servicenow.filter-random-expenses-and-delete-wrong-investments-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-random-expenses-and-delete-wrong-investments-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-random-expenses-and-delete-wrong-investments-small-l2",
+   "L3": "workarena.servicenow.filter-random-expenses-and-delete-wrong-investments-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-random-expenses-and-delete-wrong-investments-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-random-expenses-and-find-total-return-large-l2",
+   "L3": "workarena.servicenow.filter-random-expenses-and-find-total-return-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-random-expenses-and-find-total-return-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-random-expenses-and-find-total-return-medium-l2",
+   "L3": "workarena.servicenow.filter-random-expenses-and-find-total-return-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-random-expenses-and-find-total-return-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-random-expenses-and-find-total-return-small-l2",
+   "L3": "workarena.servicenow.filter-random-expenses-and-find-total-return-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-random-expenses-and-find-total-return-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-random-expenses-and-select-investments-large-l2",
+   "L3": "workarena.servicenow.filter-random-expenses-and-select-investments-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-random-expenses-and-select-investments-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-random-expenses-and-select-investments-medium-l2",
+   "L3": "workarena.servicenow.filter-random-expenses-and-select-investments-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-random-expenses-and-select-investments-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-random-expenses-and-select-investments-small-l2",
+   "L3": "workarena.servicenow.filter-random-expenses-and-select-investments-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-random-expenses-and-select-investments-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-random-expenses-find-total-return-and-select-investments-large-l2",
+   "L3": "workarena.servicenow.filter-random-expenses-find-total-return-and-select-investments-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-random-expenses-find-total-return-and-select-investments-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-random-expenses-find-total-return-and-select-investments-medium-l2",
+   "L3": "workarena.servicenow.filter-random-expenses-find-total-return-and-select-investments-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-random-expenses-find-total-return-and-select-investments-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-random-expenses-find-total-return-and-select-investments-small-l2",
+   "L3": "workarena.servicenow.filter-random-expenses-find-total-return-and-select-investments-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-random-expenses-find-total-return-and-select-investments-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-expenses-and-delete-wrong-investments-large-l2",
+   "L3": "workarena.servicenow.filter-single-item-expenses-and-delete-wrong-investments-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-expenses-and-delete-wrong-investments-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-expenses-and-delete-wrong-investments-medium-l2",
+   "L3": "workarena.servicenow.filter-single-item-expenses-and-delete-wrong-investments-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-expenses-and-delete-wrong-investments-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-expenses-and-delete-wrong-investments-small-l2",
+   "L3": "workarena.servicenow.filter-single-item-expenses-and-delete-wrong-investments-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-expenses-and-delete-wrong-investments-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-expenses-and-find-total-return-large-l2",
+   "L3": "workarena.servicenow.filter-single-item-expenses-and-find-total-return-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-expenses-and-find-total-return-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-expenses-and-find-total-return-medium-l2",
+   "L3": "workarena.servicenow.filter-single-item-expenses-and-find-total-return-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-expenses-and-find-total-return-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-expenses-and-find-total-return-small-l2",
+   "L3": "workarena.servicenow.filter-single-item-expenses-and-find-total-return-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-expenses-and-find-total-return-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-expenses-and-select-investments-large-l2",
+   "L3": "workarena.servicenow.filter-single-item-expenses-and-select-investments-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-expenses-and-select-investments-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-expenses-and-select-investments-medium-l2",
+   "L3": "workarena.servicenow.filter-single-item-expenses-and-select-investments-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-expenses-and-select-investments-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-expenses-and-select-investments-small-l2",
+   "L3": "workarena.servicenow.filter-single-item-expenses-and-select-investments-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-expenses-and-select-investments-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-expenses-find-total-return-and-select-investments-large-l2",
+   "L3": "workarena.servicenow.filter-single-item-expenses-find-total-return-and-select-investments-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-expenses-find-total-return-and-select-investments-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-expenses-find-total-return-and-select-investments-medium-l2",
+   "L3": "workarena.servicenow.filter-single-item-expenses-find-total-return-and-select-investments-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-expenses-find-total-return-and-select-investments-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-expenses-find-total-return-and-select-investments-small-l2",
+   "L3": "workarena.servicenow.filter-single-item-expenses-find-total-return-and-select-investments-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-expenses-find-total-return-and-select-investments-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-uniform-expenses-and-delete-wrong-investments-large-l2",
+   "L3": "workarena.servicenow.filter-single-item-uniform-expenses-and-delete-wrong-investments-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-uniform-expenses-and-delete-wrong-investments-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-uniform-expenses-and-delete-wrong-investments-medium-l2",
+   "L3": "workarena.servicenow.filter-single-item-uniform-expenses-and-delete-wrong-investments-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-uniform-expenses-and-delete-wrong-investments-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-uniform-expenses-and-delete-wrong-investments-small-l2",
+   "L3": "workarena.servicenow.filter-single-item-uniform-expenses-and-delete-wrong-investments-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-uniform-expenses-and-delete-wrong-investments-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-uniform-expenses-and-find-total-return-large-l2",
+   "L3": "workarena.servicenow.filter-single-item-uniform-expenses-and-find-total-return-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-uniform-expenses-and-find-total-return-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-uniform-expenses-and-find-total-return-medium-l2",
+   "L3": "workarena.servicenow.filter-single-item-uniform-expenses-and-find-total-return-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-uniform-expenses-and-find-total-return-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-uniform-expenses-and-find-total-return-small-l2",
+   "L3": "workarena.servicenow.filter-single-item-uniform-expenses-and-find-total-return-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-uniform-expenses-and-find-total-return-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-uniform-expenses-and-select-investments-large-l2",
+   "L3": "workarena.servicenow.filter-single-item-uniform-expenses-and-select-investments-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-uniform-expenses-and-select-investments-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-uniform-expenses-and-select-investments-medium-l2",
+   "L3": "workarena.servicenow.filter-single-item-uniform-expenses-and-select-investments-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-uniform-expenses-and-select-investments-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-uniform-expenses-and-select-investments-small-l2",
+   "L3": "workarena.servicenow.filter-single-item-uniform-expenses-and-select-investments-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-uniform-expenses-and-select-investments-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-uniform-expenses-find-total-return-and-select-investments-large-l2",
+   "L3": "workarena.servicenow.filter-single-item-uniform-expenses-find-total-return-and-select-investments-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-uniform-expenses-find-total-return-and-select-investments-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-uniform-expenses-find-total-return-and-select-investments-medium-l2",
+   "L3": "workarena.servicenow.filter-single-item-uniform-expenses-find-total-return-and-select-investments-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-uniform-expenses-find-total-return-and-select-investments-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-single-item-uniform-expenses-find-total-return-and-select-investments-small-l2",
+   "L3": "workarena.servicenow.filter-single-item-uniform-expenses-find-total-return-and-select-investments-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-single-item-uniform-expenses-find-total-return-and-select-investments-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-three-items-uniform-expenses-and-delete-wrong-investments-large-l2",
+   "L3": "workarena.servicenow.filter-three-items-uniform-expenses-and-delete-wrong-investments-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-three-items-uniform-expenses-and-delete-wrong-investments-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-three-items-uniform-expenses-and-delete-wrong-investments-medium-l2",
+   "L3": "workarena.servicenow.filter-three-items-uniform-expenses-and-delete-wrong-investments-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-three-items-uniform-expenses-and-delete-wrong-investments-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-three-items-uniform-expenses-and-find-total-return-large-l2",
+   "L3": "workarena.servicenow.filter-three-items-uniform-expenses-and-find-total-return-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-three-items-uniform-expenses-and-find-total-return-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-three-items-uniform-expenses-and-find-total-return-medium-l2",
+   "L3": "workarena.servicenow.filter-three-items-uniform-expenses-and-find-total-return-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-three-items-uniform-expenses-and-find-total-return-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-three-items-uniform-expenses-and-select-investments-large-l2",
+   "L3": "workarena.servicenow.filter-three-items-uniform-expenses-and-select-investments-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-three-items-uniform-expenses-and-select-investments-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-three-items-uniform-expenses-and-select-investments-medium-l2",
+   "L3": "workarena.servicenow.filter-three-items-uniform-expenses-and-select-investments-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-three-items-uniform-expenses-and-select-investments-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-three-items-uniform-expenses-find-total-return-and-select-investments-large-l2",
+   "L3": "workarena.servicenow.filter-three-items-uniform-expenses-find-total-return-and-select-investments-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-three-items-uniform-expenses-find-total-return-and-select-investments-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-three-items-uniform-expenses-find-total-return-and-select-investments-medium-l2",
+   "L3": "workarena.servicenow.filter-three-items-uniform-expenses-find-total-return-and-select-investments-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-three-items-uniform-expenses-find-total-return-and-select-investments-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-trivial-expenses-and-find-total-return-large-l2",
+   "L3": "workarena.servicenow.filter-trivial-expenses-and-find-total-return-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-trivial-expenses-and-find-total-return-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-trivial-expenses-and-find-total-return-medium-l2",
+   "L3": "workarena.servicenow.filter-trivial-expenses-and-find-total-return-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-trivial-expenses-and-find-total-return-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-trivial-expenses-and-find-total-return-small-l2",
+   "L3": "workarena.servicenow.filter-trivial-expenses-and-find-total-return-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-trivial-expenses-and-find-total-return-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-trivial-expenses-and-select-investments-large-l2",
+   "L3": "workarena.servicenow.filter-trivial-expenses-and-select-investments-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-trivial-expenses-and-select-investments-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-trivial-expenses-and-select-investments-medium-l2",
+   "L3": "workarena.servicenow.filter-trivial-expenses-and-select-investments-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-trivial-expenses-and-select-investments-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-trivial-expenses-and-select-investments-small-l2",
+   "L3": "workarena.servicenow.filter-trivial-expenses-and-select-investments-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-trivial-expenses-and-select-investments-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-trivial-expenses-find-total-return-and-select-investments-large-l2",
+   "L3": "workarena.servicenow.filter-trivial-expenses-find-total-return-and-select-investments-large-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-trivial-expenses-find-total-return-and-select-investments-large-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-trivial-expenses-find-total-return-and-select-investments-medium-l2",
+   "L3": "workarena.servicenow.filter-trivial-expenses-find-total-return-and-select-investments-medium-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-trivial-expenses-find-total-return-and-select-investments-medium-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-trivial-expenses-find-total-return-and-select-investments-small-l2",
+   "L3": "workarena.servicenow.filter-trivial-expenses-find-total-return-and-select-investments-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-trivial-expenses-find-total-return-and-select-investments-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-two-items-uniform-expenses-and-delete-wrong-investments-small-l2",
+   "L3": "workarena.servicenow.filter-two-items-uniform-expenses-and-delete-wrong-investments-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-two-items-uniform-expenses-and-delete-wrong-investments-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-two-items-uniform-expenses-and-find-total-return-small-l2",
+   "L3": "workarena.servicenow.filter-two-items-uniform-expenses-and-find-total-return-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-two-items-uniform-expenses-and-find-total-return-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-two-items-uniform-expenses-and-select-investments-small-l2",
+   "L3": "workarena.servicenow.filter-two-items-uniform-expenses-and-select-investments-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-two-items-uniform-expenses-and-select-investments-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.filter-two-items-uniform-expenses-find-total-return-and-select-investments-small-l2",
+   "L3": "workarena.servicenow.filter-two-items-uniform-expenses-find-total-return-and-select-investments-small-l3",
+   "bucket": 1,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.filter-two-items-uniform-expenses-find-total-return-and-select-investments-small-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-apple-macbook-pro15-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-apple-macbook-pro15-l3",
+   "bucket": 4,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-apple-macbook-pro15-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-apple-watch-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-apple-watch-l3",
+   "bucket": 4,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-apple-watch-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-developer-laptop-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-developer-laptop-l3",
+   "bucket": 4,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-developer-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-development-laptop-p-c-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-development-laptop-p-c-l3",
+   "bucket": 4,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-development-laptop-p-c-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-loaner-laptop-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-loaner-laptop-l3",
+   "bucket": 4,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-loaner-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-sales-laptop-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-sales-laptop-l3",
+   "bucket": 4,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-sales-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-standard-laptop-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-standard-laptop-l3",
+   "bucket": 4,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-order-standard-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-orderi-pad-mini-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-orderi-pad-mini-l3",
+   "bucket": 4,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-orderi-pad-mini-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-orderi-pad-pro-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-orderi-pad-pro-l3",
+   "bucket": 4,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-catalog-and-mode-orderi-pad-pro-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-mean-create-incident-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-mean-create-incident-l3",
+   "bucket": 5,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-mean-create-incident-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-median-create-incident-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-median-create-incident-l3",
+   "bucket": 5,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-median-create-incident-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-mode-create-incident-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-mode-create-incident-l3",
+   "bucket": 5,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-mode-create-incident-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-mean-create-problem-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-mean-create-problem-l3",
+   "bucket": 6,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-mean-create-problem-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-median-create-problem-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-median-create-problem-l3",
+   "bucket": 6,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-median-create-problem-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-mode-create-problem-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-mode-create-problem-l3",
+   "bucket": 6,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-mode-create-problem-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-mean-greater-filter-asset-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-mean-greater-filter-asset-list-l3",
+   "bucket": 7,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-mean-greater-filter-asset-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-mean-greater-filter-hardware-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-mean-greater-filter-hardware-list-l3",
+   "bucket": 7,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-mean-greater-filter-hardware-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-mean-greater-filter-incident-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-mean-greater-filter-incident-list-l3",
+   "bucket": 7,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-mean-greater-filter-incident-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-mean-greater-filter-user-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-mean-greater-filter-user-list-l3",
+   "bucket": 7,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-mean-greater-filter-user-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-mean-lesser-filter-asset-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-mean-lesser-filter-asset-list-l3",
+   "bucket": 7,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-mean-lesser-filter-asset-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-mean-lesser-filter-hardware-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-mean-lesser-filter-hardware-list-l3",
+   "bucket": 7,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-mean-lesser-filter-hardware-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-mean-lesser-filter-incident-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-mean-lesser-filter-incident-list-l3",
+   "bucket": 7,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-mean-lesser-filter-incident-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-mean-lesser-filter-user-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-mean-lesser-filter-user-list-l3",
+   "bucket": 7,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-mean-lesser-filter-user-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-median-greater-filter-asset-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-median-greater-filter-asset-list-l3",
+   "bucket": 8,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-median-greater-filter-asset-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-median-greater-filter-hardware-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-median-greater-filter-hardware-list-l3",
+   "bucket": 8,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-median-greater-filter-hardware-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-median-greater-filter-incident-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-median-greater-filter-incident-list-l3",
+   "bucket": 8,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-median-greater-filter-incident-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-median-greater-filter-user-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-median-greater-filter-user-list-l3",
+   "bucket": 8,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-median-greater-filter-user-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-median-lesser-filter-asset-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-median-lesser-filter-asset-list-l3",
+   "bucket": 8,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-median-lesser-filter-asset-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-median-lesser-filter-hardware-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-median-lesser-filter-hardware-list-l3",
+   "bucket": 8,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-median-lesser-filter-hardware-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-median-lesser-filter-incident-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-median-lesser-filter-incident-list-l3",
+   "bucket": 8,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-median-lesser-filter-incident-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.dashboard-retrieve-incident-and-median-lesser-filter-user-list-l2",
+   "L3": "workarena.servicenow.dashboard-retrieve-incident-and-median-lesser-filter-user-list-l3",
+   "bucket": 8,
+   "category": "data_driven_decision_making_and_reasoning",
+   "family": "workarena.servicenow.dashboard-retrieve-incident-and-median-lesser-filter-user-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.navigate-and-order-apple-mac-book-pro15-l2",
+   "L3": "workarena.servicenow.navigate-and-order-apple-mac-book-pro15-l3",
+   "bucket": 1,
+   "category": "sophisticated_memory",
+   "family": "workarena.servicenow.navigate-and-order-apple-mac-book-pro15-LX"
+  },
+  {
+   "L2": "workarena.servicenow.navigate-and-order-apple-watch-l2",
+   "L3": "workarena.servicenow.navigate-and-order-apple-watch-l3",
+   "bucket": 1,
+   "category": "sophisticated_memory",
+   "family": "workarena.servicenow.navigate-and-order-apple-watch-LX"
+  },
+  {
+   "L2": "workarena.servicenow.navigate-and-order-developer-laptop-l2",
+   "L3": "workarena.servicenow.navigate-and-order-developer-laptop-l3",
+   "bucket": 1,
+   "category": "sophisticated_memory",
+   "family": "workarena.servicenow.navigate-and-order-developer-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.navigate-and-order-development-laptop-p-c-l2",
+   "L3": "workarena.servicenow.navigate-and-order-development-laptop-p-c-l3",
+   "bucket": 1,
+   "category": "sophisticated_memory",
+   "family": "workarena.servicenow.navigate-and-order-development-laptop-p-c-LX"
+  },
+  {
+   "L2": "workarena.servicenow.navigate-and-order-ipad-mini-l2",
+   "L3": "workarena.servicenow.navigate-and-order-ipad-mini-l3",
+   "bucket": 1,
+   "category": "sophisticated_memory",
+   "family": "workarena.servicenow.navigate-and-order-ipad-mini-LX"
+  },
+  {
+   "L2": "workarena.servicenow.navigate-and-order-ipad-pro-l2",
+   "L3": "workarena.servicenow.navigate-and-order-ipad-pro-l3",
+   "bucket": 1,
+   "category": "sophisticated_memory",
+   "family": "workarena.servicenow.navigate-and-order-ipad-pro-LX"
+  },
+  {
+   "L2": "workarena.servicenow.navigate-and-order-loaner-laptop-l2",
+   "L3": "workarena.servicenow.navigate-and-order-loaner-laptop-l3",
+   "bucket": 1,
+   "category": "sophisticated_memory",
+   "family": "workarena.servicenow.navigate-and-order-loaner-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.navigate-and-order-sales-laptop-l2",
+   "L3": "workarena.servicenow.navigate-and-order-sales-laptop-l3",
+   "bucket": 1,
+   "category": "sophisticated_memory",
+   "family": "workarena.servicenow.navigate-and-order-sales-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.navigate-and-order-standard-laptop-l2",
+   "L3": "workarena.servicenow.navigate-and-order-standard-laptop-l3",
+   "bucket": 1,
+   "category": "sophisticated_memory",
+   "family": "workarena.servicenow.navigate-and-order-standard-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.navigate-and-sort-asset-list-l2",
+   "L3": "workarena.servicenow.navigate-and-sort-asset-list-l3",
+   "bucket": 3,
+   "category": "sophisticated_memory",
+   "family": "workarena.servicenow.navigate-and-sort-asset-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.navigate-and-sort-change-request-list-l2",
+   "L3": "workarena.servicenow.navigate-and-sort-change-request-list-l3",
+   "bucket": 3,
+   "category": "sophisticated_memory",
+   "family": "workarena.servicenow.navigate-and-sort-change-request-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.navigate-and-sort-hardware-list-l2",
+   "L3": "workarena.servicenow.navigate-and-sort-hardware-list-l3",
+   "bucket": 3,
+   "category": "sophisticated_memory",
+   "family": "workarena.servicenow.navigate-and-sort-hardware-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.navigate-and-sort-incident-list-l2",
+   "L3": "workarena.servicenow.navigate-and-sort-incident-list-l3",
+   "bucket": 3,
+   "category": "sophisticated_memory",
+   "family": "workarena.servicenow.navigate-and-sort-incident-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.navigate-and-sort-service-catalog-item-list-l2",
+   "L3": "workarena.servicenow.navigate-and-sort-service-catalog-item-list-l3",
+   "bucket": 3,
+   "category": "sophisticated_memory",
+   "family": "workarena.servicenow.navigate-and-sort-service-catalog-item-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.navigate-and-sort-user-list-l2",
+   "L3": "workarena.servicenow.navigate-and-sort-user-list-l3",
+   "bucket": 3,
+   "category": "sophisticated_memory",
+   "family": "workarena.servicenow.navigate-and-sort-user-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-create-change-request-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-create-change-request-l3",
+   "bucket": 1,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-create-change-request-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-create-hardware-asset-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-create-hardware-asset-l3",
+   "bucket": 1,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-create-hardware-asset-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-create-incident-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-create-incident-l3",
+   "bucket": 1,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-create-incident-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-create-problem-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-create-problem-l3",
+   "bucket": 1,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-create-problem-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-create-user-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-create-user-l3",
+   "bucket": 1,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-create-user-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-apple-mac-book-pro15-with-reason-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-apple-mac-book-pro15-with-reason-l3",
+   "bucket": 2,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-apple-mac-book-pro15-with-reason-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-apple-watch-with-reason-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-apple-watch-with-reason-l3",
+   "bucket": 2,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-apple-watch-with-reason-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-developer-laptop-with-reason-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-developer-laptop-with-reason-l3",
+   "bucket": 2,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-developer-laptop-with-reason-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-development-laptop-p-c-with-reason-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-development-laptop-p-c-with-reason-l3",
+   "bucket": 2,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-development-laptop-p-c-with-reason-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-ipad-mini-with-reason-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-ipad-mini-with-reason-l3",
+   "bucket": 2,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-ipad-mini-with-reason-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-ipad-pro-with-reason-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-ipad-pro-with-reason-l3",
+   "bucket": 2,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-ipad-pro-with-reason-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-loaner-laptop-with-reason-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-loaner-laptop-with-reason-l3",
+   "bucket": 2,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-loaner-laptop-with-reason-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-sales-laptop-with-reason-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-sales-laptop-with-reason-l3",
+   "bucket": 2,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-sales-laptop-with-reason-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-standard-laptop-with-reason-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-standard-laptop-with-reason-l3",
+   "bucket": 2,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-standard-laptop-with-reason-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-apple-mac-book-pro15-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-apple-mac-book-pro15-l3",
+   "bucket": 3,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-apple-mac-book-pro15-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-apple-watch-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-apple-watch-l3",
+   "bucket": 3,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-apple-watch-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-developer-laptop-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-developer-laptop-l3",
+   "bucket": 3,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-developer-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-development-laptop-p-c-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-development-laptop-p-c-l3",
+   "bucket": 3,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-development-laptop-p-c-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-ipad-mini-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-ipad-mini-l3",
+   "bucket": 3,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-ipad-mini-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-ipad-pro-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-ipad-pro-l3",
+   "bucket": 3,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-ipad-pro-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-loaner-laptop-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-loaner-laptop-l3",
+   "bucket": 3,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-loaner-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-sales-laptop-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-sales-laptop-l3",
+   "bucket": 3,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-sales-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-order-standard-laptop-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-order-standard-laptop-l3",
+   "bucket": 3,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-order-standard-laptop-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-filter-asset-list-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-filter-asset-list-l3",
+   "bucket": 5,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-filter-asset-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-filter-change-request-list-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-filter-change-request-list-l3",
+   "bucket": 5,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-filter-change-request-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-filter-hardware-list-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-filter-hardware-list-l3",
+   "bucket": 5,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-filter-hardware-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-filter-incident-list-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-filter-incident-list-l3",
+   "bucket": 5,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-filter-incident-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-filter-service-catalog-item-list-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-filter-service-catalog-item-list-l3",
+   "bucket": 5,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-filter-service-catalog-item-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-filter-user-list-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-filter-user-list-l3",
+   "bucket": 5,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-filter-user-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-sort-asset-list-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-sort-asset-list-l3",
+   "bucket": 7,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-sort-asset-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-sort-change-request-list-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-sort-change-request-list-l3",
+   "bucket": 7,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-sort-change-request-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-sort-hardware-list-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-sort-hardware-list-l3",
+   "bucket": 7,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-sort-hardware-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-sort-incident-list-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-sort-incident-list-l3",
+   "bucket": 7,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-sort-incident-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-sort-service-catalog-item-list-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-sort-service-catalog-item-list-l3",
+   "bucket": 7,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-sort-service-catalog-item-list-LX"
+  },
+  {
+   "L2": "workarena.servicenow.infeasible-navigate-and-sort-user-list-l2",
+   "L3": "workarena.servicenow.infeasible-navigate-and-sort-user-list-l3",
+   "bucket": 7,
+   "category": "contextual_understanding_infeasible_tasks",
+   "family": "workarena.servicenow.infeasible-navigate-and-sort-user-list-LX"
+  }
+ ],
+ "l1_atomic": [
+  "workarena.servicenow.all-menu",
+  "workarena.servicenow.create-change-request",
+  "workarena.servicenow.create-hardware-asset",
+  "workarena.servicenow.create-incident",
+  "workarena.servicenow.create-problem",
+  "workarena.servicenow.create-user",
+  "workarena.servicenow.filter-asset-list",
+  "workarena.servicenow.filter-change-request-list",
+  "workarena.servicenow.filter-hardware-list",
+  "workarena.servicenow.filter-incident-list",
+  "workarena.servicenow.filter-service-catalog-item-list",
+  "workarena.servicenow.filter-user-list",
+  "workarena.servicenow.impersonation",
+  "workarena.servicenow.knowledge-base-search",
+  "workarena.servicenow.multi-chart-min-max-retrieval",
+  "workarena.servicenow.multi-chart-value-retrieval",
+  "workarena.servicenow.order-apple-mac-book-pro15",
+  "workarena.servicenow.order-apple-watch",
+  "workarena.servicenow.order-developer-laptop",
+  "workarena.servicenow.order-development-laptop-p-c",
+  "workarena.servicenow.order-ipad-mini",
+  "workarena.servicenow.order-ipad-pro",
+  "workarena.servicenow.order-loaner-laptop",
+  "workarena.servicenow.order-sales-laptop",
+  "workarena.servicenow.order-standard-laptop",
+  "workarena.servicenow.single-chart-min-max-retrieval",
+  "workarena.servicenow.single-chart-value-retrieval",
+  "workarena.servicenow.sort-asset-list",
+  "workarena.servicenow.sort-change-request-list",
+  "workarena.servicenow.sort-hardware-list",
+  "workarena.servicenow.sort-incident-list",
+  "workarena.servicenow.sort-service-catalog-item-list",
+  "workarena.servicenow.sort-user-list"
+ ],
+ "package": "browsergym-workarena 0.5.3",
+ "rule": "G1-S.2"
+}
