@@ -17,6 +17,7 @@ The achiever's allowed values are those of z3_damage.py (necessary constraints o
 Self-check: the after-truth formulas against the real relocation (exhaustive N <= 5, 20 000 random states N = 6..10).
 
   python -I z3_preserve.py            # writes tzp_table.json
+  python -I z3_preserve.py --p2       # TZ-P2 (amendment 5): writes tzp2_table.json
   python -I z3_preserve.py --smoke    # development check: formula self-check (2 000 random states) and every
                                       # 12th entry with a real N <= 5 counterexample (must not be PROVED)
 """
@@ -108,7 +109,7 @@ def self_check(seed=4, n_random=20000):
 
 
 # ------------------------------------------------------------------ Z3
-def prove(atom, var, gkey, plus=False, timeout_ms=20000):
+def prove(atom, var, gkey, plus=False, timeout_ms=20000, extreme=False):
     s, V, no_A1_between = achiever_base(atom, var, timeout_ms)
     N, x, y, u, v, sa, ca = V
     g = _parse(gkey)
@@ -135,6 +136,13 @@ def prove(atom, var, gkey, plus=False, timeout_ms=20000):
             st = z3.Int("sstar")
             s.add(_zone(N, st, g[2], g[3]), _zone(N, st + ca - 1, g[2], g[3]))
             s.add(sa <= st if var == "G1" else sa >= st)
+        if extreme and atom[0] == "ZONE" and p == A1:
+            # TZ-P2 (amendment 5): an eligible cell z* in both zones exists (joint satisfiability), and the selection
+            # takes the rightmost (left zone, Z1; right zone, Z2) or leftmost eligible zone cell
+            zs = z3.Int("zstar")
+            s.add(_zone(N, zs, atom[2], atom[3]), _zone(N, zs, g[2], g[3]))
+            rightmost = (atom[2] == "left") == (var == "Z1")
+            s.add(zs <= x if rightmost else zs >= x)
     else:
         p = ROLE[g[1]]
         bs, bc = z3.Ints("bs bc")
@@ -153,7 +161,30 @@ def prove(atom, var, gkey, plus=False, timeout_ms=20000):
     return {"status": "UNKNOWN"}
 
 
+def main_p2():
+    """TZ-P2 (amendment 5): TZ-P1 plus the extremality family; writes tzp2_table.json."""
+    t0 = time.perf_counter()
+    g2 = json.loads((HERE / "contract_table.json").read_text())
+    t7 = json.loads((HERE / "t7_tables.json").read_text())
+    tab = {}
+    for akey, a, v in achiever_instances():
+        row = {}
+        for gk, e in g2["preserves"][akey].items():
+            r = prove(a, v, gk, plus=True, extreme=True)
+            e7 = t7["preserves"][akey][gk]
+            r.update(ok_N5=e["ok"], states_N5=e["states"], ok_N7=e7["ok"], ok=r["status"] == "PROVED",
+                     proved=r["status"] == "PROVED", evidence="TZ" if r["status"] == "PROVED" else None)
+            row[gk] = r
+        tab[akey] = row
+    out = {"label": "TZ-P2: TZ-P1 plus the selection-extremality family (amendment 5)", "table": tab,
+           "z3_time_s": round(time.perf_counter() - t0, 2)}
+    (HERE / "tzp2_table.json").write_text(json.dumps(out, indent=1, default=str))
+    print("TZ-P2", sum(e["proved"] for r in tab.values() for e in r.values()), "proved", out["z3_time_s"], "s")
+
+
 def main():
+    if "--p2" in sys.argv:
+        return main_p2()
     if "--smoke" in sys.argv:
         sc = self_check(n_random=2000)
         print("self-check", sc["checked"], "mismatches", sc["mismatches"], sc["examples"][:3])
