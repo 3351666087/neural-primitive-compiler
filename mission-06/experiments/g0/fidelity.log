@@ -1,0 +1,41 @@
+{
+ "fixed_N5": {
+  "episodes": 1170165,
+  "disagreements": 2955,
+  "instances_disagreeing": [
+   "g3-grp-06",
+   "g3-grp-10",
+   "g3-zon-07|right|2",
+   "g3-zon-07|right|half",
+   "g4-order-11"
+  ]
+ },
+ "fixed_N9": {
+  "episodes": 12200,
+  "disagreements": 200,
+  "instances_disagreeing": [
+   "g3-zon-07|right|2",
+   "g4-order-11"
+  ]
+ },
+ "movable_N5": {
+  "episodes": 486695,
+  "disagreements": 2895,
+  "instances_disagreeing": [
+   "S-GRO-0248",
+   "g3-grp-06",
+   "g3-grp-10",
+   "g3-zon-07|right|2",
+   "g3-zon-07|right|half",
+   "g4-order-11"
+  ]
+ },
+ "movable_N9": {
+  "episodes": 12200,
+  "disagreements": 200,
+  "instances_disagreeing": [
+   "g3-zon-07|right|2",
+   "g3-zon-07|right|half"
+  ]
+ }
+} time 11.7

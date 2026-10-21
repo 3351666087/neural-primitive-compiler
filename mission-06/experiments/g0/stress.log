@@ -1,0 +1,29 @@
+{
+ "S1_N20": {
+  "plans": 211,
+  "episodes": 21100,
+  "failures": 0,
+  "plans_failing": 0,
+  "outcomes": {
+   "SUCCESS": 21100
+  }
+ },
+ "S2_N9": {
+  "plans": 211,
+  "episodes": 21100,
+  "failures": 0,
+  "plans_failing": 0,
+  "outcomes": {
+   "SUCCESS": 21100
+  }
+ },
+ "S2_N12": {
+  "plans": 211,
+  "episodes": 21100,
+  "failures": 0,
+  "plans_failing": 0,
+  "outcomes": {
+   "SUCCESS": 21100
+  }
+ }
+} time 78.6

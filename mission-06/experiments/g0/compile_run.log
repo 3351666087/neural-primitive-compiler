@@ -1,0 +1,2 @@
+lemmas [('M memoryless', 'PROVED'), ('CL clip', 'PROVED'), ('OR', 'PROVED'), ('AND (positive multiset of size p, negatives of weight -p)', 'PROVED'), ('ATLEAST (any n >= 0, k >= 1, k > n allowed)', 'PROVED'), ('CONST __T', 'PROVED'), ("CMR inactive letters' P-neurons stay silent", 'PROVED'), ('CMR bit update (load / one / zero / hold) and at most one P active', 'PROVED')]
+plans 304 networks 1824 with problems 0 time 6.5

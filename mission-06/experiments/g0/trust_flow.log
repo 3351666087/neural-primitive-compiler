@@ -1,0 +1,36 @@
+truth readers (file, function, field):
+   mission-05/experiments/g3/a_dsl.py a_tables applicability_cex
+   mission-05/experiments/g3/a_dsl.py a_tables iterate
+   mission-05/experiments/g3/a_dsl.py a_tables preserves
+   mission-05/experiments/g3/a_dsl.py observed_violations damage
+   mission-05/experiments/g3/a_dsl.py observed_violations max_by_N
+   mission-05/experiments/g3/a_dsl.py soundness cex
+   mission-05/experiments/g3/a_dsl.py soundness damage
+   mission-05/experiments/g3/a_dsl.py soundness max_by_N
+   mission-05/experiments/g3/a_dsl.py soundness preserves
+   mission-05/experiments/g3/a_dsl.py truth_progress applicability_cex
+   mission-05/experiments/g3/a_dsl.py truth_progress damage
+   mission-05/experiments/g3/a_dsl.py truth_progress max_by_N
+   mission-05/experiments/g3/heldout_diag.py <module> damage
+   mission-05/experiments/g3/heldout_diag.py <module> max_by_N
+   mission-05/experiments/g3/selfcheck.py main cex
+   mission-05/experiments/g3/selfcheck.py main damage
+   mission-05/experiments/g3/selfcheck.py main max_by_N
+   mission-05/experiments/g3/selfcheck.py main preserves
+   mission-05/experiments/r7/diag_consistency.py main applicability_cex
+   mission-05/experiments/r7/diag_consistency.py main damage
+   mission-05/experiments/r7/diag_consistency.py main max_by_N
+   mission-05/experiments/r7/zplus.py a_tables_plus applicability_cex
+   mission-05/experiments/r7/zplus.py a_tables_plus iterate
+   mission-05/experiments/r7/zplus.py a_tables_plus preserves
+   mission-05/experiments/r8/zpp.py a_tables_pp applicability_cex
+   mission-05/experiments/r8/zpp.py a_tables_pp iterate
+   mission-05/experiments/r8/zpp.py a_tables_pp preserves
+   mission-06/experiments/g0/fidelity.py main applicability_cex
+   mission-06/experiments/g0/run_app.py main applicability_cex
+dynamic access logs:
+   a_dsl.a_tables ['<instance> / applicability_cex', '<instance> / preserves', '<instance> / preserves / <iterate keys>']
+   zplus.a_tables_plus ['<instance> / applicability_cex', '<instance> / preserves', '<instance> / preserves / <iterate keys>']
+   zpp.a_tables_pp ['<instance> / applicability_cex', '<instance> / preserves', '<instance> / preserves / <iterate keys>']
+   constructors_with_judge_poisoned {'goals': 98, 'constructed (both routes, N<=5 truth)': 59, 'judge_calls': []}
+mission-06 isolation violations: []

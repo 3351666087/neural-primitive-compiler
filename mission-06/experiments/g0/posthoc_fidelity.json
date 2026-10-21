@@ -1,0 +1,257 @@
+{
+ "label": "POST-HOC diagnostic of G0-M1",
+ "flagged": [
+  "S-GRO-0248",
+  "g3-grp-06",
+  "g3-grp-10",
+  "g3-zon-07|right|2",
+  "g3-zon-07|right|half",
+  "g4-order-11"
+ ],
+ "total": {
+  "AGREE": 80260,
+  "PREFIX_AGREE": 6250,
+  "REAL": 0
+ },
+ "results": {
+  "S-GRO-0248": {
+   "fixed_N5": {
+    "AGREE": 9065,
+    "PREFIX_AGREE": 0,
+    "REAL": 0,
+    "outcomes": {
+     "SUCCESS": 9065
+    },
+    "real_examples": []
+   },
+   "fixed_N9": {
+    "AGREE": 100,
+    "PREFIX_AGREE": 0,
+    "REAL": 0,
+    "outcomes": {
+     "SUCCESS": 100
+    },
+    "real_examples": []
+   },
+   "movable_N5": {
+    "AGREE": 3300,
+    "PREFIX_AGREE": 90,
+    "REAL": 0,
+    "outcomes": {
+     "TIMEOUT": 90,
+     "SUCCESS": 3300
+    },
+    "real_examples": []
+   },
+   "movable_N9": {
+    "AGREE": 100,
+    "PREFIX_AGREE": 0,
+    "REAL": 0,
+    "outcomes": {
+     "SUCCESS": 100
+    },
+    "real_examples": []
+   }
+  },
+  "g3-grp-06": {
+   "fixed_N5": {
+    "AGREE": 8855,
+    "PREFIX_AGREE": 210,
+    "REAL": 0,
+    "outcomes": {
+     "TIMEOUT": 210,
+     "SUCCESS": 8855
+    },
+    "real_examples": []
+   },
+   "fixed_N9": {
+    "AGREE": 100,
+    "PREFIX_AGREE": 0,
+    "REAL": 0,
+    "outcomes": {
+     "SUCCESS": 100
+    },
+    "real_examples": []
+   },
+   "movable_N5": {
+    "AGREE": 3300,
+    "PREFIX_AGREE": 90,
+    "REAL": 0,
+    "outcomes": {
+     "TIMEOUT": 90,
+     "SUCCESS": 3300
+    },
+    "real_examples": []
+   },
+   "movable_N9": {
+    "AGREE": 100,
+    "PREFIX_AGREE": 0,
+    "REAL": 0,
+    "outcomes": {
+     "SUCCESS": 100
+    },
+    "real_examples": []
+   }
+  },
+  "g3-grp-10": {
+   "fixed_N5": {
+    "AGREE": 8840,
+    "PREFIX_AGREE": 225,
+    "REAL": 0,
+    "outcomes": {
+     "TIMEOUT": 225,
+     "SUCCESS": 8840
+    },
+    "real_examples": []
+   },
+   "fixed_N9": {
+    "AGREE": 100,
+    "PREFIX_AGREE": 0,
+    "REAL": 0,
+    "outcomes": {
+     "SUCCESS": 100
+    },
+    "real_examples": []
+   },
+   "movable_N5": {
+    "AGREE": 3285,
+    "PREFIX_AGREE": 105,
+    "REAL": 0,
+    "outcomes": {
+     "TIMEOUT": 105,
+     "SUCCESS": 3285
+    },
+    "real_examples": []
+   },
+   "movable_N9": {
+    "AGREE": 100,
+    "PREFIX_AGREE": 0,
+    "REAL": 0,
+    "outcomes": {
+     "SUCCESS": 100
+    },
+    "real_examples": []
+   }
+  },
+  "g3-zon-07|right|2": {
+   "fixed_N5": {
+    "AGREE": 6010,
+    "PREFIX_AGREE": 1155,
+    "REAL": 0,
+    "outcomes": {
+     "TIMEOUT": 1155,
+     "SUCCESS": 6010
+    },
+    "real_examples": []
+   },
+   "fixed_N9": {
+    "AGREE": 0,
+    "PREFIX_AGREE": 100,
+    "REAL": 0,
+    "outcomes": {
+     "TIMEOUT": 100
+    },
+    "real_examples": []
+   },
+   "movable_N5": {
+    "AGREE": 1595,
+    "PREFIX_AGREE": 1200,
+    "REAL": 0,
+    "outcomes": {
+     "TIMEOUT": 1200,
+     "SUCCESS": 1595
+    },
+    "real_examples": []
+   },
+   "movable_N9": {
+    "AGREE": 0,
+    "PREFIX_AGREE": 100,
+    "REAL": 0,
+    "outcomes": {
+     "TIMEOUT": 100
+    },
+    "real_examples": []
+   }
+  },
+  "g3-zon-07|right|half": {
+   "fixed_N5": {
+    "AGREE": 6010,
+    "PREFIX_AGREE": 1155,
+    "REAL": 0,
+    "outcomes": {
+     "TIMEOUT": 1155,
+     "SUCCESS": 6010
+    },
+    "real_examples": []
+   },
+   "fixed_N9": {
+    "AGREE": 100,
+    "PREFIX_AGREE": 0,
+    "REAL": 0,
+    "outcomes": {
+     "SUCCESS": 100
+    },
+    "real_examples": []
+   },
+   "movable_N5": {
+    "AGREE": 1595,
+    "PREFIX_AGREE": 1200,
+    "REAL": 0,
+    "outcomes": {
+     "TIMEOUT": 1200,
+     "SUCCESS": 1595
+    },
+    "real_examples": []
+   },
+   "movable_N9": {
+    "AGREE": 0,
+    "PREFIX_AGREE": 100,
+    "REAL": 0,
+    "outcomes": {
+     "TIMEOUT": 100
+    },
+    "real_examples": []
+   }
+  },
+  "g4-order-11": {
+   "fixed_N5": {
+    "AGREE": 18790,
+    "PREFIX_AGREE": 210,
+    "REAL": 0,
+    "outcomes": {
+     "TIMEOUT": 210,
+     "SUCCESS": 18790
+    },
+    "real_examples": []
+   },
+   "fixed_N9": {
+    "AGREE": 0,
+    "PREFIX_AGREE": 100,
+    "REAL": 0,
+    "outcomes": {
+     "TIMEOUT": 100
+    },
+    "real_examples": []
+   },
+   "movable_N5": {
+    "AGREE": 8815,
+    "PREFIX_AGREE": 210,
+    "REAL": 0,
+    "outcomes": {
+     "TIMEOUT": 210,
+     "SUCCESS": 8815
+    },
+    "real_examples": []
+   },
+   "movable_N9": {
+    "AGREE": 100,
+    "PREFIX_AGREE": 0,
+    "REAL": 0,
+    "outcomes": {
+     "SUCCESS": 100
+    },
+    "real_examples": []
+   }
+  }
+ }
+}

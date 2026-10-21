@@ -1,0 +1,40 @@
+{
+ "class_C": {
+  "programs": 8265,
+  "premise_failures": 0,
+  "steps_compared": 3612763,
+  "mismatch_steps": 0,
+  "ref_programs": 822,
+  "ref_mismatch_steps": 0,
+  "programs_with_conflicts": 1778,
+  "conflict_divergent_steps": 111279,
+  "outside_C_K_generated": 1735,
+  "outside_C_K_rejected_loudly": 1735,
+  "outside_C_K_compiled": 0,
+  "inside_C_K_compile_errors": 0
+ },
+ "outside_C": {
+  "atleast0": {
+   "tried": 200,
+   "compile_error": 200,
+   "premise_flagged": 0,
+   "ran": 0,
+   "diverged": 0
+  },
+  "load_len": {
+   "tried": 200,
+   "compile_error": 70,
+   "premise_flagged": 130,
+   "ran": 79,
+   "diverged": 0
+  },
+  "id_is_channel": {
+   "tried": 200,
+   "compile_error": 150,
+   "premise_flagged": 50,
+   "ran": 50,
+   "diverged": 0
+  }
+ },
+ "time_s": 42.8
+}

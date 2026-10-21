@@ -1,0 +1,405 @@
+{
+ "G0-T1": {
+  "verdict": "HOLDS",
+  "constructor_path_readers": [],
+  "table_builder_fields": [
+   "applicability_cex",
+   "iterate",
+   "preserves"
+  ],
+  "dynamic_fields": [
+   "applicability_cex",
+   "preserves"
+  ],
+  "judge_calls": [],
+  "mission06_isolation_violations": []
+ },
+ "G0-A1": {
+  "verdict": "HOLDS",
+  "proved_with_truth_cex": [],
+  "cex_found_in_S_T_proved": [],
+  "locked_sample_20": [
+   "DEV-Z-nearest|left|2",
+   "LIB-G2",
+   "LIB-Z1-L|left|2",
+   "LIB-Z1-L|left|half",
+   "LIB-Z2-R|right|half",
+   "S-GRO-0238",
+   "S-ZON-0713|right|2",
+   "g3-grp-10",
+   "g3-zon-02|right|2",
+   "g4-group-04",
+   "g4-order-02",
+   "g4-order-11",
+   "g4-order-12",
+   "g4-zone-01|right|half",
+   "g4-zone-04|left|half",
+   "g4-zone-04|right|half",
+   "g4-zone-09|left|2",
+   "g4-zone-09|right|half",
+   "g4-zone-13|left|2",
+   "g4-zone-14|left|half"
+  ],
+  "locked_sample_cex": []
+ },
+ "G0-A2": {
+  "verdict": "HOLDS",
+  "truth_applicable": 122,
+  "proved": {
+   "S_T": 122,
+   "S_D": 122,
+   "S_A": 122
+  },
+  "rate_S_D": 1.0,
+  "status_among_truth_applicable": {
+   "S_T": {
+    "PROVED": 122,
+    "NOT_PROVED": 0,
+    "UNKNOWN": 0
+   },
+   "S_D": {
+    "PROVED": 122,
+    "NOT_PROVED": 0,
+    "UNKNOWN": 0
+   },
+   "S_A": {
+    "PROVED": 122,
+    "NOT_PROVED": 0,
+    "UNKNOWN": 0
+   }
+  },
+  "not_proved_S_D": []
+ },
+ "G0-A3": {
+  "verdict": "HOLDS",
+  "instances_with_S_T_cex": {},
+  "in_S_D": []
+ },
+ "G0-A4": {
+  "verdict": "HOLDS",
+  "instances_with_cex_only_outside_S_T": {}
+ },
+ "G0-A5": {
+  "verdict": "HOLDS",
+  "note": "not blind: LIB was used in a development smoke test before the code commit (amendment G0-1)",
+  "S_A": {
+   "LIB-O1": "PROVED",
+   "LIB-O2": "PROVED",
+   "LIB-Z1-L|left|2": "PROVED",
+   "LIB-Z1-L|left|half": "PROVED",
+   "LIB-Z1-R|right|2": "PROVED",
+   "LIB-Z1-R|right|half": "PROVED",
+   "LIB-Z2-L|left|2": "PROVED",
+   "LIB-Z2-L|left|half": "PROVED",
+   "LIB-Z2-R|right|2": "PROVED",
+   "LIB-Z2-R|right|half": "PROVED",
+   "LIB-G1": "PROVED",
+   "LIB-G2": "PROVED"
+  }
+ },
+ "G0-A_cost": {
+  "truth_cpu_s": 4146.270176,
+  "app_r_cpu_s": 3444.645,
+  "run_s": 1239.3,
+  "reproduction_mismatches": {
+   "G3-HO": [],
+   "G4-HO": [],
+   "STRAT-DEV": [],
+   "LIB": [],
+   "G3-DEV": []
+  }
+ },
+ "G0-C1": {
+  "verdict": "HOLDS",
+  "constructed": {
+   "A++": 236,
+   "A++r": 236,
+   "A++0": 277
+  },
+  "failing": {
+   "A++": 0,
+   "A++r": 0,
+   "A++0": 53
+  },
+  "per_set_route": {
+   "LIB/A++/A-P'": 30,
+   "LIB/A++/A-P": 29,
+   "LIB/A++r/A-P'": 30,
+   "LIB/A++r/A-P": 29,
+   "LIB/A++0/A-P'": 30,
+   "LIB/A++0/A-P": 29,
+   "G3-DEV/A++/A-P'": 30,
+   "G3-DEV/A++/A-P": 27,
+   "G3-DEV/A++r/A-P'": 30,
+   "G3-DEV/A++r/A-P": 27,
+   "G3-DEV/A++0/A-P'": 35,
+   "G3-DEV/A++0/A-P": 32,
+   "STRAT-DEV/A++/A-P'": 0,
+   "STRAT-DEV/A++/A-P": 2,
+   "STRAT-DEV/A++r/A-P'": 0,
+   "STRAT-DEV/A++r/A-P": 2,
+   "STRAT-DEV/A++0/A-P'": 1,
+   "STRAT-DEV/A++0/A-P": 6,
+   "G3-HO/A++/A-P'": 30,
+   "G3-HO/A++/A-P": 29,
+   "G3-HO/A++r/A-P'": 30,
+   "G3-HO/A++r/A-P": 29,
+   "G3-HO/A++0/A-P'": 35,
+   "G3-HO/A++0/A-P": 35,
+   "G4-HO/A++/A-P'": 30,
+   "G4-HO/A++/A-P": 29,
+   "G4-HO/A++r/A-P'": 30,
+   "G4-HO/A++r/A-P": 29,
+   "G4-HO/A++0/A-P'": 36,
+   "G4-HO/A++0/A-P": 38
+  },
+  "same_z3_entries": {
+   "LIB": {
+    "damage": true,
+    "preserves": true,
+    "measure": true
+   },
+   "G3-DEV": {
+    "damage": true,
+    "preserves": true,
+    "measure": true
+   },
+   "STRAT-DEV": {
+    "damage": true,
+    "preserves": true,
+    "measure": true
+   },
+   "G3-HO": {
+    "damage": true,
+    "preserves": true,
+    "measure": true
+   },
+   "G4-HO": {
+    "damage": true,
+    "preserves": true,
+    "measure": true
+   }
+  }
+ },
+ "G0-C2": {
+  "verdict": "HOLDS",
+  "failing_A++0": 53,
+  "failing_by_set_route": {
+   "LIB/A++0/A-P'": [],
+   "LIB/A++0/A-P": [],
+   "G3-DEV/A++0/A-P'": [
+    "P2-04",
+    "P2-13",
+    "P2-15",
+    "P2-24",
+    "P2-29",
+    "P2-31",
+    "P2-38",
+    "P2-42",
+    "P2-48",
+    "P2-49",
+    "P2-52",
+    "P3-02",
+    "P3-11",
+    "P3-13"
+   ],
+   "G3-DEV/A++0/A-P": [
+    "P2-04",
+    "P2-13",
+    "P2-15",
+    "P2-24",
+    "P2-29",
+    "P2-31",
+    "P2-38",
+    "P2-42",
+    "P2-48",
+    "P2-49",
+    "P2-50",
+    "P2-51",
+    "P2-52",
+    "P2-56",
+    "P2-57",
+    "P3-01",
+    "P3-11"
+   ],
+   "STRAT-DEV/A++0/A-P'": [
+    "P2-60"
+   ],
+   "STRAT-DEV/A++0/A-P": [
+    "P2-51",
+    "P2-56",
+    "P2-60",
+    "P3-14"
+   ],
+   "G3-HO/A++0/A-P'": [
+    "P2-18",
+    "P2-33",
+    "P2-41",
+    "P2-46",
+    "P2-60"
+   ],
+   "G3-HO/A++0/A-P": [
+    "P2-18",
+    "P2-33",
+    "P2-41",
+    "P2-46",
+    "P2-51",
+    "P2-55",
+    "P2-56",
+    "P2-58",
+    "P2-60",
+    "P3-14"
+   ],
+   "G4-HO/A++0/A-P'": [
+    "T2"
+   ],
+   "G4-HO/A++0/A-P": [
+    "T2"
+   ]
+  }
+ },
+ "G0-K1": {
+  "verdict": "HOLDS",
+  "lemmas": {
+   "M memoryless": "PROVED",
+   "CL clip": "PROVED",
+   "OR": "PROVED",
+   "AND (positive multiset of size p, negatives of weight -p)": "PROVED",
+   "ATLEAST (any n >= 0, k >= 1, k > n allowed)": "PROVED",
+   "CONST __T": "PROVED",
+   "CMR inactive letters' P-neurons stay silent": "PROVED",
+   "CMR bit update (load / one / zero / hold) and at most one P active": "PROVED"
+  },
+  "plans": 304,
+  "networks": 1824,
+  "networks_with_problems": 0
+ },
+ "G0-K2": {
+  "verdict": "HOLDS",
+  "class_C": {
+   "programs": 8265,
+   "premise_failures": 0,
+   "steps_compared": 3612763,
+   "mismatch_steps": 0,
+   "ref_programs": 822,
+   "ref_mismatch_steps": 0,
+   "programs_with_conflicts": 1778,
+   "conflict_divergent_steps": 111279,
+   "outside_C_K_generated": 1735,
+   "outside_C_K_rejected_loudly": 1735,
+   "outside_C_K_compiled": 0,
+   "inside_C_K_compile_errors": 0
+  },
+  "outside_C": {
+   "atleast0": {
+    "tried": 200,
+    "compile_error": 200,
+    "premise_flagged": 0,
+    "ran": 0,
+    "diverged": 0
+   },
+   "load_len": {
+    "tried": 200,
+    "compile_error": 70,
+    "premise_flagged": 130,
+    "ran": 79,
+    "diverged": 0
+   },
+   "id_is_channel": {
+    "tried": 200,
+    "compile_error": 150,
+    "premise_flagged": 50,
+    "ran": 50,
+    "diverged": 0
+   }
+  }
+ },
+ "G0-S1": {
+  "verdict": "HOLDS",
+  "plans": 211,
+  "episodes": 21100,
+  "failures": 0,
+  "plans_failing": 0,
+  "outcomes": {
+   "SUCCESS": 21100
+  }
+ },
+ "G0-S2": {
+  "verdict": "EXPLORATORY",
+  "N9": {
+   "plans": 211,
+   "episodes": 21100,
+   "failures": 0,
+   "plans_failing": 0,
+   "outcomes": {
+    "SUCCESS": 21100
+   }
+  },
+  "N12": {
+   "plans": 211,
+   "episodes": 21100,
+   "failures": 0,
+   "plans_failing": 0,
+   "outcomes": {
+    "SUCCESS": 21100
+   }
+  }
+ },
+ "G0-M1": {
+  "verdict": "FALSIFIED",
+  "total": {
+   "fixed_N5": {
+    "episodes": 1170165,
+    "disagreements": 2955,
+    "instances_disagreeing": [
+     "g3-grp-06",
+     "g3-grp-10",
+     "g3-zon-07|right|2",
+     "g3-zon-07|right|half",
+     "g4-order-11"
+    ]
+   },
+   "fixed_N9": {
+    "episodes": 12200,
+    "disagreements": 200,
+    "instances_disagreeing": [
+     "g3-zon-07|right|2",
+     "g4-order-11"
+    ]
+   },
+   "movable_N5": {
+    "episodes": 486695,
+    "disagreements": 2895,
+    "instances_disagreeing": [
+     "S-GRO-0248",
+     "g3-grp-06",
+     "g3-grp-10",
+     "g3-zon-07|right|2",
+     "g3-zon-07|right|half",
+     "g4-order-11"
+    ]
+   },
+   "movable_N9": {
+    "episodes": 12200,
+    "disagreements": 200,
+    "instances_disagreeing": [
+     "g3-zon-07|right|2",
+     "g3-zon-07|right|half"
+    ]
+   }
+  },
+  "posthoc": {
+   "AGREE": 80260,
+   "PREFIX_AGREE": 6250,
+   "REAL": 0
+  }
+ },
+ "G0-B": {
+  "verdict": "FALSIFIED",
+  "note": "about 4.4 h CPU upper bound > 4 h: truth computed twice (4,146 s each; first run crashed in run_app), APP-R 3,445 s, parallel stages <= 4,000 s (wall x 8)"
+ },
+ "G0-F1": {
+  "verdict": "HOLDS",
+  "note": "by hand, claims_audit.md"
+ }
+}

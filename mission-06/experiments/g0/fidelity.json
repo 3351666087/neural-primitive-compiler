@@ -1,0 +1,9709 @@
+{
+ "label": "G0-M1 (Mission 06): macro model vs environment + compiled selection",
+ "instances": 122,
+ "total": {
+  "fixed_N5": {
+   "episodes": 1170165,
+   "disagreements": 2955,
+   "instances_disagreeing": [
+    "g3-grp-06",
+    "g3-grp-10",
+    "g3-zon-07|right|2",
+    "g3-zon-07|right|half",
+    "g4-order-11"
+   ]
+  },
+  "fixed_N9": {
+   "episodes": 12200,
+   "disagreements": 200,
+   "instances_disagreeing": [
+    "g3-zon-07|right|2",
+    "g4-order-11"
+   ]
+  },
+  "movable_N5": {
+   "episodes": 486695,
+   "disagreements": 2895,
+   "instances_disagreeing": [
+    "S-GRO-0248",
+    "g3-grp-06",
+    "g3-grp-10",
+    "g3-zon-07|right|2",
+    "g3-zon-07|right|half",
+    "g4-order-11"
+   ]
+  },
+  "movable_N9": {
+   "episodes": 12200,
+   "disagreements": 200,
+   "instances_disagreeing": [
+    "g3-zon-07|right|2",
+    "g3-zon-07|right|half"
+   ]
+  }
+ },
+ "results": {
+  "LIB-O1": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "LIB-O2": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "LIB-Z1-L|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "LIB-Z1-L|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "LIB-Z1-R|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "LIB-Z1-R|right|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "LIB-Z2-L|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "LIB-Z2-L|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "LIB-Z2-R|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "LIB-Z2-R|right|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "LIB-G1": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "LIB-G2": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "DEV-Z-nearest|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "DEV-Z-nearest|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "DEV-Z-nearest|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "DEV-Z-nearest|right|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "DEV-Z-window|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "DEV-O-nearest": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "DEV-O-empty": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "DEV-G-mixed": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "S-ZON-0039|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "S-ZON-0071|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "S-ZON-0114|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "S-ZON-0114|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "S-ZON-0166|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "S-ZON-0246|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "S-ZON-0246|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "S-ZON-0559|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "S-ZON-0713|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "S-ZON-0762|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "S-GRO-0172": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "S-GRO-0238": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "S-GRO-0248": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 90,
+    "examples": [
+     {
+      "cells": [
+       1,
+       4,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       1,
+       0
+      ],
+      "agent": 0,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       4,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       1,
+       0
+      ],
+      "agent": 1,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       4,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       1,
+       0
+      ],
+      "agent": 2,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        4,
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        4,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     }
+    ],
+    "outcomes": {
+     "SUCCESS": 3300,
+     "TIMEOUT": 90
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "S-GRO-0588": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "S-GRO-0926": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-ord-02": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-ord-03": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-ord-04": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-ord-05": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-ord-07": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-ord-08": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-01|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-01|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-02|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-02|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-02|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-02|right|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-03|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-04|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-04|right|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-05|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-05|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-07|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-07|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-07|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 1155,
+    "examples": [
+     {
+      "cells": [
+       1,
+       0,
+       0,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 0,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       0,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 1,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       0,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 2,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     }
+    ],
+    "outcomes": {
+     "SUCCESS": 6010,
+     "TIMEOUT": 1155
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 100,
+    "examples": [
+     {
+      "cells": [
+       0,
+       0,
+       0,
+       1,
+       0,
+       1,
+       0,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 6,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       0,
+       0,
+       0,
+       1,
+       0,
+       1,
+       0,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 6,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       0,
+       0,
+       0,
+       1,
+       0,
+       1,
+       0,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 6,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     }
+    ],
+    "outcomes": {
+     "TIMEOUT": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 1200,
+    "examples": [
+     {
+      "cells": [
+       1,
+       0,
+       0,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 0,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       0,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 1,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       0,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 2,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     }
+    ],
+    "outcomes": {
+     "SUCCESS": 1595,
+     "TIMEOUT": 1200
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 100,
+    "examples": [
+     {
+      "cells": [
+       0,
+       4,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1
+      ],
+      "haz": [
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0
+      ],
+      "agent": 3,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        0,
+        4,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+       ],
+       [
+        0,
+        1,
+        4,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        0,
+        4,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+       ],
+       [
+        0,
+        1,
+        4,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       0,
+       4,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1
+      ],
+      "haz": [
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0
+      ],
+      "agent": 3,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        0,
+        4,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+       ],
+       [
+        0,
+        1,
+        4,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        0,
+        4,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+       ],
+       [
+        0,
+        1,
+        4,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       0,
+       4,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1
+      ],
+      "haz": [
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0
+      ],
+      "agent": 3,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        0,
+        4,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+       ],
+       [
+        0,
+        1,
+        4,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        0,
+        4,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+       ],
+       [
+        0,
+        1,
+        4,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        4
+       ],
+       [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+       ]
+      ],
+      "model_success": false
+     }
+    ],
+    "outcomes": {
+     "TIMEOUT": 100
+    }
+   }
+  },
+  "g3-zon-07|right|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 1155,
+    "examples": [
+     {
+      "cells": [
+       1,
+       0,
+       0,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 0,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       0,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 1,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       0,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 2,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     }
+    ],
+    "outcomes": {
+     "SUCCESS": 6010,
+     "TIMEOUT": 1155
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 1200,
+    "examples": [
+     {
+      "cells": [
+       1,
+       0,
+       0,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 0,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       0,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 1,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       0,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 2,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     }
+    ],
+    "outcomes": {
+     "SUCCESS": 1595,
+     "TIMEOUT": 1200
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 100,
+    "examples": [
+     {
+      "cells": [
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       1,
+       0
+      ],
+      "haz": [
+       1,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 1,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       1,
+       0
+      ],
+      "haz": [
+       1,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 1,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       1,
+       0
+      ],
+      "haz": [
+       1,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 1,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     }
+    ],
+    "outcomes": {
+     "TIMEOUT": 100
+    }
+   }
+  },
+  "g3-zon-08|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-08|right|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-09|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-09|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-09|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-09|right|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-zon-10|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-grp-01": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-grp-02": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-grp-03": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-grp-06": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 210,
+    "examples": [
+     {
+      "cells": [
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       1,
+       0,
+       0,
+       0
+      ],
+      "agent": 0,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       1,
+       0,
+       0,
+       0
+      ],
+      "agent": 1,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       1,
+       0,
+       0,
+       0
+      ],
+      "agent": 2,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     }
+    ],
+    "outcomes": {
+     "SUCCESS": 8855,
+     "TIMEOUT": 210
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 90,
+    "examples": [
+     {
+      "cells": [
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       1,
+       0,
+       0,
+       0
+      ],
+      "agent": 0,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       1,
+       0,
+       0,
+       0
+      ],
+      "agent": 1,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       1,
+       0,
+       0,
+       0
+      ],
+      "agent": 2,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     }
+    ],
+    "outcomes": {
+     "SUCCESS": 3300,
+     "TIMEOUT": 90
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-grp-07": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-grp-09": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g3-grp-10": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 225,
+    "examples": [
+     {
+      "cells": [
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       1,
+       0,
+       0,
+       0
+      ],
+      "agent": 0,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       1,
+       0,
+       0,
+       0
+      ],
+      "agent": 1,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       1,
+       0,
+       0,
+       0
+      ],
+      "agent": 2,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     }
+    ],
+    "outcomes": {
+     "SUCCESS": 8840,
+     "TIMEOUT": 225
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 105,
+    "examples": [
+     {
+      "cells": [
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       1,
+       0,
+       0,
+       0
+      ],
+      "agent": 0,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       1,
+       0,
+       0,
+       0
+      ],
+      "agent": 1,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       1,
+       0,
+       0,
+       0
+      ],
+      "agent": 2,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     }
+    ],
+    "outcomes": {
+     "SUCCESS": 3285,
+     "TIMEOUT": 105
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-order-01": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-order-02": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-order-03": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-order-07": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-order-08": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-order-09": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-order-11": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 210,
+    "examples": [
+     {
+      "cells": [
+       1,
+       2,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 0,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        2,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        2,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        2,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        2,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       2,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 1,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        2,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        2,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        2,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        2,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       2,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 2,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        2,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        2,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        2,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        2,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     }
+    ],
+    "outcomes": {
+     "SUCCESS": 18790,
+     "TIMEOUT": 210
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 100,
+    "examples": [
+     {
+      "cells": [
+       0,
+       0,
+       2,
+       1,
+       1,
+       0,
+       4,
+       0,
+       4
+      ],
+      "haz": [
+       1,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 7,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        2,
+        1,
+        0,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        4,
+        0,
+        4
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        2,
+        1,
+        0,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        4,
+        0,
+        4
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       0,
+       0,
+       2,
+       1,
+       1,
+       0,
+       4,
+       0,
+       4
+      ],
+      "haz": [
+       1,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 7,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        2,
+        1,
+        0,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        4,
+        0,
+        4
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        2,
+        1,
+        0,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        4,
+        0,
+        4
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       0,
+       0,
+       2,
+       1,
+       1,
+       0,
+       4,
+       0,
+       4
+      ],
+      "haz": [
+       1,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 7,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        2,
+        1,
+        0,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        4,
+        0,
+        4
+       ]
+      ],
+      "model_trace": [
+       [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        2,
+        1,
+        0,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        4,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        4,
+        0,
+        4
+       ]
+      ],
+      "model_success": false
+     }
+    ],
+    "outcomes": {
+     "TIMEOUT": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 210,
+    "examples": [
+     {
+      "cells": [
+       1,
+       2,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 0,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        2,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        2,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        2,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        2,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       2,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 1,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        2,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        2,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        2,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        2,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     },
+     {
+      "cells": [
+       1,
+       2,
+       1,
+       0,
+       0
+      ],
+      "haz": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "agent": 2,
+      "env_outcome": "TIMEOUT",
+      "env_trace": [
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        2,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        2,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_trace": [
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        2,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        0,
+        1,
+        2,
+        0
+       ],
+       [
+        1,
+        2,
+        1,
+        0,
+        0
+       ]
+      ],
+      "model_success": false
+     }
+    ],
+    "outcomes": {
+     "SUCCESS": 8815,
+     "TIMEOUT": 210
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-order-12": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-order-13": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-order-14": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-order-15": {
+   "fixed_N5": {
+    "episodes": 19000,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 19000
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 9025,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9025
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-01|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-01|right|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-02|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-02|right|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-03|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-03|right|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-04|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-04|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-04|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-04|right|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-05|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-05|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-06|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-07|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-07|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-08|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-08|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-09|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-09|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-09|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-09|right|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-13|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-13|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-14|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-14|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-14|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-14|right|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-15|left|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-15|left|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-15|right|2": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-zone-15|right|half": {
+   "fixed_N5": {
+    "episodes": 7165,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 7165
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 2795,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 2795
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-group-01": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-group-02": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-group-03": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-group-04": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-group-05": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-group-07": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-group-08": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-group-10": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-group-11": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  },
+  "g4-group-14": {
+   "fixed_N5": {
+    "episodes": 9065,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 9065
+    }
+   },
+   "fixed_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   },
+   "movable_N5": {
+    "episodes": 3390,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 3390
+    }
+   },
+   "movable_N9": {
+    "episodes": 100,
+    "disagreements": 0,
+    "examples": [],
+    "outcomes": {
+     "SUCCESS": 100
+    }
+   }
+  }
+ },
+ "time_s": 11.7
+}

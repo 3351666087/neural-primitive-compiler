@@ -1,0 +1,1832 @@
+{
+ "static": {
+  "modules": {
+   "mission-05/experiments/g0_audit/verify_m04.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "hashlib",
+     "importlib",
+     "json",
+     "pathlib",
+     "random",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/g3/a_dsl.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "dsl",
+     "pathlib",
+     "potentials",
+     "sys",
+     "z3_dsl"
+    ]
+   },
+   "mission-05/experiments/g3/b_dsl.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "bdisc",
+     "bexch",
+     "bgram",
+     "brule",
+     "libval",
+     "libval2",
+     "libval3",
+     "model",
+     "pathlib",
+     "potentials",
+     "random",
+     "sys",
+     "time",
+     "z3_dsl"
+    ]
+   },
+   "mission-05/experiments/g3/cir_dsl.py": {
+    "side": "CONSTRUCTOR",
+    "imports": [
+     "__future__",
+     "cirgen",
+     "model",
+     "pathlib",
+     "sys"
+    ]
+   },
+   "mission-05/experiments/g3/construct.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "ap",
+     "ap2",
+     "cir_dsl",
+     "cir_interp",
+     "dsl",
+     "instances",
+     "itertools",
+     "pathlib",
+     "potentials",
+     "run_pa1",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/g3/dsl.py": {
+    "side": "CONSTRUCTOR",
+    "imports": [
+     "__future__",
+     "model",
+     "pathlib",
+     "sys"
+    ]
+   },
+   "mission-05/experiments/g3/freeze.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "hashlib",
+     "json",
+     "pathlib",
+     "sys"
+    ]
+   },
+   "mission-05/experiments/g3/heldout_diag.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "a_dsl",
+     "dsl",
+     "json",
+     "pathlib",
+     "sys",
+     "truth",
+     "z3_dsl"
+    ]
+   },
+   "mission-05/experiments/g3/run_g3.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "a_dsl",
+     "b_dsl",
+     "cir_dsl",
+     "compile_cir",
+     "construct",
+     "dsl",
+     "instances",
+     "json",
+     "net_loop",
+     "pathlib",
+     "random",
+     "run_pa3",
+     "run_r4",
+     "sys",
+     "time",
+     "truth"
+    ]
+   },
+   "mission-05/experiments/g3/score_g3.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "pathlib",
+     "sys"
+    ]
+   },
+   "mission-05/experiments/g3/selfcheck.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "a_dsl",
+     "b_dsl",
+     "cir_dsl",
+     "cir_interp",
+     "cirgen",
+     "construct",
+     "dsl",
+     "instances",
+     "json",
+     "libval",
+     "model",
+     "pathlib",
+     "potentials",
+     "run_pa3",
+     "run_r4",
+     "sys",
+     "time",
+     "truth",
+     "z3_dsl"
+    ]
+   },
+   "mission-05/experiments/g3/truth.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "libval",
+     "libval2",
+     "libval3",
+     "model",
+     "pathlib",
+     "potentials",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/g3/z3_dsl.py": {
+    "side": "CONSTRUCTOR",
+    "imports": [
+     "__future__",
+     "libval",
+     "libval3",
+     "pathlib",
+     "sys",
+     "z3",
+     "z3_damage"
+    ]
+   },
+   "mission-05/experiments/g4/freeze.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "hashlib",
+     "json",
+     "pathlib",
+     "sys"
+    ]
+   },
+   "mission-05/experiments/g4/run_g4.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "a_dsl",
+     "b_dsl",
+     "cir_dsl",
+     "compile_cir",
+     "construct",
+     "dsl",
+     "instances",
+     "json",
+     "net_loop",
+     "pathlib",
+     "random",
+     "run_pa3",
+     "run_r4",
+     "sys",
+     "time",
+     "truth",
+     "zplus",
+     "zpp"
+    ]
+   },
+   "mission-05/experiments/g4/score_g4.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "pathlib",
+     "sys"
+    ]
+   },
+   "mission-05/experiments/judge/cir_interp.py": {
+    "side": "JUDGE",
+    "imports": [
+     "__future__",
+     "env",
+     "numpy",
+     "re"
+    ]
+   },
+   "mission-05/experiments/judge/env.py": {
+    "side": "JUDGE",
+    "imports": [
+     "__future__",
+     "numpy"
+    ]
+   },
+   "mission-05/experiments/judge/feasibility.py": {
+    "side": "JUDGE",
+    "imports": [
+     "__future__",
+     "collections",
+     "env",
+     "functools"
+    ]
+   },
+   "mission-05/experiments/judge/instances.py": {
+    "side": "JUDGE",
+    "imports": [
+     "__future__",
+     "env",
+     "feasibility",
+     "itertools",
+     "random"
+    ]
+   },
+   "mission-05/experiments/judge/j2.py": {
+    "side": "JUDGE",
+    "imports": [
+     "__future__",
+     "time",
+     "z3"
+    ]
+   },
+   "mission-05/experiments/judge/net_loop.py": {
+    "side": "JUDGE",
+    "imports": [
+     "__future__",
+     "cir_interp",
+     "env",
+     "numpy"
+    ]
+   },
+   "mission-05/experiments/judge/pool.py": {
+    "side": "JUDGE",
+    "imports": [
+     "__future__",
+     "feasibility",
+     "itertools",
+     "json",
+     "pathlib",
+     "random",
+     "sys"
+    ]
+   },
+   "mission-05/experiments/judge/selftest.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "cir_interp",
+     "env",
+     "feasibility",
+     "instances",
+     "itertools",
+     "j2",
+     "json",
+     "net_loop",
+     "npc",
+     "numpy",
+     "pathlib",
+     "random",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/lib/aflat.py": {
+    "side": "CONSTRUCTOR",
+    "imports": [
+     "__future__",
+     "collections",
+     "itertools",
+     "model",
+     "random",
+     "time"
+    ]
+   },
+   "mission-05/experiments/lib/ap.py": {
+    "side": "CONSTRUCTOR",
+    "imports": [
+     "__future__",
+     "itertools",
+     "json",
+     "pathlib",
+     "time"
+    ]
+   },
+   "mission-05/experiments/lib/ap2.py": {
+    "side": "CONSTRUCTOR",
+    "imports": [
+     "__future__",
+     "itertools",
+     "json",
+     "pathlib",
+     "potentials",
+     "time"
+    ]
+   },
+   "mission-05/experiments/lib/asame.py": {
+    "side": "CONSTRUCTOR",
+    "imports": [
+     "__future__",
+     "itertools",
+     "model",
+     "time"
+    ]
+   },
+   "mission-05/experiments/lib/bdisc.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "libval",
+     "libval2",
+     "potentials",
+     "random"
+    ]
+   },
+   "mission-05/experiments/lib/bexch.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "bdisc",
+     "itertools",
+     "libval",
+     "libval2",
+     "libval3",
+     "model",
+     "numpy",
+     "potentials",
+     "random",
+     "time",
+     "z3",
+     "z3_damage"
+    ]
+   },
+   "mission-05/experiments/lib/bgram.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "bexch",
+     "itertools",
+     "libval",
+     "libval3",
+     "numpy",
+     "potentials",
+     "random",
+     "time",
+     "z3_damage"
+    ]
+   },
+   "mission-05/experiments/lib/brule.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "libval",
+     "libval2",
+     "libval3",
+     "model",
+     "potentials",
+     "time"
+    ]
+   },
+   "mission-05/experiments/lib/cirgen.py": {
+    "side": "CONSTRUCTOR",
+    "imports": [
+     "__future__",
+     "model"
+    ]
+   },
+   "mission-05/experiments/lib/compile_cir.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "cog",
+     "pathlib",
+     "re",
+     "sys"
+    ]
+   },
+   "mission-05/experiments/lib/libval.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "itertools",
+     "json",
+     "model",
+     "pathlib",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/lib/libval2.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "libval",
+     "model",
+     "pathlib",
+     "potentials",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/lib/libval3.py": {
+    "side": "CONSTRUCTOR",
+    "imports": [
+     "__future__",
+     "json",
+     "libval",
+     "libval2",
+     "model",
+     "pathlib",
+     "potentials",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/lib/libval8.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "libval",
+     "model",
+     "pathlib",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/lib/model.py": {
+    "side": "CONSTRUCTOR",
+    "imports": [
+     "__future__",
+     "functools"
+    ]
+   },
+   "mission-05/experiments/lib/potentials.py": {
+    "side": "CONSTRUCTOR",
+    "imports": [
+     "__future__",
+     "itertools",
+     "model"
+    ]
+   },
+   "mission-05/experiments/lib/z3_damage.py": {
+    "side": "CONSTRUCTOR",
+    "imports": [
+     "__future__",
+     "json",
+     "libval",
+     "libval3",
+     "model",
+     "pathlib",
+     "potentials",
+     "random",
+     "sys",
+     "time",
+     "z3"
+    ]
+   },
+   "mission-05/experiments/lib/z3_preserve.py": {
+    "side": "CONSTRUCTOR",
+    "imports": [
+     "__future__",
+     "json",
+     "libval",
+     "model",
+     "pathlib",
+     "random",
+     "sys",
+     "time",
+     "z3",
+     "z3_damage"
+    ]
+   },
+   "mission-05/experiments/pilots/b1_witness.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "bdisc",
+     "json",
+     "libval",
+     "libval2",
+     "pathlib",
+     "sys"
+    ]
+   },
+   "mission-05/experiments/pilots/r6_diag.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "bgram",
+     "brule",
+     "json",
+     "libval",
+     "libval2",
+     "model",
+     "numpy",
+     "pathlib",
+     "potentials",
+     "run_r4",
+     "run_r6",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/pilots/run_b1.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "ap2",
+     "bdisc",
+     "json",
+     "pathlib",
+     "run_pa3",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/pilots/run_cr.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "ap",
+     "ap2",
+     "bdisc",
+     "json",
+     "pathlib",
+     "run_pa3",
+     "statistics",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/pilots/run_pa1.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "aflat",
+     "ap",
+     "asame",
+     "cir_interp",
+     "cirgen",
+     "compile_cir",
+     "instances",
+     "json",
+     "math",
+     "net_loop",
+     "pathlib",
+     "random",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/pilots/run_pa2.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "aflat",
+     "ap",
+     "asame",
+     "cir_interp",
+     "cirgen",
+     "instances",
+     "json",
+     "pathlib",
+     "pool",
+     "random",
+     "run_pa1",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/pilots/run_pa3.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "ap2",
+     "cir_interp",
+     "cirgen",
+     "instances",
+     "json",
+     "pathlib",
+     "run_pa1",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/pilots/run_r4.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "ap",
+     "ap2",
+     "bexch",
+     "json",
+     "pathlib",
+     "run_cr",
+     "run_pa3",
+     "statistics",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/pilots/run_r5.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "ap",
+     "ap2",
+     "bexch",
+     "bgram",
+     "json",
+     "pathlib",
+     "run_cr",
+     "run_pa3",
+     "run_r4",
+     "statistics",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-05/experiments/pilots/run_r6.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "ap2",
+     "bgram",
+     "brule",
+     "json",
+     "libval",
+     "pathlib",
+     "run_cr",
+     "run_pa3",
+     "run_r4",
+     "sys",
+     "time",
+     "z3_damage"
+    ]
+   },
+   "mission-05/experiments/pilots/score_b1.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "pathlib"
+    ]
+   },
+   "mission-05/experiments/pilots/score_cr.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "pathlib"
+    ]
+   },
+   "mission-05/experiments/pilots/score_pa1.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "pathlib"
+    ]
+   },
+   "mission-05/experiments/pilots/score_pa2.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "pathlib"
+    ]
+   },
+   "mission-05/experiments/pilots/score_pa3.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "pathlib",
+     "statistics"
+    ]
+   },
+   "mission-05/experiments/pilots/score_r4.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "pathlib"
+    ]
+   },
+   "mission-05/experiments/pilots/score_r5.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "pathlib"
+    ]
+   },
+   "mission-05/experiments/pilots/score_r6.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "pathlib"
+    ]
+   },
+   "mission-05/experiments/pilots/t2_livelock.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "cir_interp",
+     "cirgen",
+     "feasibility",
+     "itertools",
+     "json",
+     "model",
+     "pathlib",
+     "sys"
+    ]
+   },
+   "mission-05/experiments/r7/diag_consistency.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "dsl",
+     "json",
+     "pathlib",
+     "potentials",
+     "sys",
+     "truth",
+     "z3",
+     "z3_dsl",
+     "zplus"
+    ]
+   },
+   "mission-05/experiments/r7/posthoc_g3.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "a_dsl",
+     "dsl",
+     "json",
+     "pathlib",
+     "sys",
+     "time",
+     "truth",
+     "zplus"
+    ]
+   },
+   "mission-05/experiments/r7/rand_specs.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "dsl",
+     "itertools",
+     "json",
+     "pathlib",
+     "random",
+     "sys"
+    ]
+   },
+   "mission-05/experiments/r7/run_r7.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "a_dsl",
+     "construct",
+     "dsl",
+     "json",
+     "pathlib",
+     "run_pa3",
+     "sys",
+     "time",
+     "truth",
+     "zplus"
+    ]
+   },
+   "mission-05/experiments/r7/score_r7.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "pathlib"
+    ]
+   },
+   "mission-05/experiments/r7/zplus.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "dsl",
+     "libval",
+     "libval3",
+     "pathlib",
+     "potentials",
+     "sys",
+     "z3",
+     "z3_damage",
+     "z3_dsl"
+    ]
+   },
+   "mission-05/experiments/r8/posthoc_g3.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "a_dsl",
+     "dsl",
+     "json",
+     "pathlib",
+     "sys",
+     "time",
+     "truth",
+     "zpp"
+    ]
+   },
+   "mission-05/experiments/r8/run_r8.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "a_dsl",
+     "construct",
+     "dsl",
+     "json",
+     "pathlib",
+     "rand_specs",
+     "random",
+     "run_pa3",
+     "sys",
+     "time",
+     "truth",
+     "zplus",
+     "zpp"
+    ]
+   },
+   "mission-05/experiments/r8/score_r8.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "pathlib"
+    ]
+   },
+   "mission-05/experiments/r8/zpp.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "dsl",
+     "libval3",
+     "pathlib",
+     "potentials",
+     "sys",
+     "z3",
+     "z3_damage",
+     "z3_dsl",
+     "zplus"
+    ]
+   },
+   "src/cog/__init__.py": {
+    "side": "UNLABELLED",
+    "imports": []
+   },
+   "src/cog/auto.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "dataclasses",
+     "ir",
+     "learn",
+     "time"
+    ]
+   },
+   "src/cog/check.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "collections",
+     "dataclasses",
+     "itertools",
+     "npc",
+     "numpy",
+     "random",
+     "re",
+     "tasks",
+     "time"
+    ]
+   },
+   "src/cog/ir.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "npc",
+     "prims",
+     "typing"
+    ]
+   },
+   "src/cog/learn.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "dataclasses",
+     "ir",
+     "random",
+     "typing"
+    ]
+   },
+   "src/cog/prims.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "dataclasses",
+     "npc"
+    ]
+   },
+   "src/cog/proofs.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "time",
+     "z3"
+    ]
+   },
+   "src/cog/realize.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "npc",
+     "z3"
+    ]
+   },
+   "src/cog/tasks.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "dataclasses",
+     "random",
+     "typing"
+    ]
+   },
+   "src/cog/unseen.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "dataclasses",
+     "random",
+     "tasks"
+    ]
+   },
+   "mission-06/experiments/g0/app_r.py": {
+    "side": "CONSTRUCTOR",
+    "imports": [
+     "__future__",
+     "itertools",
+     "time",
+     "z3"
+    ]
+   },
+   "mission-06/experiments/g0/aud.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "dsl",
+     "json",
+     "pathlib",
+     "sys"
+    ]
+   },
+   "mission-06/experiments/g0/compile_check.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "collections",
+     "re"
+    ]
+   },
+   "mission-06/experiments/g0/compile_fuzz.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "cir_interp",
+     "compile_check",
+     "compile_cir",
+     "env",
+     "json",
+     "net_loop",
+     "npc",
+     "numpy",
+     "pathlib",
+     "random",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-06/experiments/g0/compile_lemmas.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "pathlib",
+     "z3"
+    ]
+   },
+   "mission-06/experiments/g0/compile_run.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "aud",
+     "cir_dsl",
+     "compile_check",
+     "compile_cir",
+     "compile_lemmas",
+     "json",
+     "multiprocessing",
+     "pathlib",
+     "run_pa3",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-06/experiments/g0/concretize.py": {
+    "side": "CONSTRUCTOR",
+    "imports": [
+     "__future__",
+     "dsl",
+     "libval",
+     "libval2",
+     "model",
+     "pathlib",
+     "sys"
+    ]
+   },
+   "mission-06/experiments/g0/fidelity.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "aud",
+     "cir_dsl",
+     "cir_interp",
+     "dsl",
+     "env",
+     "instances",
+     "json",
+     "libval",
+     "model",
+     "multiprocessing",
+     "numpy",
+     "pathlib",
+     "random",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-06/experiments/g0/oracle_free.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "aud",
+     "construct",
+     "dsl",
+     "json",
+     "libval",
+     "multiprocessing",
+     "pathlib",
+     "potentials",
+     "run_pa3",
+     "sys",
+     "time",
+     "z3_dsl",
+     "zpp"
+    ]
+   },
+   "mission-06/experiments/g0/run_app.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "a_dsl",
+     "app_r",
+     "aud",
+     "concretize",
+     "json",
+     "multiprocessing",
+     "pathlib",
+     "random",
+     "sys",
+     "time",
+     "truth"
+    ]
+   },
+   "mission-06/experiments/g0/score_g0.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "json",
+     "pathlib",
+     "random"
+    ]
+   },
+   "mission-06/experiments/g0/stress.py": {
+    "side": "UNLABELLED",
+    "imports": [
+     "__future__",
+     "aud",
+     "cir_dsl",
+     "cir_interp",
+     "env",
+     "feasibility",
+     "instances",
+     "json",
+     "multiprocessing",
+     "pathlib",
+     "random",
+     "run_pa3",
+     "sys",
+     "time"
+    ]
+   },
+   "mission-06/experiments/g0/trust_flow.py": {
+    "side": "JUDGE",
+    "imports": [
+     "__future__",
+     "a_dsl",
+     "ast",
+     "construct",
+     "dsl",
+     "json",
+     "pathlib",
+     "run_pa3",
+     "sys",
+     "truth",
+     "zplus",
+     "zpp"
+    ]
+   }
+  },
+  "truth_flow": {
+   "mission-05/experiments/g3/a_dsl.py": {
+    "side": "UNLABELLED",
+    "truth_reads": [
+     {
+      "function": "a_tables",
+      "line": 35,
+      "kind": "value",
+      "field": "applicability_cex",
+      "expr": "tr[k]['applicability_cex']"
+     },
+     {
+      "function": "a_tables",
+      "line": 37,
+      "kind": "value",
+      "field": "applicability_cex",
+      "expr": "tr[k]['applicability_cex']"
+     },
+     {
+      "function": "a_tables",
+      "line": 39,
+      "kind": "iterate",
+      "expr": "tr[k]['preserves']"
+     },
+     {
+      "function": "a_tables",
+      "line": 39,
+      "kind": "value",
+      "field": "preserves",
+      "expr": "tr[k]['preserves']"
+     },
+     {
+      "function": "truth_progress",
+      "line": 54,
+      "kind": "value",
+      "field": "max_by_N",
+      "expr": "r['damage'][x]['max_by_N']"
+     },
+     {
+      "function": "truth_progress",
+      "line": 54,
+      "kind": "value",
+      "field": "damage",
+      "expr": "r['damage']"
+     },
+     {
+      "function": "truth_progress",
+      "line": 55,
+      "kind": "value",
+      "field": "max_by_N",
+      "expr": "r['damage'][x]['max_by_N']"
+     },
+     {
+      "function": "truth_progress",
+      "line": 55,
+      "kind": "value",
+      "field": "damage",
+      "expr": "r['damage']"
+     },
+     {
+      "function": "truth_progress",
+      "line": 56,
+      "kind": "value",
+      "field": "applicability_cex",
+      "expr": "r['applicability_cex']"
+     },
+     {
+      "function": "truth_progress",
+      "line": 57,
+      "kind": "value",
+      "field": "applicability_cex",
+      "expr": "r['applicability_cex']"
+     },
+     {
+      "function": "soundness",
+      "line": 67,
+      "kind": "value",
+      "field": "max_by_N",
+      "expr": "tr[k]['damage'][x]['max_by_N']"
+     },
+     {
+      "function": "soundness",
+      "line": 67,
+      "kind": "value",
+      "field": "damage",
+      "expr": "tr[k]['damage']"
+     },
+     {
+      "function": "soundness",
+      "line": 71,
+      "kind": "value",
+      "field": "damage",
+      "expr": "tr[k]['damage']"
+     },
+     {
+      "function": "soundness",
+      "line": 75,
+      "kind": "value",
+      "field": "cex",
+      "expr": "tr[k]['preserves'][gk]['cex']"
+     },
+     {
+      "function": "soundness",
+      "line": 75,
+      "kind": "value",
+      "field": "preserves",
+      "expr": "tr[k]['preserves']"
+     },
+     {
+      "function": "observed_violations",
+      "line": 97,
+      "kind": "value",
+      "field": "max_by_N",
+      "expr": "tr[k]['damage'][x]['max_by_N']"
+     },
+     {
+      "function": "observed_violations",
+      "line": 97,
+      "kind": "value",
+      "field": "damage",
+      "expr": "tr[k]['damage']"
+     },
+     {
+      "function": "observed_violations",
+      "line": 101,
+      "kind": "value",
+      "field": "damage",
+      "expr": "tr[k]['damage']"
+     }
+    ],
+    "imports_truth": false,
+    "imports_judge": []
+   },
+   "mission-05/experiments/g3/heldout_diag.py": {
+    "side": "UNLABELLED",
+    "truth_reads": [
+     {
+      "function": "<module>",
+      "line": 22,
+      "kind": "value",
+      "field": "max_by_N",
+      "expr": "tr[k]['damage'][m]['max_by_N']"
+     },
+     {
+      "function": "<module>",
+      "line": 22,
+      "kind": "value",
+      "field": "damage",
+      "expr": "tr[k]['damage']"
+     }
+    ],
+    "imports_truth": true,
+    "imports_judge": []
+   },
+   "mission-05/experiments/g3/run_g3.py": {
+    "side": "UNLABELLED",
+    "truth_reads": [],
+    "imports_truth": true,
+    "imports_judge": [
+     "instances",
+     "net_loop"
+    ]
+   },
+   "mission-05/experiments/g3/selfcheck.py": {
+    "side": "UNLABELLED",
+    "truth_reads": [
+     {
+      "function": "main",
+      "line": 121,
+      "kind": "value",
+      "field": "damage",
+      "expr": "row['damage']"
+     },
+     {
+      "function": "main",
+      "line": 124,
+      "kind": "value",
+      "field": "preserves",
+      "expr": "row['preserves']"
+     },
+     {
+      "function": "main",
+      "line": 142,
+      "kind": "value",
+      "field": "max_by_N",
+      "expr": "tr[k]['damage'][x]['max_by_N']"
+     },
+     {
+      "function": "main",
+      "line": 142,
+      "kind": "value",
+      "field": "damage",
+      "expr": "tr[k]['damage']"
+     },
+     {
+      "function": "main",
+      "line": 153,
+      "kind": "value",
+      "field": "cex",
+      "expr": "tr[k]['preserves'][gk]['cex']"
+     },
+     {
+      "function": "main",
+      "line": 153,
+      "kind": "value",
+      "field": "preserves",
+      "expr": "tr[k]['preserves']"
+     }
+    ],
+    "imports_truth": true,
+    "imports_judge": [
+     "cir_interp",
+     "instances"
+    ]
+   },
+   "mission-05/experiments/g4/run_g4.py": {
+    "side": "UNLABELLED",
+    "truth_reads": [],
+    "imports_truth": true,
+    "imports_judge": [
+     "instances",
+     "net_loop"
+    ]
+   },
+   "mission-05/experiments/r7/diag_consistency.py": {
+    "side": "UNLABELLED",
+    "truth_reads": [
+     {
+      "function": "main",
+      "line": 41,
+      "kind": "value",
+      "field": "max_by_N",
+      "expr": "tr[k]['damage'][x]['max_by_N']"
+     },
+     {
+      "function": "main",
+      "line": 41,
+      "kind": "value",
+      "field": "damage",
+      "expr": "tr[k]['damage']"
+     },
+     {
+      "function": "main",
+      "line": 43,
+      "kind": "value",
+      "field": "applicability_cex",
+      "expr": "tr[k]['applicability_cex']"
+     }
+    ],
+    "imports_truth": true,
+    "imports_judge": []
+   },
+   "mission-05/experiments/r7/posthoc_g3.py": {
+    "side": "UNLABELLED",
+    "truth_reads": [],
+    "imports_truth": true,
+    "imports_judge": []
+   },
+   "mission-05/experiments/r7/run_r7.py": {
+    "side": "UNLABELLED",
+    "truth_reads": [],
+    "imports_truth": true,
+    "imports_judge": []
+   },
+   "mission-05/experiments/r7/zplus.py": {
+    "side": "UNLABELLED",
+    "truth_reads": [
+     {
+      "function": "a_tables_plus",
+      "line": 184,
+      "kind": "value",
+      "field": "applicability_cex",
+      "expr": "tr[k]['applicability_cex']"
+     },
+     {
+      "function": "a_tables_plus",
+      "line": 186,
+      "kind": "value",
+      "field": "applicability_cex",
+      "expr": "tr[k]['applicability_cex']"
+     },
+     {
+      "function": "a_tables_plus",
+      "line": 188,
+      "kind": "iterate",
+      "expr": "tr[k]['preserves']"
+     },
+     {
+      "function": "a_tables_plus",
+      "line": 188,
+      "kind": "value",
+      "field": "preserves",
+      "expr": "tr[k]['preserves']"
+     }
+    ],
+    "imports_truth": false,
+    "imports_judge": []
+   },
+   "mission-05/experiments/r8/posthoc_g3.py": {
+    "side": "UNLABELLED",
+    "truth_reads": [],
+    "imports_truth": true,
+    "imports_judge": []
+   },
+   "mission-05/experiments/r8/run_r8.py": {
+    "side": "UNLABELLED",
+    "truth_reads": [],
+    "imports_truth": true,
+    "imports_judge": []
+   },
+   "mission-05/experiments/r8/zpp.py": {
+    "side": "UNLABELLED",
+    "truth_reads": [
+     {
+      "function": "a_tables_pp",
+      "line": 86,
+      "kind": "value",
+      "field": "applicability_cex",
+      "expr": "tr[k]['applicability_cex']"
+     },
+     {
+      "function": "a_tables_pp",
+      "line": 88,
+      "kind": "value",
+      "field": "applicability_cex",
+      "expr": "tr[k]['applicability_cex']"
+     },
+     {
+      "function": "a_tables_pp",
+      "line": 90,
+      "kind": "iterate",
+      "expr": "tr[k]['preserves']"
+     },
+     {
+      "function": "a_tables_pp",
+      "line": 90,
+      "kind": "value",
+      "field": "preserves",
+      "expr": "tr[k]['preserves']"
+     }
+    ],
+    "imports_truth": false,
+    "imports_judge": []
+   },
+   "mission-06/experiments/g0/fidelity.py": {
+    "side": "UNLABELLED",
+    "truth_reads": [
+     {
+      "function": "main",
+      "line": 121,
+      "kind": "value",
+      "field": "applicability_cex",
+      "expr": "tr[k]['applicability_cex']"
+     }
+    ],
+    "imports_truth": false,
+    "imports_judge": [
+     "cir_interp",
+     "env",
+     "instances"
+    ]
+   },
+   "mission-06/experiments/g0/run_app.py": {
+    "side": "UNLABELLED",
+    "truth_reads": [
+     {
+      "function": "main",
+      "line": 109,
+      "kind": "value",
+      "field": "applicability_cex",
+      "expr": "tr[k]['applicability_cex']"
+     },
+     {
+      "function": "main",
+      "line": 117,
+      "kind": "value",
+      "field": "applicability_cex",
+      "expr": "tr[k]['applicability_cex']"
+     },
+     {
+      "function": "main",
+      "line": 118,
+      "kind": "value",
+      "field": "applicability_cex",
+      "expr": "tr[k]['applicability_cex']"
+     }
+    ],
+    "imports_truth": true,
+    "imports_judge": []
+   },
+   "mission-06/experiments/g0/trust_flow.py": {
+    "side": "JUDGE",
+    "truth_reads": [],
+    "imports_truth": true,
+    "imports_judge": []
+   }
+  },
+  "truth_readers": [
+   [
+    "mission-05/experiments/g3/a_dsl.py",
+    "a_tables",
+    "applicability_cex"
+   ],
+   [
+    "mission-05/experiments/g3/a_dsl.py",
+    "a_tables",
+    "iterate"
+   ],
+   [
+    "mission-05/experiments/g3/a_dsl.py",
+    "a_tables",
+    "preserves"
+   ],
+   [
+    "mission-05/experiments/g3/a_dsl.py",
+    "observed_violations",
+    "damage"
+   ],
+   [
+    "mission-05/experiments/g3/a_dsl.py",
+    "observed_violations",
+    "max_by_N"
+   ],
+   [
+    "mission-05/experiments/g3/a_dsl.py",
+    "soundness",
+    "cex"
+   ],
+   [
+    "mission-05/experiments/g3/a_dsl.py",
+    "soundness",
+    "damage"
+   ],
+   [
+    "mission-05/experiments/g3/a_dsl.py",
+    "soundness",
+    "max_by_N"
+   ],
+   [
+    "mission-05/experiments/g3/a_dsl.py",
+    "soundness",
+    "preserves"
+   ],
+   [
+    "mission-05/experiments/g3/a_dsl.py",
+    "truth_progress",
+    "applicability_cex"
+   ],
+   [
+    "mission-05/experiments/g3/a_dsl.py",
+    "truth_progress",
+    "damage"
+   ],
+   [
+    "mission-05/experiments/g3/a_dsl.py",
+    "truth_progress",
+    "max_by_N"
+   ],
+   [
+    "mission-05/experiments/g3/heldout_diag.py",
+    "<module>",
+    "damage"
+   ],
+   [
+    "mission-05/experiments/g3/heldout_diag.py",
+    "<module>",
+    "max_by_N"
+   ],
+   [
+    "mission-05/experiments/g3/selfcheck.py",
+    "main",
+    "cex"
+   ],
+   [
+    "mission-05/experiments/g3/selfcheck.py",
+    "main",
+    "damage"
+   ],
+   [
+    "mission-05/experiments/g3/selfcheck.py",
+    "main",
+    "max_by_N"
+   ],
+   [
+    "mission-05/experiments/g3/selfcheck.py",
+    "main",
+    "preserves"
+   ],
+   [
+    "mission-05/experiments/r7/diag_consistency.py",
+    "main",
+    "applicability_cex"
+   ],
+   [
+    "mission-05/experiments/r7/diag_consistency.py",
+    "main",
+    "damage"
+   ],
+   [
+    "mission-05/experiments/r7/diag_consistency.py",
+    "main",
+    "max_by_N"
+   ],
+   [
+    "mission-05/experiments/r7/zplus.py",
+    "a_tables_plus",
+    "applicability_cex"
+   ],
+   [
+    "mission-05/experiments/r7/zplus.py",
+    "a_tables_plus",
+    "iterate"
+   ],
+   [
+    "mission-05/experiments/r7/zplus.py",
+    "a_tables_plus",
+    "preserves"
+   ],
+   [
+    "mission-05/experiments/r8/zpp.py",
+    "a_tables_pp",
+    "applicability_cex"
+   ],
+   [
+    "mission-05/experiments/r8/zpp.py",
+    "a_tables_pp",
+    "iterate"
+   ],
+   [
+    "mission-05/experiments/r8/zpp.py",
+    "a_tables_pp",
+    "preserves"
+   ],
+   [
+    "mission-06/experiments/g0/fidelity.py",
+    "main",
+    "applicability_cex"
+   ],
+   [
+    "mission-06/experiments/g0/run_app.py",
+    "main",
+    "applicability_cex"
+   ]
+  ]
+ },
+ "mission06_isolation": {
+  "modules": {
+   "mission-06/experiments/g0/app_r.py": {
+    "side": "CONSTRUCTOR",
+    "imports_truth": false,
+    "imports_judge": []
+   },
+   "mission-06/experiments/g0/aud.py": {
+    "side": "UNLABELLED",
+    "imports_truth": false,
+    "imports_judge": []
+   },
+   "mission-06/experiments/g0/compile_check.py": {
+    "side": "UNLABELLED",
+    "imports_truth": false,
+    "imports_judge": []
+   },
+   "mission-06/experiments/g0/compile_fuzz.py": {
+    "side": "UNLABELLED",
+    "imports_truth": false,
+    "imports_judge": [
+     "cir_interp",
+     "env",
+     "net_loop"
+    ]
+   },
+   "mission-06/experiments/g0/compile_lemmas.py": {
+    "side": "UNLABELLED",
+    "imports_truth": false,
+    "imports_judge": []
+   },
+   "mission-06/experiments/g0/compile_run.py": {
+    "side": "UNLABELLED",
+    "imports_truth": false,
+    "imports_judge": []
+   },
+   "mission-06/experiments/g0/concretize.py": {
+    "side": "CONSTRUCTOR",
+    "imports_truth": false,
+    "imports_judge": []
+   },
+   "mission-06/experiments/g0/fidelity.py": {
+    "side": "UNLABELLED",
+    "imports_truth": false,
+    "imports_judge": [
+     "cir_interp",
+     "env",
+     "instances"
+    ]
+   },
+   "mission-06/experiments/g0/oracle_free.py": {
+    "side": "UNLABELLED",
+    "imports_truth": false,
+    "imports_judge": []
+   },
+   "mission-06/experiments/g0/run_app.py": {
+    "side": "UNLABELLED",
+    "imports_truth": true,
+    "imports_judge": []
+   },
+   "mission-06/experiments/g0/score_g0.py": {
+    "side": "UNLABELLED",
+    "imports_truth": false,
+    "imports_judge": []
+   },
+   "mission-06/experiments/g0/stress.py": {
+    "side": "UNLABELLED",
+    "imports_truth": false,
+    "imports_judge": [
+     "cir_interp",
+     "env",
+     "feasibility",
+     "instances"
+    ]
+   },
+   "mission-06/experiments/g0/trust_flow.py": {
+    "side": "JUDGE",
+    "imports_truth": true,
+    "imports_judge": []
+   }
+  },
+  "violations": []
+ },
+ "dynamic": {
+  "a_dsl.a_tables": [
+   "<instance> / applicability_cex",
+   "<instance> / preserves",
+   "<instance> / preserves / <iterate keys>"
+  ],
+  "zplus.a_tables_plus": [
+   "<instance> / applicability_cex",
+   "<instance> / preserves",
+   "<instance> / preserves / <iterate keys>"
+  ],
+  "zpp.a_tables_pp": [
+   "<instance> / applicability_cex",
+   "<instance> / preserves",
+   "<instance> / preserves / <iterate keys>"
+  ],
+  "constructors_with_judge_poisoned": {
+   "goals": 98,
+   "constructed (both routes, N<=5 truth)": 59,
+   "judge_calls": []
+  }
+ }
+}

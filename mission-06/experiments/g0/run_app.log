@@ -1,0 +1,4 @@
+truth 4146.3 s CPU; reproduction mismatches {'G3-HO': 0, 'G4-HO': 0, 'STRAT-DEV': 0, 'LIB': 0, 'G3-DEV': 0}
+APP-R 564.3 s wall, 3444.6 s summed
+search 69.0 s wall over 122 truth-applicable instances
+done 1239.3 s
