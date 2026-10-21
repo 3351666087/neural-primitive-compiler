@@ -25,6 +25,7 @@ def main():
     ap.add_argument("--idx-file", required=True)
     ap.add_argument("--max-steps", type=int, default=100)
     ap.add_argument("--tag", default="")
+    ap.add_argument("--official-lit", action="store_true", help="POST-HOC: judge LIT with the official ALFWorld condition")
     ap.add_argument("--track", action="store_true", help="POST-HOC diagnostic: per step, record (booleans only) whether "
                     "the HOLDING+LIT part, the IN part and the whole goal hold")
     a = ap.parse_args()
@@ -88,7 +89,7 @@ def main():
                 else:
                     gi += 1
                     gf, _fam, spec = goals[idxs[gi]]
-                    game = E.CompositeGame(gf, spec, a.max_steps)
+                    game = E.CompositeGame(gf, spec, a.max_steps, "official" if a.official_lit else "objloc")
                     out = game.reset()
                     steps, active = 0, True
                     ever.clear()

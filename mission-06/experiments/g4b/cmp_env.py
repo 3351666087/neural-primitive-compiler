@@ -129,8 +129,11 @@ def sentence(groups):
     return " and ".join(clause(g) for g in groups)
 
 
-def satisfied(facts, atoms):
-    """Two distinct objects (one per goal type) satisfy every atom in the final state."""
+def satisfied(facts, atoms, lit_rule="objloc"):
+    """Two distinct objects (one per goal type) satisfy every atom in the final state.
+    lit_rule "objloc" (as locked in G4b): the agent is at the lamp's objectatlocation. "official" (POST-HOC correction,
+    the goal of ALFWorld's look_at_obj_in_light and the precondition of its ToggleObject action): the agent is at a
+    location of the receptacle that contains the lamp (a receptacle can have several locations)."""
     F = {(x.name, tuple(y.name for y in x.arguments)) for x in facts}
     otype = {a[0]: _t(a[1]) for n, a in F if n == "objecttype"}
     rtype = {a[0]: _t(a[1]) for n, a in F if n == "receptacletype"}
@@ -143,6 +146,19 @@ def satisfied(facts, atoms):
     toggled = {a[0] for n, a in F if n == "istoggled"}
     oloc = {a[0]: a[1] for n, a in F if n == "objectatlocation"}
     aloc = {a[1] for n, a in F if n == "atlocation"}
+    inrec_l = {}
+    for n, a in F:
+        if n == "inreceptacle":
+            inrec_l.setdefault(a[0], set()).add(a[1])
+    rlocs = {}
+    for n, a in F:
+        if n == "receptacleatlocation":
+            rlocs.setdefault(a[0], set()).add(a[1])
+
+    def at_lamp(l):
+        if lit_rule == "official":
+            return any(rlocs.get(r, set()) & aloc for r in inrec_l.get(l, ()))
+        return oloc.get(l) in aloc
 
     def ok(o, atom):
         k, T, X = atom
@@ -158,7 +174,7 @@ def satisfied(facts, atoms):
     types = sorted({a[1] for a in atoms if a[0] != "LIT"})
     cand = {T: [o for o, t in otype.items() if t == T] for T in types}
     lit = [a for a in atoms if a[0] == "LIT"]
-    if lit and not any(otype.get(l) == lit[0][1] and l in toggled and oloc.get(l) in aloc for l in otype):
+    if lit and not any(otype.get(l) == lit[0][1] and l in toggled and at_lamp(l) for l in otype):
         return False
 
     def assign(i, used):
@@ -174,7 +190,7 @@ def satisfied(facts, atoms):
 
 
 class CompositeGame:
-    def __init__(self, game_file, spec, max_steps):
+    def __init__(self, game_file, spec, max_steps, lit_rule="objloc"):
         import textworld
         import textworld.gym
         from alfworld.agents.environment.alfred_tw_env import AlfredDemangler, AlfredInfos
@@ -182,7 +198,7 @@ class CompositeGame:
         self.env = textworld.gym.make(textworld.gym.register_games(
             [game_file], textworld.EnvInfos(won=True, facts=True), batch_size=1, asynchronous=False,
             max_episode_steps=max_steps + 5, wrappers=[AlfredDemangler, AlfredInfos]))
-        self.orig_won, self.facts = False, None
+        self.orig_won, self.facts, self.lit_rule = False, None, lit_rule
 
     def reset(self):
         obs, info = self.env.reset()
@@ -200,7 +216,7 @@ class CompositeGame:
         return obs[0]
 
     def success(self):
-        return satisfied(self.facts, self.atoms)
+        return satisfied(self.facts, self.atoms, self.lit_rule)
 
     def close(self):
         self.env.close()

@@ -24,28 +24,30 @@ MAX_STEPS = 100
 ARMS = {"CMP-0": K.construct_frozen, "CMP-1": K.construct_upgraded, "SEQ": K.seq_method}
 
 
-def _judge(conn, set_name, max_steps, out_path):
+def _judge(conn, set_name, max_steps, out_path, lit_rule):
     sys.path.insert(0, str(HERE))
     import judge4b
-    judge4b.judge_proc(conn, set_name, max_steps, out_path)
+    judge4b.judge_proc(conn, set_name, max_steps, out_path, lit_rule)
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--set", choices=("dev", "heldout"), required=True)
+    ap.add_argument("--official-lit", action="store_true", help="POST-HOC: judge LIT with the official ALFWorld condition")
     a = ap.parse_args()
     t0 = time.perf_counter()
     harness.guard_imports()
     harness.FORBIDDEN_MODULES = harness.FORBIDDEN_MODULES + ("alfworld", "textworld", "alf_judge", "cmp_env", "sets4b",
                                                              "judge4b", "games", "games4", "judge", "judge4")
     disc = json.loads((HERE.parent / "g3" / "g3_discovery.json").read_text())
-    judge_out, cons_out = HERE / f"g4b_{a.set}_judge.jsonl", HERE / f"g4b_{a.set}_constructor.jsonl"
+    sfx = "_officiallit" if a.official_lit else ""
+    judge_out, cons_out = HERE / f"g4b_{a.set}{sfx}_judge.jsonl", HERE / f"g4b_{a.set}{sfx}_constructor.jsonl"
     for f in (judge_out, cons_out):
         if f.exists():
             f.unlink()
     ctx = mp.get_context("spawn")
     pa, pb = ctx.Pipe()
-    p = ctx.Process(target=_judge, args=(pb, a.set, MAX_STEPS, str(judge_out)))
+    p = ctx.Process(target=_judge, args=(pb, a.set, MAX_STEPS, str(judge_out), "official" if a.official_lit else "objloc"))
     p.start()
 
     def ask(msg):
