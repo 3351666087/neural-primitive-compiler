@@ -1,0 +1,57 @@
+{
+ "label": "G1-AW2/AW3 (Mission 06): AppWorld deployment pilot",
+ "run_id": "G1-AW-pilot",
+ "cap": 6,
+ "AW3-b_test_request_refused": true,
+ "dev_ids": 147,
+ "open_s": 2.03,
+ "instruction_chars": 76,
+ "probes": {
+  "app_list": {
+   "exec_s": 0.043,
+   "chars": 1366,
+   "tokens_est": 341,
+   "blocked_or_error": false
+  },
+  "supervisor_apis": {
+   "exec_s": 0.014,
+   "chars": 632,
+   "tokens_est": 158,
+   "blocked_or_error": false
+  },
+  "import_os": {
+   "exec_s": 0.002,
+   "chars": 88,
+   "tokens_est": 22,
+   "blocked_or_error": true,
+   "first_line": "Usage of the following function is not allowed: os.listdir."
+  },
+  "open_file": {
+   "exec_s": 0.002,
+   "chars": 91,
+   "tokens_est": 22,
+   "blocked_or_error": true,
+   "first_line": "Usage of the following function is not allowed: builtins.open."
+  }
+ },
+ "time_s": 4.6,
+ "crossed": [
+  "str",
+  "supervisor.email",
+  "supervisor.first_name",
+  "supervisor.last_name",
+  "supervisor.phone_number",
+  "task.instruction",
+  "task.supervisor"
+ ],
+ "guard_refused_appworld": true,
+ "static_scan_violations": [],
+ "predictions": {
+  "AW2-a": "HOLDS",
+  "AW3-a": "HOLDS",
+  "AW3-b": "HOLDS",
+  "AW3-c": "HOLDS",
+  "AW3-d": "HOLDS",
+  "AW2-b": "scored from the judge log"
+ }
+}

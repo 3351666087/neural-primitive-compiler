@@ -28,6 +28,9 @@
 | ALFWorld 文本观察的措辞、动作语义、目标句式（P-ALF-1 的信念判定器） | `experiments/g1/belief.py` | 设计者（本会话对 ALFWorld 的预训练知识）；未对照官方文法文件核实 | 约 150 行 | 判定规则可能与环境的真实语义不符，W_P 正是对它的检验；例如"冷却是否要求冰箱关着"未知 |
 | BrowserGym 观察键白名单、隔离边界 | `experiments/g1/harness.py` | 第三方文档（BrowserGym README）+ 设计者 | 约 120 行 | P3 实测：白名单恰好等于 BrowserGym 的全部观察键 |
 
+| AppWorld 的接口与数据流（裁判包装、观察白名单） | `experiments/aw/aw_judge.py` | 第三方文档（README、PyPI、公开源码中的常量）+ 接口内省（只打印签名与字段名） | 约 120 行 | 没有阅读应用实现、评测测试或任何测试任务 |
+| AppWorld 的预训练知识 | — | 本会话的预训练可能包含 AppWorld 论文（2024）、网站与公开 API 文档 | UNKNOWN | 任务内容加密分发；测试解法不公开 |
+
 ## 3. 待登记（Gate 2 之前）
 
 - 每个观察适配器与动作适配器：行数、规则数、所用文档段落。

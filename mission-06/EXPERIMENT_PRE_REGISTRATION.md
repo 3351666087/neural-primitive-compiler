@@ -482,3 +482,31 @@ P1–P3 不接触任何 ServiceNow 实例，也不读取任何任务内容。
 - 按登记的规则，P4 在此停止，记为 **BLOCKED**；第 2 步（打开任务）没有运行，没有接触任何实例。
 - 首次核对曾在命令沙箱内运行，返回 `ConnectError`（沙箱的网络过滤），不是关于访问权的结论，随后在用户终端中重做。
 - 获批之后，用同一个 run_id 与同一组登记值重跑：`p4_access.py`，然后 `p4.py`。
+
+---
+
+## §G1-AW　AppWorld 部署试点（主域；锁定于运行之前）
+
+**AW1 安装（已完成，用户批准下载）：**
+- `appworld` 0.1.3.post1 装在 `env/venv-aw`，59 s；数据 0.2.0 放在 `env/appworld`（gitignore）。
+- 各划分的行数（`wc -l`）：train 89、dev 56、test_normal 167、test_challenge 416。
+- 占用：venv 190 MB，数据 183 MB。
+- `appworld install` 把应用实现解密到 site-packages，并把评测测试解到 `~/.appworld/tests`。两者都是环境内部，构造器侧不得读取。
+
+**设计（裁判与构造器分离，同 BrowserGym 与 ALFWorld 的试点）：**
+- 裁判进程 `experiments/aw/aw_judge.py` 持有 `AppWorld` 世界对象，以及 `evaluate`、`ground_truth`、`save_state` / `load_state`、`expose_internals`。它只放行开发划分（train、dev）的任务 ID。
+- 构造器侧只收到三样东西：任务指令、监督者的公开资料（姓名、邮箱、电话），以及每次 `execute` 的输出字符串。
+- 每次运行登记交互上限，并写入账本（同 D2）。
+- 含任务文本的日志放在 gitignore 的目录中（许可要求）。
+
+**测量与预测：**
+
+| 编号 | 内容 | 预测 |
+|---|---|---|
+| AW2-a | 打开一个 train 任务的时间；`execute` 的单次延迟 | 打开 ≤ 30 s；延迟中位数 ≤ 2 s |
+| AW2-b | 只做查询、不完成任务就关闭，裁判的评测结果 | 判为未完成（评测器不是空判） |
+| AW3-a | 越过边界的只有三类内容（指令、监督者资料、输出字符串） | 成立 |
+| AW3-b | 请求 test_normal 的任务 ID | 被裁判拒绝，不返回任何内容 |
+| AW3-c | 在 `execute` 中尝试 `import os` 并列目录 | 被环境拦截（不安全语法检查）。若不拦截，B2 与构造器的隔离就需要我们自己的代码过滤 |
+| AW3-d | 构造器进程导入 `appworld` | 被导入钩子拒绝；静态扫描 0 处违规 |
+| AW2-c | 一次 `execute` 输出（API 文档查询）的 token 估计（字符数 / 4） | 记录，不预测 |

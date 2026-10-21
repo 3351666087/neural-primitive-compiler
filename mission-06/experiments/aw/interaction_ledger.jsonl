@@ -1,0 +1,1 @@
+{"run_id": "G1-AW-pilot", "cap": 6, "tasks": ["07b42fd_1"], "executes": 4, "refused": ["test-split task requested (probe)"], "results": [{"task": "07b42fd_1", "executes": 4, "completed_flag": false, "success": false, "pass_count": 1, "fail_count": 4, "num_tests": 5}], "end": "2026-10-21T15:08:26"}

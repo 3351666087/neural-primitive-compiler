@@ -1,0 +1,2 @@
+190M	mission-06/env/venv-aw
+183M	/Users/null3351/Code/neural-primitive-research/neural-primitive-compiler/mission-06/env/appworld
