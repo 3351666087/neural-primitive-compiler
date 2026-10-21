@@ -156,7 +156,8 @@ def _check(s, extra):
     return r, m
 
 
-def bound_entry(atom, var, key, timeout_ms=20000):
+def achiever_base(atom, var, timeout_ms=20000):
+    """Solver with the achiever's allowed values (necessary constraints only); shared by TZ, TZ-P and B-EXCH."""
     s = z3.Solver()
     s.set("timeout", timeout_ms)
     N, x, y, u, v = z3.Ints("N x y u v")
@@ -171,6 +172,34 @@ def bound_entry(atom, var, key, timeout_ms=20000):
         s.add(_zone(N, x, atom[2], atom[3]), z3.Not(_zone(N, y, atom[2], atom[3])), v == A1, u != A1)
     else:
         s.add(ca >= 1, sa >= 0, sa + ca <= N, sa <= x, x < sa + ca, z3.Or(y < sa, y >= sa + ca), v == A1, u != A1)
+    return s, (N, x, y, u, v, sa, ca), no_A1_between
+
+
+def template_region(s, atom, var, t, V):
+    """Membership predicate of the template's region (OUT: zone; OOW: window, with its constraints added to s)."""
+    N, x, y, u, v, sa, ca = V
+    A1 = ROLE["A1"]
+    if t[0] == "OUT":
+        return lambda z: _zone(N, z, t[2], t[3])
+    p = t[1]
+    st, ct = z3.Ints("st ct")
+    hw = z3.Bool("hw")
+    s.add(st >= 0, ct >= ZOps.I(u == p) + ZOps.I(v == p), st + ct <= N)
+    if atom[0] == "GROUP" and p == A1:
+        s.add(hw, ct == ca)
+        if t[2] == var:
+            s.add(st == sa)
+        elif t[2] == "G1":
+            s.add(st <= sa)
+        else:
+            s.add(st >= sa)
+    return lambda z: z3.And(hw, st <= z, z < st + ct)
+
+
+def bound_entry(atom, var, key, timeout_ms=20000):
+    s, V, no_A1_between = achiever_base(atom, var, timeout_ms)
+    N, x, y, u, v, sa, ca = V
+    A1 = ROLE["A1"]
     t = parse_key(key)
     calls = []
     if t[0] == "KD":
@@ -190,24 +219,12 @@ def bound_entry(atom, var, key, timeout_ms=20000):
         ks = range(len(t[1]) + 1, -len(t[1]) - 1, -1)
     else:
         p = t[1]
+        inR = template_region(s, atom, var, t, V)
         if t[0] == "OUT":
-            ox, oy = z3.Not(_zone(N, x, t[2], t[3])), z3.Not(_zone(N, y, t[2], t[3]))
-            dT = exch(p, u, v, ox, oy, ZOps)
+            dT = exch(p, u, v, z3.Not(inR(x)), z3.Not(inR(y)), ZOps)
         else:
-            st, ct = z3.Ints("st ct")
-            hw = z3.Bool("hw")
-            s.add(st >= 0, ct >= ZOps.I(u == p) + ZOps.I(v == p), st + ct <= N)
-            if atom[0] == "GROUP" and p == A1:
-                s.add(hw, ct == ca)
-                if t[2] == var:
-                    s.add(st == sa)
-                elif t[2] == "G1":
-                    s.add(st <= sa)
-                else:
-                    s.add(st >= sa)
-            ox = z3.Or(x < st, x >= st + ct)
-            oy = z3.Or(y < st, y >= st + ct)
-            dT = z3.If(hw, exch(p, u, v, ox, oy, ZOps), 0)
+            # with no window (hw false) every cell is outside, so the formula gives 0, as the template does
+            dT = exch(p, u, v, z3.Not(inR(x)), z3.Not(inR(y)), ZOps)
         ks = range(2, -2, -1)
     best = None
     for k in ks:

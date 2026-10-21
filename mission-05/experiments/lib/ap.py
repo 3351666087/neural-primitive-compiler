@@ -106,7 +106,8 @@ def construct(spec, table=None, max_variants=2, evidence=None):
                     for i in range(j):
                         lookups += 1
                         e = row.get(pattern_key(plan[i][0], aj, fixed))
-                        if e is None or not e["ok"] or e["states"] == 0:
+                        # a PROVED entry (amendment 4) holds for every N, so N <= 5 non-vacuity is not required
+                        if e is None or not e["ok"] or (e["states"] == 0 and not e.get("proved")):
                             why = "preservation"
                             break
                         if evidence is not None and e.get("evidence") != evidence:
