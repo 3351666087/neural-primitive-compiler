@@ -4,7 +4,7 @@
 
 ## 1. 环境与版本
 
-| 项目 | 主域：WorkArena++ | 异质域：ALFWorld 文本版 |
+| 项目 | 原主域：WorkArena++（BLOCKED：外部批准；保留为附加域） | 异质域：ALFWorld 文本版 |
 |---|---|---|
 | 代码 | PyPI：`browsergym-core` 0.14.3、`browsergym-workarena` 0.5.3、`playwright` 1.44.0（由 core 固定）；CPython 3.12.13 arm64（§G1-P.0，2026-10-21 冻结） | `alfworld` 0.4.2（PyPI）、`textworld` 版本待定（Apple Silicon 试点决定） |
 | 数据 / 实例 | 官方实例池（门控）或用户的开发者实例（`washingtondc`），待 D1 | `json_2.1.1_json.zip`、`json_2.1.1_pddl.zip`、`json_2.1.3_tw-pddl.zip`，SHA-256 待下载时记录 |
@@ -59,3 +59,10 @@
 - 异质域安装在 Apple Silicon 上失败：先试 x86 环境；仍失败则 BLOCKED，请用户决定。
 - 实例被重置或限流：记录、暂停，不改评测协议。
 - 结果不好：不改科学目标、不改阈值；只能以新修正与新预测继续。
+
+## 7. 主域更换为 AppWorld（2026-10-21，用户决定不等待 WorkArena 的批准）
+
+- **版本**：`appworld` 0.1.3.post1（PyPI，wheel sha256 前缀 `db77f80039825023`）；数据 `data-0.2.0.bundle`（S3，34,908,601 字节，ETag `e879e1fcc5e16748694882d84378ec84-5`）。
+- **环境**：独立 venv `mission-06/env/venv-aw`；数据目录列入 `.gitignore`（许可要求不得明文再分发）。
+- **划分**：开发 = train + dev；持出 = test_normal + test_challenge（官方）；裁判侧加载器强制。
+- 选择理由与比较见 `ENVIRONMENT_SELECTION.md` §10。

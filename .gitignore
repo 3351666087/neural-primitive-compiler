@@ -13,3 +13,6 @@ mission-06/env/*.zip
 mission-06/env/alfworld-data/
 # B2 trajectories: judge-side only, never read by the designer
 mission-06/experiments/b2/run/
+# AppWorld: license forbids plaintext redistribution of decrypted data
+mission-06/env/appworld*/
+mission-06/env/venv-aw/
