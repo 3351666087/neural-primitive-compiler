@@ -8,6 +8,10 @@ priority order, so any order is sound), build the goal's templates:
 and search integer weights w in {0..4}^|T| (not all 0) such that every achiever j in the plan has
 sum_k w_k * maxDelta(j, k) <= -1 (a growing entry forces w_k = 0), with the smallest worst-case potential, then
 check the resource condition. Reasons for refusal are recorded.
+
+Evidence rule (amendment 3): with evidence = "T7" or "TZ", a damage entry counts only if it carries that evidence
+tag (T7: stable at N = 6, 7; TZ: PROVED); any other entry is treated as infinite. A progress entry without the tag
+refuses the candidate (reason "unchecked_progress"). The entries a certificate uses are returned with it.
 """
 
 from __future__ import annotations
@@ -72,7 +76,70 @@ def resource_ok(w, T, m, cue):
     return True
 
 
-def construct(spec, mode="tmpl", damage=None, progress=None, max_variants=2):
+def _entry(ent, k, evidence):
+    e = ent.get(k, {}) if k else {}
+    b = e.get("bound")
+    if evidence is not None and e.get("evidence") != evidence:
+        b = None                                   # unchecked entries are not certificates
+    return float("inf") if b in (None, "inf") else b
+
+
+def _gate(atoms, vs, fixed, progress, evidence):
+    why = None                                     # the last failing atom names the reason (as in round 2)
+    for a, v in zip(atoms, vs):
+        roles = [a[1], a[2]] if a[0] == "ORDER" else [a[1]]
+        p = progress[achiever_key(a, v)]
+        if any(c in fixed for c in roles):
+            why = "applicability"
+        elif not p["ok"]:
+            why = "progress"
+        elif evidence is not None and p.get("evidence") != evidence:
+            why = "unchecked_progress"
+    return why
+
+
+def _matrix(atoms, vs, T, cols, fixed, damage, evidence):
+    """Damage matrix: rows = achievers in the plan, columns = templates; and the entry keys used."""
+    D, K = [], []
+    for a, v in zip(atoms, vs):
+        rmap = roles_for(a, cols, fixed)
+        ent = damage[achiever_key(a, v)]["entries"]
+        keys = [template_key(t, rmap) if rmap else None for t in T]
+        D.append([_entry(ent, k, evidence) for k in keys])
+        K.append(keys)
+    return D, K
+
+
+def _used(atoms, vs, w, D, K, damage, progress):
+    used = []
+    for (a, v), row, keys in zip(zip(atoms, vs), D, K):
+        ak = achiever_key(a, v)
+        used.append({"achiever": ak, "progress_evidence": progress[ak].get("evidence"),
+                     "entries": [{"key": k, "bound": d, "evidence": damage[ak]["entries"].get(k, {}).get("evidence")}
+                                 for wk, d, k in zip(w, row, keys) if wk]})
+    return used
+
+
+def check_certificate(spec, vs, w, mode="tmpl", damage=None, progress=None, evidence=None):
+    """Is the given certificate (variants vs, weights w) accepted by this table under this evidence rule?"""
+    atoms = spec["atoms"]
+    fixed = [s[1] for s in spec["safety"] if s[0] == "NO_PICK"]
+    why = _gate(atoms, vs, fixed, progress, evidence)
+    if why:
+        return {"accepted": False, "reason": why}
+    T = templates(atoms, vs, mode)
+    if T is None:
+        return {"accepted": False, "reason": "cycle"}
+    D, K = _matrix(atoms, vs, T, colours(atoms, fixed), fixed, damage, evidence)
+    sums = []
+    for row, keys in zip(D, K):
+        sums.append(sum(wk * d for wk, d in zip(w, row) if wk))
+    ok = all(x <= -1 for x in sums)
+    return {"accepted": ok, "reason": None if ok else "row_sum", "row_sums": [str(x) for x in sums],
+            "rows": [[{"key": k, "bound": str(d)} for wk, d, k in zip(w, row, keys) if wk] for row, keys in zip(D, K)]}
+
+
+def construct(spec, mode="tmpl", damage=None, progress=None, max_variants=2, evidence=None):
     t0 = time.perf_counter()
     damage = damage or load_damage()
     progress = progress or load_progress()
@@ -83,28 +150,12 @@ def construct(spec, mode="tmpl", damage=None, progress=None, max_variants=2):
     reasons = {}
     for vs in itertools.product(*[VARS[a[0]][:max_variants] for a in atoms]):
         cand += 1
-        why = None
-        for a, v in zip(atoms, vs):
-            roles = [a[1], a[2]] if a[0] == "ORDER" else [a[1]]
-            if any(c in fixed for c in roles):
-                why = "applicability"
-            elif not progress[achiever_key(a, v)]["ok"]:
-                why = "progress"
+        why = _gate(atoms, vs, fixed, progress, evidence)
         T = None if why else templates(atoms, vs, mode)
         if why is None and T is None:
             why = "cycle"
         if why is None:
-            # damage matrix: rows = achievers in the plan, columns = templates
-            D = []
-            for a, v in zip(atoms, vs):
-                rmap = roles_for(a, cols, fixed)
-                ent = damage[achiever_key(a, v)]["entries"]
-                row = []
-                for t in T:
-                    k = template_key(t, rmap) if rmap else None
-                    b = ent.get(k, {}).get("bound") if k else None
-                    row.append(float("inf") if b in (None, "inf") else b)
-                D.append(row)
+            D, K = _matrix(atoms, vs, T, cols, fixed, damage, evidence)
             best = None
             for w in itertools.product(range(5), repeat=len(T)):
                 if not any(w):
@@ -134,7 +185,7 @@ def construct(spec, mode="tmpl", damage=None, progress=None, max_variants=2):
             else:
                 return {"status": "CONSTRUCTED", "plan": list(zip(atoms, vs)), "weights": list(best[1]),
                         "templates": [list(map(str, t)) for t in T], "candidates": cand, "weight_checks": weight_checks,
-                        "time_s": time.perf_counter() - t0}
+                        "used": _used(atoms, vs, best[1], D, K, damage, progress), "time_s": time.perf_counter() - t0}
         reasons[why] = reasons.get(why, 0) + 1
     return {"status": "OUT_OF_CLASS", "plan": None, "candidates": cand, "weight_checks": weight_checks,
             "reasons": reasons, "time_s": time.perf_counter() - t0}

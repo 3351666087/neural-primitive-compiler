@@ -73,7 +73,9 @@ def resource_ok(plan, cue):
     return True
 
 
-def construct(spec, table=None, max_variants=2):
+def construct(spec, table=None, max_variants=2, evidence=None):
+    """evidence (amendment 3): when set (e.g. "T7"), every progress and preservation entry a candidate uses must
+    carry that evidence tag; otherwise the candidate is refused ("unchecked")."""
     t0 = time.perf_counter()
     table = table or load_table()
     atoms = spec["atoms"]
@@ -94,6 +96,9 @@ def construct(spec, table=None, max_variants=2):
                 if not table["progress"][achiever_key(a, v)]["ok"]:
                     why = "progress"
                     break
+                if evidence is not None and table["progress"][achiever_key(a, v)].get("evidence") != evidence:
+                    why = "unchecked"
+                    break
             if why is None:
                 for j in range(len(plan)):
                     aj, vj = plan[j]
@@ -103,6 +108,9 @@ def construct(spec, table=None, max_variants=2):
                         e = row.get(pattern_key(plan[i][0], aj, fixed))
                         if e is None or not e["ok"] or e["states"] == 0:
                             why = "preservation"
+                            break
+                        if evidence is not None and e.get("evidence") != evidence:
+                            why = "unchecked"
                             break
                     if why:
                         break
