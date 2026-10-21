@@ -18,6 +18,7 @@ import importlib.abc
 import json
 import sys
 import time
+from pathlib import Path
 
 OBS_ALLOW = ("goal", "goal_object", "chat_messages", "url", "open_pages_urls", "open_pages_titles", "active_page_index",
              "axtree_object", "dom_object", "extra_element_properties", "screenshot", "focused_element_bid",
@@ -82,27 +83,75 @@ def make_env(env_spec: dict):
         return gym.make("browsergym/openended", task_kwargs={"start_url": env_spec["url"]},
                         wait_for_user_message=False, headless=True)
     if env_spec["kind"] == "workarena":
-        if not env_spec.get("allow_instance"):
-            raise PermissionError("WorkArena instances are not to be touched in this pilot step")
+        problems = check_workarena_spec(env_spec)
+        if problems:
+            raise PermissionError("; ".join(problems))
         import browsergym.workarena  # noqa: F401  (judge side only)
         return gym.make(f"browsergym/{env_spec['task']}", headless=True)
     raise ValueError(env_spec["kind"])
 
 
+# ------------------------------------------------------------------ D2 (EXPERIMENT_PRE_REGISTRATION.md section G1-D2)
+DEV_SPLIT = Path(__file__).resolve().parents[2] / "external" / "workarena_split" / "dev.json"
+LEDGER = Path(__file__).resolve().parent / "interaction_ledger.jsonl"
+MIN_SEED = 10
+RUN_CAP_MAX = 300
+
+
+def dev_task_ids() -> set:
+    d = json.loads(DEV_SPLIT.read_text())
+    return set(d["l1_atomic"]) | {f[lvl] for f in d["families"] for lvl in ("L2", "L3")}
+
+
+def check_workarena_spec(env_spec: dict) -> list:
+    """Problems that forbid creating a WorkArena environment (empty list: allowed)."""
+    p = []
+    if not env_spec.get("allow_instance"):
+        p.append("instance access not allowed for this run")
+    if env_spec.get("task") not in dev_task_ids():
+        p.append("task is not a development task (D2)")
+    cap = env_spec.get("step_cap")
+    if not isinstance(cap, int) or not 1 <= cap <= RUN_CAP_MAX:
+        p.append(f"step_cap must be a pre-registered integer in [1, {RUN_CAP_MAX}]")
+    if not env_spec.get("run_id"):
+        p.append("run_id (the pre-registration entry of this run) is required")
+    return p
+
+
+def ledger_write(rec: dict):
+    with open(LEDGER, "a") as f:
+        f.write(json.dumps(rec, default=str) + "\n")
+
+
 def judge_main(conn, env_spec: dict, log_path: str):
-    """Runs in the judge process. Everything the environment returns besides the filtered observation stays here."""
+    """Runs in the judge process. Everything the environment returns besides the filtered observation stays here.
+    For WorkArena (D2): seeds below MIN_SEED are refused, steps stop at env_spec["step_cap"], and the run is entered
+    in the interaction ledger (also when it is refused)."""
     log = open(log_path, "a")
     env = None
+    wa = env_spec.get("kind") == "workarena"
+    run = {"run_id": env_spec.get("run_id"), "task": env_spec.get("task"), "step_cap": env_spec.get("step_cap"),
+           "seeds": [], "steps": 0, "refused": [], "start": time.strftime("%Y-%m-%dT%H:%M:%S")}
     try:
         env = make_env(env_spec)
         while True:
             kind, payload = conn.recv()
             t0 = time.perf_counter()
+            if wa and kind == "reset" and (payload.get("seed") is None or payload["seed"] < MIN_SEED):
+                run["refused"].append(f"reset seed {payload.get('seed')}")
+                conn.send(("error", f"seed must be >= {MIN_SEED} (D2)"))
+                continue
+            if wa and kind == "step" and run["steps"] >= env_spec["step_cap"]:
+                run["refused"].append("step beyond cap")
+                conn.send(("error", "step cap reached (D2)"))
+                continue
             if kind == "reset":
+                run["seeds"].append(payload["seed"])
                 obs, info = env.reset(seed=payload["seed"])
                 rec = {"event": "reset", "seed": payload["seed"], "info_keys": sorted(info), "obs_keys": sorted(obs)}
                 conn.send(("obs", filter_obs(obs)))
             elif kind == "step":
+                run["steps"] += 1
                 obs, reward, terminated, truncated, info = env.step(payload)
                 rec = {"event": "step", "action": payload, "reward": float(reward), "terminated": bool(terminated),
                        "truncated": bool(truncated), "info_keys": sorted(info),
@@ -120,8 +169,12 @@ def judge_main(conn, env_spec: dict, log_path: str):
             log.write(json.dumps(rec, default=str) + "\n")
             log.flush()
     except Exception as e:                                     # noqa: BLE001
+        run["refused"].append(f"{type(e).__name__}: {e}")
         conn.send(("error", f"{type(e).__name__}: {e}"))
     finally:
         if env is not None:
             env.close()
         log.close()
+        if wa:
+            run["end"] = time.strftime("%Y-%m-%dT%H:%M:%S")
+            ledger_write(run)
