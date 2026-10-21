@@ -1,0 +1,14 @@
+ORDER:O1 28 proved 0.1
+ORDER:O2 28 proved 0.1
+ZONE:Z1:left:2 25 proved 0.2
+ZONE:Z1:left:half 25 proved 0.2
+ZONE:Z1:right:2 25 proved 0.3
+ZONE:Z1:right:half 25 proved 0.3
+ZONE:Z2:left:2 25 proved 0.4
+ZONE:Z2:left:half 25 proved 0.5
+ZONE:Z2:right:2 25 proved 0.5
+ZONE:Z2:right:half 25 proved 0.6
+GROUP:G1 18 proved 0.6
+GROUP:G2 18 proved 0.7
+self-check 3826872 mismatches 0 18.4 s
+{"PROVED": 292, "INF": 140} z3 time 0.68

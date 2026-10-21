@@ -1,0 +1,72 @@
+{
+ "C1": {
+  "verdict": "HOLDS",
+  "checked": 120,
+  "refuted": [
+   "GROUP:G1 / ZONE(A1,right,half)",
+   "GROUP:G2 / ZONE(A1,left,half)"
+  ]
+ },
+ "C2": {
+  "verdict": "HOLDS",
+  "T7_max_above_TZ": [],
+  "witness_entries": 11,
+  "witness_TZ_not_above_T5": []
+ },
+ "C3": {
+  "verdict": "HOLDS",
+  "constructed": 30,
+  "wrong": [],
+  "certificates_with_non_TZ_entries": []
+ },
+ "C4": {
+  "verdict": "HOLDS",
+  "certificates": 6,
+  "accepted_under": {
+   "P2-50": [],
+   "P2-54": [],
+   "P2-57": [],
+   "P2-59": [],
+   "P2-60": [],
+   "P3-14": []
+  }
+ },
+ "C5": {
+  "verdict": "FALSIFIED",
+  "agreement": 1.0,
+  "T7_bounded_TZ_inf": 0,
+  "TZ_bounded_T7_inf": 0
+ },
+ "C6": {
+  "verdict": "HOLDS",
+  "T7_cpu_s": 120.4,
+  "T7_wall_s": 120.9,
+  "TZ_z3_s": 0.68,
+  "A-P'_median_cpu_s": {
+   "T5": 4.649999999999793e-05,
+   "T7": 4.700000000000537e-05,
+   "TZ": 4.849999999999993e-05
+  },
+  "A-P_median_cpu_s": {
+   "G2": 2.300000000010627e-05,
+   "T7": 1.899999999821489e-05
+  }
+ },
+ "C7": {
+  "verdict": "FALSIFIED",
+  "disc_dangerous_fraction": 0.06018518518518518,
+  "null_dangerous_fraction": 0.4027777777777778
+ },
+ "coverage": {
+  "A-P'": {
+   "T5": 36,
+   "T7": 30,
+   "TZ": 30
+  },
+  "A-P": {
+   "G2": 32,
+   "T7": 32
+  }
+ },
+ "A-P_lost_with_T7": []
+}

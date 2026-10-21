@@ -1,0 +1,5435 @@
+{
+ "label": "TZ: parametric damage bounds for all N >= 3 (Z3, exchange lemma [P]); amendment 3",
+ "table": {
+  "ORDER:O1": {
+   "entries": {
+    "KD{A1<A2}": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 2,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "x": 0,
+      "v": 1,
+      "u": 2,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 2,
+      "v": 1,
+      "N": 3,
+      "w": 3,
+      "x": 0
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<A2;A1<X1}": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<A2;X1<A2}": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;A2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A2<A1;A2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 2,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A2<A1;X1<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 2,
+      "v": 1,
+      "N": 3,
+      "w": 3,
+      "x": 0
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<A2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<A2;A1<X1;A2<X1}": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<A2;A1<X1;X1<A2}": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<A2;X1<A1;X1<A2}": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;A2<A1;A2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 2,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A2<A1;A2<X1;X1<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "x": 0,
+      "v": 1,
+      "u": 2,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A2<A1;X1<A1;X1<A2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 2,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 2
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "OUT(A1,left,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A2,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A2,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A2,right,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A2,right,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A2,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A2,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G1)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    }
+   },
+   "progress_decrease": {
+    "key": "KD{A1<A2}",
+    "proved": true
+   }
+  },
+  "ORDER:O2": {
+   "entries": {
+    "KD{A1<A2}": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 2,
+      "v": 1,
+      "N": 3,
+      "w": 2,
+      "x": 0
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 2,
+      "v": 1,
+      "x": 0,
+      "w": 3,
+      "N": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 2,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<A2;A1<X1}": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<A2;X1<A2}": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;A2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A2<A1;A2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "x": 0,
+      "v": 1,
+      "u": 2,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A2<A1;X1<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 2,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<A2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<A2;A1<X1;A2<X1}": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<A2;A1<X1;X1<A2}": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<A2;X1<A1;X1<A2}": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;A2<A1;A2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 2,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 2
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A2<A1;A2<X1;X1<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 2,
+      "v": 1,
+      "x": 0,
+      "w": 3,
+      "N": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A2<A1;X1<A1;X1<A2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 2,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 2
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "OUT(A1,left,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A2,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A2,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A2,right,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A2,right,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A2,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A2,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G1)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    }
+   },
+   "progress_decrease": {
+    "key": "KD{A1<A2}",
+    "proved": true
+   }
+  },
+  "ZONE:Z1:left:2": {
+   "entries": {
+    "KD{A1<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 3,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 3,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 0,
+      "v": 1,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "x": 0,
+      "v": 1,
+      "u": 4,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X2;X1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 0,
+      "v": 1,
+      "N": 3,
+      "w": 3,
+      "x": 0
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 4,
+      "v": 1,
+      "x": 0,
+      "w": 1,
+      "N": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 4,
+      "v": 1,
+      "N": 3,
+      "w": 1,
+      "x": 0
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2;X1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;A1<X2;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 0,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 3,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2;X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 0,
+      "v": 1,
+      "x": 0,
+      "w": 3,
+      "N": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 3,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "OUT(A1,left,2)": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    }
+   },
+   "progress_decrease": {
+    "key": "OUT(A1,left,2)",
+    "proved": true
+   }
+  },
+  "ZONE:Z1:left:half": {
+   "entries": {
+    "KD{A1<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 3,
+      "v": 1,
+      "x": 0,
+      "w": 1,
+      "N": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 3,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 4,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 4,
+      "v": 1,
+      "N": 3,
+      "w": 3,
+      "x": 0
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X2;X1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 3,
+      "v": 1,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 0,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 4,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2;X1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;A1<X2;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 0,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 0,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2;X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 2,
+      "v": 1,
+      "x": 0,
+      "w": 3,
+      "N": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 3,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "OUT(A1,left,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,half)": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    }
+   },
+   "progress_decrease": {
+    "key": "OUT(A1,left,half)",
+    "proved": true
+   }
+  },
+  "ZONE:Z1:right:2": {
+   "entries": {
+    "KD{A1<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 3,
+      "v": 1,
+      "x": 2,
+      "w": 1,
+      "N": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 4,
+      "v": 1,
+      "N": 4,
+      "w": 1,
+      "x": 2
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 4,
+      "v": 1,
+      "N": 4,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 3,
+      "v": 1,
+      "x": 2,
+      "w": 4,
+      "N": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 0,
+      "v": 1,
+      "x": 2,
+      "w": 3,
+      "N": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 3,
+      "v": 1,
+      "N": 4,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 4,
+      "v": 1,
+      "N": 4,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1;X2<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X2<A1;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;A1<X2;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 3,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 3,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 2,
+      "v": 1,
+      "N": 4,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 2,
+      "v": 1,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2;X2<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1;X2<A1;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,2)": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    }
+   },
+   "progress_decrease": {
+    "key": "OUT(A1,right,2)",
+    "proved": true
+   }
+  },
+  "ZONE:Z1:right:half": {
+   "entries": {
+    "KD{A1<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 0,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 0,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 4,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 3,
+      "v": 1,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 4,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 3,
+      "v": 1,
+      "N": 3,
+      "w": 1,
+      "x": 2
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "x": 2,
+      "v": 1,
+      "u": 0,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1;X2<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X2<A1;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;A1<X2;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 2,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 4,
+      "v": 1,
+      "N": 3,
+      "w": 4,
+      "x": 2
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 0,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "x": 2,
+      "v": 1,
+      "u": 4,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2;X2<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1;X2<A1;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,half)": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    }
+   },
+   "progress_decrease": {
+    "key": "OUT(A1,right,half)",
+    "proved": true
+   }
+  },
+  "ZONE:Z2:left:2": {
+   "entries": {
+    "KD{A1<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 0,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 3,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 4,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 4,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X2;X1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 3,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 4,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 4,
+      "v": 1,
+      "N": 3,
+      "w": 3,
+      "x": 0
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2;X1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;A1<X2;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "x": 0,
+      "v": 1,
+      "u": 0,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 2,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2;X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 4,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 3,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "OUT(A1,left,2)": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    }
+   },
+   "progress_decrease": {
+    "key": "OUT(A1,left,2)",
+    "proved": true
+   }
+  },
+  "ZONE:Z2:left:half": {
+   "entries": {
+    "KD{A1<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 3,
+      "v": 1,
+      "x": 0,
+      "w": 1,
+      "N": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 3,
+      "v": 1,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "x": 0,
+      "v": 1,
+      "u": 4,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 4,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X2;X1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 3,
+      "v": 1,
+      "x": 0,
+      "w": 4,
+      "N": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 0,
+      "v": 1,
+      "N": 3,
+      "w": 3,
+      "x": 0
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 4,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2;X1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;A1<X2;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 0,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "u": 3,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2;X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "u": 0,
+      "v": 1,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 2,
+      "x": 0,
+      "u": 4,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "OUT(A1,left,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,half)": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    }
+   },
+   "progress_decrease": {
+    "key": "OUT(A1,left,half)",
+    "proved": true
+   }
+  },
+  "ZONE:Z2:right:2": {
+   "entries": {
+    "KD{A1<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 3,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 0,
+      "v": 1,
+      "N": 4,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 4,
+      "v": 1,
+      "N": 4,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 3,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 0,
+      "v": 1,
+      "N": 4,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 0,
+      "v": 1,
+      "N": 3,
+      "w": 3,
+      "x": 2
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 0,
+      "v": 1,
+      "x": 2,
+      "N": 4,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1;X2<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X2<A1;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;A1<X2;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 2,
+      "v": 1,
+      "x": 2,
+      "N": 4,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 2,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 3,
+      "v": 1,
+      "x": 2,
+      "w": 1,
+      "N": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 4,
+      "v": 1,
+      "N": 4,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2;X2<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1;X2<A1;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,2)": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    }
+   },
+   "progress_decrease": {
+    "key": "OUT(A1,right,2)",
+    "proved": true
+   }
+  },
+  "ZONE:Z2:right:half": {
+   "entries": {
+    "KD{A1<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "x": 2,
+      "u": 3,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "x": 2,
+      "u": 0,
+      "v": 1,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 4,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 3,
+      "v": 1,
+      "N": 3,
+      "w": 4,
+      "x": 2
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 0,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 3,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 4,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1;X2<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X2<A1;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{A1<X1;A1<X2;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 3,
+      "v": 1,
+      "N": 3,
+      "w": 1,
+      "x": 2
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 3,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "y": 0,
+      "u": 3,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "y": 0,
+      "u": 4,
+      "v": 1,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2;X2<A1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "KD{X1<A1;X2<A1;X2<X1}": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,half)": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,2)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,half)": {
+     "status": "PROVED",
+     "bound": 0,
+     "calls": [
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    }
+   },
+   "progress_decrease": {
+    "key": "OUT(A1,right,half)",
+    "proved": true
+   }
+  },
+  "GROUP:G1": {
+   "entries": {
+    "KD{A1<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 2,
+      "y": 0,
+      "x": 2,
+      "sa": 1,
+      "u": 2,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "ca": 2,
+      "y": 0,
+      "u": 0,
+      "sa": 1,
+      "v": 1,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 1,
+      "x": 0,
+      "y": 2,
+      "u": 0,
+      "sa": 0,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 2,
+      "y": 0,
+      "u": 4,
+      "sa": 1,
+      "v": 1,
+      "N": 3,
+      "w": 3,
+      "x": 2
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "y": 2,
+      "ca": 1,
+      "u": 0,
+      "sa": 0,
+      "v": 1,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 2,
+      "y": 0,
+      "x": 2,
+      "u": 3,
+      "sa": 1,
+      "v": 1,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 2,
+      "y": 0,
+      "u": 3,
+      "sa": 1,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 2,
+      "y": 0,
+      "u": 3,
+      "sa": 1,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 2,
+      "y": 0,
+      "u": 4,
+      "sa": 1,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 1,
+      "y": 2,
+      "u": 3,
+      "sa": 0,
+      "v": 1,
+      "N": 3,
+      "w": 1,
+      "x": 0
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 1,
+      "y": 2,
+      "u": 0,
+      "sa": 0,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 1,
+      "y": 2,
+      "u": 0,
+      "sa": 0,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "ca": 2,
+      "y": 0,
+      "u": 4,
+      "sa": 1,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "ca": 2,
+      "y": 0,
+      "u": 3,
+      "sa": 1,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 1,
+      "y": 2,
+      "u": 4,
+      "sa": 0,
+      "x": 0,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 2,
+      "y": 0,
+      "x": 2,
+      "sa": 1,
+      "u": 4,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2;X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 1,
+      "y": 2,
+      "u": 3,
+      "sa": 0,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 1,
+      "y": 2,
+      "u": 3,
+      "sa": 0,
+      "x": 0,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "OUT(A1,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G1)": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    }
+   },
+   "progress_decrease": {
+    "key": "OOW(A1,G1)",
+    "proved": true
+   }
+  },
+  "GROUP:G2": {
+   "entries": {
+    "KD{A1<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "ca": 2,
+      "y": 0,
+      "u": 3,
+      "sa": 1,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "ca": 2,
+      "y": 0,
+      "u": 0,
+      "sa": 1,
+      "v": 1,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "ca": 1,
+      "y": 2,
+      "u": 4,
+      "sa": 0,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 2,
+      "y": 0,
+      "u": 4,
+      "sa": 1,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 1,
+      "y": 2,
+      "u": 4,
+      "sa": 0,
+      "x": 0,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 2,
+      "y": 0,
+      "u": 3,
+      "sa": 1,
+      "v": 1,
+      "N": 3,
+      "w": 4,
+      "x": 2
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 2,
+      "ca": 2,
+      "y": 0,
+      "u": 2,
+      "sa": 1,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 2,
+      "y": 0,
+      "u": 3,
+      "sa": 1,
+      "v": 1,
+      "N": 3,
+      "x": 2,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 2,
+      "y": 0,
+      "u": 4,
+      "sa": 1,
+      "x": 2,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 1,
+      "y": 2,
+      "u": 3,
+      "sa": 0,
+      "v": 1,
+      "x": 0,
+      "N": 3,
+      "w": 4
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 1,
+      "y": 2,
+      "x": 0,
+      "u": 0,
+      "sa": 0,
+      "v": 1,
+      "N": 3,
+      "w": 3
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "ca": 1,
+      "y": 2,
+      "u": 4,
+      "sa": 0,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 2,
+      "y": 0,
+      "u": 3,
+      "sa": 1,
+      "v": 1,
+      "x": 2,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;A1<X2;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 2,
+      "y": 0,
+      "u": 4,
+      "sa": 1,
+      "v": 1,
+      "N": 3,
+      "w": 1,
+      "x": 2
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "x": 0,
+      "ca": 1,
+      "y": 2,
+      "u": 4,
+      "sa": 0,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{A1<X2;X1<A1;X1<X2}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 1,
+      "y": 2,
+      "u": 3,
+      "sa": 0,
+      "x": 0,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X1<X2;X2<A1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 1,
+      "y": 2,
+      "u": 4,
+      "sa": 0,
+      "x": 0,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "KD{X1<A1;X2<A1;X2<X1}": {
+     "status": "INF",
+     "bound": "inf",
+     "witness": {
+      "ca": 1,
+      "x": 0,
+      "y": 2,
+      "u": 3,
+      "sa": 0,
+      "v": 1,
+      "N": 3,
+      "w": 1
+     },
+     "calls": [
+      "sat"
+     ],
+     "evidence": null
+    },
+    "OUT(A1,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(A1,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X1,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,left,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OUT(X2,right,half)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(A1,G2)": {
+     "status": "PROVED",
+     "bound": -1,
+     "calls": [
+      "unsat",
+      "unsat",
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X1,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G1)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    },
+    "OOW(X2,G2)": {
+     "status": "PROVED",
+     "bound": 1,
+     "calls": [
+      "unsat",
+      "sat"
+     ],
+     "evidence": "TZ"
+    }
+   },
+   "progress_decrease": {
+    "key": "OOW(A1,G2)",
+    "proved": true
+   }
+  }
+ },
+ "progress": {
+  "ORDER:O1": {
+   "ok": true,
+   "evidence": "TZ",
+   "basis": "Z3 decrease of own measure template + applicability lemma [P]"
+  },
+  "ORDER:O2": {
+   "ok": true,
+   "evidence": "TZ",
+   "basis": "Z3 decrease of own measure template + applicability lemma [P]"
+  },
+  "ZONE:Z1:left:2": {
+   "ok": true,
+   "evidence": "TZ",
+   "basis": "Z3 decrease of own measure template + applicability lemma [P]"
+  },
+  "ZONE:Z1:left:half": {
+   "ok": true,
+   "evidence": "TZ",
+   "basis": "Z3 decrease of own measure template + applicability lemma [P]"
+  },
+  "ZONE:Z1:right:2": {
+   "ok": true,
+   "evidence": "TZ",
+   "basis": "Z3 decrease of own measure template + applicability lemma [P]"
+  },
+  "ZONE:Z1:right:half": {
+   "ok": true,
+   "evidence": "TZ",
+   "basis": "Z3 decrease of own measure template + applicability lemma [P]"
+  },
+  "ZONE:Z2:left:2": {
+   "ok": true,
+   "evidence": "TZ",
+   "basis": "Z3 decrease of own measure template + applicability lemma [P]"
+  },
+  "ZONE:Z2:left:half": {
+   "ok": true,
+   "evidence": "TZ",
+   "basis": "Z3 decrease of own measure template + applicability lemma [P]"
+  },
+  "ZONE:Z2:right:2": {
+   "ok": true,
+   "evidence": "TZ",
+   "basis": "Z3 decrease of own measure template + applicability lemma [P]"
+  },
+  "ZONE:Z2:right:half": {
+   "ok": true,
+   "evidence": "TZ",
+   "basis": "Z3 decrease of own measure template + applicability lemma [P]"
+  },
+  "GROUP:G1": {
+   "ok": true,
+   "evidence": "TZ",
+   "basis": "Z3 decrease of own measure template + applicability lemma [P]"
+  },
+  "GROUP:G2": {
+   "ok": true,
+   "evidence": "TZ",
+   "basis": "Z3 decrease of own measure template + applicability lemma [P]"
+  }
+ },
+ "status_counts": {
+  "PROVED": 292,
+  "INF": 140
+ },
+ "z3_version": "5.3.1",
+ "time_s": 0.68,
+ "self_check": {
+  "checked": 3826872,
+  "mismatches": 0,
+  "examples": []
+ },
+ "self_check_time_s": 18.4
+}

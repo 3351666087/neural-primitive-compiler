@@ -1,0 +1,8 @@
+evaluator self-check (mismatches) {3: 0, 4: 0}
+N 3 done 0.2 s sat calls 35
+N 4 done 0.2 s sat calls 116
+N 5 done 0.7 s sat calls 585
+N 6 done 14.3 s sat calls 250742
+N 7 done 120.9 s sat calls 1666460
+{"damage_entries": 432, "damage_bounded": 292, "pairwise_checked": 120, "pairwise_refuted": 2, "progress_refuted": 0} {"evaluator_mismatches_N3_N4": {"3": 0, "4": 0}, "t5_reproduced": true, "t5_mismatches": []} time 120.9 cpu 120.4
+exit 0
