@@ -1,0 +1,12 @@
+specs 8 valid, 0 invalid; 15 instances
+truth 366.7 s
+A++ {'damage_below_truth': 0, 'damage_finite_where_truth_grows': 2, 'preservation_proved_with_cex': 0, 'progress_certified_but_false': 0, 'truth_good_instances': 8, 'certified_among_truth_good': 8, 'certified_total': 8, 'instances': 15} | A(G3) certified 7 | A+ certified 7
+specs A-P' constructed 30 using specs 30 wrong 0
+specs A-P constructed 27 using specs 27 wrong 0
+library+specs A-P' constructed 30 using specs 0 wrong 0
+library+specs A-P constructed 29 using specs 0 wrong 0
+J1-net 0 mismatching episodes
+B five-1000 below observed 2 no rules 1 H1 disagreements 63466 A-P' constructed 21
+B five-200 below observed 2 no rules 3 H1 disagreements 71565 A-P' constructed 21
+done 1040.5 s
+exit 0
