@@ -1,0 +1,335 @@
+{
+ "run": "dev60_pert",
+ "arms": {
+  "G2A-1": {
+   "games": 60,
+   "won": 10,
+   "success": 0.16666666666666666,
+   "wilson95": [
+    0.0931317697919145,
+    0.2803161316361453
+   ],
+   "silent_failures": 0,
+   "abstain_failed": 50,
+   "abstain_but_won": 0,
+   "claims_done": 10,
+   "precision_of_claims_done": 1.0,
+   "L_co_contradictions_in_lost_games": 0,
+   "mean_steps": 9.283333333333333,
+   "retries": 0,
+   "colocated_hits": 0,
+   "perturbed_actions": 41,
+   "outcomes": {
+    "abstain: monitor": 49,
+    "won": 10,
+    "abstain: search exhausted": 1
+   },
+   "by_task_type": {
+    "look_at_obj_in_light": "4/10",
+    "pick_and_place_simple": "3/10",
+    "pick_clean_then_place_in_recep": "0/10",
+    "pick_cool_then_place_in_recep": "2/10",
+    "pick_heat_then_place_in_recep": "0/10",
+    "pick_two_obj_and_place": "1/10"
+   }
+  },
+  "B1": {
+   "games": 60,
+   "won": 23,
+   "success": 0.38333333333333336,
+   "wilson95": [
+    0.27088272374082023,
+    0.5098240417590008
+   ],
+   "silent_failures": 27,
+   "abstain_failed": 10,
+   "abstain_but_won": 0,
+   "claims_done": 50,
+   "precision_of_claims_done": 0.46,
+   "L_co_contradictions_in_lost_games": 0,
+   "mean_steps": 26.166666666666668,
+   "retries": 0,
+   "colocated_hits": 0,
+   "perturbed_actions": 118,
+   "outcomes": {
+    "claims done": 27,
+    "won": 23,
+    "abstain: budget exhausted": 9,
+    "abstain: search exhausted": 1
+   },
+   "by_task_type": {
+    "look_at_obj_in_light": "5/10",
+    "pick_and_place_simple": "7/10",
+    "pick_clean_then_place_in_recep": "3/10",
+    "pick_cool_then_place_in_recep": "4/10",
+    "pick_heat_then_place_in_recep": "2/10",
+    "pick_two_obj_and_place": "2/10"
+   }
+  },
+  "G3-L": {
+   "games": 60,
+   "won": 12,
+   "success": 0.2,
+   "wilson95": [
+    0.11828505322897494,
+    0.317818058056279
+   ],
+   "silent_failures": 0,
+   "abstain_failed": 48,
+   "abstain_but_won": 0,
+   "claims_done": 12,
+   "precision_of_claims_done": 1.0,
+   "L_co_contradictions_in_lost_games": 0,
+   "mean_steps": 10.55,
+   "retries": 0,
+   "colocated_hits": 11,
+   "perturbed_actions": 47,
+   "outcomes": {
+    "abstain: monitor": 47,
+    "won": 12,
+    "abstain: search exhausted": 1
+   },
+   "by_task_type": {
+    "look_at_obj_in_light": "4/10",
+    "pick_and_place_simple": "5/10",
+    "pick_clean_then_place_in_recep": "0/10",
+    "pick_cool_then_place_in_recep": "2/10",
+    "pick_heat_then_place_in_recep": "0/10",
+    "pick_two_obj_and_place": "1/10"
+   }
+  },
+  "G3-S": {
+   "games": 60,
+   "won": 29,
+   "success": 0.48333333333333334,
+   "wilson95": [
+    0.36175049539732784,
+    0.6069218996740751
+   ],
+   "silent_failures": 0,
+   "abstain_failed": 31,
+   "abstain_but_won": 0,
+   "claims_done": 29,
+   "precision_of_claims_done": 1.0,
+   "L_co_contradictions_in_lost_games": 0,
+   "mean_steps": 25.783333333333335,
+   "retries": 0,
+   "colocated_hits": 0,
+   "perturbed_actions": 120,
+   "outcomes": {
+    "won": 29,
+    "abstain: budget exhausted": 10,
+    "abstain: postcondition of IN not met": 8,
+    "abstain: postcondition of CLEAN not met": 4,
+    "abstain: postcondition of HEAT not met": 4,
+    "abstain: postcondition of HOLDING not met": 2,
+    "abstain: postcondition of LIT not met": 1,
+    "abstain: search exhausted": 1,
+    "abstain: postcondition of COOL not met": 1
+   },
+   "by_task_type": {
+    "look_at_obj_in_light": "5/10",
+    "pick_and_place_simple": "7/10",
+    "pick_clean_then_place_in_recep": "3/10",
+    "pick_cool_then_place_in_recep": "4/10",
+    "pick_heat_then_place_in_recep": "2/10",
+    "pick_two_obj_and_place": "8/10"
+   }
+  },
+  "G3-LP": {
+   "games": 60,
+   "won": 22,
+   "success": 0.36666666666666664,
+   "wilson95": [
+    0.25620916687225426,
+    0.49316999369896963
+   ],
+   "silent_failures": 0,
+   "abstain_failed": 38,
+   "abstain_but_won": 1,
+   "claims_done": 21,
+   "precision_of_claims_done": 1.0,
+   "L_co_contradictions_in_lost_games": 0,
+   "mean_steps": 9.35,
+   "retries": 0,
+   "colocated_hits": 8,
+   "perturbed_actions": 37,
+   "outcomes": {
+    "abstain: monitor": 37,
+    "won": 22,
+    "abstain: search exhausted": 1
+   },
+   "by_task_type": {
+    "look_at_obj_in_light": "5/10",
+    "pick_and_place_simple": "6/10",
+    "pick_clean_then_place_in_recep": "3/10",
+    "pick_cool_then_place_in_recep": "3/10",
+    "pick_heat_then_place_in_recep": "2/10",
+    "pick_two_obj_and_place": "3/10"
+   }
+  },
+  "G3-LPR": {
+   "games": 60,
+   "won": 50,
+   "success": 0.8333333333333334,
+   "wilson95": [
+    0.7196838683638547,
+    0.9068682302080855
+   ],
+   "silent_failures": 0,
+   "abstain_failed": 10,
+   "abstain_but_won": 1,
+   "claims_done": 49,
+   "precision_of_claims_done": 1.0,
+   "L_co_contradictions_in_lost_games": 0,
+   "mean_steps": 19.033333333333335,
+   "retries": 86,
+   "colocated_hits": 24,
+   "perturbed_actions": 88,
+   "outcomes": {
+    "won": 50,
+    "abstain: budget exhausted": 7,
+    "abstain: monitor": 2,
+    "abstain: search exhausted": 1
+   },
+   "by_task_type": {
+    "look_at_obj_in_light": "8/10",
+    "pick_and_place_simple": "10/10",
+    "pick_clean_then_place_in_recep": "10/10",
+    "pick_cool_then_place_in_recep": "7/10",
+    "pick_heat_then_place_in_recep": "7/10",
+    "pick_two_obj_and_place": "8/10"
+   }
+  },
+  "B1-LPR": {
+   "games": 60,
+   "won": 52,
+   "success": 0.8666666666666667,
+   "wilson95": [
+    0.7583484032350039,
+    0.9308589051941303
+   ],
+   "silent_failures": 0,
+   "abstain_failed": 8,
+   "abstain_but_won": 0,
+   "claims_done": 52,
+   "precision_of_claims_done": 1.0,
+   "L_co_contradictions_in_lost_games": 0,
+   "mean_steps": 19.366666666666667,
+   "retries": 91,
+   "colocated_hits": 25,
+   "perturbed_actions": 89,
+   "outcomes": {
+    "won": 52,
+    "abstain: budget exhausted": 7,
+    "abstain: search exhausted": 1
+   },
+   "by_task_type": {
+    "look_at_obj_in_light": "8/10",
+    "pick_and_place_simple": "10/10",
+    "pick_clean_then_place_in_recep": "10/10",
+    "pick_cool_then_place_in_recep": "7/10",
+    "pick_heat_then_place_in_recep": "8/10",
+    "pick_two_obj_and_place": "9/10"
+   }
+  }
+ },
+ "paired": {
+  "G3-L vs G2A-1": {
+   "success_diff": 0.03333333333333333,
+   "success_diff_ci95": [
+    0.0,
+    0.08333333333333333
+   ],
+   "mcnemar_p": 0.5,
+   "G3-L_only": 2,
+   "G2A-1_only": 0,
+   "steps_diff": 1.2666666666666666,
+   "steps_diff_ci95": [
+    0.48333333333333334,
+    2.183333333333333
+   ],
+   "steps_ratio": 1.1364452423698383
+  },
+  "G3-L vs B1": {
+   "success_diff": -0.18333333333333332,
+   "success_diff_ci95": [
+    -0.2833333333333333,
+    -0.08333333333333333
+   ],
+   "mcnemar_p": 0.0009765625,
+   "G3-L_only": 0,
+   "B1_only": 11,
+   "steps_diff": -15.616666666666667,
+   "steps_diff_ci95": [
+    -19.983333333333334,
+    -11.366666666666667
+   ],
+   "steps_ratio": 0.4031847133757962
+  },
+  "G3-LP vs G3-L": {
+   "success_diff": 0.16666666666666666,
+   "success_diff_ci95": [
+    0.08333333333333333,
+    0.26666666666666666
+   ],
+   "mcnemar_p": 0.001953125,
+   "G3-LP_only": 10,
+   "G3-L_only": 0,
+   "steps_diff": -1.2,
+   "steps_diff_ci95": [
+    -2.783333333333333,
+    0.36666666666666664
+   ],
+   "steps_ratio": 0.8862559241706162
+  },
+  "G3-LPR vs B1-LPR": {
+   "success_diff": -0.03333333333333333,
+   "success_diff_ci95": [
+    -0.08333333333333333,
+    0.0
+   ],
+   "mcnemar_p": 0.5,
+   "G3-LPR_only": 0,
+   "B1-LPR_only": 2,
+   "steps_diff": -0.3333333333333333,
+   "steps_diff_ci95": [
+    -0.85,
+    0.0
+   ],
+   "steps_ratio": 0.9827882960413081
+  },
+  "G3-LPR vs G3-LP": {
+   "success_diff": 0.4666666666666667,
+   "success_diff_ci95": [
+    0.35,
+    0.6
+   ],
+   "mcnemar_p": 7.450580596923828e-09,
+   "G3-LPR_only": 28,
+   "G3-LP_only": 0,
+   "steps_diff": 9.683333333333334,
+   "steps_diff_ci95": [
+    6.233333333333333,
+    13.5
+   ],
+   "steps_ratio": 2.035650623885918
+  },
+  "B1-LPR vs B1": {
+   "success_diff": 0.48333333333333334,
+   "success_diff_ci95": [
+    0.36666666666666664,
+    0.6166666666666667
+   ],
+   "mcnemar_p": 3.725290298461914e-09,
+   "B1-LPR_only": 29,
+   "B1_only": 0,
+   "steps_diff": -6.8,
+   "steps_diff_ci95": [
+    -10.6,
+    -3.3
+   ],
+   "steps_ratio": 0.7401273885350318
+  }
+ }
+}

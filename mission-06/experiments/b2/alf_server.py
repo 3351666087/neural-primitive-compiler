@@ -47,12 +47,19 @@ def main():
     ap.add_argument("--test", action="store_true")
     ap.add_argument("--games-file", help="judge-side JSON list of {game, type} (overrides the default pick)")
     ap.add_argument("--tag", default="")
+    ap.add_argument("--perturb-base", type=int, help="Gate 4: perturbation seed base (seed = base + the entry's idx)")
     a = ap.parse_args()
+    PT = None
+    if a.perturb_base is not None:
+        sys.path.insert(0, str(HERE.parent / "g4"))
+        import perturb as PT
     if a.games_file:
         sel = json.loads(Path(a.games_file).read_text())
         games, types = [x["game"] for x in sel], [x["type"] for x in sel]
+        idxs = [x.get("idx", i) for i, x in enumerate(sel)]
     else:
         games, types = pick_games(a.n, a.test)
+        idxs = list(range(len(games)))
     run = HERE / "run"
     run.mkdir(exist_ok=True)
     log = open(run / ("judge_log_test.jsonl" if a.test else f"judge_log{a.tag}.jsonl"), "a")
@@ -64,10 +71,11 @@ def main():
     srv.bind(a.sock)
     srv.listen(1)
     gi, game, steps, won, active = -1, None, 0, False, False
+    pt, n_pert = None, 0
 
     def end(reason):
         nonlocal active, game
-        rec(event="end", game=gi, reason=reason, steps=steps, won=won)
+        rec(event="end", game=gi, reason=reason, steps=steps, won=won, perturbed_actions=n_pert)
         if game is not None:
             game.close()
         game, active = None, False
@@ -87,11 +95,15 @@ def main():
                     game = J.Game(games[gi], max_steps=a.max_steps + 5)
                     obs, info = game.reset()
                     steps, won, active = 0, bool(info["won"]), True
+                    pt, n_pert = (PT.Perturb(a.perturb_base + idxs[gi]) if PT else None), 0
                     rec(event="reset", game=gi, obs=obs)
                     out = obs
             elif cmd == "act" and active:
                 steps += 1
                 if won:
+                    obs = "Nothing happens."
+                elif pt is not None and pt.fails(arg):
+                    n_pert += 1
                     obs = "Nothing happens."
                 else:
                     obs, _s, _d, info = game.step(arg)
