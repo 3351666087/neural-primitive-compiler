@@ -1,0 +1,85 @@
+{
+ "P1": {
+  "verdict": "HOLDS",
+  "wrong_constructions": {
+   "specs/A-P'": [],
+   "specs/A-P": [],
+   "library+specs/A-P'": [],
+   "library+specs/A-P": []
+  },
+  "damage_below_truth": [],
+  "preservation_proved_with_cex": [],
+  "progress_certified_but_false": [],
+  "J1_net": {
+   "plans": 10,
+   "mismatch_episodes": 0,
+   "failures": 0
+  }
+ },
+ "P2": {
+  "verdict": "HOLDS",
+  "truly_good": 42,
+  "certified": 41,
+  "rate": 0.9761904761904762,
+  "by_table": {
+   "A(G3)": 33,
+   "A+": 37,
+   "A++": 41
+  }
+ },
+ "P3": {
+  "verdict": "HOLDS",
+  "A_not_A+": [],
+  "A+_not_A++": []
+ },
+ "P4": {
+  "verdict": "HOLDS",
+  "uncertified_truly_good": [
+   "g4-zone-06|left|2"
+  ],
+  "outside_the_predicted_shape": []
+ },
+ "P5": {
+  "verdict": "HOLDS",
+  "wrong_B_constructions": {
+   "five-1000": [],
+   "five-200": []
+  },
+  "in_grammar_instances": 23,
+  "no_rules": [],
+  "disagreements": {},
+  "below_observed": [],
+  "in_grammar_part": "evaluated"
+ },
+ "P6": {
+  "verdict": "HOLDS",
+  "time_s": 2311.2,
+  "truth_cpu_s": 853.2107619999999
+ },
+ "descriptive": {
+  "validation": {
+   "given": 45,
+   "valid": 45,
+   "invalid": []
+  },
+  "coverage": {
+   "specs/A-P'": 30,
+   "specs/A-P": 29,
+   "library+specs/A-P'": 30,
+   "library+specs/A-P": 29
+  },
+  "B_constructed": {
+   "five-1000": 30,
+   "five-200": 30
+  },
+  "B_misses_outside_grammar": {
+   "g4-zone-06|left|half": 19598,
+   "g4-zone-10|left|half": 54012,
+   "g4-zone-10|right|half": 54012,
+   "g4-zone-11|left|half": 3393,
+   "g4-group-10": 1755,
+   "g4-group-13": 1711
+  },
+  "in_B_grammar": 15
+ }
+}

@@ -1,0 +1,8 @@
+{
+  "files": {
+    "achievers.json": "8a3c0158b0c7c3a5104077413135c8d16f3f6da68f9e4cd7376cc15e51412353",
+    "metadata.json": "7c241ce01a15cafa44c5c3c389c9489762977aacfd703d1b62d901c43937f290"
+  },
+  "overall_sha256": "6b8703ddc853aeb3482c2e885dee13a271295c5ae6d62f11af90ba5c5cd56ecc",
+  "overall_preimage_format": "achievers.json:<sha256>\\nmetadata.json:<sha256>\\n"
+}

@@ -1,0 +1,182 @@
+{
+  "g4-order-01": {
+    "intended": "achieves",
+    "notes": "d = leftmost usable non-c1 cell; s = nearest c1 to its right. Sum of c1 positions strictly falls; when no c1 lies right of d, every c1 sits left of d and no c2 does, so ORDER holds. Swap spare exists whenever any move is possible."
+  },
+  "g4-order-02": {
+    "intended": "achieves",
+    "notes": "Leftmost c2 as target; the first c1 to its right swaps in. Exists exactly when ORDER fails."
+  },
+  "g4-order-03": {
+    "intended": "achieves",
+    "notes": "d = leftmost movable non-c1 object (empties skipped). Same termination argument as packing c1 left of the first c2."
+  },
+  "g4-order-04": {
+    "intended": "risky",
+    "notes": "Fills the leftmost usable c1-length window. Correct without obstacles; with obstacles a c2 can sit in the fragment left of G1, and once G1 is full nothing moves."
+  },
+  "g4-order-05": {
+    "intended": "fails",
+    "notes": "Only an immediately adjacent c1 can be used; when the nearest c1 right of d is 2+ cells away nothing moves."
+  },
+  "g4-order-06": {
+    "intended": "fails",
+    "notes": "Ignores PARTNER cells as targets. e.g. [c2,c1,_]: d is the empty cell, no c1 to its right -> stuck."
+  },
+  "g4-order-07": {
+    "intended": "achieves",
+    "notes": "Nested AND that reduces to RIGHT_OF_DEST (tests two-level nesting). Same argument as the PARTNER/EMPTY design."
+  },
+  "g4-order-08": {
+    "intended": "achieves",
+    "notes": "d = leftmost c2 or droppable empty; OTHER objects are skipped. If no c1 right of d then all c1 precede the first c2."
+  },
+  "g4-order-09": {
+    "intended": "achieves",
+    "notes": "Leftmost usable non-c1 cell receives the globally rightmost c1. If that c1 were left of d all c1 would be packed left and ORDER would already hold, so the move is always leftward."
+  },
+  "g4-order-10": {
+    "intended": "risky",
+    "notes": "Without obstacles G1=[0,c) and a c1 outside the window right of the leftmost c2 always exists. With hazards (NO_DROP_HAZARD) or NO_PICK objects near the left edge, G1 shifts right and the only c1 right of d can lie inside G1 -> no move while ORDER fails."
+  },
+  "g4-order-11": {
+    "intended": "fails",
+    "notes": "Nearest c1 may be left of the leftmost c2 and gets pushed right. e.g. [c1,c2,c1,_] oscillates forever."
+  },
+  "g4-order-12": {
+    "intended": "achieves",
+    "notes": "Swap the rightmost c1 with the leftmost c2. Not holding <=> rightmost c1 is right of leftmost c2, so a move always exists and moves c1 leftward; each swap permanently fixes one c1 left of the remaining c2 front."
+  },
+  "g4-order-13": {
+    "intended": "achieves",
+    "notes": "Leftmost movable non-c1 object swapped with the farthest c1 to its right."
+  },
+  "g4-order-14": {
+    "intended": "achieves",
+    "notes": "Variant of the rightmost-c1 swap using any movable non-c1 object as target; d is at or before the leftmost c2."
+  },
+  "g4-order-15": {
+    "intended": "achieves",
+    "notes": "Leftmost c2 swapped with the closest c1 to its right; adjacent-transposition flavour, still monotone."
+  },
+  "g4-zone-01": {
+    "intended": "achieves",
+    "notes": "Mirror of left packing for right zones."
+  },
+  "g4-zone-02": {
+    "intended": "achieves",
+    "notes": "Right packing with the closest c on the left (rightmost of LEFT_OF_DEST)."
+  },
+  "g4-zone-03": {
+    "intended": "achieves",
+    "notes": "For a right zone everything outside the zone is left of any zone cell, so the AND equals NOT_ZONE."
+  },
+  "g4-zone-04": {
+    "intended": "achieves",
+    "notes": "Same monotone fill of the zone with different picks."
+  },
+  "g4-zone-05": {
+    "intended": "achieves",
+    "notes": "d is the leftmost usable non-c cell; if it were outside the zone, the zone's usable cells would all be c and the atom would hold. So d is in the zone and every c outside is to its right."
+  },
+  "g4-zone-06": {
+    "intended": "risky",
+    "notes": "Without obstacles G1=[0,c) lies inside a feasible left zone. With hazards/NO_PICK objects inside the zone, the usable zone cells may be non-contiguous and G1 extends past the zone -> fills G1 and stops short of the atom."
+  },
+  "g4-zone-07": {
+    "intended": "achieves",
+    "notes": "Zone-agnostic left packing: c objects end on the first count usable cells, which feasibility puts inside the left zone. Each move fixes one c permanently."
+  },
+  "g4-zone-08": {
+    "intended": "achieves",
+    "notes": "For a left zone everything outside the zone is right of any zone cell, so the AND equals NOT_ZONE."
+  },
+  "g4-zone-09": {
+    "intended": "achieves",
+    "notes": "Same monotone fill of the zone with different picks."
+  },
+  "g4-zone-10": {
+    "intended": "fails",
+    "notes": "Needs at least two usable non-c cells in the zone; the last step (one free slot left) never happens."
+  },
+  "g4-zone-11": {
+    "intended": "fails",
+    "notes": "Source may already be inside the zone (shuffling, oscillation) and c objects farther than 2 cells are invisible."
+  },
+  "g4-zone-12": {
+    "intended": "fails",
+    "notes": "Only empties as targets: other-coloured objects occupying the zone are never displaced. e.g. [x,x,c,_] with w=2."
+  },
+  "g4-zone-13": {
+    "intended": "achieves",
+    "notes": "Left packing pulling the farthest c."
+  },
+  "g4-zone-14": {
+    "intended": "achieves",
+    "notes": "Nested AND in the destination that reduces to ZONE (tests two-level nesting in dest)."
+  },
+  "g4-zone-15": {
+    "intended": "achieves",
+    "notes": "Each move brings one more c into the zone onto a usable non-c cell; feasibility (c count <= usable zone cells) guarantees such a cell while some c is outside."
+  },
+  "g4-group-01": {
+    "intended": "achieves",
+    "notes": "G1 fill, different picks."
+  },
+  "g4-group-02": {
+    "intended": "achieves",
+    "notes": "G1 fill, different picks."
+  },
+  "g4-group-03": {
+    "intended": "achieves",
+    "notes": "G2 fill, different picks."
+  },
+  "g4-group-04": {
+    "intended": "achieves",
+    "notes": "G2 fill, different picks."
+  },
+  "g4-group-05": {
+    "intended": "achieves",
+    "notes": "AND / nested AND that reduce to the plain G1 fill."
+  },
+  "g4-group-06": {
+    "intended": "risky",
+    "notes": "Ignores c objects left of G1. Without obstacles G1 starts at 0 so none exist; with obstacles a c stranded in the fragment left of G1 is never fetched."
+  },
+  "g4-group-07": {
+    "intended": "achieves",
+    "notes": "G2 fill, different picks."
+  },
+  "g4-group-08": {
+    "intended": "achieves",
+    "notes": "G2 fill, different picks."
+  },
+  "g4-group-09": {
+    "intended": "risky",
+    "notes": "Packs c onto the leftmost usable cells. Contiguous without obstacles; with a hazard (NO_DROP_HAZARD) or NO_PICK object among those cells it terminates non-contiguous."
+  },
+  "g4-group-10": {
+    "intended": "achieves",
+    "notes": "Window is fixed (depends only on count, hazards, NO_PICK objects). Each move adds one c to G1; when G1 is all c, the c objects are contiguous. Any feasible instance has a usable window."
+  },
+  "g4-group-11": {
+    "intended": "achieves",
+    "notes": "G1 fill, different picks."
+  },
+  "g4-group-12": {
+    "intended": "fails",
+    "notes": "Needs two c objects outside G2; the last c is never brought in."
+  },
+  "g4-group-13": {
+    "intended": "fails",
+    "notes": "c objects more than 3 cells from the target are invisible -> stuck on spread-out instances."
+  },
+  "g4-group-14": {
+    "intended": "achieves",
+    "notes": "G2 fill (rightmost usable window)."
+  },
+  "g4-group-15": {
+    "intended": "fails",
+    "notes": "Only other-coloured objects as targets: window cells that are simply empty are never filled."
+  }
+}

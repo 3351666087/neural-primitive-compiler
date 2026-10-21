@@ -1,0 +1,950 @@
+{
+  "specs": [
+    {
+      "id": "g4-order-01",
+      "atom_type": "ORDER",
+      "dest": {
+        "types": [
+          "PARTNER",
+          "OTHER",
+          "EMPTY"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "RIGHT_OF_DEST",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-order-02",
+      "atom_type": "ORDER",
+      "dest": {
+        "types": [
+          "PARTNER"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "RIGHT_OF_DEST",
+        "pick": "leftmost"
+      }
+    },
+    {
+      "id": "g4-order-03",
+      "atom_type": "ORDER",
+      "dest": {
+        "types": [
+          "PARTNER",
+          "OTHER"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "RIGHT_OF_DEST",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-order-04",
+      "atom_type": "ORDER",
+      "dest": {
+        "types": [
+          "PARTNER",
+          "OTHER",
+          "EMPTY"
+        ],
+        "region": "WINDOW_G1",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_WINDOW_G1",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-order-05",
+      "atom_type": "ORDER",
+      "dest": {
+        "types": [
+          "PARTNER",
+          "OTHER",
+          "EMPTY"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": {
+          "and": [
+            "RIGHT_OF_DEST",
+            {
+              "within": 1,
+              "of": "DEST"
+            }
+          ]
+        },
+        "pick": "leftmost"
+      }
+    },
+    {
+      "id": "g4-order-06",
+      "atom_type": "ORDER",
+      "dest": {
+        "types": [
+          "OTHER",
+          "EMPTY"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "RIGHT_OF_DEST",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-order-07",
+      "atom_type": "ORDER",
+      "dest": {
+        "types": [
+          "PARTNER",
+          "EMPTY"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": {
+          "and": [
+            "RIGHT_OF_DEST",
+            {
+              "and": [
+                "ALL",
+                "RIGHT_OF_DEST"
+              ]
+            }
+          ]
+        },
+        "pick": "leftmost"
+      }
+    },
+    {
+      "id": "g4-order-08",
+      "atom_type": "ORDER",
+      "dest": {
+        "types": [
+          "PARTNER",
+          "EMPTY"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "RIGHT_OF_DEST",
+        "pick": "rightmost"
+      }
+    },
+    {
+      "id": "g4-order-09",
+      "atom_type": "ORDER",
+      "dest": {
+        "types": [
+          "PARTNER",
+          "OTHER",
+          "EMPTY"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "ALL",
+        "pick": "rightmost"
+      }
+    },
+    {
+      "id": "g4-order-10",
+      "atom_type": "ORDER",
+      "dest": {
+        "types": [
+          "PARTNER"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": {
+          "and": [
+            "RIGHT_OF_DEST",
+            "NOT_WINDOW_G1"
+          ]
+        },
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-order-11",
+      "atom_type": "ORDER",
+      "dest": {
+        "types": [
+          "PARTNER"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "ALL",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-order-12",
+      "atom_type": "ORDER",
+      "dest": {
+        "types": [
+          "PARTNER"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "ALL",
+        "pick": "rightmost"
+      }
+    },
+    {
+      "id": "g4-order-13",
+      "atom_type": "ORDER",
+      "dest": {
+        "types": [
+          "PARTNER",
+          "OTHER"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "RIGHT_OF_DEST",
+        "pick": "rightmost"
+      }
+    },
+    {
+      "id": "g4-order-14",
+      "atom_type": "ORDER",
+      "dest": {
+        "types": [
+          "PARTNER",
+          "OTHER"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "ALL",
+        "pick": "rightmost"
+      }
+    },
+    {
+      "id": "g4-order-15",
+      "atom_type": "ORDER",
+      "dest": {
+        "types": [
+          "PARTNER"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "RIGHT_OF_DEST",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-zone-01",
+      "atom_type": "ZONE",
+      "side": "right",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "ALL",
+        "pick": "rightmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "LEFT_OF_DEST",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-zone-02",
+      "atom_type": "ZONE",
+      "side": "right",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "ALL",
+        "pick": "rightmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "LEFT_OF_DEST",
+        "pick": "rightmost"
+      }
+    },
+    {
+      "id": "g4-zone-03",
+      "atom_type": "ZONE",
+      "side": "right",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "ZONE",
+        "pick": "rightmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": {
+          "and": [
+            "NOT_ZONE",
+            "LEFT_OF_DEST"
+          ]
+        },
+        "pick": "leftmost"
+      }
+    },
+    {
+      "id": "g4-zone-04",
+      "atom_type": "ZONE",
+      "side": "any",
+      "dest": {
+        "types": [
+          "OTHER",
+          "EMPTY"
+        ],
+        "region": "ZONE",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_ZONE",
+        "pick": "rightmost"
+      }
+    },
+    {
+      "id": "g4-zone-05",
+      "atom_type": "ZONE",
+      "side": "left",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": {
+          "and": [
+            "RIGHT_OF_DEST",
+            "NOT_ZONE"
+          ]
+        },
+        "pick": "rightmost"
+      }
+    },
+    {
+      "id": "g4-zone-06",
+      "atom_type": "ZONE",
+      "side": "left",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "WINDOW_G1",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_WINDOW_G1",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-zone-07",
+      "atom_type": "ZONE",
+      "side": "left",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "RIGHT_OF_DEST",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-zone-08",
+      "atom_type": "ZONE",
+      "side": "left",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "ZONE",
+        "pick": "rightmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": {
+          "and": [
+            "NOT_ZONE",
+            "RIGHT_OF_DEST"
+          ]
+        },
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-zone-09",
+      "atom_type": "ZONE",
+      "side": "any",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "ZONE",
+        "pick": "rightmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_ZONE",
+        "pick": "leftmost"
+      }
+    },
+    {
+      "id": "g4-zone-10",
+      "atom_type": "ZONE",
+      "side": "any",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "ZONE",
+        "pick": "second_leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_ZONE",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-zone-11",
+      "atom_type": "ZONE",
+      "side": "any",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "ZONE",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": {
+          "within": 2,
+          "of": "DEST"
+        },
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-zone-12",
+      "atom_type": "ZONE",
+      "side": "left",
+      "dest": {
+        "types": [
+          "EMPTY"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "RIGHT_OF_DEST",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-zone-13",
+      "atom_type": "ZONE",
+      "side": "left",
+      "dest": {
+        "types": [
+          "OTHER",
+          "EMPTY"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "RIGHT_OF_DEST",
+        "pick": "rightmost"
+      }
+    },
+    {
+      "id": "g4-zone-14",
+      "atom_type": "ZONE",
+      "side": "any",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": {
+          "and": [
+            "ZONE",
+            {
+              "and": [
+                "ALL",
+                "ZONE"
+              ]
+            }
+          ]
+        },
+        "pick": "rightmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_ZONE",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-zone-15",
+      "atom_type": "ZONE",
+      "side": "any",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "ZONE",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_ZONE",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-group-01",
+      "atom_type": "GROUP",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "WINDOW_G1",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_WINDOW_G1",
+        "pick": "rightmost"
+      }
+    },
+    {
+      "id": "g4-group-02",
+      "atom_type": "GROUP",
+      "dest": {
+        "types": [
+          "OTHER",
+          "EMPTY"
+        ],
+        "region": "WINDOW_G1",
+        "pick": "rightmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_WINDOW_G1",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-group-03",
+      "atom_type": "GROUP",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "WINDOW_G2",
+        "pick": "rightmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_WINDOW_G2",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-group-04",
+      "atom_type": "GROUP",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "WINDOW_G2",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_WINDOW_G2",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-group-05",
+      "atom_type": "GROUP",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": {
+          "and": [
+            "WINDOW_G1",
+            "ALL"
+          ]
+        },
+        "pick": "rightmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": {
+          "and": [
+            "NOT_WINDOW_G1",
+            {
+              "and": [
+                "ALL",
+                "NOT_WINDOW_G1"
+              ]
+            }
+          ]
+        },
+        "pick": "rightmost"
+      }
+    },
+    {
+      "id": "g4-group-06",
+      "atom_type": "GROUP",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "WINDOW_G1",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": {
+          "and": [
+            "NOT_WINDOW_G1",
+            "RIGHT_OF_DEST"
+          ]
+        },
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-group-07",
+      "atom_type": "GROUP",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "WINDOW_G2",
+        "pick": "rightmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_WINDOW_G2",
+        "pick": "leftmost"
+      }
+    },
+    {
+      "id": "g4-group-08",
+      "atom_type": "GROUP",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "WINDOW_G2",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_WINDOW_G2",
+        "pick": "leftmost"
+      }
+    },
+    {
+      "id": "g4-group-09",
+      "atom_type": "GROUP",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "ALL",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "RIGHT_OF_DEST",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-group-10",
+      "atom_type": "GROUP",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "WINDOW_G1",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_WINDOW_G1",
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-group-11",
+      "atom_type": "GROUP",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "WINDOW_G1",
+        "pick": "rightmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_WINDOW_G1",
+        "pick": "leftmost"
+      }
+    },
+    {
+      "id": "g4-group-12",
+      "atom_type": "GROUP",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "WINDOW_G2",
+        "pick": "rightmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_WINDOW_G2",
+        "pick": "second_rightmost"
+      }
+    },
+    {
+      "id": "g4-group-13",
+      "atom_type": "GROUP",
+      "dest": {
+        "types": [
+          "EMPTY",
+          "OTHER"
+        ],
+        "region": "WINDOW_G1",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": {
+          "and": [
+            "NOT_WINDOW_G1",
+            {
+              "within": 3,
+              "of": "DEST"
+            }
+          ]
+        },
+        "pick": "nearest_to_dest"
+      }
+    },
+    {
+      "id": "g4-group-14",
+      "atom_type": "GROUP",
+      "dest": {
+        "types": [
+          "OTHER",
+          "EMPTY"
+        ],
+        "region": "WINDOW_G2",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_WINDOW_G2",
+        "pick": "rightmost"
+      }
+    },
+    {
+      "id": "g4-group-15",
+      "atom_type": "GROUP",
+      "dest": {
+        "types": [
+          "OTHER"
+        ],
+        "region": "WINDOW_G1",
+        "pick": "leftmost"
+      },
+      "source": {
+        "types": [
+          "OWN"
+        ],
+        "region": "NOT_WINDOW_G1",
+        "pick": "nearest_to_dest"
+      }
+    }
+  ]
+}
