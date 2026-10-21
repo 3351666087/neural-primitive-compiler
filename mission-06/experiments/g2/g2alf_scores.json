@@ -1,0 +1,87 @@
+{
+ "G2A-0": {
+  "games": 60,
+  "constructed": 0,
+  "parsed": 60,
+  "success": 0.0,
+  "won": 0,
+  "failures": 60,
+  "failures_detected_abstain": 0,
+  "claims_done_but_lost": 0,
+  "outcomes": {
+   "not constructed": 60
+  },
+  "by_task_type": {
+   "pick_and_place_simple": "0/10",
+   "look_at_obj_in_light": "0/10",
+   "pick_clean_then_place_in_recep": "0/10",
+   "pick_heat_then_place_in_recep": "0/10",
+   "pick_cool_then_place_in_recep": "0/10",
+   "pick_two_obj_and_place": "0/10"
+  },
+  "violations_by_command": {},
+  "mean_steps": 0.0
+ },
+ "G2A-1": {
+  "games": 60,
+  "constructed": 60,
+  "parsed": 60,
+  "success": 0.6666666666666666,
+  "won": 40,
+  "failures": 20,
+  "failures_detected_abstain": 20,
+  "claims_done_but_lost": 0,
+  "outcomes": {
+   "won": 40,
+   "abstain: monitor": 18,
+   "abstain: search exhausted": 1,
+   "abstain: budget exhausted": 1
+  },
+  "by_task_type": {
+   "pick_and_place_simple": "7/10",
+   "look_at_obj_in_light": "6/10",
+   "pick_clean_then_place_in_recep": "7/10",
+   "pick_heat_then_place_in_recep": "8/10",
+   "pick_cool_then_place_in_recep": "6/10",
+   "pick_two_obj_and_place": "6/10"
+  },
+  "violations_by_command": {
+   "go": 18
+  },
+  "mean_steps": 18.316666666666666
+ },
+ "B1": {
+  "games": 60,
+  "constructed": 60,
+  "parsed": 60,
+  "success": 0.8666666666666667,
+  "won": 52,
+  "failures": 8,
+  "failures_detected_abstain": 8,
+  "claims_done_but_lost": 0,
+  "outcomes": {
+   "won": 52,
+   "abstain: budget exhausted": 7,
+   "abstain: search exhausted": 1
+  },
+  "by_task_type": {
+   "pick_and_place_simple": "10/10",
+   "look_at_obj_in_light": "9/10",
+   "pick_clean_then_place_in_recep": "9/10",
+   "pick_heat_then_place_in_recep": "9/10",
+   "pick_cool_then_place_in_recep": "7/10",
+   "pick_two_obj_and_place": "8/10"
+  },
+  "violations_by_command": {
+   "go": 23
+  },
+  "mean_steps": 23.6
+ },
+ "predictions": {
+  "G2A-0 (strict: 0 constructions)": "HOLDS",
+  "G2A-a (all parsed goals constructed)": "HOLDS",
+  "G2A-b (success in [0.30, 0.75])": "HOLDS",
+  "G2A-c (>= 50% of failures detected)": "HOLDS",
+  "G2A-e (|B1 - G2A-1| <= 0.05)": "FALSIFIED"
+ }
+}
