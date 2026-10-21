@@ -1,0 +1,42 @@
+{
+ "label": "G1-B2P0 (Mission 06): B2 via subagent, feasibility",
+ "types": [
+  "pick_heat_then_place_in_recep",
+  "pick_and_place_simple"
+ ],
+ "games": {
+  "0": {
+   "acts": 11,
+   "won": true,
+   "first_win_step": 11,
+   "end": "agent done",
+   "command_verbs": {
+    "go": 7,
+    "take": 1,
+    "heat": 1,
+    "open": 1,
+    "move": 1
+   }
+  },
+  "1": {
+   "acts": 4,
+   "won": true,
+   "first_win_step": 4,
+   "end": "agent done",
+   "command_verbs": {
+    "go": 2,
+    "take": 1,
+    "move": 1
+   }
+  }
+ },
+ "subagent_tokens": 61188,
+ "tool_uses": 20,
+ "duration_s": 46.2,
+ "tokens_per_act": 4079,
+ "predictions": {
+  "B2P0-a": "HOLDS",
+  "B2P0-b": "scored by hand (subagent report and command verbs)",
+  "B2P0-c": "HOLDS"
+ }
+}

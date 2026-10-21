@@ -11,3 +11,5 @@ mission-06/env/venv-*/
 mission-06/env/ms-playwright/
 mission-06/env/*.zip
 mission-06/env/alfworld-data/
+# B2 trajectories: judge-side only, never read by the designer
+mission-06/experiments/b2/run/
