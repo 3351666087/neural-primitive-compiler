@@ -77,11 +77,81 @@
   },
   "mean_steps": 23.6
  },
+ "B2": {
+  "label": "G2-ALF B2 (Opus 5.5 subagent) on the 12-game subset",
+  "games": 12,
+  "success": 1.0,
+  "won": 12,
+  "same_games": {
+   "G2A-1": 0.6666666666666666,
+   "B1": 0.8333333333333334
+  },
+  "per_type": {
+   "look_at_obj_in_light": "2/2",
+   "pick_and_place_simple": "2/2",
+   "pick_clean_then_place_in_recep": "2/2",
+   "pick_cool_then_place_in_recep": "2/2",
+   "pick_heat_then_place_in_recep": "2/2",
+   "pick_two_obj_and_place": "2/2"
+  },
+  "mean_steps": 11.25,
+  "ends": [
+   "agent done",
+   "agent done",
+   "agent done",
+   "agent done",
+   "step limit",
+   "agent done",
+   "agent done",
+   "agent done",
+   "agent done",
+   "agent done",
+   "agent done",
+   "agent done"
+  ],
+  "batches": {
+   "0": {
+    "acts": 26,
+    "games": 3,
+    "protocol_calls": 33,
+    "tokens": 67780,
+    "tool_uses": 33,
+    "extra_tool_calls": 0
+   },
+   "1": {
+    "acts": 65,
+    "games": 3,
+    "protocol_calls": 71,
+    "tokens": 76179,
+    "tool_uses": 71,
+    "extra_tool_calls": 0
+   },
+   "2": {
+    "acts": 29,
+    "games": 3,
+    "protocol_calls": 36,
+    "tokens": 67955,
+    "tool_uses": 36,
+    "extra_tool_calls": 0
+   },
+   "3": {
+    "acts": 15,
+    "games": 3,
+    "protocol_calls": 22,
+    "tokens": 64885,
+    "tool_uses": 22,
+    "extra_tool_calls": 0
+   }
+  },
+  "tokens_total": 276799,
+  "prediction_G2A-d (B2 >= G2A-1 on the same games)": "HOLDS"
+ },
  "predictions": {
   "G2A-0 (strict: 0 constructions)": "HOLDS",
   "G2A-a (all parsed goals constructed)": "HOLDS",
   "G2A-b (success in [0.30, 0.75])": "HOLDS",
   "G2A-c (>= 50% of failures detected)": "HOLDS",
-  "G2A-e (|B1 - G2A-1| <= 0.05)": "FALSIFIED"
+  "G2A-e (|B1 - G2A-1| <= 0.05)": "FALSIFIED",
+  "G2A-d (B2 >= G2A-1)": "HOLDS"
  }
 }
