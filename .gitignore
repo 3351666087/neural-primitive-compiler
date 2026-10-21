@@ -17,3 +17,6 @@ mission-06/experiments/b2/run/
 mission-06/env/appworld*/
 mission-06/env/venv-aw/
 mission-06/experiments/g4b/run/
+# Mission 07 isolated environments and judge-only artifacts (not committed)
+mission-07/env/
+mission-07/experiments/**/run/
