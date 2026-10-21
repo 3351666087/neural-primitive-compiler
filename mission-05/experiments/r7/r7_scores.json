@@ -1,0 +1,101 @@
+{
+ "L1": {
+  "verdict": "HOLDS",
+  "per_set": {
+   "LIB": {
+    "below": [],
+    "false_progress": []
+   },
+   "G3-DEV": {
+    "below": [],
+    "false_progress": []
+   },
+   "RAND-DEV": {
+    "below": [],
+    "false_progress": []
+   }
+  },
+  "wrong_constructions": {
+   "A+/A-P'": [],
+   "A+/A-P": []
+  }
+ },
+ "L2": {
+  "verdict": "HOLDS",
+  "looser": [],
+  "tighter": [],
+  "same_progress": true
+ },
+ "L3": {
+  "verdict": "FALSIFIED",
+  "calibration": {
+   "LIB": {
+    "A": [
+     12,
+     12
+    ],
+    "A+": [
+     12,
+     12
+    ]
+   },
+   "G3-DEV": {
+    "A": [
+     7,
+     8
+    ],
+    "A+": [
+     7,
+     8
+    ]
+   },
+   "RAND-DEV": {
+    "A": [
+     0,
+     1
+    ],
+    "A+": [
+     0,
+     1
+    ]
+   }
+  }
+ },
+ "L4": {
+  "verdict": "HOLDS",
+  "lost": {
+   "LIB": [],
+   "G3-DEV": [],
+   "RAND-DEV": []
+  },
+  "looser": {
+   "LIB": [],
+   "G3-DEV": [],
+   "RAND-DEV": []
+  },
+  "tighter_count": {
+   "LIB": 0,
+   "G3-DEV": 18,
+   "RAND-DEV": 266
+  }
+ },
+ "L5": {
+  "verdict": "HOLDS",
+  "counts": {
+   "A/A-P'": 0,
+   "A/A-P": 0,
+   "A+/A-P'": 0,
+   "A+/A-P": 0
+  },
+  "A+_extra": {
+   "A-P'": [],
+   "A-P": []
+  }
+ },
+ "L6": {
+  "verdict": "HOLDS",
+  "A_z3_cpu_s": 18.570723999999927,
+  "Aplus_z3_cpu_s": 27.202446000000123,
+  "time_s": 628.4
+ }
+}

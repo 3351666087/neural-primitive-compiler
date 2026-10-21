@@ -1,0 +1,10 @@
+truth 576.4 s for 123 instances
+LIB A certified 12 / 12 | A+ 12 / 12 | A+ below truth 0 false progress 0 | tighter 0 looser 0 | z3 1.8 2.4
+G3-DEV A certified 7 / 8 | A+ 7 / 8 | A+ below truth 0 false progress 0 | tighter 18 looser 0 | z3 2.3 3.2
+RAND-DEV A certified 0 / 1 | A+ 0 / 1 | A+ below truth 0 false progress 0 | tighter 266 looser 0 | z3 14.5 21.6
+A A-P' constructed 0 wrong 0
+A A-P constructed 0 wrong 0
+A+ A-P' constructed 0 wrong 0
+A+ A-P constructed 0 wrong 0
+done 628.4 s
+exit 0

@@ -1,0 +1,29 @@
+{
+ "label": "POST-HOC: A+ with witness-position consistency",
+ "instances": {
+  "DEV-O-empty": {
+   "set": "G3-DEV",
+   "decrease_proved": "KD{A1<A2}",
+   "applicability_N7": true,
+   "bounds_below_truth": []
+  },
+  "g3-ord-03": {
+   "set": "G3-heldout",
+   "decrease_proved": "KD{A1<A2}",
+   "applicability_N7": true,
+   "bounds_below_truth": []
+  },
+  "g3-ord-04": {
+   "set": "G3-heldout",
+   "decrease_proved": "KD{A1<A2}",
+   "applicability_N7": true,
+   "bounds_below_truth": []
+  },
+  "g3-ord-07": {
+   "set": "G3-heldout",
+   "decrease_proved": "KD{A1<A2}",
+   "applicability_N7": true,
+   "bounds_below_truth": []
+  }
+ }
+}

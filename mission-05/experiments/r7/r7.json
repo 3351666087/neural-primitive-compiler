@@ -1,0 +1,2400 @@
+{
+ "label": "round 7 (amendment 7, DEV): A vs A+",
+ "truth_cpu_s": 576.373147,
+ "sets": {
+  "LIB": {
+   "instances": 12,
+   "A_z3_cpu_s": 1.7973389999999654,
+   "Aplus_z3_cpu_s": 2.4179490000000214,
+   "A_soundness": {
+    "damage_below_truth": [],
+    "damage_finite_where_truth_grows": [],
+    "preservation_proved_with_cex": [],
+    "progress_certified_but_false": [],
+    "truth_good_instances": 12,
+    "certified_among_truth_good": 12,
+    "certified_total": 12,
+    "instances": 12
+   },
+   "Aplus_soundness": {
+    "damage_below_truth": [],
+    "damage_finite_where_truth_grows": [],
+    "preservation_proved_with_cex": [],
+    "progress_certified_but_false": [],
+    "truth_good_instances": 12,
+    "certified_among_truth_good": 12,
+    "certified_total": 12,
+    "instances": 12
+   },
+   "Aplus_looser_than_A": [],
+   "Aplus_tighter_than_A": [],
+   "certified_by_A_not_Aplus": [],
+   "progress": {
+    "LIB-O1": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "KD{A1<A2}"
+    },
+    "LIB-O2": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "KD{A1<A2}"
+    },
+    "LIB-Z1-L|left|2": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OUT(A1,left,2)"
+    },
+    "LIB-Z1-L|left|half": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OUT(A1,left,half)"
+    },
+    "LIB-Z1-R|right|2": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OUT(A1,right,2)"
+    },
+    "LIB-Z1-R|right|half": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OUT(A1,right,half)"
+    },
+    "LIB-Z2-L|left|2": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OUT(A1,left,2)"
+    },
+    "LIB-Z2-L|left|half": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OUT(A1,left,half)"
+    },
+    "LIB-Z2-R|right|2": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OUT(A1,right,2)"
+    },
+    "LIB-Z2-R|right|half": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OUT(A1,right,half)"
+    },
+    "LIB-G1": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OOW(A1,G1)"
+    },
+    "LIB-G2": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OOW(A1,G2)"
+    }
+   }
+  },
+  "G3-DEV": {
+   "instances": 15,
+   "A_z3_cpu_s": 2.3195610000000215,
+   "Aplus_z3_cpu_s": 3.155652000000032,
+   "A_soundness": {
+    "damage_below_truth": [],
+    "damage_finite_where_truth_grows": [
+     "DEV-Z-window|right|2 / OOW(X1,G1)",
+     "DEV-Z-window|right|2 / OOW(X2,G1)"
+    ],
+    "preservation_proved_with_cex": [],
+    "progress_certified_but_false": [],
+    "truth_good_instances": 8,
+    "certified_among_truth_good": 7,
+    "certified_total": 7,
+    "instances": 15
+   },
+   "Aplus_soundness": {
+    "damage_below_truth": [],
+    "damage_finite_where_truth_grows": [
+     "DEV-Z-window|right|2 / OOW(X1,G1)",
+     "DEV-Z-window|right|2 / OOW(X2,G1)"
+    ],
+    "preservation_proved_with_cex": [],
+    "progress_certified_but_false": [],
+    "truth_good_instances": 8,
+    "certified_among_truth_good": 7,
+    "certified_total": 7,
+    "instances": 15
+   },
+   "Aplus_looser_than_A": [],
+   "Aplus_tighter_than_A": [
+    "DEV-G-within / KD{A1<X1}",
+    "DEV-G-within / KD{A1<X2}",
+    "DEV-G-within / KD{X1<A1}",
+    "DEV-G-within / KD{X1<X2}",
+    "DEV-G-within / KD{X2<A1}",
+    "DEV-G-within / KD{X2<X1}",
+    "DEV-G-within / KD{A1<X1;A1<X2}",
+    "DEV-G-within / KD{A1<X1;X2<X1}",
+    "DEV-G-within / KD{A1<X2;X1<X2}",
+    "DEV-G-within / KD{X1<A1;X1<X2}",
+    "DEV-G-within / KD{X1<A1;X2<A1}",
+    "DEV-G-within / KD{X2<A1;X2<X1}",
+    "DEV-G-within / KD{A1<X1;A1<X2;X1<X2}",
+    "DEV-G-within / KD{A1<X1;A1<X2;X2<X1}",
+    "DEV-G-within / KD{A1<X1;X2<A1;X2<X1}",
+    "DEV-G-within / KD{A1<X2;X1<A1;X1<X2}",
+    "DEV-G-within / KD{X1<A1;X1<X2;X2<A1}",
+    "DEV-G-within / KD{X1<A1;X2<A1;X2<X1}"
+   ],
+   "certified_by_A_not_Aplus": [],
+   "progress": {
+    "DEV-Z-emptyonly|left|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": "OUT(A1,left,2)"
+    },
+    "DEV-Z-emptyonly|left|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": "OUT(A1,left,half)"
+    },
+    "DEV-Z-nearest|left|2": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OUT(A1,left,2)"
+    },
+    "DEV-Z-nearest|left|half": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OUT(A1,left,half)"
+    },
+    "DEV-Z-nearest|right|2": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OUT(A1,right,2)"
+    },
+    "DEV-Z-nearest|right|half": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OUT(A1,right,half)"
+    },
+    "DEV-Z-window|left|2": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OUT(A1,left,2)"
+    },
+    "DEV-Z-window|left|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": "OUT(A1,left,half)"
+    },
+    "DEV-Z-window|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": "OUT(A1,right,2)"
+    },
+    "DEV-Z-window|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": "OUT(A1,right,half)"
+    },
+    "DEV-O-nearest": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "KD{A1<A2}"
+    },
+    "DEV-O-second": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "DEV-O-empty": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "DEV-G-mixed": {
+     "A": true,
+     "A+": true,
+     "A+_measure": "OOW(A1,G2)"
+    },
+    "DEV-G-within": {
+     "A": false,
+     "A+": false,
+     "A+_measure": "OOW(A1,G1)"
+    }
+   }
+  },
+  "RAND-DEV": {
+   "instances": 96,
+   "A_z3_cpu_s": 14.45382399999994,
+   "Aplus_z3_cpu_s": 21.62884500000007,
+   "A_soundness": {
+    "damage_below_truth": [],
+    "damage_finite_where_truth_grows": [
+     "R-ORD-05 / OOW(A2,G2)",
+     "R-ORD-06 / OOW(A1,G2)",
+     "R-ORD-07 / OUT(X1,right,2)",
+     "R-ORD-10 / OUT(A1,right,half)",
+     "R-ORD-10 / OUT(A2,left,2)",
+     "R-ORD-10 / OUT(A2,left,half)",
+     "R-ORD-10 / OUT(A2,right,2)",
+     "R-ORD-10 / OUT(X1,left,2)",
+     "R-ORD-10 / OUT(X1,left,half)",
+     "R-ORD-10 / OUT(X1,right,2)",
+     "R-ORD-10 / OOW(A2,G1)",
+     "R-ORD-10 / OOW(X1,G2)",
+     "R-ORD-11 / OOW(A2,G2)",
+     "R-ORD-13 / OUT(X1,right,2)",
+     "R-ORD-13 / OUT(X1,right,half)",
+     "R-ORD-13 / OOW(X1,G2)",
+     "R-ORD-14 / KD{X1<A1}",
+     "R-ORD-14 / KD{A2<A1;X1<A1}",
+     "R-ORD-14 / KD{X1<A1;X1<A2}",
+     "R-ORD-14 / KD{A1<A2;X1<A1;X1<A2}",
+     "R-ORD-14 / KD{A2<A1;A2<X1;X1<A1}",
+     "R-ORD-14 / KD{A2<A1;X1<A1;X1<A2}",
+     "R-ORD-14 / OUT(A1,left,half)",
+     "R-ORD-14 / OUT(A1,right,2)",
+     "R-ORD-14 / OUT(X1,right,half)",
+     "R-ORD-14 / OOW(A1,G2)",
+     "R-ORD-17 / OUT(A1,left,2)",
+     "R-ORD-18 / OUT(A1,right,half)",
+     "R-ZON-00|left|half / OUT(X1,right,half)",
+     "R-ZON-00|left|half / OUT(X2,right,half)",
+     "R-ZON-02|right|half / OUT(A1,left,half)",
+     "R-ZON-03|left|half / OUT(A1,right,2)",
+     "R-ZON-03|left|half / OOW(A1,G2)",
+     "R-ZON-06|left|2 / OUT(X1,right,half)",
+     "R-ZON-06|left|2 / OUT(X2,right,half)",
+     "R-ZON-06|left|half / OUT(A1,left,half)",
+     "R-ZON-06|left|half / OUT(X1,right,2)",
+     "R-ZON-06|left|half / OUT(X2,right,2)",
+     "R-ZON-06|left|half / OOW(A1,G1)",
+     "R-ZON-06|left|half / OOW(A1,G2)",
+     "R-ZON-06|left|half / OOW(X1,G2)",
+     "R-ZON-06|left|half / OOW(X2,G2)",
+     "R-ZON-07|left|half / OUT(X1,right,half)",
+     "R-ZON-07|left|half / OUT(X2,right,half)",
+     "R-ZON-07|right|half / OUT(A1,right,half)",
+     "R-ZON-07|right|half / OUT(X1,left,half)",
+     "R-ZON-07|right|half / OUT(X2,left,half)",
+     "R-ZON-07|right|half / OOW(X1,G1)",
+     "R-ZON-07|right|half / OOW(X2,G1)",
+     "R-ZON-08|right|2 / OOW(X1,G1)",
+     "R-ZON-08|right|2 / OOW(X2,G1)",
+     "R-ZON-09|left|2 / OOW(X1,G2)",
+     "R-ZON-09|left|2 / OOW(X2,G2)",
+     "R-ZON-09|left|half / OOW(A1,G1)",
+     "R-ZON-13|left|half / OUT(X1,right,2)",
+     "R-ZON-13|left|half / OUT(X2,right,2)",
+     "R-ZON-13|right|half / OUT(X1,left,half)",
+     "R-ZON-13|right|half / OUT(X2,left,half)",
+     "R-ZON-16|left|2 / OOW(X1,G2)",
+     "R-ZON-16|left|2 / OOW(X2,G2)",
+     "R-ZON-16|left|half / OUT(A1,right,2)",
+     "R-ZON-16|left|half / OUT(X1,right,2)",
+     "R-ZON-16|left|half / OUT(X2,right,2)",
+     "R-ZON-18|right|half / OUT(X1,left,2)",
+     "R-ZON-18|right|half / OUT(X2,left,2)",
+     "R-ZON-18|right|half / OOW(X1,G1)",
+     "R-ZON-18|right|half / OOW(X2,G1)",
+     "R-GRO-01 / OOW(X1,G2)",
+     "R-GRO-01 / OOW(X2,G2)",
+     "R-GRO-02 / OOW(X1,G2)",
+     "R-GRO-02 / OOW(X2,G2)",
+     "R-GRO-04 / OOW(A1,G2)",
+     "R-GRO-07 / OUT(A1,right,half)",
+     "R-GRO-07 / OUT(X1,left,2)",
+     "R-GRO-07 / OUT(X1,left,half)",
+     "R-GRO-07 / OUT(X2,left,2)",
+     "R-GRO-07 / OUT(X2,left,half)",
+     "R-GRO-08 / OUT(A1,left,2)",
+     "R-GRO-08 / OOW(A1,G1)",
+     "R-GRO-09 / OUT(A1,right,2)",
+     "R-GRO-09 / OUT(X1,right,half)",
+     "R-GRO-09 / OUT(X2,right,half)",
+     "R-GRO-09 / OOW(A1,G2)",
+     "R-GRO-15 / OUT(A1,right,half)",
+     "R-GRO-15 / OUT(X1,left,half)",
+     "R-GRO-15 / OUT(X2,left,half)",
+     "R-GRO-17 / OUT(X1,left,2)",
+     "R-GRO-17 / OUT(X1,right,2)",
+     "R-GRO-17 / OUT(X2,left,2)",
+     "R-GRO-17 / OUT(X2,right,2)",
+     "R-GRO-17 / OOW(X1,G2)",
+     "R-GRO-17 / OOW(X2,G2)",
+     "R-GRO-19 / OOW(X1,G2)",
+     "R-GRO-19 / OOW(X2,G2)"
+    ],
+    "preservation_proved_with_cex": [],
+    "progress_certified_but_false": [],
+    "truth_good_instances": 1,
+    "certified_among_truth_good": 0,
+    "certified_total": 0,
+    "instances": 96
+   },
+   "Aplus_soundness": {
+    "damage_below_truth": [],
+    "damage_finite_where_truth_grows": [
+     "R-ORD-05 / OOW(A2,G2)",
+     "R-ORD-06 / OOW(A1,G2)",
+     "R-ORD-07 / OUT(X1,right,2)",
+     "R-ORD-10 / KD{A1<X1}",
+     "R-ORD-10 / KD{A2<A1}",
+     "R-ORD-10 / KD{X1<A1}",
+     "R-ORD-10 / KD{A2<A1;A2<X1}",
+     "R-ORD-10 / KD{A2<A1;X1<A1}",
+     "R-ORD-10 / KD{X1<A1;X1<A2}",
+     "R-ORD-10 / KD{A1<X1;A2<A1;A2<X1}",
+     "R-ORD-10 / KD{A2<A1;A2<X1;X1<A1}",
+     "R-ORD-10 / KD{A2<A1;X1<A1;X1<A2}",
+     "R-ORD-10 / OUT(A1,right,half)",
+     "R-ORD-10 / OUT(A2,left,2)",
+     "R-ORD-10 / OUT(A2,left,half)",
+     "R-ORD-10 / OUT(A2,right,2)",
+     "R-ORD-10 / OUT(X1,left,2)",
+     "R-ORD-10 / OUT(X1,left,half)",
+     "R-ORD-10 / OUT(X1,right,2)",
+     "R-ORD-10 / OOW(A2,G1)",
+     "R-ORD-10 / OOW(X1,G2)",
+     "R-ORD-11 / OOW(A2,G2)",
+     "R-ORD-13 / OUT(X1,right,2)",
+     "R-ORD-13 / OUT(X1,right,half)",
+     "R-ORD-13 / OOW(X1,G2)",
+     "R-ORD-14 / KD{X1<A1}",
+     "R-ORD-14 / KD{A2<A1;X1<A1}",
+     "R-ORD-14 / KD{X1<A1;X1<A2}",
+     "R-ORD-14 / KD{A1<A2;X1<A1;X1<A2}",
+     "R-ORD-14 / KD{A2<A1;A2<X1;X1<A1}",
+     "R-ORD-14 / KD{A2<A1;X1<A1;X1<A2}",
+     "R-ORD-14 / OUT(A1,left,half)",
+     "R-ORD-14 / OUT(A1,right,2)",
+     "R-ORD-14 / OUT(X1,right,half)",
+     "R-ORD-14 / OOW(A1,G2)",
+     "R-ORD-17 / OUT(A1,left,2)",
+     "R-ORD-18 / OUT(A1,right,half)",
+     "R-ZON-00|left|half / OUT(X1,right,half)",
+     "R-ZON-00|left|half / OUT(X2,right,half)",
+     "R-ZON-02|right|half / OUT(A1,left,half)",
+     "R-ZON-03|left|half / OUT(A1,right,2)",
+     "R-ZON-03|left|half / OOW(A1,G2)",
+     "R-ZON-06|left|2 / OUT(X1,right,half)",
+     "R-ZON-06|left|2 / OUT(X2,right,half)",
+     "R-ZON-06|left|half / OUT(A1,left,half)",
+     "R-ZON-06|left|half / OUT(X1,right,2)",
+     "R-ZON-06|left|half / OUT(X2,right,2)",
+     "R-ZON-06|left|half / OOW(A1,G1)",
+     "R-ZON-06|left|half / OOW(A1,G2)",
+     "R-ZON-06|left|half / OOW(X1,G2)",
+     "R-ZON-06|left|half / OOW(X2,G2)",
+     "R-ZON-07|left|half / OUT(X1,right,half)",
+     "R-ZON-07|left|half / OUT(X2,right,half)",
+     "R-ZON-07|right|half / OUT(A1,right,half)",
+     "R-ZON-07|right|half / OUT(X1,left,half)",
+     "R-ZON-07|right|half / OUT(X2,left,half)",
+     "R-ZON-07|right|half / OOW(X1,G1)",
+     "R-ZON-07|right|half / OOW(X2,G1)",
+     "R-ZON-08|right|2 / OOW(X1,G1)",
+     "R-ZON-08|right|2 / OOW(X2,G1)",
+     "R-ZON-09|left|2 / OOW(X1,G2)",
+     "R-ZON-09|left|2 / OOW(X2,G2)",
+     "R-ZON-09|left|half / KD{X1<X2}",
+     "R-ZON-09|left|half / KD{X2<X1}",
+     "R-ZON-09|left|half / KD{X1<A1;X1<X2;X2<A1}",
+     "R-ZON-09|left|half / KD{X1<A1;X2<A1;X2<X1}",
+     "R-ZON-09|left|half / OOW(A1,G1)",
+     "R-ZON-13|left|half / OUT(X1,right,2)",
+     "R-ZON-13|left|half / OUT(X2,right,2)",
+     "R-ZON-13|right|half / OUT(X1,left,half)",
+     "R-ZON-13|right|half / OUT(X2,left,half)",
+     "R-ZON-16|left|2 / OOW(X1,G2)",
+     "R-ZON-16|left|2 / OOW(X2,G2)",
+     "R-ZON-16|left|half / OUT(A1,right,2)",
+     "R-ZON-16|left|half / OUT(X1,right,2)",
+     "R-ZON-16|left|half / OUT(X2,right,2)",
+     "R-ZON-18|right|half / OUT(X1,left,2)",
+     "R-ZON-18|right|half / OUT(X2,left,2)",
+     "R-ZON-18|right|half / OOW(X1,G1)",
+     "R-ZON-18|right|half / OOW(X2,G1)",
+     "R-GRO-01 / OOW(X1,G2)",
+     "R-GRO-01 / OOW(X2,G2)",
+     "R-GRO-02 / KD{A1<X2}",
+     "R-GRO-02 / KD{A1<X1;A1<X2}",
+     "R-GRO-02 / KD{A1<X1;X2<X1}",
+     "R-GRO-02 / KD{A1<X2;X1<X2}",
+     "R-GRO-02 / KD{A1<X1;A1<X2;X1<X2}",
+     "R-GRO-02 / KD{A1<X1;A1<X2;X2<X1}",
+     "R-GRO-02 / OOW(X1,G2)",
+     "R-GRO-02 / OOW(X2,G2)",
+     "R-GRO-04 / OOW(A1,G2)",
+     "R-GRO-07 / OUT(A1,right,half)",
+     "R-GRO-07 / OUT(X1,left,2)",
+     "R-GRO-07 / OUT(X1,left,half)",
+     "R-GRO-07 / OUT(X2,left,2)",
+     "R-GRO-07 / OUT(X2,left,half)",
+     "R-GRO-08 / OUT(A1,left,2)",
+     "R-GRO-08 / OOW(A1,G1)",
+     "R-GRO-09 / OUT(A1,right,2)",
+     "R-GRO-09 / OUT(X1,right,half)",
+     "R-GRO-09 / OUT(X2,right,half)",
+     "R-GRO-09 / OOW(A1,G2)",
+     "R-GRO-15 / OUT(A1,right,half)",
+     "R-GRO-15 / OUT(X1,left,half)",
+     "R-GRO-15 / OUT(X2,left,half)",
+     "R-GRO-17 / OUT(X1,left,2)",
+     "R-GRO-17 / OUT(X1,right,2)",
+     "R-GRO-17 / OUT(X2,left,2)",
+     "R-GRO-17 / OUT(X2,right,2)",
+     "R-GRO-17 / OOW(X1,G2)",
+     "R-GRO-17 / OOW(X2,G2)",
+     "R-GRO-19 / OOW(X1,G2)",
+     "R-GRO-19 / OOW(X2,G2)"
+    ],
+    "preservation_proved_with_cex": [],
+    "progress_certified_but_false": [],
+    "truth_good_instances": 1,
+    "certified_among_truth_good": 0,
+    "certified_total": 0,
+    "instances": 96
+   },
+   "Aplus_looser_than_A": [],
+   "Aplus_tighter_than_A": [
+    "R-ORD-00 / KD{A1<A2}",
+    "R-ORD-00 / KD{A1<X1}",
+    "R-ORD-00 / KD{A2<A1}",
+    "R-ORD-00 / KD{A2<X1}",
+    "R-ORD-00 / KD{X1<A1}",
+    "R-ORD-00 / KD{X1<A2}",
+    "R-ORD-00 / KD{A1<A2;A1<X1}",
+    "R-ORD-00 / KD{A1<A2;X1<A2}",
+    "R-ORD-00 / KD{A2<A1;A2<X1}",
+    "R-ORD-00 / KD{A2<A1;X1<A1}",
+    "R-ORD-00 / KD{A1<A2;A1<X1;A2<X1}",
+    "R-ORD-00 / KD{A1<A2;A1<X1;X1<A2}",
+    "R-ORD-00 / KD{A1<A2;X1<A1;X1<A2}",
+    "R-ORD-00 / KD{A1<X1;A2<A1;A2<X1}",
+    "R-ORD-00 / KD{A2<A1;A2<X1;X1<A1}",
+    "R-ORD-00 / KD{A2<A1;X1<A1;X1<A2}",
+    "R-ORD-02 / KD{A1<A2}",
+    "R-ORD-02 / KD{A1<X1}",
+    "R-ORD-02 / KD{A2<A1}",
+    "R-ORD-02 / KD{X1<A1}",
+    "R-ORD-02 / KD{A1<A2;A1<X1}",
+    "R-ORD-02 / KD{A1<A2;X1<A2}",
+    "R-ORD-02 / KD{A1<X1;A2<X1}",
+    "R-ORD-02 / KD{A2<A1;A2<X1}",
+    "R-ORD-02 / KD{A2<A1;X1<A1}",
+    "R-ORD-02 / KD{X1<A1;X1<A2}",
+    "R-ORD-02 / KD{A1<A2;A1<X1;A2<X1}",
+    "R-ORD-02 / KD{A1<A2;A1<X1;X1<A2}",
+    "R-ORD-02 / KD{A1<A2;X1<A1;X1<A2}",
+    "R-ORD-02 / KD{A1<X1;A2<A1;A2<X1}",
+    "R-ORD-02 / KD{A2<A1;A2<X1;X1<A1}",
+    "R-ORD-02 / KD{A2<A1;X1<A1;X1<A2}",
+    "R-ORD-10 / KD{A1<A2}",
+    "R-ORD-10 / KD{A1<X1}",
+    "R-ORD-10 / KD{A2<A1}",
+    "R-ORD-10 / KD{A2<X1}",
+    "R-ORD-10 / KD{X1<A1}",
+    "R-ORD-10 / KD{X1<A2}",
+    "R-ORD-10 / KD{A1<A2;A1<X1}",
+    "R-ORD-10 / KD{A1<A2;X1<A2}",
+    "R-ORD-10 / KD{A1<X1;A2<X1}",
+    "R-ORD-10 / KD{A2<A1;A2<X1}",
+    "R-ORD-10 / KD{A2<A1;X1<A1}",
+    "R-ORD-10 / KD{X1<A1;X1<A2}",
+    "R-ORD-10 / KD{A1<A2;A1<X1;A2<X1}",
+    "R-ORD-10 / KD{A1<A2;A1<X1;X1<A2}",
+    "R-ORD-10 / KD{A1<A2;X1<A1;X1<A2}",
+    "R-ORD-10 / KD{A1<X1;A2<A1;A2<X1}",
+    "R-ORD-10 / KD{A2<A1;A2<X1;X1<A1}",
+    "R-ORD-10 / KD{A2<A1;X1<A1;X1<A2}",
+    "R-ORD-18 / KD{A1<A2}",
+    "R-ORD-18 / KD{A1<X1}",
+    "R-ORD-18 / KD{A2<A1}",
+    "R-ORD-18 / KD{A2<X1}",
+    "R-ORD-18 / KD{X1<A1}",
+    "R-ORD-18 / KD{X1<A2}",
+    "R-ORD-18 / KD{A1<A2;A1<X1}",
+    "R-ORD-18 / KD{A1<A2;X1<A2}",
+    "R-ORD-18 / KD{A2<A1;A2<X1}",
+    "R-ORD-18 / KD{A2<A1;X1<A1}",
+    "R-ORD-18 / KD{A1<A2;A1<X1;A2<X1}",
+    "R-ORD-18 / KD{A1<A2;A1<X1;X1<A2}",
+    "R-ORD-18 / KD{A1<A2;X1<A1;X1<A2}",
+    "R-ORD-18 / KD{A1<X1;A2<A1;A2<X1}",
+    "R-ORD-18 / KD{A2<A1;A2<X1;X1<A1}",
+    "R-ORD-18 / KD{A2<A1;X1<A1;X1<A2}",
+    "R-ORD-19 / KD{A1<A2}",
+    "R-ORD-19 / KD{A1<X1}",
+    "R-ORD-19 / KD{A2<A1}",
+    "R-ORD-19 / KD{A2<X1}",
+    "R-ORD-19 / KD{X1<A1}",
+    "R-ORD-19 / KD{X1<A2}",
+    "R-ORD-19 / KD{A1<A2;A1<X1}",
+    "R-ORD-19 / KD{A1<A2;X1<A2}",
+    "R-ORD-19 / KD{A1<X1;A2<X1}",
+    "R-ORD-19 / KD{A2<A1;A2<X1}",
+    "R-ORD-19 / KD{A2<A1;X1<A1}",
+    "R-ORD-19 / KD{X1<A1;X1<A2}",
+    "R-ORD-19 / KD{A1<A2;A1<X1;A2<X1}",
+    "R-ORD-19 / KD{A1<A2;A1<X1;X1<A2}",
+    "R-ORD-19 / KD{A1<A2;X1<A1;X1<A2}",
+    "R-ORD-19 / KD{A1<X1;A2<A1;A2<X1}",
+    "R-ORD-19 / KD{A2<A1;A2<X1;X1<A1}",
+    "R-ORD-19 / KD{A2<A1;X1<A1;X1<A2}",
+    "R-ZON-09|left|2 / KD{X1<A1}",
+    "R-ZON-09|left|2 / KD{X1<X2}",
+    "R-ZON-09|left|2 / KD{X2<A1}",
+    "R-ZON-09|left|2 / KD{X2<X1}",
+    "R-ZON-09|left|2 / KD{X1<A1;X1<X2}",
+    "R-ZON-09|left|2 / KD{X1<A1;X2<A1}",
+    "R-ZON-09|left|2 / KD{X2<A1;X2<X1}",
+    "R-ZON-09|left|2 / KD{A1<X1;X2<A1;X2<X1}",
+    "R-ZON-09|left|2 / KD{A1<X2;X1<A1;X1<X2}",
+    "R-ZON-09|left|2 / KD{X1<A1;X1<X2;X2<A1}",
+    "R-ZON-09|left|2 / KD{X1<A1;X2<A1;X2<X1}",
+    "R-ZON-09|left|half / KD{A1<X1}",
+    "R-ZON-09|left|half / KD{A1<X2}",
+    "R-ZON-09|left|half / KD{X1<A1}",
+    "R-ZON-09|left|half / KD{X1<X2}",
+    "R-ZON-09|left|half / KD{X2<A1}",
+    "R-ZON-09|left|half / KD{X2<X1}",
+    "R-ZON-09|left|half / KD{A1<X1;A1<X2}",
+    "R-ZON-09|left|half / KD{A1<X1;X2<X1}",
+    "R-ZON-09|left|half / KD{A1<X2;X1<X2}",
+    "R-ZON-09|left|half / KD{X1<A1;X1<X2}",
+    "R-ZON-09|left|half / KD{X1<A1;X2<A1}",
+    "R-ZON-09|left|half / KD{X2<A1;X2<X1}",
+    "R-ZON-09|left|half / KD{A1<X1;A1<X2;X1<X2}",
+    "R-ZON-09|left|half / KD{A1<X1;A1<X2;X2<X1}",
+    "R-ZON-09|left|half / KD{A1<X1;X2<A1;X2<X1}",
+    "R-ZON-09|left|half / KD{A1<X2;X1<A1;X1<X2}",
+    "R-ZON-09|left|half / KD{X1<A1;X1<X2;X2<A1}",
+    "R-ZON-09|left|half / KD{X1<A1;X2<A1;X2<X1}",
+    "R-ZON-12|left|2 / KD{A1<X1}",
+    "R-ZON-12|left|2 / KD{A1<X2}",
+    "R-ZON-12|left|2 / KD{X1<A1}",
+    "R-ZON-12|left|2 / KD{X1<X2}",
+    "R-ZON-12|left|2 / KD{X2<A1}",
+    "R-ZON-12|left|2 / KD{X2<X1}",
+    "R-ZON-12|left|2 / KD{A1<X1;A1<X2}",
+    "R-ZON-12|left|2 / KD{A1<X1;X2<X1}",
+    "R-ZON-12|left|2 / KD{A1<X2;X1<X2}",
+    "R-ZON-12|left|2 / KD{X1<A1;X1<X2}",
+    "R-ZON-12|left|2 / KD{X1<A1;X2<A1}",
+    "R-ZON-12|left|2 / KD{X2<A1;X2<X1}",
+    "R-ZON-12|left|2 / KD{A1<X1;A1<X2;X1<X2}",
+    "R-ZON-12|left|2 / KD{A1<X1;A1<X2;X2<X1}",
+    "R-ZON-12|left|2 / KD{A1<X1;X2<A1;X2<X1}",
+    "R-ZON-12|left|2 / KD{A1<X2;X1<A1;X1<X2}",
+    "R-ZON-12|left|2 / KD{X1<A1;X1<X2;X2<A1}",
+    "R-ZON-12|left|2 / KD{X1<A1;X2<A1;X2<X1}",
+    "R-ZON-12|left|half / KD{A1<X1}",
+    "R-ZON-12|left|half / KD{A1<X2}",
+    "R-ZON-12|left|half / KD{X1<A1}",
+    "R-ZON-12|left|half / KD{X1<X2}",
+    "R-ZON-12|left|half / KD{X2<A1}",
+    "R-ZON-12|left|half / KD{X2<X1}",
+    "R-ZON-12|left|half / KD{A1<X1;A1<X2}",
+    "R-ZON-12|left|half / KD{A1<X1;X2<X1}",
+    "R-ZON-12|left|half / KD{A1<X2;X1<X2}",
+    "R-ZON-12|left|half / KD{X1<A1;X1<X2}",
+    "R-ZON-12|left|half / KD{X1<A1;X2<A1}",
+    "R-ZON-12|left|half / KD{X2<A1;X2<X1}",
+    "R-ZON-12|left|half / KD{A1<X1;A1<X2;X1<X2}",
+    "R-ZON-12|left|half / KD{A1<X1;A1<X2;X2<X1}",
+    "R-ZON-12|left|half / KD{A1<X1;X2<A1;X2<X1}",
+    "R-ZON-12|left|half / KD{A1<X2;X1<A1;X1<X2}",
+    "R-ZON-12|left|half / KD{X1<A1;X1<X2;X2<A1}",
+    "R-ZON-12|left|half / KD{X1<A1;X2<A1;X2<X1}",
+    "R-ZON-12|right|2 / KD{A1<X1}",
+    "R-ZON-12|right|2 / KD{A1<X2}",
+    "R-ZON-12|right|2 / KD{X1<A1}",
+    "R-ZON-12|right|2 / KD{X1<X2}",
+    "R-ZON-12|right|2 / KD{X2<A1}",
+    "R-ZON-12|right|2 / KD{X2<X1}",
+    "R-ZON-12|right|2 / KD{A1<X1;A1<X2}",
+    "R-ZON-12|right|2 / KD{A1<X1;X2<X1}",
+    "R-ZON-12|right|2 / KD{A1<X2;X1<X2}",
+    "R-ZON-12|right|2 / KD{X1<A1;X1<X2}",
+    "R-ZON-12|right|2 / KD{X1<A1;X2<A1}",
+    "R-ZON-12|right|2 / KD{X2<A1;X2<X1}",
+    "R-ZON-12|right|2 / KD{A1<X1;A1<X2;X1<X2}",
+    "R-ZON-12|right|2 / KD{A1<X1;A1<X2;X2<X1}",
+    "R-ZON-12|right|2 / KD{A1<X1;X2<A1;X2<X1}",
+    "R-ZON-12|right|2 / KD{A1<X2;X1<A1;X1<X2}",
+    "R-ZON-12|right|2 / KD{X1<A1;X1<X2;X2<A1}",
+    "R-ZON-12|right|2 / KD{X1<A1;X2<A1;X2<X1}",
+    "R-ZON-12|right|half / KD{A1<X1}",
+    "R-ZON-12|right|half / KD{A1<X2}",
+    "R-ZON-12|right|half / KD{X1<A1}",
+    "R-ZON-12|right|half / KD{X1<X2}",
+    "R-ZON-12|right|half / KD{X2<A1}",
+    "R-ZON-12|right|half / KD{X2<X1}",
+    "R-ZON-12|right|half / KD{A1<X1;A1<X2}",
+    "R-ZON-12|right|half / KD{A1<X1;X2<X1}",
+    "R-ZON-12|right|half / KD{A1<X2;X1<X2}",
+    "R-ZON-12|right|half / KD{X1<A1;X1<X2}",
+    "R-ZON-12|right|half / KD{X1<A1;X2<A1}",
+    "R-ZON-12|right|half / KD{X2<A1;X2<X1}",
+    "R-ZON-12|right|half / KD{A1<X1;A1<X2;X1<X2}",
+    "R-ZON-12|right|half / KD{A1<X1;A1<X2;X2<X1}",
+    "R-ZON-12|right|half / KD{A1<X1;X2<A1;X2<X1}",
+    "R-ZON-12|right|half / KD{A1<X2;X1<A1;X1<X2}",
+    "R-ZON-12|right|half / KD{X1<A1;X1<X2;X2<A1}",
+    "R-ZON-12|right|half / KD{X1<A1;X2<A1;X2<X1}",
+    "R-ZON-15|right|2 / KD{A1<X1}",
+    "R-ZON-15|right|2 / KD{A1<X2}",
+    "R-ZON-15|right|2 / KD{X1<X2}",
+    "R-ZON-15|right|2 / KD{X2<X1}",
+    "R-ZON-15|right|2 / KD{A1<X1;A1<X2}",
+    "R-ZON-15|right|2 / KD{A1<X1;X2<X1}",
+    "R-ZON-15|right|2 / KD{A1<X2;X1<X2}",
+    "R-ZON-15|right|2 / KD{A1<X1;A1<X2;X1<X2}",
+    "R-ZON-15|right|2 / KD{A1<X1;A1<X2;X2<X1}",
+    "R-ZON-15|right|2 / KD{A1<X1;X2<A1;X2<X1}",
+    "R-ZON-15|right|2 / KD{A1<X2;X1<A1;X1<X2}",
+    "R-ZON-15|right|half / KD{A1<X1}",
+    "R-ZON-15|right|half / KD{A1<X2}",
+    "R-ZON-15|right|half / KD{X1<A1}",
+    "R-ZON-15|right|half / KD{X1<X2}",
+    "R-ZON-15|right|half / KD{X2<A1}",
+    "R-ZON-15|right|half / KD{X2<X1}",
+    "R-ZON-15|right|half / KD{A1<X1;A1<X2}",
+    "R-ZON-15|right|half / KD{A1<X1;X2<X1}",
+    "R-ZON-15|right|half / KD{A1<X2;X1<X2}",
+    "R-ZON-15|right|half / KD{X1<A1;X1<X2}",
+    "R-ZON-15|right|half / KD{X1<A1;X2<A1}",
+    "R-ZON-15|right|half / KD{X2<A1;X2<X1}",
+    "R-ZON-15|right|half / KD{A1<X1;A1<X2;X1<X2}",
+    "R-ZON-15|right|half / KD{A1<X1;A1<X2;X2<X1}",
+    "R-ZON-15|right|half / KD{A1<X1;X2<A1;X2<X1}",
+    "R-ZON-15|right|half / KD{A1<X2;X1<A1;X1<X2}",
+    "R-ZON-15|right|half / KD{X1<A1;X1<X2;X2<A1}",
+    "R-ZON-15|right|half / KD{X1<A1;X2<A1;X2<X1}",
+    "R-GRO-00 / KD{A1<X1}",
+    "R-GRO-00 / KD{A1<X2}",
+    "R-GRO-00 / KD{X1<A1}",
+    "R-GRO-00 / KD{X2<A1}",
+    "R-GRO-00 / KD{A1<X1;A1<X2}",
+    "R-GRO-00 / KD{A1<X1;X2<X1}",
+    "R-GRO-00 / KD{A1<X2;X1<X2}",
+    "R-GRO-00 / KD{X1<A1;X1<X2}",
+    "R-GRO-00 / KD{X1<A1;X2<A1}",
+    "R-GRO-00 / KD{X2<A1;X2<X1}",
+    "R-GRO-00 / KD{A1<X1;A1<X2;X1<X2}",
+    "R-GRO-00 / KD{A1<X1;A1<X2;X2<X1}",
+    "R-GRO-00 / KD{A1<X1;X2<A1;X2<X1}",
+    "R-GRO-00 / KD{A1<X2;X1<A1;X1<X2}",
+    "R-GRO-00 / KD{X1<A1;X1<X2;X2<A1}",
+    "R-GRO-00 / KD{X1<A1;X2<A1;X2<X1}",
+    "R-GRO-02 / KD{A1<X1}",
+    "R-GRO-02 / KD{A1<X2}",
+    "R-GRO-02 / KD{X1<A1}",
+    "R-GRO-02 / KD{X1<X2}",
+    "R-GRO-02 / KD{X2<A1}",
+    "R-GRO-02 / KD{X2<X1}",
+    "R-GRO-02 / KD{A1<X1;A1<X2}",
+    "R-GRO-02 / KD{A1<X1;X2<X1}",
+    "R-GRO-02 / KD{A1<X2;X1<X2}",
+    "R-GRO-02 / KD{X1<A1;X1<X2}",
+    "R-GRO-02 / KD{X1<A1;X2<A1}",
+    "R-GRO-02 / KD{X2<A1;X2<X1}",
+    "R-GRO-02 / KD{A1<X1;A1<X2;X1<X2}",
+    "R-GRO-02 / KD{A1<X1;A1<X2;X2<X1}",
+    "R-GRO-02 / KD{A1<X1;X2<A1;X2<X1}",
+    "R-GRO-02 / KD{A1<X2;X1<A1;X1<X2}",
+    "R-GRO-02 / KD{X1<A1;X1<X2;X2<A1}",
+    "R-GRO-02 / KD{X1<A1;X2<A1;X2<X1}",
+    "R-GRO-18 / KD{A1<X1}",
+    "R-GRO-18 / KD{A1<X2}",
+    "R-GRO-18 / KD{X1<A1}",
+    "R-GRO-18 / KD{X1<X2}",
+    "R-GRO-18 / KD{X2<A1}",
+    "R-GRO-18 / KD{X2<X1}",
+    "R-GRO-18 / KD{A1<X1;A1<X2}",
+    "R-GRO-18 / KD{A1<X1;X2<X1}",
+    "R-GRO-18 / KD{A1<X2;X1<X2}",
+    "R-GRO-18 / KD{X1<A1;X1<X2}",
+    "R-GRO-18 / KD{X1<A1;X2<A1}",
+    "R-GRO-18 / KD{X2<A1;X2<X1}",
+    "R-GRO-18 / KD{A1<X1;A1<X2;X1<X2}",
+    "R-GRO-18 / KD{A1<X1;A1<X2;X2<X1}",
+    "R-GRO-18 / KD{A1<X1;X2<A1;X2<X1}",
+    "R-GRO-18 / KD{A1<X2;X1<A1;X1<X2}",
+    "R-GRO-18 / KD{X1<A1;X1<X2;X2<A1}",
+    "R-GRO-18 / KD{X1<A1;X2<A1;X2<X1}"
+   ],
+   "certified_by_A_not_Aplus": [],
+   "progress": {
+    "R-ORD-00": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-01": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-02": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-03": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-04": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-05": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-06": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-07": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-08": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-09": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-10": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-11": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-12": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-13": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-14": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-15": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-16": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-17": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-18": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ORD-19": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-00|left|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-00|left|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-00|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-00|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-01|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-01|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-02|left|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-02|left|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-02|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-02|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-03|left|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-03|left|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-04|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-04|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-05|left|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-05|left|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-06|left|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-06|left|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-06|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-06|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-07|left|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-07|left|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-07|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-07|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-08|left|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-08|left|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-08|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-08|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-09|left|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-09|left|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-10|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-10|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-11|left|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-11|left|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-12|left|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-12|left|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-12|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-12|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-13|left|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-13|left|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-13|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-13|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-14|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-14|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-15|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-15|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-16|left|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-16|left|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-17|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": "OUT(A1,right,2)"
+    },
+    "R-ZON-17|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": "OUT(A1,right,half)"
+    },
+    "R-ZON-18|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-18|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-19|left|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-19|left|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-19|right|2": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-ZON-19|right|half": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-00": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-01": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-02": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-03": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-04": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-05": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-06": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-07": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-08": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-09": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-10": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-11": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-12": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-13": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-14": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-15": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-16": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-17": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-18": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    },
+    "R-GRO-19": {
+     "A": false,
+     "A+": false,
+     "A+_measure": null
+    }
+   }
+  }
+ },
+ "constructions": {
+  "A/A-P'": {
+   "T1": {
+    "status": "OUT_OF_CLASS"
+   },
+   "T2": {
+    "status": "OUT_OF_CLASS"
+   },
+   "T3": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M1": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M2": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M3": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M4": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-02": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-03": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-09": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-10": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-11": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-12": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-13": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-14": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-15": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-16": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-17": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-18": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-19": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-20": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-21": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-22": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-23": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-24": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-25": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-26": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-27": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-28": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-29": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-30": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-31": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-32": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-33": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-34": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-35": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-36": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-37": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-38": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-39": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-40": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-41": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-42": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-43": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-44": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-45": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-46": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-47": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-48": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-49": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-50": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-51": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-52": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-53": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-54": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-55": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-56": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-57": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-58": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-59": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-60": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-02": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-03": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-09": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-10": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-11": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-12": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-13": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-14": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-15": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-16": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-17": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-18": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-19": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-02": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-03": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-09": {
+    "status": "OUT_OF_CLASS"
+   }
+  },
+  "A/A-P": {
+   "T1": {
+    "status": "OUT_OF_CLASS"
+   },
+   "T2": {
+    "status": "OUT_OF_CLASS"
+   },
+   "T3": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M1": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M2": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M3": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M4": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-02": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-03": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-09": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-10": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-11": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-12": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-13": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-14": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-15": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-16": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-17": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-18": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-19": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-20": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-21": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-22": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-23": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-24": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-25": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-26": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-27": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-28": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-29": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-30": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-31": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-32": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-33": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-34": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-35": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-36": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-37": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-38": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-39": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-40": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-41": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-42": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-43": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-44": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-45": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-46": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-47": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-48": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-49": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-50": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-51": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-52": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-53": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-54": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-55": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-56": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-57": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-58": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-59": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-60": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-02": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-03": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-09": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-10": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-11": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-12": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-13": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-14": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-15": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-16": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-17": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-18": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-19": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-02": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-03": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-09": {
+    "status": "OUT_OF_CLASS"
+   }
+  },
+  "A+/A-P'": {
+   "T1": {
+    "status": "OUT_OF_CLASS"
+   },
+   "T2": {
+    "status": "OUT_OF_CLASS"
+   },
+   "T3": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M1": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M2": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M3": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M4": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-02": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-03": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-09": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-10": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-11": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-12": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-13": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-14": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-15": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-16": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-17": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-18": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-19": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-20": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-21": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-22": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-23": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-24": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-25": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-26": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-27": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-28": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-29": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-30": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-31": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-32": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-33": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-34": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-35": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-36": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-37": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-38": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-39": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-40": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-41": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-42": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-43": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-44": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-45": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-46": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-47": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-48": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-49": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-50": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-51": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-52": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-53": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-54": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-55": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-56": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-57": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-58": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-59": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-60": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-02": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-03": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-09": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-10": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-11": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-12": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-13": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-14": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-15": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-16": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-17": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-18": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-19": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-02": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-03": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-09": {
+    "status": "OUT_OF_CLASS"
+   }
+  },
+  "A+/A-P": {
+   "T1": {
+    "status": "OUT_OF_CLASS"
+   },
+   "T2": {
+    "status": "OUT_OF_CLASS"
+   },
+   "T3": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M1": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M2": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M3": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M4": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-02": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-03": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-09": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-10": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-11": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-12": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-13": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-14": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-15": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-16": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-17": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-18": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-19": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-20": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-21": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-22": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-23": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-24": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-25": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-26": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-27": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-28": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-29": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-30": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-31": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-32": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-33": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-34": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-35": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-36": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-37": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-38": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-39": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-40": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-41": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-42": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-43": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-44": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-45": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-46": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-47": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-48": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-49": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-50": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-51": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-52": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-53": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-54": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-55": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-56": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-57": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-58": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-59": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-60": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-02": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-03": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-09": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-10": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-11": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-12": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-13": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-14": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-15": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-16": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-17": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-18": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-19": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-02": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-03": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-09": {
+    "status": "OUT_OF_CLASS"
+   }
+  }
+ },
+ "judged": {},
+ "time_s": 628.4
+}
