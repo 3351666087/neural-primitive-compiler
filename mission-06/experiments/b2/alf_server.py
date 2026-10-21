@@ -45,11 +45,17 @@ def main():
     ap.add_argument("--n", type=int, default=2)
     ap.add_argument("--max-steps", type=int, default=40)
     ap.add_argument("--test", action="store_true")
+    ap.add_argument("--games-file", help="judge-side JSON list of {game, type} (overrides the default pick)")
+    ap.add_argument("--tag", default="")
     a = ap.parse_args()
-    games, types = pick_games(a.n, a.test)
+    if a.games_file:
+        sel = json.loads(Path(a.games_file).read_text())
+        games, types = [x["game"] for x in sel], [x["type"] for x in sel]
+    else:
+        games, types = pick_games(a.n, a.test)
     run = HERE / "run"
     run.mkdir(exist_ok=True)
-    log = open(run / ("judge_log_test.jsonl" if a.test else "judge_log.jsonl"), "a")
+    log = open(run / ("judge_log_test.jsonl" if a.test else f"judge_log{a.tag}.jsonl"), "a")
     rec = lambda **k: (log.write(json.dumps({"t": time.strftime("%H:%M:%S"), **k}) + "\n"), log.flush())
     rec(event="start", n_games=len(games), types=types, max_steps=a.max_steps)
     if os.path.exists(a.sock):
@@ -101,10 +107,9 @@ def main():
             else:
                 out = "[no active game; call reset]"
             conn.sendall((json.dumps({"obs": out}) + "\n").encode())
-        if gi + 1 >= len(games) and not active and cmd in ("done", "act", "reset"):
-            if out == "[no more games]" or cmd in ("done", "act"):
-                rec(event="all games finished")
-                break
+        if out == "[no more games]":                 # exit only after the agent has asked for a game past the last
+            rec(event="all games finished")
+            break
     srv.close()
     os.unlink(a.sock)
 
