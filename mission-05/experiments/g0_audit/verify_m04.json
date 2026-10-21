@@ -1,0 +1,164 @@
+{
+ "label": "Mission 05 G0: verification of Mission 04 from raw outputs",
+ "claims": {
+  "C1 answered / hidden ambiguity / verified / old answer wrong": {
+   "reported": [
+    250,
+    10,
+    10,
+    4
+   ],
+   "recomputed": [
+    250,
+    10,
+    10,
+    4
+   ],
+   "match": true
+  },
+  "M-DISC-fixed training (DEV) correct/wrong": {
+   "reported": [
+    33,
+    2
+   ],
+   "recomputed": [
+    33,
+    2
+   ],
+   "match": true
+  },
+  "M-DISC-fixed evaluation (POST-HOC) correct/wrong": {
+   "reported": [
+    11,
+    1
+   ],
+   "recomputed": [
+    11,
+    1
+   ],
+   "match": true
+  },
+  "cross-check agree / real disagreements / budget-only": {
+   "reported": [
+    130,
+    0,
+    1
+   ],
+   "recomputed": [
+    130,
+    0,
+    1
+   ],
+   "match": true
+  },
+  "ARC-AGI-2 block layer answers (all routes and policies)": {
+   "reported": 0,
+   "recomputed": 0,
+   "match": true
+  },
+  "ARC-AGI-2 M-DISC-fixed correct / wrong": {
+   "reported": [
+    1,
+    0
+   ],
+   "recomputed": [
+    1,
+    0
+   ],
+   "match": true
+  },
+  "ARC-AGI-2 CP verdicts": {
+   "reported": {
+    "CP1": "FALSIFIED",
+    "CP2": "HOLDS",
+    "CP3": "HOLDS",
+    "CP4": "INCONCLUSIVE",
+    "CP5": "HOLDS",
+    "CP6": "INCONCLUSIVE",
+    "CP7": "INCONCLUSIVE",
+    "CP8": "INCONCLUSIVE",
+    "CP9": "INCONCLUSIVE"
+   },
+   "recomputed": {
+    "CP1": "FALSIFIED",
+    "CP2": "HOLDS",
+    "CP3": "HOLDS",
+    "CP4": "INCONCLUSIVE",
+    "CP5": "HOLDS",
+    "CP6": "INCONCLUSIVE",
+    "CP7": "INCONCLUSIVE",
+    "CP8": "INCONCLUSIVE",
+    "CP9": "INCONCLUSIVE"
+   },
+   "match": true
+  },
+  "P-R2 block C0 / C3 (S0, S2)": {
+   "reported": [
+    10,
+    18,
+    14,
+    24
+   ],
+   "recomputed": [
+    10,
+    18,
+    14,
+    24
+   ],
+   "match": true
+  },
+  "P-R2 block wrong answers, all configurations": {
+   "reported": 0,
+   "recomputed": 0,
+   "match": true
+  },
+  "twins (a): block S0 C0 kept/can, C4 kept/can": {
+   "reported": [
+    0,
+    5,
+    3,
+    5
+   ],
+   "recomputed": [
+    0,
+    5,
+    3,
+    5
+   ],
+   "match": true
+  },
+  "twins decisions D1-D3 admitted": {
+   "reported": [
+    false,
+    false,
+    false
+   ],
+   "recomputed": [
+    false,
+    false,
+    false
+   ],
+   "match": true
+  }
+ },
+ "all_claims_match": true,
+ "freeze_records_match": {
+  "ARC-AGI-2 freeze": true,
+  "twin freeze": true
+ },
+ "twin_portability": {
+  "vendored_manifest_sha256": "75e761bcef4e0c8572dbfd227469fc541008b436cc5bd9f1b0060bad685d7b91",
+  "manifest_matches_reported": true,
+  "file_check": {
+   "files": 401,
+   "missing_in_manifest": 0,
+   "hash_mismatch": 0
+  },
+  "rerun_versions": {
+   "n": 24,
+   "identical": 24,
+   "different": []
+  }
+ },
+ "time_s": 24.8
+}

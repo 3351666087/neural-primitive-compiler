@@ -1,0 +1,1210 @@
+{
+ "n_base_tasks": 200,
+ "prior_legend": {
+  "a": "background is not 0, or not a single colour",
+  "b": "colours of the same role differ between pairs (consistent within a pair)",
+  "c": "content sits inside a border / partition of a larger grid, or at an offset"
+ },
+ "tasks": [
+  {
+   "canonical": "0034f6c2.json",
+   "twin": "c170cba4.json",
+   "family": "crop_marked_object",
+   "prior": "a"
+  },
+  {
+   "canonical": "005e5a5a.json",
+   "twin": "f4f5be0a.json",
+   "family": "extend_rays",
+   "prior": "a"
+  },
+  {
+   "canonical": "031766c4.json",
+   "twin": "5f03af80.json",
+   "family": "connect_aligned_pairs",
+   "prior": "c"
+  },
+  {
+   "canonical": "03229f85.json",
+   "twin": "ee8ab08b.json",
+   "family": "stamp_around_points",
+   "prior": "c"
+  },
+  {
+   "canonical": "0322db12.json",
+   "twin": "0b83f6e0.json",
+   "family": "count_objects_to_grid",
+   "prior": "a"
+  },
+  {
+   "canonical": "03fcb5b5.json",
+   "twin": "ab271c89.json",
+   "family": "copy_template_to_markers",
+   "prior": "a+c"
+  },
+  {
+   "canonical": "057aa12f.json",
+   "twin": "823fd673.json",
+   "family": "panel_boolean",
+   "prior": "a"
+  },
+  {
+   "canonical": "07129809.json",
+   "twin": "6d50ba98.json",
+   "family": "symmetry_repair",
+   "prior": "b"
+  },
+  {
+   "canonical": "07fba249.json",
+   "twin": "01e75f1b.json",
+   "family": "upscale",
+   "prior": "c"
+  },
+  {
+   "canonical": "08b09eca.json",
+   "twin": "950d4e99.json",
+   "family": "denoise_rectangles",
+   "prior": "c"
+  },
+  {
+   "canonical": "0975efa6.json",
+   "twin": "eb636dfe.json",
+   "family": "recolor_by_orientation",
+   "prior": "b"
+  },
+  {
+   "canonical": "0ab8936c.json",
+   "twin": "993d7fdd.json",
+   "family": "recolor_by_orientation",
+   "prior": "a"
+  },
+  {
+   "canonical": "0b5f69f5.json",
+   "twin": "34b88df7.json",
+   "family": "grid_flip_rotate",
+   "prior": "b"
+  },
+  {
+   "canonical": "0ccc45c4.json",
+   "twin": "1cdc2ed9.json",
+   "family": "sort_bars",
+   "prior": "c"
+  },
+  {
+   "canonical": "1472e207.json",
+   "twin": "665551be.json",
+   "family": "sort_bars",
+   "prior": "b+c"
+  },
+  {
+   "canonical": "188e4381.json",
+   "twin": "3c156852.json",
+   "family": "grid_flip_rotate",
+   "prior": "b+c"
+  },
+  {
+   "canonical": "1a817266.json",
+   "twin": "b441fa9a.json",
+   "family": "symmetry_repair",
+   "prior": "a"
+  },
+  {
+   "canonical": "1a861349.json",
+   "twin": "cc214bf3.json",
+   "family": "denoise_rectangles",
+   "prior": "a+c"
+  },
+  {
+   "canonical": "1b0c333c.json",
+   "twin": "d85711ee.json",
+   "family": "filter_by_box",
+   "prior": "b"
+  },
+  {
+   "canonical": "1bbea82b.json",
+   "twin": "b2b8814f.json",
+   "family": "grid_flip_rotate",
+   "prior": "c"
+  },
+  {
+   "canonical": "1f0d6e77.json",
+   "twin": "c45108a8.json",
+   "family": "recolor_by_orientation",
+   "prior": "b"
+  },
+  {
+   "canonical": "1f95b3a6.json",
+   "twin": "32cfc944.json",
+   "family": "slide_to_wall",
+   "prior": "a"
+  },
+  {
+   "canonical": "2085211c.json",
+   "twin": "4d4c7828.json",
+   "family": "recolor_extreme_size",
+   "prior": "c"
+  },
+  {
+   "canonical": "211c83a1.json",
+   "twin": "d7af7f84.json",
+   "family": "gravity",
+   "prior": "b"
+  },
+  {
+   "canonical": "2307aef9.json",
+   "twin": "781113e6.json",
+   "family": "grid_flip_rotate",
+   "prior": "c"
+  },
+  {
+   "canonical": "23b87944.json",
+   "twin": "d2bb8b39.json",
+   "family": "mirror_tiling",
+   "prior": "b"
+  },
+  {
+   "canonical": "2afeaa48.json",
+   "twin": "3867243d.json",
+   "family": "denoise_rectangles",
+   "prior": "b"
+  },
+  {
+   "canonical": "2deb0a81.json",
+   "twin": "a1d49148.json",
+   "family": "crop_marked_object",
+   "prior": "c"
+  },
+  {
+   "canonical": "2e2bba68.json",
+   "twin": "30ee43c0.json",
+   "family": "symmetry_repair",
+   "prior": "a+b"
+  },
+  {
+   "canonical": "2ee55e2b.json",
+   "twin": "62c5589f.json",
+   "family": "extend_rays",
+   "prior": "b"
+  },
+  {
+   "canonical": "2f40dce8.json",
+   "twin": "1f67bea1.json",
+   "family": "copy_template_to_markers",
+   "prior": "a"
+  },
+  {
+   "canonical": "323e7a09.json",
+   "twin": "01258340.json",
+   "family": "recolor_extreme_size",
+   "prior": "c"
+  },
+  {
+   "canonical": "33208a17.json",
+   "twin": "7ecac94c.json",
+   "family": "mirror_tiling",
+   "prior": "c"
+  },
+  {
+   "canonical": "35a15616.json",
+   "twin": "b67e780b.json",
+   "family": "fill_enclosed",
+   "prior": "a+c"
+  },
+  {
+   "canonical": "36ddc9b0.json",
+   "twin": "1b7e2208.json",
+   "family": "denoise_rectangles",
+   "prior": "a"
+  },
+  {
+   "canonical": "3716cc07.json",
+   "twin": "76273a94.json",
+   "family": "continue_periodic_pattern",
+   "prior": "c"
+  },
+  {
+   "canonical": "380a1ff6.json",
+   "twin": "90f9b91b.json",
+   "family": "panel_boolean",
+   "prior": "c"
+  },
+  {
+   "canonical": "380e36f6.json",
+   "twin": "af3bff3b.json",
+   "family": "stamp_around_points",
+   "prior": "a"
+  },
+  {
+   "canonical": "3a69a011.json",
+   "twin": "2249ce30.json",
+   "family": "grid_flip_rotate",
+   "prior": "a"
+  },
+  {
+   "canonical": "3abef92c.json",
+   "twin": "d116159b.json",
+   "family": "stamp_around_points",
+   "prior": "c"
+  },
+  {
+   "canonical": "3bea860a.json",
+   "twin": "2b424d93.json",
+   "family": "gravity",
+   "prior": "a"
+  },
+  {
+   "canonical": "3cb3f1d2.json",
+   "twin": "62429441.json",
+   "family": "recolor_by_orientation",
+   "prior": "a"
+  },
+  {
+   "canonical": "3ceb57fd.json",
+   "twin": "257540aa.json",
+   "family": "stamp_around_points",
+   "prior": "b"
+  },
+  {
+   "canonical": "403939d2.json",
+   "twin": "0831e620.json",
+   "family": "upscale",
+   "prior": "b"
+  },
+  {
+   "canonical": "40b4f740.json",
+   "twin": "0f3e57f6.json",
+   "family": "mirror_tiling",
+   "prior": "a"
+  },
+  {
+   "canonical": "40d1b232.json",
+   "twin": "52ba1e82.json",
+   "family": "crop_marked_object",
+   "prior": "c"
+  },
+  {
+   "canonical": "4749a8f5.json",
+   "twin": "c3dc9579.json",
+   "family": "denoise_rectangles",
+   "prior": "b"
+  },
+  {
+   "canonical": "47606e3a.json",
+   "twin": "cf2b1377.json",
+   "family": "mirror_tiling",
+   "prior": "b"
+  },
+  {
+   "canonical": "47625b1f.json",
+   "twin": "7b359cc0.json",
+   "family": "gravity",
+   "prior": "a"
+  },
+  {
+   "canonical": "477634df.json",
+   "twin": "bf665a96.json",
+   "family": "slide_to_wall",
+   "prior": "b"
+  },
+  {
+   "canonical": "4831ba54.json",
+   "twin": "e3c114f9.json",
+   "family": "count_objects_to_grid",
+   "prior": "a"
+  },
+  {
+   "canonical": "488173a9.json",
+   "twin": "bf4d53b5.json",
+   "family": "symmetry_repair",
+   "prior": "b"
+  },
+  {
+   "canonical": "49e62f5a.json",
+   "twin": "9bb38e46.json",
+   "family": "upscale",
+   "prior": "b+c"
+  },
+  {
+   "canonical": "4a2ea471.json",
+   "twin": "14b40d90.json",
+   "family": "symmetry_repair",
+   "prior": "c"
+  },
+  {
+   "canonical": "4a7ea966.json",
+   "twin": "87c44796.json",
+   "family": "crop_marked_object",
+   "prior": "a"
+  },
+  {
+   "canonical": "4b40c2dd.json",
+   "twin": "dff7b1e3.json",
+   "family": "filter_by_box",
+   "prior": "a"
+  },
+  {
+   "canonical": "4d6733af.json",
+   "twin": "ce645477.json",
+   "family": "upscale",
+   "prior": "b"
+  },
+  {
+   "canonical": "4e44efec.json",
+   "twin": "f487be55.json",
+   "family": "grid_flip_rotate",
+   "prior": "a"
+  },
+  {
+   "canonical": "51343892.json",
+   "twin": "b87e1588.json",
+   "family": "sort_bars",
+   "prior": "b"
+  },
+  {
+   "canonical": "51aad429.json",
+   "twin": "9e3e5c8e.json",
+   "family": "copy_template_to_markers",
+   "prior": "b"
+  },
+  {
+   "canonical": "53bebf76.json",
+   "twin": "203679a3.json",
+   "family": "recolor_by_orientation",
+   "prior": "b"
+  },
+  {
+   "canonical": "5421c258.json",
+   "twin": "64f2b1de.json",
+   "family": "panel_boolean",
+   "prior": "b"
+  },
+  {
+   "canonical": "549c5f60.json",
+   "twin": "747e8de1.json",
+   "family": "panel_boolean",
+   "prior": "c"
+  },
+  {
+   "canonical": "54e7fd6e.json",
+   "twin": "6e42b0d8.json",
+   "family": "upscale",
+   "prior": "c"
+  },
+  {
+   "canonical": "56040af7.json",
+   "twin": "15ddd06c.json",
+   "family": "fill_enclosed",
+   "prior": "a"
+  },
+  {
+   "canonical": "5682101d.json",
+   "twin": "9f066e7a.json",
+   "family": "extend_rays",
+   "prior": "b"
+  },
+  {
+   "canonical": "589a7930.json",
+   "twin": "744cc5f0.json",
+   "family": "slide_to_wall",
+   "prior": "b"
+  },
+  {
+   "canonical": "5929b16a.json",
+   "twin": "c96b8d18.json",
+   "family": "mirror_tiling",
+   "prior": "b"
+  },
+  {
+   "canonical": "5b56ae85.json",
+   "twin": "1cabb12d.json",
+   "family": "crop_marked_object",
+   "prior": "b"
+  },
+  {
+   "canonical": "5cdfce3f.json",
+   "twin": "404222b6.json",
+   "family": "fill_enclosed",
+   "prior": "a"
+  },
+  {
+   "canonical": "5ce88c06.json",
+   "twin": "490c4708.json",
+   "family": "continue_periodic_pattern",
+   "prior": "b"
+  },
+  {
+   "canonical": "5d418751.json",
+   "twin": "184d4992.json",
+   "family": "count_objects_to_grid",
+   "prior": "a"
+  },
+  {
+   "canonical": "5df1330a.json",
+   "twin": "1b510920.json",
+   "family": "connect_aligned_pairs",
+   "prior": "c"
+  },
+  {
+   "canonical": "5eb0cfd3.json",
+   "twin": "3c337b23.json",
+   "family": "connect_aligned_pairs",
+   "prior": "a"
+  },
+  {
+   "canonical": "5ef20459.json",
+   "twin": "1b02db06.json",
+   "family": "extend_rays",
+   "prior": "c"
+  },
+  {
+   "canonical": "60033146.json",
+   "twin": "fbedbcef.json",
+   "family": "connect_aligned_pairs",
+   "prior": "b+c"
+  },
+  {
+   "canonical": "61f0b14b.json",
+   "twin": "67918099.json",
+   "family": "recolor_by_orientation",
+   "prior": "a"
+  },
+  {
+   "canonical": "62783b87.json",
+   "twin": "af7193a3.json",
+   "family": "filter_by_box",
+   "prior": "c"
+  },
+  {
+   "canonical": "64303728.json",
+   "twin": "55a5eb65.json",
+   "family": "gravity",
+   "prior": "a+b"
+  },
+  {
+   "canonical": "643d2434.json",
+   "twin": "bd1bb0ba.json",
+   "family": "filter_by_box",
+   "prior": "a"
+  },
+  {
+   "canonical": "654046c3.json",
+   "twin": "d569196e.json",
+   "family": "recolor_by_orientation",
+   "prior": "c"
+  },
+  {
+   "canonical": "65f7fb54.json",
+   "twin": "dfdfb6de.json",
+   "family": "sort_bars",
+   "prior": "a"
+  },
+  {
+   "canonical": "66b410e2.json",
+   "twin": "07c6b09f.json",
+   "family": "continue_periodic_pattern",
+   "prior": "b"
+  },
+  {
+   "canonical": "67399cc4.json",
+   "twin": "ee4ce94e.json",
+   "family": "denoise_rectangles",
+   "prior": "c"
+  },
+  {
+   "canonical": "69c9e77a.json",
+   "twin": "0d312b81.json",
+   "family": "filter_by_box",
+   "prior": "a+b"
+  },
+  {
+   "canonical": "6a0561b9.json",
+   "twin": "6d1d8134.json",
+   "family": "extend_rays",
+   "prior": "a+b"
+  },
+  {
+   "canonical": "6b277f17.json",
+   "twin": "a3018d08.json",
+   "family": "continue_periodic_pattern",
+   "prior": "a"
+  },
+  {
+   "canonical": "6b6c6bdc.json",
+   "twin": "963d213f.json",
+   "family": "count_objects_to_grid",
+   "prior": "b"
+  },
+  {
+   "canonical": "6d25a5c7.json",
+   "twin": "69dad0a0.json",
+   "family": "filter_by_box",
+   "prior": "c"
+  },
+  {
+   "canonical": "6da4a363.json",
+   "twin": "1b08662d.json",
+   "family": "denoise_rectangles",
+   "prior": "c"
+  },
+  {
+   "canonical": "6ec47ff0.json",
+   "twin": "4d73c1df.json",
+   "family": "panel_boolean",
+   "prior": "a+b"
+  },
+  {
+   "canonical": "6eee1ad7.json",
+   "twin": "494bdaf9.json",
+   "family": "crop_marked_object",
+   "prior": "c"
+  },
+  {
+   "canonical": "717bba0d.json",
+   "twin": "b674e9d4.json",
+   "family": "crop_marked_object",
+   "prior": "b"
+  },
+  {
+   "canonical": "71a9e7b2.json",
+   "twin": "5eccf852.json",
+   "family": "panel_boolean",
+   "prior": "c"
+  },
+  {
+   "canonical": "71db972e.json",
+   "twin": "b4d51f7c.json",
+   "family": "connect_aligned_pairs",
+   "prior": "c"
+  },
+  {
+   "canonical": "7270fa4e.json",
+   "twin": "21d32a06.json",
+   "family": "extend_rays",
+   "prior": "c"
+  },
+  {
+   "canonical": "72c276c3.json",
+   "twin": "ec193ee0.json",
+   "family": "fill_enclosed",
+   "prior": "b"
+  },
+  {
+   "canonical": "73d0fbd5.json",
+   "twin": "ffc9eeb5.json",
+   "family": "gravity",
+   "prior": "a"
+  },
+  {
+   "canonical": "73e8169e.json",
+   "twin": "4eba5df4.json",
+   "family": "extend_rays",
+   "prior": "a"
+  },
+  {
+   "canonical": "7414cf98.json",
+   "twin": "2d3d0d15.json",
+   "family": "grid_flip_rotate",
+   "prior": "c"
+  },
+  {
+   "canonical": "7420667d.json",
+   "twin": "b1ca127c.json",
+   "family": "panel_boolean",
+   "prior": "b"
+  },
+  {
+   "canonical": "7463c4e9.json",
+   "twin": "297fd2ff.json",
+   "family": "copy_template_to_markers",
+   "prior": "a"
+  },
+  {
+   "canonical": "74a3b5e9.json",
+   "twin": "1467d1fa.json",
+   "family": "count_objects_to_grid",
+   "prior": "b"
+  },
+  {
+   "canonical": "76671b3c.json",
+   "twin": "4befe1b1.json",
+   "family": "continue_periodic_pattern",
+   "prior": "c"
+  },
+  {
+   "canonical": "7720a7c5.json",
+   "twin": "6852e95f.json",
+   "family": "mirror_tiling",
+   "prior": "a+c"
+  },
+  {
+   "canonical": "77551ccc.json",
+   "twin": "d7360865.json",
+   "family": "recolor_extreme_size",
+   "prior": "a"
+  },
+  {
+   "canonical": "795b10bd.json",
+   "twin": "8158fafb.json",
+   "family": "crop_marked_object",
+   "prior": "a"
+  },
+  {
+   "canonical": "7aee7db4.json",
+   "twin": "8ff820e0.json",
+   "family": "connect_aligned_pairs",
+   "prior": "b"
+  },
+  {
+   "canonical": "7c772eb6.json",
+   "twin": "90d3025b.json",
+   "family": "extend_rays",
+   "prior": "c"
+  },
+  {
+   "canonical": "7d51b876.json",
+   "twin": "83073bad.json",
+   "family": "extend_rays",
+   "prior": "a"
+  },
+  {
+   "canonical": "7d6facd2.json",
+   "twin": "8abe42c6.json",
+   "family": "slide_to_wall",
+   "prior": "a"
+  },
+  {
+   "canonical": "7f1ccffe.json",
+   "twin": "d25a6cad.json",
+   "family": "stamp_around_points",
+   "prior": "b"
+  },
+  {
+   "canonical": "80b2c0dd.json",
+   "twin": "8b6681dc.json",
+   "family": "denoise_rectangles",
+   "prior": "b"
+  },
+  {
+   "canonical": "81585594.json",
+   "twin": "90de511e.json",
+   "family": "filter_by_box",
+   "prior": "a"
+  },
+  {
+   "canonical": "83011ab2.json",
+   "twin": "7f0492a1.json",
+   "family": "recolor_extreme_size",
+   "prior": "b"
+  },
+  {
+   "canonical": "8301a414.json",
+   "twin": "df96e3fe.json",
+   "family": "recolor_extreme_size",
+   "prior": "b"
+  },
+  {
+   "canonical": "8592344e.json",
+   "twin": "42e5a3f8.json",
+   "family": "mirror_tiling",
+   "prior": "c"
+  },
+  {
+   "canonical": "85b5e41a.json",
+   "twin": "512b52af.json",
+   "family": "recolor_extreme_size",
+   "prior": "a"
+  },
+  {
+   "canonical": "874e845b.json",
+   "twin": "8882d588.json",
+   "family": "fill_enclosed",
+   "prior": "b"
+  },
+  {
+   "canonical": "880b3c2a.json",
+   "twin": "7501436e.json",
+   "family": "extend_rays",
+   "prior": "b"
+  },
+  {
+   "canonical": "89d41c00.json",
+   "twin": "8f669d00.json",
+   "family": "continue_periodic_pattern",
+   "prior": "a"
+  },
+  {
+   "canonical": "8a1398f1.json",
+   "twin": "918535d0.json",
+   "family": "connect_aligned_pairs",
+   "prior": "a"
+  },
+  {
+   "canonical": "8e5dfd2f.json",
+   "twin": "3ab2e7e0.json",
+   "family": "upscale",
+   "prior": "a"
+  },
+  {
+   "canonical": "9122b8ff.json",
+   "twin": "9d548d28.json",
+   "family": "continue_periodic_pattern",
+   "prior": "c"
+  },
+  {
+   "canonical": "920af77b.json",
+   "twin": "b153e54c.json",
+   "family": "gravity",
+   "prior": "c"
+  },
+  {
+   "canonical": "92d699dc.json",
+   "twin": "0eb5227e.json",
+   "family": "slide_to_wall",
+   "prior": "a"
+  },
+  {
+   "canonical": "9328e08e.json",
+   "twin": "9ed998d0.json",
+   "family": "gravity",
+   "prior": "b"
+  },
+  {
+   "canonical": "933b429d.json",
+   "twin": "479a8324.json",
+   "family": "connect_aligned_pairs",
+   "prior": "a"
+  },
+  {
+   "canonical": "94a34ec6.json",
+   "twin": "2107614e.json",
+   "family": "symmetry_repair",
+   "prior": "c"
+  },
+  {
+   "canonical": "950e06ed.json",
+   "twin": "a3309ed6.json",
+   "family": "panel_boolean",
+   "prior": "a"
+  },
+  {
+   "canonical": "9597c1c5.json",
+   "twin": "00812ea2.json",
+   "family": "stamp_around_points",
+   "prior": "a"
+  },
+  {
+   "canonical": "965e94e4.json",
+   "twin": "192fb28b.json",
+   "family": "panel_boolean",
+   "prior": "a"
+  },
+  {
+   "canonical": "969c2302.json",
+   "twin": "707bd9b4.json",
+   "family": "copy_template_to_markers",
+   "prior": "b"
+  },
+  {
+   "canonical": "96b7b0d8.json",
+   "twin": "454ff411.json",
+   "family": "stamp_around_points",
+   "prior": "b"
+  },
+  {
+   "canonical": "980118a7.json",
+   "twin": "0389336a.json",
+   "family": "count_objects_to_grid",
+   "prior": "c"
+  },
+  {
+   "canonical": "99516b43.json",
+   "twin": "8a12a6ab.json",
+   "family": "count_objects_to_grid",
+   "prior": "c"
+  },
+  {
+   "canonical": "996d9973.json",
+   "twin": "0e04d59d.json",
+   "family": "crop_marked_object",
+   "prior": "a+b"
+  },
+  {
+   "canonical": "99ad6835.json",
+   "twin": "2ab4dcf8.json",
+   "family": "fill_enclosed",
+   "prior": "a"
+  },
+  {
+   "canonical": "9e304a4b.json",
+   "twin": "5e06436d.json",
+   "family": "count_objects_to_grid",
+   "prior": "a+c"
+  },
+  {
+   "canonical": "9e6f64b2.json",
+   "twin": "12c9aab5.json",
+   "family": "filter_by_box",
+   "prior": "b"
+  },
+  {
+   "canonical": "a13dc638.json",
+   "twin": "1d9e6313.json",
+   "family": "recolor_by_orientation",
+   "prior": "a+b"
+  },
+  {
+   "canonical": "a71161d0.json",
+   "twin": "f6d4218a.json",
+   "family": "continue_periodic_pattern",
+   "prior": "a+c"
+  },
+  {
+   "canonical": "a7e9970e.json",
+   "twin": "6ff63e1e.json",
+   "family": "slide_to_wall",
+   "prior": "c"
+  },
+  {
+   "canonical": "a969afe3.json",
+   "twin": "c2cc177e.json",
+   "family": "crop_marked_object",
+   "prior": "b"
+  },
+  {
+   "canonical": "aa793f64.json",
+   "twin": "18933d52.json",
+   "family": "grid_flip_rotate",
+   "prior": "b"
+  },
+  {
+   "canonical": "ac3e78cd.json",
+   "twin": "5d475c32.json",
+   "family": "recolor_extreme_size",
+   "prior": "c"
+  },
+  {
+   "canonical": "ac615774.json",
+   "twin": "7f2db0c2.json",
+   "family": "connect_aligned_pairs",
+   "prior": "b"
+  },
+  {
+   "canonical": "ad9ab55c.json",
+   "twin": "858e2151.json",
+   "family": "fill_enclosed",
+   "prior": "c"
+  },
+  {
+   "canonical": "adebd158.json",
+   "twin": "a27ecacc.json",
+   "family": "fill_enclosed",
+   "prior": "c"
+  },
+  {
+   "canonical": "ae82e130.json",
+   "twin": "61a9ab8f.json",
+   "family": "sort_bars",
+   "prior": "c"
+  },
+  {
+   "canonical": "b02d7529.json",
+   "twin": "06411272.json",
+   "family": "upscale",
+   "prior": "a"
+  },
+  {
+   "canonical": "b213b181.json",
+   "twin": "9157bd0e.json",
+   "family": "count_objects_to_grid",
+   "prior": "c"
+  },
+  {
+   "canonical": "b45e77e3.json",
+   "twin": "2ee7d319.json",
+   "family": "fill_enclosed",
+   "prior": "b"
+  },
+  {
+   "canonical": "b46259d2.json",
+   "twin": "9a0df593.json",
+   "family": "gravity",
+   "prior": "c"
+  },
+  {
+   "canonical": "b4769609.json",
+   "twin": "a7dfdea9.json",
+   "family": "upscale",
+   "prior": "a"
+  },
+  {
+   "canonical": "b72ac245.json",
+   "twin": "1c17dac2.json",
+   "family": "sort_bars",
+   "prior": "c"
+  },
+  {
+   "canonical": "b789e9f1.json",
+   "twin": "dd296e2e.json",
+   "family": "stamp_around_points",
+   "prior": "a+c"
+  },
+  {
+   "canonical": "b7f66241.json",
+   "twin": "3e29b42c.json",
+   "family": "copy_template_to_markers",
+   "prior": "b"
+  },
+  {
+   "canonical": "b84e747a.json",
+   "twin": "cdf15b3e.json",
+   "family": "filter_by_box",
+   "prior": "c"
+  },
+  {
+   "canonical": "b85e5ac1.json",
+   "twin": "0c734589.json",
+   "family": "slide_to_wall",
+   "prior": "c"
+  },
+  {
+   "canonical": "bc23946a.json",
+   "twin": "8bbc5ec8.json",
+   "family": "sort_bars",
+   "prior": "a"
+  },
+  {
+   "canonical": "bcdaf6a2.json",
+   "twin": "307b526e.json",
+   "family": "continue_periodic_pattern",
+   "prior": "b"
+  },
+  {
+   "canonical": "bd671db0.json",
+   "twin": "9348678b.json",
+   "family": "recolor_extreme_size",
+   "prior": "b+c"
+  },
+  {
+   "canonical": "bd81c67a.json",
+   "twin": "608f038c.json",
+   "family": "gravity",
+   "prior": "b"
+  },
+  {
+   "canonical": "beba5afd.json",
+   "twin": "b4d64911.json",
+   "family": "mirror_tiling",
+   "prior": "a"
+  },
+  {
+   "canonical": "bee43e67.json",
+   "twin": "2d0275c7.json",
+   "family": "symmetry_repair",
+   "prior": "b"
+  },
+  {
+   "canonical": "c0052b50.json",
+   "twin": "f24d4a91.json",
+   "family": "copy_template_to_markers",
+   "prior": "c"
+  },
+  {
+   "canonical": "c23fcaa7.json",
+   "twin": "72c92920.json",
+   "family": "sort_bars",
+   "prior": "b"
+  },
+  {
+   "canonical": "c369a3e3.json",
+   "twin": "d52fbea1.json",
+   "family": "filter_by_box",
+   "prior": "b"
+  },
+  {
+   "canonical": "c3d11e2d.json",
+   "twin": "e2b8447e.json",
+   "family": "symmetry_repair",
+   "prior": "a"
+  },
+  {
+   "canonical": "c3d5b7e2.json",
+   "twin": "c0cadc75.json",
+   "family": "gravity",
+   "prior": "c"
+  },
+  {
+   "canonical": "c6901e97.json",
+   "twin": "674c41e5.json",
+   "family": "slide_to_wall",
+   "prior": "b+c"
+  },
+  {
+   "canonical": "c6a8d865.json",
+   "twin": "7c275010.json",
+   "family": "stamp_around_points",
+   "prior": "c"
+  },
+  {
+   "canonical": "c6ad89d7.json",
+   "twin": "d5d65af3.json",
+   "family": "sort_bars",
+   "prior": "b"
+  },
+  {
+   "canonical": "d2f374c9.json",
+   "twin": "ec675810.json",
+   "family": "copy_template_to_markers",
+   "prior": "c"
+  },
+  {
+   "canonical": "d30fe195.json",
+   "twin": "7bb22d36.json",
+   "family": "slide_to_wall",
+   "prior": "c"
+  },
+  {
+   "canonical": "d3b63361.json",
+   "twin": "5fb124eb.json",
+   "family": "recolor_by_orientation",
+   "prior": "c"
+  },
+  {
+   "canonical": "d3fadafb.json",
+   "twin": "23c0b153.json",
+   "family": "denoise_rectangles",
+   "prior": "a"
+  },
+  {
+   "canonical": "d6874ab0.json",
+   "twin": "171034c3.json",
+   "family": "upscale",
+   "prior": "c"
+  },
+  {
+   "canonical": "d6ff9e6c.json",
+   "twin": "f802f7b3.json",
+   "family": "slide_to_wall",
+   "prior": "b"
+  },
+  {
+   "canonical": "d7d30a36.json",
+   "twin": "5dff68bf.json",
+   "family": "recolor_extreme_size",
+   "prior": "a"
+  },
+  {
+   "canonical": "d804dc21.json",
+   "twin": "50b5e9a0.json",
+   "family": "grid_flip_rotate",
+   "prior": "b"
+  },
+  {
+   "canonical": "d861a228.json",
+   "twin": "53bd02e7.json",
+   "family": "grid_flip_rotate",
+   "prior": "a"
+  },
+  {
+   "canonical": "dd11463a.json",
+   "twin": "7c215942.json",
+   "family": "continue_periodic_pattern",
+   "prior": "a"
+  },
+  {
+   "canonical": "e07d316c.json",
+   "twin": "8b03585f.json",
+   "family": "connect_aligned_pairs",
+   "prior": "b"
+  },
+  {
+   "canonical": "e2deb383.json",
+   "twin": "0d49bb55.json",
+   "family": "mirror_tiling",
+   "prior": "c"
+  },
+  {
+   "canonical": "e748d8c3.json",
+   "twin": "b942ef8a.json",
+   "family": "symmetry_repair",
+   "prior": "a"
+  },
+  {
+   "canonical": "e8a57266.json",
+   "twin": "fb700b2c.json",
+   "family": "mirror_tiling",
+   "prior": "a"
+  },
+  {
+   "canonical": "e8f2dd3f.json",
+   "twin": "bb7c1f1b.json",
+   "family": "copy_template_to_markers",
+   "prior": "c"
+  },
+  {
+   "canonical": "ecd01931.json",
+   "twin": "2527063c.json",
+   "family": "recolor_by_orientation",
+   "prior": "c"
+  },
+  {
+   "canonical": "edc48e51.json",
+   "twin": "5b16ddbf.json",
+   "family": "count_objects_to_grid",
+   "prior": "b"
+  },
+  {
+   "canonical": "edf7b4bd.json",
+   "twin": "7bef6696.json",
+   "family": "fill_enclosed",
+   "prior": "c"
+  },
+  {
+   "canonical": "f164675f.json",
+   "twin": "587d776a.json",
+   "family": "copy_template_to_markers",
+   "prior": "a"
+  },
+  {
+   "canonical": "f27ceb48.json",
+   "twin": "7de989d6.json",
+   "family": "denoise_rectangles",
+   "prior": "a"
+  },
+  {
+   "canonical": "f3677251.json",
+   "twin": "7cab3987.json",
+   "family": "sort_bars",
+   "prior": "a"
+  },
+  {
+   "canonical": "f5cc24ff.json",
+   "twin": "f5464b48.json",
+   "family": "symmetry_repair",
+   "prior": "c"
+  },
+  {
+   "canonical": "f96b2eef.json",
+   "twin": "bbb5d668.json",
+   "family": "stamp_around_points",
+   "prior": "a"
+  },
+  {
+   "canonical": "faa261fe.json",
+   "twin": "a5bd9aa1.json",
+   "family": "upscale",
+   "prior": "b"
+  },
+  {
+   "canonical": "fbe663fe.json",
+   "twin": "25422883.json",
+   "family": "recolor_extreme_size",
+   "prior": "b"
+  },
+  {
+   "canonical": "ff6c8c3a.json",
+   "twin": "2491b460.json",
+   "family": "panel_boolean",
+   "prior": "b"
+  }
+ ]
+}

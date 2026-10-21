@@ -1,0 +1,24 @@
+{
+ "label": "Mission 05 G0: verification of Mission 04 from raw outputs",
+ "all_claims_match": true,
+ "freeze_records_match": {
+  "ARC-AGI-2 freeze": true,
+  "twin freeze": true
+ },
+ "twin_portability": {
+  "vendored_manifest_sha256": "75e761bcef4e0c8572dbfd227469fc541008b436cc5bd9f1b0060bad685d7b91",
+  "manifest_matches_reported": true,
+  "file_check": {
+   "files": 401,
+   "missing_in_manifest": 0,
+   "hash_mismatch": 0
+  },
+  "rerun_versions": {
+   "n": 24,
+   "identical": 24,
+   "different": []
+  }
+ },
+ "time_s": 24.8
+}
+mismatched claims: []
