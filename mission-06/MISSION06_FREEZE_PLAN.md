@@ -1,4 +1,4 @@
-# MISSION06_FREEZE_PLAN（草案；BLOCKED，等待用户决定 D1–D5）
+# MISSION06_FREEZE_PLAN（草案；D1 已决定：用户申请门控实例池；D2–D5 待定）
 
 本计划规定外部环境在开发结果出现之前必须冻结的一切。标"待定"的项要在用户批准、并完成部署试点之后填入。填入之后提交，此后只能以修正的形式追加。
 
@@ -6,7 +6,7 @@
 
 | 项目 | 主域：WorkArena++ | 异质域：ALFWorld 文本版 |
 |---|---|---|
-| 代码 | `ServiceNow/BrowserGym`、`ServiceNow/WorkArena`，提交 SHA 待定（安装时记录） | `alfworld` 0.4.2（PyPI）、`textworld` 版本待定（Apple Silicon 试点决定） |
+| 代码 | PyPI：`browsergym-core` 0.14.3、`browsergym-workarena` 0.5.3、`playwright` 1.44.0（由 core 固定）；CPython 3.12.13 arm64（§G1-P.0，2026-10-21 冻结） | `alfworld` 0.4.2（PyPI）、`textworld` 版本待定（Apple Silicon 试点决定） |
 | 数据 / 实例 | 官方实例池（门控）或用户的开发者实例（`washingtondc`），待 D1 | `json_2.1.1_json.zip`、`json_2.1.1_pddl.zip`、`json_2.1.3_tw-pddl.zip`，SHA-256 待下载时记录 |
 | 安装记录 | `pip freeze` 与 `playwright` 版本写入 `mission-06/env/workarena_install.txt` | `pip freeze` 写入 `mission-06/env/alfworld_install.txt` |
 | 位置 | 独立 venv：`mission-06/env/venv-wa`（不与项目 venv 混用） | 独立环境（x86 或 arm64，待定）；数据放在独立目录，所有读取数据的 Python 用 `-I` |

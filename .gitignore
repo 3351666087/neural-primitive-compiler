@@ -5,3 +5,7 @@ __pycache__/
 .hypothesis/
 out/
 .claude/
+
+# Mission 06 isolated environments (not committed)
+mission-06/env/venv-*/
+mission-06/env/ms-playwright/
