@@ -10,3 +10,4 @@ out/
 mission-06/env/venv-*/
 mission-06/env/ms-playwright/
 mission-06/env/*.zip
+mission-06/env/alfworld-data/

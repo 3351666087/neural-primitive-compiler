@@ -1,0 +1,126 @@
+Collecting setuptools>=61
+  Downloading setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+Collecting wheel
+  Downloading wheel-0.48.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting packaging>=24.0 (from wheel)
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Downloading setuptools-84.2.1-py3-none-any.whl (876 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 876.3/876.3 kB 3.9 MB/s eta 0:00:00
+Downloading wheel-0.48.0-py3-none-any.whl (33 kB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Installing collected packages: setuptools, packaging, wheel
+Successfully installed packaging-26.3 setuptools-84.2.1 wheel-0.48.0
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: /Users/null3351/Code/neural-primitive-research/neural-primitive-compiler/mission-06/env/venv-alf/bin/python -m pip install --upgrade pip
+Collecting fast-downward-textworld==20.6.4
+  Downloading fast_downward_textworld-20.6.4.tar.gz (660 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 660.3/660.3 kB 3.4 MB/s eta 0:00:00
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: fast-downward-textworld
+  Building wheel for fast-downward-textworld (pyproject.toml): started
+  Building wheel for fast-downward-textworld (pyproject.toml): finished with status 'done'
+  Created wheel for fast-downward-textworld: filename=fast_downward_textworld-20.6.4-py3-none-any.whl size=428716 sha256=316b452b4b444b31c542123eba8919a65b9d6bd5011ee632b1f8ce8048715b91
+  Stored in directory: /Users/null3351/Library/Caches/pip/wheels/52/6a/56/c4c9881169e2cb9a0633240e9be1d24a6998d5025f193c2492
+Successfully built fast-downward-textworld
+Installing collected packages: fast-downward-textworld
+Successfully installed fast-downward-textworld-20.6.4
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: /Users/null3351/Code/neural-primitive-research/neural-primitive-compiler/mission-06/env/venv-alf/bin/python -m pip install --upgrade pip
+Collecting jericho==3.3.1
+  Downloading jericho-3.3.1.tar.gz (1.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 3.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: jericho
+  Building wheel for jericho (setup.py): started
+  Building wheel for jericho (setup.py): finished with status 'done'
+  Created wheel for jericho: filename=jericho-3.3.1-py3-none-any.whl size=277085 sha256=76807890dba70e7b11ffa5dbeab44d823f3f104b6147a8adb902113eb27aead9
+  Stored in directory: /Users/null3351/Library/Caches/pip/wheels/de/30/0f/c3a26f8af08055e87551180cb2183db37c041d01ca992f9bf2
+Successfully built jericho
+Installing collected packages: jericho
+Successfully installed jericho-3.3.1
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: /Users/null3351/Code/neural-primitive-research/neural-primitive-compiler/mission-06/env/venv-alf/bin/python -m pip install --upgrade pip
+Collecting textworld==1.6.2
+  Downloading textworld-1.6.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (12 kB)
+Collecting alfworld==0.4.2
+  Downloading alfworld-0.4.2-py3-none-any.whl.metadata (2.3 kB)
+Downloading textworld-1.6.2-cp312-cp312-macosx_11_0_arm64.whl (4.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.4/4.4 MB 5.8 MB/s eta 0:00:00
+Downloading alfworld-0.4.2-py3-none-any.whl (356 kB)
+Installing collected packages: alfworld, textworld
+Successfully installed alfworld-0.4.2 textworld-1.6.2
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: /Users/null3351/Code/neural-primitive-research/neural-primitive-compiler/mission-06/env/venv-alf/bin/python -m pip install --upgrade pip
+Collecting numpy
+  Using cached numpy-2.5.4-cp312-cp312-macosx_14_0_arm64.whl.metadata (6.6 kB)
+Collecting tqdm
+  Using cached tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Collecting cffi
+  Using cached cffi-2.1.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (2.5 kB)
+Collecting networkx>=2
+  Downloading networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+Collecting more_itertools
+  Downloading more_itertools-11.2.1-py3-none-any.whl.metadata (42 kB)
+Collecting tatsu==5.8.3
+  Downloading TatSu-5.8.3-py2.py3-none-any.whl.metadata (13 kB)
+Collecting hashids>=1.2.0
+  Downloading hashids-1.3.1-py2.py3-none-any.whl.metadata (5.5 kB)
+Collecting mementos>=1.3.1
+  Downloading mementos-1.3.1-py2.py3-none-any.whl.metadata (12 kB)
+Collecting termcolor
+  Downloading termcolor-3.3.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting prompt_toolkit
+  Downloading prompt_toolkit-3.0.53-py3-none-any.whl.metadata (6.4 kB)
+Collecting pyyaml
+  Using cached pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (2.4 kB)
+Collecting click
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting pycparser (from cffi)
+  Using cached pycparser-3.11-py3-none-any.whl.metadata (8.2 kB)
+Collecting wcwidth>=0.1.4 (from prompt_toolkit)
+  Downloading wcwidth-0.9.3-cp310-abi3-macosx_11_0_arm64.whl.metadata (23 kB)
+Downloading TatSu-5.8.3-py2.py3-none-any.whl (101 kB)
+Using cached numpy-2.5.4-cp312-cp312-macosx_14_0_arm64.whl (5.5 MB)
+Using cached tqdm-4.70.1-py3-none-any.whl (80 kB)
+Using cached cffi-2.1.1-cp312-cp312-macosx_11_0_arm64.whl (184 kB)
+Downloading networkx-3.7-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 6.7 MB/s eta 0:00:00
+Downloading more_itertools-11.2.1-py3-none-any.whl (74 kB)
+Downloading hashids-1.3.1-py2.py3-none-any.whl (6.6 kB)
+Downloading mementos-1.3.1-py2.py3-none-any.whl (12 kB)
+Downloading termcolor-3.3.0-py3-none-any.whl (7.7 kB)
+Downloading prompt_toolkit-3.0.53-py3-none-any.whl (392 kB)
+Using cached pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl (173 kB)
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Downloading wcwidth-0.9.3-cp310-abi3-macosx_11_0_arm64.whl (610 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 610.1/610.1 kB 7.6 MB/s eta 0:00:00
+Using cached pycparser-3.11-py3-none-any.whl (51 kB)
+Installing collected packages: mementos, wcwidth, tqdm, termcolor, tatsu, pyyaml, pycparser, numpy, networkx, more_itertools, hashids, click, prompt_toolkit, cffi
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+jericho 3.3.1 requires spacy>=2.1.0, which is not installed.
+Successfully installed cffi-2.1.1 click-8.5.0 hashids-1.3.1 mementos-1.3.1 more_itertools-11.2.1 networkx-3.7 numpy-2.5.4 prompt_toolkit-3.0.53 pycparser-3.11 pyyaml-6.0.3 tatsu-5.8.3 termcolor-3.3.0 tqdm-4.70.1 wcwidth-0.9.3
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: /Users/null3351/Code/neural-primitive-research/neural-primitive-compiler/mission-06/env/venv-alf/bin/python -m pip install --upgrade pip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0 68.6M    0  380k    0     0   157k      0  0:07:27  0:00:02  0:07:25  393k 12 68.6M   12 8639k    0     0  2526k      0  0:00:27  0:00:03  0:00:24 4389k 24 68.6M   24 17.1M    0     0  3976k      0  0:00:17  0:00:04  0:00:13 5919k 40 68.6M   40 27.7M    0     0  5219k      0  0:00:13  0:00:05  0:00:08 7118k 55 68.6M   55 37.9M    0     0  5989k      0  0:00:11  0:00:06  0:00:05 7717k 69 68.6M   69 47.4M    0     0  6553k      0  0:00:10  0:00:07  0:00:03 9647k 82 68.6M   82 56.7M    0     0  6899k      0  0:00:10  0:00:08  0:00:02 9892k 96 68.6M   96 66.3M    0     0  7213k      0  0:00:09  0:00:09 --:--:--  9.8M100 68.6M  100 68.6M    0     0  7230k      0  0:00:09  0:00:09 --:--:-- 9780k
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+  0 34.8M    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  7 34.8M    7 2655k    0     0   992k      0  0:00:35  0:00:02  0:00:33 2984k 35 34.8M   35 12.2M    0     0  3406k      0  0:00:10  0:00:03  0:00:07 6625k 63 34.8M   63 21.9M    0     0  4804k      0  0:00:07  0:00:04  0:00:03 7775k 90 34.8M   90 31.3M    0     0  5655k      0  0:00:06  0:00:05  0:00:01 8252k100 34.8M  100 34.8M    0     0  5983k      0  0:00:05  0:00:05 --:--:-- 8547k
+25171f16e20ad7b048c47275c45b0babf3aa1cbab29cec97387922350a9844bc  mission-06/env/alfworld-data/json_2.1.1_json.zip
+5df77ea759f2211a4106082839ddbbb790f1ba4e7d097ed732cf453f72aa36cf  mission-06/env/alfworld-data/json_2.1.3_tw-pddl.zip
+to extract: 1616070743 bytes
+train traj_data     6374 game.tw-pddl     3553
+valid_seen traj_data      251 game.tw-pddl      140
+valid_unseen traj_data        0 game.tw-pddl        0
+109M	mission-06/env/venv-alf
+1.6G	mission-06/env/alfworld-data

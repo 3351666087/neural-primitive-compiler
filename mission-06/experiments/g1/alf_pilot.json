@@ -1,0 +1,116 @@
+{
+ "label": "G1-A2/A3 and P-ALF-1 (Mission 06)",
+ "A2": {
+  "games": 10,
+  "reset_s": [
+   0.847,
+   1.687,
+   0.285,
+   0.321,
+   1.132,
+   1.397,
+   0.982,
+   0.67,
+   0.643,
+   1.134
+  ],
+  "five_steps_s": [
+   0.107,
+   0.355,
+   0.108,
+   0.127,
+   0.263,
+   0.305,
+   0.237,
+   0.194,
+   0.172,
+   0.231
+  ],
+  "train_counts_by_type": {
+   "pick_and_place_simple": 790,
+   "look_at_obj_in_light": 308,
+   "pick_clean_then_place_in_recep": 650,
+   "pick_heat_then_place_in_recep": 459,
+   "pick_cool_then_place_in_recep": 533,
+   "pick_two_obj_and_place": 813
+  },
+  "verdict": "HOLDS"
+ },
+ "A3": {
+  "types_crossed": [
+   "str"
+  ],
+  "imports_refused_by_guard": {
+   "alfworld": true,
+   "textworld": true
+  },
+  "static_scan_violations": [],
+  "verdict": "HOLDS"
+ },
+ "P_ALF_1": {
+  "P": {
+   "n": 58064,
+   "U": 0.0013950124001102231,
+   "W": 0.008312781332459515
+  },
+  "P_by_verb": {
+   "clean": {
+    "n": 42,
+    "U": 0.0,
+    "W": 0.0
+   },
+   "close": {
+    "n": 441,
+    "U": 0.0,
+    "W": 0.009070294784580499
+   },
+   "cool": {
+    "n": 21,
+    "U": 0.0,
+    "W": 0.0
+   },
+   "go": {
+    "n": 32236,
+    "U": 0.0,
+    "W": 0.007227943913636928
+   },
+   "move": {
+    "n": 2000,
+    "U": 0.0,
+    "W": 0.007
+   },
+   "open": {
+    "n": 8048,
+    "U": 0.0,
+    "W": 0.0058399602385685884
+   },
+   "take": {
+    "n": 15019,
+    "U": 0.0,
+    "W": 0.01225114854517611
+   },
+   "use": {
+    "n": 257,
+    "U": 0.3151750972762646,
+    "W": 0.0
+   }
+  },
+  "M": {
+   "steps": 1244,
+   "U_M": 0.6189710610932476,
+   "W_M": 0.0,
+   "W_M_checked": 59
+  },
+  "S0": 0.0,
+  "episodes": 60
+ },
+ "predictions": {
+  "ALF1-a": "HOLDS",
+  "ALF1-b": "HOLDS",
+  "ALF1-c": "HOLDS",
+  "ALF1-d": "HOLDS",
+  "ALF1-e": "HOLDS"
+ },
+ "goal_types_parsed": 0.9166666666666666,
+ "time_s": 139.0
+}

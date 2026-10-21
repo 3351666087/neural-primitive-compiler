@@ -1,0 +1,171 @@
+{
+  "version": "1",
+  "pip_version": "25.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/0b/a7/06c9fe746ac54e8ef6d79364c66c0e5effa138e4295aa2266405f1e1aaee/textworld-1.6.2-cp312-cp312-macosx_11_0_arm64.whl",
+        "archive_info": {
+          "hash": "sha256=421ac5692c3e09abce860dcebf497e8a458d62d23d49f6ff62157e4c6548291b",
+          "hashes": {
+            "sha256": "421ac5692c3e09abce860dcebf497e8a458d62d23d49f6ff62157e4c6548291b"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.2",
+        "name": "textworld",
+        "version": "1.6.2",
+        "dynamic": [
+          "provides-extra",
+          "requires-dist"
+        ],
+        "summary": "Microsoft Textworld - A Text-based Learning Environment.",
+        "description": "# TextWorld\n\n[![PyPI version](https://img.shields.io/pypi/v/textworld.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/textworld)\n[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/textworld.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/textworld/)\n[![Build Status](https://dev.azure.com/maluuba/TextWorld/_apis/build/status/microsoft.TextWorld?branchName=main)](https://dev.azure.com/maluuba/TextWorld/_build/latest?definitionId=180&branchName=main)\n[![Documentation Status](https://readthedocs.org/projects/textworld/badge/?version=latest)](https://textworld.readthedocs.io/en/stable/?badge=stable)\n[![Join the chat at https://gitter.im/Microsoft/TextWorld](https://badges.gitter.im/Microsoft/TextWorld.svg)](https://gitter.im/Microsoft/TextWorld?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n\nA text-based game generator and extensible sandbox learning environment for training and testing reinforcement learning (RL) agents. Also check out [aka.ms/textworld](https://aka.ms/textworld/) for more info about TextWorld and its creators. Have questions or feedback about TextWorld? Send them to textworld@microsoft.com or use the Gitter channel listed above.\n\n## Installation\n\nTextWorld supports __Python 3.9/3.10/3.11/3.12__ for __Linux__ and __macOS__ systems only at the moment. For __Windows__ users, docker can be used as a workaround (see Docker section below).\n\n### Requirements\n\nTextWorld requires some system libraries for its native components.\nOn a Debian/Ubuntu-based system, these can be installed with\n\n    sudo apt update && sudo apt install build-essential libffi-dev python3-dev curl git\n\nAnd on macOS, with\n\n    brew install libffi curl git\n\n> **Note:** We advise our users to use virtual environments to avoid Python packages from different projects to interfere with each other. Popular choices are [Conda Environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) and [Virtualenv](https://virtualenv.pypa.io/en/stable/)\n\n### Installing TextWorld\n\nThe easiest way to install TextWorld is via [`pip`](https://pypi.org/):\n\n    pip install textworld\n\nOr, after cloning the repo, go inside the root folder of the project (i.e. alongside `setup.py`) and run\n\n    pip install .\n\n#### Visualization\n\nTextWorld comes with some tools to visualize game states. Make sure all dependencies are installed by running\n\n    pip install textworld[vis]\n\nThen, you will need to install either the [Chrome](https://sites.google.com/a/chromium.org/chromedriver/) or [Firefox](https://github.com/mozilla/geckodriver) webdriver (depending on which browser you have currently installed).\nIf you have Chrome already installed you can use the following command to install chromedriver\n\n    pip install chromedriver_installer\n\nCurrent visualization tools include: `take_screenshot`, `visualize` and `show_graph` from [`textworld.render`](https://textworld.readthedocs.io/en/latest/textworld.render.html).\n\n### Docker\n\nA docker container with the latest TextWorld release is available on [DockerHub](https://hub.docker.com/).\n\n    docker pull marccote19/textworld\n    docker run -p 8888:8888 -it --rm marccote19/textworld\n\nThen, in your browser, navigate to the Jupyter notebook's link displayed in your terminal. The link should look like this\n\n    http://127.0.0.1:8888/?token=8d7aaa...e95\n\n> **Note:** See [README.md](docker/README.md) in the docker folder for troubleshooting information.\n\n## Usage\n\n### Generating a game\n\nTextWorld provides an easy way of generating simple text-based games via the `tw-make` script. For instance,\n\n    tw-make custom --world-size 5 --nb-objects 10 --quest-length 5 --seed 1234 --output tw_games/custom_game.z8\n\nwhere `custom` indicates we want to customize the game using the following options: `--world-size` controls the number of rooms in the world, `--nb-objects` controls the number of objects that can be interacted with (excluding doors) and `--quest-length` controls the minimum number of commands that is required to type in order to win the game. Once done, the game `custom_game.z8` will be saved in the `tw_games/` folder.\n\n### Playing a game (terminal)\n\nTo play a game, one can use the `tw-play` script. For instance, the command to play the game generated in the previous section would be\n\n    tw-play tw_games/custom_game.z8\n\n> **Note:** Only Z-machine's games (*.z1 through *.z8) and Glulx's games (*.ulx) are supported.\n\nTo visualize the game state while playing, use the `--viewer [port]` option.\n\n    tw-play tw_games/custom_game.z8 --viewer\n\nA new browser tab should open and track your progress in the game.\n\n### Playing a game (Python + [Gym](https://github.com/openai/gym)-like API)\n\nHere's how you can interact with a text-based game from within Python using a Gym-like API.\n\n```python\nimport textworld.gym\n\n# Register a text-based game as a new environment.\nenv_id = textworld.gym.register_game(\"tw_games/custom_game.z8\",\n                                     max_episode_steps=50)\n\nenv = textworld.gym.make(env_id)  # Start the environment.\n\nobs, infos = env.reset()  # Start new episode.\nenv.render()\n\nscore, moves, done = 0, 0, False\nwhile not done:\n    command = input(\"> \")\n    obs, score, done, infos = env.step(command)\n    env.render()\n    moves += 1\n\nenv.close()\nprint(\"moves: {}; score: {}\".format(moves, score))\n```\n\n> **Note:** To play text-based games without a Gym-like API, see [Playing text-based games with TextWorld.ipynb](notebooks/Playing%20text-based%20games%20with%20TextWorld.ipynb)\n\n## Documentation\n\nFor more information about TextWorld, check the [documentation](https://aka.ms/textworld-docs).\n\n## Visual Studio Code\n\nYou can install the [textworld-vscode extension ](https://marketplace.visualstudio.com/items?itemName=textworld.textworld-vscode) that enables syntax highlighting for editing `.twl` and `.twg` TextWorld files.\n\n## Notebooks\n\nCheck the [notebooks](notebooks) provided with the framework to see what you can do with it. You will need the [Jupyter Notebook](https://jupyter.org/install) to run them. You can install it with\n\n    pip install jupyter\n\n## Citing TextWorld\n\nIf you use TextWorld, please cite the following BibTex:\n\n```text\n@Article{cote18textworld,\n  author = {Marc-Alexandre C\\^ot\\'e and\n            \\'Akos K\\'ad\\'ar and\n            Xingdi Yuan and\n            Ben Kybartas and\n            Tavian Barnes and\n            Emery Fine and\n            James Moore and\n            Ruo Yu Tao and\n            Matthew Hausknecht and\n            Layla El Asri and\n            Mahmoud Adada and\n            Wendy Tay and\n            Adam Trischler},\n  title = {TextWorld: A Learning Environment for Text-based Games},\n  journal = {CoRR},\n  volume = {abs/1806.11532},\n  year = {2018}\n}\n```\n\n## Contributing\n\nThis project welcomes contributions and suggestions.  Most contributions require you to agree to a\nContributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us\nthe rights to use your contribution. For details, visit https://cla.microsoft.com.\n\nWhen you submit a pull request, a CLA-bot will automatically determine whether you need to provide\na CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions\nprovided by the bot. You will only need to do this once across all repos using our CLA.\n\nThis project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).\nFor more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or\ncontact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.\n\n## License\n\n- [TextWorld](https://github.com/microsoft/TextWorld) - MIT License\n- [Inform7](https://github.com/ganelson/inform) - Artistic License 2.0\n- [Jericho](https://github.com/microsoft/jericho) - GNU General Public License (GPL) v2.0\n- [Fast Downward](https://github.com/MarcCote/downward) - GNU General Public License (GPL) v3.0\n- [Git](https://github.com/DavidKinder/Git) - MIT License\n- [cheakglk](https://github.com/erkyrath/cheapglk) - MIT License\n",
+        "description_content_type": "text/markdown",
+        "author": "Marc-Alexandre Côté",
+        "author_email": "Microsoft Textworld <textworld@microsoft.com>",
+        "license": "TextWorld v1.2\nCopyright (c) Microsoft Corporation\nAll rights reserved.\n\nMIT License\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the Software), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Information Technology",
+          "License :: OSI Approved :: MIT License",
+          "Natural Language :: English",
+          "Operating System :: MacOS",
+          "Operating System :: POSIX",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Topic :: Scientific/Engineering :: Artificial Life"
+        ],
+        "requires_dist": [
+          "numpy>=1.14.5",
+          "tqdm>=4.17.1",
+          "cffi>=1.0.0",
+          "networkx>=2",
+          "more_itertools",
+          "tatsu==5.8.3",
+          "hashids>=1.2.0",
+          "jericho>=3.3.0",
+          "mementos>=1.3.1",
+          "termcolor",
+          "prompt_toolkit",
+          "pybars3>=0.9.3; extra == \"vis\"",
+          "flask>=1.0.2; extra == \"vis\"",
+          "selenium<4.3,>=3.12.0; extra == \"vis\"",
+          "greenlet>=0.4.13; extra == \"vis\"",
+          "gevent>=1.3.5; extra == \"vis\"",
+          "pillow>=5.1.0; extra == \"vis\"",
+          "plotly<6.0.0,>=4.0.0; extra == \"vis\"",
+          "pydot>=1.2.4; extra == \"vis\"",
+          "psutil; extra == \"vis\"",
+          "matplotlib; extra == \"vis\"",
+          "fast-downward-textworld; extra == \"pddl\"",
+          "numpy>=1.14.5; extra == \"full\"",
+          "tqdm>=4.17.1; extra == \"full\"",
+          "cffi>=1.0.0; extra == \"full\"",
+          "networkx>=2; extra == \"full\"",
+          "more_itertools; extra == \"full\"",
+          "tatsu==5.8.3; extra == \"full\"",
+          "hashids>=1.2.0; extra == \"full\"",
+          "jericho>=2.2.0; extra == \"full\"",
+          "mementos>=1.3.1; extra == \"full\"",
+          "termcolor; extra == \"full\"",
+          "prompt_toolkit; extra == \"full\"",
+          "pybars3>=0.9.3; extra == \"full\"",
+          "flask>=1.0.2; extra == \"full\"",
+          "selenium<4.3,>=3.12.0; extra == \"full\"",
+          "greenlet>=0.4.13; extra == \"full\"",
+          "gevent>=1.3.5; extra == \"full\"",
+          "pillow>=5.1.0; extra == \"full\"",
+          "plotly<6.0.0,>=4.0.0; extra == \"full\"",
+          "pydot>=1.2.4; extra == \"full\"",
+          "psutil; extra == \"full\"",
+          "matplotlib; extra == \"full\"",
+          "fast-downward-textworld; extra == \"full\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://github.com/microsoft/TextWorld",
+          "Issues, https://github.com/microsoft/TextWorld/issues"
+        ],
+        "provides_extra": [
+          "vis",
+          "pddl",
+          "full"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/98/6f/352737a56390ee03a71fb6dc0a059b7906e4e627755845432f4968bf59a8/alfworld-0.4.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=29affbea28f6041d1e8516ed3efd6b55becd52cfca4fb9dd5c75b9d6b8a56c2f",
+          "hashes": {
+            "sha256": "29affbea28f6041d1e8516ed3efd6b55becd52cfca4fb9dd5c75b9d6b8a56c2f"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "alfworld",
+        "version": "0.4.2",
+        "summary": "ALFWorld - Aligning Text and Embodied Environments for Interactive Learning.",
+        "license": "MIT License\n\nCopyright (c) 2020 Mohit Shridhar and others\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+        "license_file": [
+          "LICENSE"
+        ],
+        "requires_dist": [
+          "textworld[pddl]>=1.6.1",
+          "ai2thor==2.1.0; extra == \"full\"",
+          "opencv-python; extra == \"full\"",
+          "pandas; extra == \"full\"",
+          "textworld[pddl]>=1.6.1; extra == \"full\"",
+          "torch; extra == \"full\"",
+          "torchvision; extra == \"full\"",
+          "tqdm; extra == \"full\"",
+          "werkzeug==2.0.3; extra == \"full\"",
+          "h5py; extra == \"full\"",
+          "pycocotools; extra == \"full\"",
+          "transformers; extra == \"full\"",
+          "visdom; extra == \"full\"",
+          "ai2thor==2.1.0; extra == \"vis\"",
+          "opencv-python; extra == \"vis\"",
+          "pandas; extra == \"vis\"",
+          "torch; extra == \"vis\"",
+          "torchvision; extra == \"vis\"",
+          "tqdm; extra == \"vis\"",
+          "werkzeug==2.0.3; extra == \"vis\""
+        ],
+        "provides_extra": [
+          "full",
+          "vis"
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.12.13",
+    "os_name": "posix",
+    "platform_machine": "arm64",
+    "platform_release": "25.6.0",
+    "platform_system": "Darwin",
+    "platform_version": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:11:03 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T8132",
+    "python_full_version": "3.12.13",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.12",
+    "sys_platform": "darwin"
+  }
+}

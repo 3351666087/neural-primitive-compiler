@@ -1,0 +1,3 @@
+train traj_data     6374 game.tw-pddl     3553
+valid_seen traj_data      251 game.tw-pddl      140
+valid_unseen traj_data        0 game.tw-pddl        0

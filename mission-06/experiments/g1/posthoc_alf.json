@@ -1,0 +1,109 @@
+{
+ "label": "POST-HOC diagnostic of P-ALF-1",
+ "U_M_parsed_only": 0.5838454784899034,
+ "M_steps_parsed_only": 1139,
+ "unparsed_goals": [
+  "look at newspaper under the desklamp",
+  "look at alarmclock under the desklamp",
+  "look at pillow under the desklamp",
+  "look at mug under the desklamp",
+  "look at book under the desklamp"
+ ],
+ "P_errors": {
+  "go: belief A, truth N": 233,
+  "take: belief N, truth A": 184,
+  "open: belief N, truth A": 47,
+  "move: belief N, truth A": 14,
+  "close: belief N, truth A": 4
+ },
+ "P_errors_by_colocation": {
+  "co-located receptacle involved": 482
+ },
+ "P_error_examples": {
+  "go: belief A, truth N": [
+   {
+    "command": "go to shelf 4",
+    "last_action": "go to shelf 3",
+    "obs": "You arrive at shelf 3. On the shelf 3, you see nothing."
+   },
+   {
+    "command": "go to tvstand 1",
+    "last_action": "go to shelf 3",
+    "obs": "You arrive at shelf 3. On the shelf 3, you see nothing."
+   },
+   {
+    "command": "go to shelf 3",
+    "last_action": "go to tvstand 1",
+    "obs": "You arrive at tvstand 1. On the tvstand 1, you see a television 1, and a vase 1."
+   }
+  ],
+  "take: belief N, truth A": [
+   {
+    "command": "take vase 1 from tvstand 1",
+    "last_action": "go to shelf 3",
+    "obs": "You arrive at shelf 3. On the shelf 3, you see nothing."
+   },
+   {
+    "command": "take vase 1 from tvstand 1",
+    "last_action": "go to shelf 3",
+    "obs": "You arrive at shelf 3. On the shelf 3, you see nothing."
+   },
+   {
+    "command": "take pan 1 from stoveburner 1",
+    "last_action": "go to stoveburner 3",
+    "obs": "You arrive at stoveburner 3. On the stoveburner 3, you see nothing."
+   }
+  ],
+  "move: belief N, truth A": [
+   {
+    "command": "move creditcard 3 to shelf 4",
+    "last_action": "go to shelf 3",
+    "obs": "You arrive at shelf 3. On the shelf 3, you see nothing."
+   },
+   {
+    "command": "move creditcard 3 to shelf 3",
+    "last_action": "go to tvstand 1",
+    "obs": "You arrive at tvstand 1. On the tvstand 1, you see a television 1, and a vase 1."
+   },
+   {
+    "command": "move creditcard 3 to shelf 4",
+    "last_action": "go to tvstand 1",
+    "obs": "You arrive at tvstand 1. On the tvstand 1, you see a television 1, and a vase 1."
+   }
+  ],
+  "open: belief N, truth A": [
+   {
+    "command": "open cabinet 2",
+    "last_action": "go to cabinet 6",
+    "obs": "You arrive at cabinet 6. On the cabinet 6, you see nothing."
+   },
+   {
+    "command": "open drawer 7",
+    "last_action": "go to drawer 8",
+    "obs": "You arrive at drawer 8. The drawer 8 is closed."
+   },
+   {
+    "command": "open drawer 18",
+    "last_action": "go to drawer 20",
+    "obs": "You arrive at drawer 20. The drawer 20 is closed."
+   }
+  ],
+  "close: belief N, truth A": [
+   {
+    "command": "close drawer 6",
+    "last_action": "open drawer 6",
+    "obs": "You open the drawer 6. The drawer 6 is open. In it, you see nothing."
+   },
+   {
+    "command": "close drawer 5",
+    "last_action": "open drawer 5",
+    "obs": "You open the drawer 5. The drawer 5 is open. In it, you see a saltshaker 3."
+   },
+   {
+    "command": "close cabinet 2",
+    "last_action": "open cabinet 2",
+    "obs": "You open the cabinet 2. The cabinet 2 is open. In it, you see nothing."
+   }
+  ]
+ }
+}

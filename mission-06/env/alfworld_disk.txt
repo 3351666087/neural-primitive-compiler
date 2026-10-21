@@ -1,0 +1,2 @@
+109M	mission-06/env/venv-alf
+1.6G	mission-06/env/alfworld-data
