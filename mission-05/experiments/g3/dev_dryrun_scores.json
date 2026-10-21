@@ -1,0 +1,136 @@
+{
+ "Q1": {
+  "verdict": "HOLDS",
+  "wrong_constructions": {
+   "specs/A-P'": [],
+   "specs/A-P": [],
+   "library+specs/A-P'": [],
+   "library+specs/A-P": []
+  },
+  "damage_below_truth": [],
+  "preservation_proved_with_cex": [],
+  "progress_certified_but_false": [],
+  "J1_net": {
+   "plans": 10,
+   "mismatch_episodes": 0,
+   "failures": 0
+  },
+  "damage_finite_where_truth_grows": [
+   "DEV-Z-window|right|2 / OOW(X1,G1)",
+   "DEV-Z-window|right|2 / OOW(X2,G1)"
+  ]
+ },
+ "Q2": {
+  "verdict": "HOLDS",
+  "truth_good": 8,
+  "certified": 7,
+  "rate": 0.875,
+  "certified_total": 7,
+  "instances": 15
+ },
+ "Q3": {
+  "verdict": "HOLDS",
+  "wrong": {
+   "five-1000": [],
+   "five-200": []
+  },
+  "constructed": {
+   "five-1000": 21,
+   "five-200": 21
+  }
+ },
+ "Q4": {
+  "verdict": "HOLDS",
+  "five-1000": {
+   "instances": 4,
+   "no_rules": [],
+   "disagreements": {},
+   "below_observed": []
+  },
+  "five-200": {
+   "instances": 4,
+   "no_rules": [],
+   "disagreements": {},
+   "below_observed": []
+  }
+ },
+ "Q5": {
+  "verdict": "HOLDS",
+  "outside_grammar_instances": 11,
+  "with_version_space": 10,
+  "missing": {
+   "DEV-Z-window|left|half": 3231,
+   "DEV-G-within": 1415
+  },
+  "below_observed_all": {
+   "five-1000": [
+    "DEV-Z-window|right|2 / KD{X1<X2}: bound 0, observed 1",
+    "DEV-Z-window|right|2 / KD{X2<X1}: bound 0, observed 3"
+   ],
+   "five-200": [
+    "DEV-G-within / KD{X1<X2}: bound 0, observed 1",
+    "DEV-G-within / KD{X2<X1}: bound 0, observed 1"
+   ]
+  }
+ },
+ "Q6": {
+  "verdict": "HOLDS",
+  "time_s": 849.3,
+  "truth_cpu_s": 231.932168
+ },
+ "descriptive": {
+  "validation": {
+   "given": 8,
+   "valid": 8,
+   "invalid": []
+  },
+  "coverage": {
+   "specs/A-P'": 30,
+   "specs/A-P": 27,
+   "library+specs/A-P'": 30,
+   "library+specs/A-P": 29
+  },
+  "using_held_out_achievers": {
+   "specs/A-P'": 30,
+   "specs/A-P": 27,
+   "library+specs/A-P'": 0,
+   "library+specs/A-P": 0
+  },
+  "B_constructed": {
+   "five-1000": 21,
+   "five-200": 21
+  },
+  "B_no_rules": {
+   "five-1000": [
+    "DEV-O-second"
+   ],
+   "five-200": [
+    "DEV-O-second",
+    "DEV-Z-window|right|2",
+    "DEV-Z-window|right|half"
+   ]
+  },
+  "in_B_grammar": {
+   "DEV-Z-emptyonly": true,
+   "DEV-Z-nearest": false,
+   "DEV-Z-window": false,
+   "DEV-O-nearest": false,
+   "DEV-O-second": false,
+   "DEV-O-empty": true,
+   "DEV-G-mixed": true,
+   "DEV-G-within": false
+  },
+  "B_vs_A": {
+   "five-1000": {
+    "equal": 418,
+    "dangerous": 2,
+    "conservative": 120
+   },
+   "five-200": {
+    "equal": 409,
+    "dangerous": 2,
+    "conservative": 129
+   }
+  }
+ }
+}

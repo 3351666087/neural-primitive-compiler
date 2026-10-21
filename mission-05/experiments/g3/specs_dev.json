@@ -1,0 +1,168 @@
+{
+ "label": "DEV dry-run achievers written by the research session (seen; not held out)",
+ "specs": [
+  {
+   "id": "DEV-Z-emptyonly",
+   "atom_type": "ZONE",
+   "side": "left",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": "ZONE",
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "NOT_ZONE",
+    "pick": "leftmost"
+   }
+  },
+  {
+   "id": "DEV-Z-nearest",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "ZONE",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "NOT_ZONE",
+    "pick": "nearest_to_dest"
+   }
+  },
+  {
+   "id": "DEV-Z-window",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": {
+     "and": [
+      "ZONE",
+      "WINDOW_G1"
+     ]
+    },
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "NOT_ZONE",
+    "pick": "rightmost"
+   }
+  },
+  {
+   "id": "DEV-O-nearest",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "PARTNER"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "RIGHT_OF_DEST",
+    "pick": "nearest_to_dest"
+   }
+  },
+  {
+   "id": "DEV-O-second",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "PARTNER"
+    ],
+    "region": "ALL",
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   }
+  },
+  {
+   "id": "DEV-O-empty",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "PARTNER",
+     "EMPTY"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "RIGHT_OF_DEST",
+    "pick": "rightmost"
+   }
+  },
+  {
+   "id": "DEV-G-mixed",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "WINDOW_G2",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "NOT_WINDOW_G2",
+    "pick": "rightmost"
+   }
+  },
+  {
+   "id": "DEV-G-within",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "WINDOW_G1",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      "NOT_WINDOW_G1",
+      {
+       "within": 2,
+       "of": "DEST"
+      }
+     ]
+    },
+    "pick": "nearest_to_dest"
+   }
+  }
+ ]
+}

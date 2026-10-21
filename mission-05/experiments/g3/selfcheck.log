@@ -1,0 +1,7 @@
+1 selection {'rule_on': 0, 'rule_off': 0, 'checked': 3524604}
+2 controller {'plans': 66, 'instances': 339825, 'differences': 0, 'examples': []}
+3 truth {'damage_mismatches': 0, 'preservation_mismatches': 0, 'applicability_cex': [], 'cpu_s': 131.205849}
+4 A tables {'damage_looser_than_TZ': 0, 'damage_tighter_than_TZ': 0, 'damage_below_truth': 0, 'preservation_lost_vs_TZP2': 0, 'preservation_gained_vs_TZP2': 0, 'preservation_proved_with_cex': 0, 'progress_ok': 12}
+5 constructors {"A-P'": 30, "A-P'_same_as_TZ": True, 'A-P': 29, 'A-P_same_as_TZP2': False, "A-P'_extra": [], "A-P'_missing": [], 'A-P_extra': [], 'A-P_missing': ['M1', 'P2-00', 'P2-03', 'P2-11', 'P2-19', 'P2-20', 'P2-35']}
+6 B {'pairs': {'LIB-O1': 2, 'LIB-O2': 1, 'LIB-Z1-L|left|2': 1, 'LIB-Z1-L|left|half': 1, 'LIB-Z1-R|right|2': 1, 'LIB-Z1-R|right|half': 1, 'LIB-Z2-L|left|2': 6, 'LIB-Z2-L|left|half': 6, 'LIB-Z2-R|right|2': 6, 'LIB-Z2-R|right|half': 6, 'LIB-G1': 4, 'LIB-G2': 4}, 'H1_disagreements': 0, 'stuck_observed': 0, 'progress_ok': 8, 'vs_T7': {'equal': 376, 'dangerous': 0, 'conservative': 56}, 'agreement_with_TZ': 0.8796296296296297, 'simulate_cpu_s': 53.259276}
+exit 0
