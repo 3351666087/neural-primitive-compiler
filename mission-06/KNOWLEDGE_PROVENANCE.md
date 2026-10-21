@@ -25,7 +25,6 @@
 | 编译器定理 T-K 与前提检查 | `COMPILER_THEOREM.md`、`experiments/g0/compile_*.py` | 设计者（本会话） | 约 600 行 | 手证部分未经机器检查 |
 | 环境事实（安装、许可、条款、任务结构） | `ENVIRONMENT_SELECTION.md` | 第三方官方文档 | — | 只读文档、公开卡片与镜像元数据 |
 | 外部环境的预训练知识 | — | 本会话的预训练（WorkArena 2024、WorkArena++ 2024、ALFWorld 2020 均公开） | UNKNOWN | 本会话可能知道任务类型、PDDL 域与常见解法。凡由本会话写入的外部技能、检测器、适配器规则，都记为"设计者 / 预训练先验"，不记为"由证据发现" |
-
 | ALFWorld 文本观察的措辞、动作语义、目标句式（P-ALF-1 的信念判定器） | `experiments/g1/belief.py` | 设计者（本会话对 ALFWorld 的预训练知识）；未对照官方文法文件核实 | 约 150 行 | 判定规则可能与环境的真实语义不符，W_P 正是对它的检验；例如"冷却是否要求冰箱关着"未知 |
 | BrowserGym 观察键白名单、隔离边界 | `experiments/g1/harness.py` | 第三方文档（BrowserGym README）+ 设计者 | 约 120 行 | P3 实测：白名单恰好等于 BrowserGym 的全部观察键 |
 
