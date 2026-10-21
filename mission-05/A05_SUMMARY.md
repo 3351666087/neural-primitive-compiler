@@ -1,6 +1,6 @@
-# Mission 05 总结（草稿）
+# Mission 05 总结
 
-**状态**：IN_PROGRESS。全部工作在 `mission-05` 分支上，未推送，未合并到 main。本文件是草稿，其中的每个数字都可以在 `A05_RESULTS.md`、`G3_RESULTS.md`、`G4_RESULTS.md` 及其引用的 JSON 文件中找到出处。
+**状态**：完成。2026-10-21 经用户同意推送 `mission-05` 并合并到 main。其中的每个数字都可以在 `A05_RESULTS.md`、`G3_RESULTS.md`、`G4_RESULTS.md` 及其引用的 JSON 文件中找到出处。
 
 ## 摘要
 
