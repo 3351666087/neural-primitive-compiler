@@ -1,0 +1,6723 @@
+{
+ "goals": {
+  "T1": {
+   "name": "ORDER(1,2) & ZONE(3,right,2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 7.275003008544445e-05,
+    "cpu": 7.999999999999674e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.516704939305782e-05,
+    "cpu": 4.600000000000437e-05
+   },
+   "wall_s": 0.0
+  },
+  "T2": {
+   "name": "GROUP(1) & ORDER(1,2) & NO_DROP_HAZARD()",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.3208012357354164e-05,
+    "cpu": 4.500000000000337e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 3.170897252857685e-05,
+    "cpu": 3.300000000000525e-05
+   },
+   "wall_s": 0.0
+  },
+  "T3": {
+   "name": "ORDER(1,2) & ORDER(2,3) & ZONE(3,right,2)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       3,
+       "right",
+       2
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 2), (1, 3), (2, 3))"
+     ],
+     [
+      "OUT",
+      "3",
+      "right",
+      "2"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 5.970802158117294e-05,
+    "cpu": 6.0999999999991616e-05,
+    "judge_key": "T3|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"], [[\"ZONE\", 3, \"right\", 2], \"Z1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.0003169591072946787,
+    "cpu": 0.0003219999999997114
+   },
+   "wall_s": 2.1
+  },
+  "M1": {
+   "name": "ORDER(1,2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 2,
+    "weight_checks": 8,
+    "reasons": {
+     "resource": 2
+    },
+    "time_s": 3.720913082361221e-05,
+    "cpu": 3.900000000012227e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 2,
+    "weight_checks": 8,
+    "reasons": {
+     "resource": 2
+    },
+    "time_s": 2.1249987185001373e-05,
+    "cpu": 2.199999999996649e-05
+   },
+   "wall_s": 0.0
+  },
+  "M2": {
+   "name": "ORDER(1,2) & ORDER(2,3)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "weights": [
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 2), (1, 3), (2, 3))"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 4,
+    "time_s": 3.654183819890022e-05,
+    "cpu": 3.799999999998249e-05,
+    "judge_key": "M2|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 7.700012065470219e-05,
+    "cpu": 8.300000000005525e-05
+   },
+   "wall_s": 1.7
+  },
+  "M3": {
+   "name": "ORDER(1,2) & ORDER(2,3) & ZONE(3,right,2)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       3,
+       "right",
+       2
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 2), (1, 3), (2, 3))"
+     ],
+     [
+      "OUT",
+      "3",
+      "right",
+      "2"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 6.620795466005802e-05,
+    "cpu": 6.700000000003925e-05,
+    "judge_key": "M3|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"], [[\"ZONE\", 3, \"right\", 2], \"Z1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00031008291989564896,
+    "cpu": 0.00031399999999948136
+   },
+   "wall_s": 2.0
+  },
+  "M4": {
+   "name": "ORDER(1,2) & ORDER(2,3) & ZONE(3,right,2) & GROUP(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 16,
+    "weight_checks": 1984,
+    "reasons": {
+     "no_weights": 16
+    },
+    "time_s": 0.0009275001939386129,
+    "cpu": 0.0009300000000003195
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 16,
+    "weight_checks": 9984,
+    "reasons": {
+     "no_weights": 16
+    },
+    "time_s": 0.0023101670667529106,
+    "cpu": 0.00231099999999973
+   },
+   "wall_s": 0.0
+  },
+  "P2-00": {
+   "name": "ORDER(1,2) & ORDER(1,3)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "weights": [
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 2), (1, 3))"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 4,
+    "time_s": 3.77921387553215e-05,
+    "cpu": 4.000000000026205e-05,
+    "judge_key": "P2-00|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 1, 3], \"O1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "resource": 4
+    },
+    "time_s": 0.00013841595500707626,
+    "cpu": 0.00014300000000044832
+   },
+   "wall_s": 1.1
+  },
+  "P2-01": {
+   "name": "ORDER(1,2) & ORDER(2,3)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "weights": [
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 2), (1, 3), (2, 3))"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 4,
+    "time_s": 5.820789374411106e-05,
+    "cpu": 6.099999999964467e-05,
+    "judge_key": "P2-01|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.933393888175488e-05,
+    "cpu": 7.300000000043383e-05
+   },
+   "wall_s": 1.7
+  },
+  "P2-02": {
+   "name": "ORDER(1,2) & ORDER(3,1)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ]
+    ],
+    "weights": [
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 2), (3, 1), (3, 2))"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 4,
+    "time_s": 4.937499761581421e-05,
+    "cpu": 5.099999999913507e-05,
+    "judge_key": "P2-02|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 3, 1], \"O1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 8.216686546802521e-05,
+    "cpu": 8.700000000061436e-05
+   },
+   "wall_s": 1.9
+  },
+  "P2-03": {
+   "name": "ORDER(1,2) & ORDER(3,2)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "weights": [
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 2), (3, 2))"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 4,
+    "time_s": 4.124990664422512e-05,
+    "cpu": 4.39999999990448e-05,
+    "judge_key": "P2-03|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 3, 2], \"O1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "resource": 4
+    },
+    "time_s": 0.00014124996960163116,
+    "cpu": 0.00014700000000011926
+   },
+   "wall_s": 1.1
+  },
+  "P2-04": {
+   "name": "ORDER(1,2) & ZONE(1,left,half)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 2),)"
+     ],
+     [
+      "OUT",
+      "1",
+      "left",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 5.979207344353199e-05,
+    "cpu": 6.100000000053285e-05,
+    "judge_key": "P2-04|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ZONE\", 1, \"left\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 2),)"
+     ],
+     [
+      "OUT",
+      "1",
+      "left",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 6.762496195733547e-05,
+    "cpu": 7.100000000015427e-05,
+    "judge_key": "P2-04|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ZONE\", 1, \"left\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "wall_s": 0.9
+  },
+  "P2-05": {
+   "name": "ORDER(1,2) & ZONE(1,right,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.070802919566631e-05,
+    "cpu": 6.199999999978445e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.616705700755119e-05,
+    "cpu": 4.7999999999603915e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-06": {
+   "name": "ORDER(1,2) & ZONE(2,left,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.479203537106514e-05,
+    "cpu": 5.600000000072214e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.900014027953148e-05,
+    "cpu": 4.999999999988347e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-07": {
+   "name": "ORDER(1,2) & ZONE(2,right,half)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 2),)"
+     ],
+     [
+      "OUT",
+      "2",
+      "right",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 5.224999040365219e-05,
+    "cpu": 5.499999999969418e-05,
+    "judge_key": "P2-07|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ZONE\", 2, \"right\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 2),)"
+     ],
+     [
+      "OUT",
+      "2",
+      "right",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 6.804103031754494e-05,
+    "cpu": 7.200000000118223e-05,
+    "judge_key": "P2-07|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ZONE\", 2, \"right\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "wall_s": 0.7
+  },
+  "P2-08": {
+   "name": "ORDER(1,2) & GROUP(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.104190833866596e-05,
+    "cpu": 6.30000000008124e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 3.9624981582164764e-05,
+    "cpu": 4.000000000026205e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-09": {
+   "name": "ORDER(1,2) & GROUP(2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.0625065341591835e-05,
+    "cpu": 5.099999999913507e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 3.9082951843738556e-05,
+    "cpu": 3.899999999923409e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-10": {
+   "name": "ORDER(1,3) & ORDER(2,1)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ]
+    ],
+    "weights": [
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 3), (2, 1), (2, 3))"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 4,
+    "time_s": 4.1665975004434586e-05,
+    "cpu": 4.400000000082116e-05,
+    "judge_key": "P2-10|[[[\"ORDER\", 1, 3], \"O1\"], [[\"ORDER\", 2, 1], \"O1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.791693158447742e-05,
+    "cpu": 7.100000000015427e-05
+   },
+   "wall_s": 1.7
+  },
+  "P2-11": {
+   "name": "ORDER(1,3) & ORDER(2,3)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "weights": [
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 3), (2, 3))"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 4,
+    "time_s": 4.7291163355112076e-05,
+    "cpu": 4.900000000063187e-05,
+    "judge_key": "P2-11|[[[\"ORDER\", 1, 3], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "resource": 4
+    },
+    "time_s": 0.00013733305968344212,
+    "cpu": 0.00014200000000030855
+   },
+   "wall_s": 1.0
+  },
+  "P2-12": {
+   "name": "ORDER(1,3) & ORDER(3,2)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "weights": [
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 2), (1, 3), (3, 2))"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 4,
+    "time_s": 4.483410157263279e-05,
+    "cpu": 4.699999999857596e-05,
+    "judge_key": "P2-12|[[[\"ORDER\", 1, 3], \"O1\"], [[\"ORDER\", 3, 2], \"O1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.166589446365833e-05,
+    "cpu": 6.600000000034356e-05
+   },
+   "wall_s": 1.8
+  },
+  "P2-13": {
+   "name": "ORDER(1,3) & ZONE(1,left,half)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 3),)"
+     ],
+     [
+      "OUT",
+      "1",
+      "left",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 6.11250288784504e-05,
+    "cpu": 6.199999999978445e-05,
+    "judge_key": "P2-13|[[[\"ORDER\", 1, 3], \"O1\"], [[\"ZONE\", 1, \"left\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 3),)"
+     ],
+     [
+      "OUT",
+      "1",
+      "left",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 6.804196164011955e-05,
+    "cpu": 7.300000000043383e-05,
+    "judge_key": "P2-13|[[[\"ORDER\", 1, 3], \"O1\"], [[\"ZONE\", 1, \"left\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "wall_s": 0.9
+  },
+  "P2-14": {
+   "name": "ORDER(1,3) & ZONE(1,right,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.400002166628838e-05,
+    "cpu": 6.600000000034356e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.270905628800392e-05,
+    "cpu": 4.299999999801685e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-15": {
+   "name": "ORDER(1,3) & ZONE(2,left,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.825003609061241e-05,
+    "cpu": 5.9000000000253294e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.7083012759685516e-05,
+    "cpu": 4.7999999999603915e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-16": {
+   "name": "ORDER(1,3) & ZONE(2,right,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.729100666940212e-05,
+    "cpu": 6.199999999978445e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.629185423254967e-05,
+    "cpu": 4.699999999857596e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-17": {
+   "name": "ORDER(1,3) & GROUP(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.208305083215237e-05,
+    "cpu": 5.600000000072214e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 3.970903344452381e-05,
+    "cpu": 3.999999999848569e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-18": {
+   "name": "ORDER(1,3) & GROUP(2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.641719326376915e-05,
+    "cpu": 5.7000000001750095e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.616705700755119e-05,
+    "cpu": 4.700000000212867e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-19": {
+   "name": "ORDER(2,1) & ORDER(2,3)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "weights": [
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((2, 1), (2, 3))"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 4,
+    "time_s": 4.1624996811151505e-05,
+    "cpu": 4.300000000156956e-05,
+    "judge_key": "P2-19|[[[\"ORDER\", 2, 1], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "resource": 4
+    },
+    "time_s": 0.00014220783486962318,
+    "cpu": 0.00014599999999731494
+   },
+   "wall_s": 1.2
+  },
+  "P2-20": {
+   "name": "ORDER(2,1) & ORDER(3,1)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ]
+    ],
+    "weights": [
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((2, 1), (3, 1))"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 4,
+    "time_s": 4.52499371021986e-05,
+    "cpu": 4.800000000315663e-05,
+    "judge_key": "P2-20|[[[\"ORDER\", 2, 1], \"O1\"], [[\"ORDER\", 3, 1], \"O1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "resource": 4
+    },
+    "time_s": 0.00013929209671914577,
+    "cpu": 0.0001430000000013365
+   },
+   "wall_s": 1.2
+  },
+  "P2-21": {
+   "name": "ORDER(2,1) & ORDER(3,2)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "weights": [
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((2, 1), (3, 1), (3, 2))"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 4,
+    "time_s": 4.491698928177357e-05,
+    "cpu": 4.6000000001100716e-05,
+    "judge_key": "P2-21|[[[\"ORDER\", 2, 1], \"O1\"], [[\"ORDER\", 3, 2], \"O1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.820796988904476e-05,
+    "cpu": 7.199999999940587e-05
+   },
+   "wall_s": 1.9
+  },
+  "P2-22": {
+   "name": "ORDER(2,1) & ZONE(1,left,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.483308970928192e-05,
+    "cpu": 6.69999999978188e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.337518475949764e-05,
+    "cpu": 4.39999999990448e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-23": {
+   "name": "ORDER(2,1) & ZONE(1,right,half)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((2, 1),)"
+     ],
+     [
+      "OUT",
+      "1",
+      "right",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 5.679088644683361e-05,
+    "cpu": 5.800000000277805e-05,
+    "judge_key": "P2-23|[[[\"ORDER\", 2, 1], \"O1\"], [[\"ZONE\", 1, \"right\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((2, 1),)"
+     ],
+     [
+      "OUT",
+      "1",
+      "right",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 6.924988701939583e-05,
+    "cpu": 7.300000000043383e-05,
+    "judge_key": "P2-23|[[[\"ORDER\", 2, 1], \"O1\"], [[\"ZONE\", 1, \"right\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "wall_s": 0.7
+  },
+  "P2-24": {
+   "name": "ORDER(2,1) & ZONE(2,left,half)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((2, 1),)"
+     ],
+     [
+      "OUT",
+      "2",
+      "left",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 5.6499848142266273e-05,
+    "cpu": 5.9000000000253294e-05,
+    "judge_key": "P2-24|[[[\"ORDER\", 2, 1], \"O1\"], [[\"ZONE\", 2, \"left\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((2, 1),)"
+     ],
+     [
+      "OUT",
+      "2",
+      "left",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 6.91248569637537e-05,
+    "cpu": 7.299999999688112e-05,
+    "judge_key": "P2-24|[[[\"ORDER\", 2, 1], \"O1\"], [[\"ZONE\", 2, \"left\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "wall_s": 1.0
+  },
+  "P2-25": {
+   "name": "ORDER(2,1) & ZONE(2,right,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.0416990891098976e-05,
+    "cpu": 6.30000000008124e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.2208004742860794e-05,
+    "cpu": 4.299999999801685e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-26": {
+   "name": "ORDER(2,1) & GROUP(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.112518556416035e-05,
+    "cpu": 5.200000000016303e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 3.937492147088051e-05,
+    "cpu": 4.0000000002038405e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-27": {
+   "name": "ORDER(2,1) & GROUP(2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.6582968682050705e-05,
+    "cpu": 5.9000000000253294e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 3.8708094507455826e-05,
+    "cpu": 3.900000000101045e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-28": {
+   "name": "ORDER(2,3) & ORDER(3,1)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ]
+    ],
+    "weights": [
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((2, 1), (2, 3), (3, 1))"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 4,
+    "time_s": 4.483410157263279e-05,
+    "cpu": 4.699999999857596e-05,
+    "judge_key": "P2-28|[[[\"ORDER\", 2, 3], \"O1\"], [[\"ORDER\", 3, 1], \"O1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.787502206861973e-05,
+    "cpu": 7.399999999790907e-05
+   },
+   "wall_s": 1.8
+  },
+  "P2-29": {
+   "name": "ORDER(2,3) & ZONE(1,left,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.883405148983002e-05,
+    "cpu": 7.199999999940587e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.75000124424696e-05,
+    "cpu": 4.7999999999603915e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-30": {
+   "name": "ORDER(2,3) & ZONE(1,right,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.10831193625927e-05,
+    "cpu": 6.299999999725969e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.6083005145192146e-05,
+    "cpu": 4.700000000212867e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-31": {
+   "name": "ORDER(2,3) & ZONE(2,left,half)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((2, 3),)"
+     ],
+     [
+      "OUT",
+      "2",
+      "left",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 5.433312617242336e-05,
+    "cpu": 5.7000000001750095e-05,
+    "judge_key": "P2-31|[[[\"ORDER\", 2, 3], \"O1\"], [[\"ZONE\", 2, \"left\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((2, 3),)"
+     ],
+     [
+      "OUT",
+      "2",
+      "left",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 6.824987940490246e-05,
+    "cpu": 7.199999999940587e-05,
+    "judge_key": "P2-31|[[[\"ORDER\", 2, 3], \"O1\"], [[\"ZONE\", 2, \"left\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "wall_s": 0.9
+  },
+  "P2-32": {
+   "name": "ORDER(2,3) & ZONE(2,right,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.095808930695057e-05,
+    "cpu": 6.199999999978445e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.287506453692913e-05,
+    "cpu": 4.39999999990448e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-33": {
+   "name": "ORDER(2,3) & GROUP(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.787494592368603e-05,
+    "cpu": 5.800000000277805e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.5165885239839554e-05,
+    "cpu": 4.500000000007276e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-34": {
+   "name": "ORDER(2,3) & GROUP(2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.24579081684351e-05,
+    "cpu": 5.3999999998666226e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 3.866688348352909e-05,
+    "cpu": 3.900000000101045e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-35": {
+   "name": "ORDER(3,1) & ORDER(3,2)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "weights": [
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((3, 1), (3, 2))"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 4,
+    "time_s": 3.695813938975334e-05,
+    "cpu": 3.799999999998249e-05,
+    "judge_key": "P2-35|[[[\"ORDER\", 3, 1], \"O1\"], [[\"ORDER\", 3, 2], \"O1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "resource": 4
+    },
+    "time_s": 0.00013816612772643566,
+    "cpu": 0.0001430000000013365
+   },
+   "wall_s": 1.3
+  },
+  "P2-36": {
+   "name": "ORDER(3,1) & ZONE(1,left,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.124982610344887e-05,
+    "cpu": 6.299999999725969e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.1791005060076714e-05,
+    "cpu": 4.300000000156956e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-37": {
+   "name": "ORDER(3,1) & ZONE(1,right,half)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((3, 1),)"
+     ],
+     [
+      "OUT",
+      "1",
+      "right",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 5.470798350870609e-05,
+    "cpu": 6.000000000128125e-05,
+    "judge_key": "P2-37|[[[\"ORDER\", 3, 1], \"O1\"], [[\"ZONE\", 1, \"right\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((3, 1),)"
+     ],
+     [
+      "OUT",
+      "1",
+      "right",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 7.316609844565392e-05,
+    "cpu": 7.799999999846818e-05,
+    "judge_key": "P2-37|[[[\"ORDER\", 3, 1], \"O1\"], [[\"ZONE\", 1, \"right\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "wall_s": 0.7
+  },
+  "P2-38": {
+   "name": "ORDER(3,1) & ZONE(2,left,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 7.820804603397846e-05,
+    "cpu": 8.00000000005241e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.758313298225403e-05,
+    "cpu": 5.000000000165983e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-39": {
+   "name": "ORDER(3,1) & ZONE(2,right,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.341701373457909e-05,
+    "cpu": 6.399999999828765e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.6958914026618004e-05,
+    "cpu": 4.7999999999603915e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-40": {
+   "name": "ORDER(3,1) & GROUP(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.5833952501416206e-05,
+    "cpu": 5.7000000001750095e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.03339508920908e-05,
+    "cpu": 4.099999999951365e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-41": {
+   "name": "ORDER(3,1) & GROUP(2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.77080063521862e-05,
+    "cpu": 6.000000000128125e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.624994471669197e-05,
+    "cpu": 4.699999999857596e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-42": {
+   "name": "ORDER(3,2) & ZONE(1,left,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.77080063521862e-05,
+    "cpu": 6.000000000128125e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.595797508955002e-05,
+    "cpu": 4.6000000001100716e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-43": {
+   "name": "ORDER(3,2) & ZONE(1,right,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.8999983593821526e-05,
+    "cpu": 6.000000000128125e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.537496715784073e-05,
+    "cpu": 4.6000000001100716e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-44": {
+   "name": "ORDER(3,2) & ZONE(2,left,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.050003528594971e-05,
+    "cpu": 5.299999999763827e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.2625004425644875e-05,
+    "cpu": 4.300000000156956e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-45": {
+   "name": "ORDER(3,2) & ZONE(2,right,half)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((3, 2),)"
+     ],
+     [
+      "OUT",
+      "2",
+      "right",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 5.512498319149017e-05,
+    "cpu": 5.600000000072214e-05,
+    "judge_key": "P2-45|[[[\"ORDER\", 3, 2], \"O1\"], [[\"ZONE\", 2, \"right\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((3, 2),)"
+     ],
+     [
+      "OUT",
+      "2",
+      "right",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 6.629200652241707e-05,
+    "cpu": 7.099999999837792e-05,
+    "judge_key": "P2-45|[[[\"ORDER\", 3, 2], \"O1\"], [[\"ZONE\", 2, \"right\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "wall_s": 0.7
+  },
+  "P2-46": {
+   "name": "ORDER(3,2) & GROUP(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 6.425008177757263e-05,
+    "cpu": 6.500000000286832e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.512513987720013e-05,
+    "cpu": 4.500000000007276e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-47": {
+   "name": "ORDER(3,2) & GROUP(2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.5999960750341415e-05,
+    "cpu": 5.7000000001750095e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 3.887503407895565e-05,
+    "cpu": 3.900000000101045e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-48": {
+   "name": "ZONE(1,left,half) & ZONE(2,left,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.237502045929432e-05,
+    "cpu": 5.299999999763827e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 3.99160198867321e-05,
+    "cpu": 4.099999999951365e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-49": {
+   "name": "ZONE(1,left,half) & ZONE(2,right,half)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "OUT",
+      "1",
+      "left",
+      "half"
+     ],
+     [
+      "OUT",
+      "2",
+      "right",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 5.470798350870609e-05,
+    "cpu": 6.199999999978445e-05,
+    "judge_key": "P2-49|[[[\"ZONE\", 1, \"left\", \"half\"], \"Z1\"], [[\"ZONE\", 2, \"right\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "OUT",
+      "1",
+      "left",
+      "half"
+     ],
+     [
+      "OUT",
+      "2",
+      "right",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 6.029196083545685e-05,
+    "cpu": 6.49999999993156e-05,
+    "judge_key": "P2-49|[[[\"ZONE\", 1, \"left\", \"half\"], \"Z1\"], [[\"ZONE\", 2, \"right\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "wall_s": 0.8
+  },
+  "P2-50": {
+   "name": "ZONE(1,left,half) & GROUP(1)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z2"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ]
+    ],
+    "weights": [
+     0,
+     1
+    ],
+    "templates": [
+     [
+      "OUT",
+      "1",
+      "left",
+      "half"
+     ],
+     [
+      "OOW",
+      "1",
+      "G1"
+     ]
+    ],
+    "candidates": 3,
+    "weight_checks": 72,
+    "time_s": 8.179200813174248e-05,
+    "cpu": 8.300000000005525e-05,
+    "judge_key": "P2-50|[[[\"ZONE\", 1, \"left\", \"half\"], \"Z2\"], [[\"GROUP\", 1], \"G1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z2"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ]
+    ],
+    "weights": [
+     0,
+     1
+    ],
+    "templates": [
+     [
+      "OUT",
+      "1",
+      "left",
+      "half"
+     ],
+     [
+      "OOW",
+      "1",
+      "G1"
+     ]
+    ],
+    "candidates": 3,
+    "weight_checks": 72,
+    "time_s": 8.962512947618961e-05,
+    "cpu": 9.299999999967667e-05,
+    "judge_key": "P2-50|[[[\"ZONE\", 1, \"left\", \"half\"], \"Z2\"], [[\"GROUP\", 1], \"G1\"]]",
+    "failures": 0
+   },
+   "wall_s": 0.9
+  },
+  "P2-51": {
+   "name": "ZONE(1,left,half) & GROUP(2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.012494511902332e-05,
+    "cpu": 5.099999999913507e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 3.920914605259895e-05,
+    "cpu": 3.999999999848569e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-52": {
+   "name": "ZONE(1,right,half) & ZONE(2,left,half)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "OUT",
+      "1",
+      "right",
+      "half"
+     ],
+     [
+      "OUT",
+      "2",
+      "left",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 4.950002767145634e-05,
+    "cpu": 5.099999999913507e-05,
+    "judge_key": "P2-52|[[[\"ZONE\", 1, \"right\", \"half\"], \"Z1\"], [[\"ZONE\", 2, \"left\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "OUT",
+      "1",
+      "right",
+      "half"
+     ],
+     [
+      "OUT",
+      "2",
+      "left",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 6.179185584187508e-05,
+    "cpu": 6.700000000137152e-05,
+    "judge_key": "P2-52|[[[\"ZONE\", 1, \"right\", \"half\"], \"Z1\"], [[\"ZONE\", 2, \"left\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "wall_s": 0.8
+  },
+  "P2-53": {
+   "name": "ZONE(1,right,half) & ZONE(2,right,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.191704258322716e-05,
+    "cpu": 5.3999999998666226e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 3.758398815989494e-05,
+    "cpu": 3.900000000101045e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-54": {
+   "name": "ZONE(1,right,half) & GROUP(1)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z2"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G2"
+     ]
+    ],
+    "weights": [
+     0,
+     1
+    ],
+    "templates": [
+     [
+      "OUT",
+      "1",
+      "right",
+      "half"
+     ],
+     [
+      "OOW",
+      "1",
+      "G2"
+     ]
+    ],
+    "candidates": 4,
+    "weight_checks": 96,
+    "time_s": 9.958306327462196e-05,
+    "cpu": 0.0001049999999978013,
+    "judge_key": "P2-54|[[[\"ZONE\", 1, \"right\", \"half\"], \"Z2\"], [[\"GROUP\", 1], \"G2\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z2"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G2"
+     ]
+    ],
+    "weights": [
+     0,
+     1
+    ],
+    "templates": [
+     [
+      "OUT",
+      "1",
+      "right",
+      "half"
+     ],
+     [
+      "OOW",
+      "1",
+      "G2"
+     ]
+    ],
+    "candidates": 4,
+    "weight_checks": 96,
+    "time_s": 0.00010062498040497303,
+    "cpu": 0.00010400000000032605,
+    "judge_key": "P2-54|[[[\"ZONE\", 1, \"right\", \"half\"], \"Z2\"], [[\"GROUP\", 1], \"G2\"]]",
+    "failures": 0
+   },
+   "wall_s": 0.9
+  },
+  "P2-55": {
+   "name": "ZONE(1,right,half) & GROUP(2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.987511783838272e-05,
+    "cpu": 5.200000000371574e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 3.974977880716324e-05,
+    "cpu": 4.0999999995960934e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-56": {
+   "name": "ZONE(2,left,half) & GROUP(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 5.462486296892166e-05,
+    "cpu": 5.600000000072214e-05
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 4.0207989513874054e-05,
+    "cpu": 3.999999999848569e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-57": {
+   "name": "ZONE(2,left,half) & GROUP(2)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z2"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G1"
+     ]
+    ],
+    "weights": [
+     0,
+     1
+    ],
+    "templates": [
+     [
+      "OUT",
+      "2",
+      "left",
+      "half"
+     ],
+     [
+      "OOW",
+      "2",
+      "G1"
+     ]
+    ],
+    "candidates": 3,
+    "weight_checks": 72,
+    "time_s": 8.104206062853336e-05,
+    "cpu": 8.300000000360797e-05,
+    "judge_key": "P2-57|[[[\"ZONE\", 2, \"left\", \"half\"], \"Z2\"], [[\"GROUP\", 2], \"G1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z2"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G1"
+     ]
+    ],
+    "weights": [
+     0,
+     1
+    ],
+    "templates": [
+     [
+      "OUT",
+      "2",
+      "left",
+      "half"
+     ],
+     [
+      "OOW",
+      "2",
+      "G1"
+     ]
+    ],
+    "candidates": 3,
+    "weight_checks": 72,
+    "time_s": 9.300000965595245e-05,
+    "cpu": 9.900000000584441e-05,
+    "judge_key": "P2-57|[[[\"ZONE\", 2, \"left\", \"half\"], \"Z2\"], [[\"GROUP\", 2], \"G1\"]]",
+    "failures": 0
+   },
+   "wall_s": 0.9
+  },
+  "P2-58": {
+   "name": "ZONE(2,right,half) & GROUP(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 9.787501767277718e-05,
+    "cpu": 0.0001010000000007949
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 96,
+    "reasons": {
+     "no_weights": 4
+    },
+    "time_s": 3.641704097390175e-05,
+    "cpu": 3.6999999998954536e-05
+   },
+   "wall_s": 0.0
+  },
+  "P2-59": {
+   "name": "ZONE(2,right,half) & GROUP(2)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z2"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G2"
+     ]
+    ],
+    "weights": [
+     0,
+     1
+    ],
+    "templates": [
+     [
+      "OUT",
+      "2",
+      "right",
+      "half"
+     ],
+     [
+      "OOW",
+      "2",
+      "G2"
+     ]
+    ],
+    "candidates": 4,
+    "weight_checks": 96,
+    "time_s": 9.345798753201962e-05,
+    "cpu": 9.599999999920783e-05,
+    "judge_key": "P2-59|[[[\"ZONE\", 2, \"right\", \"half\"], \"Z2\"], [[\"GROUP\", 2], \"G2\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z2"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G2"
+     ]
+    ],
+    "weights": [
+     0,
+     1
+    ],
+    "templates": [
+     [
+      "OUT",
+      "2",
+      "right",
+      "half"
+     ],
+     [
+      "OOW",
+      "2",
+      "G2"
+     ]
+    ],
+    "candidates": 4,
+    "weight_checks": 96,
+    "time_s": 0.00010504201054573059,
+    "cpu": 0.00011000000000649379,
+    "judge_key": "P2-59|[[[\"ZONE\", 2, \"right\", \"half\"], \"Z2\"], [[\"GROUP\", 2], \"G2\"]]",
+    "failures": 0
+   },
+   "wall_s": 0.9
+  },
+  "P2-60": {
+   "name": "GROUP(1) & GROUP(2)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G2"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "OOW",
+      "1",
+      "G1"
+     ],
+     [
+      "OOW",
+      "2",
+      "G2"
+     ]
+    ],
+    "candidates": 2,
+    "weight_checks": 48,
+    "time_s": 5.4958974942564964e-05,
+    "cpu": 5.600000000072214e-05,
+    "judge_key": "P2-60|[[[\"GROUP\", 1], \"G1\"], [[\"GROUP\", 2], \"G2\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G2"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "OOW",
+      "1",
+      "G1"
+     ],
+     [
+      "OOW",
+      "2",
+      "G2"
+     ]
+    ],
+    "candidates": 2,
+    "weight_checks": 48,
+    "time_s": 6.958306767046452e-05,
+    "cpu": 7.399999999790907e-05,
+    "judge_key": "P2-60|[[[\"GROUP\", 1], \"G1\"], [[\"GROUP\", 2], \"G2\"]]",
+    "failures": 0
+   },
+   "wall_s": 1.4
+  },
+  "P3-00": {
+   "name": "ORDER(3,2) & GROUP(1) & GROUP(2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.0003595419693738222,
+    "cpu": 0.000362000000002638
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00032445904798805714,
+    "cpu": 0.00032500000000368345
+   },
+   "wall_s": 0.0
+  },
+  "P3-01": {
+   "name": "ORDER(2,3) & ZONE(1,right,half) & ZONE(2,left,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.0003980831243097782,
+    "cpu": 0.0003989999999944871
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.0005079999100416899,
+    "cpu": 0.00048599999999510146
+   },
+   "wall_s": 0.0
+  },
+  "P3-02": {
+   "name": "ORDER(1,2) & ORDER(2,3) & ZONE(1,left,half)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 2), (1, 3), (2, 3))"
+     ],
+     [
+      "OUT",
+      "1",
+      "left",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 6.791693158447742e-05,
+    "cpu": 7.099999999837792e-05,
+    "judge_key": "P3-02|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"], [[\"ZONE\", 1, \"left\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00031174998730421066,
+    "cpu": 0.0003169999999954598
+   },
+   "wall_s": 2.2
+  },
+  "P3-03": {
+   "name": "ORDER(1,2) & ORDER(3,1) & ORDER(3,2)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "weights": [
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 2), (3, 1), (3, 2))"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 4,
+    "time_s": 5.5416952818632126e-05,
+    "cpu": 5.800000000277805e-05,
+    "judge_key": "P3-03|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 3, 1], \"O1\"], [[\"ORDER\", 3, 2], \"O1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00032691704109311104,
+    "cpu": 0.000332000000000221
+   },
+   "wall_s": 2.2
+  },
+  "P3-04": {
+   "name": "ORDER(1,2) & ZONE(2,left,half) & GROUP(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00034245802089571953,
+    "cpu": 0.0003450000000029263
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00030124979093670845,
+    "cpu": 0.000301999999997804
+   },
+   "wall_s": 0.0
+  },
+  "P3-05": {
+   "name": "ORDER(1,2) & ZONE(1,left,half) & GROUP(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00038308417424559593,
+    "cpu": 0.00038400000000393675
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.0003740841057151556,
+    "cpu": 0.00037499999999823785
+   },
+   "wall_s": 0.0
+  },
+  "P3-06": {
+   "name": "ORDER(3,1) & ORDER(3,2) & ZONE(2,left,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 192,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.0001460839994251728,
+    "cpu": 0.00014799999999581814
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.0005111249629408121,
+    "cpu": 0.0005129999999979873
+   },
+   "wall_s": 0.0
+  },
+  "P3-07": {
+   "name": "ORDER(1,2) & ORDER(3,2) & ZONE(1,right,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 192,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00012562493793666363,
+    "cpu": 0.00012699999999910005
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00043079210445284843,
+    "cpu": 0.00043099999999896
+   },
+   "wall_s": 0.0
+  },
+  "P3-08": {
+   "name": "ORDER(1,3) & ZONE(2,right,half) & GROUP(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00034220796078443527,
+    "cpu": 0.0003430000000008704
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.0003203749656677246,
+    "cpu": 0.00032099999999957163
+   },
+   "wall_s": 0.0
+  },
+  "P3-09": {
+   "name": "ORDER(3,1) & GROUP(1) & GROUP(2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00031704199500381947,
+    "cpu": 0.00031900000000462114
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00030474993400275707,
+    "cpu": 0.0003049999999973352
+   },
+   "wall_s": 0.0
+  },
+  "P3-10": {
+   "name": "ORDER(2,3) & ZONE(2,right,half) & GROUP(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00038591702468693256,
+    "cpu": 0.0003870000000034679
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00036641606129705906,
+    "cpu": 0.0003659999999996444
+   },
+   "wall_s": 0.0
+  },
+  "P3-11": {
+   "name": "ORDER(1,3) & ORDER(2,3) & ZONE(2,left,half)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 3), (2, 3))"
+     ],
+     [
+      "OUT",
+      "2",
+      "left",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 6.679189391434193e-05,
+    "cpu": 6.799999999884676e-05,
+    "judge_key": "P3-11|[[[\"ORDER\", 1, 3], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"], [[\"ZONE\", 2, \"left\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.0005922920536249876,
+    "cpu": 0.0005969999999990705
+   },
+   "wall_s": 1.9
+  },
+  "P3-12": {
+   "name": "ORDER(1,3) & ORDER(2,3) & ZONE(2,right,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 192,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00016566691920161247,
+    "cpu": 0.00016800000000216642
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.000516790896654129,
+    "cpu": 0.0005170000000020991
+   },
+   "wall_s": 0.0
+  },
+  "P3-13": {
+   "name": "ORDER(1,3) & ORDER(2,1) & ZONE(2,left,half)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "weights": [
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 3), (2, 1), (2, 3))"
+     ],
+     [
+      "OUT",
+      "2",
+      "left",
+      "half"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 24,
+    "time_s": 6.975000724196434e-05,
+    "cpu": 7.200000000295859e-05,
+    "judge_key": "P3-13|[[[\"ORDER\", 1, 3], \"O1\"], [[\"ORDER\", 2, 1], \"O1\"], [[\"ZONE\", 2, \"left\", \"half\"], \"Z1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.0003215000033378601,
+    "cpu": 0.0003260000000011587
+   },
+   "wall_s": 2.3
+  },
+  "P3-14": {
+   "name": "ZONE(2,left,half) & GROUP(1) & GROUP(2)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z2"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G2"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G1"
+     ]
+    ],
+    "weights": [
+     0,
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "OUT",
+      "2",
+      "left",
+      "half"
+     ],
+     [
+      "OOW",
+      "1",
+      "G2"
+     ],
+     [
+      "OOW",
+      "2",
+      "G1"
+     ]
+    ],
+    "candidates": 7,
+    "weight_checks": 868,
+    "time_s": 0.0003402091097086668,
+    "cpu": 0.0003430000000008704,
+    "judge_key": "P3-14|[[[\"ZONE\", 2, \"left\", \"half\"], \"Z2\"], [[\"GROUP\", 1], \"G2\"], [[\"GROUP\", 2], \"G1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z2"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G2"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G1"
+     ]
+    ],
+    "weights": [
+     0,
+     1,
+     1
+    ],
+    "templates": [
+     [
+      "OUT",
+      "2",
+      "left",
+      "half"
+     ],
+     [
+      "OOW",
+      "1",
+      "G2"
+     ],
+     [
+      "OOW",
+      "2",
+      "G1"
+     ]
+    ],
+    "candidates": 7,
+    "weight_checks": 868,
+    "time_s": 0.0003674579784274101,
+    "cpu": 0.0003719999999987067,
+    "judge_key": "P3-14|[[[\"ZONE\", 2, \"left\", \"half\"], \"Z2\"], [[\"GROUP\", 1], \"G2\"], [[\"GROUP\", 2], \"G1\"]]",
+    "failures": 0
+   },
+   "wall_s": 1.8
+  },
+  "P3-15": {
+   "name": "ORDER(1,2) & ORDER(1,3) & ORDER(3,2)",
+   "tmpl": {
+    "status": "CONSTRUCTED",
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "weights": [
+     1
+    ],
+    "templates": [
+     [
+      "KD",
+      "((1, 2), (1, 3), (3, 2))"
+     ]
+    ],
+    "candidates": 1,
+    "weight_checks": 4,
+    "time_s": 5.408306606113911e-05,
+    "cpu": 5.600000000072214e-05,
+    "judge_key": "P3-15|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 1, 3], \"O1\"], [[\"ORDER\", 3, 2], \"O1\"]]",
+    "failures": 0
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.0005218749865889549,
+    "cpu": 0.0005269999999981678
+   },
+   "wall_s": 1.8
+  },
+  "P3-16": {
+   "name": "ORDER(3,2) & ZONE(1,right,half) & GROUP(2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00035679200664162636,
+    "cpu": 0.0003589999999960014
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.0003269161097705364,
+    "cpu": 0.0003280000000032146
+   },
+   "wall_s": 0.0
+  },
+  "P3-17": {
+   "name": "ORDER(3,2) & ZONE(1,left,half) & ZONE(2,left,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.0003688340075314045,
+    "cpu": 0.0003699999999966508
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.0003471248783171177,
+    "cpu": 0.0003489999999999327
+   },
+   "wall_s": 0.0
+  },
+  "P3-18": {
+   "name": "ORDER(1,2) & ZONE(1,left,half) & ZONE(2,left,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00043854210525751114,
+    "cpu": 0.0004409999999950287
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00040429201908409595,
+    "cpu": 0.0004060000000052355
+   },
+   "wall_s": 0.0
+  },
+  "P3-19": {
+   "name": "ORDER(1,3) & ZONE(1,right,half) & ZONE(2,left,half)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.00037112506106495857,
+    "cpu": 0.00037299999999618194
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 8,
+    "weight_checks": 992,
+    "reasons": {
+     "no_weights": 8
+    },
+    "time_s": 0.0003482911270111799,
+    "cpu": 0.0003490000000070381
+   },
+   "wall_s": 0.0
+  },
+  "PN-00": {
+   "name": "ORDER(1,2) & ZONE(2,left,half) & NO_PICK(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 8.541857823729515e-06,
+    "cpu": 8.999999998593466e-06
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 8.709030225872993e-06,
+    "cpu": 8.999999998593466e-06
+   },
+   "wall_s": 0.0
+  },
+  "PN-01": {
+   "name": "ZONE(2,right,half) & GROUP(2) & NO_PICK(2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 6.207963451743126e-06,
+    "cpu": 6.999999996537554e-06
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 6.749993190169334e-06,
+    "cpu": 6.999999996537554e-06
+   },
+   "wall_s": 0.0
+  },
+  "PN-02": {
+   "name": "ORDER(2,3) & ZONE(1,left,half) & NO_PICK(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 6.332993507385254e-06,
+    "cpu": 7.000000003642981e-06
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 3.2919924706220627e-06,
+    "cpu": 3.999999997006398e-06
+   },
+   "wall_s": 0.0
+  },
+  "PN-03": {
+   "name": "ORDER(1,2) & ZONE(1,right,half) & NO_PICK(2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 7.292022928595543e-06,
+    "cpu": 6.999999996537554e-06
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 3.4580007195472717e-06,
+    "cpu": 3.999999997006398e-06
+   },
+   "wall_s": 0.0
+  },
+  "PN-04": {
+   "name": "ORDER(1,2) & ORDER(1,3) & NO_PICK(3)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 5.667097866535187e-06,
+    "cpu": 5.999999999062311e-06
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 7.541151717305183e-06,
+    "cpu": 8.000000001118224e-06
+   },
+   "wall_s": 0.0
+  },
+  "PN-05": {
+   "name": "ORDER(3,1) & GROUP(2) & NO_PICK(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 5.082925781607628e-06,
+    "cpu": 7.000000003642981e-06
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 3.3748801797628403e-06,
+    "cpu": 3.999999997006398e-06
+   },
+   "wall_s": 0.0
+  },
+  "PN-06": {
+   "name": "ORDER(2,1) & ORDER(3,1) & NO_PICK(2)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 4.790956154465675e-06,
+    "cpu": 5.000000001587068e-06
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 3.2919924706220627e-06,
+    "cpu": 4.0000000041118255e-06
+   },
+   "wall_s": 0.0
+  },
+  "PN-07": {
+   "name": "ZONE(1,left,half) & GROUP(1) & NO_PICK(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 4.250090569257736e-06,
+    "cpu": 4.0000000041118255e-06
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 3.00002284348011e-06,
+    "cpu": 4.0000000041118255e-06
+   },
+   "wall_s": 0.0
+  },
+  "PN-08": {
+   "name": "ORDER(2,1) & ZONE(2,right,half) & NO_PICK(1)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 4.749977961182594e-06,
+    "cpu": 6.999999996537554e-06
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 3.250082954764366e-06,
+    "cpu": 2.9999999995311555e-06
+   },
+   "wall_s": 0.0
+  },
+  "PN-09": {
+   "name": "ORDER(3,1) & GROUP(1) & NO_PICK(3)",
+   "tmpl": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 4.417030140757561e-06,
+    "cpu": 5.999999999062311e-06
+   },
+   "lin": {
+    "status": "OUT_OF_CLASS",
+    "plan": null,
+    "candidates": 4,
+    "weight_checks": 0,
+    "reasons": {
+     "applicability": 4
+    },
+    "time_s": 3.0831433832645416e-06,
+    "cpu": 3.999999997006398e-06
+   },
+   "wall_s": 0.0
+  }
+ },
+ "judged": {
+  "T3|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"], [[\"ZONE\", 3, \"right\", 2], \"Z1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4050,
+     "counts": {
+      "SUCCESS": 4050
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 68
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 90
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 110
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 173
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 255
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 297
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 31014,
+    "counts": {
+     "SUCCESS": 31014
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 104
+   },
+   "failures": 0
+  },
+  "M2|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4100,
+     "counts": {
+      "SUCCESS": 4100
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 68
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 85
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 110
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 171
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 259
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 311
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32304,
+    "counts": {
+     "SUCCESS": 32304
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 104
+   },
+   "failures": 0
+  },
+  "M3|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"], [[\"ZONE\", 3, \"right\", 2], \"Z1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4050,
+     "counts": {
+      "SUCCESS": 4050
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 68
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 90
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 110
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 173
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 255
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 297
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 31014,
+    "counts": {
+     "SUCCESS": 31014
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 104
+   },
+   "failures": 0
+  },
+  "P2-00|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 1, 3], \"O1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4100,
+     "counts": {
+      "SUCCESS": 4100
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 45
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 54
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 60
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 103
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 165
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 178
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32304,
+    "counts": {
+     "SUCCESS": 32304
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 54
+   },
+   "failures": 0
+  },
+  "P2-01|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4100,
+     "counts": {
+      "SUCCESS": 4100
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 68
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 85
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 110
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 171
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 259
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 311
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32304,
+    "counts": {
+     "SUCCESS": 32304
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 104
+   },
+   "failures": 0
+  },
+  "P2-02|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 3, 1], \"O1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4100,
+     "counts": {
+      "SUCCESS": 4100
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 65
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 77
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 90
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 197
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 245
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 343
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32304,
+    "counts": {
+     "SUCCESS": 32304
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 97
+   },
+   "failures": 0
+  },
+  "P2-03|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 3, 2], \"O1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4100,
+     "counts": {
+      "SUCCESS": 4100
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 42
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 50
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 59
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 121
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 142
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 173
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32304,
+    "counts": {
+     "SUCCESS": 32304
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 51
+   },
+   "failures": 0
+  },
+  "P2-04|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ZONE\", 1, \"left\", \"half\"], \"Z1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 1825,
+     "counts": {
+      "SUCCESS": 1825
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 45
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 56
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 58
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 121
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 133
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 186
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 11358,
+    "counts": {
+     "SUCCESS": 11358
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 58
+   },
+   "failures": 0
+  },
+  "P2-07|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ZONE\", 2, \"right\", \"half\"], \"Z1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 1825,
+     "counts": {
+      "SUCCESS": 1825
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 36
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 50
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 58
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 101
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 124
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 185
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 11358,
+    "counts": {
+     "SUCCESS": 11358
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 51
+   },
+   "failures": 0
+  },
+  "P2-10|[[[\"ORDER\", 1, 3], \"O1\"], [[\"ORDER\", 2, 1], \"O1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4100,
+     "counts": {
+      "SUCCESS": 4100
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 65
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 87
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 89
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 179
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 240
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 284
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32304,
+    "counts": {
+     "SUCCESS": 32304
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 97
+   },
+   "failures": 0
+  },
+  "P2-11|[[[\"ORDER\", 1, 3], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4100,
+     "counts": {
+      "SUCCESS": 4100
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 42
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 51
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 58
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 104
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 130
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 162
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32304,
+    "counts": {
+     "SUCCESS": 32304
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 51
+   },
+   "failures": 0
+  },
+  "P2-12|[[[\"ORDER\", 1, 3], \"O1\"], [[\"ORDER\", 3, 2], \"O1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4100,
+     "counts": {
+      "SUCCESS": 4100
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 68
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 94
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 117
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 209
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 277
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 297
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32304,
+    "counts": {
+     "SUCCESS": 32304
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 104
+   },
+   "failures": 0
+  },
+  "P2-13|[[[\"ORDER\", 1, 3], \"O1\"], [[\"ZONE\", 1, \"left\", \"half\"], \"Z1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 1825,
+     "counts": {
+      "SUCCESS": 1825
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 45
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 56
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 58
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 121
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 133
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 186
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 11358,
+    "counts": {
+     "SUCCESS": 11358
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 58
+   },
+   "failures": 0
+  },
+  "P2-19|[[[\"ORDER\", 2, 1], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4100,
+     "counts": {
+      "SUCCESS": 4100
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 45
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 51
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 63
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 109
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 142
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 173
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32304,
+    "counts": {
+     "SUCCESS": 32304
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 54
+   },
+   "failures": 0
+  },
+  "P2-20|[[[\"ORDER\", 2, 1], \"O1\"], [[\"ORDER\", 3, 1], \"O1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4100,
+     "counts": {
+      "SUCCESS": 4100
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 42
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 50
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 59
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 101
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 157
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 177
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32304,
+    "counts": {
+     "SUCCESS": 32304
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 51
+   },
+   "failures": 0
+  },
+  "P2-21|[[[\"ORDER\", 2, 1], \"O1\"], [[\"ORDER\", 3, 2], \"O1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4100,
+     "counts": {
+      "SUCCESS": 4100
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 65
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 94
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 105
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 185
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 267
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 346
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32304,
+    "counts": {
+     "SUCCESS": 32304
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 97
+   },
+   "failures": 0
+  },
+  "P2-23|[[[\"ORDER\", 2, 1], \"O1\"], [[\"ZONE\", 1, \"right\", \"half\"], \"Z1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 1825,
+     "counts": {
+      "SUCCESS": 1825
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 36
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 50
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 57
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 103
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 129
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 152
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 11358,
+    "counts": {
+     "SUCCESS": 11358
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 51
+   },
+   "failures": 0
+  },
+  "P2-24|[[[\"ORDER\", 2, 1], \"O1\"], [[\"ZONE\", 2, \"left\", \"half\"], \"Z1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 1825,
+     "counts": {
+      "SUCCESS": 1825
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 45
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 55
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 63
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 100
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 135
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 167
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 11358,
+    "counts": {
+     "SUCCESS": 11358
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 58
+   },
+   "failures": 0
+  },
+  "P2-28|[[[\"ORDER\", 2, 3], \"O1\"], [[\"ORDER\", 3, 1], \"O1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4100,
+     "counts": {
+      "SUCCESS": 4100
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 68
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 101
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 117
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 215
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 243
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 292
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32304,
+    "counts": {
+     "SUCCESS": 32304
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 104
+   },
+   "failures": 0
+  },
+  "P2-31|[[[\"ORDER\", 2, 3], \"O1\"], [[\"ZONE\", 2, \"left\", \"half\"], \"Z1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 1825,
+     "counts": {
+      "SUCCESS": 1825
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 45
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 56
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 58
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 121
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 133
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 186
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 11358,
+    "counts": {
+     "SUCCESS": 11358
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 58
+   },
+   "failures": 0
+  },
+  "P2-35|[[[\"ORDER\", 3, 1], \"O1\"], [[\"ORDER\", 3, 2], \"O1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4100,
+     "counts": {
+      "SUCCESS": 4100
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 45
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 53
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 62
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 123
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 140
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 243
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32304,
+    "counts": {
+     "SUCCESS": 32304
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 54
+   },
+   "failures": 0
+  },
+  "P2-37|[[[\"ORDER\", 3, 1], \"O1\"], [[\"ZONE\", 1, \"right\", \"half\"], \"Z1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 1825,
+     "counts": {
+      "SUCCESS": 1825
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 36
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 50
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 57
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 103
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 129
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 152
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 11358,
+    "counts": {
+     "SUCCESS": 11358
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 51
+   },
+   "failures": 0
+  },
+  "P2-45|[[[\"ORDER\", 3, 2], \"O1\"], [[\"ZONE\", 2, \"right\", \"half\"], \"Z1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 1825,
+     "counts": {
+      "SUCCESS": 1825
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 36
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 50
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 57
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 103
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 129
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 152
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 11358,
+    "counts": {
+     "SUCCESS": 11358
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 51
+   },
+   "failures": 0
+  },
+  "P2-49|[[[\"ZONE\", 1, \"left\", \"half\"], \"Z1\"], [[\"ZONE\", 2, \"right\", \"half\"], \"Z1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 1775,
+     "counts": {
+      "SUCCESS": 1775
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 38
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 49
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 57
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 92
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 128
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 136
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 11268,
+    "counts": {
+     "SUCCESS": 11268
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 50
+   },
+   "failures": 0
+  },
+  "P2-50|[[[\"ZONE\", 1, \"left\", \"half\"], \"Z2\"], [[\"GROUP\", 1], \"G1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 600,
+     "counts": {
+      "SUCCESS": 600
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 29
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 40
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 43
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 70
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 89
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 129
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 2742,
+    "counts": {
+     "SUCCESS": 2742
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 47
+   },
+   "failures": 0
+  },
+  "P2-52|[[[\"ZONE\", 1, \"right\", \"half\"], \"Z1\"], [[\"ZONE\", 2, \"left\", \"half\"], \"Z1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 1775,
+     "counts": {
+      "SUCCESS": 1775
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 40
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 40
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 57
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 101
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 97
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 131
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 11268,
+    "counts": {
+     "SUCCESS": 11268
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 54
+   },
+   "failures": 0
+  },
+  "P2-54|[[[\"ZONE\", 1, \"right\", \"half\"], \"Z2\"], [[\"GROUP\", 1], \"G2\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 600,
+     "counts": {
+      "SUCCESS": 600
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 30
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 48
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 53
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 98
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 137
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 143
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 2742,
+    "counts": {
+     "SUCCESS": 2742
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 53
+   },
+   "failures": 0
+  },
+  "P2-57|[[[\"ZONE\", 2, \"left\", \"half\"], \"Z2\"], [[\"GROUP\", 2], \"G1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 600,
+     "counts": {
+      "SUCCESS": 600
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 29
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 40
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 43
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 70
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 89
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 129
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 2742,
+    "counts": {
+     "SUCCESS": 2742
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 47
+   },
+   "failures": 0
+  },
+  "P2-59|[[[\"ZONE\", 2, \"right\", \"half\"], \"Z2\"], [[\"GROUP\", 2], \"G2\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 600,
+     "counts": {
+      "SUCCESS": 600
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 30
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 48
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 53
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 98
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 137
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 143
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 2742,
+    "counts": {
+     "SUCCESS": 2742
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 53
+   },
+   "failures": 0
+  },
+  "P2-60|[[[\"GROUP\", 1], \"G1\"], [[\"GROUP\", 2], \"G2\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 1875,
+     "counts": {
+      "SUCCESS": 1875
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 29
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 59
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 54
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 92
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 132
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 159
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 11448,
+    "counts": {
+     "SUCCESS": 11448
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 59
+   },
+   "failures": 0
+  },
+  "P3-02|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"], [[\"ZONE\", 1, \"left\", \"half\"], \"Z1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4050,
+     "counts": {
+      "SUCCESS": 4050
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 73
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 87
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 110
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 171
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 259
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 311
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32214,
+    "counts": {
+     "SUCCESS": 32214
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 104
+   },
+   "failures": 0
+  },
+  "P3-03|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 3, 1], \"O1\"], [[\"ORDER\", 3, 2], \"O1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4100,
+     "counts": {
+      "SUCCESS": 4100
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 65
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 77
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 90
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 197
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 245
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 343
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32304,
+    "counts": {
+     "SUCCESS": 32304
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 97
+   },
+   "failures": 0
+  },
+  "P3-11|[[[\"ORDER\", 1, 3], \"O1\"], [[\"ORDER\", 2, 3], \"O1\"], [[\"ZONE\", 2, \"left\", \"half\"], \"Z1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4050,
+     "counts": {
+      "SUCCESS": 4050
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 62
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 74
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 85
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 132
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 162
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 200
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32214,
+    "counts": {
+     "SUCCESS": 32214
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 78
+   },
+   "failures": 0
+  },
+  "P3-13|[[[\"ORDER\", 1, 3], \"O1\"], [[\"ORDER\", 2, 1], \"O1\"], [[\"ZONE\", 2, \"left\", \"half\"], \"Z1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4050,
+     "counts": {
+      "SUCCESS": 4050
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 71
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 87
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 96
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 193
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 248
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 284
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32214,
+    "counts": {
+     "SUCCESS": 32214
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 103
+   },
+   "failures": 0
+  },
+  "P3-14|[[[\"ZONE\", 2, \"left\", \"half\"], \"Z2\"], [[\"GROUP\", 1], \"G2\"], [[\"GROUP\", 2], \"G1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 1825,
+     "counts": {
+      "SUCCESS": 1825
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 31
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 47
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 51
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 119
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 125
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 148
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 11358,
+    "counts": {
+     "SUCCESS": 11358
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 52
+   },
+   "failures": 0
+  },
+  "P3-15|[[[\"ORDER\", 1, 2], \"O1\"], [[\"ORDER\", 1, 3], \"O1\"], [[\"ORDER\", 3, 2], \"O1\"]]": {
+   "J1_sym": {
+    "train_N5": {
+     "n": 4100,
+     "counts": {
+      "SUCCESS": 4100
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 45
+    },
+    "train_N6": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 59
+    },
+    "train_N7": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 84
+    },
+    "unseen_N9": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 121
+    },
+    "unseen_N12": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 214
+    },
+    "unseen_N15": {
+     "n": 1000,
+     "counts": {
+      "SUCCESS": 1000
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 199
+    },
+    "total_failures": 0
+   },
+   "J2_mc6": {
+    "n": 32304,
+    "counts": {
+     "SUCCESS": 32304
+    },
+    "failures": 0,
+    "first_failures": [],
+    "max_steps": 72
+   },
+   "failures": 0
+  }
+ },
+ "label": "PA-3 (DEV): shared-potential certificates"
+}

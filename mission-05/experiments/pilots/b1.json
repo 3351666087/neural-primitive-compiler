@@ -1,0 +1,822 @@
+{
+ "label": "B-1' (DEV): learned damage tables",
+ "tables": {
+  "disc-50": {
+   "cost": {
+    "observations": 1800,
+    "draws": 12383,
+    "cpu": 0.19566499999999998
+   },
+   "vs_given": {
+    "entries": 432,
+    "equal": 342,
+    "dangerous": 75,
+    "conservative": 15,
+    "agreement": 0.7916666666666666,
+    "dangerous_examples": [
+     "ORDER:O1 / OOW(A1,G1): learned 0, given inf",
+     "ORDER:O1 / OOW(A2,G2): learned 0, given inf",
+     "ORDER:O2 / KD{A2<A1}: learned 3, given inf",
+     "ORDER:O2 / KD{A1<X1;A2<A1;A2<X1}: learned 3, given inf",
+     "ORDER:O2 / KD{A2<A1;X1<A1;X1<A2}: learned 3, given inf",
+     "ORDER:O2 / OOW(A2,G2): learned 0, given inf",
+     "ZONE:Z1:left:2 / KD{X2<A1}: learned 4, given inf",
+     "ZONE:Z1:left:2 / KD{X2<A1;X2<X1}: learned 4, given inf",
+     "ZONE:Z1:left:2 / KD{A1<X1;X2<A1;X2<X1}: learned 4, given inf",
+     "ZONE:Z1:left:2 / OOW(X1,G2): learned 0, given inf"
+    ]
+   }
+  },
+  "disc-200": {
+   "cost": {
+    "observations": 7200,
+    "draws": 48861,
+    "cpu": 0.7789269999999999
+   },
+   "vs_given": {
+    "entries": 432,
+    "equal": 356,
+    "dangerous": 61,
+    "conservative": 15,
+    "agreement": 0.8240740740740741,
+    "dangerous_examples": [
+     "ORDER:O1 / OOW(A1,G1): learned 1, given inf",
+     "ORDER:O1 / OOW(A2,G2): learned 0, given inf",
+     "ORDER:O2 / KD{A2<A1}: learned 3, given inf",
+     "ORDER:O2 / KD{A1<X1;A2<A1;A2<X1}: learned 3, given inf",
+     "ORDER:O2 / KD{A2<A1;X1<A1;X1<A2}: learned 3, given inf",
+     "ZONE:Z1:left:2 / OOW(X1,G2): learned 0, given inf",
+     "ZONE:Z1:left:2 / OOW(X2,G2): learned 0, given inf",
+     "ZONE:Z1:left:half / KD{X1<A1}: learned 2, given inf",
+     "ZONE:Z1:left:half / KD{X1<X2}: learned 2, given inf",
+     "ZONE:Z1:left:half / KD{X2<X1}: learned 1, given inf"
+    ]
+   }
+  },
+  "disc-1000": {
+   "cost": {
+    "observations": 36000,
+    "draws": 243434,
+    "cpu": 3.868029
+   },
+   "vs_given": {
+    "entries": 432,
+    "equal": 380,
+    "dangerous": 33,
+    "conservative": 19,
+    "agreement": 0.8796296296296297,
+    "dangerous_examples": [
+     "ORDER:O1 / OOW(A2,G2): learned 1, given inf",
+     "ORDER:O2 / OOW(A1,G1): learned 1, given inf",
+     "ORDER:O2 / OOW(A2,G2): learned 1, given inf",
+     "ZONE:Z1:left:2 / KD{X1<A1}: learned 3, given inf",
+     "ZONE:Z1:left:2 / KD{X1<X2}: learned 2, given inf",
+     "ZONE:Z1:left:2 / KD{A1<X2;X1<A1;X1<X2}: learned 3, given inf",
+     "ZONE:Z1:left:2 / OOW(X2,G2): learned 1, given inf",
+     "ZONE:Z1:left:half / KD{X2<X1}: learned 2, given inf",
+     "ZONE:Z1:left:half / OOW(X1,G2): learned 1, given inf",
+     "ZONE:Z1:left:half / OOW(X2,G2): learned 1, given inf"
+    ]
+   }
+  },
+  "null-50": {
+   "cost": {
+    "observations": 600,
+    "draws": 5928,
+    "cpu": 0.06723999999999997
+   },
+   "vs_given": {
+    "entries": 432,
+    "equal": 260,
+    "dangerous": 172,
+    "conservative": 0,
+    "agreement": 0.6018518518518519,
+    "dangerous_examples": [
+     "ORDER:O1 / KD{A2<A1}: learned 2, given inf",
+     "ORDER:O1 / KD{A2<X1}: learned 1, given inf",
+     "ORDER:O1 / KD{X1<A1}: learned 1, given inf",
+     "ORDER:O1 / KD{A2<A1;A2<X1}: learned 3, given inf",
+     "ORDER:O1 / KD{A2<A1;X1<A1}: learned 3, given inf",
+     "ORDER:O1 / KD{A1<X1;A2<A1;A2<X1}: learned 2, given inf",
+     "ORDER:O1 / KD{A2<A1;A2<X1;X1<A1}: learned 4, given inf",
+     "ORDER:O1 / KD{A2<A1;X1<A1;X1<A2}: learned 2, given inf",
+     "ORDER:O1 / OOW(A1,G1): learned 0, given inf",
+     "ORDER:O1 / OOW(A2,G2): learned 0, given inf"
+    ]
+   }
+  },
+  "null-200": {
+   "cost": {
+    "observations": 2400,
+    "draws": 23000,
+    "cpu": 0.2641360000000006
+   },
+   "vs_given": {
+    "entries": 432,
+    "equal": 264,
+    "dangerous": 168,
+    "conservative": 0,
+    "agreement": 0.6111111111111112,
+    "dangerous_examples": [
+     "ORDER:O1 / KD{A2<A1}: learned 3, given inf",
+     "ORDER:O1 / KD{A2<X1}: learned 1, given inf",
+     "ORDER:O1 / KD{X1<A1}: learned 1, given inf",
+     "ORDER:O1 / KD{A2<A1;A2<X1}: learned 3, given inf",
+     "ORDER:O1 / KD{A2<A1;X1<A1}: learned 3, given inf",
+     "ORDER:O1 / KD{A1<X1;A2<A1;A2<X1}: learned 3, given inf",
+     "ORDER:O1 / KD{A2<A1;A2<X1;X1<A1}: learned 4, given inf",
+     "ORDER:O1 / KD{A2<A1;X1<A1;X1<A2}: learned 3, given inf",
+     "ORDER:O1 / OOW(A1,G1): learned 0, given inf",
+     "ORDER:O1 / OOW(A2,G2): learned 0, given inf"
+    ]
+   }
+  },
+  "null-1000": {
+   "cost": {
+    "observations": 12000,
+    "draws": 111964,
+    "cpu": 1.3099319999999999
+   },
+   "vs_given": {
+    "entries": 432,
+    "equal": 264,
+    "dangerous": 168,
+    "conservative": 0,
+    "agreement": 0.6111111111111112,
+    "dangerous_examples": [
+     "ORDER:O1 / KD{A2<A1}: learned 3, given inf",
+     "ORDER:O1 / KD{A2<X1}: learned 2, given inf",
+     "ORDER:O1 / KD{X1<A1}: learned 2, given inf",
+     "ORDER:O1 / KD{A2<A1;A2<X1}: learned 3, given inf",
+     "ORDER:O1 / KD{A2<A1;X1<A1}: learned 3, given inf",
+     "ORDER:O1 / KD{A1<X1;A2<A1;A2<X1}: learned 3, given inf",
+     "ORDER:O1 / KD{A2<A1;A2<X1;X1<A1}: learned 5, given inf",
+     "ORDER:O1 / KD{A2<A1;X1<A1;X1<A2}: learned 3, given inf",
+     "ORDER:O1 / OOW(A1,G1): learned 0, given inf",
+     "ORDER:O1 / OOW(A2,G2): learned 1, given inf"
+    ]
+   }
+  }
+ },
+ "A": {
+  "disc-1000": {
+   "T1": {
+    "status": "OUT_OF_CLASS"
+   },
+   "T2": {
+    "status": "OUT_OF_CLASS"
+   },
+   "T3": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "M1": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M2": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "M3": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "M4": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-00": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-01": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-02": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-03": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-04": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-07": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-09": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-10": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-11": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-12": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-13": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-14": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-15": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-16": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-17": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-18": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-19": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-20": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-21": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-22": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-23": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-24": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-25": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-26": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-27": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-28": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-29": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-30": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-31": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-32": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-33": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-34": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-35": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-36": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-37": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-38": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-39": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-40": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-41": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-42": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-43": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-44": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-45": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-46": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-47": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-48": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-49": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-50": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-51": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-52": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-53": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-54": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-55": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-56": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-57": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-58": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-59": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-60": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-02": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P3-03": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P3-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-09": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-10": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-11": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P3-12": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-13": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P3-14": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-15": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P3-16": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-17": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-18": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-19": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-02": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-03": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-09": {
+    "status": "OUT_OF_CLASS"
+   }
+  },
+  "null-1000": {
+   "T1": {
+    "status": "OUT_OF_CLASS"
+   },
+   "T2": {
+    "status": "OUT_OF_CLASS"
+   },
+   "T3": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "M1": {
+    "status": "OUT_OF_CLASS"
+   },
+   "M2": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "M3": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "M4": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-00": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-01": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-02": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-03": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-04": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-07": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-09": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-10": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-11": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-12": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-13": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-14": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-15": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-16": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-17": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-18": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-19": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-20": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-21": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-22": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-23": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-24": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-25": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-26": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-27": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-28": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-29": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-30": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-31": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-32": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-33": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-34": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-35": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-36": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-37": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-38": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-39": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-40": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-41": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-42": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-43": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-44": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-45": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-46": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-47": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-48": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-49": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-50": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-51": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-52": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-53": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-54": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-55": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-56": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-57": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-58": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P2-59": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P2-60": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P3-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-02": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P3-03": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P3-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-09": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-10": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-11": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P3-12": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-13": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P3-14": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P3-15": {
+    "status": "CONSTRUCTED",
+    "failures": 0
+   },
+   "P3-16": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-17": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-18": {
+    "status": "OUT_OF_CLASS"
+   },
+   "P3-19": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-00": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-01": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-02": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-03": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-04": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-05": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-06": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-07": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-08": {
+    "status": "OUT_OF_CLASS"
+   },
+   "PN-09": {
+    "status": "OUT_OF_CLASS"
+   }
+  }
+ },
+ "time_s": 6.5
+}

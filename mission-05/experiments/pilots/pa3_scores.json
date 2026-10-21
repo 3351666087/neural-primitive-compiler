@@ -1,0 +1,47 @@
+{
+ "P3.1": {
+  "verdict": "HOLDS",
+  "wrong": [],
+  "constructed": 36
+ },
+ "P3.2": {
+  "verdict": "FALSIFIED",
+  "recovered_of_38": 16,
+  "recovered_targets": [
+   "T3",
+   "M2",
+   "M3"
+  ]
+ },
+ "P3.3": {
+  "verdict": "HOLDS",
+  "L-lin_recovered_of_38": 6,
+  "L-tmpl_recovered_of_38": 16
+ },
+ "P3.4": {
+  "verdict": "HOLDS",
+  "constructed_among_barrier_goals": [],
+  "their_failures": {}
+ },
+ "P3.5": {
+  "verdict": "HOLDS",
+  "median_cpu": 5.9000000000253294e-05,
+  "damage_table_s": 2.4
+ },
+ "refusal_reasons_over_candidates": {
+  "tmpl": {
+   "no_weights": 272,
+   "resource": 2,
+   "applicability": 40
+  },
+  "lin": {
+   "no_weights": 356,
+   "resource": 26,
+   "applicability": 40
+  }
+ },
+ "coverage": {
+  "tmpl": 36,
+  "lin": 16
+ }
+}

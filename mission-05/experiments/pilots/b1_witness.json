@@ -1,0 +1,306 @@
+{
+ "ZONE:Z1:left:2 / OUT(A1,left,half)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 0,
+  "witness": null
+ },
+ "ZONE:Z1:left:half / OUT(A1,left,2)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 0,
+  "witness": null
+ },
+ "ZONE:Z1:left:half / OOW(A1,G1)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 1,
+  "witness": {
+   "cells": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "hazards": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "fixed": [],
+   "delta": 1
+  }
+ },
+ "ZONE:Z1:right:2 / OUT(A1,right,half)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 0,
+  "witness": null
+ },
+ "ZONE:Z1:right:half / OUT(A1,right,2)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 0,
+  "witness": null
+ },
+ "ZONE:Z1:right:half / OOW(A1,G2)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 1,
+  "witness": {
+   "cells": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "hazards": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   "fixed": [],
+   "delta": 1
+  }
+ },
+ "ZONE:Z2:left:2 / OUT(A1,left,half)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 0,
+  "witness": null
+ },
+ "ZONE:Z2:left:2 / OOW(X1,G2)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 1,
+  "witness": {
+   "cells": [
+    3,
+    3,
+    0,
+    1,
+    0,
+    0
+   ],
+   "hazards": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   "fixed": [],
+   "delta": 1
+  }
+ },
+ "ZONE:Z2:left:half / OUT(A1,left,2)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 0,
+  "witness": null
+ },
+ "ZONE:Z2:left:half / OOW(A1,G1)": {
+  "given_bound": -1,
+  "max_at_N6_exhaustive": 1,
+  "witness": {
+   "cells": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "hazards": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "fixed": [],
+   "delta": 0
+  }
+ },
+ "ZONE:Z2:left:half / OOW(X1,G2)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 1,
+  "witness": {
+   "cells": [
+    3,
+    3,
+    0,
+    1,
+    0,
+    0
+   ],
+   "hazards": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   "fixed": [],
+   "delta": 1
+  }
+ },
+ "ZONE:Z2:right:2 / OUT(A1,right,half)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 0,
+  "witness": null
+ },
+ "ZONE:Z2:right:2 / OOW(X1,G1)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 1,
+  "witness": {
+   "cells": [
+    1,
+    0,
+    3,
+    0,
+    0,
+    3
+   ],
+   "hazards": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "fixed": [],
+   "delta": 1
+  }
+ },
+ "ZONE:Z2:right:2 / OOW(X2,G1)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 1,
+  "witness": {
+   "cells": [
+    1,
+    0,
+    4,
+    0,
+    0,
+    4
+   ],
+   "hazards": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "fixed": [],
+   "delta": 1
+  }
+ },
+ "ZONE:Z2:right:half / OUT(A1,right,2)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 0,
+  "witness": null
+ },
+ "ZONE:Z2:right:half / OOW(A1,G2)": {
+  "given_bound": -1,
+  "max_at_N6_exhaustive": 1,
+  "witness": {
+   "cells": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "hazards": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "fixed": [],
+   "delta": 0
+  }
+ },
+ "ZONE:Z2:right:half / OOW(X1,G1)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 1,
+  "witness": {
+   "cells": [
+    1,
+    0,
+    3,
+    0,
+    0,
+    3
+   ],
+   "hazards": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "fixed": [],
+   "delta": 1
+  }
+ },
+ "GROUP:G1 / OOW(X1,G2)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 1,
+  "witness": {
+   "cells": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    3
+   ],
+   "hazards": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "fixed": [],
+   "delta": 1
+  }
+ },
+ "GROUP:G2 / OOW(X1,G1)": {
+  "given_bound": 0,
+  "max_at_N6_exhaustive": 1,
+  "witness": {
+   "cells": [
+    3,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "hazards": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   "fixed": [],
+   "delta": 1
+  }
+ }
+}

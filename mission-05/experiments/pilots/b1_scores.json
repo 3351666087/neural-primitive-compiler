@@ -1,0 +1,74 @@
+{
+ "PB.1": {
+  "verdict": "FALSIFIED",
+  "entries": 432,
+  "equal": 380,
+  "dangerous": 33,
+  "conservative": 19,
+  "agreement": 0.8796296296296297,
+  "dangerous_examples": [
+   "ORDER:O1 / OOW(A2,G2): learned 1, given inf",
+   "ORDER:O2 / OOW(A1,G1): learned 1, given inf",
+   "ORDER:O2 / OOW(A2,G2): learned 1, given inf",
+   "ZONE:Z1:left:2 / KD{X1<A1}: learned 3, given inf",
+   "ZONE:Z1:left:2 / KD{X1<X2}: learned 2, given inf",
+   "ZONE:Z1:left:2 / KD{A1<X2;X1<A1;X1<X2}: learned 3, given inf",
+   "ZONE:Z1:left:2 / OOW(X2,G2): learned 1, given inf",
+   "ZONE:Z1:left:half / KD{X2<X1}: learned 2, given inf",
+   "ZONE:Z1:left:half / OOW(X1,G2): learned 1, given inf",
+   "ZONE:Z1:left:half / OOW(X2,G2): learned 1, given inf"
+  ]
+ },
+ "PB.2": {
+  "verdict": "HOLDS",
+  "entries": 432,
+  "equal": 264,
+  "dangerous": 168,
+  "conservative": 0,
+  "agreement": 0.6111111111111112,
+  "dangerous_examples": [
+   "ORDER:O1 / KD{A2<A1}: learned 3, given inf",
+   "ORDER:O1 / KD{A2<X1}: learned 2, given inf",
+   "ORDER:O1 / KD{X1<A1}: learned 2, given inf",
+   "ORDER:O1 / KD{A2<A1;A2<X1}: learned 3, given inf",
+   "ORDER:O1 / KD{A2<A1;X1<A1}: learned 3, given inf",
+   "ORDER:O1 / KD{A1<X1;A2<A1;A2<X1}: learned 3, given inf",
+   "ORDER:O1 / KD{A2<A1;A2<X1;X1<A1}: learned 5, given inf",
+   "ORDER:O1 / KD{A2<A1;X1<A1;X1<A2}: learned 3, given inf",
+   "ORDER:O1 / OOW(A1,G1): learned 0, given inf",
+   "ORDER:O1 / OOW(A2,G2): learned 1, given inf"
+  ]
+ },
+ "PB.3": {
+  "verdict": "FALSIFIED",
+  "constructed_with_disc": 30,
+  "constructed_with_given": 36,
+  "wrong": []
+ },
+ "PB.4": {
+  "verdict": "FALSIFIED",
+  "wrong_with_null": [],
+  "constructed_with_null": 36
+ },
+ "PB.5": {
+  "verdict": "FALSIFIED",
+  "smallest_n": null,
+  "by_n": {
+   "50": {
+    "agreement": 0.7916666666666666,
+    "dangerous": 75,
+    "conservative": 15
+   },
+   "200": {
+    "agreement": 0.8240740740740741,
+    "dangerous": 61,
+    "conservative": 15
+   },
+   "1000": {
+    "agreement": 0.8796296296296297,
+    "dangerous": 33,
+    "conservative": 19
+   }
+  }
+ }
+}

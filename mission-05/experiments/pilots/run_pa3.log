@@ -1,0 +1,99 @@
+T1 ORDER(1,2) & ZONE(3,right,2) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+T2 GROUP(1) & ORDER(1,2) & NO_DROP_HAZARD() | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+T3 ORDER(1,2) & ORDER(2,3) & ZONE(3,right,2) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 2.1 s
+M1 ORDER(1,2) | tmpl OUT_OF_CLASS None {'resource': 2} | lin OUT_OF_CLASS None 0.0 s
+M2 ORDER(1,2) & ORDER(2,3) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 1.7 s
+M3 ORDER(1,2) & ORDER(2,3) & ZONE(3,right,2) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 2.0 s
+M4 ORDER(1,2) & ORDER(2,3) & ZONE(3,right,2) & GROUP(1) | tmpl OUT_OF_CLASS None {'no_weights': 16} | lin OUT_OF_CLASS None 0.0 s
+P2-00 ORDER(1,2) & ORDER(1,3) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 1.1 s
+P2-01 ORDER(1,2) & ORDER(2,3) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 1.7 s
+P2-02 ORDER(1,2) & ORDER(3,1) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 1.9 s
+P2-03 ORDER(1,2) & ORDER(3,2) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 1.1 s
+P2-04 ORDER(1,2) & ZONE(1,left,half) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 0.9 s
+P2-05 ORDER(1,2) & ZONE(1,right,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-06 ORDER(1,2) & ZONE(2,left,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-07 ORDER(1,2) & ZONE(2,right,half) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 0.7 s
+P2-08 ORDER(1,2) & GROUP(1) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-09 ORDER(1,2) & GROUP(2) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-10 ORDER(1,3) & ORDER(2,1) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 1.7 s
+P2-11 ORDER(1,3) & ORDER(2,3) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 1.0 s
+P2-12 ORDER(1,3) & ORDER(3,2) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 1.8 s
+P2-13 ORDER(1,3) & ZONE(1,left,half) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 0.9 s
+P2-14 ORDER(1,3) & ZONE(1,right,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-15 ORDER(1,3) & ZONE(2,left,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-16 ORDER(1,3) & ZONE(2,right,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-17 ORDER(1,3) & GROUP(1) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-18 ORDER(1,3) & GROUP(2) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-19 ORDER(2,1) & ORDER(2,3) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 1.2 s
+P2-20 ORDER(2,1) & ORDER(3,1) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 1.2 s
+P2-21 ORDER(2,1) & ORDER(3,2) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 1.9 s
+P2-22 ORDER(2,1) & ZONE(1,left,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-23 ORDER(2,1) & ZONE(1,right,half) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 0.7 s
+P2-24 ORDER(2,1) & ZONE(2,left,half) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 1.0 s
+P2-25 ORDER(2,1) & ZONE(2,right,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-26 ORDER(2,1) & GROUP(1) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-27 ORDER(2,1) & GROUP(2) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-28 ORDER(2,3) & ORDER(3,1) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 1.8 s
+P2-29 ORDER(2,3) & ZONE(1,left,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-30 ORDER(2,3) & ZONE(1,right,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-31 ORDER(2,3) & ZONE(2,left,half) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 0.9 s
+P2-32 ORDER(2,3) & ZONE(2,right,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-33 ORDER(2,3) & GROUP(1) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-34 ORDER(2,3) & GROUP(2) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-35 ORDER(3,1) & ORDER(3,2) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 1.3 s
+P2-36 ORDER(3,1) & ZONE(1,left,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-37 ORDER(3,1) & ZONE(1,right,half) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 0.7 s
+P2-38 ORDER(3,1) & ZONE(2,left,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-39 ORDER(3,1) & ZONE(2,right,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-40 ORDER(3,1) & GROUP(1) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-41 ORDER(3,1) & GROUP(2) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-42 ORDER(3,2) & ZONE(1,left,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-43 ORDER(3,2) & ZONE(1,right,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-44 ORDER(3,2) & ZONE(2,left,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-45 ORDER(3,2) & ZONE(2,right,half) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 0.7 s
+P2-46 ORDER(3,2) & GROUP(1) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-47 ORDER(3,2) & GROUP(2) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-48 ZONE(1,left,half) & ZONE(2,left,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-49 ZONE(1,left,half) & ZONE(2,right,half) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 0.8 s
+P2-50 ZONE(1,left,half) & GROUP(1) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 0.9 s
+P2-51 ZONE(1,left,half) & GROUP(2) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-52 ZONE(1,right,half) & ZONE(2,left,half) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 0.8 s
+P2-53 ZONE(1,right,half) & ZONE(2,right,half) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-54 ZONE(1,right,half) & GROUP(1) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 0.9 s
+P2-55 ZONE(1,right,half) & GROUP(2) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-56 ZONE(2,left,half) & GROUP(1) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-57 ZONE(2,left,half) & GROUP(2) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 0.9 s
+P2-58 ZONE(2,right,half) & GROUP(1) | tmpl OUT_OF_CLASS None {'no_weights': 4} | lin OUT_OF_CLASS None 0.0 s
+P2-59 ZONE(2,right,half) & GROUP(2) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 0.9 s
+P2-60 GROUP(1) & GROUP(2) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 1.4 s
+P3-00 ORDER(3,2) & GROUP(1) & GROUP(2) | tmpl OUT_OF_CLASS None {'no_weights': 8} | lin OUT_OF_CLASS None 0.0 s
+P3-01 ORDER(2,3) & ZONE(1,right,half) & ZONE(2,left,half) | tmpl OUT_OF_CLASS None {'no_weights': 8} | lin OUT_OF_CLASS None 0.0 s
+P3-02 ORDER(1,2) & ORDER(2,3) & ZONE(1,left,half) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 2.2 s
+P3-03 ORDER(1,2) & ORDER(3,1) & ORDER(3,2) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 2.2 s
+P3-04 ORDER(1,2) & ZONE(2,left,half) & GROUP(1) | tmpl OUT_OF_CLASS None {'no_weights': 8} | lin OUT_OF_CLASS None 0.0 s
+P3-05 ORDER(1,2) & ZONE(1,left,half) & GROUP(1) | tmpl OUT_OF_CLASS None {'no_weights': 8} | lin OUT_OF_CLASS None 0.0 s
+P3-06 ORDER(3,1) & ORDER(3,2) & ZONE(2,left,half) | tmpl OUT_OF_CLASS None {'no_weights': 8} | lin OUT_OF_CLASS None 0.0 s
+P3-07 ORDER(1,2) & ORDER(3,2) & ZONE(1,right,half) | tmpl OUT_OF_CLASS None {'no_weights': 8} | lin OUT_OF_CLASS None 0.0 s
+P3-08 ORDER(1,3) & ZONE(2,right,half) & GROUP(1) | tmpl OUT_OF_CLASS None {'no_weights': 8} | lin OUT_OF_CLASS None 0.0 s
+P3-09 ORDER(3,1) & GROUP(1) & GROUP(2) | tmpl OUT_OF_CLASS None {'no_weights': 8} | lin OUT_OF_CLASS None 0.0 s
+P3-10 ORDER(2,3) & ZONE(2,right,half) & GROUP(1) | tmpl OUT_OF_CLASS None {'no_weights': 8} | lin OUT_OF_CLASS None 0.0 s
+P3-11 ORDER(1,3) & ORDER(2,3) & ZONE(2,left,half) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 1.9 s
+P3-12 ORDER(1,3) & ORDER(2,3) & ZONE(2,right,half) | tmpl OUT_OF_CLASS None {'no_weights': 8} | lin OUT_OF_CLASS None 0.0 s
+P3-13 ORDER(1,3) & ORDER(2,1) & ZONE(2,left,half) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 2.3 s
+P3-14 ZONE(2,left,half) & GROUP(1) & GROUP(2) | tmpl CONSTRUCTED 0 None | lin CONSTRUCTED 0 1.8 s
+P3-15 ORDER(1,2) & ORDER(1,3) & ORDER(3,2) | tmpl CONSTRUCTED 0 None | lin OUT_OF_CLASS None 1.8 s
+P3-16 ORDER(3,2) & ZONE(1,right,half) & GROUP(2) | tmpl OUT_OF_CLASS None {'no_weights': 8} | lin OUT_OF_CLASS None 0.0 s
+P3-17 ORDER(3,2) & ZONE(1,left,half) & ZONE(2,left,half) | tmpl OUT_OF_CLASS None {'no_weights': 8} | lin OUT_OF_CLASS None 0.0 s
+P3-18 ORDER(1,2) & ZONE(1,left,half) & ZONE(2,left,half) | tmpl OUT_OF_CLASS None {'no_weights': 8} | lin OUT_OF_CLASS None 0.0 s
+P3-19 ORDER(1,3) & ZONE(1,right,half) & ZONE(2,left,half) | tmpl OUT_OF_CLASS None {'no_weights': 8} | lin OUT_OF_CLASS None 0.0 s
+PN-00 ORDER(1,2) & ZONE(2,left,half) & NO_PICK(1) | tmpl OUT_OF_CLASS None {'applicability': 4} | lin OUT_OF_CLASS None 0.0 s
+PN-01 ZONE(2,right,half) & GROUP(2) & NO_PICK(2) | tmpl OUT_OF_CLASS None {'applicability': 4} | lin OUT_OF_CLASS None 0.0 s
+PN-02 ORDER(2,3) & ZONE(1,left,half) & NO_PICK(1) | tmpl OUT_OF_CLASS None {'applicability': 4} | lin OUT_OF_CLASS None 0.0 s
+PN-03 ORDER(1,2) & ZONE(1,right,half) & NO_PICK(2) | tmpl OUT_OF_CLASS None {'applicability': 4} | lin OUT_OF_CLASS None 0.0 s
+PN-04 ORDER(1,2) & ORDER(1,3) & NO_PICK(3) | tmpl OUT_OF_CLASS None {'applicability': 4} | lin OUT_OF_CLASS None 0.0 s
+PN-05 ORDER(3,1) & GROUP(2) & NO_PICK(1) | tmpl OUT_OF_CLASS None {'applicability': 4} | lin OUT_OF_CLASS None 0.0 s
+PN-06 ORDER(2,1) & ORDER(3,1) & NO_PICK(2) | tmpl OUT_OF_CLASS None {'applicability': 4} | lin OUT_OF_CLASS None 0.0 s
+PN-07 ZONE(1,left,half) & GROUP(1) & NO_PICK(1) | tmpl OUT_OF_CLASS None {'applicability': 4} | lin OUT_OF_CLASS None 0.0 s
+PN-08 ORDER(2,1) & ZONE(2,right,half) & NO_PICK(1) | tmpl OUT_OF_CLASS None {'applicability': 4} | lin OUT_OF_CLASS None 0.0 s
+PN-09 ORDER(3,1) & GROUP(1) & NO_PICK(3) | tmpl OUT_OF_CLASS None {'applicability': 4} | lin OUT_OF_CLASS None 0.0 s
+exit 0
