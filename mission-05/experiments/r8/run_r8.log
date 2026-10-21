@@ -1,0 +1,13 @@
+stage 1: 4696 instances, 20 pass at N<=5; 155.6 s
+stage 2 truth: 97 instances, 701.9 s
+STRAT-DEV 70 instances; 14 truly good; certified {'A': 6, 'A+': 8, 'A++': 8} | A++ below truth 0 false progress 0
+LIB 12 instances; 12 truly good; certified {'A': 12, 'A+': 12, 'A++': 12} | A++ below truth 0 false progress 0
+G3-DEV 15 instances; 8 truly good; certified {'A': 7, 'A+': 7, 'A++': 8} | A++ below truth 0 false progress 0
+A A-P' usable specs 5 constructed 0 wrong 0
+A A-P usable specs 5 constructed 2 wrong 0
+A+ A-P' usable specs 6 constructed 0 wrong 0
+A+ A-P usable specs 6 constructed 2 wrong 0
+A++ A-P' usable specs 6 constructed 0 wrong 0
+A++ A-P usable specs 6 constructed 2 wrong 0
+done 922.4 s
+exit 0

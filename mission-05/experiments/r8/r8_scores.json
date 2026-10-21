@@ -1,0 +1,95 @@
+{
+ "M1": {
+  "verdict": "HOLDS",
+  "per_set": {
+   "STRAT-DEV": {
+    "below": [],
+    "false_progress": []
+   },
+   "LIB": {
+    "below": [],
+    "false_progress": []
+   },
+   "G3-DEV": {
+    "below": [],
+    "false_progress": []
+   }
+  },
+  "wrong_constructions": {
+   "A++/A-P'": [],
+   "A++/A-P": []
+  },
+  "all_tables_wrong_constructions": {
+   "A/A-P'": [],
+   "A/A-P": [],
+   "A+/A-P'": [],
+   "A+/A-P": [],
+   "A++/A-P'": [],
+   "A++/A-P": []
+  }
+ },
+ "M2": {
+  "verdict": "HOLDS",
+  "differences": [],
+  "progress_same": true
+ },
+ "M3": {
+  "verdict": "HOLDS",
+  "looser": {
+   "STRAT-DEV": [],
+   "LIB": [],
+   "G3-DEV": []
+  },
+  "lost": {
+   "STRAT-DEV": [],
+   "LIB": [],
+   "G3-DEV": []
+  },
+  "tighter": {
+   "STRAT-DEV": 0,
+   "LIB": 0,
+   "G3-DEV": 5
+  }
+ },
+ "M4": {
+  "verdict": "INCONCLUSIVE",
+  "STRAT_truly_good": 14,
+  "certified": {
+   "A": 6,
+   "A+": 8,
+   "A++": 8
+  },
+  "rate_A++": 0.5714285714285714,
+  "G3-DEV_8_of_8": true,
+  "uncertified_truly_good": [
+   "S-ZON-0039|right|2",
+   "S-ZON-0071|left|2",
+   "S-ZON-0166|left|2",
+   "S-ZON-0559|right|2",
+   "S-ZON-0713|right|2",
+   "S-ZON-0762|right|2"
+  ]
+ },
+ "M5": {
+  "verdict": "HOLDS",
+  "counts": {
+   "A/A-P'": 0,
+   "A/A-P": 2,
+   "A+/A-P'": 0,
+   "A+/A-P": 2,
+   "A++/A-P'": 0,
+   "A++/A-P": 2
+  }
+ },
+ "M6": {
+  "verdict": "HOLDS",
+  "time_s": 922.4
+ },
+ "stratification": {
+  "pool_instances": 4696,
+  "passed_N5": 20,
+  "failed_sample": 50,
+  "strat_specs": 62,
+  "truly_good_N7": 14
+ }
+}

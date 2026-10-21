@@ -1,0 +1,52 @@
+{
+ "label": "POST-HOC: A++ on the spent G3 held-out set (no verdict)",
+ "truth_cpu_s": 495.777951,
+ "Aplus_soundness": {
+  "damage_below_truth": [],
+  "damage_finite_where_truth_grows": [
+   "g3-ord-05 / OOW(X1,G2)",
+   "g3-ord-06 / OOW(A1,G1)",
+   "g3-ord-09 / OUT(X1,right,2)",
+   "g3-ord-09 / OUT(X1,right,half)",
+   "g3-grp-05 / KD{X1<A1;X2<A1;X2<X1}",
+   "g3-grp-10 / OOW(X1,G2)",
+   "g3-grp-10 / OOW(X2,G2)"
+  ],
+  "preservation_proved_with_cex": [],
+  "progress_certified_but_false": [],
+  "truth_good_instances": 30,
+  "certified_among_truth_good": 30,
+  "certified_total": 30,
+  "instances": 48
+ },
+ "A_G3_soundness": {
+  "damage_below_truth": [],
+  "damage_finite_where_truth_grows": [
+   "g3-ord-05 / OOW(X1,G2)",
+   "g3-ord-06 / OOW(A1,G1)",
+   "g3-ord-09 / OUT(X1,right,2)",
+   "g3-ord-09 / OUT(X1,right,half)",
+   "g3-grp-10 / OOW(X1,G2)",
+   "g3-grp-10 / OOW(X2,G2)"
+  ],
+  "preservation_proved_with_cex": [],
+  "progress_certified_but_false": [],
+  "truth_good_instances": 30,
+  "certified_among_truth_good": 21,
+  "certified_total": 21,
+  "instances": 48
+ },
+ "newly_certified": [
+  "g3-ord-03",
+  "g3-ord-04",
+  "g3-ord-07",
+  "g3-zon-01|left|2",
+  "g3-zon-01|left|half",
+  "g3-zon-07|left|2",
+  "g3-zon-07|left|half",
+  "g3-zon-08|right|2",
+  "g3-zon-08|right|half"
+ ],
+ "lost": [],
+ "time_s": 507.2
+}
