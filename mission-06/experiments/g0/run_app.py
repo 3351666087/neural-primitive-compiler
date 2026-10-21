@@ -88,17 +88,18 @@ def main():
     truth_cpu = sum(c for _, c in parts)
     atom_of = dict(allinst)
     tp = a_dsl.truth_progress(tr, atom_of)
-    # reproduction check against the Mission 05 archives
+    (HERE / "aud_truth.json").write_text(json.dumps({"truth": tr, "truth_progress": tp, "cpu_s": truth_cpu}, default=str))
+    # reproduction check against the Mission 05 archives (G3 stores only applicability, as A.progress[k].applicability_N7)
     repro = {}
-    for name, f in (("G3-HO", EXP / "g3" / "heldout_run.json"), ("G4-HO", EXP / "g4" / "heldout_run.json")):
-        old = json.loads(f.read_text())["truth_progress"]
-        repro[name] = [k for k, _ in D["inst"][name] if old[k]["applies"] != tp[k]["applies"] or old[k]["good"] != tp[k]["good"]]
+    old = json.loads((EXP / "g3" / "heldout_run.json").read_text())["A"]["progress"]
+    repro["G3-HO"] = [k for k, _ in D["inst"]["G3-HO"] if old[k]["applicability_N7"] != tp[k]["applies"]]
+    old = json.loads((EXP / "g4" / "heldout_run.json").read_text())["truth_progress"]
+    repro["G4-HO"] = [k for k, _ in D["inst"]["G4-HO"] if old[k]["applies"] != tp[k]["applies"] or old[k]["good"] != tp[k]["good"]]
     r8 = json.loads((EXP / "r8" / "r8.json").read_text())
     for name in ("STRAT-DEV", "LIB", "G3-DEV"):
         good = set(r8["sets"][name]["truly_good"])
         repro[name] = [k for k, _ in D["inst"][name] if (k in good) != tp[k]["good"]]
     print("truth", round(truth_cpu, 1), "s CPU; reproduction mismatches", {n: len(v) for n, v in repro.items()}, flush=True)
-    (HERE / "aud_truth.json").write_text(json.dumps({"truth": tr, "truth_progress": tp, "cpu_s": truth_cpu}, default=str))
     t1 = time.perf_counter()
     with Pool(8) as p:
         proofs = dict(p.map(prove_one, allinst, chunksize=1))
