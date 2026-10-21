@@ -1,12 +1,14 @@
 # Verifiable Neural Primitive Compiler
 
-本仓库研究一个问题：能否由能力规格直接构造出可执行、可验证的神经网络，而不针对每个任务训练权重？研究分三轮进行，每一轮都把上一轮留下的未知作为对象：
+本仓库研究一个问题：能否由能力规格直接构造出可执行、可验证的神经网络，而不针对每个任务训练权重？研究分五轮进行，每一轮都把上一轮留下的未知作为对象：
 
 - **Mission 01** 以有限状态时序规格为对象，检验"规格 → 网络"的编译路线。
 - **Mission 02** 冻结一组原语，检验能否对此前未见过的认知功能规格直接构造网络。
 - **Mission 03** 去掉规格中的机制信息，检验能否只凭目标级证据（输入输出范例、被动观测）发现机制，并在第三方任务上与强符号基线比较。
+- **Mission 04** 审计 Mission 03 的唯一性证据，并检验表示层（分组、背景、颜色角色、参照框）能否由证据提出与选择，而不由设计者给定。
+- **Mission 05** 在一个构造的搬运域中检验两个问题：是否存在能高效构造复杂功能的原语与组合规律（问题 A）；这些规律能否从有限观察中发现（问题 B）。
 
-三轮使用同一个计算模型：离散整数积分发放（IF）神经元，所有突触延迟 ≥ 1。Mission 03 的发现过程在符号层完成，神经网络只在一次端到端检查中作为编译目标出现。全部实验都在本机 CPU 上运行。
+五轮使用同一个计算模型：离散整数积分发放（IF）神经元，所有突触延迟 ≥ 1。Mission 03、04 的发现过程在符号层完成。Mission 05 的控制器由 Mission 02 的冻结模板编译成网络，并与参考环境闭环运行。全部实验都在本机 CPU 上运行。
 
 ## 研究轮次与判定
 
@@ -15,16 +17,27 @@
 | Mission 01 | 能否由有限状态时序规格直接编译出网络，而不训练？ | 能，但这是经典自动机理论的结论；证据不支持把这条路线外推到更广泛的智能功能 | [evidence-ledger.md](evidence-ledger.md)、[theory.md](theory.md) |
 | Mission 02 | 原语冻结后，能否对未见的认知功能规格直接构造网络？ | 核心假说 INCONCLUSIVE；构造与推导 SUPPORTED_IN_TOY_DOMAIN；"发现了不只是重编码的认知原语" NOT_SUPPORTED | [mission-02/SCIENTIFIC_VERDICT.md](mission-02/SCIENTIFIC_VERDICT.md) |
 | Mission 03 | 不给机制，只给目标级证据，能否发现并构造未见能力？ | 主结论 INCONCLUSIVE；在给定假设形式内的机制发现 SUPPORTED_IN_TOY_DOMAIN；相对符号 DSL 的表示层优势 NOT_SUPPORTED；第三方持出任务上覆盖 1.5 % | [mission-03/SCIENTIFIC_STATUS.md](mission-03/SCIENTIFIC_STATUS.md) |
+| Mission 04 | 表示层能否由证据提出与选择，而不由设计者给定？ | 块表示在开发集上可由文法与守恒律得到，但它是已知形式的重新发现，在 ARC-AGI-2 上没有作答，"守恒律选择表示"按锁定规则撤回；背景先验由证据决定的方向在孪生任务上复现，但未达锁定标准；没有发现可迁移的新表示形式 | [mission-04/STATUS.md](mission-04/STATUS.md) |
+| Mission 05 | A：是否存在能高效构造复杂功能的原语与组合规律？B：能否从有限观察中发现它们？ | A：组合可靠，但不比同先验搜索更高效；合同由 Z3 对一切规模证明；通用推导在两个独立持出集上 0 错误，第二个上校准 41/42。B：在设计者给定的假设空间内，N = 5 的观察足以学到规律与选择规则，推导的合同表 0 危险 | [mission-05/A05_SUMMARY.md](mission-05/A05_SUMMARY.md) |
 
-**三轮合起来的结论**。Mission 01 表明，机制完全给定时，编译是经典问题。Mission 02 表明，机制以坐标映射的形式写在规格里时，"直接构造"实际上是翻译。Mission 03 表明，只给目标级证据时，在设计者给定的假设形式之内可以发现机制，方法就是程序综合。三轮都没有给出的，是假设形式本身（并集映射、区域占据、对象、计数等表示层）如何从证据中产生；这是当前最不了解的机制，下一步的鉴别实验见 [mission-03/OPEN_QUESTIONS.md](mission-03/OPEN_QUESTIONS.md)。
+**五轮合起来的结论**。
+- Mission 01 表明，机制完全给定时，编译是经典问题。
+- Mission 02 表明，机制以坐标映射的形式写在规格里时，"直接构造"实际上是翻译。
+- Mission 03 表明，只给目标级证据时，在设计者给定的假设形式之内可以发现机制，方法就是程序综合。
+- Mission 04 表明，表示层的候选（块分组、背景）在开发集上可以由证据选出，但它们都是已知形式；选择所依据的先验在第三方数据上没有迁移。
+- Mission 05 换到一个设计者构造的域，表明原语、组合规律与机器证明的合同可以可靠地构造控制器，并经过两次独立持出检验；规律本身也能从有限观察中学到。
+
+五轮都没有给出的，是假设形式本身（并集映射、区域占据、对象、计数、势函数文法、规则文法）如何从证据中产生。Mission 03–05 的所有成功都发生在设计者给定的形式之内。各轮的开放问题见 [mission-03/OPEN_QUESTIONS.md](mission-03/OPEN_QUESTIONS.md)、[mission-04/STATUS.md](mission-04/STATUS.md) 第 9 节与 [mission-05/A05_SUMMARY.md](mission-05/A05_SUMMARY.md) 第 7 节。
 
 ### 各轮之间的关系
 
-后一轮都把前一轮当作基础设施使用，不修改前一轮的源码、冻结记录和原始结果。后一轮的审计对前一轮的结论作了三处限定：
+后一轮都把前一轮当作基础设施使用，不修改前一轮的源码、冻结记录和原始结果。后一轮的审计对前一轮的结论作了以下限定与核对：
 
 1. **Mission 02 对 Mission 01**：`latency1_weights(bound=64)` 给出的"no network of any size"只在输入数 m ≤ 3 时成立，对一般的 m 只能理解为"在 |参数| ≤ 64 内无解"。Mission 01 实际报告过的不可实现结论都只有 m ≤ 2 个输入，因此仍然成立（[mission-02/G0-audit.md](mission-02/G0-audit.md)）。
 2. **Mission 03 对 Mission 02（LLM 路线）**：一个不调用 LLM 的查表解码器能逐字节复现全部 16 个 A-LLM 程序。因此 A-LLM 的 16/16 测量的是任务描述对机制的编码，而不是机制发现。
 3. **Mission 03 对 Mission 02（自动路线）**：A-auto 的规模外推所依赖的手写映射词汇，可以由一个不含命名映射、对复合封闭的通用格点几何先验替代（[mission-03/UNKNOWNNESS_AUDIT.md](mission-03/UNKNOWNNESS_AUDIT.md)）。
+4. **Mission 04 对 Mission 03**：唯一性判定在原理上不可靠，合成任务上 250 个作答中有 10 个带反例证书、4 个答错；但 Mission 03 在 ARC-AGI-1 上的 38 个作答经精确复核全部唯一。勘误写在 `mission-03/SCIENTIFIC_STATUS.md` 开头（[mission-04/AUDIT_M03_UNIQUENESS.md](mission-04/AUDIT_M03_UNIQUENESS.md)）。
+5. **Mission 05 对 Mission 04**：Mission 04 报告中的 11 项数字与原始数据一致；孪生任务的确认只凭仓库即可复现，24 个版本重跑全部一致（[mission-05/G0_AUDIT.md](mission-05/G0_AUDIT.md)）。
 
 ## Mission 01：由时序规格编译神经网络
 
@@ -98,6 +111,76 @@
 
 **结论**（详见 [SCIENTIFIC_STATUS.md](mission-03/SCIENTIFIC_STATUS.md) 与 [EXPLORATION_LEDGER.md](mission-03/EXPLORATION_LEDGER.md)）。在设计者给定的假设形式之内，只凭被动的目标级证据发现机制是可行的：概念实例被唯一发明，机制在未见规模上逐事件正确。所用的方法就是程序综合，没有表现出相对同等信息的符号 DSL 的表示层优势。在 ARC 持出集上，它与命名词汇 DSL 的覆盖都在 1–1.5 %。唯一一条经事先预测检验的原则是"概念先验应是已发现概念在已发现动力学下的闭包"。它在 DEV 任务上降低了识别所需的数据量，但还没有在第三方任务上得到足够的检验。因此主结论为 INCONCLUSIVE。本轮最不了解的机制是新的假设形式（例如对象、计数这一层表示）如何从证据中产生：所有成功都发生在给定形式之内，没有一种新形式是由数据提出的。
 
+## Mission 04：表示层能否由证据决定
+
+**问题**。Mission 03 的所有发现都发生在设计者给定的假设形式之内。Mission 04 先审计 Mission 03 的唯一性证据，再追问：分组、背景、颜色角色、参照框这类表示层，能否由证据提出与选择，而不由设计者给定？
+
+**方法**。研究分四步。
+
+1. **审计**。检查 Mission 03 唯一性判定中的三处裁剪与截断，构造一个精确的唯一性判定，由 Z3 与完整枚举两个独立程序交叉核对。
+2. **表示发明**（ARC-AGI-1 训练集，DEV）。用 9 条规则的分组文法提出候选分组，由与机制无关的守恒律选择（F3），与设计者清单（F1）、残差选择（F4）、解释压缩（F2a）和学到的偏好（S3、S4）比较。
+3. **表示先验**（P-R2，DEV）。检验背景、颜色角色与参照框能否由"跨训练对一致且唯一"决定。
+4. **两次确认**。
+   - ARC-AGI-2 公开评测集的 120 个任务：冻结之后才下载，运行一次。
+   - 一个独立会话生成的 200 对孪生任务：每对是规范版与改变一条先验的孪生版。生成者只报告哈希，冻结之后才读取，运行一次。
+
+| 问题 | 证据 | 结论 |
+|---|---|---|
+| Mission 03 的唯一性声明是否可靠？ | 合成任务上 250 个作答中 10 个有反例证书、4 个答错；ARC-AGI-1 上 38 个作答经精确复核全部唯一；修复版在 ARC-AGI-2 上 1/120，0 错 | 原理上不可靠；ARC 上的作答成立 |
+| 不给块的定义，能否由文法与守恒律得到块表示？ | DEV：F3 解出 10 个、F1 解出 11 个，均 0 错，守恒律特异性 7.2 倍。ARC-AGI-2：守恒律在 33 % 的任务上成立（预测不超过 19.75 %），块层在 120 个任务上没有作答 | DEV 上能，但这是已知形式的重新发现；"守恒律选择表示"按锁定规则撤回 |
+| 表示之间的偏好能否从跨任务经验中学到？ | S4（学到的偏好）13 个、S1（设计者清单）11 个；起主要作用的 S2（18 个）依赖基准"测试可回答"的承诺 | 部分（DEV） |
+| 背景、颜色角色、参照框能否由证据决定？ | DEV：块层 S0 由 10 个增至 14 个、S2 由 18 个增至 24 个，0 错。孪生确认：背景改变下，块层候选 C4 保留 3/5（锁定下限 0.75），孪生版解出由 5 个增至 9 个，0 错 | 背景的方向得到复现，但未达锁定标准；颜色角色与参照框没有得到支持 |
+| 是否发现了可迁移的新表示形式？ | 唯一的候选（块分组）在冻结后的第三方任务上没有作答 | 没有 |
+
+**结论**（详见 [STATUS.md](mission-04/STATUS.md)、[CONFIRMATION_ARC2_RESULTS.md](mission-04/CONFIRMATION_ARC2_RESULTS.md) 与 [CONFIRMATION_TWINS_RESULTS.md](mission-04/CONFIRMATION_TWINS_RESULTS.md)）。
+- 开发集上提出的表示都是人类熟知的形式。它们只相对于本仓库的基础层是新的，信息在"选择"，而不在形式本身。
+- 选择所依据的先验在第三方数据上没有迁移。最有信息量的失败是隐含的表示先验："0 是背景"在 ARC-AGI-1 训练集 80 % 的任务上成立，在 ARC-AGI-2 评测集上只有 33 %。
+- Mission 04 的状态文件仍标为 IN_PROGRESS：研究转入 Mission 05 时，表示与机制的组合实验没有运行。
+
+## Mission 05：原语、组合规律与它们的发现
+
+**问题**。任务书提出两个问题：
+- A：是否存在能够高效构造复杂认知功能的基础原语与组合规律？
+- B：如果存在，能否从有限观察中发现它们？
+
+以 A 为主，同时维持 B 的独立实验，并尝试让两条路线汇合。
+
+**方法**。研究分五步。
+
+1. **研究域与裁判**。
+   - 研究域 LINE：一行 N 个格子，彩色物体、危险格、NO_PICK 约束，一个带夹子的代理；目标是 ORDER、ZONE、GROUP 原子的合取。
+   - 达成器选出两个格子，由固定的搬运宏交换其内容。
+   - 裁判（参考环境、CIR 解释器、网络锁步、N = 6 穷举）不导入任何构造器代码。
+2. **链条**。目标规格 → 控制器 IR（CIR）→ 以 Mission 02 的冻结模板编译的 IF 网络 → 与参考环境闭环 → 裁判 J1-sym、J1-net、J2。
+3. **问题 A**。
+   - 构造器：达成器库与两条组合规律（两两保持 A-P、共享势函数 A-P′）。
+   - 合同的证据：N ≤ 7 的穷举，以及以交换引理为基础的 Z3 参数化证明。
+   - 构造器只接受有证据的合同条目。
+4. **问题 B**。从观察到的搬运中学习增量的规律（局部势函数之和）与达成器的选择规则（版本空间），再推导合同表。
+5. **纪律与独立检验**。
+   - 八个开发轮次，每轮在写代码之前锁定竞争解释、预测与阈值，代码在运行之前提交。
+   - 两次独立持出挑战（G3、G4）：由与本会话隔离的生成会话用声明的语言 ACH-DSL 写出新的达成器，冻结之后才读取，各运行一次。
+
+| 问题 | 证据 | 结论 |
+|---|---|---|
+| 组合合同是否比同先验搜索更高效？ | PA-1：A-P 构造 2/7，宏级搜索 A-SAME 构造 6/7（CPU 不超过 0.044 s），平面广义规划 0/7；PA-2：组合的价格 38/68 = 0.56，23 个目标没有任何路线能构造 | 否（A-H1 被驳倒） |
+| 合同能否对一切规模成立？ | N ≤ 5 的表有 16 个损伤条目与 2 个保持条目在 N = 6 上被违反；Z3 证明 292 个损伤上界（与 N ≤ 7 穷举的分类 432/432 一致），以及全部 94 个非空保持条目 | 能，依赖两条手证引理（搬运等于交换；达成器总能移动） |
+| 可靠覆盖有多大？ | 98 个开发目标中 49 个，控制器在裁判下 0 失败；参数化证明使 4 个原本无法认证的目标得以构造 | 部分 |
+| 通用推导在独立达成器上是否可靠？ | G3：30 个达成器，118 个构造 0 失败，1,084 个上界与 356 个保持证明都没有被真值否定；G4：45 个达成器，同样 0 失败，网络锁步 0 处不一致 | 是（两个独立持出集） |
+| 校准如何？ | G3：30 个真正有进度的实例中认证 21 个；在开发集上补上缺失的推理（A+、A++）后，G4 上认证 41/42（同一批实例上，G3 时的编码为 33/42） | G3 的缺口在新的独立集合上确认闭合 |
+| B 能否从有限观察中发现规律？ | 只看 N = 5 的观察：恢复交换引理（N = 8 上 86,388 次留出预测 0 错误），学到 12 个达成器的选择规则；推导的合同表 0 危险，构造的目标与 Z3 证明的库完全相同 | 在设计者给定的假设空间内能 |
+| B 在独立达成器上如何？ | 文法之内规则准确；文法之外会被骗（G3 中 4 个实例，G4 中 6 个），但错误被拒绝机制挡在证书之外；由 B 的表构造的控制器在 G3、G4 中各 30 个，0 失败 | 安全，但受文法限制 |
+| 锁定的预测 | 78 个：55 个成立，20 个不成立，2 个 INCONCLUSIVE，1 个按原文不可评 | — |
+
+**结论**（详见 [A05_SUMMARY.md](mission-05/A05_SUMMARY.md)、[G3_RESULTS.md](mission-05/G3_RESULTS.md) 与 [G4_RESULTS.md](mission-05/G4_RESULTS.md)）。
+- 在 LINE 与 ACH-DSL 的范围内，一个小的原语库与两条组合规律，加上可以自动推导的合同，能可靠地构造经裁判验证的控制器。合同推导在两次独立持出挑战中都没有给出错误的证明，并在第二次中达到 98 % 的校准。
+- "高效"这一半没有得到支持：在同一个库上，宏级搜索覆盖得更多，成本也可以忽略。合同带来的是可靠性证书与对一切规模的保证，而不是构造速度。
+- 问题 B 的规律可以从 N = 5 的有限观察中学到，并安全地推广到更大的规模。跨越多轮的一个规律是：危险几乎从不来自规律，而来自"达成器会遇到哪些局部情形"（支撑集）。
+- 尚未回答的：
+  - 势函数文法与规则文法都是设计者写的，它们能否被发现；
+  - 适用性与 B 的支撑集只有 N ≤ 7 的证据；
+  - 三个设计来源属于同一个 LLM 家族。
+
 ## 安装、测试与复现
 
 ```bash
@@ -140,6 +223,40 @@ make mission03-arc
 | `make mission02` | Mission 02 的 Z3 参数化证明、未见任务全流程和事后第三规模检查 |
 | `make mission03` | Mission 03 的泄漏检查、条件命令与 `same` 的发现、确认实验、概念发明、定律签名、生成性构造与先验封闭性实验 |
 | `make mission03-arc` | ARC 自检、不可判定任务集、训练集与持出集；持出集运行前核对解算器的冻结哈希，约 30 分钟 |
+
+Mission 04、05 没有 make 目标，直接运行脚本。两轮的确认运行本身都拒绝重复执行（输出文件已存在时退出），下面的命令由已提交的原始输出重新评分，或重跑可重复的部分：
+
+```bash
+.venv/bin/python -I mission-04/experiments/c1_arc2/score_cp.py
+```
+
+```bash
+.venv/bin/python -I mission-04/experiments/c2_twins/score2.py
+```
+
+```bash
+.venv/bin/python -I mission-05/experiments/judge/selftest.py
+```
+
+```bash
+.venv/bin/python -I mission-05/experiments/g4/freeze.py verify
+```
+
+```bash
+.venv/bin/python -I mission-05/experiments/g4/score_g4.py mission-05/experiments/g4/heldout_run.json mission-05/external/g4_heldout/achievers.json out/g4_scores.json
+```
+
+```bash
+.venv/bin/python -I mission-05/experiments/g4/run_g4.py mission-05/external/g4_heldout/achievers.json out/g4_run.json
+```
+
+| 命令 | 内容 |
+|---|---|
+| `c1_arc2/score_cp.py`、`c2_twins/score2.py` | Mission 04 两次确认的评分（由已提交的结果标签） |
+| `judge/selftest.py` | Mission 05 裁判的自检：精确可达性判定与 BFS 的一致性、批量环境、网络模拟器、CIR 解释器 |
+| `g4/freeze.py verify` | 核对 G4 冻结清单（61 个文件的 SHA-256）；G3 的清单只在 G3 运行之前有效，之后 `g3/` 中加入了事后诊断脚本 |
+| `g4/score_g4.py` | 按锁定的 P1–P6 重新评分 G4 |
+| `g4/run_g4.py` | 在 G4 持出达成器上重跑冻结流程，约 40 分钟；G4 已用过一次，重跑的结果只作复现 |
 
 已在 Apple M4 MacBook Air（arm64）、Python 3.12.13、z3-solver 5.3.1 上测试。
 
@@ -226,6 +343,26 @@ Mission 03：
 | `mission-03/experiments/arc/` | ARC 上的 M-DISC 构造器、B-SAME / B-RICH 基线、运行器与冻结清单 `arc_freeze.json` |
 | `mission-03/external/arc-agi-1/` | ARC-AGI-1 公开任务的未修改副本（Apache-2.0），附完整性清单；来源与污染风险见 `mission-03/external/ARC_PROVENANCE.md` |
 
+Mission 04：
+
+| 路径 | 内容 |
+|---|---|
+| `mission-04/` | 文档、协议与修正案；`experiments/` 下为审计（`a0_uniqueness/`）、表示实验（`r1_repr/`）、表示先验（`r2_priors/`）、两次确认（`c1_arc2/`、`c2_twins/`）的脚本、冻结记录与原始输出 |
+| `mission-04/external/arc-agi-2/` | ARC-AGI-2 公开评测集 120 个任务的未修改副本（Apache-2.0）；来源与访问记录见 `mission-04/external/ARC2_PROVENANCE.md` |
+| `mission-04/external/arc-prior-twins/` | 独立会话生成的孪生任务及其清单 |
+
+Mission 05：
+
+| 路径 | 内容 |
+|---|---|
+| `mission-05/experiments/judge/` | 参考环境、精确可达性判定、实例集、CIR 解释器、网络锁步、J2 与目标池；不导入任何构造器代码 |
+| `mission-05/experiments/lib/` | 达成器模型、CIR 生成与编译、合同表（N ≤ 5、N ≤ 7）、Z3 损伤与保持证明、构造器 A-P、A-P′、A-SAME、A-FLAT，以及第二至六轮的学习器 |
+| `mission-05/experiments/pilots/` | 先导实验与第二至六轮的运行器、评分器与原始输出 |
+| `mission-05/experiments/g3/` | 声明的语言 ACH-DSL（校验、解释执行、编译到 CIR、Z3 编码）、N ≤ 7 真值、通用构造器、B 的流程、G3 运行器、评分器与冻结工具 |
+| `mission-05/experiments/r7/`、`r8/` | A+ 与 A++ 的推导、随机与分层的开发集、运行器与评分器 |
+| `mission-05/experiments/g4/` | G4 运行器（以 A++ 为 A 的表）、评分器与冻结工具 |
+| `mission-05/external/g3_heldout/`、`g4_heldout/` | 两个独立生成会话的原样输出（达成器、元数据、清单） |
+
 ## 设计决策（以及原因）
 
 1. **所有突触延迟 ≥ 1**。网络因此严格因果：任何反馈环都有良定义的语义，同步更新与神经元顺序无关，循环的假设–保证推理也可以靠对时间的归纳证明是可靠的。代价是网络不能对同一步的输入作出反应，这一点由定理 3 精确刻画。
@@ -237,6 +374,8 @@ Mission 03：
 7. **预注册与冻结**。Mission 02 的假设在编写任何原语代码之前写入 `mission-02/hypotheses.md`，之后不改动；未见任务的种子由冻结源码的哈希导出，A-LLM 的程序在任何裁判运行之前提交。
 8. **协议先于实验，修改以修正案记录**。Mission 03 的每个实验都先在 `mission-03/CHALLENGE_PROTOCOL.md` 中锁定竞争解释、信息来源、预算与预测并提交，再编写或运行代码。看到失败后对判据或先验的修改以编号修正案提交，原判据下的结果照常保留；被推翻的预测在 `SCIENTIFIC_STATUS.md` §5 中逐条列出。
 9. **外部持出集的访问规则**。ARC 评测集只由冻结后的脚本运行一次；开发阶段只用自造的合成任务调试，训练集只读取结果标签。运行器只输出任务编号与结果，不输出网格内容。
+10. **构造器与裁判分离，证据规则把关**（Mission 05）。裁判不导入任何构造器代码。构造器只使用带有指定证据标签的合同条目（Z3 证明，或在 N ≤ 7 上没有反例），依赖未经检查条目的证书一律拒绝。
+11. **独立持出与哈希先行**（Mission 04、05）。持出数据由与研究会话隔离的生成会话产生，生成者只报告清单哈希与计数。研究会话先冻结方法与预测并提交，再提交生成者报告的哈希，然后才读取数据；核对哈希与冻结清单后只运行一次。
 
 ## 文档
 
@@ -274,6 +413,27 @@ Mission 03：
 - [OPEN_QUESTIONS.md](mission-03/OPEN_QUESTIONS.md)：各假说的最终状态与下一轮的鉴别实验
 - [EVIDENCE_INDEX.md](mission-03/EVIDENCE_INDEX.md)：每条结论对应的脚本与原始输出
 
+Mission 04：
+
+- [AUDIT_M03_UNIQUENESS.md](mission-04/AUDIT_M03_UNIQUENESS.md)：Mission 03 唯一性证据的审计
+- [REPRESENTATION_HYPOTHESES.md](mission-04/REPRESENTATION_HYPOTHESES.md)：表示发明的分类标准与竞争路线
+- [PROTOCOL.md](mission-04/PROTOCOL.md)：锁定的预测与修正案 1–5
+- [EXPLORATION_LOG.md](mission-04/EXPLORATION_LOG.md)：第 0–8 轮的记录
+- [CONFIRMATION_ARC2.md](mission-04/CONFIRMATION_ARC2.md)、[CONFIRMATION_ARC2_RESULTS.md](mission-04/CONFIRMATION_ARC2_RESULTS.md)：ARC-AGI-2 确认的冻结协议与结果
+- [CONFIRMATION2_DESIGN.md](mission-04/CONFIRMATION2_DESIGN.md)、[CONFIRMATION_TWINS.md](mission-04/CONFIRMATION_TWINS.md)、[CONFIRMATION_TWINS_RESULTS.md](mission-04/CONFIRMATION_TWINS_RESULTS.md)：孪生任务确认的设计、冻结协议与结果
+- [STATUS.md](mission-04/STATUS.md)：结论一览、成本账本与开放问题
+
+Mission 05：
+
+- [NORTH_STAR_A_B.md](mission-05/NORTH_STAR_A_B.md)：问题 A、B 的表述与禁止宣布为成功的情况
+- [G0_AUDIT.md](mission-05/G0_AUDIT.md)：对 Mission 04 的继承审计
+- [A05_HYPOTHESES.md](mission-05/A05_HYPOTHESES.md)、[A05_PROTOCOL.md](mission-05/A05_PROTOCOL.md)：假说、研究域、裁判、锁定的预测与修正案 1–8
+- [A05_RESULTS.md](mission-05/A05_RESULTS.md)：先导实验与第二至八轮的结果
+- [A05_EXPLORATION.md](mission-05/A05_EXPLORATION.md)：探索记录、竞争解释的演变与漂移自查
+- [A_B_LEDGER.md](mission-05/A_B_LEDGER.md)：问题 A、B 的实验账本
+- [G3_DESIGN.md](mission-05/G3_DESIGN.md)、[G3_RESULTS.md](mission-05/G3_RESULTS.md)、[G4_DESIGN.md](mission-05/G4_DESIGN.md)、[G4_RESULTS.md](mission-05/G4_RESULTS.md)：两次独立持出挑战的设计与结果；生成者说明为 `G3_GENERATOR_BRIEF.md`、`G4_GENERATOR_BRIEF.md`
+- [A05_SUMMARY.md](mission-05/A05_SUMMARY.md)：总结、锁定预测的总账与开放问题
+
 ## 版本与冻结记录
 
 开发环境的命令沙箱禁止写入 `.git/config`。经用户明确许可，所有 git 操作都在用户的终端面板中执行（不受沙箱限制）。Mission 02 起，每一轮都在独立分支上开发，完成后快进合并到 main，没有改写历史。
@@ -281,7 +441,9 @@ Mission 03：
 - **Mission 01**：提交历史按阶段记录，依次为工具链、A–C 组结果、冻结、D 组、最终评估。D 组的冻结点同时由 SHA-256 清单和一次提交标记。
 - **Mission 02**（`mission-02` 分支）：原语与工具冻结（`b49a21a`，树哈希 `1c40ea5a…`，清单见 `mission-02/experiments/unseen/freeze-manifest.json`）；由冻结种子生成未见任务（`bccacf5`）；在任何裁判运行之前提交 A-LLM 程序（`c5dbafe`）；评测结果与科学判定（`b109e0e`）。
 - **Mission 03**（`mission-03` 分支）：协议与预测的提交都早于相应实验。依次为未知性审计（`6922a75`）；竞争假说与锁定 P1 预测的挑战协议（`45a459a`）；修正案 1–6（`94747ea`、`63da6e7`、`2e53d15`）；先验封闭性实验的代码在观察任何持出任务之前冻结（`e6d80fa`）；ARC 协议（修正案 9）锁定于任何 ARC 工具与任务查看之前（`765de36`）；ARC 解算器冻结（`fa98aa8`，清单 `mission-03/experiments/arc/arc_freeze.json`）之后才运行持出集；最终状态（`d86db38` 及之后）。
+- **Mission 04**（`mission-04` 分支）：审计工具与表示假说先于任何表示代码（`7b47fa2`）；第一轮结果（`463a76a`）；确认挑战在下载 ARC-AGI-2 之前冻结（`5648e97`），下载后核验（`584cc03`），运行一次（`3511e47`）；孪生任务确认在读取任何生成文件之前冻结（`5b2a1cd`），运行一次（`66b901e`）。该分支没有单独合并到 main，随 Mission 05 一起进入 main。
+- **Mission 05**（`mission-05` 分支）：G0 审计（`99302c3`）与协议（`08390e3`）；每个修正案都在相关代码之前提交，代码在运行之前提交。G3 冻结（`a3657ab`，清单 `mission-05/G3_FREEZE.json`），生成者报告的哈希先于读取提交（`424b398`），运行一次（`cbca7dd`）。G4 冻结（`b38ce72`，清单 `mission-05/G4_FREEZE.json`），哈希先行（`8f82210`），运行一次（`2391997`）。最终状态（`f39d274`），2026-10-21 经用户同意快进合并到 main。
 
 ## 许可
 
-代码与文档以 [MIT License](LICENSE) 发布。`mission-03/external/arc-agi-1/` 中的 ARC-AGI-1 任务数据按其原许可 Apache-2.0 再分发，许可证原文随数据保留。
+代码与文档以 [MIT License](LICENSE) 发布。`mission-03/external/arc-agi-1/` 中的 ARC-AGI-1 任务数据与 `mission-04/external/arc-agi-2/` 中的 ARC-AGI-2 评测数据按其原许可 Apache-2.0 再分发，许可证原文随数据保留。孪生任务（`mission-04/external/arc-prior-twins/`）与 G3、G4 的持出达成器（`mission-05/external/`）由本项目的独立生成会话产生，随仓库以 MIT 许可发布。
