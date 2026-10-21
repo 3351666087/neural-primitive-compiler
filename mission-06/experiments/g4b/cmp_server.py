@@ -40,6 +40,25 @@ def main():
     srv.listen(1)
     gi, game, steps, active = -1, None, 0, False
     ever = {}
+    verbs = {}
+
+    def track_lamp(cmd):
+        """POST-HOC (second diagnostic): booleans about the look-at part and the command verb only."""
+        F = {(x.name, tuple(y.name for y in x.arguments)) for x in game.facts}
+        otype = {q[0]: q[1].strip()[:-4] for nm, q in F if nm == "objecttype"}
+        oloc = {q[0]: q[1] for nm, q in F if nm == "objectatlocation"}
+        aloc = {q[1] for nm, q in F if nm == "atlocation"}
+        held = {q[1] for nm, q in F if nm == "holds"}
+        T2 = next((x[1] for x in game.atoms if x[0] == "HOLDING"), None)
+        lt = next((x[1] for x in game.atoms if x[0] == "LIT"), None)
+        on = [l for l, t in otype.items() if t == lt and ("istoggled", (l,)) in F]
+        h = any(otype.get(o) == T2 for o in held)
+        flags = {"holds_T2": h, "lamp_on": bool(on), "holds_and_on": h and bool(on),
+                 "holds_on_at_lamp": h and any(oloc.get(l) in aloc for l in on)}
+        for k, v in flags.items():
+            if v:
+                ever.setdefault(k, steps)
+        verbs[cmd.split(" ")[0] if cmd else ""] = verbs.get(cmd.split(" ")[0] if cmd else "", 0) + 1
 
     def track():
         at = game.atoms
@@ -52,7 +71,7 @@ def main():
     def end(reason):
         nonlocal active, game
         rec(event="end", game=gi, idx=idxs[gi], family=goals[idxs[gi]][1], reason=reason, steps=steps,
-            won=game.success(), orig_won=game.orig_won, **({"first_step_true": dict(ever)} if a.track else {}))
+            won=game.success(), orig_won=game.orig_won, **({"first_step_true": dict(ever), "verbs": dict(verbs)} if a.track else {}))
         game.close()
         game, active = None, False
 
@@ -73,12 +92,14 @@ def main():
                     out = game.reset()
                     steps, active = 0, True
                     ever.clear()
+                    verbs.clear()
                     rec(event="reset", game=gi)
             elif cmd == "act" and active:
                 steps += 1
                 out = game.step(arg)
                 if a.track:
                     track()
+                    track_lamp(arg)
                 rec(event="act", game=gi, step=steps)
                 if steps >= a.max_steps:
                     end("step limit")

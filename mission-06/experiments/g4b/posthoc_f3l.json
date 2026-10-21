@@ -1,0 +1,133 @@
+{
+ "F3L_goals": 15,
+ "T2_already_at_lamp": 4,
+ "b2_subset": 6,
+ "b2_subset_T2_already_at_lamp": 2,
+ "rows": [
+  {
+   "goal": 30,
+   "in_b2_subset": false,
+   "T2_already_at_lamp": true
+  },
+  {
+   "goal": 31,
+   "in_b2_subset": true,
+   "T2_already_at_lamp": false
+  },
+  {
+   "goal": 32,
+   "in_b2_subset": false,
+   "T2_already_at_lamp": false
+  },
+  {
+   "goal": 33,
+   "in_b2_subset": true,
+   "T2_already_at_lamp": false
+  },
+  {
+   "goal": 34,
+   "in_b2_subset": true,
+   "T2_already_at_lamp": false
+  },
+  {
+   "goal": 35,
+   "in_b2_subset": false,
+   "T2_already_at_lamp": false
+  },
+  {
+   "goal": 36,
+   "in_b2_subset": true,
+   "T2_already_at_lamp": true
+  },
+  {
+   "goal": 37,
+   "in_b2_subset": true,
+   "T2_already_at_lamp": true
+  },
+  {
+   "goal": 38,
+   "in_b2_subset": false,
+   "T2_already_at_lamp": false
+  },
+  {
+   "goal": 39,
+   "in_b2_subset": true,
+   "T2_already_at_lamp": false
+  },
+  {
+   "goal": 40,
+   "in_b2_subset": false,
+   "T2_already_at_lamp": false
+  },
+  {
+   "goal": 41,
+   "in_b2_subset": false,
+   "T2_already_at_lamp": false
+  },
+  {
+   "goal": 42,
+   "in_b2_subset": false,
+   "T2_already_at_lamp": false
+  },
+  {
+   "goal": 43,
+   "in_b2_subset": false,
+   "T2_already_at_lamp": true
+  },
+  {
+   "goal": 44,
+   "in_b2_subset": false,
+   "T2_already_at_lamp": false
+  }
+ ],
+ "diagnostic_b2_rerun": [
+  {
+   "goal": 31,
+   "won": false,
+   "steps": 13,
+   "first_step_true": {
+    "in_part": 10
+   }
+  },
+  {
+   "goal": 33,
+   "won": false,
+   "steps": 13,
+   "first_step_true": {
+    "in_part": 9
+   }
+  },
+  {
+   "goal": 34,
+   "won": false,
+   "steps": 9,
+   "first_step_true": {
+    "in_part": 5
+   }
+  },
+  {
+   "goal": 36,
+   "won": false,
+   "steps": 8,
+   "first_step_true": {
+    "in_part": 5
+   }
+  },
+  {
+   "goal": 37,
+   "won": false,
+   "steps": 8,
+   "first_step_true": {
+    "in_part": 5
+   }
+  },
+  {
+   "goal": 39,
+   "won": false,
+   "steps": 8,
+   "first_step_true": {
+    "in_part": 4
+   }
+  }
+ ]
+}
