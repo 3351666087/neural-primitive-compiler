@@ -1,0 +1,34 @@
+{
+ "test_normal": {
+  "tasks": 168,
+  "answer_required": 0.19642857142857142,
+  "multi_app (num_apps>=2)": 0.5357142857142857,
+  "num_apps_mean": 1.625,
+  "api_calls_median": 30.0,
+  "api_calls_q1_q3": [
+   16.25,
+   40.0
+  ],
+  "difficulty": {
+   "1": 57,
+   "2": 48,
+   "3": 63
+  }
+ },
+ "test_challenge": {
+  "tasks": 417,
+  "answer_required": 0.11510791366906475,
+  "multi_app (num_apps>=2)": 0.6258992805755396,
+  "num_apps_mean": 2.0215827338129495,
+  "api_calls_median": 25,
+  "api_calls_q1_q3": [
+   16.0,
+   40.0
+  ],
+  "difficulty": {
+   "1": 72,
+   "2": 150,
+   "3": 195
+  }
+ }
+}

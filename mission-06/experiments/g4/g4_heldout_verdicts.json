@@ -1,0 +1,1371 @@
+{
+ "clean": {
+  "run": "heldout_clean",
+  "arms": {
+   "G2A-1": {
+    "games": 134,
+    "won": 123,
+    "success": 0.917910447761194,
+    "wilson95": [
+     0.8589820004119779,
+     0.9535456741949122
+    ],
+    "silent_failures": 0,
+    "abstain_failed": 11,
+    "abstain_but_won": 0,
+    "claims_done": 123,
+    "precision_of_claims_done": 1.0,
+    "L_co_contradictions_in_lost_games": 0,
+    "mean_steps": 14.201492537313433,
+    "retries": 0,
+    "colocated_hits": 0,
+    "perturbed_actions": 0,
+    "outcomes": {
+     "won": 123,
+     "abstain: monitor": 11
+    },
+    "by_task_type": {
+     "look_at_obj_in_light": "17/18",
+     "pick_and_place_simple": "16/24",
+     "pick_clean_then_place_in_recep": "31/31",
+     "pick_cool_then_place_in_recep": "21/21",
+     "pick_heat_then_place_in_recep": "23/23",
+     "pick_two_obj_and_place": "15/17"
+    }
+   },
+   "B1": {
+    "games": 134,
+    "won": 132,
+    "success": 0.9850746268656716,
+    "wilson95": [
+     0.9472151438236478,
+     0.9958973356307783
+    ],
+    "silent_failures": 0,
+    "abstain_failed": 2,
+    "abstain_but_won": 0,
+    "claims_done": 132,
+    "precision_of_claims_done": 1.0,
+    "L_co_contradictions_in_lost_games": 0,
+    "mean_steps": 15.76865671641791,
+    "retries": 0,
+    "colocated_hits": 0,
+    "perturbed_actions": 0,
+    "outcomes": {
+     "won": 132,
+     "abstain: search exhausted": 1,
+     "abstain: budget exhausted": 1
+    },
+    "by_task_type": {
+     "look_at_obj_in_light": "17/18",
+     "pick_and_place_simple": "24/24",
+     "pick_clean_then_place_in_recep": "31/31",
+     "pick_cool_then_place_in_recep": "21/21",
+     "pick_heat_then_place_in_recep": "23/23",
+     "pick_two_obj_and_place": "16/17"
+    }
+   },
+   "G3-L": {
+    "games": 134,
+    "won": 132,
+    "success": 0.9850746268656716,
+    "wilson95": [
+     0.9472151438236478,
+     0.9958973356307783
+    ],
+    "silent_failures": 0,
+    "abstain_failed": 2,
+    "abstain_but_won": 0,
+    "claims_done": 132,
+    "precision_of_claims_done": 1.0,
+    "L_co_contradictions_in_lost_games": 0,
+    "mean_steps": 15.992537313432836,
+    "retries": 0,
+    "colocated_hits": 23,
+    "perturbed_actions": 0,
+    "outcomes": {
+     "won": 132,
+     "abstain: search exhausted": 1,
+     "abstain: budget exhausted": 1
+    },
+    "by_task_type": {
+     "look_at_obj_in_light": "17/18",
+     "pick_and_place_simple": "24/24",
+     "pick_clean_then_place_in_recep": "31/31",
+     "pick_cool_then_place_in_recep": "21/21",
+     "pick_heat_then_place_in_recep": "23/23",
+     "pick_two_obj_and_place": "16/17"
+    }
+   },
+   "G3-S": {
+    "games": 134,
+    "won": 132,
+    "success": 0.9850746268656716,
+    "wilson95": [
+     0.9472151438236478,
+     0.9958973356307783
+    ],
+    "silent_failures": 0,
+    "abstain_failed": 2,
+    "abstain_but_won": 0,
+    "claims_done": 132,
+    "precision_of_claims_done": 1.0,
+    "L_co_contradictions_in_lost_games": 0,
+    "mean_steps": 15.76865671641791,
+    "retries": 0,
+    "colocated_hits": 0,
+    "perturbed_actions": 0,
+    "outcomes": {
+     "won": 132,
+     "abstain: search exhausted": 1,
+     "abstain: budget exhausted": 1
+    },
+    "by_task_type": {
+     "look_at_obj_in_light": "17/18",
+     "pick_and_place_simple": "24/24",
+     "pick_clean_then_place_in_recep": "31/31",
+     "pick_cool_then_place_in_recep": "21/21",
+     "pick_heat_then_place_in_recep": "23/23",
+     "pick_two_obj_and_place": "16/17"
+    }
+   },
+   "G3-LP": {
+    "games": 134,
+    "won": 133,
+    "success": 0.9925373134328358,
+    "wilson95": [
+     0.9589404665691039,
+     0.9986814356461595
+    ],
+    "silent_failures": 0,
+    "abstain_failed": 1,
+    "abstain_but_won": 2,
+    "claims_done": 131,
+    "precision_of_claims_done": 1.0,
+    "L_co_contradictions_in_lost_games": 0,
+    "mean_steps": 12.432835820895523,
+    "retries": 0,
+    "colocated_hits": 6,
+    "perturbed_actions": 0,
+    "outcomes": {
+     "won": 133,
+     "abstain: search exhausted": 1
+    },
+    "by_task_type": {
+     "look_at_obj_in_light": "17/18",
+     "pick_and_place_simple": "24/24",
+     "pick_clean_then_place_in_recep": "31/31",
+     "pick_cool_then_place_in_recep": "21/21",
+     "pick_heat_then_place_in_recep": "23/23",
+     "pick_two_obj_and_place": "17/17"
+    }
+   },
+   "G3-LPR": {
+    "games": 134,
+    "won": 133,
+    "success": 0.9925373134328358,
+    "wilson95": [
+     0.9589404665691039,
+     0.9986814356461595
+    ],
+    "silent_failures": 0,
+    "abstain_failed": 1,
+    "abstain_but_won": 2,
+    "claims_done": 131,
+    "precision_of_claims_done": 1.0,
+    "L_co_contradictions_in_lost_games": 0,
+    "mean_steps": 12.432835820895523,
+    "retries": 0,
+    "colocated_hits": 6,
+    "perturbed_actions": 0,
+    "outcomes": {
+     "won": 133,
+     "abstain: search exhausted": 1
+    },
+    "by_task_type": {
+     "look_at_obj_in_light": "17/18",
+     "pick_and_place_simple": "24/24",
+     "pick_clean_then_place_in_recep": "31/31",
+     "pick_cool_then_place_in_recep": "21/21",
+     "pick_heat_then_place_in_recep": "23/23",
+     "pick_two_obj_and_place": "17/17"
+    }
+   },
+   "B1-LPR": {
+    "games": 134,
+    "won": 133,
+    "success": 0.9925373134328358,
+    "wilson95": [
+     0.9589404665691039,
+     0.9986814356461595
+    ],
+    "silent_failures": 0,
+    "abstain_failed": 1,
+    "abstain_but_won": 0,
+    "claims_done": 133,
+    "precision_of_claims_done": 1.0,
+    "L_co_contradictions_in_lost_games": 0,
+    "mean_steps": 12.477611940298507,
+    "retries": 4,
+    "colocated_hits": 6,
+    "perturbed_actions": 0,
+    "outcomes": {
+     "won": 133,
+     "abstain: search exhausted": 1
+    },
+    "by_task_type": {
+     "look_at_obj_in_light": "17/18",
+     "pick_and_place_simple": "24/24",
+     "pick_clean_then_place_in_recep": "31/31",
+     "pick_cool_then_place_in_recep": "21/21",
+     "pick_heat_then_place_in_recep": "23/23",
+     "pick_two_obj_and_place": "17/17"
+    }
+   }
+  },
+  "paired": {
+   "G3-L vs G2A-1": {
+    "success_diff": 0.06716417910447761,
+    "success_diff_ci95": [
+     0.029850746268656716,
+     0.11194029850746269
+    ],
+    "mcnemar_p": 0.00390625,
+    "G3-L_only": 9,
+    "G2A-1_only": 0,
+    "steps_diff": 1.791044776119403,
+    "steps_diff_ci95": [
+     0.7686567164179104,
+     3.0
+    ],
+    "steps_ratio": 1.1261166579085655
+   },
+   "G3-L vs B1": {
+    "success_diff": 0.0,
+    "success_diff_ci95": [
+     0.0,
+     0.0
+    ],
+    "mcnemar_p": 1.0,
+    "G3-L_only": 0,
+    "B1_only": 0,
+    "steps_diff": 0.22388059701492538,
+    "steps_diff_ci95": [
+     0.08208955223880597,
+     0.39552238805970147
+    ],
+    "steps_ratio": 1.0141978230004733
+   },
+   "G3-LP vs G3-L": {
+    "success_diff": 0.007462686567164179,
+    "success_diff_ci95": [
+     0.0,
+     0.022388059701492536
+    ],
+    "mcnemar_p": 1.0,
+    "G3-LP_only": 1,
+    "G3-L_only": 0,
+    "steps_diff": -3.5597014925373136,
+    "steps_diff_ci95": [
+     -4.462686567164179,
+     -2.6641791044776117
+    ],
+    "steps_ratio": 0.7774148390107326
+   },
+   "G3-LPR vs B1-LPR": {
+    "success_diff": 0.0,
+    "success_diff_ci95": [
+     0.0,
+     0.0
+    ],
+    "mcnemar_p": 1.0,
+    "G3-LPR_only": 0,
+    "B1-LPR_only": 0,
+    "steps_diff": -0.04477611940298507,
+    "steps_diff_ci95": [
+     -0.11194029850746269,
+     0.0
+    ],
+    "steps_ratio": 0.9964114832535885
+   },
+   "G3-LPR vs G3-LP": {
+    "success_diff": 0.0,
+    "success_diff_ci95": [
+     0.0,
+     0.0
+    ],
+    "mcnemar_p": 1.0,
+    "G3-LPR_only": 0,
+    "G3-LP_only": 0,
+    "steps_diff": 0.0,
+    "steps_diff_ci95": [
+     0.0,
+     0.0
+    ],
+    "steps_ratio": 1.0
+   },
+   "B1-LPR vs B1": {
+    "success_diff": 0.007462686567164179,
+    "success_diff_ci95": [
+     0.0,
+     0.022388059701492536
+    ],
+    "mcnemar_p": 1.0,
+    "B1-LPR_only": 1,
+    "B1_only": 0,
+    "steps_diff": -3.291044776119403,
+    "steps_diff_ci95": [
+     -4.17910447761194,
+     -2.417910447761194
+    ],
+    "steps_ratio": 0.791292001893043
+   }
+  }
+ },
+ "pert": {
+  "run": "heldout_pert",
+  "arms": {
+   "G2A-1": {
+    "games": 134,
+    "won": 39,
+    "success": 0.291044776119403,
+    "wilson95": [
+     0.22081369559742847,
+     0.3729224670991266
+    ],
+    "silent_failures": 0,
+    "abstain_failed": 95,
+    "abstain_but_won": 0,
+    "claims_done": 39,
+    "precision_of_claims_done": 1.0,
+    "L_co_contradictions_in_lost_games": 0,
+    "mean_steps": 8.201492537313433,
+    "retries": 0,
+    "colocated_hits": 0,
+    "perturbed_actions": 86,
+    "outcomes": {
+     "abstain: monitor": 95,
+     "won": 39
+    },
+    "by_task_type": {
+     "look_at_obj_in_light": "8/18",
+     "pick_and_place_simple": "7/24",
+     "pick_clean_then_place_in_recep": "11/31",
+     "pick_cool_then_place_in_recep": "2/21",
+     "pick_heat_then_place_in_recep": "4/23",
+     "pick_two_obj_and_place": "7/17"
+    }
+   },
+   "B1": {
+    "games": 134,
+    "won": 73,
+    "success": 0.5447761194029851,
+    "wilson95": [
+     0.46038470594828046,
+     0.6266718306167436
+    ],
+    "silent_failures": 56,
+    "abstain_failed": 5,
+    "abstain_but_won": 0,
+    "claims_done": 129,
+    "precision_of_claims_done": 0.5658914728682171,
+    "L_co_contradictions_in_lost_games": 0,
+    "mean_steps": 17.08955223880597,
+    "retries": 0,
+    "colocated_hits": 0,
+    "perturbed_actions": 166,
+    "outcomes": {
+     "won": 73,
+     "claims done": 56,
+     "abstain: search exhausted": 4,
+     "abstain: budget exhausted": 1
+    },
+    "by_task_type": {
+     "look_at_obj_in_light": "8/18",
+     "pick_and_place_simple": "16/24",
+     "pick_clean_then_place_in_recep": "17/31",
+     "pick_cool_then_place_in_recep": "12/21",
+     "pick_heat_then_place_in_recep": "10/23",
+     "pick_two_obj_and_place": "10/17"
+    }
+   },
+   "G3-L": {
+    "games": 134,
+    "won": 40,
+    "success": 0.29850746268656714,
+    "wilson95": [
+     0.22752479282389473,
+     0.38072079263349756
+    ],
+    "silent_failures": 0,
+    "abstain_failed": 94,
+    "abstain_but_won": 0,
+    "claims_done": 40,
+    "precision_of_claims_done": 1.0,
+    "L_co_contradictions_in_lost_games": 0,
+    "mean_steps": 8.932835820895523,
+    "retries": 0,
+    "colocated_hits": 13,
+    "perturbed_actions": 93,
+    "outcomes": {
+     "abstain: monitor": 93,
+     "won": 40,
+     "abstain: search exhausted": 1
+    },
+    "by_task_type": {
+     "look_at_obj_in_light": "8/18",
+     "pick_and_place_simple": "8/24",
+     "pick_clean_then_place_in_recep": "11/31",
+     "pick_cool_then_place_in_recep": "2/21",
+     "pick_heat_then_place_in_recep": "4/23",
+     "pick_two_obj_and_place": "7/17"
+    }
+   },
+   "G3-S": {
+    "games": 134,
+    "won": 79,
+    "success": 0.5895522388059702,
+    "wilson95": [
+     0.5048987520124907,
+     0.6692143211175573
+    ],
+    "silent_failures": 0,
+    "abstain_failed": 55,
+    "abstain_but_won": 0,
+    "claims_done": 79,
+    "precision_of_claims_done": 1.0,
+    "L_co_contradictions_in_lost_games": 0,
+    "mean_steps": 16.044776119402986,
+    "retries": 0,
+    "colocated_hits": 0,
+    "perturbed_actions": 160,
+    "outcomes": {
+     "won": 79,
+     "abstain: postcondition of IN not met": 17,
+     "abstain: postcondition of HEAT not met": 10,
+     "abstain: postcondition of CLEAN not met": 9,
+     "abstain: postcondition of HOLDING not met": 6,
+     "abstain: postcondition of COOL not met": 5,
+     "abstain: search exhausted": 4,
+     "abstain: postcondition of LIT not met": 3,
+     "abstain: budget exhausted": 1
+    },
+    "by_task_type": {
+     "look_at_obj_in_light": "8/18",
+     "pick_and_place_simple": "16/24",
+     "pick_clean_then_place_in_recep": "17/31",
+     "pick_cool_then_place_in_recep": "12/21",
+     "pick_heat_then_place_in_recep": "10/23",
+     "pick_two_obj_and_place": "16/17"
+    }
+   },
+   "G3-LP": {
+    "games": 134,
+    "won": 49,
+    "success": 0.3656716417910448,
+    "wilson95": [
+     0.28892719871301015,
+     0.4499031915919181
+    ],
+    "silent_failures": 0,
+    "abstain_failed": 85,
+    "abstain_but_won": 2,
+    "claims_done": 47,
+    "precision_of_claims_done": 1.0,
+    "L_co_contradictions_in_lost_games": 0,
+    "mean_steps": 8.059701492537313,
+    "retries": 0,
+    "colocated_hits": 5,
+    "perturbed_actions": 84,
+    "outcomes": {
+     "abstain: monitor": 84,
+     "won": 49,
+     "abstain: search exhausted": 1
+    },
+    "by_task_type": {
+     "look_at_obj_in_light": "8/18",
+     "pick_and_place_simple": "9/24",
+     "pick_clean_then_place_in_recep": "14/31",
+     "pick_cool_then_place_in_recep": "6/21",
+     "pick_heat_then_place_in_recep": "5/23",
+     "pick_two_obj_and_place": "7/17"
+    }
+   },
+   "G3-LPR": {
+    "games": 134,
+    "won": 125,
+    "success": 0.9328358208955224,
+    "wilson95": [
+     0.8772811261744599,
+     0.9642653939541049
+    ],
+    "silent_failures": 0,
+    "abstain_failed": 9,
+    "abstain_but_won": 2,
+    "claims_done": 123,
+    "precision_of_claims_done": 1.0,
+    "L_co_contradictions_in_lost_games": 0,
+    "mean_steps": 13.238805970149254,
+    "retries": 157,
+    "colocated_hits": 6,
+    "perturbed_actions": 165,
+    "outcomes": {
+     "won": 125,
+     "abstain: monitor": 8,
+     "abstain: search exhausted": 1
+    },
+    "by_task_type": {
+     "look_at_obj_in_light": "15/18",
+     "pick_and_place_simple": "22/24",
+     "pick_clean_then_place_in_recep": "31/31",
+     "pick_cool_then_place_in_recep": "20/21",
+     "pick_heat_then_place_in_recep": "21/23",
+     "pick_two_obj_and_place": "16/17"
+    }
+   },
+   "B1-LPR": {
+    "games": 134,
+    "won": 128,
+    "success": 0.9552238805970149,
+    "wilson95": [
+     0.9057552772644654,
+     0.9793195111466114
+    ],
+    "silent_failures": 5,
+    "abstain_failed": 1,
+    "abstain_but_won": 0,
+    "claims_done": 133,
+    "precision_of_claims_done": 0.9624060150375939,
+    "L_co_contradictions_in_lost_games": 0,
+    "mean_steps": 13.746268656716419,
+    "retries": 170,
+    "colocated_hits": 6,
+    "perturbed_actions": 173,
+    "outcomes": {
+     "won": 128,
+     "claims done": 5,
+     "abstain: search exhausted": 1
+    },
+    "by_task_type": {
+     "look_at_obj_in_light": "15/18",
+     "pick_and_place_simple": "23/24",
+     "pick_clean_then_place_in_recep": "31/31",
+     "pick_cool_then_place_in_recep": "21/21",
+     "pick_heat_then_place_in_recep": "21/23",
+     "pick_two_obj_and_place": "17/17"
+    }
+   }
+  },
+  "paired": {
+   "G3-L vs G2A-1": {
+    "success_diff": 0.007462686567164179,
+    "success_diff_ci95": [
+     0.0,
+     0.022388059701492536
+    ],
+    "mcnemar_p": 1.0,
+    "G3-L_only": 1,
+    "G2A-1_only": 0,
+    "steps_diff": 0.7313432835820896,
+    "steps_diff_ci95": [
+     0.26865671641791045,
+     1.2761194029850746
+    ],
+    "steps_ratio": 1.089171974522293
+   },
+   "G3-L vs B1": {
+    "success_diff": -0.2462686567164179,
+    "success_diff_ci95": [
+     -0.3208955223880597,
+     -0.17164179104477612
+    ],
+    "mcnemar_p": 2.3283064365386963e-10,
+    "G3-L_only": 0,
+    "B1_only": 33,
+    "steps_diff": -8.156716417910447,
+    "steps_diff_ci95": [
+     -9.76865671641791,
+     -6.611940298507463
+    ],
+    "steps_ratio": 0.522707423580786
+   },
+   "G3-LP vs G3-L": {
+    "success_diff": 0.06716417910447761,
+    "success_diff_ci95": [
+     0.029850746268656716,
+     0.11194029850746269
+    ],
+    "mcnemar_p": 0.00390625,
+    "G3-LP_only": 9,
+    "G3-L_only": 0,
+    "steps_diff": -0.8731343283582089,
+    "steps_diff_ci95": [
+     -1.5223880597014925,
+     -0.26119402985074625
+    ],
+    "steps_ratio": 0.9022556390977443
+   },
+   "G3-LPR vs B1-LPR": {
+    "success_diff": -0.022388059701492536,
+    "success_diff_ci95": [
+     -0.05223880597014925,
+     0.0
+    ],
+    "mcnemar_p": 0.25,
+    "G3-LPR_only": 0,
+    "B1-LPR_only": 3,
+    "steps_diff": -0.5074626865671642,
+    "steps_diff_ci95": [
+     -1.0895522388059702,
+     -0.11194029850746269
+    ],
+    "steps_ratio": 0.9630836047774158
+   },
+   "G3-LPR vs G3-LP": {
+    "success_diff": 0.5671641791044776,
+    "success_diff_ci95": [
+     0.48507462686567165,
+     0.6492537313432836
+    ],
+    "mcnemar_p": 2.6469779601696886e-23,
+    "G3-LPR_only": 76,
+    "G3-LP_only": 0,
+    "steps_diff": 5.17910447761194,
+    "steps_diff_ci95": [
+     4.044776119402985,
+     6.425373134328358
+    ],
+    "steps_ratio": 1.6425925925925926
+   },
+   "B1-LPR vs B1": {
+    "success_diff": 0.41044776119402987,
+    "success_diff_ci95": [
+     0.3208955223880597,
+     0.4925373134328358
+    ],
+    "mcnemar_p": 8.049116928532385e-16,
+    "B1-LPR_only": 56,
+    "B1_only": 1,
+    "steps_diff": -3.343283582089552,
+    "steps_diff_ci95": [
+     -4.447761194029851,
+     -2.253731343283582
+    ],
+    "steps_ratio": 0.8043668122270743
+   }
+  }
+ },
+ "B2_clean": {
+  "label": "Gate 4 B2 (Opus 5.5 subagent), g4c",
+  "games": 60,
+  "games_idx": [
+   18,
+   42,
+   29,
+   91,
+   10,
+   103,
+   105,
+   98,
+   47,
+   32,
+   79,
+   133,
+   43,
+   113,
+   53,
+   129,
+   90,
+   0,
+   101,
+   117,
+   16,
+   110,
+   30,
+   2,
+   118,
+   114,
+   11,
+   119,
+   39,
+   14,
+   120,
+   3,
+   121,
+   123,
+   115,
+   62,
+   83,
+   46,
+   94,
+   99,
+   61,
+   34,
+   1,
+   132,
+   70,
+   24,
+   130,
+   77,
+   54,
+   74,
+   4,
+   87,
+   41,
+   71,
+   19,
+   86,
+   73,
+   76,
+   12,
+   37
+  ],
+  "won_by_idx": {
+   "18": true,
+   "42": true,
+   "29": true,
+   "91": true,
+   "10": true,
+   "103": true,
+   "105": true,
+   "98": true,
+   "47": true,
+   "32": true,
+   "79": true,
+   "133": true,
+   "43": true,
+   "113": true,
+   "53": true,
+   "129": true,
+   "90": true,
+   "0": true,
+   "101": true,
+   "117": true,
+   "16": true,
+   "110": true,
+   "30": true,
+   "2": true,
+   "118": true,
+   "114": true,
+   "11": true,
+   "119": true,
+   "39": true,
+   "14": true,
+   "120": true,
+   "3": true,
+   "121": true,
+   "123": true,
+   "115": true,
+   "62": true,
+   "83": true,
+   "46": true,
+   "94": true,
+   "99": true,
+   "61": true,
+   "34": true,
+   "1": true,
+   "132": true,
+   "70": true,
+   "24": true,
+   "130": true,
+   "77": true,
+   "54": true,
+   "74": true,
+   "4": true,
+   "87": true,
+   "41": true,
+   "71": true,
+   "19": true,
+   "86": true,
+   "73": true,
+   "76": true,
+   "12": true,
+   "37": true
+  },
+  "steps_by_idx": {
+   "18": 7,
+   "42": 8,
+   "29": 4,
+   "91": 13,
+   "10": 5,
+   "103": 10,
+   "105": 8,
+   "98": 8,
+   "47": 6,
+   "32": 7,
+   "79": 6,
+   "133": 10,
+   "43": 18,
+   "113": 6,
+   "53": 6,
+   "129": 9,
+   "90": 8,
+   "0": 5,
+   "101": 8,
+   "117": 10,
+   "16": 4,
+   "110": 6,
+   "30": 14,
+   "2": 3,
+   "118": 9,
+   "114": 6,
+   "11": 3,
+   "119": 10,
+   "39": 5,
+   "14": 4,
+   "120": 11,
+   "3": 4,
+   "121": 16,
+   "123": 10,
+   "115": 8,
+   "62": 7,
+   "83": 6,
+   "46": 10,
+   "94": 10,
+   "99": 11,
+   "61": 6,
+   "34": 4,
+   "1": 5,
+   "132": 9,
+   "70": 9,
+   "24": 7,
+   "130": 8,
+   "77": 7,
+   "54": 8,
+   "74": 6,
+   "4": 6,
+   "87": 7,
+   "41": 28,
+   "71": 8,
+   "19": 6,
+   "86": 50,
+   "73": 9,
+   "76": 7,
+   "12": 5,
+   "37": 8
+  },
+  "won": 60,
+  "success": 1.0,
+  "claims_done_but_lost": 0,
+  "per_type": {
+   "look_at_obj_in_light": "10/10",
+   "pick_and_place_simple": "10/10",
+   "pick_clean_then_place_in_recep": "10/10",
+   "pick_cool_then_place_in_recep": "10/10",
+   "pick_heat_then_place_in_recep": "10/10",
+   "pick_two_obj_and_place": "10/10"
+  },
+  "mean_steps": 8.7,
+  "ends": {
+   "agent done": 59,
+   "step limit": 1
+  },
+  "perturbed_actions": 0,
+  "batches": {
+   "0": {
+    "acts": 19,
+    "games": 3,
+    "protocol_calls": 26,
+    "tokens": 62708,
+    "tool_uses": 26,
+    "extra_tool_calls": 0
+   },
+   "1": {
+    "acts": 28,
+    "games": 3,
+    "protocol_calls": 35,
+    "tokens": 65384,
+    "tool_uses": 35,
+    "extra_tool_calls": 0
+   },
+   "2": {
+    "acts": 22,
+    "games": 3,
+    "protocol_calls": 29,
+    "tokens": 63169,
+    "tool_uses": 29,
+    "extra_tool_calls": 0
+   },
+   "3": {
+    "acts": 23,
+    "games": 3,
+    "protocol_calls": 30,
+    "tokens": 63651,
+    "tool_uses": 30,
+    "extra_tool_calls": 0
+   },
+   "4": {
+    "acts": 30,
+    "games": 3,
+    "protocol_calls": 37,
+    "tokens": 65662,
+    "tool_uses": 37,
+    "extra_tool_calls": 0
+   },
+   "5": {
+    "acts": 22,
+    "games": 3,
+    "protocol_calls": 29,
+    "tokens": 63260,
+    "tool_uses": 29,
+    "extra_tool_calls": 0
+   },
+   "6": {
+    "acts": 22,
+    "games": 3,
+    "protocol_calls": 29,
+    "tokens": 63216,
+    "tool_uses": 29,
+    "extra_tool_calls": 0
+   },
+   "7": {
+    "acts": 23,
+    "games": 3,
+    "protocol_calls": 30,
+    "tokens": 64016,
+    "tool_uses": 31,
+    "extra_tool_calls": 1
+   },
+   "8": {
+    "acts": 18,
+    "games": 3,
+    "protocol_calls": 25,
+    "tokens": 62100,
+    "tool_uses": 25,
+    "extra_tool_calls": 0
+   },
+   "9": {
+    "acts": 19,
+    "games": 3,
+    "protocol_calls": 26,
+    "tokens": 62491,
+    "tool_uses": 26,
+    "extra_tool_calls": 0
+   },
+   "10": {
+    "acts": 31,
+    "games": 3,
+    "protocol_calls": 38,
+    "tokens": 65659,
+    "tool_uses": 38,
+    "extra_tool_calls": 0
+   },
+   "11": {
+    "acts": 25,
+    "games": 3,
+    "protocol_calls": 32,
+    "tokens": 64255,
+    "tool_uses": 32,
+    "extra_tool_calls": 0
+   },
+   "12": {
+    "acts": 26,
+    "games": 3,
+    "protocol_calls": 33,
+    "tokens": 64183,
+    "tool_uses": 33,
+    "extra_tool_calls": 0
+   },
+   "13": {
+    "acts": 21,
+    "games": 3,
+    "protocol_calls": 28,
+    "tokens": 63072,
+    "tool_uses": 28,
+    "extra_tool_calls": 0
+   },
+   "14": {
+    "acts": 23,
+    "games": 3,
+    "protocol_calls": 30,
+    "tokens": 63379,
+    "tool_uses": 30,
+    "extra_tool_calls": 0
+   },
+   "15": {
+    "acts": 22,
+    "games": 3,
+    "protocol_calls": 29,
+    "tokens": 63393,
+    "tool_uses": 29,
+    "extra_tool_calls": 0
+   },
+   "16": {
+    "acts": 20,
+    "games": 3,
+    "protocol_calls": 27,
+    "tokens": 63069,
+    "tool_uses": 27,
+    "extra_tool_calls": 0
+   },
+   "17": {
+    "acts": 43,
+    "games": 3,
+    "protocol_calls": 50,
+    "tokens": 68055,
+    "tool_uses": 50,
+    "extra_tool_calls": 0
+   },
+   "18": {
+    "acts": 65,
+    "games": 3,
+    "protocol_calls": 71,
+    "tokens": 72829,
+    "tool_uses": 71,
+    "extra_tool_calls": 0
+   },
+   "19": {
+    "acts": 20,
+    "games": 3,
+    "protocol_calls": 27,
+    "tokens": 62810,
+    "tool_uses": 27,
+    "extra_tool_calls": 0
+   }
+  },
+  "tokens_total": 1286361,
+  "extra_tool_calls_total": 1,
+  "same_games_success": {
+   "G2A-1": 0.8666666666666667,
+   "B1": 0.9666666666666667,
+   "G3-L": 0.9666666666666667,
+   "G3-S": 0.9666666666666667,
+   "G3-LP": 0.9833333333333333,
+   "G3-LPR": 0.9833333333333333,
+   "B1-LPR": 0.9833333333333333
+  },
+  "same_games_mean_steps": {
+   "G2A-1": 14.05,
+   "B1": 16.716666666666665,
+   "G3-L": 17.066666666666666,
+   "G3-S": 16.716666666666665,
+   "G3-LP": 12.816666666666666,
+   "G3-LPR": 12.816666666666666,
+   "B1-LPR": 12.816666666666666
+  }
+ },
+ "B2_pert": {
+  "label": "Gate 4 B2 (Opus 5.5 subagent), g4p",
+  "games": 24,
+  "games_idx": [
+   83,
+   133,
+   101,
+   1,
+   113,
+   132,
+   118,
+   10,
+   86,
+   30,
+   43,
+   76,
+   73,
+   41,
+   2,
+   71,
+   39,
+   32,
+   46,
+   121,
+   54,
+   12,
+   94,
+   115
+  ],
+  "won_by_idx": {
+   "83": true,
+   "133": true,
+   "101": true,
+   "1": true,
+   "113": true,
+   "132": true,
+   "118": true,
+   "10": true,
+   "86": true,
+   "30": true,
+   "43": true,
+   "76": true,
+   "73": true,
+   "41": true,
+   "2": true,
+   "71": true,
+   "39": true,
+   "32": true,
+   "46": true,
+   "121": true,
+   "54": true,
+   "12": true,
+   "94": true,
+   "115": true
+  },
+  "steps_by_idx": {
+   "83": 19,
+   "133": 11,
+   "101": 9,
+   "1": 5,
+   "113": 10,
+   "132": 14,
+   "118": 45,
+   "10": 9,
+   "86": 15,
+   "30": 31,
+   "43": 18,
+   "76": 7,
+   "73": 8,
+   "41": 45,
+   "2": 3,
+   "71": 9,
+   "39": 5,
+   "32": 38,
+   "46": 10,
+   "121": 12,
+   "54": 8,
+   "12": 23,
+   "94": 13,
+   "115": 9
+  },
+  "won": 24,
+  "success": 1.0,
+  "claims_done_but_lost": 0,
+  "per_type": {
+   "look_at_obj_in_light": "4/4",
+   "pick_and_place_simple": "4/4",
+   "pick_clean_then_place_in_recep": "4/4",
+   "pick_cool_then_place_in_recep": "4/4",
+   "pick_heat_then_place_in_recep": "4/4",
+   "pick_two_obj_and_place": "4/4"
+  },
+  "mean_steps": 15.666666666666666,
+  "ends": {
+   "agent done": 24
+  },
+  "perturbed_actions": 37,
+  "batches": {
+   "0": {
+    "acts": 39,
+    "games": 3,
+    "protocol_calls": 46,
+    "tokens": 67964,
+    "tool_uses": 46,
+    "extra_tool_calls": 0
+   },
+   "1": {
+    "acts": 29,
+    "games": 3,
+    "protocol_calls": 36,
+    "tokens": 65115,
+    "tool_uses": 36,
+    "extra_tool_calls": 0
+   },
+   "2": {
+    "acts": 69,
+    "games": 3,
+    "protocol_calls": 76,
+    "tokens": 76929,
+    "tool_uses": 76,
+    "extra_tool_calls": 0
+   },
+   "3": {
+    "acts": 56,
+    "games": 3,
+    "protocol_calls": 63,
+    "tokens": 73248,
+    "tool_uses": 63,
+    "extra_tool_calls": 0
+   },
+   "4": {
+    "acts": 56,
+    "games": 3,
+    "protocol_calls": 63,
+    "tokens": 71989,
+    "tool_uses": 63,
+    "extra_tool_calls": 0
+   },
+   "5": {
+    "acts": 52,
+    "games": 3,
+    "protocol_calls": 59,
+    "tokens": 72282,
+    "tool_uses": 59,
+    "extra_tool_calls": 0
+   },
+   "6": {
+    "acts": 30,
+    "games": 3,
+    "protocol_calls": 37,
+    "tokens": 65406,
+    "tool_uses": 37,
+    "extra_tool_calls": 0
+   },
+   "7": {
+    "acts": 45,
+    "games": 3,
+    "protocol_calls": 52,
+    "tokens": 70274,
+    "tool_uses": 52,
+    "extra_tool_calls": 0
+   }
+  },
+  "tokens_total": 563207,
+  "extra_tool_calls_total": 0,
+  "same_games_success": {
+   "G2A-1": 0.20833333333333334,
+   "B1": 0.5,
+   "G3-L": 0.20833333333333334,
+   "G3-S": 0.5833333333333334,
+   "G3-LP": 0.3333333333333333,
+   "G3-LPR": 0.875,
+   "B1-LPR": 0.9166666666666666
+  },
+  "same_games_mean_steps": {
+   "G2A-1": 7.916666666666667,
+   "B1": 19.75,
+   "G3-L": 9.166666666666666,
+   "G3-S": 18.583333333333332,
+   "G3-LP": 7.458333333333333,
+   "G3-LPR": 13.416666666666666,
+   "B1-LPR": 14.0
+  }
+ },
+ "appworld_profile": {
+  "test_normal": {
+   "tasks": 168,
+   "answer_required": 0.19642857142857142,
+   "multi_app (num_apps>=2)": 0.5357142857142857,
+   "num_apps_mean": 1.625,
+   "api_calls_median": 30.0,
+   "api_calls_q1_q3": [
+    16.25,
+    40.0
+   ],
+   "difficulty": {
+    "1": 57,
+    "2": 48,
+    "3": 63
+   }
+  },
+  "test_challenge": {
+   "tasks": 417,
+   "answer_required": 0.11510791366906475,
+   "multi_app (num_apps>=2)": 0.6258992805755396,
+   "num_apps_mean": 2.0215827338129495,
+   "api_calls_median": 25,
+   "api_calls_q1_q3": [
+    16.0,
+    40.0
+   ],
+   "difficulty": {
+    "1": 72,
+    "2": 150,
+    "3": 195
+   }
+  }
+ },
+ "verdicts": {
+  "G4-a  H-DISC: G3-L - G2A-1 >= 0.10 and the 95% CI excludes 0 (clean)": {
+   "verdict": "FALSIFIED",
+   "values": [
+    0.06716417910447761,
+    [
+     0.029850746268656716,
+     0.11194029850746269
+    ]
+   ]
+  },
+  "G4-b  H-DISC prior: steps G3-LP / G3-L <= 0.85 and success not lower by > 0.03 (clean)": {
+   "verdict": "HOLDS",
+   "values": [
+    0.7774148390107326,
+    0.007462686567164179
+   ]
+  },
+  "G4-c  L_co holds in unseen rooms: 0 contradictions in lost games, >= 10 co-location hits (G3-L clean)": {
+   "verdict": "HOLDS",
+   "values": [
+    0,
+    23
+   ]
+  },
+  "G4-d  H0-CLASSIC (clean): |G3-LPR - B1-LPR| <= 0.03": {
+   "verdict": "HOLDS",
+   "values": [
+    0.0,
+    [
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  "G4-e  level: G3-LPR success >= 0.75 (clean)": {
+   "verdict": "HOLDS",
+   "values": [
+    0.9925373134328358,
+    [
+     0.9589404665691039,
+     0.9986814356461595
+    ]
+   ]
+  },
+  "G4-f  monitors: B1 silent failures >= 0.25 n; every monitored arm <= 2 (perturbed)": {
+   "verdict": "HOLDS",
+   "values": [
+    {
+     "G2A-1": 0,
+     "B1": 56,
+     "G3-L": 0,
+     "G3-S": 0,
+     "G3-LP": 0,
+     "G3-LPR": 0,
+     "B1-LPR": 5
+    }
+   ]
+  },
+  "G4-g  recovery: G3-LPR - G3-LP >= 0.30 and the CI excludes 0 (perturbed)": {
+   "verdict": "HOLDS",
+   "values": [
+    0.5671641791044776,
+    [
+     0.48507462686567165,
+     0.6492537313432836
+    ]
+   ]
+  },
+  "G4-h  H0-CLASSIC (perturbed): G3-LPR <= B1-LPR + 0.03 and B1-LPR silent failures <= 2": {
+   "verdict": "FALSIFIED",
+   "values": [
+    -0.022388059701492536,
+    [
+     -0.05223880597014925,
+     0.0
+    ],
+    5
+   ]
+  },
+  "G4-i  B2 (clean, 60-game subset): success >= G3-LPR and mean steps <= 0.6 x G3-LPR on the same games": {
+   "verdict": "FALSIFIED",
+   "values": [
+    1.0,
+    0.9833333333333333,
+    8.7,
+    12.816666666666666
+   ]
+  },
+  "G4-j  B2 (perturbed, 24-game subset): success >= 0.80 and <= 2 claims-done-but-lost": {
+   "verdict": "HOLDS",
+   "values": [
+    1.0,
+    0
+   ]
+  },
+  "G4-k  AppWorld held-out: information-goal share in [0.15, 0.45] in test_normal and test_challenge": {
+   "verdict": "FALSIFIED",
+   "values": [
+    {
+     "test_normal": 0.19642857142857142,
+     "test_challenge": 0.11510791366906475
+    }
+   ]
+  }
+ }
+}
