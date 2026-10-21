@@ -1,0 +1,122 @@
+{
+  "g3-ord-01": {
+    "intended": "risky",
+    "notes": "Like swapping leftmost c2 with a c1 to its right, but c1 inside window G1 are excluded. If obstacles push G1 to the right, the only offending c1 can sit inside G1 and the achiever stops with the atom false. Own simulator: exhaustive N=3..7 failed 2644/162003 feasible false-atom instances; random N=8..15 failed 1183/36836."
+  },
+  "g3-ord-02": {
+    "intended": "achieves",
+    "notes": "Swaps the leftmost c2 with the closest c1 to its right; any c1 right of the leftmost c2 works because the swap never creates a new inversion (pair count strictly drops). Own simulator: exhaustive N=3..7 failed 0/162003 feasible false-atom instances; random N=8..15 failed 0/36836."
+  },
+  "g3-ord-03": {
+    "intended": "achieves",
+    "notes": "Leftmost empty-or-c2 cell vs. rightmost c1 overall; when the atom fails the rightmost c1 lies right of d, so the c1 position sum strictly decreases until the atom holds. Own simulator: exhaustive N=3..7 failed 0/162003 feasible false-atom instances; random N=8..15 failed 0/36836."
+  },
+  "g3-ord-04": {
+    "intended": "achieves",
+    "notes": "d is the leftmost empty-or-c2 cell; moving the rightmost c1 right of d to d strictly lowers the sum of c1 positions. No c1 right of d means every c1 is left of d <= every c2, so the atom holds. Own simulator: exhaustive N=3..7 failed 0/162003 feasible false-atom instances; random N=8..15 failed 0/36836."
+  },
+  "g3-ord-05": {
+    "intended": "achieves",
+    "notes": "d is the leftmost c2-or-other object; nearest c1 right of d moves left, sum of c1 positions falls each step; with no such c1 all c1 are left of d <= min c2. Every move is a swap, so it relies on a spare empty cell (always present in feasible states). Own simulator: exhaustive N=3..7 failed 0/162003 feasible false-atom instances; random N=8..15 failed 0/36836."
+  },
+  "g3-ord-06": {
+    "intended": "fails",
+    "notes": "Uses the second-leftmost c2 as dest, so the leftmost c2 never moves and no c1 can ever pass it; any instance with a c1 right of the leftmost c2 is never repaired. Own simulator: exhaustive N=3..7 failed 162003/162003 feasible false-atom instances; random N=8..15 failed 36836/36836."
+  },
+  "g3-ord-07": {
+    "intended": "achieves",
+    "notes": "Leftmost free cell (empty/c2/other) vs. rightmost c1 overall; when the atom is false the rightmost c1 is right of the leftmost c2 >= d, so the move is always leftward and the c1 position sum falls. Own simulator: exhaustive N=3..7 failed 0/162003 feasible false-atom instances; random N=8..15 failed 0/36836."
+  },
+  "g3-ord-08": {
+    "intended": "achieves",
+    "notes": "Swaps the leftmost c2 with the rightmost c1 to its right; every swap strictly reduces the number of (c1 right of c2) pairs, and when no c1 lies right of the leftmost c2 the atom holds. Own simulator: exhaustive N=3..7 failed 0/162003 feasible false-atom instances; random N=8..15 failed 0/36836."
+  },
+  "g3-ord-09": {
+    "intended": "risky",
+    "notes": "Packs c1 into the leftmost usable window. Works without obstacles, but hazards (under NO_DROP_HAZARD) or NO_PICK objects can push the window right of a c2; once the window is full of c1 there is no dest and that c2 stays left of c1. Own simulator: exhaustive N=3..7 failed 6630/162003 feasible false-atom instances; random N=8..15 failed 3673/36836."
+  },
+  "g3-ord-10": {
+    "intended": "fails",
+    "notes": "Only c1 within distance 3 to the right of d are eligible; on longer lines the offending c1 is often farther away and the achiever stops. Mostly fine for N <= 5, fails frequently for larger N. Own simulator: exhaustive N=3..7 failed 76668/162003 feasible false-atom instances; random N=8..15 failed 30868/36836."
+  },
+  "g3-zon-01": {
+    "intended": "achieves",
+    "notes": "Left zones only: the leftmost free cell of the whole line is inside the zone whenever the instance is feasible, and the rightmost c is outside the zone whenever the atom fails. Own simulator: exhaustive N=3..7 failed 0/136551 feasible false-atom instances; random N=8..15 failed 0/55772."
+  },
+  "g3-zon-02": {
+    "intended": "achieves",
+    "notes": "Same monotone scheme as filling the zone from outside, with different tie choices (rightmost free zone cell, rightmost outside c). Own simulator: exhaustive N=3..7 failed 0/273102 feasible false-atom instances; random N=8..15 failed 0/110955."
+  },
+  "g3-zon-03": {
+    "intended": "risky",
+    "notes": "Source excludes cells of window G2. Without obstacles G2 lies inside a feasible right zone, so nothing is lost; with obstacles G2 can extend left of the zone and the c objects sitting there are never moved in. Own simulator: exhaustive N=3..7 failed 2620/136551 feasible false-atom instances; random N=8..15 failed 2402/55183."
+  },
+  "g3-zon-04": {
+    "intended": "achieves",
+    "notes": "Right-zone mirror: NOT_ZONE AND LEFT_OF_DEST equals NOT_ZONE for a dest in a right zone. Own simulator: exhaustive N=3..7 failed 0/136551 feasible false-atom instances; random N=8..15 failed 0/55183."
+  },
+  "g3-zon-05": {
+    "intended": "achieves",
+    "notes": "Left zones only: every non-zone cell is right of any zone cell, so NOT_ZONE AND RIGHT_OF_DEST equals NOT_ZONE; monotone zone filling. Own simulator: exhaustive N=3..7 failed 0/136551 feasible false-atom instances; random N=8..15 failed 0/55772."
+  },
+  "g3-zon-06": {
+    "intended": "fails",
+    "notes": "Dest accepts only other-colour objects, so a zone whose free cells are empty is never filled. Own simulator: exhaustive N=3..7 failed 156110/273102 feasible false-atom instances; random N=8..15 failed 63479/110955."
+  },
+  "g3-zon-07": {
+    "intended": "fails",
+    "notes": "The global leftmost/rightmost design without a side restriction: correct for left zones but for right zones it drags c objects leftwards and oscillates. Own simulator: exhaustive N=3..7 failed 133440/273102 feasible false-atom instances; random N=8..15 failed 55173/110955."
+  },
+  "g3-zon-08": {
+    "intended": "achieves",
+    "notes": "Right-zone mirror of the global leftmost/rightmost design. Own simulator: exhaustive N=3..7 failed 0/136551 feasible false-atom instances; random N=8..15 failed 0/55183."
+  },
+  "g3-zon-09": {
+    "intended": "achieves",
+    "notes": "Fill a free (empty or other-colour) zone cell with the nearest c from outside the zone; each step raises the c-count in the zone by one, and a free zone cell exists whenever the instance is feasible. Own simulator: exhaustive N=3..7 failed 0/273102 feasible false-atom instances; random N=8..15 failed 0/110955."
+  },
+  "g3-zon-10": {
+    "intended": "risky",
+    "notes": "Dest restricted to zone cells inside window G1. Without obstacles G1 sits inside a feasible left zone, but a hazard/NO_PICK object inside the zone can push G1 partly outside, leaving usable zone cells unreachable. Own simulator: exhaustive N=3..7 failed 3962/136551 feasible false-atom instances; random N=8..15 failed 3620/55772."
+  },
+  "g3-grp-01": {
+    "intended": "achieves",
+    "notes": "Window-filling with G2, leftmost hole and nearest outside c. Own simulator: exhaustive N=3..7 failed 0/45857 feasible false-atom instances; random N=8..15 failed 0/41802."
+  },
+  "g3-grp-02": {
+    "intended": "achieves",
+    "notes": "Window-filling with G1, leftmost hole and rightmost outside c. Own simulator: exhaustive N=3..7 failed 0/45857 feasible false-atom instances; random N=8..15 failed 0/41802."
+  },
+  "g3-grp-03": {
+    "intended": "achieves",
+    "notes": "Fill the leftmost usable window: any non-c cell inside the window is empty or a pickable other, each step adds one c to the window, and when every c is inside the window it is exactly full. Own simulator: exhaustive N=3..7 failed 0/45857 feasible false-atom instances; random N=8..15 failed 0/41802."
+  },
+  "g3-grp-04": {
+    "intended": "fails",
+    "notes": "Dest accepts only empty cells, so other-colour objects inside the window are never evicted; with a dense line it stops with holes occupied by other colours. Own simulator: exhaustive N=3..7 failed 18563/45857 feasible false-atom instances; random N=8..15 failed 26530/41802."
+  },
+  "g3-grp-05": {
+    "intended": "fails",
+    "notes": "Only c within distance 3 of the dest are eligible; on longer lines the remaining stray c is often farther away. Own simulator: exhaustive N=3..7 failed 22996/45857 feasible false-atom instances; random N=8..15 failed 37467/41802."
+  },
+  "g3-grp-06": {
+    "intended": "risky",
+    "notes": "Fills G1 but takes the rightmost c anywhere; without obstacles some c outside G1 is always right of it, but when obstacles push G1 right of a stray c the rightmost c is inside the window and the swaps oscillate. Own simulator: exhaustive N=3..7 failed 7814/45857 feasible false-atom instances; random N=8..15 failed 6128/41802."
+  },
+  "g3-grp-07": {
+    "intended": "achieves",
+    "notes": "Window-filling with G1, rightmost hole and rightmost outside c. Own simulator: exhaustive N=3..7 failed 0/45857 feasible false-atom instances; random N=8..15 failed 0/41802."
+  },
+  "g3-grp-08": {
+    "intended": "fails",
+    "notes": "Takes the second-rightmost c outside G2, so the last outside c (the rightmost one) is never moved in. Own simulator: exhaustive N=3..7 failed 45857/45857 feasible false-atom instances; random N=8..15 failed 41802/41802."
+  },
+  "g3-grp-09": {
+    "intended": "achieves",
+    "notes": "Window-filling with the rightmost usable window G2. Own simulator: exhaustive N=3..7 failed 0/45857 feasible false-atom instances; random N=8..15 failed 0/41802."
+  },
+  "g3-grp-10": {
+    "intended": "risky",
+    "notes": "Left-packing (leftmost free cell vs. rightmost c). Without obstacles the c objects end as a prefix block; hazards or NO_PICK objects split the packed region and the achiever oscillates. Own simulator: exhaustive N=3..7 failed 10738/45857 feasible false-atom instances; random N=8..15 failed 9070/41802."
+  }
+}

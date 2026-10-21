@@ -1,0 +1,8 @@
+{
+  "files": {
+    "achievers.json": "14c988e902b4c605189636cc13a879533261095e5dbb10ed484ec1df5c82f8a9",
+    "metadata.json": "0a05852b38dee98f3c32229dd829358e2a6b9909fdd63282cc2c553e292508d3"
+  },
+  "overall_sha256": "1fe5977302d9deb5baef9232ab6c979c2d174925fb2bf3b246843e92b97c8dae",
+  "overall_definition": "sha256 of the string \"achievers.json:<sha256>\\nmetadata.json:<sha256>\\n\""
+}

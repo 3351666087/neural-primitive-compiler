@@ -1,0 +1,12 @@
+specs 30 valid, 0 invalid; 48 instances
+truth 902.1 s
+A {'damage_below_truth': 0, 'damage_finite_where_truth_grows': 6, 'preservation_proved_with_cex': 0, 'progress_certified_but_false': 0, 'truth_good_instances': 30, 'certified_among_truth_good': 21, 'certified_total': 21, 'instances': 48}
+specs A-P' constructed 30 using specs 30 wrong 0
+specs A-P constructed 29 using specs 29 wrong 0
+library+specs A-P' constructed 30 using specs 0 wrong 0
+library+specs A-P constructed 29 using specs 0 wrong 0
+J1-net 0 mismatching episodes
+B five-1000 below observed 0 no rules 5 H1 disagreements 355572 A-P' constructed 30
+B five-200 below observed 0 no rules 5 H1 disagreements 357015 A-P' constructed 30
+done 2127.5 s
+exit 0

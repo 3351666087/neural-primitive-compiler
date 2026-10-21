@@ -1,0 +1,473 @@
+{
+ "label": "POST-HOC: held-out instances with a true decrease that A did not certify",
+ "cpu_s": 176.943535,
+ "instances": {
+  "g3-ord-03": {
+   "truly_good": true,
+   "decreasing_measures": [
+    "KD{A1<A2}"
+   ],
+   "measure_max_by_N": {
+    "KD{A1<A2}": {
+     "3": -1,
+     "4": -1,
+     "5": -1,
+     "6": -1,
+     "7": -1
+    }
+   },
+   "z3": {
+    "0": null
+   },
+   "dest": {
+    "types": [
+     "EMPTY",
+     "PARTNER"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   }
+  },
+  "g3-ord-04": {
+   "truly_good": true,
+   "decreasing_measures": [
+    "KD{A1<A2}"
+   ],
+   "measure_max_by_N": {
+    "KD{A1<A2}": {
+     "3": -1,
+     "4": -1,
+     "5": -1,
+     "6": -1,
+     "7": -1
+    }
+   },
+   "z3": {
+    "0": null
+   },
+   "dest": {
+    "types": [
+     "EMPTY",
+     "PARTNER"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "RIGHT_OF_DEST",
+    "pick": "rightmost"
+   }
+  },
+  "g3-ord-05": {
+   "truly_good": false,
+   "decreasing_measures": [],
+   "measure_max_by_N": {
+    "KD{A1<A2}": {
+     "3": -1,
+     "4": -1,
+     "5": 0,
+     "6": 0,
+     "7": 0
+    }
+   },
+   "z3": {
+    "0": null
+   },
+   "dest": {
+    "types": [
+     "PARTNER",
+     "OTHER"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "RIGHT_OF_DEST",
+    "pick": "nearest_to_dest"
+   }
+  },
+  "g3-ord-07": {
+   "truly_good": true,
+   "decreasing_measures": [
+    "KD{A1<A2}"
+   ],
+   "measure_max_by_N": {
+    "KD{A1<A2}": {
+     "3": -1,
+     "4": -1,
+     "5": -1,
+     "6": -1,
+     "7": -1
+    }
+   },
+   "z3": {
+    "0": null
+   },
+   "dest": {
+    "types": [
+     "EMPTY",
+     "PARTNER",
+     "OTHER"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   }
+  },
+  "g3-zon-01|left|2": {
+   "truly_good": true,
+   "decreasing_measures": [
+    "OUT(A1,left,2)"
+   ],
+   "measure_max_by_N": {
+    "OUT(A1,left,2)": {
+     "3": -1,
+     "4": -1,
+     "5": -1,
+     "6": -1,
+     "7": -1
+    }
+   },
+   "z3": {
+    "0": null
+   },
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   }
+  },
+  "g3-zon-01|left|half": {
+   "truly_good": true,
+   "decreasing_measures": [
+    "OUT(A1,left,half)"
+   ],
+   "measure_max_by_N": {
+    "OUT(A1,left,half)": {
+     "3": -1,
+     "4": -1,
+     "5": -1,
+     "6": -1,
+     "7": -1
+    }
+   },
+   "z3": {
+    "0": null
+   },
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   }
+  },
+  "g3-zon-07|left|2": {
+   "truly_good": true,
+   "decreasing_measures": [
+    "OUT(A1,left,2)"
+   ],
+   "measure_max_by_N": {
+    "OUT(A1,left,2)": {
+     "3": -1,
+     "4": -1,
+     "5": -1,
+     "6": -1,
+     "7": -1
+    }
+   },
+   "z3": {
+    "0": null
+   },
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   }
+  },
+  "g3-zon-07|left|half": {
+   "truly_good": true,
+   "decreasing_measures": [
+    "OUT(A1,left,half)"
+   ],
+   "measure_max_by_N": {
+    "OUT(A1,left,half)": {
+     "3": -1,
+     "4": -1,
+     "5": -1,
+     "6": -1,
+     "7": -1
+    }
+   },
+   "z3": {
+    "0": null
+   },
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   }
+  },
+  "g3-zon-07|right|2": {
+   "truly_good": false,
+   "decreasing_measures": [],
+   "measure_max_by_N": {
+    "OUT(A1,right,2)": {
+     "3": 0,
+     "4": 1,
+     "5": 1,
+     "6": 1,
+     "7": 1
+    }
+   },
+   "z3": {
+    "0": null
+   },
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   }
+  },
+  "g3-zon-07|right|half": {
+   "truly_good": false,
+   "decreasing_measures": [],
+   "measure_max_by_N": {
+    "OUT(A1,right,half)": {
+     "3": 0,
+     "4": 1,
+     "5": 1,
+     "6": 1,
+     "7": 1
+    }
+   },
+   "z3": {
+    "0": null
+   },
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   }
+  },
+  "g3-zon-08|right|2": {
+   "truly_good": true,
+   "decreasing_measures": [
+    "OUT(A1,right,2)"
+   ],
+   "measure_max_by_N": {
+    "OUT(A1,right,2)": {
+     "3": -1,
+     "4": -1,
+     "5": -1,
+     "6": -1,
+     "7": -1
+    }
+   },
+   "z3": {
+    "0": null
+   },
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   }
+  },
+  "g3-zon-08|right|half": {
+   "truly_good": true,
+   "decreasing_measures": [
+    "OUT(A1,right,half)"
+   ],
+   "measure_max_by_N": {
+    "OUT(A1,right,half)": {
+     "3": -1,
+     "4": -1,
+     "5": -1,
+     "6": -1,
+     "7": -1
+    }
+   },
+   "z3": {
+    "0": null
+   },
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   }
+  },
+  "g3-grp-06": {
+   "truly_good": false,
+   "decreasing_measures": [],
+   "measure_max_by_N": {
+    "OOW(A1,G1)": {
+     "3": -1,
+     "4": 0,
+     "5": 0,
+     "6": 0,
+     "7": 0
+    },
+    "OOW(A1,G2)": {
+     "3": 0,
+     "4": 1,
+     "5": 1,
+     "6": 1,
+     "7": 1
+    }
+   },
+   "z3": {
+    "0": null
+   },
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "WINDOW_G1",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   }
+  },
+  "g3-grp-10": {
+   "truly_good": false,
+   "decreasing_measures": [],
+   "measure_max_by_N": {
+    "OOW(A1,G1)": {
+     "3": -1,
+     "4": 0,
+     "5": 0,
+     "6": 1,
+     "7": 1
+    },
+    "OOW(A1,G2)": {
+     "3": 0,
+     "4": 1,
+     "5": 1,
+     "6": 1,
+     "7": 1
+    }
+   },
+   "z3": {
+    "0": null
+   },
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   }
+  }
+ }
+}

@@ -1,0 +1,166 @@
+{
+ "Q1": {
+  "verdict": "HOLDS",
+  "wrong_constructions": {
+   "specs/A-P'": [],
+   "specs/A-P": [],
+   "library+specs/A-P'": [],
+   "library+specs/A-P": []
+  },
+  "damage_below_truth": [],
+  "preservation_proved_with_cex": [],
+  "progress_certified_but_false": [],
+  "J1_net": {
+   "plans": 10,
+   "mismatch_episodes": 0,
+   "failures": 0
+  },
+  "damage_finite_where_truth_grows": [
+   "g3-ord-05 / OOW(X1,G2)",
+   "g3-ord-06 / OOW(A1,G1)",
+   "g3-ord-09 / OUT(X1,right,2)",
+   "g3-ord-09 / OUT(X1,right,half)",
+   "g3-grp-10 / OOW(X1,G2)",
+   "g3-grp-10 / OOW(X2,G2)"
+  ]
+ },
+ "Q2": {
+  "verdict": "FALSIFIED",
+  "truth_good": 30,
+  "certified": 21,
+  "rate": 0.7,
+  "certified_total": 21,
+  "instances": 48
+ },
+ "Q3": {
+  "verdict": "HOLDS",
+  "wrong": {
+   "five-1000": [],
+   "five-200": []
+  },
+  "constructed": {
+   "five-1000": 30,
+   "five-200": 30
+  }
+ },
+ "Q4": {
+  "verdict": "FALSIFIED",
+  "five-1000": {
+   "instances": 23,
+   "no_rules": [],
+   "disagreements": {},
+   "below_observed": []
+  },
+  "five-200": {
+   "instances": 23,
+   "no_rules": [],
+   "disagreements": {
+    "g3-grp-04": 1443
+   },
+   "below_observed": []
+  }
+ },
+ "Q5": {
+  "verdict": "HOLDS",
+  "outside_grammar_instances": 25,
+  "with_version_space": 20,
+  "missing": {
+   "g3-ord-01": 252,
+   "g3-zon-03|right|half": 2128,
+   "g3-zon-10|left|half": 3231,
+   "g3-grp-03": 1755
+  },
+  "below_observed_all": {
+   "five-1000": [],
+   "five-200": []
+  }
+ },
+ "Q6": {
+  "verdict": "HOLDS",
+  "time_s": 2127.5,
+  "truth_cpu_s": 902.122998
+ },
+ "descriptive": {
+  "validation": {
+   "given": 30,
+   "valid": 30,
+   "invalid": []
+  },
+  "coverage": {
+   "specs/A-P'": 30,
+   "specs/A-P": 29,
+   "library+specs/A-P'": 30,
+   "library+specs/A-P": 29
+  },
+  "using_held_out_achievers": {
+   "specs/A-P'": 30,
+   "specs/A-P": 29,
+   "library+specs/A-P'": 0,
+   "library+specs/A-P": 0
+  },
+  "B_constructed": {
+   "five-1000": 30,
+   "five-200": 30
+  },
+  "B_no_rules": {
+   "five-1000": [
+    "g3-grp-01",
+    "g3-grp-05",
+    "g3-grp-08",
+    "g3-ord-06",
+    "g3-ord-09"
+   ],
+   "five-200": [
+    "g3-grp-01",
+    "g3-grp-05",
+    "g3-grp-08",
+    "g3-ord-06",
+    "g3-ord-09"
+   ]
+  },
+  "in_B_grammar": {
+   "g3-ord-01": false,
+   "g3-ord-02": true,
+   "g3-ord-03": true,
+   "g3-ord-04": true,
+   "g3-ord-05": false,
+   "g3-ord-06": false,
+   "g3-ord-07": true,
+   "g3-ord-08": true,
+   "g3-ord-09": false,
+   "g3-ord-10": false,
+   "g3-zon-01": true,
+   "g3-zon-02": true,
+   "g3-zon-03": false,
+   "g3-zon-04": false,
+   "g3-zon-05": false,
+   "g3-zon-06": false,
+   "g3-zon-07": true,
+   "g3-zon-08": true,
+   "g3-zon-09": false,
+   "g3-zon-10": false,
+   "g3-grp-01": false,
+   "g3-grp-02": true,
+   "g3-grp-03": false,
+   "g3-grp-04": true,
+   "g3-grp-05": false,
+   "g3-grp-06": true,
+   "g3-grp-07": true,
+   "g3-grp-08": false,
+   "g3-grp-09": true,
+   "g3-grp-10": true
+  },
+  "B_vs_A": {
+   "five-1000": {
+    "equal": 1431,
+    "dangerous": 10,
+    "conservative": 287
+   },
+   "five-200": {
+    "equal": 1401,
+    "dangerous": 10,
+    "conservative": 317
+   }
+  }
+ }
+}
