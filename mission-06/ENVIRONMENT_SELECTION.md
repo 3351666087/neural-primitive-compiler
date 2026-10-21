@@ -147,3 +147,24 @@
 | D3 | ALFWorld 的试点下载 | 允许在独立目录中 `pip install alfworld` 与 TextWorld（约数十 MB），并只下载 json、pddl、tw-pddl 三个数据包（约 0.14 GB），用于 30–60 分钟的部署试点 |
 | D4 | 强基线 B2（LLM 代理） | 需要模型 API 与费用预算；没有预算则 B2 的对应结论记为 INCONCLUSIVE |
 | D5 | 持出保管人 | 用户本人，或一个隔离的独立会话（同 Mission 05 的 G3/G4 做法） |
+
+## 7. WorkArena 部署试点 P1–P3（2026-10-21；预注册 §G1-P；未接触任何 ServiceNow 实例）
+
+用户决定：D1 = 用户自己申请门控实例池；P1 的下载已获批准。
+
+| 步 | 预测 | 结果 | 判定 |
+|---|---|---|---|
+| P1 安装 | 成功；全部 arm64 原生；venv 加浏览器 < 1.5 GB | 固定版本全部安装（`env/workarena_install.txt`）。原生扩展为 arm64（numpy、pillow）或 universal2（greenlet、lxml）。Chromium 125.0.6422.26（Playwright build 1117）为 arm64 Mach-O。占用：venv 445 MB + 浏览器 406 MB = 851 MB，另保留 135 MB 的 zip 作出处 | **成立**，带两处部署偏差（见下） |
+| P2 本地冒烟 | 无头 Chromium 可用；观察与动作可用 | 在本地 `file://` 表单上：reset 2.8 s；构造器在 AXTree 中找到文本框（bid 7）与按钮（bid 8）；`fill` 与 `click` 无错误；随后的 AXTree 中出现 "saved: pilot record"；截图 720×1280×3。每步约 1.7 s | **成立**（在沙箱之外运行，见下） |
+| P3 隔离 | 0 处越界 | 构造器收到的 15 个键恰好是 BrowserGym 的全部观察键，都在白名单内。奖励、terminated、truncated 与 `info`（`task_info`）只出现在裁判日志中。构造器侧导入 `browsergym.workarena` 被导入钩子拒绝。静态扫描 0 处违规 | **成立** |
+
+**部署偏差与约束：**
+1. **Chromium 的下载。** 经本机沙箱代理时，Playwright 自带的下载器失败：主 CDN 在 TLS 握手时被重置，两个镜像在约 90 % 处断开。改为用 `curl` 从同一镜像（`playwright-akamai.azureedge.net`，同一文件）下载：
+   - 一次完整，141,141,655 字节，zip 自检通过；
+   - SHA-256 `e708fe899c9453b59203203c527ae2bbdb3045a83727203151480681533e7d3c`。
+
+   按 Playwright 的目录约定解压，并写入 `INSTALLATION_COMPLETE` 标记。FFMPEG（build 1009，只用于录像）没有安装。
+2. **浏览器必须在本会话的命令沙箱之外运行。** 在沙箱内启动时，Chromium 因 `bootstrap_check_in … MachPortRendezvousServer: Permission denied` 立即退出。那次运行原样保存为 `experiments/g1/pilot_p2p3_sandboxed_run.json`。P2、P3 的正式结果来自用户终端标签页中的运行（同一代码、同一 venv）。今后所有浏览器运行都照此办理。
+3. **P3 判据收紧。** 沙箱内那次运行中，P3 在一个观察都没收到时也判为成立，判据是空的。重跑之前改为：必须真的收到含 AXTree 的观察，否则为 NOT_EVALUABLE。
+
+**尚未进行：** P4（实例可达）需要用户的令牌，并另行同意。

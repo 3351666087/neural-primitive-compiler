@@ -9,3 +9,4 @@ out/
 # Mission 06 isolated environments (not committed)
 mission-06/env/venv-*/
 mission-06/env/ms-playwright/
+mission-06/env/*.zip

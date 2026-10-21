@@ -108,7 +108,9 @@ def main():
                  "judge_side_obs_keys": judge_log[0].get("obs_keys") if judge_log else None,
                  "judge_side_info_keys": judge_log[0].get("info_keys") if judge_log else None,
                  "workarena_import_refused": refused, "guard_attempts": guard.attempts, "static_scan_violations": scan,
-                 "verdict": "HOLDS" if (not leaked and refused and not scan) else "FALSIFIED"}
+                 # an empty boundary proves nothing: P3 needs real observations to have crossed it (P2 ran)
+                 "verdict": "HOLDS" if (received and "axtree_object" in received and not leaked and refused and not scan)
+                 else ("NOT_EVALUABLE" if not received else "FALSIFIED")}
     freeze = subprocess.run([sys.executable, "-m", "pip", "freeze"], capture_output=True, text=True).stdout.split()
     out["pip_freeze"] = freeze
     out["python"] = sys.version

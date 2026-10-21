@@ -1,0 +1,52 @@
+Downloading Chromium 125.0.6422.26 (playwright build v1117) from https://playwright.azureedge.net/builds/chromium/1117/chromium-mac-arm64.zip
+Error: Client network socket disconnected before secure TLS connection was established
+    at TLSSocket.onConnectEnd (node:_tls_wrap:1727:19)
+    at TLSSocket.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'ECONNRESET',
+  path: undefined,
+  host: undefined,
+  port: undefined,
+  localAddress: undefined
+}
+Downloading Chromium 125.0.6422.26 (playwright build v1117) from https://playwright-akamai.azureedge.net/builds/chromium/1117/chromium-mac-arm64.zip
+|                                                                                |   0% of 134.6 MiB
+|■■■■■■■■                                                                        |  10% of 134.6 MiB
+|■■■■■■■■■■■■■■■■                                                                |  20% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 134.6 MiB
+Error: Download failed: server closed connection. URL: https://playwright-akamai.azureedge.net/builds/chromium/1117/chromium-mac-arm64.zip
+    at IncomingMessage.<anonymous> (/Users/null3351/Code/neural-primitive-research/neural-primitive-compiler/mission-06/env/venv-wa/lib/python3.12/site-packages/playwright/driver/package/lib/server/registry/oopDownloadBrowserMain.js:89:24)
+    at IncomingMessage.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+Downloading Chromium 125.0.6422.26 (playwright build v1117) from https://playwright-verizon.azureedge.net/builds/chromium/1117/chromium-mac-arm64.zip
+|                                                                                |   0% of 134.6 MiB
+|■■■■■■■■                                                                        |  10% of 134.6 MiB
+|■■■■■■■■■■■■■■■■                                                                |  20% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 134.6 MiB
+Error: Download failed: server closed connection. URL: https://playwright-verizon.azureedge.net/builds/chromium/1117/chromium-mac-arm64.zip
+    at IncomingMessage.<anonymous> (/Users/null3351/Code/neural-primitive-research/neural-primitive-compiler/mission-06/env/venv-wa/lib/python3.12/site-packages/playwright/driver/package/lib/server/registry/oopDownloadBrowserMain.js:89:24)
+    at IncomingMessage.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+Failed to install browsers
+Error: Failed to download Chromium 125.0.6422.26 (playwright build v1117), caused by
+Error: Download failure, code=1
+    at ChildProcess.<anonymous> (/Users/null3351/Code/neural-primitive-research/neural-primitive-compiler/mission-06/env/venv-wa/lib/python3.12/site-packages/playwright/driver/package/lib/server/registry/browserFetcher.js:91:16)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)

@@ -1,0 +1,3 @@
+445M	mission-06/env/venv-wa
+406M	mission-06/env/ms-playwright
+135M	mission-06/env/chromium-mac-arm64-1117.zip

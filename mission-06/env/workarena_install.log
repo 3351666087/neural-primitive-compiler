@@ -1,0 +1,261 @@
+Collecting browsergym-core==0.14.3
+  Downloading browsergym_core-0.14.3-py3-none-any.whl.metadata (1.2 kB)
+Collecting browsergym-workarena==0.5.3
+  Downloading browsergym_workarena-0.5.3-py3-none-any.whl.metadata (10 kB)
+Collecting beautifulsoup4>=4.12 (from browsergym-core==0.14.3)
+  Downloading beautifulsoup4-4.15.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting gymnasium>=0.27 (from browsergym-core==0.14.3)
+  Downloading gymnasium-1.4.0-py3-none-any.whl.metadata (9.0 kB)
+Collecting lxml<6.0.0,>=4.9 (from browsergym-core==0.14.3)
+  Downloading lxml-5.4.0-cp312-cp312-macosx_10_9_universal2.whl.metadata (3.5 kB)
+Collecting mcp>=1.6.0 (from mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading mcp-2.3.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting numpy>=1.14 (from browsergym-core==0.14.3)
+  Downloading numpy-2.5.4-cp312-cp312-macosx_14_0_arm64.whl.metadata (6.6 kB)
+Collecting pillow>=10.1 (from browsergym-core==0.14.3)
+  Downloading pillow-13.0.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (9.1 kB)
+Collecting playwright==1.44 (from browsergym-core==0.14.3)
+  Downloading playwright-1.44.0-py3-none-macosx_11_0_arm64.whl.metadata (3.5 kB)
+Collecting pyparsing>=3 (from browsergym-core==0.14.3)
+  Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting english-words>=2.0.1 (from browsergym-workarena==0.5.3)
+  Downloading english_words-2.0.2-py3-none-any.whl.metadata (3.6 kB)
+Collecting faker>=24.8.0 (from browsergym-workarena==0.5.3)
+  Downloading faker-40.43.0-py3-none-any.whl.metadata (16 kB)
+Collecting huggingface-hub>=0.23 (from browsergym-workarena==0.5.3)
+  Downloading huggingface_hub-2.2.0-py3-none-any.whl.metadata (16 kB)
+Collecting requests>=2.31 (from browsergym-workarena==0.5.3)
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting tenacity>=8.2.3 (from browsergym-workarena==0.5.3)
+  Downloading tenacity-9.2.1-py3-none-any.whl.metadata (1.4 kB)
+Collecting tqdm>=4.66.2 (from browsergym-workarena==0.5.3)
+  Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Collecting greenlet==3.0.3 (from playwright==1.44->browsergym-core==0.14.3)
+  Downloading greenlet-3.0.3-cp312-cp312-macosx_11_0_universal2.whl.metadata (3.8 kB)
+Collecting pyee==11.1.0 (from playwright==1.44->browsergym-core==0.14.3)
+  Downloading pyee-11.1.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting typing-extensions (from pyee==11.1.0->playwright==1.44->browsergym-core==0.14.3)
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting soupsieve>=1.6.1 (from beautifulsoup4>=4.12->browsergym-core==0.14.3)
+  Downloading soupsieve-3.0.3-py3-none-any.whl.metadata (4.4 kB)
+Collecting cloudpickle>=1.2.0 (from gymnasium>=0.27->browsergym-core==0.14.3)
+  Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Collecting farama-notifications>=0.0.1 (from gymnasium>=0.27->browsergym-core==0.14.3)
+  Downloading farama_notifications-0.0.6-py3-none-any.whl.metadata (729 bytes)
+Collecting click<9.0.0,>=8.4.2 (from huggingface-hub>=0.23->browsergym-workarena==0.5.3)
+  Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting filelock>=3.10.0 (from huggingface-hub>=0.23->browsergym-workarena==0.5.3)
+  Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub>=0.23->browsergym-workarena==0.5.3)
+  Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting hf-xet<2.0.0,>=1.6.0 (from huggingface-hub>=0.23->browsergym-workarena==0.5.3)
+  Downloading hf_xet-1.7.0-cp38-abi3-macosx_11_0_arm64.whl.metadata (4.9 kB)
+Collecting httpx2<3,>=2.0.0 (from huggingface-hub>=0.23->browsergym-workarena==0.5.3)
+  Downloading httpx2-2.16.0-py3-none-any.whl.metadata (10 kB)
+Collecting packaging>=20.9 (from huggingface-hub>=0.23->browsergym-workarena==0.5.3)
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pyyaml>=5.1 (from huggingface-hub>=0.23->browsergym-workarena==0.5.3)
+  Downloading pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (2.4 kB)
+Collecting anyio>=4.9 (from mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting jsonschema>=4.20.0 (from mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting mcp-types==2.3.0 (from mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading mcp_types-2.3.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting opentelemetry-api>=1.28.0 (from mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+Collecting pydantic>=2.12.0 (from mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+Collecting pyjwt>=2.10.1 (from pyjwt[crypto]>=2.10.1->mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading pyjwt-2.15.1-py3-none-any.whl.metadata (3.5 kB)
+Collecting python-multipart>=0.0.9 (from mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading python_multipart-0.0.32-py3-none-any.whl.metadata (2.1 kB)
+Collecting sse-starlette>=3.0.0 (from mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading sse_starlette-3.5.0-py3-none-any.whl.metadata (15 kB)
+Collecting starlette>=0.27 (from mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading starlette-1.9.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting typing-inspection>=0.4.1 (from mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting uvicorn>=0.31.1 (from mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting python-dotenv>=1.0.0 (from mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+Collecting typer>=0.16.0 (from mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading typer-0.27.3-py3-none-any.whl.metadata (16 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.31->browsergym-workarena==0.5.3)
+  Downloading charset_normalizer-3.5.2-cp312-cp312-macosx_10_13_universal2.whl.metadata (46 kB)
+Collecting idna<4,>=2.5 (from requests>=2.31->browsergym-workarena==0.5.3)
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests>=2.31->browsergym-workarena==0.5.3)
+  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests>=2.31->browsergym-workarena==0.5.3)
+  Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore2==2.16.0 (from httpx2<3,>=2.0.0->huggingface-hub>=0.23->browsergym-workarena==0.5.3)
+  Downloading httpcore2-2.16.0-py3-none-any.whl.metadata (27 kB)
+Collecting truststore>=0.10 (from httpx2<3,>=2.0.0->huggingface-hub>=0.23->browsergym-workarena==0.5.3)
+  Downloading truststore-0.10.5-py3-none-any.whl.metadata (4.5 kB)
+Collecting h11>=0.16 (from httpcore2==2.16.0->httpx2<3,>=2.0.0->huggingface-hub>=0.23->browsergym-workarena==0.5.3)
+  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting attrs>=22.2.0 (from jsonschema>=4.20.0->mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=4.20.0->mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=4.20.0->mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema>=4.20.0->mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading rpds_py-2026.9.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (4.1 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>=2.12.0->mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.50.1 (from pydantic>=2.12.0->mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading pydantic_core-2.50.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (6.5 kB)
+Collecting cryptography>=3.4.0 (from pyjwt[crypto]>=2.10.1->mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading cryptography-50.0.2-cp311-abi3-macosx_11_0_arm64.whl.metadata (4.4 kB)
+Collecting shellingham>=1.3.0 (from typer>=0.16.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting rich>=13.8.0 (from typer>=0.16.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting annotated-doc>=0.0.2 (from typer>=0.16.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+Collecting cffi>=2.0.0 (from cryptography>=3.4.0->pyjwt[crypto]>=2.10.1->mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading cffi-2.1.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (2.5 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=13.8.0->typer>=0.16.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.8.0->typer>=0.16.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting pycparser (from cffi>=2.0.0->cryptography>=3.4.0->pyjwt[crypto]>=2.10.1->mcp>=1.6.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading pycparser-3.11-py3-none-any.whl.metadata (8.2 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.8.0->typer>=0.16.0->mcp[cli]>=1.6.0->browsergym-core==0.14.3)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading browsergym_core-0.14.3-py3-none-any.whl (191 kB)
+Downloading browsergym_workarena-0.5.3-py3-none-any.whl (6.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.8/6.8 MB 8.3 MB/s eta 0:00:00
+Downloading playwright-1.44.0-py3-none-macosx_11_0_arm64.whl (33.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 33.0/33.0 MB 5.9 MB/s eta 0:00:00
+Downloading greenlet-3.0.3-cp312-cp312-macosx_11_0_universal2.whl (273 kB)
+Downloading pyee-11.1.0-py3-none-any.whl (15 kB)
+Downloading beautifulsoup4-4.15.0-py3-none-any.whl (109 kB)
+Downloading english_words-2.0.2-py3-none-any.whl (8.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.2/8.2 MB 6.2 MB/s eta 0:00:00
+Downloading faker-40.43.0-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 5.2 MB/s eta 0:00:00
+Downloading gymnasium-1.4.0-py3-none-any.whl (476 kB)
+Downloading huggingface_hub-2.2.0-py3-none-any.whl (839 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 839.9/839.9 kB 2.6 MB/s eta 0:00:00
+Downloading lxml-5.4.0-cp312-cp312-macosx_10_9_universal2.whl (8.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.1/8.1 MB 5.4 MB/s eta 0:00:00
+Downloading mcp-2.3.0-py3-none-any.whl (368 kB)
+Downloading mcp_types-2.3.0-py3-none-any.whl (69 kB)
+Downloading numpy-2.5.4-cp312-cp312-macosx_14_0_arm64.whl (5.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 12.9 MB/s eta 0:00:00
+Downloading pillow-13.0.0-cp312-cp312-macosx_11_0_arm64.whl (4.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 9.8 MB/s eta 0:00:00
+Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading tenacity-9.2.1-py3-none-any.whl (32 kB)
+Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+Downloading charset_normalizer-3.5.2-cp312-cp312-macosx_10_13_universal2.whl (367 kB)
+Downloading click-8.5.0-py3-none-any.whl (125 kB)
+Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Downloading farama_notifications-0.0.6-py3-none-any.whl (2.9 kB)
+Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Downloading hf_xet-1.7.0-cp38-abi3-macosx_11_0_arm64.whl (3.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 8.9 MB/s eta 0:00:00
+Downloading httpx2-2.16.0-py3-none-any.whl (97 kB)
+Downloading httpcore2-2.16.0-py3-none-any.whl (85 kB)
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Downloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+Downloading pydantic_core-2.50.1-cp312-cp312-macosx_11_0_arm64.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 6.8 MB/s eta 0:00:00
+Downloading pyjwt-2.15.1-py3-none-any.whl (33 kB)
+Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+Downloading python_multipart-0.0.32-py3-none-any.whl (30 kB)
+Downloading pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl (173 kB)
+Downloading soupsieve-3.0.3-py3-none-any.whl (41 kB)
+Downloading sse_starlette-3.5.0-py3-none-any.whl (17 kB)
+Downloading starlette-1.9.0-py3-none-any.whl (80 kB)
+Downloading typer-0.27.3-py3-none-any.whl (123 kB)
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+Downloading cryptography-50.0.2-cp311-abi3-macosx_11_0_arm64.whl (3.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.9/3.9 MB 14.0 MB/s eta 0:00:00
+Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+Downloading rpds_py-2026.9.1-cp312-cp312-macosx_11_0_arm64.whl (341 kB)
+Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Downloading truststore-0.10.5-py3-none-any.whl (19 kB)
+Downloading cffi-2.1.1-cp312-cp312-macosx_11_0_arm64.whl (184 kB)
+Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 13.8 MB/s eta 0:00:00
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading pycparser-3.11-py3-none-any.whl (51 kB)
+Installing collected packages: farama-notifications, english-words, urllib3, typing-extensions, truststore, tqdm, tenacity, soupsieve, shellingham, rpds-py, pyyaml, python-multipart, python-dotenv, pyparsing, pyjwt, pygments, pycparser, pillow, packaging, numpy, mdurl, lxml, idna, hf-xet, h11, greenlet, fsspec, filelock, faker, cloudpickle, click, charset_normalizer, certifi, attrs, annotated-types, annotated-doc, uvicorn, typing-inspection, requests, referencing, pyee, pydantic-core, opentelemetry-api, markdown-it-py, httpcore2, gymnasium, cffi, beautifulsoup4, anyio, starlette, rich, pydantic, playwright, jsonschema-specifications, httpx2, cryptography, typer, sse-starlette, mcp-types, jsonschema, huggingface-hub, mcp, browsergym-core, browsergym-workarena
+Successfully installed annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 attrs-26.1.0 beautifulsoup4-4.15.0 browsergym-core-0.14.3 browsergym-workarena-0.5.3 certifi-2026.10.19 cffi-2.1.1 charset_normalizer-3.5.2 click-8.5.0 cloudpickle-3.1.2 cryptography-50.0.2 english-words-2.0.2 faker-40.43.0 farama-notifications-0.0.6 filelock-4.2.4 fsspec-2026.9.0 greenlet-3.0.3 gymnasium-1.4.0 h11-0.16.0 hf-xet-1.7.0 httpcore2-2.16.0 httpx2-2.16.0 huggingface-hub-2.2.0 idna-3.20 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 lxml-5.4.0 markdown-it-py-4.2.0 mcp-2.3.0 mcp-types-2.3.0 mdurl-0.1.2 numpy-2.5.4 opentelemetry-api-1.45.1 packaging-26.3 pillow-13.0.0 playwright-1.44.0 pycparser-3.11 pydantic-2.14.1 pydantic-core-2.50.1 pyee-11.1.0 pygments-2.21.0 pyjwt-2.15.1 pyparsing-3.3.3 python-dotenv-1.2.4 python-multipart-0.0.32 pyyaml-6.0.3 referencing-0.37.0 requests-2.34.2 rich-15.0.0 rpds-py-2026.9.1 shellingham-1.5.4 soupsieve-3.0.3 sse-starlette-3.5.0 starlette-1.9.0 tenacity-9.2.1 tqdm-4.70.1 truststore-0.10.5 typer-0.27.3 typing-extensions-4.16.0 typing-inspection-0.4.4 urllib3-2.8.0 uvicorn-0.54.0
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: /Users/null3351/Code/neural-primitive-research/neural-primitive-compiler/mission-06/env/venv-wa/bin/python -m pip install --upgrade pip
+Downloading Chromium 125.0.6422.26 (playwright build v1117) from https://playwright.azureedge.net/builds/chromium/1117/chromium-mac-arm64.zip
+Error: Client network socket disconnected before secure TLS connection was established
+    at TLSSocket.onConnectEnd (node:_tls_wrap:1727:19)
+    at TLSSocket.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'ECONNRESET',
+  path: undefined,
+  host: undefined,
+  port: undefined,
+  localAddress: undefined
+}
+Downloading Chromium 125.0.6422.26 (playwright build v1117) from https://playwright-akamai.azureedge.net/builds/chromium/1117/chromium-mac-arm64.zip
+|                                                                                |   0% of 134.6 MiB
+|■■■■■■■■                                                                        |  10% of 134.6 MiB
+|■■■■■■■■■■■■■■■■                                                                |  20% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 134.6 MiB
+Error: Download failed: server closed connection. URL: https://playwright-akamai.azureedge.net/builds/chromium/1117/chromium-mac-arm64.zip
+    at IncomingMessage.<anonymous> (/Users/null3351/Code/neural-primitive-research/neural-primitive-compiler/mission-06/env/venv-wa/lib/python3.12/site-packages/playwright/driver/package/lib/server/registry/oopDownloadBrowserMain.js:89:24)
+    at IncomingMessage.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+Downloading Chromium 125.0.6422.26 (playwright build v1117) from https://playwright-verizon.azureedge.net/builds/chromium/1117/chromium-mac-arm64.zip
+|                                                                                |   0% of 134.6 MiB
+|■■■■■■■■                                                                        |  10% of 134.6 MiB
+|■■■■■■■■■■■■■■■■                                                                |  20% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 134.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 134.6 MiB
+Error: Download failed: server closed connection. URL: https://playwright-verizon.azureedge.net/builds/chromium/1117/chromium-mac-arm64.zip
+    at IncomingMessage.<anonymous> (/Users/null3351/Code/neural-primitive-research/neural-primitive-compiler/mission-06/env/venv-wa/lib/python3.12/site-packages/playwright/driver/package/lib/server/registry/oopDownloadBrowserMain.js:89:24)
+    at IncomingMessage.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+Failed to install browsers
+Error: Failed to download Chromium 125.0.6422.26 (playwright build v1117), caused by
+Error: Download failure, code=1
+    at ChildProcess.<anonymous> (/Users/null3351/Code/neural-primitive-research/neural-primitive-compiler/mission-06/env/venv-wa/lib/python3.12/site-packages/playwright/driver/package/lib/server/registry/browserFetcher.js:91:16)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
