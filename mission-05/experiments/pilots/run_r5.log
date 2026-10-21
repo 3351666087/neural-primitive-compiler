@@ -1,0 +1,17 @@
+A-P TZ-P2 constructed 36 wrong 0
+B disc-50 {'KD:k': 212, 'KD:t': 4, 'OUT:t': 144, 'OOW:t': 72} L0 0 L1 0 hold-out {'predicted': 86382, 'unpredicted': 18, 'errors': 0} cpu {'collect': 0.1, 'gram_fit': 0.3, 'r1': 0.0, 'total': 1.1}
+B disc-200 {'KD:k': 212, 'KD:t': 4, 'OUT:t': 144, 'OOW:t': 72} L0 0 L1 0 hold-out {'predicted': 86400, 'unpredicted': 0, 'errors': 0} cpu {'collect': 0.5, 'gram_fit': 1.0, 'r1': 0.0, 'total': 2.6}
+B disc-1000 {'KD:k': 212, 'KD:t': 4, 'OUT:t': 144, 'OOW:t': 72} L0 0 L1 0 hold-out {'predicted': 86400, 'unpredicted': 0, 'errors': 0} cpu {'collect': 2.7, 'gram_fit': 4.9, 'r1': 0.0, 'total': 11.8}
+B five-1000 {'KD:k': 212, 'KD:t': 4, 'OUT:t': 144, 'OOW:t': 72} L0 0 L1 0 hold-out {'predicted': 86400, 'unpredicted': 0, 'errors': 0} cpu {'collect': 0.9, 'gram_fit': 1.4, 'r1': 0.0, 'total': 3.7}
+B disc-50 {'exch/obs': (27, 0.912), 'exch/given': (0, 0.637), 'r1/given': (0, 0.648), 'gram/obs': (28, 0.926), 'gram/given': (0, 0.986), 'gram/fact': (18, 0.931)}
+B disc-200 {'exch/obs': (17, 0.951), 'exch/given': (0, 0.722), 'r1/given': (0, 0.794), 'gram/obs': (17, 0.951), 'gram/given': (0, 1.0), 'gram/fact': (10, 0.963)}
+B disc-1000 {'exch/obs': (6, 0.977), 'exch/given': (0, 0.743), 'r1/given': (0, 0.861), 'gram/obs': (6, 0.977), 'gram/given': (0, 1.0), 'gram/fact': (1, 0.984)}
+B five-1000 {'exch/obs': (30, 0.921), 'exch/given': (0, 0.715), 'r1/given': (0, 0.778), 'gram/obs': (30, 0.921), 'gram/given': (0, 1.0), 'gram/fact': (23, 0.933)}
+A-P' disc-50 gram given constructed 30 wrong 0 rejected under TZ 0 23.5 s
+A-P' disc-200 gram given constructed 30 wrong 0 rejected under TZ 0 23.5 s
+A-P' disc-1000 gram given constructed 30 wrong 0 rejected under TZ 0 23.5 s
+A-P' disc-1000 gram fact constructed 30 wrong 0 rejected under TZ 0 23.5 s
+A-P' five-1000 gram fact constructed 30 wrong 0 rejected under TZ 0 23.5 s
+A-P' disc-1000 r1 given constructed 30 wrong 0 rejected under TZ 0 23.5 s
+done 23.5 s; newly judged plans 0
+exit 0

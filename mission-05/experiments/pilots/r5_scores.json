@@ -1,0 +1,284 @@
+{
+ "F1": {
+  "verdict": "HOLDS",
+  "disc-50": {
+   "L0": 0,
+   "L1": 0,
+   "classes": {
+    "KD:k": 212,
+    "KD:t": 4,
+    "OUT:t": 144,
+    "OOW:t": 72
+   },
+   "law_mismatches": 0,
+   "holdout": {
+    "predicted": 86382,
+    "unpredicted": 18,
+    "errors": 0
+   }
+  },
+  "disc-200": {
+   "L0": 0,
+   "L1": 0,
+   "classes": {
+    "KD:k": 212,
+    "KD:t": 4,
+    "OUT:t": 144,
+    "OOW:t": 72
+   },
+   "law_mismatches": 0,
+   "holdout": {
+    "predicted": 86400,
+    "unpredicted": 0,
+    "errors": 0
+   }
+  },
+  "disc-1000": {
+   "L0": 0,
+   "L1": 0,
+   "classes": {
+    "KD:k": 212,
+    "KD:t": 4,
+    "OUT:t": 144,
+    "OOW:t": 72
+   },
+   "law_mismatches": 0,
+   "holdout": {
+    "predicted": 86400,
+    "unpredicted": 0,
+    "errors": 0
+   }
+  },
+  "five-1000": {
+   "L0": 0,
+   "L1": 0,
+   "classes": {
+    "KD:k": 212,
+    "KD:t": 4,
+    "OUT:t": 144,
+    "OOW:t": 72
+   },
+   "law_mismatches": 0,
+   "holdout": {
+    "predicted": 86400,
+    "unpredicted": 0,
+    "errors": 0
+   }
+  }
+ },
+ "F2": {
+  "verdict": "HOLDS",
+  "dangerous_T7_TZ": {
+   "disc-50": [
+    0,
+    0
+   ],
+   "disc-200": [
+    0,
+    0
+   ],
+   "disc-1000": [
+    0,
+    0
+   ],
+   "five-1000": [
+    0,
+    0
+   ]
+  },
+  "agreement_with_TZ": {
+   "disc-50": 0.9861111111111112,
+   "disc-200": 1.0,
+   "disc-1000": 1.0,
+   "five-1000": 1.0
+  },
+  "B-EXCH_given_agreement": {
+   "disc-50": 0.6365740740740741,
+   "disc-200": 0.7222222222222222,
+   "disc-1000": 0.7430555555555556,
+   "five-1000": 0.7152777777777778
+  }
+ },
+ "F3": {
+  "verdict": "FALSIFIED",
+  "dangerous_T7_TZ": {
+   "disc-50": [
+    0,
+    0
+   ],
+   "disc-200": [
+    0,
+    0
+   ],
+   "disc-1000": [
+    0,
+    0
+   ],
+   "five-1000": [
+    0,
+    0
+   ]
+  },
+  "agreement_with_TZ": {
+   "disc-50": 0.6481481481481481,
+   "disc-200": 0.7939814814814815,
+   "disc-1000": 0.8611111111111112,
+   "five-1000": 0.7777777777777778
+  },
+  "r1_contradictions": {
+   "disc-50": 0,
+   "disc-200": 0,
+   "disc-1000": 0,
+   "five-1000": 0
+  }
+ },
+ "F4": {
+  "verdict": "FALSIFIED",
+  "disc-1000": {
+   "dangerous_vs_T7": 1,
+   "agreement_with_TZ": 0.9837962962962963,
+   "list": [
+    "ZONE:Z2:right:half / OOW(X2,G1): learned 0, reference 1"
+   ]
+  },
+  "five-1000": {
+   "dangerous_vs_T7": 23,
+   "by_type": {
+    "OOW": 13,
+    "OUT": 10
+   },
+   "list": [
+    "ORDER:O1 / OOW(A1,G1): learned 0, reference 1",
+    "ZONE:Z1:left:2 / OUT(A1,left,half): learned -1, reference 0",
+    "ZONE:Z1:left:half / OUT(A1,left,2): learned -1, reference 0",
+    "ZONE:Z1:left:half / OOW(A1,G1): learned 0, reference 1",
+    "ZONE:Z1:right:2 / OUT(A1,right,half): learned -1, reference 0",
+    "ZONE:Z1:right:half / OUT(A1,right,2): learned -1, reference 0",
+    "ZONE:Z1:right:half / OOW(A1,G2): learned 0, reference 1",
+    "ZONE:Z2:left:2 / OUT(A1,left,half): learned -1, reference 0",
+    "ZONE:Z2:left:2 / OOW(X1,G2): learned 0, reference 1",
+    "ZONE:Z2:left:half / OUT(A1,left,2): learned -1, reference 0",
+    "ZONE:Z2:left:half / OOW(A1,G1): learned -1, reference 1",
+    "ZONE:Z2:left:half / OOW(X1,G2): learned 0, reference 1",
+    "ZONE:Z2:left:half / OOW(X2,G2): learned 0, reference 1",
+    "ZONE:Z2:right:2 / OUT(A1,right,half): learned -1, reference 0",
+    "ZONE:Z2:right:2 / OOW(X1,G1): learned 0, reference 1",
+    "ZONE:Z2:right:2 / OOW(X2,G1): learned 0, reference 1",
+    "ZONE:Z2:right:half / OUT(A1,right,2): learned -1, reference 0",
+    "ZONE:Z2:right:half / OOW(A1,G2): learned -1, reference 1",
+    "ZONE:Z2:right:half / OOW(X1,G1): learned 0, reference 1",
+    "ZONE:Z2:right:half / OOW(X2,G1): learned 0, reference 1",
+    "GROUP:G2 / OUT(X2,left,2): learned 0, reference 1",
+    "GROUP:G2 / OUT(X2,left,half): learned 0, reference 1",
+    "GROUP:G2 / OOW(X2,G1): learned 0, reference 1"
+   ]
+  },
+  "S-obs_dangerous_vs_T7": {
+   "disc-50": 28,
+   "disc-200": 17,
+   "disc-1000": 6,
+   "five-1000": 30
+  }
+ },
+ "F5": {
+  "verdict": "HOLDS",
+  "disc-50/gram/given": {
+   "constructed": 30,
+   "same_as_TZ": true,
+   "wrong": [],
+   "rejected_under_TZ": []
+  },
+  "disc-200/gram/given": {
+   "constructed": 30,
+   "same_as_TZ": true,
+   "wrong": [],
+   "rejected_under_TZ": []
+  },
+  "disc-1000/gram/given": {
+   "constructed": 30,
+   "same_as_TZ": true,
+   "wrong": [],
+   "rejected_under_TZ": []
+  },
+  "disc-1000/gram/fact": {
+   "constructed": 30,
+   "same_as_TZ": true,
+   "wrong": [],
+   "rejected_under_TZ": []
+  }
+ },
+ "F6": {
+  "verdict": "HOLDS",
+  "TZ-P2_z3_s": 0.48,
+  "S_given_cpu_s": 3.8443369999999994,
+  "B_cpu_s": {
+   "disc-50": {
+    "collect": 0.136735,
+    "gram_fit": 0.27874399999999994,
+    "r1": 0.008799000000001334,
+    "total": 1.102858
+   },
+   "disc-200": {
+    "collect": 0.5318799999999999,
+    "gram_fit": 0.9867080000000068,
+    "r1": 0.011234999999993223,
+    "total": 2.5703009999999997
+   },
+   "disc-1000": {
+    "collect": 2.6785979999999996,
+    "gram_fit": 4.902313000000007,
+    "r1": 0.01415699999999287,
+    "total": 11.780559
+   },
+   "five-1000": {
+    "collect": 0.9139140000000001,
+    "gram_fit": 1.3690869999999364,
+    "r1": 0.009902000000032274,
+    "total": 3.730448000000001
+   }
+  },
+  "A-P_median_cpu_s": 1.8999999999998185e-05
+ },
+ "G1": {
+  "verdict": "HOLDS",
+  "proved": 114,
+  "nonvacuous_held_proved": 94,
+  "nonvacuous_held_not_proved": [],
+  "proved_with_real_cex": [],
+  "vacuous_held_proved": [
+   "ZONE:Z1:left:2 / ZONE(A1,left,half)",
+   "ZONE:Z1:left:2 / ZONE(A1,right,half)",
+   "ZONE:Z1:left:half / ZONE(A1,right,2)",
+   "ZONE:Z1:left:half / ZONE(A1,right,half)",
+   "ZONE:Z1:right:2 / ZONE(A1,left,half)",
+   "ZONE:Z1:right:2 / ZONE(A1,right,half)",
+   "ZONE:Z1:right:half / ZONE(A1,left,2)",
+   "ZONE:Z1:right:half / ZONE(A1,left,half)",
+   "ZONE:Z2:left:2 / ZONE(A1,left,half)",
+   "ZONE:Z2:left:2 / ZONE(A1,right,half)",
+   "ZONE:Z2:left:half / ZONE(A1,right,2)",
+   "ZONE:Z2:left:half / ZONE(A1,right,half)",
+   "ZONE:Z2:right:2 / ZONE(A1,left,half)",
+   "ZONE:Z2:right:2 / ZONE(A1,right,half)",
+   "ZONE:Z2:right:half / ZONE(A1,left,2)",
+   "ZONE:Z2:right:half / ZONE(A1,left,half)",
+   "GROUP:G1 / ZONE(A1,left,2)",
+   "GROUP:G1 / ZONE(A1,left,half)",
+   "GROUP:G2 / ZONE(A1,right,2)",
+   "GROUP:G2 / ZONE(A1,right,half)"
+  ]
+ },
+ "G2": {
+  "verdict": "HOLDS",
+  "constructed": 36,
+  "wrong": []
+ },
+ "A-P'_other": {
+  "disc-50/gram/given": 30,
+  "disc-200/gram/given": 30,
+  "disc-1000/gram/given": 30,
+  "disc-1000/gram/fact": 30,
+  "five-1000/gram/fact": 30,
+  "disc-1000/r1/given": 30
+ }
+}
