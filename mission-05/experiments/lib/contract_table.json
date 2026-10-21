@@ -1,0 +1,4208 @@
+{
+ "label": "library validation: achiever contracts by exhaustive checking at N = 3..5 (bounded, [M] up to N = 5)",
+ "progress": {
+  "ORDER:O1": {
+   "ok": true,
+   "states": 1532,
+   "cex": null
+  },
+  "ORDER:O2": {
+   "ok": true,
+   "states": 1532,
+   "cex": null
+  },
+  "ZONE:Z1:left:2": {
+   "ok": true,
+   "states": 3184,
+   "cex": null
+  },
+  "ZONE:Z1:left:half": {
+   "ok": true,
+   "states": 3192,
+   "cex": null
+  },
+  "ZONE:Z1:right:2": {
+   "ok": true,
+   "states": 3184,
+   "cex": null
+  },
+  "ZONE:Z1:right:half": {
+   "ok": true,
+   "states": 3192,
+   "cex": null
+  },
+  "ZONE:Z2:left:2": {
+   "ok": true,
+   "states": 3184,
+   "cex": null
+  },
+  "ZONE:Z2:left:half": {
+   "ok": true,
+   "states": 3192,
+   "cex": null
+  },
+  "ZONE:Z2:right:2": {
+   "ok": true,
+   "states": 3184,
+   "cex": null
+  },
+  "ZONE:Z2:right:half": {
+   "ok": true,
+   "states": 3192,
+   "cex": null
+  },
+  "GROUP:G1": {
+   "ok": true,
+   "states": 897,
+   "cex": null
+  },
+  "GROUP:G2": {
+   "ok": true,
+   "states": 897,
+   "cex": null
+  }
+ },
+ "preserves": {
+  "ORDER:O1": {
+   "ORDER(A1,X1)": {
+    "ok": true,
+    "states": 1156,
+    "cex": null
+   },
+   "ORDER(A1,X2)": {
+    "ok": true,
+    "states": 1156,
+    "cex": null
+   },
+   "ORDER(A2,A1)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ORDER(A2,X1)": {
+    "ok": false,
+    "states": 1314,
+    "cex": {
+     "cells": [
+      2,
+      3,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      3,
+      2,
+      0
+     ]
+    }
+   },
+   "ORDER(A2,X2)": {
+    "ok": false,
+    "states": 1276,
+    "cex": {
+     "cells": [
+      2,
+      4,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      4,
+      2,
+      0
+     ]
+    }
+   },
+   "ORDER(X1,A1)": {
+    "ok": false,
+    "states": 1314,
+    "cex": {
+     "cells": [
+      2,
+      3,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      3,
+      2,
+      0
+     ]
+    }
+   },
+   "ORDER(X1,A2)": {
+    "ok": true,
+    "states": 1156,
+    "cex": null
+   },
+   "ORDER(X1,X2)": {
+    "ok": true,
+    "states": 1472,
+    "cex": null
+   },
+   "ORDER(X2,A1)": {
+    "ok": false,
+    "states": 1276,
+    "cex": {
+     "cells": [
+      2,
+      4,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      4,
+      2,
+      0
+     ]
+    }
+   },
+   "ORDER(X2,A2)": {
+    "ok": true,
+    "states": 1156,
+    "cex": null
+   },
+   "ORDER(X2,X1)": {
+    "ok": true,
+    "states": 1472,
+    "cex": null
+   },
+   "ZONE(A1,left,2)": {
+    "ok": true,
+    "states": 142,
+    "cex": null
+   },
+   "ZONE(A1,left,half)": {
+    "ok": true,
+    "states": 140,
+    "cex": null
+   },
+   "ZONE(A1,right,2)": {
+    "ok": false,
+    "states": 456,
+    "cex": {
+     "cells": [
+      2,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      2,
+      0
+     ]
+    }
+   },
+   "ZONE(A1,right,half)": {
+    "ok": false,
+    "states": 450,
+    "cex": {
+     "cells": [
+      2,
+      0,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      2,
+      0
+     ]
+    }
+   },
+   "GROUP(A1)": {
+    "ok": false,
+    "states": 1268,
+    "cex": {
+     "cells": [
+      2,
+      0,
+      1,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      1,
+      2
+     ]
+    }
+   },
+   "ZONE(A2,left,2)": {
+    "ok": false,
+    "states": 456,
+    "cex": {
+     "cells": [
+      2,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      2
+     ]
+    }
+   },
+   "ZONE(A2,left,half)": {
+    "ok": false,
+    "states": 450,
+    "cex": {
+     "cells": [
+      2,
+      0,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      2,
+      0
+     ]
+    }
+   },
+   "ZONE(A2,right,2)": {
+    "ok": true,
+    "states": 142,
+    "cex": null
+   },
+   "ZONE(A2,right,half)": {
+    "ok": true,
+    "states": 140,
+    "cex": null
+   },
+   "GROUP(A2)": {
+    "ok": false,
+    "states": 1268,
+    "cex": {
+     "cells": [
+      2,
+      2,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      2,
+      0,
+      2
+     ]
+    }
+   },
+   "ZONE(X1,left,2)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "ZONE(X1,left,half)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "ZONE(X1,right,2)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "ZONE(X1,right,half)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "GROUP(X1)": {
+    "ok": true,
+    "states": 1496,
+    "cex": null
+   },
+   "ZONE(X2,left,2)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "ZONE(X2,left,half)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "ZONE(X2,right,2)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "ZONE(X2,right,half)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "GROUP(X2)": {
+    "ok": true,
+    "states": 1496,
+    "cex": null
+   }
+  },
+  "ORDER:O2": {
+   "ORDER(A1,X1)": {
+    "ok": true,
+    "states": 1156,
+    "cex": null
+   },
+   "ORDER(A1,X2)": {
+    "ok": true,
+    "states": 1156,
+    "cex": null
+   },
+   "ORDER(A2,A1)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ORDER(A2,X1)": {
+    "ok": false,
+    "states": 1314,
+    "cex": {
+     "cells": [
+      2,
+      3,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      3,
+      2,
+      0
+     ]
+    }
+   },
+   "ORDER(A2,X2)": {
+    "ok": false,
+    "states": 1276,
+    "cex": {
+     "cells": [
+      2,
+      4,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      4,
+      2,
+      0
+     ]
+    }
+   },
+   "ORDER(X1,A1)": {
+    "ok": false,
+    "states": 1314,
+    "cex": {
+     "cells": [
+      2,
+      3,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      3,
+      2,
+      0
+     ]
+    }
+   },
+   "ORDER(X1,A2)": {
+    "ok": true,
+    "states": 1156,
+    "cex": null
+   },
+   "ORDER(X1,X2)": {
+    "ok": true,
+    "states": 1472,
+    "cex": null
+   },
+   "ORDER(X2,A1)": {
+    "ok": false,
+    "states": 1276,
+    "cex": {
+     "cells": [
+      2,
+      4,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      4,
+      2,
+      0
+     ]
+    }
+   },
+   "ORDER(X2,A2)": {
+    "ok": true,
+    "states": 1156,
+    "cex": null
+   },
+   "ORDER(X2,X1)": {
+    "ok": true,
+    "states": 1472,
+    "cex": null
+   },
+   "ZONE(A1,left,2)": {
+    "ok": true,
+    "states": 142,
+    "cex": null
+   },
+   "ZONE(A1,left,half)": {
+    "ok": true,
+    "states": 140,
+    "cex": null
+   },
+   "ZONE(A1,right,2)": {
+    "ok": false,
+    "states": 456,
+    "cex": {
+     "cells": [
+      2,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      2,
+      0
+     ]
+    }
+   },
+   "ZONE(A1,right,half)": {
+    "ok": false,
+    "states": 450,
+    "cex": {
+     "cells": [
+      2,
+      0,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      2,
+      0
+     ]
+    }
+   },
+   "GROUP(A1)": {
+    "ok": false,
+    "states": 1268,
+    "cex": {
+     "cells": [
+      2,
+      1,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      2,
+      1,
+      0
+     ]
+    }
+   },
+   "ZONE(A2,left,2)": {
+    "ok": false,
+    "states": 456,
+    "cex": {
+     "cells": [
+      2,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      2
+     ]
+    }
+   },
+   "ZONE(A2,left,half)": {
+    "ok": false,
+    "states": 450,
+    "cex": {
+     "cells": [
+      2,
+      0,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      2,
+      0
+     ]
+    }
+   },
+   "ZONE(A2,right,2)": {
+    "ok": true,
+    "states": 142,
+    "cex": null
+   },
+   "ZONE(A2,right,half)": {
+    "ok": true,
+    "states": 140,
+    "cex": null
+   },
+   "GROUP(A2)": {
+    "ok": false,
+    "states": 1268,
+    "cex": {
+     "cells": [
+      2,
+      2,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      2,
+      0,
+      2
+     ]
+    }
+   },
+   "ZONE(X1,left,2)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "ZONE(X1,left,half)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "ZONE(X1,right,2)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "ZONE(X1,right,half)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "GROUP(X1)": {
+    "ok": true,
+    "states": 1496,
+    "cex": null
+   },
+   "ZONE(X2,left,2)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "ZONE(X2,left,half)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "ZONE(X2,right,2)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "ZONE(X2,right,half)": {
+    "ok": true,
+    "states": 1190,
+    "cex": null
+   },
+   "GROUP(X2)": {
+    "ok": true,
+    "states": 1496,
+    "cex": null
+   }
+  },
+  "ZONE:Z1:left:2": {
+   "ORDER(A1,X1)": {
+    "ok": true,
+    "states": 1887,
+    "cex": null
+   },
+   "ORDER(A1,X2)": {
+    "ok": true,
+    "states": 2054,
+    "cex": null
+   },
+   "ORDER(X1,A1)": {
+    "ok": false,
+    "states": 2055,
+    "cex": {
+     "cells": [
+      0,
+      3,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      3
+     ]
+    }
+   },
+   "ORDER(X1,X2)": {
+    "ok": false,
+    "states": 2846,
+    "cex": {
+     "cells": [
+      0,
+      3,
+      4,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      4,
+      3
+     ]
+    }
+   },
+   "ORDER(X2,A1)": {
+    "ok": false,
+    "states": 2106,
+    "cex": {
+     "cells": [
+      0,
+      4,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      4
+     ]
+    }
+   },
+   "ORDER(X2,X1)": {
+    "ok": false,
+    "states": 2845,
+    "cex": {
+     "cells": [
+      0,
+      4,
+      3,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      3,
+      4
+     ]
+    }
+   },
+   "ZONE(A1,left,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,right,2)": {
+    "ok": true,
+    "states": 15,
+    "cex": null
+   },
+   "ZONE(A1,right,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "GROUP(A1)": {
+    "ok": false,
+    "states": 2589,
+    "cex": {
+     "cells": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      0,
+      1
+     ]
+    }
+   },
+   "ZONE(X1,left,2)": {
+    "ok": false,
+    "states": 1936,
+    "cex": {
+     "cells": [
+      0,
+      3,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      3
+     ]
+    }
+   },
+   "ZONE(X1,left,half)": {
+    "ok": false,
+    "states": 1934,
+    "cex": {
+     "cells": [
+      0,
+      3,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      3,
+      0
+     ]
+    }
+   },
+   "ZONE(X1,right,2)": {
+    "ok": true,
+    "states": 2006,
+    "cex": null
+   },
+   "ZONE(X1,right,half)": {
+    "ok": true,
+    "states": 2004,
+    "cex": null
+   },
+   "GROUP(X1)": {
+    "ok": false,
+    "states": 2972,
+    "cex": {
+     "cells": [
+      3,
+      3,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      1,
+      3,
+      0
+     ]
+    }
+   },
+   "ZONE(X2,left,2)": {
+    "ok": false,
+    "states": 2132,
+    "cex": {
+     "cells": [
+      0,
+      4,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      4
+     ]
+    }
+   },
+   "ZONE(X2,left,half)": {
+    "ok": false,
+    "states": 2130,
+    "cex": {
+     "cells": [
+      0,
+      4,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      4,
+      0
+     ]
+    }
+   },
+   "ZONE(X2,right,2)": {
+    "ok": true,
+    "states": 2180,
+    "cex": null
+   },
+   "ZONE(X2,right,half)": {
+    "ok": true,
+    "states": 2178,
+    "cex": null
+   },
+   "GROUP(X2)": {
+    "ok": false,
+    "states": 3001,
+    "cex": {
+     "cells": [
+      4,
+      4,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      1,
+      4,
+      0
+     ]
+    }
+   }
+  },
+  "ZONE:Z1:left:half": {
+   "ORDER(A1,X1)": {
+    "ok": true,
+    "states": 1893,
+    "cex": null
+   },
+   "ORDER(A1,X2)": {
+    "ok": true,
+    "states": 2062,
+    "cex": null
+   },
+   "ORDER(X1,A1)": {
+    "ok": false,
+    "states": 2055,
+    "cex": {
+     "cells": [
+      0,
+      3,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      3,
+      0
+     ]
+    }
+   },
+   "ORDER(X1,X2)": {
+    "ok": false,
+    "states": 2854,
+    "cex": {
+     "cells": [
+      0,
+      3,
+      4,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      4,
+      3
+     ]
+    }
+   },
+   "ORDER(X2,A1)": {
+    "ok": false,
+    "states": 2109,
+    "cex": {
+     "cells": [
+      0,
+      4,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      4,
+      0
+     ]
+    }
+   },
+   "ORDER(X2,X1)": {
+    "ok": false,
+    "states": 2853,
+    "cex": {
+     "cells": [
+      0,
+      4,
+      3,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      3,
+      4
+     ]
+    }
+   },
+   "ZONE(A1,left,2)": {
+    "ok": true,
+    "states": 15,
+    "cex": null
+   },
+   "ZONE(A1,right,2)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,right,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "GROUP(A1)": {
+    "ok": false,
+    "states": 2599,
+    "cex": {
+     "cells": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      0,
+      1
+     ]
+    }
+   },
+   "ZONE(X1,left,2)": {
+    "ok": false,
+    "states": 1942,
+    "cex": {
+     "cells": [
+      3,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      3
+     ]
+    }
+   },
+   "ZONE(X1,left,half)": {
+    "ok": false,
+    "states": 1936,
+    "cex": {
+     "cells": [
+      0,
+      3,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      3,
+      0
+     ]
+    }
+   },
+   "ZONE(X1,right,2)": {
+    "ok": true,
+    "states": 2012,
+    "cex": null
+   },
+   "ZONE(X1,right,half)": {
+    "ok": true,
+    "states": 2010,
+    "cex": null
+   },
+   "GROUP(X1)": {
+    "ok": false,
+    "states": 2980,
+    "cex": {
+     "cells": [
+      3,
+      3,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      1,
+      3,
+      0
+     ]
+    }
+   },
+   "ZONE(X2,left,2)": {
+    "ok": false,
+    "states": 2138,
+    "cex": {
+     "cells": [
+      4,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      4
+     ]
+    }
+   },
+   "ZONE(X2,left,half)": {
+    "ok": false,
+    "states": 2134,
+    "cex": {
+     "cells": [
+      0,
+      4,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      4,
+      0
+     ]
+    }
+   },
+   "ZONE(X2,right,2)": {
+    "ok": true,
+    "states": 2188,
+    "cex": null
+   },
+   "ZONE(X2,right,half)": {
+    "ok": true,
+    "states": 2186,
+    "cex": null
+   },
+   "GROUP(X2)": {
+    "ok": false,
+    "states": 3009,
+    "cex": {
+     "cells": [
+      4,
+      4,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      1,
+      4,
+      0
+     ]
+    }
+   }
+  },
+  "ZONE:Z1:right:2": {
+   "ORDER(A1,X1)": {
+    "ok": false,
+    "states": 2055,
+    "cex": {
+     "cells": [
+      1,
+      3,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      1,
+      0
+     ]
+    }
+   },
+   "ORDER(A1,X2)": {
+    "ok": false,
+    "states": 2106,
+    "cex": {
+     "cells": [
+      1,
+      4,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      1,
+      0
+     ]
+    }
+   },
+   "ORDER(X1,A1)": {
+    "ok": true,
+    "states": 1887,
+    "cex": null
+   },
+   "ORDER(X1,X2)": {
+    "ok": false,
+    "states": 2845,
+    "cex": {
+     "cells": [
+      1,
+      3,
+      4,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      3,
+      1,
+      0
+     ]
+    }
+   },
+   "ORDER(X2,A1)": {
+    "ok": true,
+    "states": 2054,
+    "cex": null
+   },
+   "ORDER(X2,X1)": {
+    "ok": false,
+    "states": 2846,
+    "cex": {
+     "cells": [
+      1,
+      4,
+      3,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      4,
+      1,
+      0
+     ]
+    }
+   },
+   "ZONE(A1,left,2)": {
+    "ok": true,
+    "states": 15,
+    "cex": null
+   },
+   "ZONE(A1,left,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,right,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "GROUP(A1)": {
+    "ok": false,
+    "states": 2589,
+    "cex": {
+     "cells": [
+      1,
+      1,
+      0,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      1,
+      0
+     ]
+    }
+   },
+   "ZONE(X1,left,2)": {
+    "ok": true,
+    "states": 2006,
+    "cex": null
+   },
+   "ZONE(X1,left,half)": {
+    "ok": true,
+    "states": 2004,
+    "cex": null
+   },
+   "ZONE(X1,right,2)": {
+    "ok": false,
+    "states": 1936,
+    "cex": {
+     "cells": [
+      1,
+      3,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      1,
+      0
+     ]
+    }
+   },
+   "ZONE(X1,right,half)": {
+    "ok": false,
+    "states": 1934,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      3,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      1,
+      0
+     ]
+    }
+   },
+   "GROUP(X1)": {
+    "ok": false,
+    "states": 2972,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      3,
+      3
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      1,
+      3
+     ]
+    }
+   },
+   "ZONE(X2,left,2)": {
+    "ok": true,
+    "states": 2180,
+    "cex": null
+   },
+   "ZONE(X2,left,half)": {
+    "ok": true,
+    "states": 2178,
+    "cex": null
+   },
+   "ZONE(X2,right,2)": {
+    "ok": false,
+    "states": 2132,
+    "cex": {
+     "cells": [
+      1,
+      4,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      1,
+      0
+     ]
+    }
+   },
+   "ZONE(X2,right,half)": {
+    "ok": false,
+    "states": 2130,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      4,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      1,
+      0
+     ]
+    }
+   },
+   "GROUP(X2)": {
+    "ok": false,
+    "states": 3001,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      4,
+      4
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      1,
+      4
+     ]
+    }
+   }
+  },
+  "ZONE:Z1:right:half": {
+   "ORDER(A1,X1)": {
+    "ok": false,
+    "states": 2055,
+    "cex": {
+     "cells": [
+      1,
+      3,
+      0,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      3,
+      1,
+      0
+     ]
+    }
+   },
+   "ORDER(A1,X2)": {
+    "ok": false,
+    "states": 2109,
+    "cex": {
+     "cells": [
+      1,
+      4,
+      0,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      4,
+      1,
+      0
+     ]
+    }
+   },
+   "ORDER(X1,A1)": {
+    "ok": true,
+    "states": 1893,
+    "cex": null
+   },
+   "ORDER(X1,X2)": {
+    "ok": false,
+    "states": 2853,
+    "cex": {
+     "cells": [
+      1,
+      3,
+      4,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      3,
+      1,
+      0
+     ]
+    }
+   },
+   "ORDER(X2,A1)": {
+    "ok": true,
+    "states": 2062,
+    "cex": null
+   },
+   "ORDER(X2,X1)": {
+    "ok": false,
+    "states": 2854,
+    "cex": {
+     "cells": [
+      1,
+      4,
+      3,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      4,
+      1,
+      0
+     ]
+    }
+   },
+   "ZONE(A1,left,2)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,left,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,right,2)": {
+    "ok": true,
+    "states": 15,
+    "cex": null
+   },
+   "GROUP(A1)": {
+    "ok": false,
+    "states": 2599,
+    "cex": {
+     "cells": [
+      1,
+      1,
+      0,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      1,
+      0
+     ]
+    }
+   },
+   "ZONE(X1,left,2)": {
+    "ok": true,
+    "states": 2012,
+    "cex": null
+   },
+   "ZONE(X1,left,half)": {
+    "ok": true,
+    "states": 2010,
+    "cex": null
+   },
+   "ZONE(X1,right,2)": {
+    "ok": false,
+    "states": 1942,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      3
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      1
+     ]
+    }
+   },
+   "ZONE(X1,right,half)": {
+    "ok": false,
+    "states": 1936,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      3,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      1,
+      0
+     ]
+    }
+   },
+   "GROUP(X1)": {
+    "ok": false,
+    "states": 2980,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      3,
+      3
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      1,
+      3
+     ]
+    }
+   },
+   "ZONE(X2,left,2)": {
+    "ok": true,
+    "states": 2188,
+    "cex": null
+   },
+   "ZONE(X2,left,half)": {
+    "ok": true,
+    "states": 2186,
+    "cex": null
+   },
+   "ZONE(X2,right,2)": {
+    "ok": false,
+    "states": 2138,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      4
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      1
+     ]
+    }
+   },
+   "ZONE(X2,right,half)": {
+    "ok": false,
+    "states": 2134,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      4,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      1,
+      0
+     ]
+    }
+   },
+   "GROUP(X2)": {
+    "ok": false,
+    "states": 3009,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      4,
+      4
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      1,
+      4
+     ]
+    }
+   }
+  },
+  "ZONE:Z2:left:2": {
+   "ORDER(A1,X1)": {
+    "ok": true,
+    "states": 1887,
+    "cex": null
+   },
+   "ORDER(A1,X2)": {
+    "ok": true,
+    "states": 2054,
+    "cex": null
+   },
+   "ORDER(X1,A1)": {
+    "ok": false,
+    "states": 2055,
+    "cex": {
+     "cells": [
+      3,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      3
+     ]
+    }
+   },
+   "ORDER(X1,X2)": {
+    "ok": false,
+    "states": 2846,
+    "cex": {
+     "cells": [
+      3,
+      4,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      4,
+      3,
+      0
+     ]
+    }
+   },
+   "ORDER(X2,A1)": {
+    "ok": false,
+    "states": 2106,
+    "cex": {
+     "cells": [
+      4,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      4
+     ]
+    }
+   },
+   "ORDER(X2,X1)": {
+    "ok": false,
+    "states": 2845,
+    "cex": {
+     "cells": [
+      4,
+      3,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      3,
+      4,
+      0
+     ]
+    }
+   },
+   "ZONE(A1,left,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,right,2)": {
+    "ok": false,
+    "states": 15,
+    "cex": {
+     "cells": [
+      0,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "ZONE(A1,right,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "GROUP(A1)": {
+    "ok": false,
+    "states": 2589,
+    "cex": {
+     "cells": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      1,
+      0
+     ]
+    }
+   },
+   "ZONE(X1,left,2)": {
+    "ok": false,
+    "states": 1936,
+    "cex": {
+     "cells": [
+      3,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      3
+     ]
+    }
+   },
+   "ZONE(X1,left,half)": {
+    "ok": false,
+    "states": 1934,
+    "cex": {
+     "cells": [
+      3,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      3
+     ]
+    }
+   },
+   "ZONE(X1,right,2)": {
+    "ok": true,
+    "states": 2006,
+    "cex": null
+   },
+   "ZONE(X1,right,half)": {
+    "ok": true,
+    "states": 2004,
+    "cex": null
+   },
+   "GROUP(X1)": {
+    "ok": false,
+    "states": 2972,
+    "cex": {
+     "cells": [
+      3,
+      3,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      3,
+      0,
+      3
+     ]
+    }
+   },
+   "ZONE(X2,left,2)": {
+    "ok": false,
+    "states": 2132,
+    "cex": {
+     "cells": [
+      4,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      4
+     ]
+    }
+   },
+   "ZONE(X2,left,half)": {
+    "ok": false,
+    "states": 2130,
+    "cex": {
+     "cells": [
+      4,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      4
+     ]
+    }
+   },
+   "ZONE(X2,right,2)": {
+    "ok": true,
+    "states": 2180,
+    "cex": null
+   },
+   "ZONE(X2,right,half)": {
+    "ok": true,
+    "states": 2178,
+    "cex": null
+   },
+   "GROUP(X2)": {
+    "ok": false,
+    "states": 3001,
+    "cex": {
+     "cells": [
+      4,
+      4,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      4,
+      0,
+      4
+     ]
+    }
+   }
+  },
+  "ZONE:Z2:left:half": {
+   "ORDER(A1,X1)": {
+    "ok": true,
+    "states": 1893,
+    "cex": null
+   },
+   "ORDER(A1,X2)": {
+    "ok": true,
+    "states": 2062,
+    "cex": null
+   },
+   "ORDER(X1,A1)": {
+    "ok": false,
+    "states": 2055,
+    "cex": {
+     "cells": [
+      3,
+      0,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      3,
+      0
+     ]
+    }
+   },
+   "ORDER(X1,X2)": {
+    "ok": false,
+    "states": 2854,
+    "cex": {
+     "cells": [
+      3,
+      4,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      4,
+      3,
+      0
+     ]
+    }
+   },
+   "ORDER(X2,A1)": {
+    "ok": false,
+    "states": 2109,
+    "cex": {
+     "cells": [
+      4,
+      0,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      4,
+      0
+     ]
+    }
+   },
+   "ORDER(X2,X1)": {
+    "ok": false,
+    "states": 2853,
+    "cex": {
+     "cells": [
+      4,
+      3,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      3,
+      4,
+      0
+     ]
+    }
+   },
+   "ZONE(A1,left,2)": {
+    "ok": true,
+    "states": 15,
+    "cex": null
+   },
+   "ZONE(A1,right,2)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,right,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "GROUP(A1)": {
+    "ok": false,
+    "states": 2599,
+    "cex": {
+     "cells": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      1,
+      0
+     ]
+    }
+   },
+   "ZONE(X1,left,2)": {
+    "ok": false,
+    "states": 1942,
+    "cex": {
+     "cells": [
+      3,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      3
+     ]
+    }
+   },
+   "ZONE(X1,left,half)": {
+    "ok": false,
+    "states": 1936,
+    "cex": {
+     "cells": [
+      3,
+      0,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      3,
+      0
+     ]
+    }
+   },
+   "ZONE(X1,right,2)": {
+    "ok": true,
+    "states": 2012,
+    "cex": null
+   },
+   "ZONE(X1,right,half)": {
+    "ok": true,
+    "states": 2010,
+    "cex": null
+   },
+   "GROUP(X1)": {
+    "ok": false,
+    "states": 2980,
+    "cex": {
+     "cells": [
+      3,
+      3,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      3,
+      0,
+      3
+     ]
+    }
+   },
+   "ZONE(X2,left,2)": {
+    "ok": false,
+    "states": 2138,
+    "cex": {
+     "cells": [
+      4,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      4
+     ]
+    }
+   },
+   "ZONE(X2,left,half)": {
+    "ok": false,
+    "states": 2134,
+    "cex": {
+     "cells": [
+      4,
+      0,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      0,
+      4,
+      0
+     ]
+    }
+   },
+   "ZONE(X2,right,2)": {
+    "ok": true,
+    "states": 2188,
+    "cex": null
+   },
+   "ZONE(X2,right,half)": {
+    "ok": true,
+    "states": 2186,
+    "cex": null
+   },
+   "GROUP(X2)": {
+    "ok": false,
+    "states": 3009,
+    "cex": {
+     "cells": [
+      4,
+      4,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      4,
+      0,
+      4
+     ]
+    }
+   }
+  },
+  "ZONE:Z2:right:2": {
+   "ORDER(A1,X1)": {
+    "ok": false,
+    "states": 2055,
+    "cex": {
+     "cells": [
+      1,
+      3,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      3,
+      1
+     ]
+    }
+   },
+   "ORDER(A1,X2)": {
+    "ok": false,
+    "states": 2106,
+    "cex": {
+     "cells": [
+      1,
+      4,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      4,
+      1
+     ]
+    }
+   },
+   "ORDER(X1,A1)": {
+    "ok": true,
+    "states": 1887,
+    "cex": null
+   },
+   "ORDER(X1,X2)": {
+    "ok": false,
+    "states": 2845,
+    "cex": {
+     "cells": [
+      1,
+      3,
+      0,
+      4
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      3,
+      0,
+      1
+     ]
+    }
+   },
+   "ORDER(X2,A1)": {
+    "ok": true,
+    "states": 2054,
+    "cex": null
+   },
+   "ORDER(X2,X1)": {
+    "ok": false,
+    "states": 2846,
+    "cex": {
+     "cells": [
+      1,
+      4,
+      0,
+      3
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      4,
+      0,
+      1
+     ]
+    }
+   },
+   "ZONE(A1,left,2)": {
+    "ok": false,
+    "states": 15,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "ZONE(A1,left,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,right,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "GROUP(A1)": {
+    "ok": false,
+    "states": 2589,
+    "cex": {
+     "cells": [
+      1,
+      1,
+      0,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      0,
+      1
+     ]
+    }
+   },
+   "ZONE(X1,left,2)": {
+    "ok": true,
+    "states": 2006,
+    "cex": null
+   },
+   "ZONE(X1,left,half)": {
+    "ok": true,
+    "states": 2004,
+    "cex": null
+   },
+   "ZONE(X1,right,2)": {
+    "ok": false,
+    "states": 1936,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      3
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      1
+     ]
+    }
+   },
+   "ZONE(X1,right,half)": {
+    "ok": false,
+    "states": 1934,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      3
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      1
+     ]
+    }
+   },
+   "GROUP(X1)": {
+    "ok": false,
+    "states": 2972,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      3,
+      3
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      3,
+      1
+     ]
+    }
+   },
+   "ZONE(X2,left,2)": {
+    "ok": true,
+    "states": 2180,
+    "cex": null
+   },
+   "ZONE(X2,left,half)": {
+    "ok": true,
+    "states": 2178,
+    "cex": null
+   },
+   "ZONE(X2,right,2)": {
+    "ok": false,
+    "states": 2132,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      4
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      1
+     ]
+    }
+   },
+   "ZONE(X2,right,half)": {
+    "ok": false,
+    "states": 2130,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      4
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      1
+     ]
+    }
+   },
+   "GROUP(X2)": {
+    "ok": false,
+    "states": 3001,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      4,
+      4
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      4,
+      1
+     ]
+    }
+   }
+  },
+  "ZONE:Z2:right:half": {
+   "ORDER(A1,X1)": {
+    "ok": false,
+    "states": 2055,
+    "cex": {
+     "cells": [
+      1,
+      3,
+      0,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      3,
+      0,
+      1
+     ]
+    }
+   },
+   "ORDER(A1,X2)": {
+    "ok": false,
+    "states": 2109,
+    "cex": {
+     "cells": [
+      1,
+      4,
+      0,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      4,
+      0,
+      1
+     ]
+    }
+   },
+   "ORDER(X1,A1)": {
+    "ok": true,
+    "states": 1893,
+    "cex": null
+   },
+   "ORDER(X1,X2)": {
+    "ok": false,
+    "states": 2853,
+    "cex": {
+     "cells": [
+      1,
+      3,
+      0,
+      4
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      3,
+      0,
+      1
+     ]
+    }
+   },
+   "ORDER(X2,A1)": {
+    "ok": true,
+    "states": 2062,
+    "cex": null
+   },
+   "ORDER(X2,X1)": {
+    "ok": false,
+    "states": 2854,
+    "cex": {
+     "cells": [
+      1,
+      4,
+      0,
+      3
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      4,
+      0,
+      1
+     ]
+    }
+   },
+   "ZONE(A1,left,2)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,left,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,right,2)": {
+    "ok": true,
+    "states": 15,
+    "cex": null
+   },
+   "GROUP(A1)": {
+    "ok": false,
+    "states": 2599,
+    "cex": {
+     "cells": [
+      1,
+      1,
+      0,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      0,
+      1
+     ]
+    }
+   },
+   "ZONE(X1,left,2)": {
+    "ok": true,
+    "states": 2012,
+    "cex": null
+   },
+   "ZONE(X1,left,half)": {
+    "ok": true,
+    "states": 2010,
+    "cex": null
+   },
+   "ZONE(X1,right,2)": {
+    "ok": false,
+    "states": 1942,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      3
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      1
+     ]
+    }
+   },
+   "ZONE(X1,right,half)": {
+    "ok": false,
+    "states": 1936,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      0,
+      3
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "GROUP(X1)": {
+    "ok": false,
+    "states": 2980,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      3,
+      3
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      3,
+      1
+     ]
+    }
+   },
+   "ZONE(X2,left,2)": {
+    "ok": true,
+    "states": 2188,
+    "cex": null
+   },
+   "ZONE(X2,left,half)": {
+    "ok": true,
+    "states": 2186,
+    "cex": null
+   },
+   "ZONE(X2,right,2)": {
+    "ok": false,
+    "states": 2138,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      4
+     ],
+     "haz": [
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      1
+     ]
+    }
+   },
+   "ZONE(X2,right,half)": {
+    "ok": false,
+    "states": 2134,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      0,
+      4
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "GROUP(X2)": {
+    "ok": false,
+    "states": 3009,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      4,
+      4
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      4,
+      1
+     ]
+    }
+   }
+  },
+  "GROUP:G1": {
+   "ORDER(A1,X1)": {
+    "ok": false,
+    "states": 633,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      1,
+      3,
+      0
+     ],
+     "haz": [
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      1,
+      1,
+      0
+     ]
+    }
+   },
+   "ORDER(A1,X2)": {
+    "ok": false,
+    "states": 645,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      1,
+      4,
+      0
+     ],
+     "haz": [
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      1,
+      1,
+      0
+     ]
+    }
+   },
+   "ORDER(X1,A1)": {
+    "ok": false,
+    "states": 633,
+    "cex": {
+     "cells": [
+      3,
+      1,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      1,
+      0,
+      3
+     ]
+    }
+   },
+   "ORDER(X1,X2)": {
+    "ok": false,
+    "states": 861,
+    "cex": {
+     "cells": [
+      1,
+      3,
+      4,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      1,
+      4,
+      3,
+      0
+     ]
+    }
+   },
+   "ORDER(X2,A1)": {
+    "ok": false,
+    "states": 645,
+    "cex": {
+     "cells": [
+      4,
+      1,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      1,
+      0,
+      4
+     ]
+    }
+   },
+   "ORDER(X2,X1)": {
+    "ok": false,
+    "states": 861,
+    "cex": {
+     "cells": [
+      1,
+      4,
+      1,
+      3,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [
+      4
+     ],
+     "after": [
+      3,
+      4,
+      1,
+      1,
+      0
+     ]
+    }
+   },
+   "ZONE(A1,left,2)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,left,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,right,2)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,right,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(X1,left,2)": {
+    "ok": false,
+    "states": 685,
+    "cex": {
+     "cells": [
+      1,
+      3,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      1,
+      3,
+      0
+     ]
+    }
+   },
+   "ZONE(X1,left,half)": {
+    "ok": false,
+    "states": 685,
+    "cex": {
+     "cells": [
+      1,
+      3,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      1,
+      3,
+      0
+     ]
+    }
+   },
+   "ZONE(X1,right,2)": {
+    "ok": false,
+    "states": 685,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      1,
+      3,
+      0
+     ],
+     "haz": [
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      1,
+      1,
+      0
+     ]
+    }
+   },
+   "ZONE(X1,right,half)": {
+    "ok": false,
+    "states": 685,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      1,
+      3,
+      0
+     ],
+     "haz": [
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      1,
+      1,
+      0
+     ]
+    }
+   },
+   "GROUP(X1)": {
+    "ok": false,
+    "states": 873,
+    "cex": {
+     "cells": [
+      1,
+      3,
+      3,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      1,
+      3,
+      0,
+      3
+     ]
+    }
+   },
+   "ZONE(X2,left,2)": {
+    "ok": false,
+    "states": 695,
+    "cex": {
+     "cells": [
+      1,
+      4,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      1,
+      4,
+      0
+     ]
+    }
+   },
+   "ZONE(X2,left,half)": {
+    "ok": false,
+    "states": 695,
+    "cex": {
+     "cells": [
+      1,
+      4,
+      1,
+      0
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      1,
+      4,
+      0
+     ]
+    }
+   },
+   "ZONE(X2,right,2)": {
+    "ok": false,
+    "states": 695,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      1,
+      4,
+      0
+     ],
+     "haz": [
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      1,
+      1,
+      0
+     ]
+    }
+   },
+   "ZONE(X2,right,half)": {
+    "ok": false,
+    "states": 695,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      1,
+      4,
+      0
+     ],
+     "haz": [
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      1,
+      1,
+      0
+     ]
+    }
+   },
+   "GROUP(X2)": {
+    "ok": false,
+    "states": 876,
+    "cex": {
+     "cells": [
+      1,
+      4,
+      4,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      1,
+      1,
+      4,
+      0,
+      4
+     ]
+    }
+   }
+  },
+  "GROUP:G2": {
+   "ORDER(A1,X1)": {
+    "ok": false,
+    "states": 633,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      1,
+      3
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      1,
+      1
+     ]
+    }
+   },
+   "ORDER(A1,X2)": {
+    "ok": false,
+    "states": 645,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      1,
+      4
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      1,
+      1
+     ]
+    }
+   },
+   "ORDER(X1,A1)": {
+    "ok": false,
+    "states": 633,
+    "cex": {
+     "cells": [
+      0,
+      3,
+      1,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      1,
+      0,
+      3
+     ]
+    }
+   },
+   "ORDER(X1,X2)": {
+    "ok": false,
+    "states": 861,
+    "cex": {
+     "cells": [
+      1,
+      3,
+      0,
+      1,
+      4
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      3,
+      0,
+      1,
+      1
+     ]
+    }
+   },
+   "ORDER(X2,A1)": {
+    "ok": false,
+    "states": 645,
+    "cex": {
+     "cells": [
+      0,
+      4,
+      1,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      1,
+      0,
+      4
+     ]
+    }
+   },
+   "ORDER(X2,X1)": {
+    "ok": false,
+    "states": 861,
+    "cex": {
+     "cells": [
+      1,
+      4,
+      0,
+      1,
+      3
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      4,
+      0,
+      1,
+      1
+     ]
+    }
+   },
+   "ZONE(A1,left,2)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,left,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,right,2)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(A1,right,half)": {
+    "ok": true,
+    "states": 0,
+    "cex": null
+   },
+   "ZONE(X1,left,2)": {
+    "ok": false,
+    "states": 685,
+    "cex": {
+     "cells": [
+      0,
+      3,
+      1,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      1,
+      0,
+      3
+     ]
+    }
+   },
+   "ZONE(X1,left,half)": {
+    "ok": false,
+    "states": 685,
+    "cex": {
+     "cells": [
+      0,
+      3,
+      1,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      1,
+      0,
+      3
+     ]
+    }
+   },
+   "ZONE(X1,right,2)": {
+    "ok": false,
+    "states": 685,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      1,
+      3
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      1,
+      1
+     ]
+    }
+   },
+   "ZONE(X1,right,half)": {
+    "ok": false,
+    "states": 685,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      1,
+      3
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      1,
+      1
+     ]
+    }
+   },
+   "GROUP(X1)": {
+    "ok": false,
+    "states": 873,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      3,
+      3,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      3,
+      0,
+      3,
+      1,
+      1
+     ]
+    }
+   },
+   "ZONE(X2,left,2)": {
+    "ok": false,
+    "states": 695,
+    "cex": {
+     "cells": [
+      0,
+      4,
+      1,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      1,
+      0,
+      4
+     ]
+    }
+   },
+   "ZONE(X2,left,half)": {
+    "ok": false,
+    "states": 695,
+    "cex": {
+     "cells": [
+      0,
+      4,
+      1,
+      0,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      0,
+      1,
+      1,
+      0,
+      4
+     ]
+    }
+   },
+   "ZONE(X2,right,2)": {
+    "ok": false,
+    "states": 695,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      1,
+      4
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      1,
+      1
+     ]
+    }
+   },
+   "ZONE(X2,right,half)": {
+    "ok": false,
+    "states": 695,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      1,
+      4
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      1,
+      1
+     ]
+    }
+   },
+   "GROUP(X2)": {
+    "ok": false,
+    "states": 876,
+    "cex": {
+     "cells": [
+      1,
+      0,
+      4,
+      4,
+      1
+     ],
+     "haz": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "fixed": [],
+     "after": [
+      4,
+      0,
+      4,
+      1,
+      1
+     ]
+    }
+   }
+  }
+ },
+ "time_s": 6.8,
+ "summary": {
+  "achievers": 12,
+  "pairs": 262,
+  "preserving_pairs": 120,
+  "progress_ok": 12
+ }
+}
