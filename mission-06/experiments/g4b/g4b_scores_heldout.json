@@ -1,0 +1,222 @@
+{
+ "set": "heldout",
+ "goals": 60,
+ "arms": {
+  "CMP-0": {
+   "won": 33,
+   "success": 0.55,
+   "wilson95": [
+    0.4249193588533434,
+    0.6690634559324476
+   ],
+   "by_family": {
+    "F2": "15/15",
+    "F3": "8/15",
+    "F3L": "10/15",
+    "F4": "0/15"
+   },
+   "silent_failures": 0,
+   "take_abstentions": 27,
+   "orig_won": 0,
+   "mean_steps": 24.916666666666668,
+   "outcomes": {
+    "won": 33,
+    "abstain: monitor: 'take'": 27
+   }
+  },
+  "CMP-1": {
+   "won": 60,
+   "success": 1.0,
+   "wilson95": [
+    0.93982814785791,
+    0.9999999999999998
+   ],
+   "by_family": {
+    "F2": "15/15",
+    "F3": "15/15",
+    "F3L": "15/15",
+    "F4": "15/15"
+   },
+   "silent_failures": 0,
+   "take_abstentions": 0,
+   "orig_won": 0,
+   "mean_steps": 26.016666666666666,
+   "outcomes": {
+    "won": 60
+   }
+  },
+  "SEQ": {
+   "won": 60,
+   "success": 1.0,
+   "wilson95": [
+    0.93982814785791,
+    0.9999999999999998
+   ],
+   "by_family": {
+    "F2": "15/15",
+    "F3": "15/15",
+    "F3L": "15/15",
+    "F4": "15/15"
+   },
+   "silent_failures": 0,
+   "take_abstentions": 0,
+   "orig_won": 0,
+   "mean_steps": 26.0,
+   "outcomes": {
+    "won": 60
+   }
+  }
+ },
+ "paired": {
+  "CMP-1 vs CMP-0": {
+   "diff": 0.45,
+   "ci95": [
+    0.3333333333333333,
+    0.5833333333333334
+   ],
+   "mcnemar_p": 1.4901161193847656e-08,
+   "CMP-1_only": 27,
+   "CMP-0_only": 0
+  },
+  "CMP-1 vs SEQ": {
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "CMP-1_only": 0,
+   "SEQ_only": 0
+  }
+ },
+ "B2": {
+  "goals": 24,
+  "success": 0.75,
+  "mean_steps": 14.208333333333334,
+  "CMP-1_same": 1.0,
+  "CMP-1_steps_same": 26.416666666666668,
+  "SEQ_same": 1.0,
+  "CMP-0_same": 0.5833333333333334,
+  "by_family": {
+   "F2": "6/6",
+   "F3": "6/6",
+   "F3L": "0/6",
+   "F4": "6/6"
+  },
+  "claims_done_but_lost": 6,
+  "orig_won": 0,
+  "tokens_total": 550123,
+  "batches": {
+   "0": {
+    "acts": 37,
+    "tokens": 67425,
+    "tool_uses": 44,
+    "extra_tool_calls": 0
+   },
+   "1": {
+    "acts": 40,
+    "tokens": 68119,
+    "tool_uses": 47,
+    "extra_tool_calls": 0
+   },
+   "2": {
+    "acts": 47,
+    "tokens": 69874,
+    "tool_uses": 54,
+    "extra_tool_calls": 0
+   },
+   "3": {
+    "acts": 45,
+    "tokens": 69031,
+    "tool_uses": 52,
+    "extra_tool_calls": 0
+   },
+   "4": {
+    "acts": 42,
+    "tokens": 68582,
+    "tool_uses": 49,
+    "extra_tool_calls": 0
+   },
+   "5": {
+    "acts": 51,
+    "tokens": 70908,
+    "tool_uses": 58,
+    "extra_tool_calls": 0
+   },
+   "6": {
+    "acts": 33,
+    "tokens": 66533,
+    "tool_uses": 40,
+    "extra_tool_calls": 0
+   },
+   "7": {
+    "acts": 46,
+    "tokens": 69651,
+    "tool_uses": 53,
+    "extra_tool_calls": 0
+   }
+  }
+ },
+ "verdicts": {
+  "G4b-a  frozen law at depth 4: CMP-0 F4 success <= 0.10 and >= 80% of its F4 goals end in a 'take' abstention": {
+   "verdict": "HOLDS",
+   "values": [
+    0.0
+   ]
+  },
+  "G4b-b  upgraded contracts: CMP-1 - CMP-0 >= 0.30, CI excludes 0": {
+   "verdict": "HOLDS",
+   "values": [
+    0.45
+   ]
+  },
+  "G4b-c  H0-CLASSIC: |CMP-1 - SEQ| <= 0.03": {
+   "verdict": "HOLDS",
+   "values": [
+    0.0
+   ]
+  },
+  "G4b-d  level: CMP-1 success >= 0.75": {
+   "verdict": "HOLDS",
+   "values": [
+    1.0
+   ]
+  },
+  "G4b-e  no silent failures: each arm <= 1": {
+   "verdict": "HOLDS",
+   "values": [
+    {
+     "CMP-0": 0,
+     "CMP-1": 0,
+     "SEQ": 0
+    }
+   ]
+  },
+  "G4b-g  depth 2 has no ordering problem: CMP-0 F2 >= CMP-1 F2 - 0.10": {
+   "verdict": "HOLDS",
+   "values": [
+    1.0,
+    1.0
+   ]
+  },
+  "G4b-h  the game's own goal is not tripped: orig_won <= 2 per arm": {
+   "verdict": "HOLDS",
+   "values": [
+    {
+     "CMP-0": 0,
+     "CMP-1": 0,
+     "SEQ": 0
+    }
+   ]
+  },
+  "G4b-f  B2: success >= CMP-1 on the same goals and mean steps <= 0.8 x CMP-1": {
+   "verdict": "FALSIFIED",
+   "values": [
+    0.75,
+    1.0,
+    14.208333333333334,
+    26.416666666666668
+   ]
+  }
+ }
+}

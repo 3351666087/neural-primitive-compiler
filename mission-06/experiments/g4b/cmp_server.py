@@ -25,6 +25,8 @@ def main():
     ap.add_argument("--idx-file", required=True)
     ap.add_argument("--max-steps", type=int, default=100)
     ap.add_argument("--tag", default="")
+    ap.add_argument("--track", action="store_true", help="POST-HOC diagnostic: per step, record (booleans only) whether "
+                    "the HOLDING+LIT part, the IN part and the whole goal hold")
     a = ap.parse_args()
     goals = S.heldout()
     idxs = json.loads(Path(a.idx_file).read_text())
@@ -37,11 +39,20 @@ def main():
     srv.bind(a.sock)
     srv.listen(1)
     gi, game, steps, active = -1, None, 0, False
+    ever = {}
+
+    def track():
+        at = game.atoms
+        parts = {"lit_part": [x for x in at if x[0] in ("HOLDING", "LIT")], "in_part": [x for x in at if x[0] == "IN"],
+                 "whole": at}
+        for k, sub in parts.items():
+            if sub and E.satisfied(game.facts, sub):
+                ever.setdefault(k, steps)
 
     def end(reason):
         nonlocal active, game
         rec(event="end", game=gi, idx=idxs[gi], family=goals[idxs[gi]][1], reason=reason, steps=steps,
-            won=game.success(), orig_won=game.orig_won)
+            won=game.success(), orig_won=game.orig_won, **({"first_step_true": dict(ever)} if a.track else {}))
         game.close()
         game, active = None, False
 
@@ -61,10 +72,13 @@ def main():
                     game = E.CompositeGame(gf, spec, a.max_steps)
                     out = game.reset()
                     steps, active = 0, True
+                    ever.clear()
                     rec(event="reset", game=gi)
             elif cmd == "act" and active:
                 steps += 1
                 out = game.step(arg)
+                if a.track:
+                    track()
                 rec(event="act", game=gi, step=steps)
                 if steps >= a.max_steps:
                     end("step limit")
