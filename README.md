@@ -1,14 +1,15 @@
 # Verifiable Neural Primitive Compiler
 
-本仓库研究一个问题：能否由能力规格直接构造出可执行、可验证的神经网络，而不针对每个任务训练权重？研究分五轮进行，每一轮都把上一轮留下的未知作为对象：
+本仓库研究一个问题：能否由能力规格直接构造出可执行、可验证的神经网络，而不针对每个任务训练权重？研究分六轮进行，每一轮都把上一轮留下的未知作为对象：
 
 - **Mission 01** 以有限状态时序规格为对象，检验"规格 → 网络"的编译路线。
 - **Mission 02** 冻结一组原语，检验能否对此前未见过的认知功能规格直接构造网络。
 - **Mission 03** 去掉规格中的机制信息，检验能否只凭目标级证据（输入输出范例、被动观测）发现机制，并在第三方任务上与强符号基线比较。
 - **Mission 04** 审计 Mission 03 的唯一性证据，并检验表示层（分组、背景、颜色角色、参照框）能否由证据提出与选择，而不由设计者给定。
 - **Mission 05** 在一个构造的搬运域中检验两个问题：是否存在能高效构造复杂功能的原语与组合规律（问题 A）；这些规律能否从有限观察中发现（问题 B）。
+- **Mission 06** 先独立复核 Mission 05 的可信基，再把它的构造体系带到第三方环境（ALFWorld、AppWorld）。构造器与同知识的经典方法、强 LLM 代理比较，结果在冻结之后的官方持出集上确认。
 
-五轮使用同一个计算模型：离散整数积分发放（IF）神经元，所有突触延迟 ≥ 1。Mission 03、04 的发现过程在符号层完成。Mission 05 的控制器由 Mission 02 的冻结模板编译成网络，并与参考环境闭环运行。全部实验都在本机 CPU 上运行。
+Mission 01–05 使用同一个计算模型：离散整数积分发放（IF）神经元，所有突触延迟 ≥ 1。Mission 03、04 的发现过程在符号层完成。Mission 05 的控制器由 Mission 02 的冻结模板编译成网络，并与参考环境闭环运行。Mission 06 在第三方环境中检验构造路线本身，控制器以 Python 执行，不编译成网络；Mission 05 的编译器在 Mission 06 的 Gate 0 中复核。全部实验都在本机 CPU 上运行；Mission 06 的强基线另外使用 LLM 子 agent。
 
 ## 研究轮次与判定
 
@@ -19,15 +20,17 @@
 | Mission 03 | 不给机制，只给目标级证据，能否发现并构造未见能力？ | 主结论 INCONCLUSIVE；在给定假设形式内的机制发现 SUPPORTED_IN_TOY_DOMAIN；相对符号 DSL 的表示层优势 NOT_SUPPORTED；第三方持出任务上覆盖 1.5 % | [mission-03/SCIENTIFIC_STATUS.md](mission-03/SCIENTIFIC_STATUS.md) |
 | Mission 04 | 表示层能否由证据提出与选择，而不由设计者给定？ | 块表示在开发集上可由文法与守恒律得到，但它是已知形式的重新发现，在 ARC-AGI-2 上没有作答，"守恒律选择表示"按锁定规则撤回；背景先验由证据决定的方向在孪生任务上复现，但未达锁定标准；没有发现可迁移的新表示形式 | [mission-04/STATUS.md](mission-04/STATUS.md) |
 | Mission 05 | A：是否存在能高效构造复杂功能的原语与组合规律？B：能否从有限观察中发现它们？ | A：组合可靠，但不比同先验搜索更高效；合同由 Z3 对一切规模证明；通用推导在两个独立持出集上 0 错误，第二个上校准 41/42。B：在设计者给定的假设空间内，N = 5 的观察足以学到规律与选择规则，推导的合同表 0 危险 | [mission-05/A05_SUMMARY.md](mission-05/A05_SUMMARY.md) |
+| Mission 06 | 在第三方环境中，能否由原语与组合律直接构造闭环策略，而不逐任务推理？ | 相对同知识的经典方法没有可测优势（H0-CLASSIC 成立）；Mission 05 的组合律在深度 4 的组合上不健全；AppWorld 的目标无法用冻结核心表达（跨域 NOT_SUPPORTED）；在设计者给定的假说之内，隐藏结构可由主动实验发现；带监控时没有沉默失败 | [mission-06/CONSTRUCTIBILITY_VERDICT.md](mission-06/CONSTRUCTIBILITY_VERDICT.md) |
 
-**五轮合起来的结论**。
+**六轮合起来的结论**。
 - Mission 01 表明，机制完全给定时，编译是经典问题。
 - Mission 02 表明，机制以坐标映射的形式写在规格里时，"直接构造"实际上是翻译。
 - Mission 03 表明，只给目标级证据时，在设计者给定的假设形式之内可以发现机制，方法就是程序综合。
 - Mission 04 表明，表示层的候选（块分组、背景）在开发集上可以由证据选出，但它们都是已知形式；选择所依据的先验在第三方数据上没有迁移。
 - Mission 05 换到一个设计者构造的域，表明原语、组合规律与机器证明的合同可以可靠地构造控制器，并经过两次独立持出检验；规律本身也能从有限观察中学到。
+- Mission 06 把这一体系带到第三方环境。冻结的合同核心在 ALFWorld 上只能靠设计者公理与运行时监控构造；构造出的控制器与同知识的经典方法逐局相同；Mission 05 的组合律在更深的组合上认证了不可执行的顺序；AppWorld 的目标无法用冻结核心的目标语言表达（引理 X1）。强 LLM 代理在每个比较中成功率都不低于构造器。
 
-五轮都没有给出的，是假设形式本身（并集映射、区域占据、对象、计数、势函数文法、规则文法）如何从证据中产生。Mission 03–05 的所有成功都发生在设计者给定的形式之内。各轮的开放问题见 [mission-03/OPEN_QUESTIONS.md](mission-03/OPEN_QUESTIONS.md)、[mission-04/STATUS.md](mission-04/STATUS.md) 第 9 节与 [mission-05/A05_SUMMARY.md](mission-05/A05_SUMMARY.md) 第 7 节。
+六轮都没有给出的，是假设形式本身（并集映射、区域占据、对象、计数、势函数文法、规则文法）如何从证据中产生。Mission 03–06 的所有成功都发生在设计者给定的形式之内：Mission 06 中 B 发现的同址规律，是三个预写假说中的一个；修复组合律所需的"手"这一资源，由设计者写入。各轮的开放问题见 [mission-03/OPEN_QUESTIONS.md](mission-03/OPEN_QUESTIONS.md)、[mission-04/STATUS.md](mission-04/STATUS.md) 第 9 节、[mission-05/A05_SUMMARY.md](mission-05/A05_SUMMARY.md) 第 7 节与 [mission-06/CONSTRUCTIBILITY_VERDICT.md](mission-06/CONSTRUCTIBILITY_VERDICT.md) 第 8 节。
 
 ### 各轮之间的关系
 
@@ -38,6 +41,7 @@
 3. **Mission 03 对 Mission 02（自动路线）**：A-auto 的规模外推所依赖的手写映射词汇，可以由一个不含命名映射、对复合封闭的通用格点几何先验替代（[mission-03/UNKNOWNNESS_AUDIT.md](mission-03/UNKNOWNNESS_AUDIT.md)）。
 4. **Mission 04 对 Mission 03**：唯一性判定在原理上不可靠，合成任务上 250 个作答中有 10 个带反例证书、4 个答错；但 Mission 03 在 ARC-AGI-1 上的 38 个作答经精确复核全部唯一。勘误写在 `mission-03/SCIENTIFIC_STATUS.md` 开头（[mission-04/AUDIT_M03_UNIQUENESS.md](mission-04/AUDIT_M03_UNIQUENESS.md)）。
 5. **Mission 05 对 Mission 04**：Mission 04 报告中的 11 项数字与原始数据一致；孪生任务的确认只凭仓库即可复现，24 个版本重跑全部一致（[mission-05/G0_AUDIT.md](mission-05/G0_AUDIT.md)）。
+6. **Mission 06 对 Mission 05**：构造器读取的唯一真值字段是 `applicability_cex`。它来自构造器自己的宏模型在 N ≤ 7 上的穷举，与裁判无关，所以 Mission 05 的循环依赖在于证据等级，而不在信息泄露。不读真值的证明器 APP-R 证明了全部 122 个真值适用的实例，构造的计划逐个相同；编译器在类 C_K 上由抽样锁步升为证明。声明审计另外发现四处过度表述，勘误建议未在 main 上改动（[mission-06/M05_TRUST_BOUNDARY.md](mission-06/M05_TRUST_BOUNDARY.md)）。
 
 ## Mission 01：由时序规格编译神经网络
 
@@ -181,6 +185,47 @@
   - 适用性与 B 的支撑集只有 N ≤ 7 的证据；
   - 三个设计来源属于同一个 LLM 家族。
 
+## Mission 06：在第三方环境中检验构造性
+
+**问题**。任务书提出四个问题：
+- F1 独立构造性：冻结构造体系后，只看新目标与合法观察，能否在第三方环境中构造出闭环策略？
+- F2 不借裁判的认证：适用性、进度与安全义务能否不依赖裁判持有的真值？
+- F3 未知下的结构发明：库无法完成任务时，能否经主动实验提出并验证新的规律或抽象？
+- F4 跨领域规律：同一种合同与组合推理，能否在两个语义不同的环境中只换适配器就成立？
+
+任务书同时要求先独立复核 Mission 05，与同知识的经典方法和强 LLM 代理比较，并在冻结之后的官方持出集上确认。
+
+**方法**。研究按 Gate 0–4 进行，另加一项补充实验 G4b；Gate 5 是判决。
+
+1. **Gate 0：复核 Mission 05**。逐字段的信息流审计；不读真值的适用性证明器 APP-R（计数松弛加 Z3）；编译器定理 T-K；声明审计。
+2. **Gate 1：环境**。
+   - WorkArena 因门控数据集的访问申请没有回复而 BLOCKED。按事先锁定的标准，主域换为 AppWorld，异质域为 ALFWorld（文本版）。
+   - 裁判与构造器在不同进程，构造器只得到文本观察。ALFWorld 的官方持出集 `valid_unseen` 从下载起封存在压缩包中。
+   - 强基线 B2 是本会话的子 agent（Opus 5.5），经裁判侧服务器游玩，不能读任何文件；设计者只读聚合量。
+3. **Gate 2：原样外推**。冻结的合同核心加记账的适配器（目标解析、原子、达成器宏、两两保持表），在 ALFWorld 上运行；在 AppWorld 上测量任务结构。
+4. **Gate 3：发现被隐藏的结构**。B 用主动区分实验检验"`go to r` 无效"的三种竞争解释，并从观察中统计物体位置的先验。
+5. **Gate 4：外部盲确认**。冻结提交推送到远端之后，才解封 `valid_unseen`（134 局）。在原样条件与合法的非确定执行（操作以 0.2 的概率无效）两种条件下，比较七个分支与 B2。
+6. **G4b：组合深度**。用官方原子在持出房间中组合出新的目标族（深度 2–4），检验 Mission 05 的组合律本身。
+
+| 问题 | 证据 | 结论 |
+|---|---|---|
+| Mission 05 的适用性证书依赖什么？ | 构造器读取的真值只有 `applicability_cex`，来自自己的宏模型在 N ≤ 7 上的穷举；APP-R 不读真值证明了 122/122 个实例，构造的计划逐个相同 | 在 ACH-DSL 内循环依赖可以去掉：适用性升为 [P]（相对于手写编码），编译器在 C_K 上升为 [P] |
+| 冻结体系能否原样外推到第三方环境？ | ALFWorld（60 个训练局）：只接受 [P]/[M] 证据的严格核心构造 0/60；改用公理合同加监控 40/60，同库 HTN 52/60。达成器层的适用性从观察不可判定（U_M = 0.62）。AppWorld：信息目标 27.5 %，其余任务全部依赖运行中的查询结果 | 否。外部环境中的合同只能是公理；一条设计者公理（"一个容器一个位置"）是错的 |
+| 隐藏的结构能否由主动实验发现？ | 11/11 次区分实验支持"同址"，矛盾 0，对称性检验 9/9；在 60 个开发局上，这条规律使带监控的控制器从 0.583 升到 0.833（15 : 0）；在 134 个持出局上 0 矛盾、+0.067（9 : 0） | 能，但只是在三个设计者写定的假说中选择 |
+| 合同与监控相对同知识的经典方法有无优势？ | 持出原样条件下，带合同的控制器与同知识的 HTN 逐局相同（133/134）。非确定执行下，无监控的 HTN 有 56/134 个沉默失败，带监控的分支全部为 0；同样知识与恢复下，成功率 0.933 对 0.955（p = 0.25），沉默失败 0 对 5 | 构造能力上没有优势；带监控的分支没有沉默失败 [E]，这一性质经典的执行监控同样可以得到 |
+| 组合律在更深的组合上是否成立？ | 冻结组合律（按种类的两两保持）在深度 4 的新目标族上 0/15，27 个失败全部是手中已有物体时的"取"；加上资源上的适用性保持与按物体索引的保持后 60/60，与手写的经典方法逐局相同 | 否：组合律在外部环境中不健全；修复所需的知识由设计者提供 |
+| 强 LLM 代理表现如何？ | 持出原样条件 60/60（8.7 步）；非确定执行 24/24；复合目标 24/24（14.0 步，裁判缺陷更正后）；每个目标约 2.1–2.9 × 10⁴ tokens | 每个比较中成功率不低于构造器，步数更少，不需要设计者写的适配器 |
+| 构造规律能否跨域？ | 引理 X1：开局绑定的状态原子合取，表达不了"对运行中查询结果逐个达成"，也表达不了信息目标 | 否 |
+| 锁定的预测（Gate 4 与 G4b） | 19 项：14 项成立，4 项不成立，1 项因裁判缺陷无效（POST-HOC 更正后成立） | 不成立的是 G4-a（效应量低于预测）、G4-h、G4-i、G4-k；无效的是 G4b-f |
+
+**结论**（详见 [CONSTRUCTIBILITY_VERDICT.md](mission-06/CONSTRUCTIBILITY_VERDICT.md)、[RESULTS.md](mission-06/RESULTS.md) 与 [EXPERIMENT_PRE_REGISTRATION.md](mission-06/EXPERIMENT_PRE_REGISTRATION.md)）。
+- 在第三方环境中，没有找到"由原语与组合律直接构造"相对同知识经典方法的可测优势；H0-CLASSIC 与 H0-SPEC 成立。
+- 外部环境推翻了两样东西：一条设计者公理，以及 Mission 05 的组合律本身。两者都靠补入知识修复，一次由 B 的主动实验发现，一次由设计者写入。
+- 在所测的性质中，唯一稳定成立的是带监控时没有沉默失败（2,660 个回合中为 0）。它来自把合同的后置条件当作运行时检查。
+- 主域 AppWorld 上没有构造出任何控制器。要表达它的目标，冻结核心需要运行中绑定、对集合的迭代合同与信息目标。
+- 一个由强基线暴露的测量缺陷：G4b 自写裁判的"在台灯下"条件比 ALFWorld 官方目标更严，只在 B2 身上显露。按官方条件更正后，构造器的结果不变，B2 为 24/24。
+- 持出评测的触发由本会话依用户的授权执行，冻结提交先推送到远端作为时间戳；这比第三方触发弱。
+
 ## 安装、测试与复现
 
 ```bash
@@ -224,7 +269,7 @@ make mission03-arc
 | `make mission03` | Mission 03 的泄漏检查、条件命令与 `same` 的发现、确认实验、概念发明、定律签名、生成性构造与先验封闭性实验 |
 | `make mission03-arc` | ARC 自检、不可判定任务集、训练集与持出集；持出集运行前核对解算器的冻结哈希，约 30 分钟 |
 
-Mission 04、05 没有 make 目标，直接运行脚本。两轮的确认运行本身都拒绝重复执行（输出文件已存在时退出），下面的命令由已提交的原始输出重新评分，或重跑可重复的部分：
+Mission 04、05、06 没有 make 目标，直接运行脚本。两轮的确认运行本身都拒绝重复执行（输出文件已存在时退出），下面的命令由已提交的原始输出重新评分，或重跑可重复的部分：
 
 ```bash
 .venv/bin/python -I mission-04/experiments/c1_arc2/score_cp.py
@@ -258,7 +303,46 @@ Mission 04、05 没有 make 目标，直接运行脚本。两轮的确认运行�
 | `g4/score_g4.py` | 按锁定的 P1–P6 重新评分 G4 |
 | `g4/run_g4.py` | 在 G4 持出达成器上重跑冻结流程，约 40 分钟；G4 已用过一次，重跑的结果只作复现 |
 
-已在 Apple M4 MacBook Air（arm64）、Python 3.12.13、z3-solver 5.3.1 上测试。
+Mission 06 的锁定判定可以只凭已提交的原始输出重新评分（不需要第三方环境）：
+
+```bash
+python3 -I mission-06/experiments/g3/g3_score.py
+```
+
+```bash
+python3 -I mission-06/experiments/g4/g4_score.py --heldout
+```
+
+```bash
+python3 -I mission-06/experiments/g4b/g4b_score.py heldout
+```
+
+重跑实验需要第三方环境。它们安装在被 git 忽略的 `mission-06/env/` 下，数据不随仓库分发：
+
+```bash
+sh mission-06/experiments/g1/alf_install.sh
+```
+
+```bash
+sh mission-06/experiments/g1/aw_install.sh
+```
+
+```bash
+sh mission-06/experiments/g4/extract_heldout.sh
+```
+
+```bash
+mission-06/env/venv-alf/bin/python -I mission-06/experiments/g4/g4_run.py --set heldout --perturb
+```
+
+| 命令 | 内容 |
+|---|---|
+| `g3_score.py`、`g4_score.py --heldout`、`g4b_score.py heldout` | 按锁定的 G3、G4、G4b 预测重新评分；G4b 的 B2 部分需要被 git 忽略的裁判日志，缺失时跳过 |
+| `alf_install.sh`、`aw_install.sh` | 在独立的虚拟环境中安装 ALFWorld 0.4.2 与 AppWorld 0.1.3.post1，并下载数据；ALFWorld 的 `valid_unseen` 保持封存 |
+| `extract_heldout.sh` | 解封 `valid_unseen`，只打印计数 |
+| `g4_run.py --set heldout [--perturb]` | 在持出集上重跑七个分支，约 22 分钟；持出集已用过，重跑只作复现 |
+
+已在 Apple M4 MacBook Air（arm64）、Python 3.12.13、z3-solver 5.3.1 上测试；Mission 06 的 ALFWorld 环境使用 Python 3.12 与 TextWorld 1.6.2。
 
 ## 快速上手
 
@@ -363,6 +447,17 @@ Mission 05：
 | `mission-05/experiments/g4/` | G4 运行器（以 A++ 为 A 的表）、评分器与冻结工具 |
 | `mission-05/external/g3_heldout/`、`g4_heldout/` | 两个独立生成会话的原样输出（达成器、元数据、清单） |
 
+Mission 06：
+
+| 路径 | 内容 |
+|---|---|
+| `mission-06/experiments/g0/` | Mission 05 可信基的复核：APP-R、不读真值的构造、编译器定理的检查、压力与一致性测试、声明审计 |
+| `mission-06/experiments/g1/` | 环境试点与隔离：BrowserGym 隔离边界、ALFWorld 裁判与信念模型、安装脚本、WorkArena 持出划分工具与保管者说明 |
+| `mission-06/experiments/aw/` | AppWorld 裁判包装与任务结构测量（P-AW-0） |
+| `mission-06/experiments/g2/`、`g3/`、`g4/`、`g4b/` | 各闸门的构造器、裁判进程、运行器、评分器与原始输出（裁判与构造器的输出分文件保存） |
+| `mission-06/experiments/b2/` | 强基线 B2 的裁判侧服务器、客户端、冻结的提示词、评分器与花费账本；轨迹只在被 git 忽略的 `run/` 中 |
+| `mission-06/external/workarena_split/` | 隔离会话生成的 WorkArena++ 开发族清单（只含任务名；持出族清单不在仓库中） |
+
 ## 设计决策（以及原因）
 
 1. **所有突触延迟 ≥ 1**。网络因此严格因果：任何反馈环都有良定义的语义，同步更新与神经元顺序无关，循环的假设–保证推理也可以靠对时间的归纳证明是可靠的。代价是网络不能对同一步的输入作出反应，这一点由定理 3 精确刻画。
@@ -376,6 +471,9 @@ Mission 05：
 9. **外部持出集的访问规则**。ARC 评测集只由冻结后的脚本运行一次；开发阶段只用自造的合成任务调试，训练集只读取结果标签。运行器只输出任务编号与结果，不输出网格内容。
 10. **构造器与裁判分离，证据规则把关**（Mission 05）。裁判不导入任何构造器代码。构造器只使用带有指定证据标签的合同条目（Z3 证明，或在 N ≤ 7 上没有反例），依赖未经检查条目的证书一律拒绝。
 11. **独立持出与哈希先行**（Mission 04、05）。持出数据由与研究会话隔离的生成会话产生，生成者只报告清单哈希与计数。研究会话先冻结方法与预测并提交，再提交生成者报告的哈希，然后才读取数据；核对哈希与冻结清单后只运行一次。
+12. **第三方环境中的进程隔离**（Mission 06）。裁判进程持有环境、游戏文件与成败，构造器进程只收到文本观察，并在导入守卫之下运行。强基线经裁判侧的套接字服务器游玩，设计者不读它的轨迹，只读聚合量。
+13. **持出集封存在下载的压缩包中**（Mission 06）。冻结提交推送到远端之后才解压，预测先于结果可由远端的时间戳核验。
+14. **自写裁判须与官方目标逐条对照**（Mission 06）。G4b 的裁判缺陷只在一个行为不同的智能体身上才显露：裁判本身是可信基的一部分。
 
 ## 文档
 
@@ -434,6 +532,18 @@ Mission 05：
 - [G3_DESIGN.md](mission-05/G3_DESIGN.md)、[G3_RESULTS.md](mission-05/G3_RESULTS.md)、[G4_DESIGN.md](mission-05/G4_DESIGN.md)、[G4_RESULTS.md](mission-05/G4_RESULTS.md)：两次独立持出挑战的设计与结果；生成者说明为 `G3_GENERATOR_BRIEF.md`、`G4_GENERATOR_BRIEF.md`
 - [A05_SUMMARY.md](mission-05/A05_SUMMARY.md)：总结、锁定预测的总账与开放问题
 
+Mission 06：
+
+- [NORTH_STAR.md](mission-06/NORTH_STAR.md)：精确命题、非目标与事先写定的失败形式
+- [M05_TRUST_BOUNDARY.md](mission-06/M05_TRUST_BOUNDARY.md)、[COMPILER_THEOREM.md](mission-06/COMPILER_THEOREM.md)：Mission 05 可信基的复核与编译器定理
+- [ENVIRONMENT_SELECTION.md](mission-06/ENVIRONMENT_SELECTION.md)：环境的可部署性、许可与选择锁定
+- [KNOWLEDGE_PROVENANCE.md](mission-06/KNOWLEDGE_PROVENANCE.md)：每项知识的来源与成本
+- [HYPOTHESES.md](mission-06/HYPOTHESES.md)：竞争假说、可鉴别预测与最终判定
+- [EXPERIMENT_PRE_REGISTRATION.md](mission-06/EXPERIMENT_PRE_REGISTRATION.md)：各闸门锁定的预测、实现细节、结果、协议偏差与 POST-HOC 诊断
+- [EXPLORATION_LOG.md](mission-06/EXPLORATION_LOG.md)：观察、理论修订、反例与被证伪的预测
+- [RESULTS.md](mission-06/RESULTS.md)：全部结果、区间、外部参照与成本
+- [CONSTRUCTIBILITY_VERDICT.md](mission-06/CONSTRUCTIBILITY_VERDICT.md)：科学判决、证据地图、最小反例与下一轮的问题
+
 ## 版本与冻结记录
 
 开发环境的命令沙箱禁止写入 `.git/config`。经用户明确许可，所有 git 操作都在用户的终端面板中执行（不受沙箱限制）。Mission 02 起，每一轮都在独立分支上开发，完成后快进合并到 main，没有改写历史。
@@ -443,7 +553,8 @@ Mission 05：
 - **Mission 03**（`mission-03` 分支）：协议与预测的提交都早于相应实验。依次为未知性审计（`6922a75`）；竞争假说与锁定 P1 预测的挑战协议（`45a459a`）；修正案 1–6（`94747ea`、`63da6e7`、`2e53d15`）；先验封闭性实验的代码在观察任何持出任务之前冻结（`e6d80fa`）；ARC 协议（修正案 9）锁定于任何 ARC 工具与任务查看之前（`765de36`）；ARC 解算器冻结（`fa98aa8`，清单 `mission-03/experiments/arc/arc_freeze.json`）之后才运行持出集；最终状态（`d86db38` 及之后）。
 - **Mission 04**（`mission-04` 分支）：审计工具与表示假说先于任何表示代码（`7b47fa2`）；第一轮结果（`463a76a`）；确认挑战在下载 ARC-AGI-2 之前冻结（`5648e97`），下载后核验（`584cc03`），运行一次（`3511e47`）；孪生任务确认在读取任何生成文件之前冻结（`5b2a1cd`），运行一次（`66b901e`）。该分支没有单独合并到 main，随 Mission 05 一起进入 main。
 - **Mission 05**（`mission-05` 分支）：G0 审计（`99302c3`）与协议（`08390e3`）；每个修正案都在相关代码之前提交，代码在运行之前提交。G3 冻结（`a3657ab`，清单 `mission-05/G3_FREEZE.json`），生成者报告的哈希先于读取提交（`424b398`），运行一次（`cbca7dd`）。G4 冻结（`b38ce72`，清单 `mission-05/G4_FREEZE.json`），哈希先行（`8f82210`），运行一次（`2391997`）。最终状态（`f39d274`），2026-10-21 经用户同意快进合并到 main。
+- **Mission 06**（`mission-06` 分支）：Gate 0 锁定（`c0f23d8`），代码先于结果（`100e8fe`）；Gate 1 冻结（`902d39d`）；G2-ALF 预注册（`d30d138`）、代码（`608c4e6`）、结果（`100fb2e`）；Gate 3 代码（`81b5177`）、结果（`754e6bc`）；Gate 4 冻结（`0e738dd`），推送之后才解封持出集，结果（`112f7d7`）；G4b 冻结（`72b85a0`）、结果（`c5f7587`），裁判缺陷的登记与更正（`8587eff`、`3cc00b9`）；判决（`da8100e`）。协议偏差逐条记在预注册中。2026-10-21 快进合并到 main。
 
 ## 许可
 
-代码与文档以 [MIT License](LICENSE) 发布。`mission-03/external/arc-agi-1/` 中的 ARC-AGI-1 任务数据与 `mission-04/external/arc-agi-2/` 中的 ARC-AGI-2 评测数据按其原许可 Apache-2.0 再分发，许可证原文随数据保留。孪生任务（`mission-04/external/arc-prior-twins/`）与 G3、G4 的持出达成器（`mission-05/external/`）由本项目的独立生成会话产生，随仓库以 MIT 许可发布。
+代码与文档以 [MIT License](LICENSE) 发布。`mission-03/external/arc-agi-1/` 中的 ARC-AGI-1 任务数据与 `mission-04/external/arc-agi-2/` 中的 ARC-AGI-2 评测数据按其原许可 Apache-2.0 再分发，许可证原文随数据保留。孪生任务（`mission-04/external/arc-prior-twins/`）与 G3、G4 的持出达成器（`mission-05/external/`）由本项目的独立生成会话产生，随仓库以 MIT 许可发布。Mission 06 不再分发任何第三方数据：ALFWorld 与 AppWorld 由安装脚本下载到被 git 忽略的目录；AppWorld 的许可禁止明文再分发，解密后的数据、任务文本与日志都不进入仓库。
