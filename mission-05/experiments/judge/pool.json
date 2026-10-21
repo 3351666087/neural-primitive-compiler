@@ -1,0 +1,1872 @@
+{
+ "PA1": {
+  "T1": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ZONE",
+     3,
+     "right",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ZONE(3,right,2)"
+  },
+  "T2": {
+   "atoms": [
+    [
+     "GROUP",
+     1
+    ],
+    [
+     "ORDER",
+     1,
+     2
+    ]
+   ],
+   "safety": [
+    [
+     "NO_DROP_HAZARD"
+    ]
+   ],
+   "cue": [],
+   "name": "GROUP(1) & ORDER(1,2) & NO_DROP_HAZARD()"
+  },
+  "T3": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "ZONE",
+     3,
+     "right",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ORDER(2,3) & ZONE(3,right,2)"
+  },
+  "M1": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2)"
+  },
+  "M2": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ORDER",
+     2,
+     3
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ORDER(2,3)"
+  },
+  "M3": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "ZONE",
+     3,
+     "right",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ORDER(2,3) & ZONE(3,right,2)"
+  },
+  "M4": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "ZONE",
+     3,
+     "right",
+     2
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ORDER(2,3) & ZONE(3,right,2) & GROUP(1)"
+  }
+ },
+ "PA2": {
+  "P2-00": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ORDER",
+     1,
+     3
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ORDER(1,3)"
+  },
+  "P2-01": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ORDER",
+     2,
+     3
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ORDER(2,3)"
+  },
+  "P2-02": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ORDER",
+     3,
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ORDER(3,1)"
+  },
+  "P2-03": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ORDER",
+     3,
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ORDER(3,2)"
+  },
+  "P2-04": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ZONE(1,left,half)"
+  },
+  "P2-05": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ZONE",
+     1,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ZONE(1,right,half)"
+  },
+  "P2-06": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ZONE(2,left,half)"
+  },
+  "P2-07": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ZONE",
+     2,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ZONE(2,right,half)"
+  },
+  "P2-08": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & GROUP(1)"
+  },
+  "P2-09": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & GROUP(2)"
+  },
+  "P2-10": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     3
+    ],
+    [
+     "ORDER",
+     2,
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,3) & ORDER(2,1)"
+  },
+  "P2-11": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     3
+    ],
+    [
+     "ORDER",
+     2,
+     3
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,3) & ORDER(2,3)"
+  },
+  "P2-12": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     3
+    ],
+    [
+     "ORDER",
+     3,
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,3) & ORDER(3,2)"
+  },
+  "P2-13": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     3
+    ],
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,3) & ZONE(1,left,half)"
+  },
+  "P2-14": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     3
+    ],
+    [
+     "ZONE",
+     1,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,3) & ZONE(1,right,half)"
+  },
+  "P2-15": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     3
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,3) & ZONE(2,left,half)"
+  },
+  "P2-16": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     3
+    ],
+    [
+     "ZONE",
+     2,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,3) & ZONE(2,right,half)"
+  },
+  "P2-17": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     3
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,3) & GROUP(1)"
+  },
+  "P2-18": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     3
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,3) & GROUP(2)"
+  },
+  "P2-19": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     1
+    ],
+    [
+     "ORDER",
+     2,
+     3
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,1) & ORDER(2,3)"
+  },
+  "P2-20": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     1
+    ],
+    [
+     "ORDER",
+     3,
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,1) & ORDER(3,1)"
+  },
+  "P2-21": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     1
+    ],
+    [
+     "ORDER",
+     3,
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,1) & ORDER(3,2)"
+  },
+  "P2-22": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     1
+    ],
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,1) & ZONE(1,left,half)"
+  },
+  "P2-23": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     1
+    ],
+    [
+     "ZONE",
+     1,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,1) & ZONE(1,right,half)"
+  },
+  "P2-24": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     1
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,1) & ZONE(2,left,half)"
+  },
+  "P2-25": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     1
+    ],
+    [
+     "ZONE",
+     2,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,1) & ZONE(2,right,half)"
+  },
+  "P2-26": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     1
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,1) & GROUP(1)"
+  },
+  "P2-27": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     1
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,1) & GROUP(2)"
+  },
+  "P2-28": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "ORDER",
+     3,
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,3) & ORDER(3,1)"
+  },
+  "P2-29": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,3) & ZONE(1,left,half)"
+  },
+  "P2-30": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "ZONE",
+     1,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,3) & ZONE(1,right,half)"
+  },
+  "P2-31": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,3) & ZONE(2,left,half)"
+  },
+  "P2-32": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "ZONE",
+     2,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,3) & ZONE(2,right,half)"
+  },
+  "P2-33": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,3) & GROUP(1)"
+  },
+  "P2-34": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,3) & GROUP(2)"
+  },
+  "P2-35": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     1
+    ],
+    [
+     "ORDER",
+     3,
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,1) & ORDER(3,2)"
+  },
+  "P2-36": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     1
+    ],
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,1) & ZONE(1,left,half)"
+  },
+  "P2-37": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     1
+    ],
+    [
+     "ZONE",
+     1,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,1) & ZONE(1,right,half)"
+  },
+  "P2-38": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     1
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,1) & ZONE(2,left,half)"
+  },
+  "P2-39": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     1
+    ],
+    [
+     "ZONE",
+     2,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,1) & ZONE(2,right,half)"
+  },
+  "P2-40": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     1
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,1) & GROUP(1)"
+  },
+  "P2-41": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     1
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,1) & GROUP(2)"
+  },
+  "P2-42": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     2
+    ],
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,2) & ZONE(1,left,half)"
+  },
+  "P2-43": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     2
+    ],
+    [
+     "ZONE",
+     1,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,2) & ZONE(1,right,half)"
+  },
+  "P2-44": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     2
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,2) & ZONE(2,left,half)"
+  },
+  "P2-45": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     2
+    ],
+    [
+     "ZONE",
+     2,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,2) & ZONE(2,right,half)"
+  },
+  "P2-46": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     2
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,2) & GROUP(1)"
+  },
+  "P2-47": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     2
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,2) & GROUP(2)"
+  },
+  "P2-48": {
+   "atoms": [
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ZONE(1,left,half) & ZONE(2,left,half)"
+  },
+  "P2-49": {
+   "atoms": [
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ],
+    [
+     "ZONE",
+     2,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ZONE(1,left,half) & ZONE(2,right,half)"
+  },
+  "P2-50": {
+   "atoms": [
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ZONE(1,left,half) & GROUP(1)"
+  },
+  "P2-51": {
+   "atoms": [
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ZONE(1,left,half) & GROUP(2)"
+  },
+  "P2-52": {
+   "atoms": [
+    [
+     "ZONE",
+     1,
+     "right",
+     "half"
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ZONE(1,right,half) & ZONE(2,left,half)"
+  },
+  "P2-53": {
+   "atoms": [
+    [
+     "ZONE",
+     1,
+     "right",
+     "half"
+    ],
+    [
+     "ZONE",
+     2,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ZONE(1,right,half) & ZONE(2,right,half)"
+  },
+  "P2-54": {
+   "atoms": [
+    [
+     "ZONE",
+     1,
+     "right",
+     "half"
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ZONE(1,right,half) & GROUP(1)"
+  },
+  "P2-55": {
+   "atoms": [
+    [
+     "ZONE",
+     1,
+     "right",
+     "half"
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ZONE(1,right,half) & GROUP(2)"
+  },
+  "P2-56": {
+   "atoms": [
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ZONE(2,left,half) & GROUP(1)"
+  },
+  "P2-57": {
+   "atoms": [
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ZONE(2,left,half) & GROUP(2)"
+  },
+  "P2-58": {
+   "atoms": [
+    [
+     "ZONE",
+     2,
+     "right",
+     "half"
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ZONE(2,right,half) & GROUP(1)"
+  },
+  "P2-59": {
+   "atoms": [
+    [
+     "ZONE",
+     2,
+     "right",
+     "half"
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ZONE(2,right,half) & GROUP(2)"
+  },
+  "P2-60": {
+   "atoms": [
+    [
+     "GROUP",
+     1
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "GROUP(1) & GROUP(2)"
+  },
+  "P3-00": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     2
+    ],
+    [
+     "GROUP",
+     1
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,2) & GROUP(1) & GROUP(2)"
+  },
+  "P3-01": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "ZONE",
+     1,
+     "right",
+     "half"
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,3) & ZONE(1,right,half) & ZONE(2,left,half)"
+  },
+  "P3-02": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ORDER(2,3) & ZONE(1,left,half)"
+  },
+  "P3-03": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ORDER",
+     3,
+     1
+    ],
+    [
+     "ORDER",
+     3,
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ORDER(3,1) & ORDER(3,2)"
+  },
+  "P3-04": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ZONE(2,left,half) & GROUP(1)"
+  },
+  "P3-05": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ZONE(1,left,half) & GROUP(1)"
+  },
+  "P3-06": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     1
+    ],
+    [
+     "ORDER",
+     3,
+     2
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,1) & ORDER(3,2) & ZONE(2,left,half)"
+  },
+  "P3-07": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ORDER",
+     3,
+     2
+    ],
+    [
+     "ZONE",
+     1,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ORDER(3,2) & ZONE(1,right,half)"
+  },
+  "P3-08": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     3
+    ],
+    [
+     "ZONE",
+     2,
+     "right",
+     "half"
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,3) & ZONE(2,right,half) & GROUP(1)"
+  },
+  "P3-09": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     1
+    ],
+    [
+     "GROUP",
+     1
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,1) & GROUP(1) & GROUP(2)"
+  },
+  "P3-10": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "ZONE",
+     2,
+     "right",
+     "half"
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(2,3) & ZONE(2,right,half) & GROUP(1)"
+  },
+  "P3-11": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     3
+    ],
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,3) & ORDER(2,3) & ZONE(2,left,half)"
+  },
+  "P3-12": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     3
+    ],
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "ZONE",
+     2,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,3) & ORDER(2,3) & ZONE(2,right,half)"
+  },
+  "P3-13": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     3
+    ],
+    [
+     "ORDER",
+     2,
+     1
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,3) & ORDER(2,1) & ZONE(2,left,half)"
+  },
+  "P3-14": {
+   "atoms": [
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ],
+    [
+     "GROUP",
+     1
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ZONE(2,left,half) & GROUP(1) & GROUP(2)"
+  },
+  "P3-15": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ORDER",
+     1,
+     3
+    ],
+    [
+     "ORDER",
+     3,
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ORDER(1,3) & ORDER(3,2)"
+  },
+  "P3-16": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     2
+    ],
+    [
+     "ZONE",
+     1,
+     "right",
+     "half"
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,2) & ZONE(1,right,half) & GROUP(2)"
+  },
+  "P3-17": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     2
+    ],
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(3,2) & ZONE(1,left,half) & ZONE(2,left,half)"
+  },
+  "P3-18": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,2) & ZONE(1,left,half) & ZONE(2,left,half)"
+  },
+  "P3-19": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     3
+    ],
+    [
+     "ZONE",
+     1,
+     "right",
+     "half"
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [],
+   "cue": [],
+   "name": "ORDER(1,3) & ZONE(1,right,half) & ZONE(2,left,half)"
+  },
+  "PN-00": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ZONE",
+     2,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [
+    [
+     "NO_PICK",
+     1
+    ]
+   ],
+   "cue": [],
+   "name": "ORDER(1,2) & ZONE(2,left,half) & NO_PICK(1)"
+  },
+  "PN-01": {
+   "atoms": [
+    [
+     "ZONE",
+     2,
+     "right",
+     "half"
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [
+    [
+     "NO_PICK",
+     2
+    ]
+   ],
+   "cue": [],
+   "name": "ZONE(2,right,half) & GROUP(2) & NO_PICK(2)"
+  },
+  "PN-02": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     3
+    ],
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ]
+   ],
+   "safety": [
+    [
+     "NO_PICK",
+     1
+    ]
+   ],
+   "cue": [],
+   "name": "ORDER(2,3) & ZONE(1,left,half) & NO_PICK(1)"
+  },
+  "PN-03": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ZONE",
+     1,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [
+    [
+     "NO_PICK",
+     2
+    ]
+   ],
+   "cue": [],
+   "name": "ORDER(1,2) & ZONE(1,right,half) & NO_PICK(2)"
+  },
+  "PN-04": {
+   "atoms": [
+    [
+     "ORDER",
+     1,
+     2
+    ],
+    [
+     "ORDER",
+     1,
+     3
+    ]
+   ],
+   "safety": [
+    [
+     "NO_PICK",
+     3
+    ]
+   ],
+   "cue": [],
+   "name": "ORDER(1,2) & ORDER(1,3) & NO_PICK(3)"
+  },
+  "PN-05": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     1
+    ],
+    [
+     "GROUP",
+     2
+    ]
+   ],
+   "safety": [
+    [
+     "NO_PICK",
+     1
+    ]
+   ],
+   "cue": [],
+   "name": "ORDER(3,1) & GROUP(2) & NO_PICK(1)"
+  },
+  "PN-06": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     1
+    ],
+    [
+     "ORDER",
+     3,
+     1
+    ]
+   ],
+   "safety": [
+    [
+     "NO_PICK",
+     2
+    ]
+   ],
+   "cue": [],
+   "name": "ORDER(2,1) & ORDER(3,1) & NO_PICK(2)"
+  },
+  "PN-07": {
+   "atoms": [
+    [
+     "ZONE",
+     1,
+     "left",
+     "half"
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [
+    [
+     "NO_PICK",
+     1
+    ]
+   ],
+   "cue": [],
+   "name": "ZONE(1,left,half) & GROUP(1) & NO_PICK(1)"
+  },
+  "PN-08": {
+   "atoms": [
+    [
+     "ORDER",
+     2,
+     1
+    ],
+    [
+     "ZONE",
+     2,
+     "right",
+     "half"
+    ]
+   ],
+   "safety": [
+    [
+     "NO_PICK",
+     1
+    ]
+   ],
+   "cue": [],
+   "name": "ORDER(2,1) & ZONE(2,right,half) & NO_PICK(1)"
+  },
+  "PN-09": {
+   "atoms": [
+    [
+     "ORDER",
+     3,
+     1
+    ],
+    [
+     "GROUP",
+     1
+    ]
+   ],
+   "safety": [
+    [
+     "NO_PICK",
+     3
+    ]
+   ],
+   "cue": [],
+   "name": "ORDER(3,1) & GROUP(1) & NO_PICK(3)"
+  }
+ }
+}

@@ -1,0 +1,186 @@
+{
+ "feasibility_vs_bfs": {
+  "T1": {
+   "instances": 5944,
+   "agree": 5944,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "T2": {
+   "instances": 11790,
+   "agree": 11790,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "T3": {
+   "instances": 5944,
+   "agree": 5944,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "M1": {
+   "instances": 2760,
+   "agree": 2760,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "M2": {
+   "instances": 5944,
+   "agree": 5944,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "M3": {
+   "instances": 5944,
+   "agree": 5944,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "M4": {
+   "instances": 5944,
+   "agree": 5944,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "P2-28": {
+   "instances": 5944,
+   "agree": 5944,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "P2-55": {
+   "instances": 2760,
+   "agree": 2760,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "P2-35": {
+   "instances": 5944,
+   "agree": 5944,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "P2-54": {
+   "instances": 984,
+   "agree": 984,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "P2-49": {
+   "instances": 2760,
+   "agree": 2760,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "P2-29": {
+   "instances": 5944,
+   "agree": 5944,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "PN-07": {
+   "instances": 984,
+   "agree": 984,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "PN-08": {
+   "instances": 2760,
+   "agree": 2760,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "P3-18": {
+   "instances": 2760,
+   "agree": 2760,
+   "bfs_budget": 0,
+   "disagreements": []
+  },
+  "P3-06": {
+   "instances": 5944,
+   "agree": 5944,
+   "bfs_budget": 0,
+   "disagreements": []
+  }
+ },
+ "batch_env_vs_scalar": {
+  "mismatches": 0
+ },
+ "netbatch_vs_npc": {
+  "trials": 30,
+  "mismatching_ticks": 0
+ },
+ "cir_interpreter": {
+  "outcome": "SUCCESS",
+  "steps": 1,
+  "ok": true
+ },
+ "j2": [
+  {
+   "name": "L1 composition lemma, m = 1",
+   "status": "PROVED",
+   "time_s": 0.009,
+   "hypotheses_satisfiable": true
+  },
+  {
+   "name": "L1 composition lemma, m = 2",
+   "status": "PROVED",
+   "time_s": 0.001,
+   "hypotheses_satisfiable": true
+  },
+  {
+   "name": "L1 composition lemma, m = 3",
+   "status": "PROVED",
+   "time_s": 0.001,
+   "hypotheses_satisfiable": true
+  },
+  {
+   "name": "L1 composition lemma, m = 4",
+   "status": "PROVED",
+   "time_s": 0.002,
+   "hypotheses_satisfiable": true
+  },
+  {
+   "name": "L1 composition lemma, m = 5",
+   "status": "PROVED",
+   "time_s": 0.002,
+   "hypotheses_satisfiable": true
+  },
+  {
+   "name": "L1 composition lemma, m = 3 without preservation (expected COUNTEREXAMPLE)",
+   "status": "COUNTEREXAMPLE",
+   "time_s": 0.002,
+   "hypotheses_satisfiable": true
+  },
+  {
+   "name": "L1 composition lemma, m = 3 without progress (expected COUNTEREXAMPLE)",
+   "status": "COUNTEREXAMPLE",
+   "time_s": 0.001,
+   "hypotheses_satisfiable": true
+  },
+  {
+   "name": "L2 ATLEAST(k) memoryless threshold neuron fires iff at least k of n inputs (any n, k)",
+   "status": "PROVED",
+   "time_s": 0.001,
+   "hypotheses_satisfiable": true
+  }
+ ],
+ "summary": {
+  "feasibility_disagreements": 0,
+  "feasibility_instances": 81054,
+  "env_mismatches": 0,
+  "netbatch_mismatches": 0,
+  "cir_ok": true,
+  "j2": {
+   "L1 composition lemma, m = 1": "PROVED",
+   "L1 composition lemma, m = 2": "PROVED",
+   "L1 composition lemma, m = 3": "PROVED",
+   "L1 composition lemma, m = 4": "PROVED",
+   "L1 composition lemma, m = 5": "PROVED",
+   "L1 composition lemma, m = 3 without preservation (expected COUNTEREXAMPLE)": "COUNTEREXAMPLE",
+   "L1 composition lemma, m = 3 without progress (expected COUNTEREXAMPLE)": "COUNTEREXAMPLE",
+   "L2 ATLEAST(k) memoryless threshold neuron fires iff at least k of n inputs (any n, k)": "PROVED"
+  }
+ },
+ "time_s": 3.4
+}

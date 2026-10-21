@@ -1,0 +1,35 @@
+feasibility T1 5944 5944
+feasibility T2 11790 11790
+feasibility T3 5944 5944
+feasibility M1 2760 2760
+feasibility M2 5944 5944
+feasibility M3 5944 5944
+feasibility M4 5944 5944
+feasibility P2-28 5944 5944
+feasibility P2-55 2760 2760
+feasibility P2-35 5944 5944
+feasibility P2-54 984 984
+feasibility P2-49 2760 2760
+feasibility P2-29 5944 5944
+feasibility PN-07 984 984
+feasibility PN-08 2760 2760
+feasibility P3-18 2760 2760
+feasibility P3-06 5944 5944
+{
+ "feasibility_disagreements": 0,
+ "feasibility_instances": 81054,
+ "env_mismatches": 0,
+ "netbatch_mismatches": 0,
+ "cir_ok": true,
+ "j2": {
+  "L1 composition lemma, m = 1": "PROVED",
+  "L1 composition lemma, m = 2": "PROVED",
+  "L1 composition lemma, m = 3": "PROVED",
+  "L1 composition lemma, m = 4": "PROVED",
+  "L1 composition lemma, m = 5": "PROVED",
+  "L1 composition lemma, m = 3 without preservation (expected COUNTEREXAMPLE)": "COUNTEREXAMPLE",
+  "L1 composition lemma, m = 3 without progress (expected COUNTEREXAMPLE)": "COUNTEREXAMPLE",
+  "L2 ATLEAST(k) memoryless threshold neuron fires iff at least k of n inputs (any n, k)": "PROVED"
+ }
+} time 3.4
+exit 0
