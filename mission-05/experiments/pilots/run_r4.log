@@ -1,0 +1,18 @@
+A-P TZ-P0 constructed 32 wrong 0 0.0 s
+A-P TZ-P1 constructed 36 wrong 0 3.6 s
+B-EXCH disc-50 {'KD:LOC': 212, 'KD:END': 4, 'OUT:END': 144, 'OOW:END': 72} L0 failures 0 hold-out errors 0 cpu 0.5
+B-EXCH disc-200 {'KD:LOC': 212, 'KD:END': 4, 'OUT:END': 144, 'OOW:END': 72} L0 failures 0 hold-out errors 0 cpu 1.2
+B-EXCH disc-1000 {'KD:LOC': 212, 'KD:END': 4, 'OUT:END': 144, 'OOW:END': 72} L0 failures 0 hold-out errors 0 cpu 5.5
+B-EXCH five-1000 {'KD:LOC': 212, 'KD:END': 4, 'OUT:END': 144, 'OOW:END': 72} L0 failures 0 hold-out errors 0 cpu 1.8
+B-EXCH disc-50 S-obs dangerous vs T7 27 S-given dangerous vs T7 0 S-given agreement with TZ 0.637
+B-EXCH disc-200 S-obs dangerous vs T7 17 S-given dangerous vs T7 0 S-given agreement with TZ 0.722
+B-EXCH disc-1000 S-obs dangerous vs T7 6 S-given dangerous vs T7 0 S-given agreement with TZ 0.743
+B-EXCH five-1000 S-obs dangerous vs T7 30 S-given dangerous vs T7 0 S-given agreement with TZ 0.715
+A-P' disc-1000 obs constructed 30 wrong 0 rejected under TZ 0 16.3 s
+A-P' disc-1000 given constructed 30 wrong 0 rejected under TZ 0 16.3 s
+A-P' disc-200 given constructed 30 wrong 0 rejected under TZ 0 16.3 s
+A-P' disc-50 given constructed 30 wrong 0 rejected under TZ 0 29.7 s
+A-P' five-1000 obs constructed 36 wrong 0 rejected under TZ 6 29.8 s
+A-P' five-1000 given constructed 30 wrong 0 rejected under TZ 0 29.8 s
+done 29.8 s; newly judged plans 15
+exit 0

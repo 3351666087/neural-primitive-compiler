@@ -1,0 +1,52 @@
+{
+ "label": "E4: exhaustive counterexample search at N = 8 (amendment 4)",
+ "entries": {
+  "ORDER:O1": {
+   "ORDER(A2,A1)": null
+  },
+  "ORDER:O2": {
+   "ORDER(A2,A1)": null
+  },
+  "ZONE:Z1:left:2": {
+   "ZONE(A1,right,2)": null,
+   "ZONE(A1,right,half)": null
+  },
+  "ZONE:Z1:left:half": {
+   "ZONE(A1,right,2)": null,
+   "ZONE(A1,right,half)": null
+  },
+  "ZONE:Z1:right:2": {
+   "ZONE(A1,left,2)": null,
+   "ZONE(A1,left,half)": null
+  },
+  "ZONE:Z1:right:half": {
+   "ZONE(A1,left,2)": null,
+   "ZONE(A1,left,half)": null
+  },
+  "ZONE:Z2:left:2": {
+   "ZONE(A1,right,half)": null
+  },
+  "ZONE:Z2:left:half": {
+   "ZONE(A1,right,2)": null,
+   "ZONE(A1,right,half)": null
+  },
+  "ZONE:Z2:right:2": {
+   "ZONE(A1,left,half)": null
+  },
+  "ZONE:Z2:right:half": {
+   "ZONE(A1,left,2)": null,
+   "ZONE(A1,left,half)": null
+  },
+  "GROUP:G1": {
+   "ZONE(A1,right,2)": null
+  },
+  "GROUP:G2": {
+   "ZONE(A1,left,2)": null
+  }
+ },
+ "checked": 18,
+ "refuted": 0,
+ "sat_calls": 11677170,
+ "time_s": 474.4,
+ "cpu_s": 472.4
+}

@@ -1,0 +1,7684 @@
+{
+ "label": "TZ-P: parametric pairwise-preservation proofs (Z3, exchange lemma [P]); amendment 4",
+ "tables": {
+  "TZ-P0": {
+   "ORDER:O1": {
+    "ORDER(A1,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "6",
+      "n_o": "4",
+      "n_q": "3",
+      "y": "15",
+      "N": "16",
+      "v": "1",
+      "u": "2",
+      "n_p": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "y": "14",
+      "n_o": "0",
+      "n_q": "6",
+      "N": "16",
+      "v": "1",
+      "u": "2",
+      "n_p": "6"
+     },
+     "ok_N5": false,
+     "states_N5": 1314,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A2,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "1",
+      "N": "17",
+      "x": "0",
+      "n_o": "0",
+      "y": "13",
+      "v": "1",
+      "u": "2",
+      "n_p": "11"
+     },
+     "ok_N5": false,
+     "states_N5": 1276,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "15",
+      "n_o": "3",
+      "N": "16",
+      "x": "0",
+      "n_q": "1",
+      "v": "1",
+      "u": "2",
+      "n_p": "10"
+     },
+     "ok_N5": false,
+     "states_N5": 1314,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1472,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "15",
+      "N": "16",
+      "n_o": "2",
+      "x": "7",
+      "n_q": "3",
+      "v": "1",
+      "u": "2",
+      "n_p": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 1276,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1472,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 142,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 140,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 456,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 450,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "bc": "3",
+      "N": "5",
+      "y": "3",
+      "bs": "2",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 1268,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "3",
+      "u": "2",
+      "y": "2",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 456,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 450,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 142,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 140,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(A2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "bc": "3",
+      "N": "5",
+      "y": "4",
+      "bs": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 1268,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1496,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1496,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    }
+   },
+   "ORDER:O2": {
+    "ORDER(A1,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_o": "0",
+      "N": "17",
+      "x": "4",
+      "y": "15",
+      "v": "1",
+      "u": "2",
+      "n_p": "10",
+      "n_q": "0"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "1",
+      "x": "0",
+      "n_o": "6",
+      "y": "13",
+      "N": "17",
+      "v": "1",
+      "u": "2",
+      "n_p": "5"
+     },
+     "ok_N5": false,
+     "states_N5": 1314,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A2,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "15",
+      "x": "0",
+      "N": "17",
+      "n_q": "4",
+      "n_o": "1",
+      "v": "1",
+      "u": "2",
+      "n_p": "9"
+     },
+     "ok_N5": false,
+     "states_N5": 1276,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "8",
+      "x": "6",
+      "N": "17",
+      "n_o": "0",
+      "v": "1",
+      "u": "2",
+      "n_p": "1",
+      "n_q": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 1314,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1472,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "7",
+      "n_o": "1",
+      "y": "11",
+      "N": "16",
+      "v": "1",
+      "u": "2",
+      "n_p": "2",
+      "n_q": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 1276,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1472,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 142,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 140,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 456,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 450,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "bc": "3",
+      "N": "5",
+      "y": "3",
+      "bs": "2",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 1268,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "1",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 456,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 450,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 142,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 140,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(A2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "bc": "3",
+      "N": "5",
+      "y": "4",
+      "bs": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 1268,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1496,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1496,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    }
+   },
+   "ZONE:Z1:left:2": {
+    "ORDER(A1,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1887,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2054,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "y": "14",
+      "N": "15",
+      "u": "3",
+      "n_q": "6",
+      "n_o": "7",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "n_o": "13",
+      "y": "16",
+      "u": "3",
+      "N": "17",
+      "n_q": "1",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2846,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "n_o": "7",
+      "N": "11",
+      "y": "10",
+      "u": "4",
+      "n_q": "2",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2106,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "n_o": "2",
+      "n_q": "1",
+      "u": "4",
+      "N": "13",
+      "y": "8",
+      "v": "1",
+      "n_p": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2845,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "2",
+      "u": "0",
+      "x": "1",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 15,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "u": "2",
+      "x": "0",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "bc": "3",
+      "x": "0",
+      "y": "3",
+      "N": "5",
+      "u": "2",
+      "v": "1",
+      "bs": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 2589,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1934,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2006,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2004,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "bc": "2",
+      "N": "4",
+      "x": "0",
+      "u": "3",
+      "y": "3",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2972,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "u": "4",
+      "x": "0",
+      "N": "3",
+      "y": "2",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2132,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2130,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2180,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2178,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "bc": "3",
+      "N": "5",
+      "y": "4",
+      "u": "4",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 3001,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "ZONE:Z1:left:half": {
+    "ORDER(A1,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1893,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2062,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "n_q": "0",
+      "N": "3",
+      "y": "1",
+      "u": "3",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "n_q": "1",
+      "N": "3",
+      "y": "2",
+      "u": "3",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2854,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "n_q": "0",
+      "N": "3",
+      "y": "1",
+      "u": "4",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2109,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "3",
+      "y": "2",
+      "n_o": "0",
+      "u": "4",
+      "n_q": "1",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2853,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 15,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "u": "0",
+      "x": "0",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "2",
+      "u": "0",
+      "x": "1",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "bc": "2",
+      "N": "3",
+      "y": "1",
+      "u": "0",
+      "bs": "1",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2599,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1942,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2012,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2010,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "bc": "2",
+      "N": "5",
+      "y": "4",
+      "bs": "1",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 2980,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2138,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2134,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2188,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2186,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "bc": "2",
+      "N": "5",
+      "y": "4",
+      "bs": "1",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 3009,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "ZONE:Z1:right:2": {
+    "ORDER(A1,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "14",
+      "y": "2",
+      "n_q": "1",
+      "N": "15",
+      "n_o": "6",
+      "u": "0",
+      "v": "1",
+      "n_p": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "0",
+      "N": "8",
+      "u": "4",
+      "n_o": "0",
+      "y": "5",
+      "x": "6",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2106,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1887,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "0",
+      "x": "15",
+      "y": "12",
+      "n_o": "1",
+      "u": "4",
+      "N": "17",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2845,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2054,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "5",
+      "n_o": "2",
+      "y": "3",
+      "N": "15",
+      "x": "13",
+      "u": "3",
+      "v": "1",
+      "n_p": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 2846,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "0",
+      "N": "3",
+      "v": "1",
+      "u": "0",
+      "x": "2"
+     },
+     "ok_N5": true,
+     "states_N5": 15,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "u": "2",
+      "x": "1",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "4",
+      "bc": "3",
+      "N": "5",
+      "y": "1",
+      "u": "0",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2589,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2006,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2004,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "x": "1",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1934,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "3",
+      "bc": "3",
+      "N": "5",
+      "y": "0",
+      "bs": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 2972,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2180,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2178,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "x": "1",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2132,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2130,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "3",
+      "bc": "3",
+      "N": "5",
+      "y": "0",
+      "bs": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 3001,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "ZONE:Z1:right:half": {
+    "ORDER(A1,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "n_q": "0",
+      "N": "4",
+      "y": "1",
+      "u": "3",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "N": "4",
+      "y": "1",
+      "n_o": "0",
+      "u": "4",
+      "n_q": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2109,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1893,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "N": "4",
+      "y": "0",
+      "n_o": "0",
+      "u": "4",
+      "n_q": "0",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2853,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2062,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "n_q": "0",
+      "N": "3",
+      "y": "0",
+      "u": "3",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2854,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "u": "0",
+      "x": "2",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "u": "0",
+      "x": "2",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 15,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "3",
+      "bc": "2",
+      "N": "4",
+      "y": "1",
+      "u": "0",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2599,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2012,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2010,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1942,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "bc": "2",
+      "N": "4",
+      "y": "1",
+      "bs": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 2980,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2188,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2186,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2138,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2134,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "bc": "2",
+      "N": "4",
+      "y": "0",
+      "bs": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 3009,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "ZONE:Z2:left:2": {
+    "ORDER(A1,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1887,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2054,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "9",
+      "u": "3",
+      "y": "8",
+      "n_o": "7",
+      "n_q": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "N": "7",
+      "n_o": "3",
+      "y": "6",
+      "u": "3",
+      "n_q": "1",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2846,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "N": "13",
+      "y": "12",
+      "n_q": "3",
+      "u": "4",
+      "n_o": "7",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2106,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "u": "4",
+      "n_q": "1",
+      "N": "17",
+      "y": "13",
+      "n_o": "2",
+      "v": "1",
+      "n_p": "8"
+     },
+     "ok_N5": false,
+     "states_N5": 2845,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "u": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 15,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "u": "2",
+      "x": "0",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "bc": "3",
+      "y": "3",
+      "N": "5",
+      "u": "0",
+      "v": "1",
+      "bs": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 2589,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "u": "3",
+      "N": "3",
+      "y": "2",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1934,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2006,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2004,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "bc": "3",
+      "N": "5",
+      "x": "1",
+      "y": "4",
+      "u": "3",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2972,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "3",
+      "y": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2132,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2130,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2180,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2178,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "u": "4",
+      "bc": "3",
+      "N": "5",
+      "y": "4",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 3001,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "ZONE:Z2:left:half": {
+    "ORDER(A1,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1893,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2062,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "3",
+      "y": "1",
+      "n_o": "0",
+      "u": "3",
+      "n_q": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "n_q": "1",
+      "N": "4",
+      "y": "2",
+      "u": "3",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2854,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "3",
+      "y": "1",
+      "n_o": "0",
+      "u": "4",
+      "n_q": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2109,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "3",
+      "y": "2",
+      "n_o": "0",
+      "u": "4",
+      "n_q": "1",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2853,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 15,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "u": "0",
+      "x": "0",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "2",
+      "u": "0",
+      "x": "1",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "bc": "2",
+      "N": "5",
+      "y": "3",
+      "u": "0",
+      "bs": "3",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2599,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1942,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2012,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2010,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "bc": "2",
+      "N": "4",
+      "y": "2",
+      "bs": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 2980,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2138,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2134,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2188,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2186,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "bc": "3",
+      "N": "4",
+      "y": "3",
+      "bs": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 3009,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "ZONE:Z2:right:2": {
+    "ORDER(A1,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_o": "7",
+      "N": "14",
+      "u": "0",
+      "y": "3",
+      "x": "12",
+      "n_q": "1",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "4",
+      "N": "15",
+      "u": "0",
+      "x": "13",
+      "n_o": "6",
+      "n_q": "2",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2106,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1887,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "u": "4",
+      "y": "2",
+      "n_o": "1",
+      "n_q": "0",
+      "N": "13",
+      "x": "11",
+      "v": "1",
+      "n_p": "7"
+     },
+     "ok_N5": false,
+     "states_N5": 2845,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2054,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "2",
+      "n_o": "7",
+      "u": "3",
+      "n_q": "2",
+      "N": "15",
+      "x": "14",
+      "v": "1",
+      "n_p": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 2846,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "1",
+      "N": "4",
+      "u": "0",
+      "x": "2",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 15,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "u": "2",
+      "x": "1",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "4",
+      "bc": "3",
+      "N": "5",
+      "y": "1",
+      "u": "0",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2589,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2006,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2004,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "x": "1",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1934,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "3",
+      "bc": "3",
+      "N": "5",
+      "y": "0",
+      "bs": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 2972,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2180,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2178,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "x": "1",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2132,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2130,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "3",
+      "bc": "3",
+      "N": "5",
+      "y": "0",
+      "bs": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 3001,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "ZONE:Z2:right:half": {
+    "ORDER(A1,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "n_q": "0",
+      "N": "4",
+      "y": "1",
+      "u": "3",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "N": "4",
+      "y": "1",
+      "n_o": "0",
+      "u": "4",
+      "n_q": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2109,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1893,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "N": "4",
+      "y": "0",
+      "n_o": "0",
+      "u": "4",
+      "n_q": "0",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2853,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2062,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "n_q": "0",
+      "N": "3",
+      "y": "0",
+      "u": "3",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2854,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "u": "0",
+      "x": "2",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "1",
+      "u": "0",
+      "x": "2",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 15,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "3",
+      "bc": "2",
+      "N": "5",
+      "y": "0",
+      "u": "0",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2599,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2012,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2010,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1942,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "bc": "2",
+      "N": "4",
+      "y": "0",
+      "bs": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 2980,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2188,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2186,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2138,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2134,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "bc": "2",
+      "N": "4",
+      "y": "0",
+      "bs": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 3009,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "GROUP:G1": {
+    "ORDER(A1,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "1",
+      "y": "0",
+      "ca": "8",
+      "N": "17",
+      "sa": "3",
+      "n_o": "3",
+      "u": "0",
+      "x": "6",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 633,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "0",
+      "u": "0",
+      "sa": "1",
+      "ca": "6",
+      "x": "2",
+      "N": "16",
+      "n_o": "0",
+      "n_q": "1",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 645,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "0",
+      "N": "17",
+      "x": "14",
+      "n_o": "0",
+      "ca": "8",
+      "sa": "7",
+      "y": "15",
+      "u": "3",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 633,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "7",
+      "x": "14",
+      "sa": "2",
+      "ca": "16",
+      "N": "18",
+      "y": "1",
+      "u": "4",
+      "n_o": "3",
+      "v": "1",
+      "n_p": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 861,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "2",
+      "y": "14",
+      "N": "18",
+      "sa": "1",
+      "ca": "9",
+      "n_o": "2",
+      "x": "3",
+      "u": "4",
+      "v": "1",
+      "n_p": "6"
+     },
+     "ok_N5": false,
+     "states_N5": 645,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "8",
+      "ca": "8",
+      "n_o": "4",
+      "N": "15",
+      "n_q": "1",
+      "sa": "2",
+      "y": "14",
+      "u": "4",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 861,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "v": "1",
+      "ca": "2",
+      "y": "0",
+      "N": "3",
+      "u": "0",
+      "sa": "1",
+      "x": "2"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "4",
+      "y": "1",
+      "u": "0",
+      "sa": "2",
+      "x": "2",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "1",
+      "u": "0",
+      "sa": "0",
+      "x": "0",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "2",
+      "u": "0",
+      "sa": "1",
+      "x": "1",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "ca": "1",
+      "N": "3",
+      "u": "3",
+      "y": "2",
+      "sa": "1",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "1",
+      "sa": "0",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "0",
+      "sa": "1",
+      "x": "1",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "2",
+      "N": "4",
+      "y": "0",
+      "sa": "1",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "bs": "2",
+      "bc": "3",
+      "ca": "3",
+      "y": "0",
+      "N": "5",
+      "sa": "1",
+      "x": "3",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 873,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "3",
+      "y": "2",
+      "u": "4",
+      "ca": "1",
+      "sa": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "1",
+      "sa": "0",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "0",
+      "sa": "1",
+      "x": "1",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "2",
+      "N": "4",
+      "y": "0",
+      "sa": "1",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "bs": "0",
+      "bc": "3",
+      "ca": "1",
+      "y": "4",
+      "N": "5",
+      "sa": "1",
+      "x": "1",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 876,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "GROUP:G2": {
+    "ORDER(A1,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "u": "0",
+      "N": "16",
+      "ca": "4",
+      "sa": "11",
+      "n_q": "1",
+      "n_o": "3",
+      "x": "13",
+      "y": "6",
+      "v": "1",
+      "n_p": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 633,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "sa": "8",
+      "y": "2",
+      "n_o": "8",
+      "N": "18",
+      "n_q": "0",
+      "x": "11",
+      "u": "4",
+      "ca": "9",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 645,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "12",
+      "x": "7",
+      "n_q": "0",
+      "sa": "1",
+      "u": "0",
+      "N": "17",
+      "ca": "11",
+      "n_o": "3",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 633,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "sa": "1",
+      "N": "18",
+      "u": "4",
+      "y": "0",
+      "ca": "15",
+      "x": "5",
+      "n_o": "1",
+      "n_q": "0",
+      "v": "1",
+      "n_p": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 861,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_o": "0",
+      "N": "8",
+      "n_q": "6",
+      "x": "0",
+      "y": "7",
+      "u": "4",
+      "sa": "0",
+      "ca": "4",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 645,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "1",
+      "x": "7",
+      "ca": "3",
+      "y": "3",
+      "u": "3",
+      "N": "10",
+      "n_o": "1",
+      "sa": "5",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 861,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "v": "1",
+      "x": "2",
+      "ca": "2",
+      "N": "3",
+      "u": "0",
+      "sa": "1",
+      "y": "0"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "0",
+      "u": "0",
+      "sa": "1",
+      "x": "1",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "1",
+      "u": "0",
+      "sa": "0",
+      "x": "0",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "2",
+      "u": "0",
+      "sa": "1",
+      "x": "1",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "u": "3",
+      "ca": "1",
+      "N": "3",
+      "y": "2",
+      "sa": "1",
+      "x": "1",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "1",
+      "sa": "0",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "0",
+      "sa": "1",
+      "x": "1",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "1",
+      "sa": "2",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "bs": "0",
+      "bc": "3",
+      "ca": "1",
+      "y": "4",
+      "N": "5",
+      "sa": "1",
+      "x": "1",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 873,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "x": "0",
+      "u": "4",
+      "y": "2",
+      "sa": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "1",
+      "sa": "0",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "0",
+      "sa": "1",
+      "x": "1",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "1",
+      "sa": "2",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "bs": "0",
+      "bc": "3",
+      "ca": "1",
+      "y": "4",
+      "N": "5",
+      "sa": "1",
+      "x": "1",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 876,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   }
+  },
+  "TZ-P1": {
+   "ORDER:O1": {
+    "ORDER(A1,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "15",
+      "x": "4",
+      "n_o": "6",
+      "N": "17",
+      "n_q": "1",
+      "v": "1",
+      "u": "2",
+      "n_p": "3"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "15",
+      "N": "17",
+      "n_q": "5",
+      "x": "0",
+      "n_o": "2",
+      "v": "1",
+      "u": "2",
+      "n_p": "7"
+     },
+     "ok_N5": false,
+     "states_N5": 1314,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A2,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "13",
+      "n_q": "1",
+      "n_o": "6",
+      "x": "0",
+      "N": "18",
+      "v": "1",
+      "u": "2",
+      "n_p": "5"
+     },
+     "ok_N5": false,
+     "states_N5": 1276,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "2",
+      "n_o": "1",
+      "x": "4",
+      "N": "16",
+      "y": "13",
+      "v": "1",
+      "u": "2",
+      "n_p": "5"
+     },
+     "ok_N5": false,
+     "states_N5": 1314,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1472,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "y": "15",
+      "n_o": "3",
+      "N": "17",
+      "n_q": "1",
+      "v": "1",
+      "u": "2",
+      "n_p": "10"
+     },
+     "ok_N5": false,
+     "states_N5": 1276,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1472,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 142,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 140,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 456,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 450,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "bc": "3",
+      "N": "5",
+      "y": "3",
+      "bs": "2",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 1268,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "u": "2",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 456,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 450,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 142,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 140,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(A2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "bc": "3",
+      "N": "5",
+      "y": "4",
+      "bs": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 1268,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1496,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1496,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    }
+   },
+   "ORDER:O2": {
+    "ORDER(A1,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "15",
+      "x": "4",
+      "n_o": "0",
+      "N": "17",
+      "v": "1",
+      "u": "2",
+      "n_p": "10",
+      "n_q": "0"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "3",
+      "y": "14",
+      "N": "15",
+      "n_o": "1",
+      "n_q": "1",
+      "v": "1",
+      "u": "2",
+      "n_p": "8"
+     },
+     "ok_N5": false,
+     "states_N5": 1314,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A2,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_o": "3",
+      "y": "13",
+      "N": "15",
+      "x": "0",
+      "n_q": "1",
+      "v": "1",
+      "u": "2",
+      "n_p": "8"
+     },
+     "ok_N5": false,
+     "states_N5": 1276,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "17",
+      "n_o": "0",
+      "y": "9",
+      "x": "7",
+      "v": "1",
+      "u": "2",
+      "n_p": "1",
+      "n_q": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 1314,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1472,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "18",
+      "n_o": "1",
+      "y": "11",
+      "x": "7",
+      "v": "1",
+      "u": "2",
+      "n_p": "2",
+      "n_q": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 1276,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1156,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1472,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 142,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 140,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 456,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 450,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "bc": "3",
+      "N": "5",
+      "y": "3",
+      "bs": "2",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 1268,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "1",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 456,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 450,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 142,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 140,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(A2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "bc": "3",
+      "N": "5",
+      "y": "4",
+      "bs": "0",
+      "v": "1",
+      "u": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 1268,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1496,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1190,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1496,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    }
+   },
+   "ZONE:Z1:left:2": {
+    "ORDER(A1,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1887,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2054,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "n_o": "7",
+      "N": "15",
+      "y": "8",
+      "u": "3",
+      "n_q": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "y": "16",
+      "n_o": "13",
+      "n_q": "1",
+      "u": "3",
+      "N": "17",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2846,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "n_o": "7",
+      "n_q": "1",
+      "N": "11",
+      "y": "10",
+      "u": "4",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2106,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "10",
+      "y": "9",
+      "n_o": "0",
+      "n_q": "7",
+      "u": "4",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2845,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "3",
+      "y": "2",
+      "u": "0",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 15,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "u": "2",
+      "x": "1",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "bc": "3",
+      "v": "1",
+      "y": "3",
+      "N": "5",
+      "x": "0",
+      "u": "0",
+      "bs": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 2589,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "u": "3",
+      "N": "3",
+      "x": "0",
+      "y": "2",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1934,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2006,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2004,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "bc": "3",
+      "u": "3",
+      "x": "1",
+      "N": "5",
+      "y": "4",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2972,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "x": "0",
+      "u": "4",
+      "y": "2",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2132,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2130,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2180,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2178,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "bc": "2",
+      "N": "4",
+      "y": "3",
+      "u": "4",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 3001,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "ZONE:Z1:left:half": {
+    "ORDER(A1,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1893,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2062,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "n_q": "0",
+      "N": "3",
+      "y": "1",
+      "u": "3",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "n_q": "1",
+      "N": "3",
+      "y": "2",
+      "u": "3",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2854,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "4",
+      "y": "2",
+      "n_o": "0",
+      "u": "4",
+      "n_q": "1",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2109,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "3",
+      "y": "2",
+      "n_o": "0",
+      "u": "4",
+      "n_q": "1",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2853,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 15,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "u": "0",
+      "x": "0",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "2",
+      "u": "0",
+      "x": "1",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "bc": "2",
+      "N": "5",
+      "y": "3",
+      "u": "0",
+      "bs": "3",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2599,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1942,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2012,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2010,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "bc": "2",
+      "N": "4",
+      "y": "2",
+      "bs": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 2980,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2138,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2134,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2188,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2186,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "bc": "3",
+      "N": "4",
+      "y": "3",
+      "bs": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 3009,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "ZONE:Z1:right:2": {
+    "ORDER(A1,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "1",
+      "y": "2",
+      "N": "13",
+      "u": "0",
+      "n_o": "2",
+      "x": "11",
+      "v": "1",
+      "n_p": "5"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "6",
+      "N": "8",
+      "u": "4",
+      "n_q": "1",
+      "n_o": "0",
+      "y": "1",
+      "v": "1",
+      "n_p": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 2106,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1887,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_o": "0",
+      "n_q": "1",
+      "u": "4",
+      "y": "12",
+      "x": "15",
+      "N": "17",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2845,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2054,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "3",
+      "u": "3",
+      "N": "7",
+      "n_o": "0",
+      "n_q": "1",
+      "x": "6",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2846,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "1",
+      "N": "4",
+      "u": "0",
+      "x": "2",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 15,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "u": "2",
+      "x": "1",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "4",
+      "bc": "3",
+      "N": "5",
+      "y": "1",
+      "u": "0",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2589,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2006,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2004,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "x": "1",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1934,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "3",
+      "bc": "3",
+      "N": "5",
+      "y": "0",
+      "bs": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 2972,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2180,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2178,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "x": "1",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2132,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2130,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "3",
+      "bc": "3",
+      "N": "5",
+      "y": "0",
+      "bs": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 3001,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "ZONE:Z1:right:half": {
+    "ORDER(A1,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "n_q": "0",
+      "N": "4",
+      "y": "1",
+      "u": "3",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "n_q": "0",
+      "N": "4",
+      "y": "1",
+      "u": "4",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2109,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1893,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "N": "4",
+      "y": "0",
+      "n_o": "0",
+      "u": "4",
+      "n_q": "0",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2853,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2062,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "n_q": "0",
+      "N": "3",
+      "y": "0",
+      "u": "3",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2854,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "u": "0",
+      "x": "2",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "1",
+      "u": "0",
+      "x": "2",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 15,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "3",
+      "bc": "3",
+      "N": "5",
+      "y": "1",
+      "u": "0",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2599,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2012,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2010,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1942,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "bc": "2",
+      "N": "4",
+      "y": "1",
+      "bs": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 2980,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2188,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2186,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2138,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2134,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "bc": "2",
+      "N": "4",
+      "y": "1",
+      "bs": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 3009,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "ZONE:Z2:left:2": {
+    "ORDER(A1,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1887,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2054,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "n_q": "2",
+      "n_o": "7",
+      "y": "10",
+      "N": "15",
+      "u": "3",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "n_q": "1",
+      "n_o": "3",
+      "y": "6",
+      "u": "3",
+      "N": "15",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2846,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "17",
+      "y": "16",
+      "n_o": "15",
+      "n_q": "0",
+      "u": "4",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2106,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "n_o": "4",
+      "n_q": "11",
+      "N": "18",
+      "u": "4",
+      "y": "17",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2845,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "N": "4",
+      "y": "2",
+      "u": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 15,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "u": "2",
+      "x": "0",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "bc": "3",
+      "y": "3",
+      "N": "5",
+      "u": "2",
+      "v": "1",
+      "bs": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 2589,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "3",
+      "y": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1934,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2006,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2004,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "bc": "2",
+      "N": "4",
+      "y": "3",
+      "u": "3",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2972,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "u": "4",
+      "N": "3",
+      "y": "2",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2132,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2130,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2180,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2178,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "bc": "2",
+      "N": "4",
+      "u": "4",
+      "x": "0",
+      "y": "3",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 3001,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "ZONE:Z2:left:half": {
+    "ORDER(A1,X1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1893,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(A1,X2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2062,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "3",
+      "y": "1",
+      "n_o": "0",
+      "u": "3",
+      "n_q": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "n_q": "1",
+      "N": "4",
+      "y": "2",
+      "u": "3",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2854,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "n_q": "0",
+      "N": "3",
+      "y": "1",
+      "u": "4",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2109,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "N": "3",
+      "y": "2",
+      "n_o": "0",
+      "u": "4",
+      "n_q": "1",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2853,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 15,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "u": "0",
+      "x": "0",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "u": "0",
+      "x": "0",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "bc": "2",
+      "N": "3",
+      "y": "1",
+      "u": "0",
+      "bs": "1",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2599,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1942,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2012,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2010,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "bc": "2",
+      "N": "4",
+      "y": "2",
+      "bs": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 2980,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "2",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2138,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2134,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2188,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2186,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "bc": "2",
+      "N": "5",
+      "y": "4",
+      "bs": "1",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 3009,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "ZONE:Z2:right:2": {
+    "ORDER(A1,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "14",
+      "n_q": "1",
+      "u": "2",
+      "N": "15",
+      "n_o": "1",
+      "y": "5",
+      "v": "1",
+      "n_p": "6"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_o": "0",
+      "n_q": "1",
+      "u": "0",
+      "N": "7",
+      "x": "6",
+      "y": "2",
+      "v": "1",
+      "n_p": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 2106,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1887,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "1",
+      "u": "4",
+      "y": "0",
+      "n_o": "0",
+      "N": "5",
+      "x": "3",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2845,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2054,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "u": "3",
+      "n_q": "0",
+      "y": "2",
+      "N": "6",
+      "x": "5",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 2846,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "y": "0",
+      "N": "3",
+      "u": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 15,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "u": "2",
+      "x": "1",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "4",
+      "bc": "3",
+      "N": "5",
+      "y": "1",
+      "u": "0",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2589,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2006,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2004,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "x": "1",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1934,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "3",
+      "bc": "3",
+      "N": "5",
+      "y": "0",
+      "bs": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 2972,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2180,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2178,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "x": "1",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2132,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2130,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "3",
+      "bc": "3",
+      "N": "5",
+      "y": "0",
+      "bs": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 3001,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "ZONE:Z2:right:half": {
+    "ORDER(A1,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "N": "4",
+      "y": "1",
+      "n_o": "0",
+      "u": "3",
+      "n_q": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2055,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "n_q": "0",
+      "N": "4",
+      "y": "1",
+      "u": "4",
+      "n_o": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 2109,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 1893,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "N": "4",
+      "y": "0",
+      "n_o": "0",
+      "u": "4",
+      "n_q": "0",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2853,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2062,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "N": "3",
+      "y": "0",
+      "n_o": "0",
+      "u": "3",
+      "n_q": "0",
+      "v": "1",
+      "n_p": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2854,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "u": "0",
+      "x": "2",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "u": "0",
+      "x": "2",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 15,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "GROUP(A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "bc": "2",
+      "N": "3",
+      "y": "1",
+      "u": "0",
+      "bs": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 2599,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2012,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2010,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1942,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "0",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 1936,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "bc": "2",
+      "N": "4",
+      "y": "0",
+      "bs": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 2980,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2188,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 2186,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X2,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "4",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2138,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "3",
+      "y": "1",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 2134,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "bc": "2",
+      "N": "4",
+      "y": "0",
+      "bs": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 3009,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "GROUP:G1": {
+    "ORDER(A1,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "11",
+      "n_o": "0",
+      "x": "6",
+      "y": "2",
+      "n_q": "1",
+      "u": "0",
+      "N": "16",
+      "sa": "5",
+      "v": "1",
+      "n_p": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 633,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "1",
+      "n_q": "1",
+      "u": "0",
+      "x": "6",
+      "ca": "11",
+      "n_o": "3",
+      "sa": "2",
+      "N": "15",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 645,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "sa": "0",
+      "n_q": "0",
+      "u": "3",
+      "n_o": "5",
+      "x": "0",
+      "ca": "1",
+      "y": "6",
+      "N": "15",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 633,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "11",
+      "ca": "8",
+      "n_q": "5",
+      "x": "4",
+      "sa": "0",
+      "n_o": "1",
+      "N": "14",
+      "u": "3",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 861,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "1",
+      "n_o": "1",
+      "x": "4",
+      "ca": "6",
+      "y": "7",
+      "u": "4",
+      "N": "10",
+      "sa": "0",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 645,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "8",
+      "N": "18",
+      "y": "12",
+      "n_q": "1",
+      "sa": "3",
+      "u": "4",
+      "n_o": "0",
+      "x": "10",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 861,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,left,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "ca": "1",
+      "y": "1",
+      "sstar": "1",
+      "u": "0",
+      "sa": "0",
+      "N": "3",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "ca": "1",
+      "y": "2",
+      "sstar": "2",
+      "u": "0",
+      "sa": "1",
+      "N": "3",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "u": "3",
+      "ca": "1",
+      "N": "3",
+      "x": "0",
+      "y": "2",
+      "sa": "0",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "1",
+      "sa": "0",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "0",
+      "sa": "1",
+      "x": "1",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "2",
+      "N": "4",
+      "y": "0",
+      "sa": "1",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "bs": "0",
+      "bc": "3",
+      "ca": "1",
+      "y": "4",
+      "N": "5",
+      "sa": "1",
+      "x": "1",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 873,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "N": "3",
+      "u": "4",
+      "y": "2",
+      "ca": "1",
+      "sa": "1",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "1",
+      "sa": "0",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "0",
+      "sa": "1",
+      "x": "1",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "1",
+      "sa": "2",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "bs": "0",
+      "bc": "3",
+      "ca": "1",
+      "y": "4",
+      "N": "5",
+      "sa": "1",
+      "x": "1",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 876,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   },
+   "GROUP:G2": {
+    "ORDER(A1,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "1",
+      "sa": "12",
+      "y": "9",
+      "n_o": "1",
+      "ca": "1",
+      "u": "0",
+      "N": "15",
+      "x": "12",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 633,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(A1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "N": "17",
+      "y": "11",
+      "u": "0",
+      "n_q": "1",
+      "sa": "12",
+      "n_o": "1",
+      "ca": "3",
+      "x": "14",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 645,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_q": "2",
+      "n_o": "2",
+      "ca": "10",
+      "sa": "1",
+      "u": "3",
+      "N": "15",
+      "x": "7",
+      "y": "12",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 633,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X1,X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "13",
+      "n_q": "0",
+      "u": "4",
+      "ca": "16",
+      "sa": "1",
+      "N": "17",
+      "n_o": "6",
+      "y": "0",
+      "v": "1",
+      "n_p": "6"
+     },
+     "ok_N5": false,
+     "states_N5": 861,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,A1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "n_o": "3",
+      "n_q": "2",
+      "u": "4",
+      "y": "7",
+      "sa": "1",
+      "x": "1",
+      "N": "13",
+      "ca": "1",
+      "v": "1",
+      "n_p": "0"
+     },
+     "ok_N5": false,
+     "states_N5": 645,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ORDER(X2,X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "y": "7",
+      "n_o": "2",
+      "u": "3",
+      "n_q": "1",
+      "sa": "13",
+      "N": "18",
+      "x": "13",
+      "ca": "5",
+      "v": "1",
+      "n_p": "2"
+     },
+     "ok_N5": false,
+     "states_N5": 861,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "2",
+      "ca": "2",
+      "v": "1",
+      "u": "0",
+      "sa": "1",
+      "y": "0",
+      "N": "3",
+      "sstar": "0"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "ca": "1",
+      "y": "0",
+      "sstar": "0",
+      "u": "0",
+      "sa": "1",
+      "N": "3",
+      "v": "1"
+     },
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(A1,right,2)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(A1,right,half)": {
+     "status": "PROVED",
+     "ok_N5": true,
+     "states_N5": 0,
+     "ok_N7": true,
+     "ok": true,
+     "proved": true,
+     "evidence": "TZ"
+    },
+    "ZONE(X1,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "0",
+      "ca": "1",
+      "N": "3",
+      "y": "2",
+      "sa": "0",
+      "u": "3",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "1",
+      "sa": "0",
+      "x": "0",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "0",
+      "sa": "1",
+      "x": "1",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X1,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "1",
+      "sa": "2",
+      "x": "2",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 685,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X1)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "bs": "0",
+      "bc": "3",
+      "ca": "1",
+      "y": "4",
+      "N": "5",
+      "sa": "1",
+      "x": "1",
+      "v": "1",
+      "u": "3"
+     },
+     "ok_N5": false,
+     "states_N5": 873,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "x": "1",
+      "ca": "1",
+      "N": "3",
+      "y": "2",
+      "sa": "1",
+      "u": "4",
+      "v": "1"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,left,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "1",
+      "sa": "0",
+      "x": "0",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "0",
+      "sa": "1",
+      "x": "1",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "ZONE(X2,right,half)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "ca": "1",
+      "N": "3",
+      "y": "1",
+      "sa": "2",
+      "x": "2",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 695,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    },
+    "GROUP(X2)": {
+     "status": "NOT_PROVED",
+     "model": {
+      "bs": "2",
+      "bc": "3",
+      "ca": "3",
+      "y": "0",
+      "N": "5",
+      "sa": "1",
+      "x": "3",
+      "v": "1",
+      "u": "4"
+     },
+     "ok_N5": false,
+     "states_N5": 876,
+     "ok_N7": false,
+     "ok": false,
+     "proved": false,
+     "evidence": null
+    }
+   }
+  }
+ },
+ "z3_time_s": 0.89,
+ "self_check": {
+  "checked": 1318856,
+  "mismatches": 0,
+  "examples": []
+ },
+ "self_check_time_s": 3.6
+}

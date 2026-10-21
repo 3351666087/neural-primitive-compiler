@@ -1,0 +1,157 @@
+{
+ "E1": {
+  "verdict": "HOLDS",
+  "self_check": {
+   "checked": 1318856,
+   "mismatches": 0
+  },
+  "proved_with_real_cex": {
+   "TZ-P0": [],
+   "TZ-P1": []
+  }
+ },
+ "E2": {
+  "verdict": "FALSIFIED",
+  "nonvacuous_held": 94,
+  "proved": 92,
+  "not_proved": [
+   "ZONE:Z1:left:2 / ZONE(A1,right,2)",
+   "ZONE:Z1:right:2 / ZONE(A1,left,2)"
+  ]
+ },
+ "E3": {
+  "verdict": "HOLDS",
+  "TZ-P0": {
+   "GROUP:G1 / ZONE(A1,left,half)": false,
+   "GROUP:G2 / ZONE(A1,right,half)": false
+  },
+  "TZ-P1": {
+   "GROUP:G1 / ZONE(A1,left,half)": true,
+   "GROUP:G2 / ZONE(A1,right,half)": true
+  }
+ },
+ "E4": {
+  "verdict": "HOLDS",
+  "checked": 18,
+  "refuted": 0,
+  "cpu_s": 472.4
+ },
+ "E5": {
+  "verdict": "HOLDS",
+  "constructed": 36,
+  "wrong": [],
+  "using_unproved": [],
+  "using_entries_vacuous_at_N5": [
+   "P2-50",
+   "P2-54",
+   "P2-57",
+   "P2-59"
+  ]
+ },
+ "E6": {
+  "verdict": "HOLDS",
+  "TZ-P_z3_s": 0.89,
+  "N8_cpu_s": 472.4
+ },
+ "D1": {
+  "verdict": "HOLDS",
+  "L0_failures": 0,
+  "laws": {
+   "KD:LOC": 212,
+   "KD:END": 4,
+   "OUT:END": 144,
+   "OOW:END": 72
+  },
+  "law_check": {
+   "coefficient_mismatches": 0,
+   "mismatch_examples": [],
+   "end_selected_with_nonzero_between": []
+  },
+  "holdout_N8": {
+   "predicted": 86388,
+   "unpredicted": 12,
+   "errors": 0
+  }
+ },
+ "D2": {
+  "verdict": "HOLDS",
+  "dangerous_vs_T7": 6,
+  "by_type": {
+   "OOW": 6
+  },
+  "dangerous_fraction_vs_TZ": 0.023148148148148147,
+  "B-DISC_fraction_vs_TZ": 0.06018518518518518,
+  "list": [
+   "ZONE:Z1:right:2 / OOW(X2,G1): learned 0, reference 1",
+   "ZONE:Z2:left:2 / OOW(X2,G2): learned 0, reference 1",
+   "ZONE:Z2:left:half / OOW(X2,G2): learned 0, reference 1",
+   "ZONE:Z2:right:half / OOW(X2,G1): learned 0, reference 1",
+   "GROUP:G1 / OOW(X2,G2): learned 0, reference 1",
+   "GROUP:G2 / OOW(X2,G1): learned 0, reference 1"
+  ]
+ },
+ "D3": {
+  "verdict": "FALSIFIED",
+  "dangerous_vs_T7": 0,
+  "dangerous_vs_TZ": 0,
+  "agreement_with_TZ": 0.7430555555555556,
+  "constructed": 30,
+  "rejected_under_TZ": [],
+  "wrong": []
+ },
+ "D4": {
+  "verdict": "HOLDS",
+  "laws": {
+   "KD:LOC": 212,
+   "KD:END": 4,
+   "OUT:END": 144,
+   "OOW:END": 72
+  },
+  "coefficient_mismatches": 0,
+  "obs_dangerous_vs_T7": 30,
+  "given_dangerous_vs_T7": 0
+ },
+ "D5": {
+  "verdict": "HOLDS",
+  "smallest_n": 50,
+  "curve": {
+   "50": {
+    "constructed": 30,
+    "wrong": 0
+   },
+   "200": {
+    "constructed": 30,
+    "wrong": 0
+   },
+   "1000": {
+    "constructed": 30,
+    "wrong": 0
+   }
+  },
+  "TZ_reference": 30
+ },
+ "D6": {
+  "verdict": "HOLDS",
+  "B-EXCH_cpu_s": {
+   "disc-50": 0.4850059999999998,
+   "disc-200": 1.1699209999999995,
+   "disc-1000": 5.498750000000001,
+   "five-1000": 1.7853199999999987
+  },
+  "S_given_cpu_s": 3.807271
+ },
+ "coverage": {
+  "A-P": {
+   "TZ-P0": 32,
+   "TZ-P1": 36
+  },
+  "A-P'": {
+   "disc-1000/obs": 30,
+   "disc-1000/given": 30,
+   "disc-200/given": 30,
+   "disc-50/given": 30,
+   "five-1000/obs": 36,
+   "five-1000/given": 30
+  }
+ }
+}
