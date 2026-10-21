@@ -1,0 +1,1039 @@
+{
+ "targets": {
+  "T1": {
+   "name": "ORDER(1,2) & ZONE(3,right,2)",
+   "V_train": 6050,
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 5,
+    "lookups": 5,
+    "time_s": 0.00037083285860717297,
+    "plan": [
+     [
+      [
+       "ZONE",
+       3,
+       "right",
+       2
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "cpu_search": 0.00039000000000000146,
+    "cpu_compile": 0.0018760000000000165,
+    "cpu_total": 0.002266000000000018,
+    "global_verifications": 0,
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 42
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 67
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 68
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 131
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 159
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 181
+     },
+     "total_failures": 0
+    },
+    "J1_net": {
+     "train": {
+      "episodes": 200,
+      "mismatch_episodes": 0,
+      "failures": 0
+     },
+     "unseen_N9": {
+      "episodes": 50,
+      "mismatch_episodes": 0,
+      "failures": 0
+     },
+     "unseen_N12": {
+      "episodes": 50,
+      "mismatch_episodes": 0,
+      "failures": 0
+     },
+     "unseen_N15": {
+      "episodes": 50,
+      "mismatch_episodes": 0,
+      "failures": 0
+     }
+    },
+    "J2_mc6": {
+     "n": 31014,
+     "counts": {
+      "SUCCESS": 31014
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 70
+    },
+    "structure": {
+     "5": {
+      "D": 13,
+      "neurons": 245,
+      "synapses": 614,
+      "inputs": 27,
+      "max_comb_depth": 9,
+      "cir_nodes": 166
+     },
+     "6": {
+      "D": 13,
+      "neurons": 281,
+      "synapses": 720,
+      "inputs": 32,
+      "max_comb_depth": 9,
+      "cir_nodes": 193
+     },
+     "7": {
+      "D": 13,
+      "neurons": 317,
+      "synapses": 833,
+      "inputs": 37,
+      "max_comb_depth": 9,
+      "cir_nodes": 220
+     },
+     "9": {
+      "D": 13,
+      "neurons": 389,
+      "synapses": 1080,
+      "inputs": 47,
+      "max_comb_depth": 9,
+      "cir_nodes": 274
+     },
+     "12": {
+      "D": 13,
+      "neurons": 497,
+      "synapses": 1503,
+      "inputs": 62,
+      "max_comb_depth": 9,
+      "cir_nodes": 355
+     },
+     "15": {
+      "D": 13,
+      "neurons": 605,
+      "synapses": 1989,
+      "inputs": 77,
+      "max_comb_depth": 9,
+      "cir_nodes": 436
+     }
+    }
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6050,
+    "counterexamples": 0,
+    "time_s": 0.024121041875332594,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       3,
+       "right",
+       2
+      ],
+      "Z1"
+     ]
+    ],
+    "cpu_search": 0.024125000000000174,
+    "cpu_compile": 0.0018299999999999983,
+    "cpu_total": 0.025955000000000172,
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 51
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 71
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 94
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 150
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 181
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 251
+     },
+     "total_failures": 0
+    }
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 41048,
+    "time_s": 14.391775582917035,
+    "cpu_total": 14.395408
+   },
+   "A-FSM_states": {
+    "5": 7720,
+    "6": 69384,
+    "7": 153888
+   },
+   "wall_s": 18.5
+  },
+  "T2": {
+   "name": "GROUP(1) & ORDER(1,2) & NO_DROP_HAZARD()",
+   "V_train": 10845,
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0011828329879790545
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 5458,
+    "counterexamples": 1,
+    "time_s": 0.014982917113229632,
+    "cpu_total": 0.01498499999999936
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 7570,
+    "time_s": 2.28054349985905,
+    "cpu_total": 2.281441000000001
+   },
+   "A-FSM_states": {
+    "5": 3465,
+    "6": 23940,
+    "7": 52206
+   },
+   "wall_s": 2.4
+  },
+  "T3": {
+   "name": "ORDER(1,2) & ORDER(2,3) & ZONE(3,right,2)",
+   "V_train": 6050,
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 88,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.0004953749012202024
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6050,
+    "counterexamples": 0,
+    "time_s": 0.03290604101493955,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       3,
+       "right",
+       2
+      ],
+      "Z1"
+     ]
+    ],
+    "cpu_search": 0.03290900000000008,
+    "cpu_compile": 0.0023719999999975983,
+    "cpu_total": 0.035280999999997675,
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 68
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 90
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 110
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 173
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 255
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 297
+     },
+     "total_failures": 0
+    }
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 42136,
+    "time_s": 14.860979666933417,
+    "cpu_total": 14.862089000000005
+   },
+   "A-FSM_states": {
+    "5": 7720,
+    "6": 69384,
+    "7": 153888
+   },
+   "wall_s": 15.9
+  },
+  "M1": {
+   "name": "ORDER(1,2)",
+   "V_train": 3875,
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 0,
+    "time_s": 0.0008999998681247234,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "cpu_search": 0.00039199999999794954,
+    "cpu_compile": 0.0016649999999955867,
+    "cpu_total": 0.0020569999999935362,
+    "global_verifications": 0,
+    "J1_sym": {
+     "train_N5": {
+      "n": 1875,
+      "counts": {
+       "SUCCESS": 1875
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 25
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 58
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 101
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 124
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 175
+     },
+     "total_failures": 0
+    },
+    "J1_net": {
+     "train": {
+      "episodes": 200,
+      "mismatch_episodes": 0,
+      "failures": 0
+     },
+     "unseen_N9": {
+      "episodes": 50,
+      "mismatch_episodes": 0,
+      "failures": 0
+     },
+     "unseen_N12": {
+      "episodes": 50,
+      "mismatch_episodes": 0,
+      "failures": 0
+     },
+     "unseen_N15": {
+      "episodes": 50,
+      "mismatch_episodes": 0,
+      "failures": 0
+     }
+    },
+    "J2_mc6": {
+     "n": 11448,
+     "counts": {
+      "SUCCESS": 11448
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 51
+    },
+    "structure": {
+     "5": {
+      "D": 12,
+      "neurons": 222,
+      "synapses": 567,
+      "inputs": 22,
+      "max_comb_depth": 8,
+      "cir_nodes": 143
+     },
+     "6": {
+      "D": 12,
+      "neurons": 254,
+      "synapses": 663,
+      "inputs": 26,
+      "max_comb_depth": 8,
+      "cir_nodes": 166
+     },
+     "7": {
+      "D": 12,
+      "neurons": 286,
+      "synapses": 765,
+      "inputs": 30,
+      "max_comb_depth": 8,
+      "cir_nodes": 189
+     },
+     "9": {
+      "D": 12,
+      "neurons": 350,
+      "synapses": 987,
+      "inputs": 38,
+      "max_comb_depth": 8,
+      "cir_nodes": 235
+     },
+     "12": {
+      "D": 12,
+      "neurons": 446,
+      "synapses": 1365,
+      "inputs": 50,
+      "max_comb_depth": 8,
+      "cir_nodes": 304
+     },
+     "15": {
+      "D": 12,
+      "neurons": 542,
+      "synapses": 1797,
+      "inputs": 62,
+      "max_comb_depth": 8,
+      "cir_nodes": 373
+     }
+    }
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 3875,
+    "counterexamples": 0,
+    "time_s": 0.009089124854654074,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "cpu_search": 0.009093000000000018,
+    "cpu_compile": 0.0015649999999993724,
+    "cpu_total": 0.01065799999999939,
+    "J1_sym": {
+     "train_N5": {
+      "n": 1875,
+      "counts": {
+       "SUCCESS": 1875
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 25
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 58
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 101
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 124
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 175
+     },
+     "total_failures": 0
+    }
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 25106,
+    "time_s": 8.694524625083432,
+    "cpu_total": 8.689578999999995
+   },
+   "A-FSM_states": {
+    "5": 3465,
+    "6": 23940,
+    "7": 52206
+   },
+   "wall_s": 11.3
+  },
+  "M2": {
+   "name": "ORDER(1,2) & ORDER(2,3)",
+   "V_train": 6100,
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0005411249585449696
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6100,
+    "counterexamples": 0,
+    "time_s": 0.02192929107695818,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "cpu_search": 0.021932000000006724,
+    "cpu_compile": 0.002156999999996856,
+    "cpu_total": 0.02408900000000358,
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 68
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 85
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 110
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 171
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 259
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 311
+     },
+     "total_failures": 0
+    }
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 29664,
+    "time_s": 10.068503167014569,
+    "cpu_total": 10.072503999999995
+   },
+   "A-FSM_states": {
+    "5": 7720,
+    "6": 69384,
+    "7": 153888
+   },
+   "wall_s": 11.0
+  },
+  "M3": {
+   "name": "ORDER(1,2) & ORDER(2,3) & ZONE(3,right,2)",
+   "V_train": 6050,
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 88,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.0004823750350624323
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6050,
+    "counterexamples": 0,
+    "time_s": 0.03267316706478596,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       3,
+       "right",
+       2
+      ],
+      "Z1"
+     ]
+    ],
+    "cpu_search": 0.03267400000000009,
+    "cpu_compile": 0.0022540000000006444,
+    "cpu_total": 0.034928000000000736,
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 68
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 90
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 110
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 173
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 255
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 297
+     },
+     "total_failures": 0
+    }
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 42136,
+    "time_s": 14.486304207937792,
+    "cpu_total": 14.492964000000008
+   },
+   "A-FSM_states": {
+    "5": 7720,
+    "6": 69384,
+    "7": 153888
+   },
+   "wall_s": 15.6
+  },
+  "M4": {
+   "name": "ORDER(1,2) & ORDER(2,3) & ZONE(3,right,2) & GROUP(1)",
+   "V_train": 6050,
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 384,
+    "lookups": 544,
+    "reasons": {
+     "preservation": 384
+    },
+    "time_s": 0.0014770419802516699
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6050,
+    "counterexamples": 0,
+    "time_s": 0.03931237501092255,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       3,
+       "right",
+       2
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ]
+    ],
+    "cpu_search": 0.03931799999999441,
+    "cpu_compile": 0.004142000000001644,
+    "cpu_total": 0.04345999999999606,
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 68
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 90
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 110
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 192
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 255
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 324
+     },
+     "total_failures": 0
+    }
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 45672,
+    "time_s": 16.78131154202856,
+    "cpu_total": 16.787172999999996
+   },
+   "A-FSM_states": {
+    "5": 7720,
+    "6": 69384,
+    "7": 153888
+   },
+   "wall_s": 18.7
+  }
+ },
+ "label": "PA-1 (DEV): ARC-free LINE world; all instances generated by judge/instances.py"
+}

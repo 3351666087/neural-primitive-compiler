@@ -1,0 +1,315 @@
+{
+ "P2.1": {
+  "verdict": "HOLDS",
+  "wrong_constructions": [],
+  "A-P_constructed": 30,
+  "pool": 91
+ },
+ "P2.2": {
+  "verdict": "HOLDS",
+  "price": 0.5588235294117647,
+  "refused_but_established": [
+   "P2-01",
+   "P2-02",
+   "P2-08",
+   "P2-09",
+   "P2-10",
+   "P2-12",
+   "P2-17",
+   "P2-21",
+   "P2-26",
+   "P2-27",
+   "P2-28",
+   "P2-34",
+   "P2-40",
+   "P2-47",
+   "P2-48",
+   "P2-50",
+   "P2-51",
+   "P2-53",
+   "P2-54",
+   "P2-55",
+   "P2-56",
+   "P2-57",
+   "P2-58",
+   "P2-59",
+   "P2-60",
+   "P3-00",
+   "P3-02",
+   "P3-03",
+   "P3-05",
+   "P3-08",
+   "P3-09",
+   "P3-13",
+   "P3-14",
+   "P3-15",
+   "P3-18",
+   "PN-01",
+   "PN-02",
+   "PN-07"
+  ],
+  "goals_with_a_general_policy": 68,
+  "refused_unknown": [
+   "P2-05",
+   "P2-06",
+   "P2-14",
+   "P2-22",
+   "P2-25",
+   "P2-32",
+   "P2-36",
+   "P2-44",
+   "P3-04",
+   "P3-06",
+   "P3-07",
+   "P3-10",
+   "P3-12",
+   "P3-16",
+   "P3-17",
+   "P3-19",
+   "PN-00",
+   "PN-03",
+   "PN-04",
+   "PN-05",
+   "PN-06",
+   "PN-08",
+   "PN-09"
+  ]
+ },
+ "P2.3": {
+  "verdict": "FALSIFIED",
+  "refusal_1_variant": 0.6703296703296703,
+  "refusal_2_variants": 0.6703296703296703
+ },
+ "P2.4": {
+  "verdict": "HOLDS",
+  "cue_variants": 10,
+  "ok": 10,
+  "not_ok": []
+ },
+ "refusal_reasons": {
+  "preservation": 1128,
+  "applicability": 80
+ },
+ "J1_net": {
+  "P2-30": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-38": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-23": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-18": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-11": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-13": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-41": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-00": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-20": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-33": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  }
+ }
+}

@@ -1,0 +1,9136 @@
+{
+ "goals": {
+  "P2-00": {
+   "name": "ORDER(1,2) & ORDER(1,3)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0008105000015348196,
+    "cpu": 0.0004900000000000182,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 45
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 54
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 60
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 103
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 165
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 178
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32304,
+     "counts": {
+      "SUCCESS": 32304
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 54
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0002293749712407589
+   },
+   "wall_s": 1.1
+  },
+  "P2-01": {
+   "name": "ORDER(1,2) & ORDER(2,3)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.00039841607213020325,
+    "cpu": 0.00042000000000008697
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00021058297716081142
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6100,
+    "counterexamples": 0,
+    "time_s": 0.021463333861902356,
+    "cpu": 0.021462000000000092,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 68
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 85
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 110
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 171
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 259
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 311
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.0
+  },
+  "P2-02": {
+   "name": "ORDER(1,2) & ORDER(3,1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003569589462131262,
+    "cpu": 0.0003799999999998249
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020337500609457493
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6100,
+    "counterexamples": 0,
+    "time_s": 0.021937458077445626,
+    "cpu": 0.02194099999999999,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 65
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 77
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 90
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 197
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 245
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 343
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.0
+  },
+  "P2-03": {
+   "name": "ORDER(1,2) & ORDER(3,2)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00035712518729269505,
+    "cpu": 0.00037899999999968514,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 42
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 59
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 121
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 142
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 173
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32304,
+     "counts": {
+      "SUCCESS": 32304
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 51
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0002129168715327978
+   },
+   "wall_s": 1.1
+  },
+  "P2-04": {
+   "name": "ORDER(1,2) & ZONE(1,left,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0003056249115616083,
+    "cpu": 0.00032599999999938234,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1825,
+      "counts": {
+       "SUCCESS": 1825
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 45
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 56
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 58
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 121
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 133
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 186
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 11358,
+     "counts": {
+      "SUCCESS": 11358
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 58
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00021262490190565586
+   },
+   "wall_s": 0.9
+  },
+  "P2-05": {
+   "name": "ORDER(1,2) & ZONE(1,right,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.00034333416260778904,
+    "cpu": 0.00036600000000053257
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020575011149048805
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 88,
+    "counterexamples": 1,
+    "time_s": 0.0005012920591980219,
+    "cpu": 0.0005049999999995336
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 44039,
+    "time_s": 15.83978029107675,
+    "cpu": 15.778971000000002
+   },
+   "wall_s": 16.0
+  },
+  "P2-06": {
+   "name": "ORDER(1,2) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0012968338560312986,
+    "cpu": 0.0006489999999992335
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.0002169169019907713
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 397,
+    "counterexamples": 2,
+    "time_s": 0.0015360000543296337,
+    "cpu": 0.0015380000000000393
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 41698,
+    "time_s": 14.808988499920815,
+    "cpu": 14.812679000000003
+   },
+   "wall_s": 15.2
+  },
+  "P2-07": {
+   "name": "ORDER(1,2) & ZONE(2,right,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0011707078665494919,
+    "cpu": 0.0005319999999997549,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1825,
+      "counts": {
+       "SUCCESS": 1825
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 36
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 58
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 101
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 124
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 185
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 11358,
+     "counts": {
+      "SUCCESS": 11358
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 51
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0002921251580119133
+   },
+   "wall_s": 0.7
+  },
+  "P2-08": {
+   "name": "ORDER(1,2) & GROUP(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0005754590965807438,
+    "cpu": 0.0005779999999973029
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00024229101836681366
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 3875,
+    "counterexamples": 0,
+    "time_s": 0.01505812513642013,
+    "cpu": 0.014790999999995336,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1875,
+      "counts": {
+       "SUCCESS": 1875
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 32
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 55
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 60
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 101
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 146
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 206
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.0
+  },
+  "P2-09": {
+   "name": "ORDER(1,2) & GROUP(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003659580834209919,
+    "cpu": 0.0003879999999938377
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020787515677511692
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "simulations": 4557,
+    "counterexamples": 1,
+    "time_s": 0.015786125091835856,
+    "cpu": 0.01578800000000058,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G2"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1875,
+      "counts": {
+       "SUCCESS": 1875
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 31
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 58
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 101
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 139
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 189
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 0.9
+  },
+  "P2-10": {
+   "name": "ORDER(1,3) & ORDER(2,1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003410410135984421,
+    "cpu": 0.0003640000000046939
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.0002049170434474945
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6100,
+    "counterexamples": 0,
+    "time_s": 0.02231587516143918,
+    "cpu": 0.022319000000003086,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 65
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 87
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 89
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 179
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 240
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 284
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 0.9
+  },
+  "P2-11": {
+   "name": "ORDER(1,3) & ORDER(2,3)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00031174998730421066,
+    "cpu": 0.0003340000000022769,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 42
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 51
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 58
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 104
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 130
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 162
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32304,
+     "counts": {
+      "SUCCESS": 32304
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 51
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00021466705948114395
+   },
+   "wall_s": 1.0
+  },
+  "P2-12": {
+   "name": "ORDER(1,3) & ORDER(3,2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.00034787505865097046,
+    "cpu": 0.00037700000000029377
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020908284932374954
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6100,
+    "counterexamples": 0,
+    "time_s": 0.02185424999333918,
+    "cpu": 0.021857000000004234,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 68
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 94
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 117
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 209
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 277
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 297
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.0
+  },
+  "P2-13": {
+   "name": "ORDER(1,3) & ZONE(1,left,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0003549167886376381,
+    "cpu": 0.00037700000000029377,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1825,
+      "counts": {
+       "SUCCESS": 1825
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 45
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 56
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 58
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 121
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 133
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 186
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 11358,
+     "counts": {
+      "SUCCESS": 11358
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 58
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00023129116743803024
+   },
+   "wall_s": 1.0
+  },
+  "P2-14": {
+   "name": "ORDER(1,3) & ZONE(1,right,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.00037645804695785046,
+    "cpu": 0.000400999999996543
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00021145795471966267
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 88,
+    "counterexamples": 1,
+    "time_s": 0.0005007910076528788,
+    "cpu": 0.0005030000000019186
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 44039,
+    "time_s": 16.503365541808307,
+    "cpu": 16.503138
+   },
+   "wall_s": 16.7
+  },
+  "P2-15": {
+   "name": "ORDER(1,3) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 5,
+    "lookups": 5,
+    "time_s": 0.001277499832212925,
+    "cpu": 0.000626999999994382,
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 46
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 53
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 86
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 112
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 149
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 182
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32214,
+     "counts": {
+      "SUCCESS": 32214
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 77
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "lookups": 2,
+    "time_s": 0.00023804116062819958
+   },
+   "wall_s": 1.6
+  },
+  "P2-16": {
+   "name": "ORDER(1,3) & ZONE(2,right,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 5,
+    "lookups": 5,
+    "time_s": 0.00035395799204707146,
+    "cpu": 0.00037800000000487444,
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 42
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 53
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 65
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 127
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 139
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 187
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32214,
+     "counts": {
+      "SUCCESS": 32214
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 57
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "lookups": 2,
+    "time_s": 0.00022337492555379868
+   },
+   "wall_s": 1.2
+  },
+  "P2-17": {
+   "name": "ORDER(1,3) & GROUP(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003935829736292362,
+    "cpu": 0.00041500000000382897
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020337500609457493
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 3875,
+    "counterexamples": 0,
+    "time_s": 0.013241375098004937,
+    "cpu": 0.013244000000000256,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1875,
+      "counts": {
+       "SUCCESS": 1875
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 32
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 55
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 60
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 101
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 146
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 206
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.0
+  },
+  "P2-18": {
+   "name": "ORDER(1,3) & GROUP(2)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 5,
+    "lookups": 5,
+    "time_s": 0.0003190410789102316,
+    "cpu": 0.00034200000000339514,
+    "plan": [
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G1"
+     ],
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 25
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 52
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 58
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 130
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 134
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 163
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32304,
+     "counts": {
+      "SUCCESS": 32304
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 61
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "lookups": 2,
+    "time_s": 0.0002209581434726715
+   },
+   "wall_s": 1.5
+  },
+  "P2-19": {
+   "name": "ORDER(2,1) & ORDER(2,3)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0003462920431047678,
+    "cpu": 0.00037100000000123146,
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 45
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 51
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 63
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 109
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 142
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 173
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32304,
+     "counts": {
+      "SUCCESS": 32304
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 54
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00022062496282160282
+   },
+   "wall_s": 1.2
+  },
+  "P2-20": {
+   "name": "ORDER(2,1) & ORDER(3,1)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00032895803451538086,
+    "cpu": 0.0003530000000040445,
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 42
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 59
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 101
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 157
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 177
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32304,
+     "counts": {
+      "SUCCESS": 32304
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 51
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0002227500081062317
+   },
+   "wall_s": 1.2
+  },
+  "P2-21": {
+   "name": "ORDER(2,1) & ORDER(3,2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0004214579239487648,
+    "cpu": 0.0004440000000016653
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020216708071529865
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6100,
+    "counterexamples": 0,
+    "time_s": 0.021310334093868732,
+    "cpu": 0.021312999999992144,
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 65
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 94
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 105
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 185
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 267
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 346
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.1
+  },
+  "P2-22": {
+   "name": "ORDER(2,1) & ZONE(1,left,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.00035470793955028057,
+    "cpu": 0.0003760000000028185
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.0002007500734180212
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 397,
+    "counterexamples": 2,
+    "time_s": 0.0015680831857025623,
+    "cpu": 0.0015700000000009595
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 43353,
+    "time_s": 15.314113207859918,
+    "cpu": 15.320133999999996
+   },
+   "wall_s": 15.7
+  },
+  "P2-23": {
+   "name": "ORDER(2,1) & ZONE(1,right,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0006553749553859234,
+    "cpu": 0.0004680000000121254,
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1825,
+      "counts": {
+       "SUCCESS": 1825
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 36
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 57
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 103
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 129
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 152
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 11358,
+     "counts": {
+      "SUCCESS": 11358
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 51
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0002187080681324005
+   },
+   "wall_s": 0.7
+  },
+  "P2-24": {
+   "name": "ORDER(2,1) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0004047499969601631,
+    "cpu": 0.0004270000000019536,
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1825,
+      "counts": {
+       "SUCCESS": 1825
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 45
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 55
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 63
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 100
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 135
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 167
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 11358,
+     "counts": {
+      "SUCCESS": 11358
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 58
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00021783285774290562
+   },
+   "wall_s": 0.9
+  },
+  "P2-25": {
+   "name": "ORDER(2,1) & ZONE(2,right,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003750000614672899,
+    "cpu": 0.0003990000000015925
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.0002002918627113104
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 88,
+    "counterexamples": 1,
+    "time_s": 0.000480834161862731,
+    "cpu": 0.0004820000000052005
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 45716,
+    "time_s": 16.121575667057186,
+    "cpu": 16.128221999999994
+   },
+   "wall_s": 16.3
+  },
+  "P2-26": {
+   "name": "ORDER(2,1) & GROUP(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003898749127984047,
+    "cpu": 0.00041099999999971715
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00021104095503687859
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "simulations": 4542,
+    "counterexamples": 1,
+    "time_s": 0.015301374951377511,
+    "cpu": 0.015305999999995379,
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G2"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1875,
+      "counts": {
+       "SUCCESS": 1875
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 31
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 57
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 128
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 175
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 180
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.0
+  },
+  "P2-27": {
+   "name": "ORDER(2,1) & GROUP(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003165840171277523,
+    "cpu": 0.00033899999999675856
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020008394494652748
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 3875,
+    "counterexamples": 0,
+    "time_s": 0.013527665985748172,
+    "cpu": 0.013531999999997879,
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1875,
+      "counts": {
+       "SUCCESS": 1875
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 32
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 57
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 65
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 104
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 163
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 200
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.0
+  },
+  "P2-28": {
+   "name": "ORDER(2,3) & ORDER(3,1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003638751804828644,
+    "cpu": 0.0003889999999984184
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.0002672499977052212
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6100,
+    "counterexamples": 0,
+    "time_s": 0.021551166893914342,
+    "cpu": 0.02155899999999633,
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 68
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 101
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 117
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 215
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 243
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 292
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.0
+  },
+  "P2-29": {
+   "name": "ORDER(2,3) & ZONE(1,left,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 5,
+    "lookups": 5,
+    "time_s": 0.00040720822289586067,
+    "cpu": 0.00042799999999942884,
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 46
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 77
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 65
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 149
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 149
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 157
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32214,
+     "counts": {
+      "SUCCESS": 32214
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 77
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "lookups": 2,
+    "time_s": 0.0003095001447945833
+   },
+   "wall_s": 1.5
+  },
+  "P2-30": {
+   "name": "ORDER(2,3) & ZONE(1,right,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 5,
+    "lookups": 5,
+    "time_s": 0.0003285419661551714,
+    "cpu": 0.0003520000000065693,
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 42
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 57
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 59
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 98
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 121
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 166
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32214,
+     "counts": {
+      "SUCCESS": 32214
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 57
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "lookups": 2,
+    "time_s": 0.00022262497805058956
+   },
+   "wall_s": 1.1
+  },
+  "P2-31": {
+   "name": "ORDER(2,3) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0004511249717324972,
+    "cpu": 0.00047500000000866294,
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1825,
+      "counts": {
+       "SUCCESS": 1825
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 45
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 56
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 58
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 121
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 133
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 186
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 11358,
+     "counts": {
+      "SUCCESS": 11358
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 58
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00031554209999740124
+   },
+   "wall_s": 0.9
+  },
+  "P2-32": {
+   "name": "ORDER(2,3) & ZONE(2,right,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003368749748915434,
+    "cpu": 0.00035900000000310683
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020583299919962883
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 88,
+    "counterexamples": 1,
+    "time_s": 0.000508124940097332,
+    "cpu": 0.0005099999999913507
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 44039,
+    "time_s": 16.338870082981884,
+    "cpu": 16.34268800000001
+   },
+   "wall_s": 16.5
+  },
+  "P2-33": {
+   "name": "ORDER(2,3) & GROUP(1)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 5,
+    "lookups": 5,
+    "time_s": 0.0007112091407179832,
+    "cpu": 0.00043399999999849115,
+    "plan": [
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 25
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 57
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 64
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 88
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 138
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 154
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32304,
+     "counts": {
+      "SUCCESS": 32304
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 61
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "lookups": 2,
+    "time_s": 0.000225916039198637
+   },
+   "wall_s": 1.4
+  },
+  "P2-34": {
+   "name": "ORDER(2,3) & GROUP(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.00037591694854199886,
+    "cpu": 0.00039700000000664204
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00019979197531938553
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 3875,
+    "counterexamples": 0,
+    "time_s": 0.013578541111201048,
+    "cpu": 0.01356199999999319,
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1875,
+      "counts": {
+       "SUCCESS": 1875
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 32
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 55
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 60
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 101
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 146
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 206
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 0.9
+  },
+  "P2-35": {
+   "name": "ORDER(3,1) & ORDER(3,2)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00032033398747444153,
+    "cpu": 0.00034399999999834563,
+    "plan": [
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 45
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 53
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 62
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 123
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 140
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 243
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32304,
+     "counts": {
+      "SUCCESS": 32304
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 54
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00022074999287724495
+   },
+   "wall_s": 1.3
+  },
+  "P2-36": {
+   "name": "ORDER(3,1) & ZONE(1,left,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.00044608302414417267,
+    "cpu": 0.00047000000000707587
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00021041696891188622
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 397,
+    "counterexamples": 2,
+    "time_s": 0.0016799999866634607,
+    "cpu": 0.00168300000001409
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 43353,
+    "time_s": 15.774442541180179,
+    "cpu": 15.780016999999987
+   },
+   "wall_s": 16.2
+  },
+  "P2-37": {
+   "name": "ORDER(3,1) & ZONE(1,right,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00034341588616371155,
+    "cpu": 0.00036599999998543353,
+    "plan": [
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1825,
+      "counts": {
+       "SUCCESS": 1825
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 36
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 57
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 103
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 129
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 152
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 11358,
+     "counts": {
+      "SUCCESS": 11358
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 51
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00021816696971654892
+   },
+   "wall_s": 0.7
+  },
+  "P2-38": {
+   "name": "ORDER(3,1) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 5,
+    "lookups": 5,
+    "time_s": 0.0005763750523328781,
+    "cpu": 0.0006009999999889715,
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 46
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 70
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 62
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 123
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 145
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 183
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32214,
+     "counts": {
+      "SUCCESS": 32214
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 77
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "lookups": 2,
+    "time_s": 0.0027916249819099903
+   },
+   "wall_s": 1.6
+  },
+  "P2-39": {
+   "name": "ORDER(3,1) & ZONE(2,right,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 5,
+    "lookups": 5,
+    "time_s": 0.0004337909631431103,
+    "cpu": 0.00045800000000895125,
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 42
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 55
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 58
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 110
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 126
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 181
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32214,
+     "counts": {
+      "SUCCESS": 32214
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 57
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "lookups": 2,
+    "time_s": 0.00021966686472296715
+   },
+   "wall_s": 1.3
+  },
+  "P2-40": {
+   "name": "ORDER(3,1) & GROUP(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.00042112497612833977,
+    "cpu": 0.0004460000000108266
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.0002062499988824129
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "simulations": 4542,
+    "counterexamples": 1,
+    "time_s": 0.015684416983276606,
+    "cpu": 0.015689000000008946,
+    "plan": [
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G2"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1875,
+      "counts": {
+       "SUCCESS": 1875
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 31
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 57
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 128
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 175
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 180
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.0
+  },
+  "P2-41": {
+   "name": "ORDER(3,1) & GROUP(2)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 5,
+    "lookups": 5,
+    "time_s": 0.00035020895302295685,
+    "cpu": 0.0003749999999911324,
+    "plan": [
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 25
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 56
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 61
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 107
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 136
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 166
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32304,
+     "counts": {
+      "SUCCESS": 32304
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 61
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "lookups": 2,
+    "time_s": 0.00022245896980166435
+   },
+   "wall_s": 1.6
+  },
+  "P2-42": {
+   "name": "ORDER(3,2) & ZONE(1,left,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 5,
+    "lookups": 5,
+    "time_s": 0.00032808398827910423,
+    "cpu": 0.00035000000002582965,
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 46
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 53
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 71
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 131
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 159
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 211
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32214,
+     "counts": {
+      "SUCCESS": 32214
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 77
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "lookups": 2,
+    "time_s": 0.00021674996241927147
+   },
+   "wall_s": 1.6
+  },
+  "P2-43": {
+   "name": "ORDER(3,2) & ZONE(1,right,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 5,
+    "lookups": 5,
+    "time_s": 0.00038166693411767483,
+    "cpu": 0.00040500000000065484,
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 42
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 56
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 62
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 115
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 131
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 166
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32214,
+     "counts": {
+      "SUCCESS": 32214
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 57
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "lookups": 2,
+    "time_s": 0.00023737503215670586
+   },
+   "wall_s": 1.2
+  },
+  "P2-44": {
+   "name": "ORDER(3,2) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.00033425004221498966,
+    "cpu": 0.00035700000000815635
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.0002151250373572111
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 397,
+    "counterexamples": 2,
+    "time_s": 0.0015928749926388264,
+    "cpu": 0.0015959999999779484
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 43353,
+    "time_s": 15.3007074999623,
+    "cpu": 15.307190999999989
+   },
+   "wall_s": 15.7
+  },
+  "P2-45": {
+   "name": "ORDER(3,2) & ZONE(2,right,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00043158396147191525,
+    "cpu": 0.0004549999999881038,
+    "plan": [
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1825,
+      "counts": {
+       "SUCCESS": 1825
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 36
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 57
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 103
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 129
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 152
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 11358,
+     "counts": {
+      "SUCCESS": 11358
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 51
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0022284588776528835
+   },
+   "wall_s": 0.7
+  },
+  "P2-46": {
+   "name": "ORDER(3,2) & GROUP(1)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 5,
+    "lookups": 5,
+    "time_s": 0.0003559160977602005,
+    "cpu": 0.0003769999999860829,
+    "plan": [
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 25
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 69
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 98
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 145
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 166
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32304,
+     "counts": {
+      "SUCCESS": 32304
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 61
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "lookups": 2,
+    "time_s": 0.00021541700698435307
+   },
+   "wall_s": 1.5
+  },
+  "P2-47": {
+   "name": "ORDER(3,2) & GROUP(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003781658597290516,
+    "cpu": 0.00040100000001075387
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.0001985419075936079
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "simulations": 4542,
+    "counterexamples": 1,
+    "time_s": 0.01535262493416667,
+    "cpu": 0.015354999999999563,
+    "plan": [
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G2"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1875,
+      "counts": {
+       "SUCCESS": 1875
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 31
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 57
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 128
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 175
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 180
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.0
+  },
+  "P2-48": {
+   "name": "ZONE(1,left,half) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.00039537507109344006,
+    "cpu": 0.0004179999999962547
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020333309657871723
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "simulations": 3737,
+    "counterexamples": 1,
+    "time_s": 0.01679783291183412,
+    "cpu": 0.016799999999989268,
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z2"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1475,
+      "counts": {
+       "SUCCESS": 1475
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 42
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 64
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 66
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 106
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 146
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 225
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 0.9
+  },
+  "P2-49": {
+   "name": "ZONE(1,left,half) & ZONE(2,right,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00045008305460214615,
+    "cpu": 0.00047399999999697684,
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1775,
+      "counts": {
+       "SUCCESS": 1775
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 38
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 49
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 57
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 92
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 128
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 136
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 11268,
+     "counts": {
+      "SUCCESS": 11268
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 50
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00022074999287724495
+   },
+   "wall_s": 0.8
+  },
+  "P2-50": {
+   "name": "ZONE(1,left,half) & GROUP(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003909999504685402,
+    "cpu": 0.00041500000000382897
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.0003353329375386238
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 2600,
+    "counterexamples": 0,
+    "time_s": 0.010730916168540716,
+    "cpu": 0.010736000000008517,
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 600,
+      "counts": {
+       "SUCCESS": 600
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 28
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 33
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 37
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 75
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 114
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 150
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 0.9
+  },
+  "P2-51": {
+   "name": "ZONE(1,left,half) & GROUP(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.00045237503945827484,
+    "cpu": 0.0004759999999919273
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00021616695448756218
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "simulations": 4397,
+    "counterexamples": 1,
+    "time_s": 0.016658584121614695,
+    "cpu": 0.016661999999996624,
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G2"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1825,
+      "counts": {
+       "SUCCESS": 1825
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 32
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 49
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 57
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 92
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 137
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 168
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.0
+  },
+  "P2-52": {
+   "name": "ZONE(1,right,half) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00042837485671043396,
+    "cpu": 0.0004529999999931533,
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1775,
+      "counts": {
+       "SUCCESS": 1775
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 40
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 40
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 57
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 101
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 97
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 131
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 11268,
+     "counts": {
+      "SUCCESS": 11268
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 54
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0002243751659989357
+   },
+   "wall_s": 0.8
+  },
+  "P2-53": {
+   "name": "ZONE(1,right,half) & ZONE(2,right,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003826250322163105,
+    "cpu": 0.00040500000000065484
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020395801402628422
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "simulations": 3557,
+    "counterexamples": 1,
+    "time_s": 0.01583454106003046,
+    "cpu": 0.015837000000004764,
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z2"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1475,
+      "counts": {
+       "SUCCESS": 1475
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 44
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 70
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 69
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 123
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 157
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 221
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 0.6
+  },
+  "P2-54": {
+   "name": "ZONE(1,right,half) & GROUP(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003258748911321163,
+    "cpu": 0.0003489999999999327
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00019670790061354637
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "simulations": 3228,
+    "counterexamples": 1,
+    "time_s": 0.012483875034376979,
+    "cpu": 0.012486999999993031,
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G2"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 600,
+      "counts": {
+       "SUCCESS": 600
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 28
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 44
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 39
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 90
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 127
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 151
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 0.8
+  },
+  "P2-55": {
+   "name": "ZONE(1,right,half) & GROUP(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.00033470895141363144,
+    "cpu": 0.0003580000000056316
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020258291624486446
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 3825,
+    "counterexamples": 0,
+    "time_s": 0.014362834161147475,
+    "cpu": 0.014364999999997963,
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1825,
+      "counts": {
+       "SUCCESS": 1825
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 36
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 45
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 57
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 98
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 116
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 146
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 0.8
+  },
+  "P2-56": {
+   "name": "ZONE(2,left,half) & GROUP(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0005131249781697989,
+    "cpu": 0.0005380000000059226
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020841695368289948
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "simulations": 4357,
+    "counterexamples": 1,
+    "time_s": 0.01648674998432398,
+    "cpu": 0.016490000000004557,
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G2"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1825,
+      "counts": {
+       "SUCCESS": 1825
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 32
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 49
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 53
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 101
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 147
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 160
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.1
+  },
+  "P2-57": {
+   "name": "ZONE(2,left,half) & GROUP(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.00039083301089704037,
+    "cpu": 0.000413999999977932
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020983279682695866
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 2600,
+    "counterexamples": 0,
+    "time_s": 0.010420833015814424,
+    "cpu": 0.010426999999992859,
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 600,
+      "counts": {
+       "SUCCESS": 600
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 28
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 33
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 37
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 75
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 114
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 150
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 0.9
+  },
+  "P2-58": {
+   "name": "ZONE(2,right,half) & GROUP(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003250839654356241,
+    "cpu": 0.00034800000000245745
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020841695368289948
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 3825,
+    "counterexamples": 0,
+    "time_s": 0.015159625094383955,
+    "cpu": 0.015162000000003673,
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1825,
+      "counts": {
+       "SUCCESS": 1825
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 36
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 44
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 54
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 101
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 118
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 140
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 0.8
+  },
+  "P2-59": {
+   "name": "ZONE(2,right,half) & GROUP(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003887498751282692,
+    "cpu": 0.00041200000001140324
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020637502893805504
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "simulations": 3228,
+    "counterexamples": 1,
+    "time_s": 0.012841790914535522,
+    "cpu": 0.012844999999998663,
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G2"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 600,
+      "counts": {
+       "SUCCESS": 600
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 28
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 44
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 39
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 90
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 127
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 151
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 0.8
+  },
+  "P2-60": {
+   "name": "GROUP(1) & GROUP(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 8
+    },
+    "time_s": 0.0003462911117821932,
+    "cpu": 0.0003699999999753345
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 2,
+    "reasons": {
+     "preservation": 2
+    },
+    "time_s": 0.00020929216407239437
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "simulations": 5759,
+    "counterexamples": 1,
+    "time_s": 0.016568458871915936,
+    "cpu": 0.016569000000004053,
+    "plan": [
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G2"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1875,
+      "counts": {
+       "SUCCESS": 1875
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 29
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 59
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 54
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 92
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 132
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 159
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.2
+  },
+  "P3-00": {
+   "name": "ORDER(3,2) & GROUP(1) & GROUP(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 56,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.0004928328562527895,
+    "cpu": 0.0005150000000071486
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 7,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.00021866708993911743
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 2,
+    "simulations": 7432,
+    "counterexamples": 1,
+    "time_s": 0.027148375054821372,
+    "cpu": 0.02715299999999843,
+    "plan": [
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G2"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 31
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 72
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 103
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 160
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 199
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 227
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.8
+  },
+  "P3-01": {
+   "name": "ORDER(2,3) & ZONE(1,right,half) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 17,
+    "lookups": 27,
+    "time_s": 0.0004792921245098114,
+    "cpu": 0.000503000000009024,
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4000,
+      "counts": {
+       "SUCCESS": 4000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 48
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 57
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 70
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 106
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 121
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 183
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32124,
+     "counts": {
+      "SUCCESS": 32124
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 73
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 3,
+    "lookups": 6,
+    "time_s": 0.00022983388043940067
+   },
+   "wall_s": 1.7
+  },
+  "P3-02": {
+   "name": "ORDER(1,2) & ORDER(2,3) & ZONE(1,left,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 88,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.000414291862398386,
+    "cpu": 0.00043700000000512773
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 11,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.00021295901387929916
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6050,
+    "counterexamples": 0,
+    "time_s": 0.03159679099917412,
+    "cpu": 0.03160000000002583,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 73
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 87
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 110
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 171
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 259
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 311
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.2
+  },
+  "P3-03": {
+   "name": "ORDER(1,2) & ORDER(3,1) & ORDER(3,2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 96,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.0004909578710794449,
+    "cpu": 0.0005140000000096734
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 12,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.00021795905195176601
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6100,
+    "counterexamples": 0,
+    "time_s": 0.0285091670230031,
+    "cpu": 0.028511000000008835,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 65
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 77
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 90
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 197
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 245
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 343
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.2
+  },
+  "P3-04": {
+   "name": "ORDER(1,2) & ZONE(2,left,half) & GROUP(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 48,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.00043570809066295624,
+    "cpu": 0.00045799999998052954
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 6,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.00021337484940886497
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "simulations": 457,
+    "counterexamples": 2,
+    "time_s": 0.004175540991127491,
+    "cpu": 0.0041789999999934935
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 44678,
+    "time_s": 18.224494041875005,
+    "cpu": 17.96577099999999
+   },
+   "wall_s": 18.7
+  },
+  "P3-05": {
+   "name": "ORDER(1,2) & ZONE(1,left,half) & GROUP(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 64,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.0006745001301169395,
+    "cpu": 0.0005649999999945976
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.0002268750686198473
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 3825,
+    "counterexamples": 0,
+    "time_s": 0.019426458049565554,
+    "cpu": 0.019429999999999836,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1825,
+      "counts": {
+       "SUCCESS": 1825
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 45
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 56
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 58
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 121
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 156
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 205
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.2
+  },
+  "P3-06": {
+   "name": "ORDER(3,1) & ORDER(3,2) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 72,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.0004877089522778988,
+    "cpu": 0.000510999999988826
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 9,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.00022866693325340748
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "simulations": 732,
+    "counterexamples": 2,
+    "time_s": 0.005871625151485205,
+    "cpu": 0.005859999999984211
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 54684,
+    "time_s": 22.834491916000843,
+    "cpu": 21.920755000000014
+   },
+   "wall_s": 23.3
+  },
+  "P3-07": {
+   "name": "ORDER(1,2) & ORDER(3,2) & ZONE(1,right,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 72,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.0008450420573353767,
+    "cpu": 0.000664000000000442
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 9,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.00022291694767773151
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "simulations": 153,
+    "counterexamples": 1,
+    "time_s": 0.002660042140632868,
+    "cpu": 0.002666000000004942
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 57361,
+    "time_s": 25.72500754194334,
+    "cpu": 24.879832999999962
+   },
+   "wall_s": 25.9
+  },
+  "P3-08": {
+   "name": "ORDER(1,3) & ZONE(2,right,half) & GROUP(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 56,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.0014511249028146267,
+    "cpu": 0.0008209999999735373
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 7,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.00022554094903171062
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6050,
+    "counterexamples": 0,
+    "time_s": 0.029264708049595356,
+    "cpu": 0.0292259999999942,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 51
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 78
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 70
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 162
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 148
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 204
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.2
+  },
+  "P3-09": {
+   "name": "ORDER(3,1) & GROUP(1) & GROUP(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 56,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.0004859170876443386,
+    "cpu": 0.0005100000000197724
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 7,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.00021245889365673065
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 3,
+    "simulations": 7333,
+    "counterexamples": 1,
+    "time_s": 0.02733987499959767,
+    "cpu": 0.027333999999996195,
+    "plan": [
+     [
+      [
+       "ORDER",
+       3,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G2"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 31
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 86
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 91
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 145
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 173
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 248
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.8
+  },
+  "P3-10": {
+   "name": "ORDER(2,3) & ZONE(2,right,half) & GROUP(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 56,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.0004912498407065868,
+    "cpu": 0.0005170000000020991
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 7,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.0002218338195234537
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "simulations": 178,
+    "counterexamples": 1,
+    "time_s": 0.002601749962195754,
+    "cpu": 0.0026040000000193686
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 53516,
+    "time_s": 21.288786000106484,
+    "cpu": 21.169354999999996
+   },
+   "wall_s": 21.4
+  },
+  "P3-11": {
+   "name": "ORDER(1,3) & ORDER(2,3) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 25,
+    "lookups": 51,
+    "time_s": 0.0013957920018583536,
+    "cpu": 0.0007590000000163855,
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 49
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 52
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 70
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 109
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 161
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 203
+     },
+     "total_failures": 0
+    },
+    "J2_mc6": {
+     "n": 32214,
+     "counts": {
+      "SUCCESS": 32214
+     },
+     "failures": 0,
+     "first_failures": [],
+     "max_steps": 72
+    }
+   },
+   "A-P1": {
+    "status": "CONSTRUCTED",
+    "candidates": 4,
+    "lookups": 9,
+    "time_s": 0.0003796250093728304
+   },
+   "wall_s": 1.8
+  },
+  "P3-12": {
+   "name": "ORDER(1,3) & ORDER(2,3) & ZONE(2,right,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 72,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.00047212489880621433,
+    "cpu": 0.0004959999999982756
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 9,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.0002104160375893116
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "simulations": 178,
+    "counterexamples": 1,
+    "time_s": 0.002868541982024908,
+    "cpu": 0.0028680000000349537
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 50026,
+    "time_s": 19.373663125094026,
+    "cpu": 19.326603999999975
+   },
+   "wall_s": 19.5
+  },
+  "P3-13": {
+   "name": "ORDER(1,3) & ORDER(2,1) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 88,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.0013048748951405287,
+    "cpu": 0.0006300000000010186
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 11,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.00021312502212822437
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6050,
+    "counterexamples": 0,
+    "time_s": 0.03231533383950591,
+    "cpu": 0.032304000000010547,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       2,
+       1
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4050,
+      "counts": {
+       "SUCCESS": 4050
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 71
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 87
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 96
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 193
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 248
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 284
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.2
+  },
+  "P3-14": {
+   "name": "ZONE(2,left,half) & GROUP(1) & GROUP(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 48,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.00041091698221862316,
+    "cpu": 0.00043300000004364847
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 6,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.00021145888604223728
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 3,
+    "simulations": 4358,
+    "counterexamples": 1,
+    "time_s": 0.019528792006894946,
+    "cpu": 0.01953600000001643,
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G2"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1825,
+      "counts": {
+       "SUCCESS": 1825
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 32
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 49
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 53
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 108
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 147
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 166
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.5
+  },
+  "P3-15": {
+   "name": "ORDER(1,2) & ORDER(1,3) & ORDER(3,2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 96,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.00045070797204971313,
+    "cpu": 0.0004729999999995016
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 12,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.00021658302284777164
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 6100,
+    "counterexamples": 0,
+    "time_s": 0.029723832849413157,
+    "cpu": 0.02965999999997848,
+    "plan": [
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       1,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       3,
+       2
+      ],
+      "O1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 4100,
+      "counts": {
+       "SUCCESS": 4100
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 45
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 59
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 84
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 121
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 214
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 199
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 0.9
+  },
+  "P3-16": {
+   "name": "ORDER(3,2) & ZONE(1,right,half) & GROUP(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 56,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.0004289590287953615,
+    "cpu": 0.0004519999999956781
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 7,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.00021225004456937313
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "simulations": 2372,
+    "counterexamples": 2,
+    "time_s": 0.013213458005338907,
+    "cpu": 0.013212999999950625
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 43636,
+    "time_s": 16.312469125026837,
+    "cpu": 16.301322000000027
+   },
+   "wall_s": 16.5
+  },
+  "P3-17": {
+   "name": "ORDER(3,2) & ZONE(1,left,half) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 56,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.0012252500746399164,
+    "cpu": 0.0011339999999790962
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 7,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.0005668748635798693
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "simulations": 1181,
+    "counterexamples": 3,
+    "time_s": 0.008819916984066367,
+    "cpu": 0.00863099999997985
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 48642,
+    "time_s": 19.014048082986847,
+    "cpu": 18.954741000000013
+   },
+   "wall_s": 19.8
+  },
+  "P3-18": {
+   "name": "ORDER(1,2) & ZONE(1,left,half) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 64,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.0014459581580013037,
+    "cpu": 0.0007650000000012369
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 8,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.0002212498802691698
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 21,
+    "simulations": 5394,
+    "counterexamples": 3,
+    "time_s": 0.03352100006304681,
+    "cpu": 0.03349500000001626,
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z2"
+     ],
+     [
+      [
+       "ORDER",
+       1,
+       2
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       2,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 1475,
+      "counts": {
+       "SUCCESS": 1475
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 42
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 57
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 66
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 94
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 163
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 182
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 1.0
+  },
+  "P3-19": {
+   "name": "ORDER(1,3) & ZONE(1,right,half) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "lookups": 88,
+    "reasons": {
+     "preservation": 48
+    },
+    "time_s": 0.00046125007793307304,
+    "cpu": 0.00048399999997172927
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 6,
+    "lookups": 11,
+    "reasons": {
+     "preservation": 6
+    },
+    "time_s": 0.00021833390928804874
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 48,
+    "simulations": 158,
+    "counterexamples": 1,
+    "time_s": 0.0027034999802708626,
+    "cpu": 0.0026990000000068903
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 59339,
+    "time_s": 24.288581874920055,
+    "cpu": 24.271998999999994
+   },
+   "wall_s": 24.6
+  },
+  "PN-00": {
+   "name": "ORDER(1,2) & ZONE(2,left,half) & NO_PICK(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 8
+    },
+    "time_s": 0.00041987490840256214,
+    "cpu": 0.00044400000001587614
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 2
+    },
+    "time_s": 0.00020483299158513546
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 1498,
+    "counterexamples": 1,
+    "time_s": 0.005421458976343274,
+    "cpu": 0.00542400000000498
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 8442,
+    "time_s": 7.55543495900929,
+    "cpu": 7.549498999999969
+   },
+   "wall_s": 7.9
+  },
+  "PN-01": {
+   "name": "ZONE(2,right,half) & GROUP(2) & NO_PICK(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 8
+    },
+    "time_s": 0.00036237481981515884,
+    "cpu": 0.00038200000000188084
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 2
+    },
+    "time_s": 0.00021487497724592686
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 2255,
+    "counterexamples": 0,
+    "time_s": 0.005427666008472443,
+    "cpu": 0.005429999999989832,
+    "plan": [
+     [
+      [
+       "ZONE",
+       2,
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "GROUP",
+       2
+      ],
+      "G1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 255,
+      "counts": {
+       "SUCCESS": 255
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 0
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 0
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 0
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 0
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 0
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 0
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 0.5
+  },
+  "PN-02": {
+   "name": "ORDER(2,3) & ZONE(1,left,half) & NO_PICK(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 8
+    },
+    "time_s": 0.00035866699181497097,
+    "cpu": 0.0003829999999993561
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 2
+    },
+    "time_s": 0.00020104204304516315
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 4595,
+    "counterexamples": 0,
+    "time_s": 0.014779708813875914,
+    "cpu": 0.01475700000003144,
+    "plan": [
+     [
+      [
+       "ORDER",
+       2,
+       3
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 2595,
+      "counts": {
+       "SUCCESS": 2595
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 25
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 30
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 56
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 74
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 106
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 148
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 0.6
+  },
+  "PN-03": {
+   "name": "ORDER(1,2) & ZONE(1,right,half) & NO_PICK(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 8
+    },
+    "time_s": 0.0003964579664170742,
+    "cpu": 0.00041899999996530823
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 2
+    },
+    "time_s": 0.00019858288578689098
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 1232,
+    "counterexamples": 1,
+    "time_s": 0.004480917006731033,
+    "cpu": 0.0044480000000248765
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 12666,
+    "time_s": 15.39232995803468,
+    "cpu": 15.37932699999999
+   },
+   "wall_s": 15.6
+  },
+  "PN-04": {
+   "name": "ORDER(1,2) & ORDER(1,3) & NO_PICK(3)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 8
+    },
+    "time_s": 0.0005101249553263187,
+    "cpu": 0.0005350000000134969
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 2
+    },
+    "time_s": 0.00019954214803874493
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 448,
+    "counterexamples": 1,
+    "time_s": 0.0013129999861121178,
+    "cpu": 0.0013149999999768625
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 12202,
+    "time_s": 7.709522207966074,
+    "cpu": 7.703786000000036
+   },
+   "wall_s": 7.8
+  },
+  "PN-05": {
+   "name": "ORDER(3,1) & GROUP(2) & NO_PICK(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 8
+    },
+    "time_s": 0.0004151670727878809,
+    "cpu": 0.00044000000002597517
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 2
+    },
+    "time_s": 0.000202458119019866
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 418,
+    "counterexamples": 1,
+    "time_s": 0.001017166068777442,
+    "cpu": 0.0010199999999827014
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 4881,
+    "time_s": 10.009607915999368,
+    "cpu": 10.001427999999976
+   },
+   "wall_s": 10.2
+  },
+  "PN-06": {
+   "name": "ORDER(2,1) & ORDER(3,1) & NO_PICK(2)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 8
+    },
+    "time_s": 0.0003542499616742134,
+    "cpu": 0.0003770000000145046
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 2
+    },
+    "time_s": 0.00020008301362395287
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 113,
+    "counterexamples": 1,
+    "time_s": 0.0003095839638262987,
+    "cpu": 0.0003120000000080836
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 15875,
+    "time_s": 12.895199583144858,
+    "cpu": 12.884934999999984
+   },
+   "wall_s": 13.0
+  },
+  "PN-07": {
+   "name": "ZONE(1,left,half) & GROUP(1) & NO_PICK(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 8
+    },
+    "time_s": 0.000401125056669116,
+    "cpu": 0.0004250000000070031
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 2
+    },
+    "time_s": 0.0002063328865915537
+   },
+   "A-SAME": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "simulations": 2255,
+    "counterexamples": 0,
+    "time_s": 0.005377084016799927,
+    "cpu": 0.005380000000002383,
+    "plan": [
+     [
+      [
+       "ZONE",
+       1,
+       "left",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "GROUP",
+       1
+      ],
+      "G1"
+     ]
+    ],
+    "J1_sym": {
+     "train_N5": {
+      "n": 255,
+      "counts": {
+       "SUCCESS": 255
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 0
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 0
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 0
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 0
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 0
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 0
+     },
+     "total_failures": 0
+    }
+   },
+   "wall_s": 0.6
+  },
+  "PN-08": {
+   "name": "ORDER(2,1) & ZONE(2,right,half) & NO_PICK(1)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 8
+    },
+    "time_s": 0.0003904588520526886,
+    "cpu": 0.0004129999999804568
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 2
+    },
+    "time_s": 0.00020341714844107628
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 1269,
+    "counterexamples": 1,
+    "time_s": 0.0047967080026865005,
+    "cpu": 0.004751999999996315
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 10434,
+    "time_s": 9.5661637079902,
+    "cpu": 9.557863999999995
+   },
+   "wall_s": 9.8
+  },
+  "PN-09": {
+   "name": "ORDER(3,1) & GROUP(1) & NO_PICK(3)",
+   "A-P": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 8
+    },
+    "time_s": 0.0003647089470177889,
+    "cpu": 0.0003879999999867323
+   },
+   "A-P1": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 2,
+    "lookups": 0,
+    "reasons": {
+     "applicability": 2
+    },
+    "time_s": 0.0002002089750021696
+   },
+   "A-SAME": {
+    "status": "OUT_OF_CLASS",
+    "candidates": 8,
+    "simulations": 88,
+    "counterexamples": 1,
+    "time_s": 0.0002119170967489481,
+    "cpu": 0.00022199999995109465
+   },
+   "A-FLAT": {
+    "status": "NO_CONSISTENT_LIST",
+    "rounds": 1,
+    "examples": 3753,
+    "time_s": 5.258837792091072,
+    "cpu": 5.25453200000004
+   },
+   "wall_s": 5.4
+  }
+ },
+ "cue": {
+  "CUE-P2-20": {
+   "from": "P2-20",
+   "name": "cue ORDER(2,1) & ORDER(3,1)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00039004208520054817,
+    "plan": [
+     [
+      [
+       "ORDER",
+       "X",
+       "Y"
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       "Z",
+       "Y"
+      ],
+      "O1"
+     ]
+    ],
+    "global_verifications": 0,
+    "J1_sym": {
+     "train_N5": {
+      "n": 24600,
+      "counts": {
+       "SUCCESS": 24600
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 43
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 52
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 59
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 97
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 136
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 190
+     },
+     "total_failures": 0
+    }
+   }
+  },
+  "CUE-P2-11": {
+   "from": "P2-11",
+   "name": "cue ORDER(1,3) & ORDER(2,3)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0003987089730799198,
+    "plan": [
+     [
+      [
+       "ORDER",
+       "X",
+       "Y"
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       "Z",
+       "Y"
+      ],
+      "O1"
+     ]
+    ],
+    "global_verifications": 0,
+    "J1_sym": {
+     "train_N5": {
+      "n": 24600,
+      "counts": {
+       "SUCCESS": 24600
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 43
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 52
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 59
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 97
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 136
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 190
+     },
+     "total_failures": 0
+    }
+   }
+  },
+  "CUE-P2-24": {
+   "from": "P2-24",
+   "name": "cue ORDER(2,1) & ZONE(2,left,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0006490841042250395,
+    "plan": [
+     [
+      [
+       "ORDER",
+       "X",
+       "Y"
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       "X",
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "global_verifications": 0,
+    "J1_sym": {
+     "train_N5": {
+      "n": 24300,
+      "counts": {
+       "SUCCESS": 24300
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 46
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 51
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 59
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 125
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 158
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 136
+     },
+     "total_failures": 0
+    }
+   }
+  },
+  "CUE-P2-39": {
+   "from": "P2-39",
+   "name": "cue ORDER(3,1) & ZONE(2,right,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 5,
+    "lookups": 5,
+    "time_s": 0.0003756249789148569,
+    "plan": [
+     [
+      [
+       "ZONE",
+       "Z",
+       "right",
+       "half"
+      ],
+      "Z1"
+     ],
+     [
+      [
+       "ORDER",
+       "X",
+       "Y"
+      ],
+      "O1"
+     ]
+    ],
+    "global_verifications": 0,
+    "J1_sym": {
+     "train_N5": {
+      "n": 24300,
+      "counts": {
+       "SUCCESS": 24300
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 43
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 47
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 68
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 124
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 123
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 163
+     },
+     "total_failures": 0
+    }
+   }
+  },
+  "CUE-P2-03": {
+   "from": "P2-03",
+   "name": "cue ORDER(1,2) & ORDER(3,2)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00038366694934666157,
+    "plan": [
+     [
+      [
+       "ORDER",
+       "X",
+       "Y"
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       "Z",
+       "Y"
+      ],
+      "O1"
+     ]
+    ],
+    "global_verifications": 0,
+    "J1_sym": {
+     "train_N5": {
+      "n": 24600,
+      "counts": {
+       "SUCCESS": 24600
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 43
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 52
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 59
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 97
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 136
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 190
+     },
+     "total_failures": 0
+    }
+   }
+  },
+  "CUE-P2-04": {
+   "from": "P2-04",
+   "name": "cue ORDER(1,2) & ZONE(1,left,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00035795895382761955,
+    "plan": [
+     [
+      [
+       "ORDER",
+       "X",
+       "Y"
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       "X",
+       "left",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "global_verifications": 0,
+    "J1_sym": {
+     "train_N5": {
+      "n": 24300,
+      "counts": {
+       "SUCCESS": 24300
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 46
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 51
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 59
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 125
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 158
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 136
+     },
+     "total_failures": 0
+    }
+   }
+  },
+  "CUE-P2-35": {
+   "from": "P2-35",
+   "name": "cue ORDER(3,1) & ORDER(3,2)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.00035595777444541454,
+    "plan": [
+     [
+      [
+       "ORDER",
+       "X",
+       "Y"
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ORDER",
+       "X",
+       "Z"
+      ],
+      "O1"
+     ]
+    ],
+    "global_verifications": 0,
+    "J1_sym": {
+     "train_N5": {
+      "n": 24600,
+      "counts": {
+       "SUCCESS": 24600
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 46
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 54
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 63
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 114
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 142
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 180
+     },
+     "total_failures": 0
+    }
+   }
+  },
+  "CUE-P2-07": {
+   "from": "P2-07",
+   "name": "cue ORDER(1,2) & ZONE(2,right,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0004401670303195715,
+    "plan": [
+     [
+      [
+       "ORDER",
+       "X",
+       "Y"
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       "Y",
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "global_verifications": 0,
+    "J1_sym": {
+     "train_N5": {
+      "n": 24300,
+      "counts": {
+       "SUCCESS": 24300
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 37
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 49
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 84
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 111
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 133
+     },
+     "total_failures": 0
+    }
+   }
+  },
+  "CUE-P2-23": {
+   "from": "P2-23",
+   "name": "cue ORDER(2,1) & ZONE(1,right,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0003822080325335264,
+    "plan": [
+     [
+      [
+       "ORDER",
+       "X",
+       "Y"
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       "Y",
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "global_verifications": 0,
+    "J1_sym": {
+     "train_N5": {
+      "n": 24300,
+      "counts": {
+       "SUCCESS": 24300
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 37
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 49
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 84
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 111
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 133
+     },
+     "total_failures": 0
+    }
+   }
+  },
+  "CUE-P2-37": {
+   "from": "P2-37",
+   "name": "cue ORDER(3,1) & ZONE(1,right,half)",
+   "A-P": {
+    "status": "CONSTRUCTED",
+    "candidates": 1,
+    "lookups": 1,
+    "time_s": 0.0004791249521076679,
+    "plan": [
+     [
+      [
+       "ORDER",
+       "X",
+       "Y"
+      ],
+      "O1"
+     ],
+     [
+      [
+       "ZONE",
+       "Y",
+       "right",
+       "half"
+      ],
+      "Z1"
+     ]
+    ],
+    "global_verifications": 0,
+    "J1_sym": {
+     "train_N5": {
+      "n": 24300,
+      "counts": {
+       "SUCCESS": 24300
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 37
+     },
+     "train_N6": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 49
+     },
+     "train_N7": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 50
+     },
+     "unseen_N9": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 84
+     },
+     "unseen_N12": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 111
+     },
+     "unseen_N15": {
+      "n": 1000,
+      "counts": {
+       "SUCCESS": 1000
+      },
+      "failures": 0,
+      "first_failures": [],
+      "max_steps": 133
+     },
+     "total_failures": 0
+    }
+   }
+  }
+ },
+ "label": "PA-2 (DEV): goal pool from the grammar",
+ "J1_net": {
+  "P2-30": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-38": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-23": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-18": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-11": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-13": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-41": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-00": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-20": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  },
+  "P2-33": {
+   "train": {
+    "episodes": 200,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N9": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N12": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   },
+   "unseen_N15": {
+    "episodes": 50,
+    "mismatch_episodes": 0,
+    "failures": 0
+   }
+  }
+ }
+}

@@ -54,9 +54,14 @@ def main():
     else:
         v12 = "INCONCLUSIVE"
     S["P1.2"] = {"verdict": v12, "ratios": ratios}
-    g = lambda route: cost("M4", route) / cost("M2", route)
+    # POST-HOC fix of a crash (added after PA-1 ran): A-P constructed neither M2 nor M4, so its growth is undefined.
+    g = lambda route: (cost("M4", route) / cost("M2", route)) if cost("M4", route) and cost("M2", route) else None
     gp, gs = g("A-P"), g("A-SAME")
-    S["P1.3"] = {"verdict": "HOLDS" if gp <= 3 and gs >= 10 else "FALSIFIED", "A-P_growth": gp, "A-SAME_growth": gs}
+    if gp is None:
+        v13 = "NOT EVALUABLE AS WRITTEN (A-P did not construct M2 and M4)"
+    else:
+        v13 = "HOLDS" if gp <= 3 and gs >= 10 else "FALSIFIED"
+    S["P1.3"] = {"verdict": v13, "A-P_growth": gp, "A-SAME_growth": gs}
     fl = {t: d[t]["A-FLAT"]["status"] for t in ("T2", "T3", "M3", "M4")}
     refuted = [t for t in fl if fl[t] == "CONSTRUCTED" and cost(t, "A-FLAT") <= 2 * cost(t, "A-SAME")]
     S["P1.4"] = {"verdict": "HOLDS" if all(v != "CONSTRUCTED" for v in fl.values()) else "FALSIFIED", "A-FLAT_status": fl,

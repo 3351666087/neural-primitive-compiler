@@ -1,0 +1,131 @@
+{
+ "instance": {
+  "N": 5,
+  "cells": [
+   1,
+   0,
+   1,
+   2,
+   0
+  ],
+  "hazards": [
+   0,
+   1,
+   0,
+   0,
+   0
+  ],
+  "agent": 0,
+  "binding": {}
+ },
+ "feasible_exact": true,
+ "feasible_bfs": true,
+ "plans": {
+  "GROUP:G1 > ORDER:O1": {
+   "outcome": "TIMEOUT",
+   "steps": 320
+  },
+  "GROUP:G1 > ORDER:O2": {
+   "outcome": "TIMEOUT",
+   "steps": 320
+  },
+  "GROUP:G2 > ORDER:O1": {
+   "outcome": "TIMEOUT",
+   "steps": 320
+  },
+  "GROUP:G2 > ORDER:O2": {
+   "outcome": "TIMEOUT",
+   "steps": 320
+  },
+  "ORDER:O1 > GROUP:G1": {
+   "outcome": "TIMEOUT",
+   "steps": 320
+  },
+  "ORDER:O1 > GROUP:G2": {
+   "outcome": "TIMEOUT",
+   "steps": 320
+  },
+  "ORDER:O2 > GROUP:G1": {
+   "outcome": "TIMEOUT",
+   "steps": 320
+  },
+  "ORDER:O2 > GROUP:G2": {
+   "outcome": "TIMEOUT",
+   "steps": 320
+  }
+ },
+ "macro_trace_GROUP_G1_then_ORDER_O1": [
+  {
+   "achiever": "GROUP:G1",
+   "x": 3,
+   "y": 0,
+   "cells_after": [
+    2,
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "achiever": "ORDER:O1",
+   "x": 0,
+   "y": 3,
+   "cells_after": [
+    1,
+    0,
+    1,
+    2,
+    0
+   ]
+  },
+  {
+   "achiever": "GROUP:G1",
+   "x": 3,
+   "y": 0,
+   "cells_after": [
+    2,
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "achiever": "ORDER:O1",
+   "x": 0,
+   "y": 3,
+   "cells_after": [
+    1,
+    0,
+    1,
+    2,
+    0
+   ]
+  },
+  {
+   "achiever": "GROUP:G1",
+   "x": 3,
+   "y": 0,
+   "cells_after": [
+    2,
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "achiever": "ORDER:O1",
+   "x": 0,
+   "y": 3,
+   "cells_after": [
+    1,
+    0,
+    1,
+    2,
+    0
+   ]
+  }
+ ]
+}

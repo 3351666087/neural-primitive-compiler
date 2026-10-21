@@ -1,0 +1,110 @@
+{
+ "P1.1": {
+  "verdict": "FALSIFIED",
+  "per_target": {
+   "T1": {
+    "J1_sym_failures": 0,
+    "J1_net_ok": true,
+    "J2_failures": 0,
+    "holds": true
+   },
+   "T2": {
+    "status": "OUT_OF_CLASS",
+    "holds": false
+   },
+   "T3": {
+    "status": "OUT_OF_CLASS",
+    "holds": false
+   },
+   "M1": {
+    "J1_sym_failures": 0,
+    "J1_net_ok": true,
+    "J2_failures": 0,
+    "holds": true
+   },
+   "M2": {
+    "status": "OUT_OF_CLASS",
+    "holds": false
+   },
+   "M3": {
+    "status": "OUT_OF_CLASS",
+    "holds": false
+   },
+   "M4": {
+    "status": "OUT_OF_CLASS",
+    "holds": false
+   }
+  }
+ },
+ "P1.2": {
+  "verdict": "INCONCLUSIVE",
+  "ratios": {
+   "T3": null,
+   "M3": null,
+   "M4": null
+  }
+ },
+ "P1.3": {
+  "verdict": "NOT EVALUABLE AS WRITTEN (A-P did not construct M2 and M4)",
+  "A-P_growth": null,
+  "A-SAME_growth": 1.8041429698198181
+ },
+ "P1.4": {
+  "verdict": "HOLDS",
+  "A-FLAT_status": {
+   "T2": "NO_CONSISTENT_LIST",
+   "T3": "NO_CONSISTENT_LIST",
+   "M3": "NO_CONSISTENT_LIST",
+   "M4": "NO_CONSISTENT_LIST"
+  },
+  "A-H2_refuted_on": []
+ },
+ "P1.5": {
+  "verdict": "HOLDS",
+  "A-SAME_unseen_failures": {
+   "T1": 0,
+   "T3": 0,
+   "M1": 0,
+   "M2": 0,
+   "M3": 0,
+   "M4": 0
+  }
+ },
+ "P1.6": {
+  "verdict": "FALSIFIED",
+  "A-P_neurons_15_over_5": {
+   "T1": 2.4693877551020407,
+   "M1": 2.4414414414414414
+  },
+  "A-FSM_growth": {
+   "T1": [
+    8.987564766839379,
+    2.2179176755447942
+   ],
+   "T2": [
+    6.909090909090909,
+    2.180701754385965
+   ],
+   "T3": [
+    8.987564766839379,
+    2.2179176755447942
+   ],
+   "M1": [
+    6.909090909090909,
+    2.180701754385965
+   ],
+   "M2": [
+    8.987564766839379,
+    2.2179176755447942
+   ],
+   "M3": [
+    8.987564766839379,
+    2.2179176755447942
+   ],
+   "M4": [
+    8.987564766839379,
+    2.2179176755447942
+   ]
+  }
+ }
+}
