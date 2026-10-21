@@ -1,0 +1,1368 @@
+{
+ "label": "RAND-DEV: seeded uniform samples of ACH-DSL (seed 7)",
+ "specs": [
+  {
+   "id": "R-ORD-00",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "PARTNER"
+    ],
+    "region": "WINDOW_G2",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      {
+       "within": 2,
+       "of": "DEST"
+      },
+      "WINDOW_G1"
+     ]
+    },
+    "pick": "second_leftmost"
+   }
+  },
+  {
+   "id": "R-ORD-01",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "PARTNER"
+    ],
+    "region": {
+     "and": [
+      "NOT_WINDOW_G2",
+      "WINDOW_G1"
+     ]
+    },
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      "RIGHT_OF_DEST",
+      "WINDOW_G1"
+     ]
+    },
+    "pick": "rightmost"
+   }
+  },
+  {
+   "id": "R-ORD-02",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "within": 3,
+     "of": "DEST"
+    },
+    "pick": "leftmost"
+   }
+  },
+  {
+   "id": "R-ORD-03",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "PARTNER"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      "NOT_WINDOW_G1",
+      "NOT_WINDOW_G2"
+     ]
+    },
+    "pick": "second_rightmost"
+   }
+  },
+  {
+   "id": "R-ORD-04",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": "NOT_WINDOW_G2",
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "NOT_WINDOW_G1",
+    "pick": "leftmost"
+   }
+  },
+  {
+   "id": "R-ORD-05",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "PARTNER"
+    ],
+    "region": "WINDOW_G1",
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      "WINDOW_G1",
+      "ALL"
+     ]
+    },
+    "pick": "nearest_to_dest"
+   }
+  },
+  {
+   "id": "R-ORD-06",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": "NOT_WINDOW_G2",
+    "pick": "second_rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "within": 1,
+     "of": "DEST"
+    },
+    "pick": "nearest_to_dest"
+   }
+  },
+  {
+   "id": "R-ORD-07",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "WINDOW_G1",
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "WINDOW_G2",
+    "pick": "leftmost"
+   }
+  },
+  {
+   "id": "R-ORD-08",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "PARTNER"
+    ],
+    "region": "WINDOW_G2",
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "NOT_WINDOW_G2",
+    "pick": "nearest_to_dest"
+   }
+  },
+  {
+   "id": "R-ORD-09",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": {
+     "and": [
+      "WINDOW_G2",
+      "WINDOW_G1"
+     ]
+    },
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      {
+       "within": 1,
+       "of": "DEST"
+      },
+      "RIGHT_OF_DEST"
+     ]
+    },
+    "pick": "leftmost"
+   }
+  },
+  {
+   "id": "R-ORD-10",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "OTHER",
+     "PARTNER"
+    ],
+    "region": {
+     "and": [
+      "NOT_WINDOW_G2",
+      "NOT_WINDOW_G1"
+     ]
+    },
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "within": 3,
+     "of": "DEST"
+    },
+    "pick": "second_rightmost"
+   }
+  },
+  {
+   "id": "R-ORD-11",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "PARTNER"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "within": 1,
+     "of": "DEST"
+    },
+    "pick": "leftmost"
+   }
+  },
+  {
+   "id": "R-ORD-12",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": "NOT_WINDOW_G1",
+    "pick": "second_rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      "RIGHT_OF_DEST",
+      "LEFT_OF_DEST"
+     ]
+    },
+    "pick": "leftmost"
+   }
+  },
+  {
+   "id": "R-ORD-13",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "NOT_WINDOW_G2",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "WINDOW_G2",
+    "pick": "second_leftmost"
+   }
+  },
+  {
+   "id": "R-ORD-14",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": "WINDOW_G2",
+    "pick": "second_rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "within": 1,
+     "of": "DEST"
+    },
+    "pick": "leftmost"
+   }
+  },
+  {
+   "id": "R-ORD-15",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": "NOT_WINDOW_G2",
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "RIGHT_OF_DEST",
+    "pick": "nearest_to_dest"
+   }
+  },
+  {
+   "id": "R-ORD-16",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "PARTNER"
+    ],
+    "region": "NOT_WINDOW_G1",
+    "pick": "second_rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "NOT_WINDOW_G1",
+    "pick": "leftmost"
+   }
+  },
+  {
+   "id": "R-ORD-17",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": {
+     "and": [
+      "WINDOW_G1",
+      "ALL"
+     ]
+    },
+    "pick": "second_rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "NOT_WINDOW_G1",
+    "pick": "second_leftmost"
+   }
+  },
+  {
+   "id": "R-ORD-18",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "PARTNER"
+    ],
+    "region": {
+     "and": [
+      "WINDOW_G2",
+      "NOT_WINDOW_G1"
+     ]
+    },
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "within": 2,
+     "of": "DEST"
+    },
+    "pick": "nearest_to_dest"
+   }
+  },
+  {
+   "id": "R-ORD-19",
+   "atom_type": "ORDER",
+   "dest": {
+    "types": [
+     "OTHER",
+     "PARTNER"
+    ],
+    "region": "ALL",
+    "pick": "second_rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "within": 2,
+     "of": "DEST"
+    },
+    "pick": "second_rightmost"
+   }
+  },
+  {
+   "id": "R-ZON-00",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": "ALL",
+    "pick": "second_rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   },
+   "side": "any"
+  },
+  {
+   "id": "R-ZON-01",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": "ALL",
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ZONE",
+    "pick": "leftmost"
+   },
+   "side": "right"
+  },
+  {
+   "id": "R-ZON-02",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": "NOT_ZONE",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      "WINDOW_G1",
+      {
+       "within": 1,
+       "of": "DEST"
+      }
+     ]
+    },
+    "pick": "second_rightmost"
+   },
+   "side": "any"
+  },
+  {
+   "id": "R-ZON-03",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": {
+     "and": [
+      "NOT_ZONE",
+      "NOT_WINDOW_G1"
+     ]
+    },
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ZONE",
+    "pick": "second_rightmost"
+   },
+   "side": "left"
+  },
+  {
+   "id": "R-ZON-04",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      "WINDOW_G2",
+      "NOT_WINDOW_G1"
+     ]
+    },
+    "pick": "second_rightmost"
+   },
+   "side": "right"
+  },
+  {
+   "id": "R-ZON-05",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": "ZONE",
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      "RIGHT_OF_DEST",
+      "ALL"
+     ]
+    },
+    "pick": "nearest_to_dest"
+   },
+   "side": "left"
+  },
+  {
+   "id": "R-ZON-06",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "WINDOW_G2",
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "NOT_ZONE",
+    "pick": "second_leftmost"
+   },
+   "side": "any"
+  },
+  {
+   "id": "R-ZON-07",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "NOT_WINDOW_G1",
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "within": 1,
+     "of": "DEST"
+    },
+    "pick": "rightmost"
+   },
+   "side": "any"
+  },
+  {
+   "id": "R-ZON-08",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": "ZONE",
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "WINDOW_G2",
+    "pick": "leftmost"
+   },
+   "side": "any"
+  },
+  {
+   "id": "R-ZON-09",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": "ZONE",
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "within": 3,
+     "of": "DEST"
+    },
+    "pick": "second_leftmost"
+   },
+   "side": "left"
+  },
+  {
+   "id": "R-ZON-10",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": {
+     "and": [
+      "ZONE",
+      "WINDOW_G1"
+     ]
+    },
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "LEFT_OF_DEST",
+    "pick": "nearest_to_dest"
+   },
+   "side": "right"
+  },
+  {
+   "id": "R-ZON-11",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": "WINDOW_G2",
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ZONE",
+    "pick": "leftmost"
+   },
+   "side": "left"
+  },
+  {
+   "id": "R-ZON-12",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "WINDOW_G1",
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "within": 2,
+     "of": "DEST"
+    },
+    "pick": "second_leftmost"
+   },
+   "side": "any"
+  },
+  {
+   "id": "R-ZON-13",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "WINDOW_G1",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "NOT_ZONE",
+    "pick": "rightmost"
+   },
+   "side": "any"
+  },
+  {
+   "id": "R-ZON-14",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": "WINDOW_G1",
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "within": 1,
+     "of": "DEST"
+    },
+    "pick": "second_rightmost"
+   },
+   "side": "right"
+  },
+  {
+   "id": "R-ZON-15",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": {
+     "and": [
+      "NOT_WINDOW_G1",
+      "ZONE"
+     ]
+    },
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      {
+       "within": 3,
+       "of": "DEST"
+      },
+      {
+       "within": 2,
+       "of": "DEST"
+      }
+     ]
+    },
+    "pick": "leftmost"
+   },
+   "side": "right"
+  },
+  {
+   "id": "R-ZON-16",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "WINDOW_G1",
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "WINDOW_G1",
+    "pick": "leftmost"
+   },
+   "side": "left"
+  },
+  {
+   "id": "R-ZON-17",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": {
+     "and": [
+      "ZONE",
+      "NOT_WINDOW_G1"
+     ]
+    },
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      "NOT_WINDOW_G2",
+      "NOT_ZONE"
+     ]
+    },
+    "pick": "leftmost"
+   },
+   "side": "right"
+  },
+  {
+   "id": "R-ZON-18",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": "WINDOW_G2",
+    "pick": "second_rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "RIGHT_OF_DEST",
+    "pick": "rightmost"
+   },
+   "side": "right"
+  },
+  {
+   "id": "R-ZON-19",
+   "atom_type": "ZONE",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": "ALL",
+    "pick": "second_rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "within": 1,
+     "of": "DEST"
+    },
+    "pick": "leftmost"
+   },
+   "side": "any"
+  },
+  {
+   "id": "R-GRO-00",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": {
+     "and": [
+      "NOT_WINDOW_G2",
+      "ALL"
+     ]
+    },
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "within": 2,
+     "of": "DEST"
+    },
+    "pick": "nearest_to_dest"
+   }
+  },
+  {
+   "id": "R-GRO-01",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      "NOT_WINDOW_G2",
+      "ALL"
+     ]
+    },
+    "pick": "leftmost"
+   }
+  },
+  {
+   "id": "R-GRO-02",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "ALL",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "within": 3,
+     "of": "DEST"
+    },
+    "pick": "nearest_to_dest"
+   }
+  },
+  {
+   "id": "R-GRO-03",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "NOT_WINDOW_G1",
+    "pick": "second_rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "within": 1,
+     "of": "DEST"
+    },
+    "pick": "nearest_to_dest"
+   }
+  },
+  {
+   "id": "R-GRO-04",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": "NOT_WINDOW_G1",
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "NOT_WINDOW_G1",
+    "pick": "second_rightmost"
+   }
+  },
+  {
+   "id": "R-GRO-05",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": "NOT_WINDOW_G1",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "RIGHT_OF_DEST",
+    "pick": "leftmost"
+   }
+  },
+  {
+   "id": "R-GRO-06",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": "ALL",
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "LEFT_OF_DEST",
+    "pick": "rightmost"
+   }
+  },
+  {
+   "id": "R-GRO-07",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": "WINDOW_G2",
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "WINDOW_G1",
+    "pick": "second_rightmost"
+   }
+  },
+  {
+   "id": "R-GRO-08",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": {
+     "and": [
+      "WINDOW_G1",
+      "NOT_WINDOW_G2"
+     ]
+    },
+    "pick": "second_rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "RIGHT_OF_DEST",
+    "pick": "second_leftmost"
+   }
+  },
+  {
+   "id": "R-GRO-09",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": {
+     "and": [
+      "NOT_WINDOW_G1",
+      "ALL"
+     ]
+    },
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      {
+       "within": 2,
+       "of": "DEST"
+      },
+      {
+       "within": 1,
+       "of": "DEST"
+      }
+     ]
+    },
+    "pick": "second_rightmost"
+   }
+  },
+  {
+   "id": "R-GRO-10",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": {
+     "and": [
+      "NOT_WINDOW_G1",
+      "NOT_WINDOW_G2"
+     ]
+    },
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      "WINDOW_G2",
+      "WINDOW_G1"
+     ]
+    },
+    "pick": "leftmost"
+   }
+  },
+  {
+   "id": "R-GRO-11",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": {
+     "and": [
+      "WINDOW_G1",
+      "NOT_WINDOW_G1"
+     ]
+    },
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "NOT_WINDOW_G2",
+    "pick": "second_rightmost"
+   }
+  },
+  {
+   "id": "R-GRO-12",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": "NOT_WINDOW_G2",
+    "pick": "second_rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "WINDOW_G1",
+    "pick": "second_leftmost"
+   }
+  },
+  {
+   "id": "R-GRO-13",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY"
+    ],
+    "region": "WINDOW_G1",
+    "pick": "second_rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "NOT_WINDOW_G2",
+    "pick": "leftmost"
+   }
+  },
+  {
+   "id": "R-GRO-14",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": {
+     "and": [
+      "NOT_WINDOW_G1",
+      "ALL"
+     ]
+    },
+    "pick": "rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      "WINDOW_G1",
+      {
+       "within": 1,
+       "of": "DEST"
+      }
+     ]
+    },
+    "pick": "leftmost"
+   }
+  },
+  {
+   "id": "R-GRO-15",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": "WINDOW_G2",
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "ALL",
+    "pick": "nearest_to_dest"
+   }
+  },
+  {
+   "id": "R-GRO-16",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": {
+     "and": [
+      "ALL",
+      "WINDOW_G1"
+     ]
+    },
+    "pick": "second_leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      "WINDOW_G2",
+      "NOT_WINDOW_G2"
+     ]
+    },
+    "pick": "second_leftmost"
+   }
+  },
+  {
+   "id": "R-GRO-17",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "NOT_WINDOW_G1",
+    "pick": "second_rightmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "NOT_WINDOW_G1",
+    "pick": "second_leftmost"
+   }
+  },
+  {
+   "id": "R-GRO-18",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "OTHER"
+    ],
+    "region": "NOT_WINDOW_G1",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": {
+     "and": [
+      {
+       "within": 2,
+       "of": "DEST"
+      },
+      {
+       "within": 3,
+       "of": "DEST"
+      }
+     ]
+    },
+    "pick": "rightmost"
+   }
+  },
+  {
+   "id": "R-GRO-19",
+   "atom_type": "GROUP",
+   "dest": {
+    "types": [
+     "EMPTY",
+     "OTHER"
+    ],
+    "region": "WINDOW_G2",
+    "pick": "leftmost"
+   },
+   "source": {
+    "types": [
+     "OWN"
+    ],
+    "region": "RIGHT_OF_DEST",
+    "pick": "second_rightmost"
+   }
+  }
+ ]
+}
