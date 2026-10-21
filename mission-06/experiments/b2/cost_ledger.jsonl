@@ -35,3 +35,17 @@
 {"run": "G4-B2-g4p-batch5", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 72282, "tool_uses": 59, "acts": 52}
 {"run": "G4-B2-g4p-batch6", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 65406, "tool_uses": 37, "acts": 30}
 {"run": "G4-B2-g4p-batch7", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 70274, "tool_uses": 52, "acts": 45}
+{"run": "G4b-B2-batch0", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 67425, "tool_uses": 44}
+{"run": "G4b-B2-batch1", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 68119, "tool_uses": 47}
+{"run": "G4b-B2-batch2", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 69874, "tool_uses": 54}
+{"run": "G4b-B2-batch3", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 69031, "tool_uses": 52}
+{"run": "G4b-B2-batch4", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 68582, "tool_uses": 49}
+{"run": "G4b-B2-batch5", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 70908, "tool_uses": 58}
+{"run": "G4b-B2-batch6", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 66533, "tool_uses": 40}
+{"run": "G4b-B2-batch7", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 69651, "tool_uses": 53}
+{"run": "G4b-B2-posthoc-diag1-a", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 67000, "tool_uses": 42}
+{"run": "G4b-B2-posthoc-diag1-b", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 64014, "tool_uses": 31}
+{"run": "G4b-B2-posthoc-diag2-a", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 65434, "tool_uses": 37}
+{"run": "G4b-B2-posthoc-diag2-b", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 65092, "tool_uses": 34}
+{"run": "G4b-B2-posthoc-officiallit-a", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 66674, "tool_uses": 41}
+{"run": "G4b-B2-posthoc-officiallit-b", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 64026, "tool_uses": 31}

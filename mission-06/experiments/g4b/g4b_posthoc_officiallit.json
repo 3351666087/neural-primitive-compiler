@@ -1,0 +1,34 @@
+{
+ "label": "G4b POST-HOC re-judgement with the official look-at rule (not a locked result)",
+ "constructors": {
+  "CMP-0": {
+   "won_locked_rule": 33,
+   "won_official_rule": 33
+  },
+  "CMP-1": {
+   "won_locked_rule": 60,
+   "won_official_rule": 60
+  },
+  "SEQ": {
+   "won_locked_rule": 60,
+   "won_official_rule": 60
+  }
+ },
+ "B2_corrected": {
+  "goals": 24,
+  "won": 24,
+  "mean_steps": 14.041666666666666,
+  "claims_done_but_lost": 0,
+  "F3L_rerun_won": 6,
+  "note": "18 original episodes without LIT + 6 new F3L episodes judged with the official rule"
+ },
+ "CMP-1_same_goals": {
+  "success": 1.0,
+  "mean_steps": 26.416666666666668
+ },
+ "G4b-f_posthoc": "HOLDS",
+ "rerun_tokens": {
+  "off0": 66674,
+  "off1": 64026
+ }
+}
