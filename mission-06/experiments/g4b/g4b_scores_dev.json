@@ -1,0 +1,95 @@
+{
+ "set": "dev",
+ "goals": 40,
+ "arms": {
+  "CMP-0": {
+   "won": 17,
+   "success": 0.425,
+   "wilson95": [
+    0.28509392559950375,
+    0.5780493145800892
+   ],
+   "by_family": {
+    "F2": "9/10",
+    "F3": "4/10",
+    "F3L": "4/10",
+    "F4": "0/10"
+   },
+   "silent_failures": 0,
+   "take_abstentions": 20,
+   "orig_won": 0,
+   "mean_steps": 33.275,
+   "outcomes": {
+    "abstain: monitor: 'take'": 20,
+    "won": 17,
+    "abstain: budget exhausted": 3
+   }
+  },
+  "CMP-1": {
+   "won": 37,
+   "success": 0.925,
+   "wilson95": [
+    0.8013576647568946,
+    0.9741639742254119
+   ],
+   "by_family": {
+    "F2": "9/10",
+    "F3": "10/10",
+    "F3L": "9/10",
+    "F4": "9/10"
+   },
+   "silent_failures": 0,
+   "take_abstentions": 0,
+   "orig_won": 0,
+   "mean_steps": 35.5,
+   "outcomes": {
+    "won": 37,
+    "abstain: budget exhausted": 3
+   }
+  },
+  "SEQ": {
+   "won": 37,
+   "success": 0.925,
+   "wilson95": [
+    0.8013576647568946,
+    0.9741639742254119
+   ],
+   "by_family": {
+    "F2": "9/10",
+    "F3": "10/10",
+    "F3L": "9/10",
+    "F4": "9/10"
+   },
+   "silent_failures": 0,
+   "take_abstentions": 0,
+   "orig_won": 0,
+   "mean_steps": 35.525,
+   "outcomes": {
+    "won": 37,
+    "abstain: budget exhausted": 3
+   }
+  }
+ },
+ "paired": {
+  "CMP-1 vs CMP-0": {
+   "diff": 0.5,
+   "ci95": [
+    0.35,
+    0.65
+   ],
+   "mcnemar_p": 1.9073486328125e-06,
+   "CMP-1_only": 20,
+   "CMP-0_only": 0
+  },
+  "CMP-1 vs SEQ": {
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "CMP-1_only": 0,
+   "SEQ_only": 0
+  }
+ }
+}
