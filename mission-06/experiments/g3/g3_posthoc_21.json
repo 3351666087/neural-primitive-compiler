@@ -1,0 +1,45 @@
+{
+ "task_type": "pick_clean_then_place_in_recep",
+ "outcome": "abstain",
+ "outcome_detail": "examine",
+ "trace": [
+  {
+   "verb": "go",
+   "won_before": false,
+   "arrived": true,
+   "nothing_happens": false,
+   "won_after": false
+  },
+  {
+   "verb": "take",
+   "won_before": false,
+   "arrived": false,
+   "nothing_happens": false,
+   "won_after": false
+  },
+  {
+   "verb": "go",
+   "won_before": false,
+   "arrived": true,
+   "nothing_happens": false,
+   "won_after": false
+  },
+  {
+   "verb": "clean",
+   "won_before": false,
+   "arrived": false,
+   "nothing_happens": false,
+   "won_after": true
+  },
+  {
+   "verb": "go",
+   "won_before": true,
+   "masked": true
+  },
+  {
+   "verb": "examine",
+   "won_before": true,
+   "masked": true
+  }
+ ]
+}

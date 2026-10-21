@@ -1,0 +1,307 @@
+{
+ "discovery": {
+  "label": "Gate 3 phase A: discrimination experiments and location prior",
+  "games": 20,
+  "evidence": {
+   "failures": 11,
+   "examine_ok": 11,
+   "examine_fail": 0,
+   "retry_arrived": 0,
+   "retry_failed": 11,
+   "sym_tests": 9,
+   "sym_back_colocated": 0,
+   "sym_r0_noarrival": 9,
+   "steps": 456
+  },
+  "hypotheses": {
+   "H_co (already at r's place)": {
+    "examine_ok": 11,
+    "retry_failed": 11
+   },
+   "H_un (unreachable)": {
+    "examine_fail": 0
+   },
+   "H_noise (random)": {
+    "retry_arrived": 0
+   }
+  },
+  "contradictions_of_H_co": 0,
+  "L_co_adopted": true
+ },
+ "arms": {
+  "G2A-1": {
+   "games": 60,
+   "constructed": 60,
+   "won": 35,
+   "success": 0.5833333333333334,
+   "failures": 25,
+   "failures_abstain": 25,
+   "silent_failures (claims done but lost)": 0,
+   "abstained_but_won": 0,
+   "mean_steps": 17.5,
+   "mean_steps_won": 17.314285714285713,
+   "colocated_hits": 0,
+   "violations_by_command": {
+    "go": 23
+   },
+   "outcomes": {
+    "won": 35,
+    "abstain: monitor": 23,
+    "abstain: search exhausted": 1,
+    "abstain: budget exhausted": 1
+   },
+   "by_task_type": {
+    "look_at_obj_in_light": "6/10",
+    "pick_and_place_simple": "7/10",
+    "pick_clean_then_place_in_recep": "8/10",
+    "pick_cool_then_place_in_recep": "4/10",
+    "pick_heat_then_place_in_recep": "4/10",
+    "pick_two_obj_and_place": "6/10"
+   }
+  },
+  "B1": {
+   "games": 60,
+   "constructed": 60,
+   "won": 51,
+   "success": 0.85,
+   "failures": 9,
+   "failures_abstain": 9,
+   "silent_failures (claims done but lost)": 0,
+   "abstained_but_won": 0,
+   "mean_steps": 25.35,
+   "mean_steps_won": 21.823529411764707,
+   "colocated_hits": 0,
+   "violations_by_command": {
+    "go": 34
+   },
+   "outcomes": {
+    "won": 51,
+    "abstain: budget exhausted": 8,
+    "abstain: search exhausted": 1
+   },
+   "by_task_type": {
+    "look_at_obj_in_light": "8/10",
+    "pick_and_place_simple": "10/10",
+    "pick_clean_then_place_in_recep": "10/10",
+    "pick_cool_then_place_in_recep": "6/10",
+    "pick_heat_then_place_in_recep": "8/10",
+    "pick_two_obj_and_place": "9/10"
+   }
+  },
+  "G3-L": {
+   "games": 60,
+   "constructed": 60,
+   "won": 50,
+   "success": 0.8333333333333334,
+   "failures": 10,
+   "failures_abstain": 10,
+   "silent_failures (claims done but lost)": 0,
+   "abstained_but_won": 0,
+   "mean_steps": 26.0,
+   "mean_steps_won": 22.04,
+   "colocated_hits": 34,
+   "violations_by_command": {
+    "go": 34
+   },
+   "outcomes": {
+    "won": 50,
+    "abstain: budget exhausted": 9,
+    "abstain: search exhausted": 1
+   },
+   "by_task_type": {
+    "look_at_obj_in_light": "8/10",
+    "pick_and_place_simple": "10/10",
+    "pick_clean_then_place_in_recep": "10/10",
+    "pick_cool_then_place_in_recep": "6/10",
+    "pick_heat_then_place_in_recep": "7/10",
+    "pick_two_obj_and_place": "9/10"
+   }
+  },
+  "G3-S": {
+   "games": 60,
+   "constructed": 60,
+   "won": 51,
+   "success": 0.85,
+   "failures": 9,
+   "failures_abstain": 9,
+   "silent_failures (claims done but lost)": 0,
+   "abstained_but_won": 0,
+   "mean_steps": 25.35,
+   "mean_steps_won": 21.823529411764707,
+   "colocated_hits": 0,
+   "violations_by_command": {
+    "go": 34
+   },
+   "outcomes": {
+    "won": 51,
+    "abstain: budget exhausted": 8,
+    "abstain: search exhausted": 1
+   },
+   "by_task_type": {
+    "look_at_obj_in_light": "8/10",
+    "pick_and_place_simple": "10/10",
+    "pick_clean_then_place_in_recep": "10/10",
+    "pick_cool_then_place_in_recep": "6/10",
+    "pick_heat_then_place_in_recep": "8/10",
+    "pick_two_obj_and_place": "9/10"
+   }
+  },
+  "G3-LS": {
+   "games": 60,
+   "constructed": 60,
+   "won": 50,
+   "success": 0.8333333333333334,
+   "failures": 10,
+   "failures_abstain": 10,
+   "silent_failures (claims done but lost)": 0,
+   "abstained_but_won": 0,
+   "mean_steps": 26.0,
+   "mean_steps_won": 22.04,
+   "colocated_hits": 34,
+   "violations_by_command": {
+    "go": 34
+   },
+   "outcomes": {
+    "won": 50,
+    "abstain: budget exhausted": 9,
+    "abstain: search exhausted": 1
+   },
+   "by_task_type": {
+    "look_at_obj_in_light": "8/10",
+    "pick_and_place_simple": "10/10",
+    "pick_clean_then_place_in_recep": "10/10",
+    "pick_cool_then_place_in_recep": "6/10",
+    "pick_heat_then_place_in_recep": "7/10",
+    "pick_two_obj_and_place": "9/10"
+   }
+  },
+  "G3-LP": {
+   "games": 60,
+   "constructed": 60,
+   "won": 53,
+   "success": 0.8833333333333333,
+   "failures": 7,
+   "failures_abstain": 7,
+   "silent_failures (claims done but lost)": 0,
+   "abstained_but_won": 1,
+   "mean_steps": 18.15,
+   "mean_steps_won": 14.735849056603774,
+   "colocated_hits": 24,
+   "violations_by_command": {
+    "go": 25,
+    "examine": 1
+   },
+   "outcomes": {
+    "won": 53,
+    "abstain: budget exhausted": 6,
+    "abstain: search exhausted": 1
+   },
+   "by_task_type": {
+    "look_at_obj_in_light": "8/10",
+    "pick_and_place_simple": "10/10",
+    "pick_clean_then_place_in_recep": "10/10",
+    "pick_cool_then_place_in_recep": "7/10",
+    "pick_heat_then_place_in_recep": "9/10",
+    "pick_two_obj_and_place": "9/10"
+   }
+  }
+ },
+ "B2": {
+  "label": "Gate 3 B2 (Opus 5.5 subagent) on the 12-game subset",
+  "games": 12,
+  "games_idx": [
+   25,
+   1,
+   45,
+   10,
+   56,
+   2,
+   11,
+   48,
+   37,
+   57,
+   29,
+   36
+  ],
+  "won": 12,
+  "success": 1.0,
+  "per_type": {
+   "look_at_obj_in_light": "2/2",
+   "pick_and_place_simple": "2/2",
+   "pick_clean_then_place_in_recep": "2/2",
+   "pick_cool_then_place_in_recep": "2/2",
+   "pick_heat_then_place_in_recep": "2/2",
+   "pick_two_obj_and_place": "2/2"
+  },
+  "mean_steps": 7.333333333333333,
+  "ends": [
+   "agent done",
+   "agent done",
+   "agent done",
+   "agent done",
+   "agent done",
+   "agent done",
+   "agent done",
+   "agent done",
+   "agent done",
+   "agent done",
+   "agent done",
+   "agent done"
+  ],
+  "batches": {
+   "0": {
+    "acts": 23,
+    "games": 3,
+    "protocol_calls": 30,
+    "tokens": 63845,
+    "tool_uses": 30,
+    "extra_tool_calls": 0
+   },
+   "1": {
+    "acts": 17,
+    "games": 3,
+    "protocol_calls": 24,
+    "tokens": 62045,
+    "tool_uses": 24,
+    "extra_tool_calls": 0
+   },
+   "2": {
+    "acts": 21,
+    "games": 3,
+    "protocol_calls": 28,
+    "tokens": 63587,
+    "tool_uses": 28,
+    "extra_tool_calls": 0
+   },
+   "3": {
+    "acts": 27,
+    "games": 3,
+    "protocol_calls": 34,
+    "tokens": 64751,
+    "tool_uses": 34,
+    "extra_tool_calls": 0
+   }
+  },
+  "tokens_total": 254228,
+  "same_games": {
+   "G2A-1": 0.5,
+   "B1": 0.9166666666666666,
+   "G3-L": 0.8333333333333334,
+   "G3-S": 0.9166666666666666,
+   "G3-LS": 0.8333333333333334,
+   "G3-LP": 0.9166666666666666
+  }
+ },
+ "silent_failures_G3-S_vs_G3-L": [
+  0,
+  0
+ ],
+ "predictions": {
+  "G3-a (discrimination tests all support H_co; symmetry consistent; L_co adopted)": "HOLDS",
+  "G3-b (G3-L >= B1 - 0.03 and >= G2A-1 + 0.10)": "HOLDS",
+  "G3-c (G3-L: no silent failures)": "HOLDS",
+  "G3-d (G3-S >= B1 - 0.03)": "HOLDS",
+  "G3-e (G3-LP mean steps <= 0.75 x G3-L, success not lower)": "HOLDS",
+  "G3-f (B2 >= G3-LP on the 12-game subset)": "HOLDS"
+ }
+}

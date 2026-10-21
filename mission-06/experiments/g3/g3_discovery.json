@@ -1,0 +1,311 @@
+{
+ "label": "Gate 3 phase A: discrimination experiments and location prior",
+ "games": 20,
+ "evidence": {
+  "failures": 11,
+  "examine_ok": 11,
+  "examine_fail": 0,
+  "retry_arrived": 0,
+  "retry_failed": 11,
+  "sym_tests": 9,
+  "sym_back_colocated": 0,
+  "sym_r0_noarrival": 9,
+  "steps": 456
+ },
+ "hypotheses": {
+  "H_co (already at r's place)": {
+   "examine_ok": 11,
+   "retry_failed": 11
+  },
+  "H_un (unreachable)": {
+   "examine_fail": 0
+  },
+  "H_noise (random)": {
+   "retry_arrived": 0
+  }
+ },
+ "contradictions_of_H_co": 0,
+ "L_co_adopted": true,
+ "P_loc": {
+  "book": {
+   "bed": 7,
+   "shelf": 1,
+   "countertop": 1,
+   "cabinet": 1,
+   "desk": 1,
+   "drawer": 2,
+   "sidetable": 1
+  },
+  "laptop": {
+   "bed": 7,
+   "desk": 3,
+   "diningtable": 3,
+   "ottoman": 1,
+   "sofa": 1
+  },
+  "pillow": {
+   "bed": 10,
+   "sofa": 2,
+   "ottoman": 1
+  },
+  "teddybear": {
+   "bed": 3
+  },
+  "alarmclock": {
+   "desk": 5,
+   "sidetable": 3,
+   "shelf": 2,
+   "dresser": 1
+  },
+  "cd": {
+   "desk": 5,
+   "drawer": 4,
+   "garbagecan": 2,
+   "dresser": 1,
+   "shelf": 1
+  },
+  "creditcard": {
+   "desk": 2,
+   "shelf": 2,
+   "drawer": 6,
+   "diningtable": 1,
+   "sofa": 2,
+   "countertop": 1,
+   "dresser": 2,
+   "sidetable": 1
+  },
+  "keychain": {
+   "desk": 6,
+   "shelf": 1,
+   "sidetable": 3,
+   "coffeetable": 1,
+   "diningtable": 1,
+   "armchair": 1,
+   "sofa": 1,
+   "drawer": 3,
+   "dresser": 1
+  },
+  "pen": {
+   "desk": 2,
+   "shelf": 3,
+   "drawer": 3,
+   "dresser": 1
+  },
+  "pencil": {
+   "desk": 5,
+   "shelf": 3,
+   "garbagecan": 1,
+   "drawer": 3
+  },
+  "cellphone": {
+   "shelf": 2,
+   "desk": 1,
+   "bed": 3,
+   "drawer": 4
+  },
+  "desklamp": {
+   "shelf": 2,
+   "coffeetable": 1,
+   "dresser": 1
+  },
+  "tissuebox": {
+   "desk": 5,
+   "coffeetable": 1,
+   "diningtable": 1,
+   "garbagecan": 1,
+   "cart": 2,
+   "countertop": 1,
+   "drawer": 3
+  },
+  "mug": {
+   "shelf": 2,
+   "sidetable": 1,
+   "coffeemachine": 1,
+   "countertop": 5,
+   "cabinet": 3,
+   "diningtable": 1,
+   "desk": 2
+  },
+  "box": {
+   "shelf": 2,
+   "coffeetable": 1,
+   "sofa": 1,
+   "ottoman": 1
+  },
+  "houseplant": {
+   "shelf": 2,
+   "coffeetable": 1,
+   "countertop": 2
+  },
+  "candle": {
+   "coffeetable": 1,
+   "diningtable": 1,
+   "sidetable": 1,
+   "countertop": 2,
+   "cabinet": 1,
+   "toilet": 1
+  },
+  "plate": {
+   "coffeetable": 1,
+   "diningtable": 2,
+   "cabinet": 9
+  },
+  "remotecontrol": {
+   "coffeetable": 2,
+   "dresser": 1,
+   "sofa": 1
+  },
+  "television": {
+   "coffeetable": 1,
+   "dresser": 1
+  },
+  "watch": {
+   "coffeetable": 2,
+   "diningtable": 1,
+   "dresser": 1,
+   "desk": 2,
+   "drawer": 1
+  },
+  "statue": {
+   "diningtable": 2,
+   "countertop": 1,
+   "desk": 3,
+   "coffeetable": 1,
+   "dresser": 1
+  },
+  "newspaper": {
+   "sofa": 2
+  },
+  "cup": {
+   "cabinet": 4,
+   "countertop": 1,
+   "diningtable": 2
+  },
+  "peppershaker": {
+   "cabinet": 10,
+   "countertop": 3,
+   "diningtable": 3,
+   "drawer": 1
+  },
+  "soapbottle": {
+   "cabinet": 2,
+   "countertop": 6,
+   "drawer": 1,
+   "diningtable": 1,
+   "cart": 1,
+   "shelf": 1,
+   "toilet": 1
+  },
+  "saltshaker": {
+   "cabinet": 4,
+   "countertop": 5,
+   "diningtable": 1
+  },
+  "winebottle": {
+   "cabinet": 1
+  },
+  "vase": {
+   "cabinet": 1,
+   "countertop": 1
+  },
+  "bowl": {
+   "countertop": 3,
+   "diningtable": 1,
+   "cabinet": 4,
+   "desk": 3,
+   "shelf": 1
+  },
+  "bread": {
+   "countertop": 4,
+   "diningtable": 4
+  },
+  "butterknife": {
+   "countertop": 6,
+   "diningtable": 2
+  },
+  "dishsponge": {
+   "countertop": 7,
+   "cabinet": 5
+  },
+  "kettle": {
+   "countertop": 2,
+   "cabinet": 2
+  },
+  "knife": {
+   "countertop": 5,
+   "coffeemachine": 1,
+   "diningtable": 3
+  },
+  "lettuce": {
+   "countertop": 4,
+   "diningtable": 2
+  },
+  "apple": {
+   "countertop": 3
+  },
+  "fork": {
+   "countertop": 7,
+   "diningtable": 2
+  },
+  "pot": {
+   "countertop": 1,
+   "diningtable": 1
+  },
+  "spoon": {
+   "countertop": 4,
+   "diningtable": 1
+  },
+  "pan": {
+   "countertop": 2,
+   "cabinet": 1
+  },
+  "spatula": {
+   "countertop": 5,
+   "diningtable": 1
+  },
+  "tomato": {
+   "countertop": 6,
+   "diningtable": 1
+  },
+  "ladle": {
+   "countertop": 1,
+   "drawer": 1
+  },
+  "potato": {
+   "countertop": 3
+  },
+  "sink": {
+   "countertop": 1
+  },
+  "egg": {
+   "countertop": 1
+  },
+  "cloth": {
+   "bathtubbasin": 1,
+   "cart": 1,
+   "countertop": 1,
+   "cabinet": 2,
+   "toilet": 1
+  },
+  "spraybottle": {
+   "countertop": 3,
+   "shelf": 1,
+   "cabinet": 1
+  },
+  "handtowel": {
+   "handtowelholder": 2
+  },
+  "toiletpaper": {
+   "shelf": 1,
+   "cabinet": 1,
+   "toiletpaperhanger": 1
+  },
+  "soapbar": {
+   "sinkbasin": 1,
+   "garbagecan": 1
+  },
+  "towel": {
+   "towelholder": 2
+  }
+ }
+}

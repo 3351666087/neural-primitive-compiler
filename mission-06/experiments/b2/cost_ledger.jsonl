@@ -3,3 +3,7 @@
 {"run": "G2-ALF-B2-batch1", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 76179, "tool_uses": 71, "acts": 65}
 {"run": "G2-ALF-B2-batch2", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 67955, "tool_uses": 36, "acts": 29}
 {"run": "G2-ALF-B2-batch3", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 64885, "tool_uses": 22, "acts": 15}
+{"run": "G3-B2-batch0", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 63845, "tool_uses": 30, "acts": 23}
+{"run": "G3-B2-batch1", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 62045, "tool_uses": 24, "acts": 17}
+{"run": "G3-B2-batch2", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 63587, "tool_uses": 28, "acts": 21}
+{"run": "G3-B2-batch3", "date": "2026-10-21", "route": "Claude Code subagent", "model": "Opus 5.5 (inherited)", "subagent_tokens": 64751, "tool_uses": 34, "acts": 27}
