@@ -1,0 +1,40 @@
+{
+ "name": "beta",
+ "author": "held-out custodian",
+ "interior_walls": 6,
+ "kinds": {
+  "k1": {"solid": true,
+         "latent": {"state": {"domain": [0, 1, 2], "init": 0}}},
+  "k2": {"visibility": "revealed",
+         "consumable": {"need": "water", "amount": 35, "cooldown": 25}},
+  "k3": {"pickable": true,
+         "latent": {"rooted": {"domain": [0, 1], "init": 0}}},
+  "k4": {"pickable": true,
+         "consumable": {"need": "food", "amount": 40, "vanish": true}},
+  "k5": {"solid": true,
+         "consumable": {"need": "food", "amount": 10, "cooldown": 120}}
+ },
+ "placement": {"k1": 4, "k2": 4, "k3": 3, "k5": 1},
+ "relations": [{"kind": "k1", "name": "link"}],
+ "placement_constraints": [{"type": "near", "kind": "k2", "to": "k1", "dist": 1}],
+ "nonstationarity": [{"type": "reshuffle_relation", "kind": "k1", "name": "link", "every": 1500}],
+ "rules": [
+  {"on": "poke", "kind": "k1",
+   "guard": ["==", ["latent", ["related", "link"], "state"], 0],
+   "effects": [["set", ["related", "link"], "state", 1]]},
+  {"on": "tick", "kind": "k1",
+   "guard": ["==", ["latent", "self", "state"], 1],
+   "effects": [["set", "self", "state", 2], ["mark", "on"], ["reveal", "k2", 2, 40], ["log", "relay"]]},
+  {"on": "tick", "kind": "k1",
+   "guard": ["and", ["==", ["latent", "self", "state"], 2], [">=", ["since", "on"], 40]],
+   "effects": [["set", "self", "state", 0]]},
+  {"on": "drop", "kind": "k3",
+   "guard": ["exists_near", "k1", 1, ["==", ["latent", "it", "state"], 2]],
+   "effects": [["set", "self", "rooted", 1], ["mark", "root"], ["log", "graft"]]},
+  {"on": "pick", "kind": "k3",
+   "effects": [["set", "self", "rooted", 0]]},
+  {"on": "tick", "kind": "k3",
+   "guard": ["and", ["==", ["latent", "self", "rooted"], 1], [">=", ["since", "root"], 12]],
+   "effects": [["set", "self", "rooted", 0], ["spawn", "k4", "self", 1]]}
+ ]
+}

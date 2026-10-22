@@ -1,0 +1,26 @@
+{
+ "stage1_events": [
+  "chime"
+ ],
+ "stage2_events": [
+  "chord"
+ ],
+ "demos": [
+  {
+   "seed": 1,
+   "actions": [
+    "POKE"
+   ],
+   "expect_event": "chime"
+  },
+  {
+   "seed": 253,
+   "actions": [
+    "POKE",
+    "S",
+    "POKE"
+   ],
+   "expect_event": "chord"
+  }
+ ]
+}

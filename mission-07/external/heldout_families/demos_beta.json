@@ -1,0 +1,30 @@
+{
+ "stage1_events": [
+  "relay"
+ ],
+ "stage2_events": [
+  "graft"
+ ],
+ "demos": [
+  {
+   "seed": 37,
+   "actions": [
+    "POKE",
+    "WAIT"
+   ],
+   "expect_event": "relay"
+  },
+  {
+   "seed": 283,
+   "actions": [
+    "E",
+    "PICK",
+    "E",
+    "POKE",
+    "N",
+    "DROP"
+   ],
+   "expect_event": "graft"
+  }
+ ]
+}
