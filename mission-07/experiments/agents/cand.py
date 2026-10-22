@@ -28,6 +28,10 @@ The candidate shares the substrate, the structure meta-language M, the learner a
    them; discriminating designs use the likelihood table; experiment acts on solid targets are performed from the
    neighbour whose view covers the most cells where effects plausibly appear (vantage); predictions use the
    structure's delay.
+9. rev5: explaining away (a proposed M1 / M2 must predict >= min_support observed effects that held structures do
+   not); continual comparison on the shortest recent window holding >= 40 events of the structure's kind (dense
+   evidence: recent data; sparse evidence: up to the learner's window); structures with failing predictions are
+   compared on the last RECENT steps.
 8. rev4: continual model comparison: at every acquisition each held M1 / M2 is compared with a refit of its kind on
    the last RECENT steps (replaced when the refit's likelihood ratio there is higher by >= 4).
 7. rev3 (after amendment A4): only effects that no held structure predicted (anomalies) make a key worth
@@ -138,6 +142,7 @@ class Candidate(Agent):
         self.last_fit = -10 ** 9
         self.revise_due = set()
         self.anomalies = []                     # rev3: (t, frame, cell) of effects no held structure predicted
+        self.rejected = 0                       # rev5: proposals rejected as redundant
         self.act_ok = Counter()                 # (K, E) successes
         self.act_fail = Counter()               # (K, E) failures
         self.last_acted = {}                    # (frame, x, y) -> t of the last own act there
@@ -324,13 +329,15 @@ class Candidate(Agent):
         self.last_fit = self.mem.t
         self.fit_due = False
         for s in self.learner.fit(self.mem, self.structs, self.mem.t):
+            if s.form in ("M1", "M2") and not self.explains_new(s):
+                self.rejected += 1                              # rev5: redundant with held structures
+                continue
             self.add_structure(s, trigger="fit")
-        # rev4: continual model comparison: every held M1 / M2 competes at each acquisition with a refit of its kind on
-        # the recent data (structures with failing predictions first); a held structure no longer blocks a better one
-        order = sorted((sid for sid, s in self.structs.items() if s.form in ("M1", "M2")),
-                       key=lambda sid: sid not in self.revise_due)
-        for sid in order:
-            self.try_revision(sid)
+        # rev4/rev5: continual model comparison. A held M1 / M2 whose predictions fail is compared with a refit of its
+        # kind on the last RECENT steps (the world may have changed); every other held M1 / M2 with a refit on the
+        # learner's full window (more data, so sparse evidence is not lost)
+        for sid in [sid for sid, s in self.structs.items() if s.form in ("M1", "M2")]:
+            self.try_revision(sid, window=RECENT if sid in self.revise_due else self.evidence_window(self.structs[sid]))
         self.revise_due.clear()
         self.update_discriminators()
 
@@ -375,7 +382,80 @@ class Candidate(Agent):
             return 0.0
         return lr._lr2(pos, pos + neg, posn, posn + negn)
 
-    def try_revision(self, sid):
+    def effects_explained(self, st, ev):
+        """(t, cell) of the observed timed effects in `ev` that structure st predicts (M1: an effect whose possible
+        interval contains a trigger step plus the delay, within 3 cells; M2: an effect after the second event of a pair
+        whose first event had the context)."""
+        lr, mem, p = self.learner, self.mem, st.params
+        fx = [f for f in ev if f["type"] == p.get("ftype") and f.get("kind") == p.get("K2") and f.get("gap", 99) <= 3]
+        out = set()
+        if not fx:
+            return out
+        if st.form == "M1":
+            inst = defaultdict(list)
+            for a in ev:
+                if a["type"] == p["E"] and a.get("kind") == p["K"]:
+                    inst[(a["frame"],) + tuple(a["cell"])].append(a["t"])
+            d = p.get("delta")
+            for (fr, x, y), ts in inst.items():
+                if p.get("ctx") is not None and not lr._near_kind(mem, fr, (x, y), p["ctx"], p["dctx"]):
+                    continue
+                c, mark = 0, ts[0]
+                for t in ts:
+                    while c > 0 and t - mark >= p["D"]:
+                        c -= 1
+                        mark += p["D"]
+                    c = min(c + 1, p["theta"])
+                    mark = t
+                    if c >= p["theta"]:
+                        for f in fx:
+                            if f["frame"] == fr and 0 < cheb(f["cell"], (x, y)) <= 3 and \
+                                    ((f["t"] - f["gap"] + 1 <= t + d <= f["t"]) if d else (0 <= f["t"] - t <= W + 1)):
+                                out.add((f["t"], tuple(f["cell"])))
+                        if p["reset"]:
+                            c = 0
+        elif st.form == "M2":
+            counter = self.structs.get(p.get("q_struct")) if p.get("q_pred") else None
+            if p.get("q_pred") and counter is None:
+                return out
+            by_inst = defaultdict(list)
+            for a in ev:
+                if a["type"] == p["E"] and a.get("kind") == p["K"]:
+                    by_inst[(a["frame"],) + tuple(a["cell"])].append(a)
+            for lst in by_inst.values():
+                for e1, e2 in zip(lst, lst[1:]):
+                    if e2["t"] - e1["t"] > 300 or not lr._q_at(mem, e1, p["Kq"], p["dq"], counter, p.get("q_v")):
+                        continue
+                    for f in fx:
+                        if f["frame"] == e2["frame"] and 0 <= f["t"] - e2["t"] <= W and 0 < cheb(f["cell"], e2["cell"]) <= 3:
+                            out.add((f["t"], tuple(f["cell"])))
+        return out
+
+    def evidence_window(self, st, need=40):
+        """rev5: the shortest recent window (RECENT, 2 x RECENT, ... up to the learner's window) that holds at least
+        `need` events of the structure's event and kind: dense evidence is compared on recent data, sparse evidence on
+        more of the past."""
+        p = st.params
+        times = [e["t"] for e in self.mem.events if e["type"] == p["E"] and e.get("kind") == p["K"]]
+        w = RECENT
+        while w < self.learner.window and sum(1 for t in times if t >= self.mem.t - w) < need:
+            w += RECENT
+        return min(w, self.learner.window)
+
+    def explains_new(self, st):
+        """rev5 (explaining away): a proposed structure is adopted only if it predicts at least min_support observed
+        effects that no held structure predicts."""
+        ev = [e for e in self.mem.events if e["t"] >= self.mem.t - self.learner.window]
+        new = self.effects_explained(st, ev)
+        if len(new) < self.learner.min_support:
+            return False
+        held = set()
+        for h in self.structs.values():
+            if h.form in ("M1", "M2") and (h.params.get("ftype"), h.params.get("K2")) == (st.params.get("ftype"), st.params.get("K2")):
+                held |= self.effects_explained(h, ev)
+        return len(new - held) >= self.learner.min_support
+
+    def try_revision(self, sid, window=RECENT):
         """rev2: prediction failures of a held M1 / M2 trigger a refit of its kind on the last RECENT steps; the refit
         replaces the structure when it passes the learner's acceptance test on those steps and its likelihood ratio
         there exceeds the current structure's by >= 4 (the world may have changed, so the recent data decide)."""
@@ -385,7 +465,7 @@ class Candidate(Agent):
         K = s.params["K"]
         t = self.mem.t
         lr = self.learner
-        ev = [e for e in self.mem.events if e["t"] >= t - RECENT]
+        ev = [e for e in self.mem.events if e["t"] >= t - window]
         if s.form == "M1":
             new = lr.fit_m1(self.mem, [e for e in ev if e["type"] in FX or e.get("kind") == K], set(), t)
             if new is None or new.params["K"] != K or new.params == s.params:

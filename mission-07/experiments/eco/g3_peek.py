@@ -15,7 +15,9 @@ def main():
     fam = load_family(FAM)
     probes, classes = G.make_probes(fam)
     for stem in sys.argv[2:]:
-        r = S2.score_run(stem, out_dir(sys.argv[1]), probes, classes, twin_stem=f"{stem}.twin")
+        d = Path(sys.argv[1]) if Path(sys.argv[1]).is_dir() else out_dir(sys.argv[1])
+        twin = f"{stem}.twin" if (d / f"{stem}.twin.judge.json.gz").exists() else None
+        r = S2.score_run(stem, d, probes, classes, twin_stem=twin)
         print("==", stem, "lives", r["lives"])
         for sid, s in r["structures"].items():
             p = s["params"]

@@ -370,6 +370,7 @@ class Agent:
         self.attempts = defaultdict(deque)
         self.aff = defaultdict(Counter)            # (action, face literal) -> Counter{vital: gain}
         self.fails = 0
+        self.remedy_tries = Counter()              # (vital, action) -> tries while that vital was low
         self.left_view = {}                        # (frame, R, C) -> block, cells that left the view
 
     # ---------------- predicates
@@ -624,7 +625,11 @@ class Agent:
                 if st == "FACED":
                     return action
                 return st
-        # untried: try DO on the nearest unfamiliar visible thing
+        # no known remedy: try the acting actions in turn (each at most 3 times per vital), then DO on unfamiliar things
+        for a in ACTING:
+            if self.remedy_tries[(i, a)] < 3:
+                self.remedy_tries[(i, a)] += 1
+                return a
         return self.explore_act()
 
     def chase_mob(self, m):
@@ -739,8 +744,8 @@ class B3Novelty(Agent):
 
 class Candidate(B4LP):
     """The ECO candidate's organisation ported to Craftax: needs, learning progress over L(S), and experiment goals
-    X1 (action a while facing block B with the currently held items as context: each (a, B, held) key untested until
-    3 trials, 8 if an inventory or block effect followed), with acquisition after experiments (at most every 200 steps) and every 2,000 steps."""
+    X1 (action a while facing block B with the currently held items and their counts (1, 2, 3+) as context: each
+    (a, B, held) key untested until 3 trials, 8 if an inventory or block effect followed), with acquisition after experiments (at most every 200 steps) and every 2,000 steps."""
     name = "CAND"
 
     def __init__(self, seed, **kw):
@@ -753,7 +758,7 @@ class Candidate(B4LP):
     def propose(self):
         pool = []
         blocks = sorted({b for (f, R, C), (b, ts) in self.mem.cells.items() if f == self.mem.frame})
-        held = tuple(i for i, k in enumerate(self.o["inv"]) if k > 0)     # context: which items are held now
+        held = tuple((i, min(k, 3)) for i, k in enumerate(self.o["inv"]) if k > 0)   # context: held items, counts 1/2/3+
         for B in blocks:
             for a in ACTING:
                 key = (a, B, held)
@@ -761,6 +766,18 @@ class Candidate(B4LP):
                 v = max(0.0, 1.0 - n / (8 if m else 3))
                 if v > 0:
                     pool.append((v, ("exp", key)))
+        # X2: contexts made reachable by learned rules: hold k of an item that a learned rule produces, then act
+        producible = sorted({ITEMS.index(n) for st in self.structs.values() if st.form == "M6"
+                             for n, d in st.params["effect"][0] if d > 0})
+        for i in producible:
+            for k in (1, 2, 3):
+                for B in blocks:
+                    for a in ACTING:
+                        key = ("X2", a, B, i, k)
+                        n, m = self.tests[key], self.effects[key]
+                        v = max(0.0, 1.0 - n / (8 if m else 3))
+                        if v > 0:
+                            pool.append((v * 0.5, ("exp2", key)))
         for p in self.s0_predicates() + [p for p, _ in self.learned_predicates()]:
             pool.append((self.lp(p) + 0.05, ("mastery", p)))
         if not pool:
@@ -768,6 +785,10 @@ class Candidate(B4LP):
         w, ch = self.rng.choices(pool, weights=[x[0] for x in pool])[0]
         if ch[0] == "mastery":
             return ([ch[1]], "mastery", w)
+        if ch[0] == "exp2":
+            _, a, B, i, k = ch[1]
+            self.exp = {"key": ch[1], "action": a, "B": B, "done": False, "t0": self.mem.t, "setup": f"inv:{i}>={k}"}
+            return ([f"inv:{i}>={k}", f"face:{B}"], "experiment", w)
         a, B, held = ch[1]
         self.exp = {"key": ch[1], "action": a, "B": B, "done": False, "t0": self.mem.t}
         return ([f"face:{B}"], "experiment", w)
@@ -803,6 +824,13 @@ class Candidate(B4LP):
 
     def execute(self):
         if self.exp is not None and self.goal_stack and self.goal_stack[-1][0] == self.exp.get("gid") and not self.o["sleeping"]:
+            setup = self.exp.get("setup")
+            if setup and not self.holds(setup):               # make the context true through learned rules first
+                st = self.achieve(setup, depth=0)
+                if st:
+                    return st
+                self.exp["done"] = True                         # cannot be set up now: end the trial without acting
+                return "NOOP"
             st = self.go_face(self.exp["B"])
             if st == "FACED":
                 self.exp["done"] = True
