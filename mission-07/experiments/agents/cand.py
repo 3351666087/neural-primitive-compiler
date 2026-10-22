@@ -28,6 +28,8 @@ The candidate shares the substrate, the structure meta-language M, the learner a
    them; discriminating designs use the likelihood table; experiment acts on solid targets are performed from the
    neighbour whose view covers the most cells where effects plausibly appear (vantage); predictions use the
    structure's delay.
+8. rev4: continual model comparison: at every acquisition each held M1 / M2 is compared with a refit of its kind on
+   the last RECENT steps (replaced when the refit's likelihood ratio there is higher by >= 4).
 7. rev3 (after amendment A4): only effects that no held structure predicted (anomalies) make a key worth
    replicating up to 8 times.
 5. Experiment values (rev1): a key whose trials were followed by a timed effect near its targets is replicated up to
@@ -323,10 +325,13 @@ class Candidate(Agent):
         self.fit_due = False
         for s in self.learner.fit(self.mem, self.structs, self.mem.t):
             self.add_structure(s, trigger="fit")
-        if self.triggered:
-            for sid in list(self.revise_due):
-                self.try_revision(sid)
-            self.revise_due.clear()
+        # rev4: continual model comparison: every held M1 / M2 competes at each acquisition with a refit of its kind on
+        # the recent data (structures with failing predictions first); a held structure no longer blocks a better one
+        order = sorted((sid for sid, s in self.structs.items() if s.form in ("M1", "M2")),
+                       key=lambda sid: sid not in self.revise_due)
+        for sid in order:
+            self.try_revision(sid)
+        self.revise_due.clear()
         self.update_discriminators()
 
     def m1_lr2(self, params, ev):

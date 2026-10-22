@@ -78,11 +78,15 @@ class Memory:
         self.cells = {}                 # (frame, R, C) -> (block, t_seen)
         self.walk = Counter()           # block -> times stood on
         self.block_ct = Counter()       # block -> times a move into it was refused
+        self.danger = Counter()         # block -> deaths right after moving into it (learned)
+        self.mob_danger = Counter()     # mob id -> health losses while it was next to the player (learned)
         self.events = []                # per acting step: action, literals before, deltas
         self.prev = None
         self.poses = []
 
     def is_walkable(self, b):
+        if self.danger[b] > 0:
+            return False
         if self.walk[b] > 0:
             return True
         return self.block_ct[b] == 0
@@ -108,6 +112,9 @@ class Memory:
     def observe(self, o, last_action, new_world):
         self.t += 1
         if new_world:
+            if self.prev is not None and last_action in MOVES:  # died right after moving into a block: learn danger
+                dr, dc = MOVES[last_action]
+                self.danger[self.prev["blocks"][CR + dr][CC + dc]] += 1
             self.frame += 1
             self.pos = (0, 0)
             self.events.append({"t": self.t, "type": "reset", "frame": self.frame})
@@ -123,11 +130,25 @@ class Memory:
                     if 0 <= r2 < ROWS and 0 <= c2 < COLS and new[r][c] == old[r2][c2]:
                         moved += 1
             tgt = self.prev["blocks"][CR + dr][CC + dc]
-            if moved * 63 > stay * 56 and moved > stay * 0.9:          # overlap is 56 cells after a move, 63 if not
+            overlap = (ROWS - abs(dr)) * (COLS - abs(dc))
+            fm, fs = moved / overlap, stay / (ROWS * COLS)
+            if fm > fs + 0.02:
+                did = True
+            elif fs > fm + 0.02:
+                did = False
+            else:                                                # uniform terrain: fall back on learned walkability
+                did = self.walk[tgt] > 0 and self.prev["mobs"][CR + dr][CC + dc] == 0
+            if did:
                 self.pos = (self.pos[0] + dr, self.pos[1] + dc)
                 self.walk[tgt] += 1
             else:
                 self.block_ct[tgt] += 1
+        if self.prev is not None and not new_world and o["vit"][0] < self.prev["vit"][0]:
+            for dr in (-1, 0, 1):
+                for dc in (-1, 0, 1):
+                    m = self.prev["mobs"][CR + dr][CC + dc]
+                    if m:
+                        self.mob_danger[m] += 1
         for r in range(ROWS):
             for c in range(COLS):
                 R, C = self.absolute(r, c)
@@ -435,7 +456,8 @@ class Agent:
         if self.learn_every and self.mem.t % self.learn_every == 0:
             self.acquire()
         self.manage_goals()
-        a = self.execute()
+        a = None if self.o["sleeping"] else self.defend()     # shared reflex, every learning arm
+        a = a or self.execute()
         self.last_action = a
         self.actions_log.append((self.mem.t, A[a], self.goal_stack[-1][0] if self.goal_stack else None))
         return A[a]
@@ -487,6 +509,15 @@ class Agent:
         return None
 
     # ---------------- executor
+    def defend(self):
+        """Shared reflex: attack an adjacent mob of a kind that has hurt the player (learned), facing it first."""
+        o = self.o
+        for d, (dr, dc) in MOVES.items():
+            m = o["mobs"][CR + dr][CC + dc]
+            if m and self.mem.mob_danger[m] >= 2:
+                return "DO" if o["facing"] == d else d
+        return None
+
     def execute(self):
         if self.o["sleeping"]:
             return "NOOP"
@@ -708,8 +739,8 @@ class B3Novelty(Agent):
 
 class Candidate(B4LP):
     """The ECO candidate's organisation ported to Craftax: needs, learning progress over L(S), and experiment goals
-    X1 (action a while facing block B: each (a, B) pair untested until 3 trials, 8 if an inventory or block effect
-    followed), with acquisition after experiments (at most every 200 steps) and every 2,000 steps."""
+    X1 (action a while facing block B with the currently held items as context: each (a, B, held) key untested until
+    3 trials, 8 if an inventory or block effect followed), with acquisition after experiments (at most every 200 steps) and every 2,000 steps."""
     name = "CAND"
 
     def __init__(self, seed, **kw):
@@ -722,9 +753,10 @@ class Candidate(B4LP):
     def propose(self):
         pool = []
         blocks = sorted({b for (f, R, C), (b, ts) in self.mem.cells.items() if f == self.mem.frame})
+        held = tuple(i for i, k in enumerate(self.o["inv"]) if k > 0)     # context: which items are held now
         for B in blocks:
             for a in ACTING:
-                key = (a, B)
+                key = (a, B, held)
                 n, m = self.tests[key], self.effects[key]
                 v = max(0.0, 1.0 - n / (8 if m else 3))
                 if v > 0:
@@ -736,7 +768,7 @@ class Candidate(B4LP):
         w, ch = self.rng.choices(pool, weights=[x[0] for x in pool])[0]
         if ch[0] == "mastery":
             return ([ch[1]], "mastery", w)
-        a, B = ch[1]
+        a, B, held = ch[1]
         self.exp = {"key": ch[1], "action": a, "B": B, "done": False, "t0": self.mem.t}
         return ([f"face:{B}"], "experiment", w)
 

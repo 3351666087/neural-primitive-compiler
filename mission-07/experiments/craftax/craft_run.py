@@ -23,10 +23,7 @@ HERE = Path(__file__).resolve().parent
 INV_FIELDS = ("wood", "stone", "coal", "iron", "diamond", "sapling", "wood_pickaxe", "stone_pickaxe", "iron_pickaxe",
               "wood_sword", "stone_sword", "iron_sword")
 PLACE_BLOCKS = {"water": 3, "stone": 4, "tree": 5, "coal": 8, "iron": 9, "diamond": 10, "table": 11, "furnace": 12}
-ACH = ("collect_coal", "collect_diamond", "collect_drink", "collect_iron", "collect_sapling", "collect_stone",
-       "collect_wood", "defeat_skeleton", "defeat_zombie", "eat_cow", "eat_plant", "make_iron_pickaxe",
-       "make_iron_sword", "make_stone_pickaxe", "make_stone_sword", "make_wood_pickaxe", "make_wood_sword",
-       "place_furnace", "place_plant", "place_stone", "place_table", "wake_up")
+ACH = None                                       # filled from craftax's Achievement enum (judge side)
 
 
 def agent_proc(conn, arm, seed, opts):
@@ -72,6 +69,9 @@ def run(arm, key, steps, out_dir, opts=None, tag=""):
     import jax
     import numpy as np
     from craftax.craftax_env import make_craftax_env_from_name
+    global ACH
+    from craftax.craftax_classic.constants import Achievement
+    ACH = tuple(a.name.lower() for a in sorted(Achievement, key=lambda a: a.value))
     opts = opts or {}
     env = make_craftax_env_from_name("Craftax-Classic-Symbolic-v1", auto_reset=False)
     params = env.default_params
