@@ -28,8 +28,15 @@ ACH = None                                       # filled from craftax's Achieve
 
 def agent_proc(conn, arm, seed, opts):
     sys.path.insert(0, str(HERE))
+    import pickle
+    import random as _r
     import craft_agent as CA
-    ag = CA.ARMS[arm](seed)
+    if opts.get("agent_pickle"):
+        ag = pickle.loads(opts["agent_pickle"])
+        if opts.get("reseed") is not None:
+            ag.rng = _r.Random(opts["reseed"])
+    else:
+        ag = CA.ARMS[arm](seed)
     if opts.get("learn_off"):
         ag.learn_every = None
     while True:
@@ -39,6 +46,8 @@ def agent_proc(conn, arm, seed, opts):
             v = array("f")
             v.frombytes(buf)
             conn.send(ag.act(v, new_world))
+        elif kind == "pickle":
+            conn.send(pickle.dumps(ag))
         elif kind == "end":
             out = ag.dump() if hasattr(ag, "dump") else {}
             out["arm"] = arm
@@ -65,8 +74,12 @@ def place_mask(state_map, pos, np):
     return out
 
 
-def run(arm, key, steps, out_dir, opts=None, tag=""):
+def run(arm, key, steps, out_dir, opts=None, tag="", checkpoint=None, start=None):
+    """checkpoint: step at which (env state, rng, obs, agent) are pickled into OUT_DIR/<stem>.ckpt_<t>.pkl;
+    start: such a pickle's content to continue from (history swap)."""
+    import pickle
     import jax
+    import jax.numpy as jnp
     import numpy as np
     from craftax.craftax_env import make_craftax_env_from_name
     global ACH
@@ -80,6 +93,10 @@ def run(arm, key, steps, out_dir, opts=None, tag=""):
     rng = jax.random.PRNGKey(key)
     rng, sk = jax.random.split(rng)
     obs, state = reset(sk, params)
+    if start is not None:
+        state = jax.tree_util.tree_map(jnp.asarray, start["state"])
+        rng = jnp.asarray(start["rng"])
+        obs = jnp.asarray(start["obs"])
     ctx = mp.get_context("spawn")
     a, b = ctx.Pipe()
     p = ctx.Process(target=agent_proc, args=(b, arm, key, opts))
@@ -87,12 +104,19 @@ def run(arm, key, steps, out_dir, opts=None, tag=""):
     t0 = time.perf_counter()
     episodes = []
     ep = {"start": 0, "achievements": {}}
-    new_world = True
     inv_tl, vit_tl = [], []
     last_inv = last_vit = None
     place_state = {k: False for k in PLACE_BLOCKS}
     place_iv = {k: [] for k in PLACE_BLOCKS}
+    stem = f"{arm}_craftax_{key}{tag}"
+    new_world = start is None
     for t in range(steps):
+        if checkpoint is not None and t == checkpoint:
+            a.send(("pickle", None))
+            agent_bytes = a.recv()
+            Path(out_dir).mkdir(parents=True, exist_ok=True)
+            ck = {"state": jax.device_get(state), "rng": np.asarray(rng), "obs": np.asarray(obs), "agent": agent_bytes}
+            (Path(out_dir) / f"{stem}.ckpt_{t}.pkl").write_bytes(pickle.dumps(ck))
         a.send(("obs", (np.asarray(obs, dtype=np.float32).tobytes(), new_world)))
         while not a.poll(1.0):
             if not p.is_alive():
@@ -137,10 +161,9 @@ def run(arm, key, steps, out_dir, opts=None, tag=""):
     agent_out = a.recv()
     p.join(timeout=60)
     secs = time.perf_counter() - t0
-    stem = f"{arm}_craftax_{key}{tag}"
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
-    judge = {"arm": arm, "key": key, "steps": steps, "opts": opts, "episodes": episodes, "inventory": inv_tl,
+    judge = {"arm": arm, "key": key, "steps": steps, "opts": {k: v for k, v in opts.items() if k != "agent_pickle"}, "episodes": episodes, "inventory": inv_tl,
              "vitals": vit_tl, "place_intervals": place_iv, "secs": round(secs, 1)}
     with gzip.open(out / f"{stem}.judge.json.gz", "wt") as f:
         json.dump(judge, f)

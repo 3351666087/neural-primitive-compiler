@@ -32,6 +32,8 @@ The candidate shares the substrate, the structure meta-language M, the learner a
    not); continual comparison on the shortest recent window holding >= 40 events of the structure's kind (dense
    evidence: recent data; sparse evidence: up to the learner's window); structures with failing predictions are
    compared on the last RECENT steps.
+10. rev6 (final): the explaining-away gate of rev5 is removed (it made acquisition depend on the order in which
+   structures were proposed: an early M2 on a kind blocked the later, true M1); the adaptive comparison window stays.
 8. rev4: continual model comparison: at every acquisition each held M1 / M2 is compared with a refit of its kind on
    the last RECENT steps (replaced when the refit's likelihood ratio there is higher by >= 4).
 7. rev3 (after amendment A4): only effects that no held structure predicted (anomalies) make a key worth
@@ -329,10 +331,7 @@ class Candidate(Agent):
         self.last_fit = self.mem.t
         self.fit_due = False
         for s in self.learner.fit(self.mem, self.structs, self.mem.t):
-            if s.form in ("M1", "M2") and not self.explains_new(s):
-                self.rejected += 1                              # rev5: redundant with held structures
-                continue
-            self.add_structure(s, trigger="fit")
+            self.add_structure(s, trigger="fit")              # rev6: no explaining-away gate (order-dependent, rev5)
         # rev4/rev5: continual model comparison. A held M1 / M2 whose predictions fail is compared with a refit of its
         # kind on the last RECENT steps (the world may have changed); every other held M1 / M2 with a refit on the
         # learner's full window (more data, so sparse evidence is not lost)

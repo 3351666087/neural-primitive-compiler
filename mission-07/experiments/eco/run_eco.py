@@ -57,6 +57,8 @@ def agent_proc(conn, arm, seed, opts):
     try:
         import cand
         arms.update(cand.ARMS)
+        import cand_fly
+        arms.update(cand_fly.ARMS)
     except ImportError:
         pass
     if opts.get("agent_pickle"):

@@ -1,0 +1,76 @@
+{
+ "water": {
+  "positives": 2785,
+  "rows": 4000,
+  "expressible_within_bound": false,
+  "best_precision_recall": [
+   0.0,
+   0.0
+  ],
+  "literals_searched": 0,
+  "k": 3
+ },
+ "stone": {
+  "positives": 3579,
+  "rows": 4000,
+  "expressible_within_bound": false,
+  "best_precision_recall": [
+   0.0,
+   0.0
+  ],
+  "literals_searched": 0,
+  "k": 3
+ },
+ "tree": {
+  "positives": 3929,
+  "rows": 4000,
+  "expressible_within_bound": false,
+  "best_precision_recall": [
+   0.0,
+   0.0
+  ],
+  "literals_searched": 0,
+  "k": 3
+ },
+ "coal": {
+  "positives": 1813,
+  "rows": 4000,
+  "expressible_within_bound": false,
+  "best_precision_recall": [
+   0.0,
+   0.0
+  ],
+  "literals_searched": 0,
+  "k": 3
+ },
+ "iron": {
+  "positives": 1522,
+  "rows": 4000,
+  "expressible_within_bound": false,
+  "best_precision_recall": [
+   0.0,
+   0.0
+  ],
+  "literals_searched": 0,
+  "k": 3
+ },
+ "diamond": {
+  "positives": 289,
+  "rows": 4000,
+  "expressible_within_bound": false,
+  "best_precision_recall": [
+   0.07956225968648328,
+   0.9307958477508651
+  ],
+  "literals_searched": 1,
+  "k": 3
+ },
+ "table": {
+  "positives": 0,
+  "expressible_within_bound": null
+ },
+ "furnace": {
+  "positives": 0,
+  "expressible_within_bound": null
+ }
+}
