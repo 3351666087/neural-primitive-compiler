@@ -24,6 +24,10 @@ The candidate shares the substrate, the structure meta-language M, the learner a
 4. Acquisition: after each experiment (at most every 100 steps) and every 2,000 steps (learner.fit, the shared
    learner); revision of a held M1 or M2 structure whose predictions fail (>= 3 failures among its last 8): refit
    its kind on the learner's full window and replace it when the refit is better on the same data (rev1).
+6. rev2 (after amendment A3): revision refits on the last RECENT = 3,000 steps and compares likelihood ratios on
+   them; discriminating designs use the likelihood table; experiment acts on solid targets are performed from the
+   neighbour whose view covers the most cells where effects plausibly appear (vantage); predictions use the
+   structure's delay.
 5. Experiment values (rev1): a key whose trials were followed by a timed effect near its targets is replicated up to
    8 times, other keys 3 times; discriminating designs choose (spacing, number of events) by the number of distinct
    observable outcomes (how often the effect occurs) among the near-best parameter sets.
@@ -38,7 +42,7 @@ from collections import Counter, defaultdict, deque
 
 from agent import GOAL_T, NEED_LOW, Agent
 from structures import ACT, FX, DECAYS, THETAS, W, Bit, Counter as M1Counter, Learner, cheb
-from substrate import frontier_step
+from substrate import ACTIONS, DIRS, frontier_step
 
 N_MAX = 3                       # trials of a key whose trials showed no effect
 N_REP = 8                       # trials of a key whose trials showed an effect (replicate surprising results)
@@ -46,36 +50,12 @@ NS = (2, 3, 4, 5, 6)
 SPACINGS = (1, 5, 10, 15, 20, 30, 40, 60)
 LIT = {"poke": "poked", "pick": "picked", "consume": "consumed", "drop": "dropped"}
 REST = 100                      # an instance acted upon in the last REST steps is not 'rested'
+RECENT = 3000                   # rev2: window of change-triggered refits (a designer choice; alpha's phases last 4,000 steps)
 NEED_TERM = 60
 
 
-def m1_score(lr, mem, ev, p, poses):
-    """(predicted, testable, confirmed) of one M1 parameter set on events `ev` (mirrors Learner.fit_m1)."""
-    inst = defaultdict(list)
-    for a in ev:
-        if a["type"] == p["E"] and a.get("kind") == p["K"]:
-            inst[(a["frame"],) + tuple(a["cell"])].append(a["t"])
-    fx_k = [f for f in ev if f["type"] == p["ftype"] and f.get("kind") == p["K2"] and f.get("gap", 99) <= 3]
-    pred = test = conf = 0
-    for (fr, x, y), times in inst.items():
-        if p.get("ctx") is not None and not lr._near_kind(mem, fr, (x, y), p["ctx"], p["dctx"]):
-            continue
-        c, mark = 0, times[0]
-        for t in times:
-            while c > 0 and t - mark >= p["D"]:
-                c -= 1
-                mark += p["D"]
-            c = min(c + 1, p["theta"])
-            mark = t
-            if c >= p["theta"]:
-                pred += 1
-                if lr._testable(poses, fr, (x, y), t, t + W, r=1):
-                    test += 1
-                    if any(f["frame"] == fr and 0 <= f["t"] - t <= W + 1 and 0 < cheb(f["cell"], (x, y)) <= 3 for f in fx_k):
-                        conf += 1
-                if p["reset"]:
-                    c = 0
-    return pred, test, conf
+def _recent8():
+    return deque(maxlen=8)
 
 
 def simulate_m1(p, spacing, n):
@@ -96,6 +76,39 @@ def simulate_m1(p, spacing, n):
     return tuple(out)
 
 
+def plan_to_stand(mem, facing, stand, target, max_nodes=4000):
+    """Shortest action list that ends standing on `stand` (a neighbour of the solid `target`) facing the target
+    (BFS over (cell, facing); the final move toward the solid target only turns the agent)."""
+    from collections import deque
+    d_goal = next((d for d, (dx, dy) in enumerate(DIRS) if (stand[0] + dx, stand[1] + dy) == tuple(target)), None)
+    if d_goal is None:
+        return None
+    start = (mem.pos[0], mem.pos[1], facing)
+    if start == (stand[0], stand[1], d_goal):
+        return []
+    prev = {start: None}
+    q = deque([start])
+    n = 0
+    while q and n < max_nodes:
+        st = q.popleft()
+        n += 1
+        x, y, f = st
+        for d, (dx, dy) in enumerate(DIRS):
+            nx, ny = x + dx, y + dy
+            ns = (nx, ny, d) if mem.passable(nx, ny) and (nx, ny) != tuple(target) else (x, y, d)
+            if ns in prev:
+                continue
+            prev[ns] = (st, ACTIONS[d])
+            if ns == (stand[0], stand[1], d_goal):
+                path = []
+                while prev[ns] is not None:
+                    ns, a = prev[ns]
+                    path.append(a)
+                return path[::-1]
+            q.append(ns)
+    return None
+
+
 class Candidate(Agent):
     name = "CAND"
     learn_every = 2000
@@ -113,8 +126,8 @@ class Candidate(Agent):
         self.tests = Counter()
         self.effects = Counter()                # experiment key -> trials followed by a timed effect near its targets
         self.boost = defaultdict(float)
-        self.preds = []                         # open predictions: [t, frame, cell, ftype, K2, sid]
-        self.pred_hist = defaultdict(lambda: deque(maxlen=8))
+        self.preds = []                         # open predictions: [t, frame, cell, ftype, K2, sid, delta]
+        self.pred_hist = defaultdict(_recent8)
         self.retired = []
         self.plan = None
         self.fit_due = False
@@ -146,6 +159,38 @@ class Candidate(Agent):
         inst = self.instances()
         ks = {k for c, k in inst.items() if c != tuple(cell) and cheb(c, cell) <= 2}
         return ks
+
+    def vantage(self, target):
+        """rev2: the free neighbour of `target` whose 5 x 5 view covers the most cells within distance 3 of the target
+        where effects plausibly appear: cells next to another known object, or cells where an appearance, a
+        disappearance or a feature change was seen in this life."""
+        mem = self.mem
+        inst = [c for c in self.instances() if c != tuple(target)]
+        fx_cells = set()
+        for e in reversed(mem.events):
+            if e.get("frame") != mem.frame:
+                break
+            if e["type"] in FX:
+                fx_cells.add(tuple(e["cell"]))
+        best = None
+        for dx, dy in DIRS:
+            a = (target[0] - dx, target[1] - dy)
+            c = mem.cell(*a)
+            if c is None or c[0] or (c[1] and mem.is_solid(c[1])):
+                continue
+            score = 0
+            for x in range(a[0] - 2, a[0] + 3):
+                for y in range(a[1] - 2, a[1] + 3):
+                    if (x, y) == tuple(target) or cheb((x, y), target) > 3:
+                        continue
+                    cc = mem.cell(x, y)
+                    if cc is not None and cc[0]:
+                        continue
+                    if (x, y) in fx_cells or any(cheb((x, y), o) <= 1 for o in inst):
+                        score += 1
+            if best is None or score > best[0]:
+                best = (score, a)
+        return best[1] if best else None
 
     def rested(self, cell):
         return self.mem.t - self.last_acted.get((self.mem.frame,) + tuple(cell), -10 ** 9) > REST
@@ -233,14 +278,14 @@ class Candidate(Agent):
                 elif s.form == "M2":
                     fired = key in snap[sid] and key not in s.bit
                 if fired:
-                    self.preds.append([e["t"], e["frame"], tuple(e["cell"]), p.get("ftype"), p.get("K2"), sid])
+                    self.preds.append([e["t"], e["frame"], tuple(e["cell"]), p.get("ftype"), p.get("K2"), sid, p.get("delta")])
         for f in new:
             if f["type"] not in FX or f.get("gap", 99) > 3:
                 continue
             hit = None
             for pr in self.preds:
-                if pr[1] == f["frame"] and pr[3] == f["type"] and pr[4] == f["kind"] and 0 <= f["t"] - pr[0] <= W + 1 \
-                        and cheb(pr[2], f["cell"]) <= 3:
+                timing = (0 <= f["t"] - pr[0] <= W + 1) if pr[6] is None else (f["t"] - f["gap"] + 1 <= pr[0] + pr[6] <= f["t"])
+                if pr[1] == f["frame"] and pr[3] == f["type"] and pr[4] == f["kind"] and timing and cheb(pr[2], f["cell"]) <= 3:
                     hit = pr
                     break
             if hit is not None:
@@ -278,36 +323,73 @@ class Candidate(Agent):
             self.revise_due.clear()
         self.update_discriminators()
 
+    def m1_lr2(self, params, ev):
+        """2 x log-likelihood ratio of one M1 parameter set on events `ev` (0 if triggers are not followed by the
+        effect more often than other events)."""
+        p = params
+        rows = self.learner.m1_rows(self.mem, ev, p["K"], p["E"], p["ftype"], p["K2"], [(p["ctx"], p["dctx"])],
+                                    self.learner._poses_by_t(self.mem), combos=[(p["theta"], p["D"], p["reset"])])
+        d = p.get("delta")
+        vals = [r[0] for r in rows if d is None or r[5]["delta"] == d]
+        return max(vals, default=0.0)
+
+    def m2_lr2(self, params, ev):
+        """2 x log-likelihood ratio of one M2 parameter set on events `ev` (pairs as in Learner.fit_m2)."""
+        lr, p = self.learner, params
+        fx = [f for f in ev if f["type"] == p["ftype"] and f.get("kind") == p["K2"] and f.get("gap", 99) <= 3]
+
+        def fx_after(e, until=None):
+            hi = W if until is None else min(W, until - e["t"] - 1)
+            return any(f["frame"] == e["frame"] and 0 <= f["t"] - e["t"] <= hi and 0 < cheb(f["cell"], e["cell"]) <= 3 for f in fx)
+        by_inst = defaultdict(list)
+        for a in ev:
+            if a["type"] == p["E"] and a.get("kind") == p["K"]:
+                by_inst[(a["frame"],) + tuple(a["cell"])].append(a)
+        counter = self.structs.get(p.get("q_struct")) if p.get("q_pred") else None
+        if p.get("q_pred") and counter is None:
+            return 0.0
+        pos = neg = posn = negn = 0
+        for lst in by_inst.values():
+            for e1, e2 in zip(lst, lst[1:]):
+                if e2["t"] - e1["t"] > 300 or fx_after(e1, until=e2["t"]):
+                    continue
+                y = fx_after(e2)
+                if lr._q_at(self.mem, e1, p["Kq"], p["dq"], counter, p.get("q_v")):
+                    pos += y
+                    neg += not y
+                else:
+                    posn += y
+                    negn += not y
+        if pos + neg == 0 or pos * (posn + negn + 1) <= posn * (pos + neg + 1):
+            return 0.0
+        return lr._lr2(pos, pos + neg, posn, posn + negn)
+
     def try_revision(self, sid):
-        """Refit the structure's kind on the full learner window (ignoring that it is held) and replace it when the
-        refit is better on the same data by >= 0.1 precision (or equal precision with at least half as many more
-        confirmations)."""
+        """rev2: prediction failures of a held M1 / M2 trigger a refit of its kind on the last RECENT steps; the refit
+        replaces the structure when it passes the learner's acceptance test on those steps and its likelihood ratio
+        there exceeds the current structure's by >= 4 (the world may have changed, so the recent data decide)."""
         s = self.structs.get(sid)
         if s is None or s.form not in ("M1", "M2") or (s.form, s.params["K"]) in self.learner.blocked:
             return
         K = s.params["K"]
         t = self.mem.t
         lr = self.learner
-        ev = [e for e in self.mem.events if e["t"] >= t - lr.window]
+        ev = [e for e in self.mem.events if e["t"] >= t - RECENT]
         if s.form == "M1":
             new = lr.fit_m1(self.mem, [e for e in ev if e["type"] in FX or e.get("kind") == K], set(), t)
             if new is None or new.params["K"] != K or new.params == s.params:
                 return
-            poses = lr._poses_by_t(self.mem)
-            _, test, conf = m1_score(lr, self.mem, ev, s.params, poses)
-            cur, cur_conf = (conf / test if test else 0.0), conf
-            better = new.stats["precision"] >= cur + 0.1 or (new.stats["precision"] >= cur and new.stats["confirmed"] >= 1.5 * max(cur_conf, 1))
+            cur = self.m1_lr2(s.params, ev)
             cls = M1Counter
         else:
             others = {k: v for k, v in self.structs.items() if k != sid}
-            new = lr.fit_m2(self.mem, ev, {(f, k) for (f, k) in {(x.form, x.params.get("K")) for x in others.values()} if f != "M2" or k != K},
-                            others, t)
+            held = {(x.form, x.params.get("K")) for x in others.values()}
+            new = lr.fit_m2(self.mem, ev, {h for h in held if h != ("M2", K)}, others, t)
             if new is None or new.params["K"] != K or new.params == s.params:
                 return
-            cur = s.stats.get("precision", 0.0)
-            better = new.stats["precision"] >= cur + 0.1 or (new.stats["precision"] >= cur and new.stats["positives"] >= 1.5 * max(s.stats.get("positives", 1), 1))
+            cur = self.m2_lr2(s.params, ev)
             cls = Bit
-        if not better:
+        if new.stats["lr2"] < cur + 4:
             return
         repl = cls(new.sid, new.params, new.stats, new.evidence, t)
         self.retire(sid, reason="revised")
@@ -316,6 +398,7 @@ class Candidate(Agent):
                 b.params["q_struct"] = repl.sid
         self.add_structure(repl, trigger="revision")
         self.logs.structures[-1]["replaces"] = sid
+        self.logs.structures[-1]["lr2_replaced_on_recent"] = round(cur, 3)
 
     def retire(self, sid, reason):
         s = self.structs.pop(sid)
@@ -327,39 +410,32 @@ class Candidate(Agent):
 
     def update_discriminators(self):
         """For every held M1: the (spacing, number of events) whose observable outcome (how many times the effect
-        occurs) differs most among the parameter sets that fit the learner's data about equally well; keys already
-        tried enough are skipped."""
+        occurs) differs most among the parameter sets within 4 (2 x log-likelihood ratio) of the best one on the
+        learner's data; keys already tried enough are skipped."""
         self.disc = {}
         if not self.experiments:
             return
         lr = self.learner
         t = self.mem.t
-        poses = None
         for sid, s in self.structs.items():
             if s.form != "M1":
                 continue
-            K = s.params["K"]
-            ev = [e for e in self.mem.events if e["t"] >= t - lr.window and (e["type"] in FX or e.get("kind") == K)]
-            if poses is None:
-                poses = lr._poses_by_t(self.mem)
-            scored = []
-            for theta, D, reset in itertools.product(THETAS, DECAYS, (True, False)):
-                p = dict(s.params, theta=theta, D=D, reset=reset)
-                _, test, conf = m1_score(lr, self.mem, ev, p, poses)
-                if test >= 2 and conf >= 1:
-                    scored.append((conf / test, conf, p))
-            if not scored:
+            p0 = s.params
+            ev = [e for e in self.mem.events if e["t"] >= t - lr.window and (e["type"] in FX or e.get("kind") == p0["K"])]
+            rows = lr.m1_rows(self.mem, ev, p0["K"], p0["E"], p0["ftype"], p0["K2"], [(p0["ctx"], p0["dctx"])],
+                              lr._poses_by_t(self.mem))
+            if not rows:
                 continue
-            top = max(x[0] for x in scored)
-            H = [p for prec, conf, p in scored if prec >= top - 0.15]
+            top = max(r[0] for r in rows)
+            H = {(r[5]["theta"], r[5]["D"], r[5]["reset"]): r[5] for r in rows if r[0] >= top - 4}
             if len(H) <= 1:
                 continue
             best = None
             for sp in SPACINGS:
                 for n in NS:
-                    if self.key_value(("X1s", K, s.params["E"], sp, n)) <= 0:
+                    if self.key_value(("X1s", p0["K"], p0["E"], sp, n)) <= 0:
                         continue
-                    d = len({len(simulate_m1(p, sp, n)) for p in H})
+                    d = len({len(simulate_m1(p, sp, n)) for p in H.values()})
                     cost = sp * (n - 1) + n
                     if d > 1 and (best is None or (d, -cost) > (best[2], -best[3])):
                         best = (sp, n, d, cost)
@@ -665,6 +741,15 @@ class Candidate(Agent):
                         return self._abort()
                 elif cur is None or not cur[1]:
                     return self._abort()
+                if P["k"] == 0 and action in ("POKE", "PICK", "CONSUME") and cur is not None and cur[1] and mem.is_solid(cur[1]):
+                    stand = P.setdefault("stand", {}).get(P["i"])
+                    if stand is None:
+                        stand = self.vantage(cell) or ()
+                        P["stand"][P["i"]] = stand
+                    if stand:
+                        path = plan_to_stand(mem, self.obs["facing"], stand, cell)
+                        if path:
+                            return path[0]
                 step = self.face_then(cell, action)
                 if step == action:
                     P["k"] += 1

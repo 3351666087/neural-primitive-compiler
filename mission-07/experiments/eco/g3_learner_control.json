@@ -1,0 +1,1956 @@
+{
+ "M1-phase0": {
+  "150": {
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 3,
+      "D": 25,
+      "reset": true,
+      "ctx": 1,
+      "dctx": 2,
+      "ftype": "appear",
+      "K2": 3,
+      "delta": 4
+     },
+     "stats": {
+      "lr2": 66.638,
+      "critical": 18.918,
+      "hypotheses": 733,
+      "precision": 0.667,
+      "base_rate": 0.0,
+      "confirmed": 12,
+      "testable": 18,
+      "other_events": 180,
+      "other_effects": 0
+     }
+    },
+    {
+     "struct_id": 1,
+     "form": "M2",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "Kq": 1,
+      "dq": 2,
+      "q_pred": null,
+      "q_struct": null,
+      "q_v": null,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 3
+     },
+     "stats": {
+      "lr2": 20.915,
+      "critical": 10.415,
+      "hypotheses": 8,
+      "precision": 0.213,
+      "positives": 20,
+      "negatives": 74,
+      "without_q": [
+       0,
+       61
+      ]
+     }
+    },
+    {
+     "struct_id": 2,
+     "form": "M3",
+     "params": {
+      "K": 5
+     },
+     "stats": {
+      "reappearances": 2
+     }
+    },
+    {
+     "struct_id": 3,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "stats": {
+      "lr2": 15.786,
+      "critical": 10.633,
+      "hypotheses": 9,
+      "precision": 0.667,
+      "positives": 4,
+      "negatives": 2,
+      "without_q": [
+       0,
+       27
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "0:cnt[2]>=1": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "precision": 0.975,
+     "recall": 0.986,
+     "grounded": true
+    },
+    "0:cnt[2]>=2": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       2,
+       3
+      ]
+     ],
+     "precision": 0.927,
+     "recall": 0.994,
+     "grounded": true
+    },
+    "1:bit[2]": {
+     "class": [
+      "OBS",
+      "stone",
+      null
+     ],
+     "precision": 0.927,
+     "recall": 0.209,
+     "grounded": false
+    },
+    "2:memnear[5]": {
+     "class": [
+      "OBS",
+      "tree",
+      null
+     ],
+     "precision": 0.0,
+     "recall": 0.0,
+     "grounded": false
+    },
+    "3:bit[4]": {
+     "class": [
+      "LATENT",
+      "lamp.armed",
+      [
+       1
+      ]
+     ],
+     "precision": 1.0,
+     "recall": 1.0,
+     "grounded": true
+    }
+   }
+  },
+  "151": {
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 3,
+      "D": 25,
+      "reset": true,
+      "ctx": 1,
+      "dctx": 2,
+      "ftype": "appear",
+      "K2": 3,
+      "delta": 4
+     },
+     "stats": {
+      "lr2": 22.674,
+      "critical": 18.405,
+      "hypotheses": 560,
+      "precision": 0.364,
+      "base_rate": 0.0,
+      "confirmed": 4,
+      "testable": 11,
+      "other_events": 162,
+      "other_effects": 0
+     }
+    },
+    {
+     "struct_id": 1,
+     "form": "M3",
+     "params": {
+      "K": 5
+     },
+     "stats": {
+      "reappearances": 2
+     }
+    },
+    {
+     "struct_id": 2,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "stats": {
+      "lr2": 28.62,
+      "critical": 12.376,
+      "hypotheses": 23,
+      "precision": 1.0,
+      "positives": 6,
+      "negatives": 0,
+      "without_q": [
+       0,
+       25
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "0:cnt[2]>=1": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "precision": 0.975,
+     "recall": 0.986,
+     "grounded": true
+    },
+    "0:cnt[2]>=2": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       2,
+       3
+      ]
+     ],
+     "precision": 0.927,
+     "recall": 0.994,
+     "grounded": true
+    },
+    "1:memnear[5]": {
+     "class": [
+      "OBS",
+      "tree",
+      null
+     ],
+     "precision": 0.0,
+     "recall": 0.0,
+     "grounded": false
+    },
+    "2:bit[4]": {
+     "class": [
+      "LATENT",
+      "lamp.armed",
+      [
+       1
+      ]
+     ],
+     "precision": 1.0,
+     "recall": 1.0,
+     "grounded": true
+    }
+   }
+  },
+  "152": {
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 3,
+      "D": 25,
+      "reset": true,
+      "ctx": 1,
+      "dctx": 2,
+      "ftype": "appear",
+      "K2": 3,
+      "delta": 4
+     },
+     "stats": {
+      "lr2": 36.6,
+      "critical": 19.65,
+      "hypotheses": 1075,
+      "precision": 0.438,
+      "base_rate": 0.0,
+      "confirmed": 7,
+      "testable": 16,
+      "other_events": 168,
+      "other_effects": 0
+     }
+    },
+    {
+     "struct_id": 1,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "stats": {
+      "lr2": 24.846,
+      "critical": 11.919,
+      "hypotheses": 18,
+      "precision": 1.0,
+      "positives": 5,
+      "negatives": 0,
+      "without_q": [
+       0,
+       24
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "0:cnt[2]>=1": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "precision": 0.975,
+     "recall": 0.986,
+     "grounded": true
+    },
+    "0:cnt[2]>=2": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       2,
+       3
+      ]
+     ],
+     "precision": 0.927,
+     "recall": 0.994,
+     "grounded": true
+    },
+    "1:bit[4]": {
+     "class": [
+      "LATENT",
+      "lamp.armed",
+      [
+       1
+      ]
+     ],
+     "precision": 1.0,
+     "recall": 1.0,
+     "grounded": true
+    }
+   }
+  },
+  "153": {
+   "structures": [],
+   "grounding": {}
+  },
+  "154": {
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 3,
+      "D": 25,
+      "reset": true,
+      "ctx": 1,
+      "dctx": 2,
+      "ftype": "appear",
+      "K2": 3,
+      "delta": 4
+     },
+     "stats": {
+      "lr2": 22.767,
+      "critical": 17.875,
+      "hypotheses": 424,
+      "precision": 0.364,
+      "base_rate": 0.0,
+      "confirmed": 4,
+      "testable": 11,
+      "other_events": 164,
+      "other_effects": 0
+     }
+    },
+    {
+     "struct_id": 1,
+     "form": "M2",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "Kq": 6,
+      "dq": 1,
+      "q_pred": null,
+      "q_struct": null,
+      "q_v": null,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 3
+     },
+     "stats": {
+      "lr2": 18.128,
+      "critical": 8.615,
+      "hypotheses": 3,
+      "precision": 0.286,
+      "positives": 6,
+      "negatives": 15,
+      "without_q": [
+       1,
+       111
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "0:cnt[2]>=1": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "precision": 0.975,
+     "recall": 0.986,
+     "grounded": true
+    },
+    "0:cnt[2]>=2": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       2,
+       3
+      ]
+     ],
+     "precision": 0.927,
+     "recall": 0.994,
+     "grounded": true
+    },
+    "1:bit[2]": {
+     "class": [
+      "OBS",
+      "stone",
+      null
+     ],
+     "precision": 1.0,
+     "recall": 0.056,
+     "grounded": false
+    }
+   }
+  },
+  "155": {
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 3,
+      "D": 25,
+      "reset": true,
+      "ctx": 3,
+      "dctx": 1,
+      "ftype": "appear",
+      "K2": 3,
+      "delta": 4
+     },
+     "stats": {
+      "lr2": 34.195,
+      "critical": 19.855,
+      "hypotheses": 1197,
+      "precision": 0.412,
+      "base_rate": 0.0,
+      "confirmed": 7,
+      "testable": 17,
+      "other_events": 151,
+      "other_effects": 0
+     }
+    }
+   ],
+   "grounding": {
+    "0:cnt[2]>=1": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "precision": 0.92,
+     "recall": 0.923,
+     "grounded": true
+    },
+    "0:cnt[2]>=2": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       2,
+       3
+      ]
+     ],
+     "precision": 0.808,
+     "recall": 0.934,
+     "grounded": false
+    }
+   }
+  },
+  "156": {
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 3,
+      "D": 25,
+      "reset": true,
+      "ctx": 1,
+      "dctx": 2,
+      "ftype": "appear",
+      "K2": 3,
+      "delta": 4
+     },
+     "stats": {
+      "lr2": 51.076,
+      "critical": 20.081,
+      "hypotheses": 1347,
+      "precision": 0.5,
+      "base_rate": 0.0,
+      "confirmed": 11,
+      "testable": 22,
+      "other_events": 156,
+      "other_effects": 0
+     }
+    },
+    {
+     "struct_id": 1,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "stats": {
+      "lr2": 20.873,
+      "critical": 11.919,
+      "hypotheses": 18,
+      "precision": 1.0,
+      "positives": 4,
+      "negatives": 0,
+      "without_q": [
+       0,
+       23
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "0:cnt[2]>=1": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "precision": 0.975,
+     "recall": 0.986,
+     "grounded": true
+    },
+    "0:cnt[2]>=2": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       2,
+       3
+      ]
+     ],
+     "precision": 0.927,
+     "recall": 0.994,
+     "grounded": true
+    },
+    "1:bit[4]": {
+     "class": [
+      "LATENT",
+      "lamp.armed",
+      [
+       1
+      ]
+     ],
+     "precision": 1.0,
+     "recall": 1.0,
+     "grounded": true
+    }
+   }
+  },
+  "157": {
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 3,
+      "D": 25,
+      "reset": true,
+      "ctx": null,
+      "dctx": 0,
+      "ftype": "appear",
+      "K2": 3,
+      "delta": 4
+     },
+     "stats": {
+      "lr2": 61.959,
+      "critical": 18.208,
+      "hypotheses": 505,
+      "precision": 0.667,
+      "base_rate": 0.0,
+      "confirmed": 12,
+      "testable": 18,
+      "other_events": 146,
+      "other_effects": 0
+     }
+    },
+    {
+     "struct_id": 1,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "stats": {
+      "lr2": 20.873,
+      "critical": 12.02,
+      "hypotheses": 19,
+      "precision": 1.0,
+      "positives": 4,
+      "negatives": 0,
+      "without_q": [
+       0,
+       23
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "0:cnt[2]>=1": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "precision": 0.984,
+     "recall": 0.9,
+     "grounded": true
+    },
+    "0:cnt[2]>=2": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       2,
+       3
+      ]
+     ],
+     "precision": 0.944,
+     "recall": 0.707,
+     "grounded": false
+    },
+    "1:bit[4]": {
+     "class": [
+      "LATENT",
+      "lamp.armed",
+      [
+       1
+      ]
+     ],
+     "precision": 1.0,
+     "recall": 0.7,
+     "grounded": false
+    }
+   }
+  }
+ },
+ "M1-full": {
+  "150": {
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 2,
+      "D": 25,
+      "reset": false,
+      "ctx": 1,
+      "dctx": 2,
+      "ftype": "appear",
+      "K2": 3,
+      "delta": 4
+     },
+     "stats": {
+      "lr2": 37.275,
+      "critical": 19.673,
+      "hypotheses": 1088,
+      "precision": 0.125,
+      "base_rate": 0.0,
+      "confirmed": 12,
+      "testable": 96,
+      "other_events": 353,
+      "other_effects": 0
+     }
+    },
+    {
+     "struct_id": 1,
+     "form": "M2",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "Kq": 1,
+      "dq": 2,
+      "q_pred": null,
+      "q_struct": null,
+      "q_v": null,
+      "T": 300,
+      "ftype": "appear",
+      "K2": 3
+     },
+     "stats": {
+      "lr2": 24.121,
+      "critical": 11.004,
+      "hypotheses": 11,
+      "precision": 0.105,
+      "positives": 20,
+      "negatives": 171,
+      "without_q": [
+       0,
+       158
+      ]
+     }
+    },
+    {
+     "struct_id": 2,
+     "form": "M3",
+     "params": {
+      "K": 5
+     },
+     "stats": {
+      "reappearances": 2
+     }
+    },
+    {
+     "struct_id": 3,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 300,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "stats": {
+      "lr2": 25.862,
+      "critical": 10.169,
+      "hypotheses": 7,
+      "precision": 0.533,
+      "positives": 8,
+      "negatives": 7,
+      "without_q": [
+       1,
+       68
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "0:cnt[2]>=1": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "precision": 0.836,
+     "recall": 1.0,
+     "grounded": false
+    },
+    "0:cnt[2]>=2": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       2,
+       3
+      ]
+     ],
+     "precision": 0.687,
+     "recall": 0.88,
+     "grounded": false
+    },
+    "1:bit[2]": {
+     "class": [
+      "OBS",
+      "stone",
+      null
+     ],
+     "precision": 0.921,
+     "recall": 0.212,
+     "grounded": false
+    },
+    "2:memnear[5]": {
+     "class": [
+      "OBS",
+      "tree",
+      null
+     ],
+     "precision": 0.0,
+     "recall": 0.0,
+     "grounded": false
+    },
+    "3:bit[4]": {
+     "class": [
+      "LATENT",
+      "lamp.armed",
+      [
+       1
+      ]
+     ],
+     "precision": 0.625,
+     "recall": 1.0,
+     "grounded": false
+    }
+   }
+  },
+  "151": {
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 2,
+      "D": 25,
+      "reset": false,
+      "ctx": 3,
+      "dctx": 1,
+      "ftype": "appear",
+      "K2": 3,
+      "delta": 4
+     },
+     "stats": {
+      "lr2": 27.095,
+      "critical": 19.208,
+      "hypotheses": 853,
+      "precision": 0.09,
+      "base_rate": 0.0,
+      "confirmed": 9,
+      "testable": 100,
+      "other_events": 359,
+      "other_effects": 0
+     }
+    },
+    {
+     "struct_id": 1,
+     "form": "M2",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "Kq": 3,
+      "dq": 1,
+      "q_pred": null,
+      "q_struct": null,
+      "q_v": null,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 3
+     },
+     "stats": {
+      "lr2": 19.72,
+      "critical": 11.7,
+      "hypotheses": 16,
+      "precision": 0.099,
+      "positives": 16,
+      "negatives": 145,
+      "without_q": [
+       1,
+       195
+      ]
+     }
+    },
+    {
+     "struct_id": 2,
+     "form": "M1",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "theta": 3,
+      "D": 1000000000,
+      "reset": true,
+      "ctx": 2,
+      "dctx": 1,
+      "ftype": "appear",
+      "K2": 5,
+      "delta": 4
+     },
+     "stats": {
+      "lr2": 20.977,
+      "critical": 15.433,
+      "hypotheses": 117,
+      "precision": 0.417,
+      "base_rate": 0.048,
+      "confirmed": 10,
+      "testable": 24,
+      "other_events": 126,
+      "other_effects": 6
+     }
+    },
+    {
+     "struct_id": 3,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "stats": {
+      "lr2": 79.008,
+      "critical": 11.813,
+      "hypotheses": 17,
+      "precision": 1.0,
+      "positives": 16,
+      "negatives": 0,
+      "without_q": [
+       0,
+       66
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "0:cnt[2]>=1": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "precision": 0.836,
+     "recall": 1.0,
+     "grounded": false
+    },
+    "0:cnt[2]>=2": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       2,
+       3
+      ]
+     ],
+     "precision": 0.687,
+     "recall": 0.88,
+     "grounded": false
+    },
+    "1:bit[2]": {
+     "class": [
+      "OBS",
+      "stone",
+      null
+     ],
+     "precision": 0.909,
+     "recall": 0.049,
+     "grounded": false
+    },
+    "2:cnt[4]>=1": {
+     "class": [
+      "OBS",
+      "lamp",
+      null
+     ],
+     "precision": 0.893,
+     "recall": 0.578,
+     "grounded": false
+    },
+    "2:cnt[4]>=2": {
+     "class": [
+      "OBS",
+      "lamp",
+      null
+     ],
+     "precision": 0.904,
+     "recall": 0.231,
+     "grounded": false
+    },
+    "3:bit[4]": {
+     "class": [
+      "LATENT",
+      "lamp.armed",
+      [
+       1
+      ]
+     ],
+     "precision": 0.625,
+     "recall": 1.0,
+     "grounded": false
+    }
+   }
+  },
+  "152": {
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 3,
+      "D": 25,
+      "reset": true,
+      "ctx": 6,
+      "dctx": 2,
+      "ftype": "appear",
+      "K2": 3,
+      "delta": 4
+     },
+     "stats": {
+      "lr2": 26.909,
+      "critical": 19.785,
+      "hypotheses": 1154,
+      "precision": 0.25,
+      "base_rate": 0.005,
+      "confirmed": 6,
+      "testable": 24,
+      "other_events": 393,
+      "other_effects": 2
+     }
+    },
+    {
+     "struct_id": 1,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": null,
+      "q_struct": null,
+      "q_v": null,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "stats": {
+      "lr2": 24.127,
+      "critical": 11.314,
+      "hypotheses": 13,
+      "precision": 0.233,
+      "positives": 10,
+      "negatives": 33,
+      "without_q": [
+       0,
+       95
+      ]
+     }
+    },
+    {
+     "struct_id": 2,
+     "form": "M1",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "theta": 1,
+      "D": 1000000000,
+      "reset": false,
+      "ctx": 2,
+      "dctx": 1,
+      "ftype": "appear",
+      "K2": 5,
+      "delta": 4
+     },
+     "stats": {
+      "lr2": 17.093,
+      "critical": 14.874,
+      "hypotheses": 87,
+      "precision": 0.119,
+      "base_rate": 0.0,
+      "confirmed": 10,
+      "testable": 84,
+      "other_events": 116,
+      "other_effects": 0
+     }
+    }
+   ],
+   "grounding": {
+    "0:cnt[2]>=1": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "precision": 0.931,
+     "recall": 0.929,
+     "grounded": true
+    },
+    "0:cnt[2]>=2": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       2,
+       3
+      ]
+     ],
+     "precision": 0.824,
+     "recall": 0.898,
+     "grounded": false
+    },
+    "1:bit[4]": {
+     "class": [
+      "OBS",
+      "lamp",
+      null
+     ],
+     "precision": 0.93,
+     "recall": 0.353,
+     "grounded": false
+    },
+    "2:cnt[4]>=1": {
+     "class": [
+      "OBS",
+      "lamp",
+      null
+     ],
+     "precision": 0.899,
+     "recall": 0.673,
+     "grounded": false
+    }
+   }
+  },
+  "153": {
+   "structures": [],
+   "grounding": {}
+  },
+  "154": {
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 2,
+      "D": 25,
+      "reset": false,
+      "ctx": 6,
+      "dctx": 1,
+      "ftype": "appear",
+      "K2": 3,
+      "delta": 4
+     },
+     "stats": {
+      "lr2": 74.532,
+      "critical": 19.381,
+      "hypotheses": 934,
+      "precision": 0.389,
+      "base_rate": 0.0,
+      "confirmed": 14,
+      "testable": 36,
+      "other_events": 397,
+      "other_effects": 0
+     }
+    },
+    {
+     "struct_id": 1,
+     "form": "M2",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "Kq": 6,
+      "dq": 1,
+      "q_pred": null,
+      "q_struct": null,
+      "q_v": null,
+      "T": 300,
+      "ftype": "appear",
+      "K2": 3
+     },
+     "stats": {
+      "lr2": 108.484,
+      "critical": 10.169,
+      "hypotheses": 7,
+      "precision": 0.51,
+      "positives": 25,
+      "negatives": 24,
+      "without_q": [
+       0,
+       283
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "0:cnt[2]>=1": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "precision": 0.836,
+     "recall": 1.0,
+     "grounded": false
+    },
+    "0:cnt[2]>=2": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       2,
+       3
+      ]
+     ],
+     "precision": 0.687,
+     "recall": 0.88,
+     "grounded": false
+    },
+    "1:bit[2]": {
+     "class": [
+      "OBS",
+      "stone",
+      null
+     ],
+     "precision": 1.0,
+     "recall": 0.056,
+     "grounded": false
+    }
+   }
+  },
+  "155": {
+   "structures": [],
+   "grounding": {}
+  },
+  "156": {
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 2,
+      "D": 25,
+      "reset": false,
+      "ctx": 3,
+      "dctx": 1,
+      "ftype": "appear",
+      "K2": 3,
+      "delta": 4
+     },
+     "stats": {
+      "lr2": 34.001,
+      "critical": 19.608,
+      "hypotheses": 1052,
+      "precision": 0.106,
+      "base_rate": 0.0,
+      "confirmed": 14,
+      "testable": 132,
+      "other_events": 311,
+      "other_effects": 0
+     }
+    },
+    {
+     "struct_id": 1,
+     "form": "M2",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "Kq": 3,
+      "dq": 1,
+      "q_pred": null,
+      "q_struct": null,
+      "q_v": null,
+      "T": 300,
+      "ftype": "appear",
+      "K2": 3
+     },
+     "stats": {
+      "lr2": 22.532,
+      "critical": 11.314,
+      "hypotheses": 13,
+      "precision": 0.105,
+      "positives": 20,
+      "negatives": 170,
+      "without_q": [
+       0,
+       144
+      ]
+     }
+    },
+    {
+     "struct_id": 2,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "stats": {
+      "lr2": 17.427,
+      "critical": 11.004,
+      "hypotheses": 11,
+      "precision": 0.333,
+      "positives": 6,
+      "negatives": 12,
+      "without_q": [
+       0,
+       54
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "0:cnt[2]>=1": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "precision": 0.836,
+     "recall": 1.0,
+     "grounded": false
+    },
+    "0:cnt[2]>=2": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       2,
+       3
+      ]
+     ],
+     "precision": 0.687,
+     "recall": 0.88,
+     "grounded": false
+    },
+    "1:bit[2]": {
+     "class": [
+      "OBS",
+      "stone",
+      null
+     ],
+     "precision": 0.909,
+     "recall": 0.049,
+     "grounded": false
+    },
+    "2:bit[4]": {
+     "class": [
+      "LATENT",
+      "lamp.armed",
+      [
+       1
+      ]
+     ],
+     "precision": 0.625,
+     "recall": 1.0,
+     "grounded": false
+    }
+   }
+  },
+  "157": {
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 3,
+      "D": 10,
+      "reset": true,
+      "ctx": 4,
+      "dctx": 2,
+      "ftype": "appear",
+      "K2": 3,
+      "delta": 3
+     },
+     "stats": {
+      "lr2": 31.795,
+      "critical": 20.643,
+      "hypotheses": 1807,
+      "precision": 0.278,
+      "base_rate": 0.0,
+      "confirmed": 5,
+      "testable": 18,
+      "other_events": 393,
+      "other_effects": 0
+     }
+    },
+    {
+     "struct_id": 1,
+     "form": "M3",
+     "params": {
+      "K": 5
+     },
+     "stats": {
+      "reappearances": 2
+     }
+    },
+    {
+     "struct_id": 2,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=1",
+      "q_struct": 0,
+      "q_v": 1,
+      "T": 300,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "stats": {
+      "lr2": 13.179,
+      "critical": 12.873,
+      "hypotheses": 30,
+      "precision": 0.462,
+      "positives": 6,
+      "negatives": 7,
+      "without_q": [
+       3,
+       60
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "0:cnt[2]>=1": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "precision": 0.939,
+     "recall": 0.442,
+     "grounded": false
+    },
+    "0:cnt[2]>=2": {
+     "class": [
+      "LATENT",
+      "stone.charge",
+      [
+       2,
+       3
+      ]
+     ],
+     "precision": 0.887,
+     "recall": 0.281,
+     "grounded": false
+    },
+    "1:memnear[5]": {
+     "class": [
+      "OBS",
+      "tree",
+      null
+     ],
+     "precision": 0.0,
+     "recall": 0.0,
+     "grounded": false
+    },
+    "2:bit[4]": {
+     "class": [
+      "LATENT",
+      "lamp.armed",
+      [
+       1
+      ]
+     ],
+     "precision": 0.609,
+     "recall": 0.7,
+     "grounded": false
+    }
+   }
+  }
+ },
+ "M2-given": {
+  "150": {
+   "arms": 8,
+   "structures": [
+    {
+     "struct_id": 100,
+     "form": "M2",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "Kq": 1,
+      "dq": 2,
+      "q_pred": null,
+      "q_struct": null,
+      "q_v": null,
+      "T": 300,
+      "ftype": "appear",
+      "K2": 3
+     },
+     "stats": {
+      "lr2": 29.173,
+      "critical": 11.813,
+      "hypotheses": 17,
+      "precision": 0.184,
+      "positives": 25,
+      "negatives": 111,
+      "without_q": [
+       0,
+       102
+      ]
+     }
+    },
+    {
+     "struct_id": 101,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 300,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "stats": {
+      "lr2": 21.121,
+      "critical": 10.633,
+      "hypotheses": 9,
+      "precision": 0.667,
+      "positives": 6,
+      "negatives": 3,
+      "without_q": [
+       1,
+       47
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "100:bit[2]": {
+     "class": [
+      "OBS",
+      "stone",
+      null
+     ],
+     "precision": 0.921,
+     "recall": 0.212,
+     "grounded": false
+    },
+    "101:bit[4]": {
+     "class": [
+      "LATENT",
+      "lamp.armed",
+      [
+       1
+      ]
+     ],
+     "precision": 1.0,
+     "recall": 1.0,
+     "grounded": true
+    }
+   }
+  },
+  "151": {
+   "arms": 10,
+   "structures": [
+    {
+     "struct_id": 100,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "stats": {
+      "lr2": 48.58,
+      "critical": 12.376,
+      "hypotheses": 23,
+      "precision": 1.0,
+      "positives": 10,
+      "negatives": 0,
+      "without_q": [
+       0,
+       41
+      ]
+     }
+    },
+    {
+     "struct_id": 101,
+     "form": "M2",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "Kq": 1,
+      "dq": 2,
+      "q_pred": null,
+      "q_struct": null,
+      "q_v": null,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 3
+     },
+     "stats": {
+      "lr2": 9.917,
+      "critical": 9.55,
+      "hypotheses": 5,
+      "precision": 0.102,
+      "positives": 10,
+      "negatives": 88,
+      "without_q": [
+       1,
+       109
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "100:bit[4]": {
+     "class": [
+      "LATENT",
+      "lamp.armed",
+      [
+       1
+      ]
+     ],
+     "precision": 1.0,
+     "recall": 1.0,
+     "grounded": true
+    },
+    "101:bit[2]": {
+     "class": [
+      "OBS",
+      "stone",
+      null
+     ],
+     "precision": 0.927,
+     "recall": 0.209,
+     "grounded": false
+    }
+   }
+  },
+  "152": {
+   "arms": 7,
+   "structures": [
+    {
+     "struct_id": 100,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "stats": {
+      "lr2": 32.463,
+      "critical": 11.452,
+      "hypotheses": 14,
+      "precision": 0.875,
+      "positives": 7,
+      "negatives": 1,
+      "without_q": [
+       0,
+       39
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "100:bit[4]": {
+     "class": [
+      "LATENT",
+      "lamp.armed",
+      [
+       1
+      ]
+     ],
+     "precision": 1.0,
+     "recall": 1.0,
+     "grounded": true
+    }
+   }
+  },
+  "153": {
+   "arms": 5,
+   "structures": [],
+   "grounding": {}
+  },
+  "154": {
+   "arms": 9,
+   "structures": [
+    {
+     "struct_id": 100,
+     "form": "M2",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "Kq": 6,
+      "dq": 1,
+      "q_pred": null,
+      "q_struct": null,
+      "q_v": null,
+      "T": 300,
+      "ftype": "appear",
+      "K2": 3
+     },
+     "stats": {
+      "lr2": 38.007,
+      "critical": 10.169,
+      "hypotheses": 7,
+      "precision": 0.367,
+      "positives": 11,
+      "negatives": 19,
+      "without_q": [
+       1,
+       161
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "100:bit[2]": {
+     "class": [
+      "OBS",
+      "stone",
+      null
+     ],
+     "precision": 1.0,
+     "recall": 0.056,
+     "grounded": false
+    }
+   }
+  },
+  "155": {
+   "arms": 4,
+   "structures": [],
+   "grounding": {}
+  },
+  "156": {
+   "arms": 4,
+   "structures": [
+    {
+     "struct_id": 100,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "stats": {
+      "lr2": 17.825,
+      "critical": 11.919,
+      "hypotheses": 18,
+      "precision": 0.667,
+      "positives": 4,
+      "negatives": 2,
+      "without_q": [
+       0,
+       36
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "100:bit[4]": {
+     "class": [
+      "LATENT",
+      "lamp.armed",
+      [
+       1
+      ]
+     ],
+     "precision": 1.0,
+     "recall": 1.0,
+     "grounded": true
+    }
+   }
+  },
+  "157": {
+   "arms": 4,
+   "structures": [
+    {
+     "struct_id": 100,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 50,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "stats": {
+      "lr2": 18.216,
+      "critical": 12.293,
+      "hypotheses": 22,
+      "precision": 0.667,
+      "positives": 4,
+      "negatives": 2,
+      "without_q": [
+       0,
+       38
+      ]
+     }
+    }
+   ],
+   "grounding": {
+    "100:bit[4]": {
+     "class": [
+      "LATENT",
+      "lamp.armed",
+      [
+       1
+      ]
+     ],
+     "precision": 1.0,
+     "recall": 1.0,
+     "grounded": true
+    }
+   }
+  }
+ }
+}

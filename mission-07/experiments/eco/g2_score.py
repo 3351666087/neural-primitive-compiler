@@ -13,7 +13,7 @@ import ground_eco as G  # noqa: E402
 import score_eco as S  # noqa: E402
 import swap_eco as SW  # noqa: E402
 from eco_env import load_family  # noqa: E402
-from g2_jobs import BASE, FAKES, LEARNERS, OUT  # noqa: E402
+from g2_jobs import BASE, FAKES, LEARNERS, OUT, RUN  # noqa: E402
 
 FAM = HERE / "family_alpha.json"
 
@@ -56,7 +56,7 @@ def main():
                                                ("no L1", not summary[arm]["L1_pass"]), ("no L2", summary[arm]["L2_runs"] == 0)) if c]}
                   for arm in FAKES + ["B3"]}
     out = {"summary": summary, "fake_check": fake_check, "swaps": swaps, "runs": runs}
-    (HERE / "g2_scores.json").write_text(json.dumps(out, indent=1, default=str))
+    (HERE / ("g2_scores.json" if RUN == "g2" else f"g2_scores_{RUN}.json")).write_text(json.dumps(out, indent=1, default=str))
     print(json.dumps({"summary": summary, "fake_check": fake_check}, indent=1, default=str))
 
 

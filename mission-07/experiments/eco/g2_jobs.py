@@ -1,14 +1,16 @@
 """Gate 2 job list (development family alpha). JUDGE SIDE.
-  python3 -I g2_jobs.py make        writes run/g2/jobs.jsonl
+  python3 -I g2_jobs.py make        writes run/$G2_RUN/jobs.jsonl (default g2)
   python3 -I g2_jobs.py run I       runs job I (used with xargs -P)"""
 
 import json
+import os
 import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-OUT = HERE / "run" / "g2"
+RUN = os.environ.get("G2_RUN", "g2")              # amendment A3: Gate 2 rerun with the A3 learner in run/g2a3
+OUT = HERE / "run" / RUN
 FAM = str(HERE / "family_alpha.json")
 BASE = ["B1", "B1+M", "B2", "B3", "B4", "B5"]
 LEARNERS = ["B1+M", "B2", "B3", "B4", "B5"]

@@ -389,7 +389,7 @@ class B5Meta(B4LP):
     def __init__(self, seed, learner_kwargs=None):
         super().__init__(seed, learner_kwargs)
         self.provisional = {}
-        self.relaxed = Learner(min_prec=0.5, min_support=2)
+        self.relaxed = Learner(min_prec=0.5, min_support=2, alpha=0.5)          # relaxed fit (amendment A3: alpha 0.5)
 
     def acquire(self):
         super().acquire()

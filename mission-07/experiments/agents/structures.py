@@ -20,7 +20,9 @@ Effects are 'timed' only when the effect cell had been seen at most 3 steps befo
 from __future__ import annotations
 
 import itertools
+import math
 from collections import Counter as Cnt, defaultdict
+from statistics import NormalDist
 
 W = 6                 # effect window (steps)
 ACT = ("poke", "pick", "drop", "consume")
@@ -241,16 +243,30 @@ FORMS = {"M1": Counter, "M2": Bit, "M3": Place, "M4": Pair}
 
 # ---------------------------------------------------------------- learner
 class Learner:
-    """Fits M1-M4 to the agent's episodic memory. `fit` returns new structures (not already held)."""
+    """Fits M1-M4 to the agent's episodic memory. `fit` returns new structures (not already held).
 
-    def __init__(self, window=10000, min_prec=0.75, min_support=3, allowed=("M1", "M2", "M3", "M4"), blocked=()):
-        self.window, self.min_prec, self.min_support = window, min_prec, min_support
+    Amendment A3: M1 and M2 hypotheses are selected by a likelihood-ratio test instead of a precision threshold.
+    Every testable event is classified by the hypothesis as a trigger or not; an effect counts for an M1 trigger only
+    if its possible occurrence interval (observation step minus the gap since the cell was last seen) contains the
+    trigger step plus the hypothesis' delay (delta, 1..W, the M5 delay of the meta-language). The model has one effect
+    probability after triggers (q1) and one after other events (q0); 2 x log-likelihood ratio against a single common
+    probability is the score. A hypothesis is accepted when q1 > q0, it has >= min_support confirmed triggers (M1) or
+    >= 2 positive pairs (M2), and the score exceeds the chi-square(1) critical value at level alpha / (number of
+    hypotheses scored in this fit). Partial observability lowers q1 but not the contrast, which the previous
+    precision >= 0.75 rule could not tolerate (Gate 3 learner positive control, g3_learner_control.py).
+    min_prec is kept for compatibility and is no longer used by M1 / M2."""
+
+    def __init__(self, window=10000, min_prec=0.75, min_support=3, allowed=("M1", "M2", "M3", "M4"), blocked=(), alpha=0.01):
+        self.window, self.min_prec, self.min_support, self.alpha = window, min_prec, min_support, alpha
         self.allowed, self.blocked = set(allowed), set(blocked)        # blocked: {(form, K)} (do(s absent))
         self.next_sid = 0
 
-    # -------------------------------------------------- helpers
+    # -------------------------------------------------- helpers (indexed; results identical to plain scans)
     def _poses_by_t(self, mem):
-        return {t: (f, x, y) for (t, f, x, y) in mem.poses}
+        key = (id(mem), len(mem.poses))
+        if getattr(self, "_pose_key", None) != key:
+            self._poses, self._pose_key = {t: (f, x, y) for (t, f, x, y) in mem.poses}, key
+        return self._poses
 
     def _testable(self, poses, frame, cell, t0, t1, r=2):
         for t in range(t0, t1 + 1):
@@ -258,6 +274,19 @@ class Learner:
             if p and p[0] == frame and cheb((p[1], p[2]), cell) <= r:
                 return True
         return False
+
+    def _cell_index(self, mem):
+        key = (id(mem), mem.t, len(mem.cells))
+        if getattr(self, "_idx_key", None) != key:
+            idx = defaultdict(list)
+            for (f, x, y), v in mem.cells.items():
+                if v[1]:
+                    idx[(f, v[1])].append((x, y))
+            self._idx, self._idx_key = idx, key
+        return self._idx
+
+    def _near_kind(self, mem, frame, cell, kind, d):
+        return any(cheb(c, cell) <= d for c in self._cell_index(mem).get((frame, kind), ()))
 
     def fit(self, mem, have, t_now):
         ev = [e for e in mem.events if e["t"] >= t_now - self.window]
@@ -286,86 +315,148 @@ class Learner:
         self.next_sid += 1
         return s
 
+    @staticmethod
+    def _ll(k, n):
+        if n == 0:
+            return 0.0
+        q = (k + 0.5) / (n + 1)
+        return k * math.log(q) + (n - k) * math.log(1 - q)
+
+    def _lr2(self, k1, n1, k0, n0):
+        return 2 * (self._ll(k1, n1) + self._ll(k0, n0) - self._ll(k1 + k0, n1 + n0))
+
+    def critical(self, n_hyp):
+        return NormalDist().inv_cdf(1 - self.alpha / max(n_hyp, 1) / 2) ** 2
+
     # -------------------------------------------------- M1
-    def fit_m1(self, mem, ev, held, t_now):
-        acts = [e for e in ev if e["type"] in ACT and e["kind"]]
-        fxs = [e for e in ev if e["type"] in FX and e.get("gap", 99) <= 3]
-        trip = Cnt()
-        for f in fxs:
-            for a in acts:
-                if a["frame"] == f["frame"] and 0 <= f["t"] - a["t"] <= W and 0 < cheb(a["cell"], f["cell"]) <= 3:
-                    trip[(a["kind"], a["type"], f["type"], f["kind"])] += 1
-        poses = self._poses_by_t(mem)
-        best = None
-        for (K, E, ftype, K2), n in trip.most_common(6):
-            if n < self.min_support or ("M1", K) in held or ("M1", K) in self.blocked:
-                continue
-            inst_ev = defaultdict(list)
-            for a in acts:
-                if a["kind"] == K and a["type"] == E:
-                    inst_ev[(a["frame"],) + tuple(a["cell"])].append(a["t"])
-            fx_k = [f for f in fxs if f["kind"] == K2 and f["type"] == ftype]
-            kinds_seen = {v[1] for v in mem.cells.values() if v[1]}
-            ctx_opts = [(None, 0)] + [(k3, d) for k3 in sorted(kinds_seen) if k3 != K for d in (1, 2)]
-            ctx_ok = {}
-            for (ctx, dctx) in ctx_opts:
-                for (fr, x, y) in inst_ev:
-                    ctx_ok[(ctx, dctx, fr, x, y)] = ctx is None or self._near_kind(mem, fr, (x, y), ctx, dctx)
-            for (ctx, dctx), theta, D, reset in itertools.product(ctx_opts, THETAS, DECAYS, (True, False)):
-                pred = conf = test = 0
-                evid = []
-                for (fr, x, y), times in inst_ev.items():
-                    cell = (x, y)
-                    if not ctx_ok[(ctx, dctx, fr, x, y)]:
-                        continue
-                    c, mark = 0, times[0]
-                    for t in times:
+    def m1_rows(self, mem, ev, K, E, ftype, K2, ctx_opts, poses, combos=None):
+        """Every (ctx, theta, D, reset, delta) hypothesis for one (K, E, ftype, K2): rows
+        (lr2, k1, n1, k0, n0, params, evidence times)."""
+        inst = defaultdict(list)
+        for a in ev:
+            if a["type"] == E and a.get("kind") == K:
+                inst[(a["frame"],) + tuple(a["cell"])].append(a["t"])
+        order = [(k, t) for k, ts in inst.items() for t in ts]
+        if not order:
+            return []
+        T = 0
+        for i, ((fr, x, y), t) in enumerate(order):
+            if self._testable(poses, fr, (x, y), t, t + W, r=1):
+                T |= 1 << i
+        fx_by_frame = defaultdict(list)
+        for f in ev:
+            if f["type"] == ftype and f.get("kind") == K2 and f.get("gap", 99) <= 3:
+                fx_by_frame[f["frame"]].append(f)
+        Y = {d: 0 for d in range(1, W + 1)}
+        for i, ((fr, x, y), t) in enumerate(order):
+            for f in fx_by_frame.get(fr, ()):
+                if 0 < cheb(f["cell"], (x, y)) <= 3:
+                    lo, hi = f["t"] - f["gap"] + 1, f["t"]
+                    for d in range(max(1, lo - t), min(W, hi - t) + 1):
+                        Y[d] |= 1 << i
+        ctxmask = {}
+        for (ctx, dctx) in ctx_opts:
+            m = 0
+            for i, ((fr, x, y), t) in enumerate(order):
+                if ctx is None or self._near_kind(mem, fr, (x, y), ctx, dctx):
+                    m |= 1 << i
+            ctxmask[(ctx, dctx)] = m
+        times = [t for _, t in order]
+        rows = []
+        for theta, D, reset in (combos or itertools.product(THETAS, DECAYS, (True, False))):
+            for (ctx, dctx), cm in ctxmask.items():
+                F = 0
+                i = 0
+                for k, ts in inst.items():
+                    ok = (cm >> i) & 1
+                    c, mark = 0, ts[0]
+                    for t in ts:
                         while c > 0 and t - mark >= D:
                             c -= 1
                             mark += D
                         c = min(c + 1, theta)
                         mark = t
                         if c >= theta:
-                            pred += 1
-                            if self._testable(poses, fr, cell, t, t + W, r=1):
-                                test += 1
-                                hit = any(f["frame"] == fr and 0 <= f["t"] - t <= W + 1 and 0 < cheb(f["cell"], cell) <= 3 for f in fx_k)
-                                if hit:
-                                    conf += 1
-                                    evid.append(t)
-                            if reset:
+                            if ok:
+                                F |= 1 << i
+                            if reset and ok:
                                 c = 0
-                if test >= 4 and conf >= self.min_support:
-                    prec = conf / test
-                    score = (prec >= self.min_prec, prec, conf, -theta, D == 10 ** 9, not reset, ctx is None)
-                    if best is None or score > best[0]:
-                        best = (score, {"K": K, "E": E, "theta": theta, "D": D, "reset": reset, "ctx": ctx, "dctx": dctx,
-                                        "ftype": ftype, "K2": K2},
-                                {"precision": round(prec, 3), "confirmed": conf, "testable": test, "predicted": pred}, evid)
-        if best and best[0][0]:
-            return self._new(Counter, best[1], best[2], best[3], t_now)
-        return None
+                        i += 1
+                FT, NT = F & T, T & ~F
+                n1, n0 = FT.bit_count(), NT.bit_count()
+                for d, Yd in Y.items():
+                    k1, k0 = (FT & Yd).bit_count(), (NT & Yd).bit_count()
+                    if n1 == 0 or k1 * (n0 + 1) <= k0 * (n1 + 1):
+                        continue
+                    ev_t = [times[j] for j in range(len(order)) if (FT & Yd) >> j & 1]
+                    rows.append((self._lr2(k1, n1, k0, n0), k1, n1, k0, n0,
+                                 {"K": K, "E": E, "theta": theta, "D": D, "reset": reset, "ctx": ctx, "dctx": dctx,
+                                  "ftype": ftype, "K2": K2, "delta": d}, ev_t))
+        return rows
 
-    def _near_kind(self, mem, frame, cell, kind, d):
-        return any(k[0] == frame and v[1] == kind and cheb((k[1], k[2]), cell) <= d for k, v in mem.cells.items())
+    def m1_ctx_opts(self, mem, K):
+        kinds_seen = {v[1] for v in mem.cells.values() if v[1]}
+        return [(None, 0)] + [(k3, d) for k3 in sorted(kinds_seen) if k3 != K for d in (1, 2)]
+
+    def m1_triples(self, ev):
+        acts = [e for e in ev if e["type"] in ACT and e["kind"]]
+        fxs = [e for e in ev if e["type"] in FX and e.get("gap", 99) <= 3]
+        acts_by_frame = defaultdict(list)
+        for a in acts:
+            acts_by_frame[a["frame"]].append(a)
+        trip = Cnt()
+        for f in fxs:
+            for a in acts_by_frame.get(f["frame"], ()):
+                if 0 <= f["t"] - a["t"] <= W and 0 < cheb(a["cell"], f["cell"]) <= 3:
+                    trip[(a["kind"], a["type"], f["type"], f["kind"])] += 1
+        return trip
+
+    def fit_m1(self, mem, ev, held, t_now):
+        poses = self._poses_by_t(mem)
+        rows = []
+        for (K, E, ftype, K2), n in self.m1_triples(ev).most_common(6):
+            if n < self.min_support or ("M1", K) in held or ("M1", K) in self.blocked:
+                continue
+            rows += self.m1_rows(mem, ev, K, E, ftype, K2, self.m1_ctx_opts(mem, K), poses)
+        if not rows:
+            return None
+        n_hyp = len(rows)
+        crit = self.critical(n_hyp)
+        ok = [r for r in rows if r[0] >= crit and r[1] >= self.min_support]
+        if not ok:
+            return None
+        lr2, k1, n1, k0, n0, params, ev_t = max(ok, key=lambda r: (round(r[0], 6), r[1], -r[5]["theta"], r[5]["D"] == 10 ** 9,
+                                                                    not r[5]["reset"], r[5]["ctx"] is None, -r[5]["delta"]))
+        stats = {"lr2": round(lr2, 3), "critical": round(crit, 3), "hypotheses": n_hyp, "precision": round(k1 / n1, 3),
+                 "base_rate": round(k0 / n0, 3) if n0 else None, "confirmed": k1, "testable": n1, "other_events": n0,
+                 "other_effects": k0}
+        return self._new(Counter, params, stats, ev_t, t_now)
 
     # -------------------------------------------------- M2
     def fit_m2(self, mem, ev, held, have, t_now):
         acts = [e for e in ev if e["type"] in ACT and e["kind"]]
         fxs = [e for e in ev if e["type"] in FX and e.get("gap", 99) <= 3]
+        fx_by_frame = defaultdict(list)
+        for f in fxs:
+            fx_by_frame[f["frame"]].append(f)
         by_inst = defaultdict(list)
         for a in acts:
             by_inst[(a["frame"], a["type"], a["kind"]) + tuple(a["cell"])].append(a)
         counters = {s.params["K"]: s for s in have.values() if s.form == "M1"}
-        best = None
         cand_fx = Cnt()
         for a in acts:
-            for f in fxs:
-                if f["frame"] == a["frame"] and 0 <= f["t"] - a["t"] <= W and 0 < cheb(a["cell"], f["cell"]) <= 3:
+            for f in fx_by_frame.get(a["frame"], ()):
+                if 0 <= f["t"] - a["t"] <= W and 0 < cheb(a["cell"], f["cell"]) <= 3:
                     cand_fx[(a["kind"], a["type"], f["type"], f["kind"])] += 1
+        rows = []
         for (K, E, ftype, K2), n in cand_fx.most_common(8):
             if n < 2 or ("M2", K) in held or ("M2", K) in self.blocked:
                 continue
+
+            def fx_after(e, until=None):
+                hi = W if until is None else min(W, until - e["t"] - 1)
+                return any(f["kind"] == K2 and f["type"] == ftype and 0 <= f["t"] - e["t"] <= hi
+                           and 0 < cheb(f["cell"], e["cell"]) <= 3 for f in fx_by_frame.get(e["frame"], ()))
             pairs = []
             for key, lst in by_inst.items():
                 if key[1] != E or key[2] != K:
@@ -373,12 +464,8 @@ class Learner:
                 for e1, e2 in zip(lst, lst[1:]):
                     if e2["t"] - e1["t"] > 300:
                         continue
-                    fx1 = any(f["frame"] == e1["frame"] and f["kind"] == K2 and f["type"] == ftype and 0 <= f["t"] - e1["t"] <= W
-                              and 0 < cheb(f["cell"], e1["cell"]) <= 3 for f in fxs)
-                    fx2 = any(f["frame"] == e2["frame"] and f["kind"] == K2 and f["type"] == ftype and 0 <= f["t"] - e2["t"] <= W
-                              and 0 < cheb(f["cell"], e2["cell"]) <= 3 for f in fxs)
-                    if not fx1:
-                        pairs.append((e1, e2, fx2))
+                    if not fx_after(e1, until=e2["t"]):          # e1's own effect window ends at the next event
+                        pairs.append((e1, e2, fx_after(e2)))
             if sum(1 for p in pairs if p[2]) < 2:
                 continue
             kinds = {v[1] for v in mem.cells.values() if v[1] and v[1] != K}
@@ -400,47 +487,55 @@ class Learner:
                         else:
                             posn += y
                             negn += not y
-                    if pos >= 2 and pos / (pos + neg) >= self.min_prec and (posn + negn == 0 or posn / (posn + negn) <= 0.25):
-                        T = max(e2["t"] - e1["t"] for e1, e2, y in pairs if y)
-                        T = min(x for x in (50, 150, 300, 10 ** 9) if x >= T)
-                        score = (pos / (pos + neg), pos, q_pred is None)
-                        if best is None or score > best[0]:
-                            best = (score, {"K": K, "E": E, "Kq": Kq, "dq": dq, "q_pred": q_pred, "q_struct": q_struct, "q_v": q_v,
-                                            "T": T, "ftype": ftype, "K2": K2},
-                                    {"precision": round(pos / (pos + neg), 3), "positives": pos, "negatives": neg,
-                                     "without_q": [posn, negn]}, evid)
-        if best:
-            return self._new(Bit, best[1], best[2], best[3], t_now)
-        return None
+                    if pos + neg == 0 or pos * (posn + negn + 1) <= posn * (pos + neg + 1):
+                        continue
+                    T = max(e2["t"] - e1["t"] for e1, e2, y in pairs if y)
+                    T = min(x for x in (50, 150, 300, 10 ** 9) if x >= T)
+                    rows.append((self._lr2(pos, pos + neg, posn, posn + negn), pos, neg, posn, negn,
+                                 {"K": K, "E": E, "Kq": Kq, "dq": dq, "q_pred": q_pred, "q_struct": q_struct, "q_v": q_v,
+                                  "T": T, "ftype": ftype, "K2": K2}, evid))
+        if not rows:
+            return None
+        n_hyp = len(rows)
+        crit = self.critical(n_hyp)
+        ok = [r for r in rows if r[0] >= crit and r[1] >= 2]
+        if not ok:
+            return None
+        lr2, pos, neg, posn, negn, params, evid = max(ok, key=lambda r: (round(r[0], 6), r[1], r[5]["q_pred"] is None))
+        stats = {"lr2": round(lr2, 3), "critical": round(crit, 3), "hypotheses": n_hyp, "precision": round(pos / (pos + neg), 3),
+                 "positives": pos, "negatives": neg, "without_q": [posn, negn]}
+        return self._new(Bit, params, stats, evid, t_now)
 
     def _q_at(self, mem, e1, Kq, dq, counter, q_v):
         """Context at the time of e1: a Kq instance within dq (and, if a counter is given, with count >= q_v then)."""
-        cells = [(k[1], k[2]) for k, v in mem.cells.items() if k[0] == e1["frame"] and v[1] == Kq and cheb((k[1], k[2]), e1["cell"]) <= dq]
+        cells = [c for c in self._cell_index(mem).get((e1["frame"], Kq), ()) if cheb(c, e1["cell"]) <= dq]
         if not cells:
             return False
         if counter is None:
             return True
-        for c in cells:
-            if self._count_at(mem, counter, e1["frame"], c, e1["t"]) >= q_v:
-                return True
-        return False
+        return any(self._count_at(mem, counter, e1["frame"], c, e1["t"]) >= q_v for c in cells)
 
     def _count_at(self, mem, counter, frame, cell, t):
+        key = (id(mem), len(mem.events))
+        if getattr(self, "_ev_key", None) != key:
+            idx = defaultdict(list)
+            for a in mem.events:
+                if a.get("cell") is not None and a.get("kind"):
+                    idx[(a["type"], a["kind"], a["frame"], tuple(a["cell"]))].append(a["t"])
+            self._ev_idx, self._ev_key = idx, key
         p = counter.params
         c, mark = 0, None
-        for a in mem.events:
-            if a["t"] > t:
+        for at in self._ev_idx.get((p["E"], p["K"], frame, tuple(cell)), ()):
+            if at > t:
                 break
-            if a["type"] == p["E"] and a["kind"] == p["K"] and a["frame"] == frame and tuple(a["cell"]) == tuple(cell):
-                if mark is not None:
-                    while c > 0 and a["t"] - mark >= p["D"]:
-                        c -= 1
-                        mark += p["D"]
-                c = min(c + 1, p["theta"])
-                mark = a["t"]
-                if p["reset"] and c >= p["theta"] and (p.get("ctx") is None or
-                                                       self._near_kind(mem, frame, cell, p["ctx"], p["dctx"])):
-                    c = 0
+            if mark is not None:
+                while c > 0 and at - mark >= p["D"]:
+                    c -= 1
+                    mark += p["D"]
+            c = min(c + 1, p["theta"])
+            mark = at
+            if p["reset"] and c >= p["theta"] and (p.get("ctx") is None or self._near_kind(mem, frame, cell, p["ctx"], p["dctx"])):
+                c = 0
         if mark is not None:
             while c > 0 and t - mark >= p["D"]:
                 c -= 1
