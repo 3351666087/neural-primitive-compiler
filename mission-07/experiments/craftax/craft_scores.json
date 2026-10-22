@@ -1,0 +1,650 @@
+{
+ "per_key": {
+  "1000": {
+   "lengths": {
+    "CAND": 237.0,
+    "RANDOM": 140.0,
+    "B1": 238.5,
+    "CAND_twin": 238.1
+   },
+   "L0": false,
+   "achievements_per_episode": {
+    "CAND": 3.224,
+    "CAND_twin": 2.394,
+    "RANDOM": 2.314,
+    "B1": 2.366
+   },
+   "L2A": true,
+   "L2R": {
+    "water": {
+     "top_goals": 7,
+     "achieved": 6,
+     "achieved_per_10k": 0.3,
+     "twin_incidental_per_10k": 109.75,
+     "event": false
+    },
+    "stone": {
+     "top_goals": 5,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 79.85,
+     "event": false
+    },
+    "tree": {
+     "top_goals": 5,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 31.85,
+     "event": false
+    },
+    "coal": {
+     "top_goals": 10,
+     "achieved": 9,
+     "achieved_per_10k": 0.45,
+     "twin_incidental_per_10k": 243.65,
+     "event": false
+    },
+    "iron": {
+     "top_goals": 7,
+     "achieved": 6,
+     "achieved_per_10k": 0.3,
+     "twin_incidental_per_10k": 230.45,
+     "event": false
+    },
+    "diamond": {
+     "top_goals": 14,
+     "achieved": 2,
+     "achieved_per_10k": 0.1,
+     "twin_incidental_per_10k": 50.15,
+     "event": false
+    }
+   },
+   "L2R_any": false,
+   "L1": {
+    "tv_swap": 0.192,
+    "tv_noise": 0.023,
+    "L1_pass": false
+   }
+  },
+  "1001": {
+   "lengths": {
+    "CAND": 239.7,
+    "RANDOM": 139.9,
+    "B1": 238.5,
+    "CAND_twin": 242.3
+   },
+   "L0": true,
+   "achievements_per_episode": {
+    "CAND": 2.843,
+    "CAND_twin": 2.436,
+    "RANDOM": 2.405,
+    "B1": 2.375
+   },
+   "L2A": true,
+   "L2R": {
+    "tree": {
+     "top_goals": 4,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 27.45,
+     "event": false
+    },
+    "stone": {
+     "top_goals": 5,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 87.05,
+     "event": false
+    },
+    "coal": {
+     "top_goals": 6,
+     "achieved": 6,
+     "achieved_per_10k": 0.3,
+     "twin_incidental_per_10k": 243.55,
+     "event": false
+    },
+    "water": {
+     "top_goals": 5,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 106.75,
+     "event": false
+    },
+    "iron": {
+     "top_goals": 5,
+     "achieved": 3,
+     "achieved_per_10k": 0.15,
+     "twin_incidental_per_10k": 222.4,
+     "event": false
+    }
+   },
+   "L2R_any": false,
+   "L1": {
+    "tv_swap": 0.18,
+    "tv_noise": 0.036,
+    "L1_pass": false
+   }
+  },
+  "1002": {
+   "lengths": {
+    "CAND": 238.3,
+    "RANDOM": 140.9,
+    "B1": 218.9,
+    "CAND_twin": 239.7
+   },
+   "L0": true,
+   "achievements_per_episode": {
+    "CAND": 3.186,
+    "CAND_twin": 2.37,
+    "RANDOM": 2.332,
+    "B1": 1.793
+   },
+   "L2A": true,
+   "L2R": {
+    "stone": {
+     "top_goals": 4,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 92.0,
+     "event": false
+    },
+    "tree": {
+     "top_goals": 5,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 31.4,
+     "event": false
+    },
+    "water": {
+     "top_goals": 7,
+     "achieved": 6,
+     "achieved_per_10k": 0.3,
+     "twin_incidental_per_10k": 104.5,
+     "event": false
+    },
+    "iron": {
+     "top_goals": 5,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 225.45,
+     "event": false
+    },
+    "coal": {
+     "top_goals": 13,
+     "achieved": 8,
+     "achieved_per_10k": 0.4,
+     "twin_incidental_per_10k": 241.6,
+     "event": false
+    },
+    "diamond": {
+     "top_goals": 18,
+     "achieved": 3,
+     "achieved_per_10k": 0.15,
+     "twin_incidental_per_10k": 41.45,
+     "event": false
+    }
+   },
+   "L2R_any": false,
+   "L1": {
+    "tv_swap": 0.228,
+    "tv_noise": 0.034,
+    "L1_pass": false
+   }
+  },
+  "1003": {
+   "lengths": {
+    "CAND": 233.1,
+    "RANDOM": 143.9,
+    "B1": 237.6,
+    "CAND_twin": 235.8
+   },
+   "L0": false,
+   "achievements_per_episode": {
+    "CAND": 2.789,
+    "CAND_twin": 2.369,
+    "RANDOM": 2.368,
+    "B1": 2.387
+   },
+   "L2A": true,
+   "L2R": {
+    "tree": {
+     "top_goals": 4,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 32.6,
+     "event": false
+    },
+    "water": {
+     "top_goals": 5,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 106.1,
+     "event": false
+    },
+    "stone": {
+     "top_goals": 5,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 84.75,
+     "event": false
+    },
+    "iron": {
+     "top_goals": 6,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 220.1,
+     "event": false
+    },
+    "coal": {
+     "top_goals": 5,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 231.6,
+     "event": false
+    },
+    "table": {
+     "top_goals": 14,
+     "achieved": 0,
+     "achieved_per_10k": 0.0,
+     "twin_incidental_per_10k": 0.0,
+     "event": false
+    }
+   },
+   "L2R_any": false,
+   "L1": {
+    "tv_swap": 0.187,
+    "tv_noise": 0.043,
+    "L1_pass": false
+   }
+  },
+  "1004": {
+   "lengths": {
+    "CAND": 232.8,
+    "RANDOM": 138.7,
+    "B1": 240.0,
+    "CAND_twin": 239.0
+   },
+   "L0": false,
+   "achievements_per_episode": {
+    "CAND": 3.182,
+    "CAND_twin": 2.394,
+    "RANDOM": 2.336,
+    "B1": 2.332
+   },
+   "L2A": true,
+   "L2R": {
+    "water": {
+     "top_goals": 10,
+     "achieved": 8,
+     "achieved_per_10k": 0.4,
+     "twin_incidental_per_10k": 111.05,
+     "event": false
+    },
+    "tree": {
+     "top_goals": 6,
+     "achieved": 6,
+     "achieved_per_10k": 0.3,
+     "twin_incidental_per_10k": 28.6,
+     "event": false
+    },
+    "stone": {
+     "top_goals": 5,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 88.9,
+     "event": false
+    },
+    "coal": {
+     "top_goals": 4,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 240.05,
+     "event": false
+    },
+    "iron": {
+     "top_goals": 4,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 216.0,
+     "event": false
+    }
+   },
+   "L2R_any": false,
+   "L1": {
+    "tv_swap": 0.235,
+    "tv_noise": 0.039,
+    "L1_pass": false
+   }
+  },
+  "1005": {
+   "lengths": {
+    "CAND": 235.4,
+    "RANDOM": 142.4,
+    "B1": 237.8,
+    "CAND_twin": 241.3
+   },
+   "L0": false,
+   "achievements_per_episode": {
+    "CAND": 3.144,
+    "CAND_twin": 2.438,
+    "RANDOM": 2.29,
+    "B1": 2.333
+   },
+   "L2A": true,
+   "L2R": {
+    "tree": {
+     "top_goals": 4,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 31.7,
+     "event": false
+    },
+    "water": {
+     "top_goals": 6,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 104.8,
+     "event": false
+    },
+    "stone": {
+     "top_goals": 6,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 87.4,
+     "event": false
+    },
+    "coal": {
+     "top_goals": 7,
+     "achieved": 6,
+     "achieved_per_10k": 0.3,
+     "twin_incidental_per_10k": 237.0,
+     "event": false
+    },
+    "iron": {
+     "top_goals": 8,
+     "achieved": 7,
+     "achieved_per_10k": 0.35,
+     "twin_incidental_per_10k": 221.95,
+     "event": false
+    },
+    "diamond": {
+     "top_goals": 17,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 41.0,
+     "event": false
+    }
+   },
+   "L2R_any": false,
+   "L1": {
+    "tv_swap": 0.26,
+    "tv_noise": 0.043,
+    "L1_pass": false
+   }
+  },
+  "1006": {
+   "lengths": {
+    "CAND": 239.8,
+    "RANDOM": 140.7,
+    "B1": 235.8,
+    "CAND_twin": 237.8
+   },
+   "L0": true,
+   "achievements_per_episode": {
+    "CAND": 3.162,
+    "CAND_twin": 2.404,
+    "RANDOM": 2.298,
+    "B1": 2.326
+   },
+   "L2A": true,
+   "L2R": {
+    "water": {
+     "top_goals": 7,
+     "achieved": 6,
+     "achieved_per_10k": 0.3,
+     "twin_incidental_per_10k": 109.2,
+     "event": false
+    },
+    "stone": {
+     "top_goals": 4,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 93.3,
+     "event": false
+    },
+    "tree": {
+     "top_goals": 4,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 35.65,
+     "event": false
+    },
+    "coal": {
+     "top_goals": 5,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 242.45,
+     "event": false
+    },
+    "iron": {
+     "top_goals": 5,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 224.05,
+     "event": false
+    }
+   },
+   "L2R_any": false,
+   "L1": {
+    "tv_swap": 0.293,
+    "tv_noise": 0.037,
+    "L1_pass": false
+   }
+  },
+  "1007": {
+   "lengths": {
+    "CAND": 233.7,
+    "RANDOM": 140.3,
+    "B1": 239.2,
+    "CAND_twin": 239.5
+   },
+   "L0": false,
+   "achievements_per_episode": {
+    "CAND": 3.178,
+    "CAND_twin": 2.422,
+    "RANDOM": 2.346,
+    "B1": 2.344
+   },
+   "L2A": true,
+   "L2R": {
+    "tree": {
+     "top_goals": 4,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 36.3,
+     "event": false
+    },
+    "stone": {
+     "top_goals": 4,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 82.65,
+     "event": false
+    },
+    "water": {
+     "top_goals": 5,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 106.35,
+     "event": false
+    },
+    "iron": {
+     "top_goals": 6,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 217.85,
+     "event": false
+    },
+    "coal": {
+     "top_goals": 6,
+     "achieved": 6,
+     "achieved_per_10k": 0.3,
+     "twin_incidental_per_10k": 235.15,
+     "event": false
+    },
+    "diamond": {
+     "top_goals": 26,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 43.65,
+     "event": false
+    }
+   },
+   "L2R_any": false,
+   "L1": {
+    "tv_swap": 0.287,
+    "tv_noise": 0.02,
+    "L1_pass": false
+   }
+  },
+  "1008": {
+   "lengths": {
+    "CAND": 233.1,
+    "RANDOM": 144.7,
+    "B1": 236.2,
+    "CAND_twin": 241.8
+   },
+   "L0": false,
+   "achievements_per_episode": {
+    "CAND": 3.196,
+    "CAND_twin": 2.395,
+    "RANDOM": 2.383,
+    "B1": 2.314
+   },
+   "L2A": true,
+   "L2R": {
+    "stone": {
+     "top_goals": 4,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 77.85,
+     "event": false
+    },
+    "tree": {
+     "top_goals": 4,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 33.1,
+     "event": false
+    },
+    "iron": {
+     "top_goals": 14,
+     "achieved": 9,
+     "achieved_per_10k": 0.45,
+     "twin_incidental_per_10k": 223.8,
+     "event": false
+    },
+    "coal": {
+     "top_goals": 8,
+     "achieved": 6,
+     "achieved_per_10k": 0.3,
+     "twin_incidental_per_10k": 242.3,
+     "event": false
+    },
+    "water": {
+     "top_goals": 6,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 109.6,
+     "event": false
+    },
+    "diamond": {
+     "top_goals": 20,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 40.9,
+     "event": false
+    },
+    "table": {
+     "top_goals": 10,
+     "achieved": 0,
+     "achieved_per_10k": 0.0,
+     "twin_incidental_per_10k": 0.0,
+     "event": false
+    }
+   },
+   "L2R_any": false,
+   "L1": {
+    "tv_swap": 0.239,
+    "tv_noise": 0.038,
+    "L1_pass": false
+   }
+  },
+  "1009": {
+   "lengths": {
+    "CAND": 238.2,
+    "RANDOM": 141.9,
+    "B1": 238.8,
+    "CAND_twin": 238.5
+   },
+   "L0": false,
+   "achievements_per_episode": {
+    "CAND": 3.515,
+    "CAND_twin": 2.368,
+    "RANDOM": 2.376,
+    "B1": 2.345
+   },
+   "L2A": true,
+   "L2R": {
+    "tree": {
+     "top_goals": 5,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 35.0,
+     "event": false
+    },
+    "water": {
+     "top_goals": 5,
+     "achieved": 4,
+     "achieved_per_10k": 0.2,
+     "twin_incidental_per_10k": 101.05,
+     "event": false
+    },
+    "stone": {
+     "top_goals": 6,
+     "achieved": 5,
+     "achieved_per_10k": 0.25,
+     "twin_incidental_per_10k": 87.1,
+     "event": false
+    },
+    "iron": {
+     "top_goals": 9,
+     "achieved": 7,
+     "achieved_per_10k": 0.35,
+     "twin_incidental_per_10k": 230.75,
+     "event": false
+    },
+    "coal": {
+     "top_goals": 13,
+     "achieved": 8,
+     "achieved_per_10k": 0.4,
+     "twin_incidental_per_10k": 254.6,
+     "event": false
+    }
+   },
+   "L2R_any": false,
+   "L1": {
+    "tv_swap": 0.273,
+    "tv_noise": 0.056,
+    "L1_pass": false
+   }
+  }
+ },
+ "summary": {
+  "L0": 3,
+  "L1": 0,
+  "L2A": 10,
+  "L2R": 0,
+  "keys": 10
+ }
+}
