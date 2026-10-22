@@ -1,0 +1,1118 @@
+{
+ "runs": {
+  "B1_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1806
+   },
+   "top_by_class_new": {
+    "S0": 1806
+   }
+  },
+  "B1_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1709
+   },
+   "top_by_class_new": {
+    "S0": 1709
+   }
+  },
+  "B1_alpha_102": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 2983
+   },
+   "top_by_class_new": {
+    "S0": 2983
+   }
+  },
+  "B1_alpha_103": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1418
+   },
+   "top_by_class_new": {
+    "S0": 1418
+   }
+  },
+  "B1_alpha_104": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 3128
+   },
+   "top_by_class_new": {
+    "S0": 3128
+   }
+  },
+  "B1+M_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1806
+   },
+   "top_by_class_new": {
+    "S0": 1806
+   }
+  },
+  "B1+M_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1709
+   },
+   "top_by_class_new": {
+    "S0": 1709
+   }
+  },
+  "B1+M_alpha_102": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 2983
+   },
+   "top_by_class_new": {
+    "S0": 2983
+   }
+  },
+  "B1+M_alpha_103": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1418
+   },
+   "top_by_class_new": {
+    "S0": 1418
+   }
+  },
+  "B1+M_alpha_104": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 3128
+   },
+   "top_by_class_new": {
+    "S0": 3128
+   }
+  },
+  "B2_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1907,
+    "ungrounded": 20
+   },
+   "top_by_class_new": {
+    "S0": 1907,
+    "ungrounded": 20
+   }
+  },
+  "B2_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1522
+   },
+   "top_by_class_new": {
+    "S0": 1522
+   }
+  },
+  "B2_alpha_102": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 3511
+   },
+   "top_by_class_new": {
+    "S0": 3511
+   }
+  },
+  "B2_alpha_103": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1666
+   },
+   "top_by_class_new": {
+    "S0": 1666
+   }
+  },
+  "B2_alpha_104": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 2569
+   },
+   "top_by_class_new": {
+    "S0": 2569
+   }
+  },
+  "B3_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 0
+   },
+   "top_by_class_new": {
+    "S0": 0
+   }
+  },
+  "B3_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 0
+   },
+   "top_by_class_new": {
+    "S0": 0
+   }
+  },
+  "B3_alpha_102": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 0
+   },
+   "top_by_class_new": {
+    "S0": 0
+   }
+  },
+  "B3_alpha_103": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 0
+   },
+   "top_by_class_new": {
+    "S0": 0
+   }
+  },
+  "B3_alpha_104": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 0
+   },
+   "top_by_class_new": {
+    "S0": 0
+   }
+  },
+  "B4_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1300
+   },
+   "top_by_class_new": {
+    "S0": 1300
+   }
+  },
+  "B4_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1156
+   },
+   "top_by_class_new": {
+    "S0": 1156
+   }
+  },
+  "B4_alpha_102": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 2949
+   },
+   "top_by_class_new": {
+    "S0": 2949
+   }
+  },
+  "B4_alpha_103": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1004
+   },
+   "top_by_class_new": {
+    "S0": 1004
+   }
+  },
+  "B4_alpha_104": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1362
+   },
+   "top_by_class_new": {
+    "S0": 1362
+   }
+  },
+  "B5_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1223,
+    "ungrounded": 53
+   },
+   "top_by_class_new": {
+    "S0": 1223,
+    "ungrounded": 53
+   }
+  },
+  "B5_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1156
+   },
+   "top_by_class_new": {
+    "S0": 1156
+   }
+  },
+  "B5_alpha_102": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 2819,
+    "ungrounded": 74
+   },
+   "top_by_class_new": {
+    "S0": 2819,
+    "ungrounded": 74
+   }
+  },
+  "B5_alpha_103": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1004
+   },
+   "top_by_class_new": {
+    "S0": 1004
+   }
+  },
+  "B5_alpha_104": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1114,
+    "ungrounded": 31
+   },
+   "top_by_class_new": {
+    "S0": 1114,
+    "ungrounded": 31
+   }
+  },
+  "F-random_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 755,
+    "ungrounded": 82
+   },
+   "top_by_class_new": {
+    "S0": 755,
+    "ungrounded": 82
+   }
+  },
+  "F-random_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "ungrounded": 56,
+    "S0": 767
+   },
+   "top_by_class_new": {
+    "ungrounded": 56,
+    "S0": 767
+   }
+  },
+  "F-scripted_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 0
+   },
+   "top_by_class_new": {
+    "S0": 0
+   }
+  },
+  "F-scripted_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 0
+   },
+   "top_by_class_new": {
+    "S0": 0
+   }
+  },
+  "F-list_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 844
+   },
+   "top_by_class_new": {
+    "S0": 844
+   }
+  },
+  "F-list_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 738
+   },
+   "top_by_class_new": {
+    "S0": 738
+   }
+  },
+  "F-inflate_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 29403
+   },
+   "top_by_class_new": {
+    "S0": 29403
+   }
+  },
+  "F-inflate_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 9493
+   },
+   "top_by_class_new": {
+    "S0": 9493
+   }
+  },
+  "F-hindsight_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    false,
+    false
+   ],
+   "top_by_class_old": {
+    "S0": 410
+   },
+   "top_by_class_new": {
+    "S0": 410
+   }
+  },
+  "F-hindsight_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    false,
+    false
+   ],
+   "top_by_class_old": {
+    "S0": 320
+   },
+   "top_by_class_new": {
+    "S0": 320
+   }
+  },
+  "F-scheduler_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 32100
+   },
+   "top_by_class_new": {
+    "S0": 32100
+   }
+  },
+  "F-scheduler_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 29686
+   },
+   "top_by_class_new": {
+    "S0": 29686
+   }
+  },
+  "F-unlock_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [
+     "LATENT:lamp.armed:(1,)",
+     "LATENT:stone.charge:(1, 2, 3)",
+     "LATENT:stone.charge:(2, 3)"
+    ],
+    [
+     "LATENT:lamp.armed:(1,)",
+     "LATENT:stone.charge:(1, 2, 3)",
+     "LATENT:stone.charge:(2, 3)"
+    ]
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "LATENT:stone.charge:(2, 3)": 44,
+    "S0": 1679,
+    "LATENT:stone.charge:(1, 2, 3)": 55,
+    "LATENT:lamp.armed:(1,)": 24
+   },
+   "top_by_class_new": {
+    "LATENT:stone.charge:(2, 3)": 44,
+    "S0": 1679,
+    "LATENT:stone.charge:(1, 2, 3)": 55,
+    "LATENT:lamp.armed:(1,)": 24
+   }
+  },
+  "F-unlock_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [
+     "LATENT:lamp.armed:(1,)",
+     "LATENT:stone.charge:(1, 2, 3)",
+     "LATENT:stone.charge:(2, 3)"
+    ],
+    [
+     "LATENT:lamp.armed:(1,)",
+     "LATENT:stone.charge:(1, 2, 3)",
+     "LATENT:stone.charge:(2, 3)"
+    ]
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1655,
+    "LATENT:stone.charge:(1, 2, 3)": 47,
+    "LATENT:lamp.armed:(1,)": 56,
+    "LATENT:stone.charge:(2, 3)": 42
+   },
+   "top_by_class_new": {
+    "S0": 1655,
+    "LATENT:stone.charge:(1, 2, 3)": 47,
+    "LATENT:lamp.armed:(1,)": 56,
+    "LATENT:stone.charge:(2, 3)": 42
+   }
+  },
+  "F-hardmap_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [
+     "LATENT:lamp.armed:(1,)",
+     "LATENT:stone.charge:(1, 2, 3)",
+     "LATENT:stone.charge:(2, 3)"
+    ],
+    [
+     "LATENT:lamp.armed:(1,)",
+     "LATENT:stone.charge:(1, 2, 3)",
+     "LATENT:stone.charge:(2, 3)"
+    ]
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 2028,
+    "LATENT:stone.charge:(1, 2, 3)": 48,
+    "LATENT:lamp.armed:(1,)": 34,
+    "LATENT:stone.charge:(2, 3)": 36
+   },
+   "top_by_class_new": {
+    "S0": 2028,
+    "LATENT:stone.charge:(1, 2, 3)": 48,
+    "LATENT:lamp.armed:(1,)": 34,
+    "LATENT:stone.charge:(2, 3)": 36
+   }
+  },
+  "F-hardmap_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [
+     "LATENT:lamp.armed:(1,)",
+     "LATENT:stone.charge:(1, 2, 3)",
+     "LATENT:stone.charge:(2, 3)"
+    ],
+    [
+     "LATENT:lamp.armed:(1,)",
+     "LATENT:stone.charge:(1, 2, 3)",
+     "LATENT:stone.charge:(2, 3)"
+    ]
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1849,
+    "LATENT:lamp.armed:(1,)": 58,
+    "LATENT:stone.charge:(1, 2, 3)": 46,
+    "LATENT:stone.charge:(2, 3)": 46
+   },
+   "top_by_class_new": {
+    "S0": 1849,
+    "LATENT:lamp.armed:(1,)": 58,
+    "LATENT:stone.charge:(1, 2, 3)": 46,
+    "LATENT:stone.charge:(2, 3)": 46
+   }
+  },
+  "F-macro_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 36868
+   },
+   "top_by_class_new": {
+    "S0": 36868
+   }
+  },
+  "F-macro_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 31227
+   },
+   "top_by_class_new": {
+    "S0": 31227
+   }
+  },
+  "F-story_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1806
+   },
+   "top_by_class_new": {
+    "S0": 1806
+   }
+  },
+  "F-story_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1709
+   },
+   "top_by_class_new": {
+    "S0": 1709
+   }
+  },
+  "F-rewardhack_alpha_100": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "ungrounded": 277,
+    "S0": 612
+   },
+   "top_by_class_new": {
+    "ungrounded": 277,
+    "S0": 612
+   }
+  },
+  "F-rewardhack_alpha_101": {
+   "L2_any": [
+    false,
+    false
+   ],
+   "grounded_classes": [
+    [],
+    []
+   ],
+   "goal_log_valid": [
+    true,
+    true
+   ],
+   "top_by_class_old": {
+    "S0": 1272,
+    "ungrounded": 571
+   },
+   "top_by_class_new": {
+    "S0": 1272,
+    "ungrounded": 571
+   }
+  }
+ },
+ "differences": [],
+ "verdicts_unchanged": true
+}

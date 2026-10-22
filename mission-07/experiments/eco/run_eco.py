@@ -10,6 +10,9 @@ Options for the agent process (interventions, PROTOCOL.md section 6.6):
   transplant           list of structure descriptions installed at t = 0
   gift                 list of [t, formula]: goals pushed from outside at time t (reason "external")
   arm_kwargs           extra constructor arguments for the arm
+  transplant_t         install the `transplant` structures at this step instead of t = 0 (amendment A2, G-B1M)
+  fake                 {"t": t, "desc": structure description}: a fake structure added at t (amendment A2)
+  no_propose           the agent's own top-level goal proposal is switched off (amendment A2, G-CAND)
 
   python3 -I run_eco.py ARM FAMILY.json SEED STEPS OUT_DIR
 """
@@ -65,18 +68,31 @@ def agent_proc(conn, arm, seed, opts):
         ag = arms[arm](seed, **opts.get("arm_kwargs", {}))
     if opts.get("learn_off"):
         ag.learn_every = None
-    for d in opts.get("transplant", []):
-        params = dict(d["params"])
-        if params.get("q_struct") is not None:                 # keep references between transplanted structures
-            params["q_struct"] = 10 ** 6 + params["q_struct"]
-        s = FORMS[d["form"]](10 ** 6 + d["struct_id"], params, d.get("stats", {}), [], 0)
-        ag.add_structure(s, trigger="transplant")
+    def install(descs, trigger, t_now):
+        for d in descs:
+            params = dict(d["params"])
+            if params.get("q_struct") is not None:             # keep references between transplanted structures
+                params["q_struct"] = 10 ** 6 + params["q_struct"]
+            s = FORMS[d["form"]](10 ** 6 + d["struct_id"], params, d.get("stats", {}), [], t_now)
+            ag.add_structure(s, trigger=trigger)
+    if opts.get("no_propose"):
+        ag.propose = lambda: None
+    t_tr = opts.get("transplant_t")
+    if t_tr is None:
+        install(opts.get("transplant", []), "transplant", 0)
+    fake = opts.get("fake")
     gifts = sorted(opts.get("gift", []))
     dele = opts.get("delete")
     while True:
         kind, payload = conn.recv()
         if kind == "obs":
             t = ag.mem.t + 1
+            if t_tr is not None and t == t_tr:
+                ag.obs = payload
+                install(opts.get("transplant", []), "transplant", t)
+            if fake and t == fake["t"]:
+                ag.obs = payload
+                install([fake["desc"]], "fake", t)
             if dele and t == dele["t"]:
                 for sid in [sid for sid, s in ag.structs.items() if s.form == dele["form"] and s.params.get("K") == dele["K"]]:
                     ag.logs.deletions.append({"t": t, "struct_id": sid, "form": dele["form"], "K": dele["K"]})
