@@ -74,6 +74,14 @@ def place_mask(state_map, pos, np):
     return out
 
 
+
+def _cpu():
+    """CPU seconds of this process and its finished children (the agent process), for budget accounting."""
+    import resource
+    a = resource.getrusage(resource.RUSAGE_SELF)
+    b = resource.getrusage(resource.RUSAGE_CHILDREN)
+    return round(a.ru_utime + a.ru_stime + b.ru_utime + b.ru_stime, 1)
+
 def run(arm, key, steps, out_dir, opts=None, tag="", checkpoint=None, start=None):
     """checkpoint: step at which (env state, rng, obs, agent) are pickled into OUT_DIR/<stem>.ckpt_<t>.pkl;
     start: such a pickle's content to continue from (history swap)."""
@@ -164,7 +172,7 @@ def run(arm, key, steps, out_dir, opts=None, tag="", checkpoint=None, start=None
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     judge = {"arm": arm, "key": key, "steps": steps, "opts": {k: v for k, v in opts.items() if k != "agent_pickle"}, "episodes": episodes, "inventory": inv_tl,
-             "vitals": vit_tl, "place_intervals": place_iv, "secs": round(secs, 1)}
+             "vitals": vit_tl, "place_intervals": place_iv, "secs": round(secs, 1), "cpu_secs": _cpu()}
     with gzip.open(out / f"{stem}.judge.json.gz", "wt") as f:
         json.dump(judge, f)
     with gzip.open(out / f"{stem}.agent.json.gz", "wt") as f:

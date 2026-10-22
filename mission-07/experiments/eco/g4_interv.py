@@ -1,6 +1,6 @@
 """Gate 4 paired interventions for the candidate (JUDGE SIDE; PROTOCOL.md section 6.6 with amendment A2 item 5).
 Same procedure as g3_interv.py on the confirmation families (alpha 200-209, beta 300-309, gamma 400-409); s1 is
-taken from run/g4_FAMILY/g4_scores.json and the family's C2 / C3 from g4_score.classes_for.
+taken from run/g4_FAMILY/arm_<ARM>.json and the family's C2 / C3 from g4_score.classes_for.
 For every scored full run with an s1 (earliest structure grounded to C2):
   .del        do(s1 absent): delete s1's (form, kind) at t(s1) + 500 and block re-adoption and revision
   .fake       the same deletion, plus a random ungrounded M1 added at t(s1) (parameters drawn with seed + 7000, redrawn
@@ -54,10 +54,10 @@ def draw_fake(seed, kinds, probes, classes):
 
 def jobs(name, arm):
     out = out_dir(name)
-    sc = json.loads((out / "g4_scores.json").read_text())
+    sc = json.loads((out / f"arm_{arm}.json").read_text())
     FAM = family_path(name)
     fam = load_family(FAM)
-    scores = {f"{arm}_{fam['name']}_{s}": v for s, v in sc["arms"][arm]["runs"].items()}
+    scores = {f"{arm}_{fam['name']}_{s}": v for s, v in sc["runs"].items()}
     probes, classes = G.make_probes(fam)
     lines = []
     import gzip

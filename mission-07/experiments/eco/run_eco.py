@@ -118,6 +118,14 @@ def agent_proc(conn, arm, seed, opts):
             break
 
 
+
+def _cpu():
+    """CPU seconds of this process and its finished children (the agent process), for budget accounting."""
+    import resource
+    a = resource.getrusage(resource.RUSAGE_SELF)
+    b = resource.getrusage(resource.RUSAGE_CHILDREN)
+    return round(a.ru_utime + a.ru_stime + b.ru_utime + b.ru_stime, 1)
+
 def run(arm, family_path, seed, steps, out_dir, opts=None, tag="", world=None, checkpoint=None):
     """world: an EcoWorld to continue (default: a fresh one from the seed). checkpoint: a step t at which the world
     and the agent are pickled into OUT_DIR/<stem>.ckpt_<t>.pkl (judge side; used for the history-swap test)."""
@@ -160,7 +168,7 @@ def run(arm, family_path, seed, steps, out_dir, opts=None, tag="", world=None, c
     secs = time.perf_counter() - t0
     judge_out = {"arm": arm, "family": fam["name"], "seed": seed, "steps": steps, "opts": {k: v for k, v in opts.items() if k not in ("transplant", "agent_pickle")},
                  "classes": [list(c) for c in classes], "intervals": {str(i): v for i, v in intervals.items()},
-                 "events": w.events, "lives": w.lives, "secs": round(secs, 1), "kind_id": w.kind_id}
+                 "events": w.events, "lives": w.lives, "secs": round(secs, 1), "kind_id": w.kind_id, "cpu_secs": _cpu()}
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     with gzip.open(out / f"{stem}.judge.json.gz", "wt") as f:
