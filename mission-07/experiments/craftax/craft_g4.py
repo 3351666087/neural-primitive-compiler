@@ -27,8 +27,8 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-KEYS = {"dev": range(0, 5), "conf": range(1000, 1010)}
-STEPS = 200000
+KEYS = {"dev": range(0, 5), "conf": range(1000, 1010), "devmini": range(0, 2)}
+STEPS = {"dev": 200000, "conf": 200000, "devmini": 3000}   # devmini: pipeline test only
 TWIN_ARMS = {"CAND", "B4"}
 SWAP_ARMS = {"CAND", "B4"}
 
@@ -43,9 +43,9 @@ def jobs(s, arms):
     lines = []
     for arm in arms.split(","):
         for k in KEYS[s]:
-            lines.append({"arm": arm, "key": k, "steps": STEPS, "tag": "", "checkpoint": 20000 if arm in SWAP_ARMS else None})
+            lines.append({"arm": arm, "key": k, "steps": STEPS[s], "tag": "", "checkpoint": (20000 if s != "devmini" else 1000) if arm in SWAP_ARMS else None})
             if arm in TWIN_ARMS:
-                lines.append({"arm": arm, "key": k, "steps": STEPS, "tag": ".twin", "opts": {"learn_off": True}})
+                lines.append({"arm": arm, "key": k, "steps": STEPS[s], "tag": ".twin", "opts": {"learn_off": True}})
     with open(out / "jobs.jsonl", "a") as f:
         for l in lines:
             f.write(json.dumps(l) + "\n")
@@ -164,7 +164,8 @@ def score(s):
         row["L2R"] = place_l2(jc, ac, jt)
         row["L2R_any"] = any(v["event"] for v in row["L2R"].values())
         try:
-            row["L1"] = swap(s, "CAND", k, keys[(i + 1) % len(keys)])
+            row["L1"] = swap(s, "CAND", k, keys[(i + 1) % len(keys)], t=20000 if s != "devmini" else 1000,
+                             horizon=2000 if s != "devmini" else 500)
         except FileNotFoundError as e:
             row["L1"] = {"missing": str(e), "L1_pass": False}
         res["per_key"][k] = row

@@ -364,24 +364,25 @@ class Learner:
         times = [t for _, t in order]
         rows = []
         for theta, D, reset in (combos or itertools.product(THETAS, DECAYS, (True, False))):
+            # triggers as if every instance had the context; an instance without it never triggers (and never
+            # resets), so the context only masks whole instances out
+            Fall = 0
+            i = 0
+            for k, ts in inst.items():
+                c, mark = 0, ts[0]
+                for t in ts:
+                    while c > 0 and t - mark >= D:
+                        c -= 1
+                        mark += D
+                    c = min(c + 1, theta)
+                    mark = t
+                    if c >= theta:
+                        Fall |= 1 << i
+                        if reset:
+                            c = 0
+                    i += 1
             for (ctx, dctx), cm in ctxmask.items():
-                F = 0
-                i = 0
-                for k, ts in inst.items():
-                    ok = (cm >> i) & 1
-                    c, mark = 0, ts[0]
-                    for t in ts:
-                        while c > 0 and t - mark >= D:
-                            c -= 1
-                            mark += D
-                        c = min(c + 1, theta)
-                        mark = t
-                        if c >= theta:
-                            if ok:
-                                F |= 1 << i
-                            if reset and ok:
-                                c = 0
-                        i += 1
+                F = Fall & cm
                 FT, NT = F & T, T & ~F
                 n1, n0 = FT.bit_count(), NT.bit_count()
                 for d, Yd in Y.items():

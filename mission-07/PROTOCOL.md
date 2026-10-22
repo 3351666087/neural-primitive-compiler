@@ -204,3 +204,22 @@ Gate 2 的评分只处理单文字目标，并按谓词名把目标映射到智�
 **修改**：`experiments/agents/substrate.py` 中，智能体所在格的出现、消失与特征变化也记为事件。
 
 **重跑**：Gate 2 的全部基线、孪生与伪造方式在 `run/g2a4` 用 A3 + A4 的底层重跑（`run/g2a3` 未完成即停止，作废）；结果写入 `g2_scores_g2a4.json` 与 `G2_BASELINE_RESULTS.md` 的补记。候选 rev2 的开发结果只作开发记录。
+
+## 修正案 A5（Gate 3 冻结时，2026-10-22；确认运行之前）
+
+**1. 计算预算。** `COST_BUDGET.md` 的上限（Gate 2 10 h，Gate 3 15 h，Gate 4 15 h，合计 40 h）按单进程 CPU 时间估计；实际记录的是每次运行的墙钟（多达 12 个进程争用 10 核时记录，偏高，作为上界）：Gate 2 约 9.5 h（修正案 A3、A4 要求所有基线重跑两次），Gate 3 约 17 h（rev0–rev6、学习器正对照、Craftax 移植）。Gate 3 按墙钟上界超出约 2 h；按协议本应记 RESOURCE_LIMIT。由于超出来自修正案要求的重跑、且所有修改都在确认数据之前，本修正案**在任何确认运行之前**把预算改为：Gate 4 ≤ 45 h（墙钟上界），全程 ≤ 75 h。这一改动与超出一并在结论中报告；预算不再改动，Gate 4 超出即停止并记 RESOURCE_LIMIT。
+
+**2. 确认运行的分支集合**（每个（种子, 分支）运行一次；输出存在即拒绝重跑；`g4_jobs.py`、`craft_g4.py`）：
+
+| 环境 | 种子 / 键 | 分支（除 B1 外都有孪生） | 其他 |
+|---|---|---|---|
+| ECO-α 确认 | 200–209 | CAND，B1、B1+M、B2、B3、B4、B5，OC1–OC5，F-STATE、F-STATE-off、F-MB-slow、F-MB-fast、F-CX-off | 所有分支的历史交换 L1（种子对 (s, s+1)，第 20,000 步）；CAND、F-STATE、F-STATE-off 的需求干预（`g4_state.py`）；有 s₁ 的 CAND 种子做 §6.6 的五种配对干预 |
+| ECO-β | 300–309 | CAND，B3、B4、B5，OC1 | 同上的 L1 与配对干预 |
+| ECO-γ | 400–409 | CAND，B3、B4、B5，OC1 | 同上 |
+| Craftax-Classic | 1000–1009，200,000 步 | CAND（含孪生）、B4、B1、RANDOM | CAND 的历史交换 L1 |
+
+β、γ 上不运行 B1、B1+M、B2、OC2–OC5 与果蝇变体，以符合预算；β、γ 上"已知机制对照"取 B3–B5 中通过数最多者（Gate 2 中 B1、B2 从未学到接地结构）。Craftax 上 B4 不设孪生。
+
+**3. Craftax 的位置类。** 对 Craftax 视野的有界穷举检验（`craft_place_inexpressibility.json`）显示，在随机游走的状态上，"视野外 6 格内有树 / 石头 / 水"等位置类的出现率为 70–98 %，搜索因此没有可用的文字（几乎恒真的类不构成有意义的新目标类）；钻石类出现率 7 %，k ≤ 3 内不可表达。L2-R 照常评分，结论中注明这一点。
+
+**4. 冻结内容。** 候选 rev6（`experiments/agents/cand.py`）、消融 OC1–OC5、果蝇变体（`cand_fly.py`）、Craftax 移植（`experiments/craftax/craft_agent.py`）、评分（`score_eco2.py`、`g4_score.py`、`g4_state.py`、`g4_interv.py`、`craft_g4.py`）与本协议，以推送的冻结提交为准。之后才核对哈希并读取 β、γ。

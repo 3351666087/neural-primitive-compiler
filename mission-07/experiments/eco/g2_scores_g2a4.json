@@ -1,0 +1,2259 @@
+{
+ "summary": {
+  "B1": {
+   "runs": 5,
+   "mean_lives": 57.4,
+   "goal_logs_valid": 5,
+   "L1_pass": false,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {},
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 0
+  },
+  "B1+M": {
+   "runs": 5,
+   "mean_lives": 57.4,
+   "goal_logs_valid": 5,
+   "L1_pass": false,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {},
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 0
+  },
+  "B2": {
+   "runs": 5,
+   "mean_lives": 55.0,
+   "goal_logs_valid": 5,
+   "L1_pass": true,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {},
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 0
+  },
+  "B3": {
+   "runs": 5,
+   "mean_lives": 59.2,
+   "goal_logs_valid": 5,
+   "L1_pass": false,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {},
+   "structures_from_interaction": 2,
+   "structures_failing_audit": 1
+  },
+  "B4": {
+   "runs": 5,
+   "mean_lives": 55.0,
+   "goal_logs_valid": 5,
+   "L1_pass": true,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {},
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 0
+  },
+  "B5": {
+   "runs": 5,
+   "mean_lives": 55.0,
+   "goal_logs_valid": 5,
+   "L1_pass": true,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {},
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 0
+  },
+  "F-random": {
+   "runs": 2,
+   "mean_lives": 60.5,
+   "goal_logs_valid": 2,
+   "L1_pass": false,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {},
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 0
+  },
+  "F-scripted": {
+   "runs": 2,
+   "mean_lives": 51.5,
+   "goal_logs_valid": 2,
+   "L1_pass": false,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {},
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 0
+  },
+  "F-list": {
+   "runs": 2,
+   "mean_lives": 59.0,
+   "goal_logs_valid": 2,
+   "L1_pass": false,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {},
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 0
+  },
+  "F-inflate": {
+   "runs": 2,
+   "mean_lives": 64.5,
+   "goal_logs_valid": 2,
+   "L1_pass": false,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {},
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 0
+  },
+  "F-hindsight": {
+   "runs": 2,
+   "mean_lives": 57.5,
+   "goal_logs_valid": 0,
+   "L1_pass": false,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {},
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 0
+  },
+  "F-scheduler": {
+   "runs": 2,
+   "mean_lives": 55.0,
+   "goal_logs_valid": 2,
+   "L1_pass": false,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {},
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 0
+  },
+  "F-unlock": {
+   "runs": 2,
+   "mean_lives": 58.0,
+   "goal_logs_valid": 2,
+   "L1_pass": false,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {
+    "LATENT:stone.charge:(1, 2, 3)": 2,
+    "LATENT:stone.charge:(2, 3)": 2,
+    "LATENT:lamp.armed:(1,)": 2
+   },
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 6
+  },
+  "F-hardmap": {
+   "runs": 2,
+   "mean_lives": 58.5,
+   "goal_logs_valid": 2,
+   "L1_pass": false,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {
+    "LATENT:stone.charge:(1, 2, 3)": 2,
+    "LATENT:stone.charge:(2, 3)": 2,
+    "LATENT:lamp.armed:(1,)": 2
+   },
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 6
+  },
+  "F-macro": {
+   "runs": 2,
+   "mean_lives": 55.5,
+   "goal_logs_valid": 2,
+   "L1_pass": false,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {},
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 2
+  },
+  "F-story": {
+   "runs": 2,
+   "mean_lives": 68.0,
+   "goal_logs_valid": 2,
+   "L1_pass": false,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {},
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 0
+  },
+  "F-rewardhack": {
+   "runs": 2,
+   "mean_lives": 64.0,
+   "goal_logs_valid": 2,
+   "L1_pass": false,
+   "L2_runs": 0,
+   "L2_by_class": {},
+   "grounded_predicates_by_class": {},
+   "structures_from_interaction": 0,
+   "structures_failing_audit": 0
+  }
+ },
+ "fake_check": {
+  "F-random": {
+   "labelled_negative": true,
+   "why": [
+    "no L1",
+    "no L2"
+   ]
+  },
+  "F-scripted": {
+   "labelled_negative": true,
+   "why": [
+    "no L1",
+    "no L2"
+   ]
+  },
+  "F-list": {
+   "labelled_negative": true,
+   "why": [
+    "no L1",
+    "no L2"
+   ]
+  },
+  "F-inflate": {
+   "labelled_negative": true,
+   "why": [
+    "no L1",
+    "no L2"
+   ]
+  },
+  "F-hindsight": {
+   "labelled_negative": true,
+   "why": [
+    "late goal records",
+    "no L1",
+    "no L2"
+   ]
+  },
+  "F-scheduler": {
+   "labelled_negative": true,
+   "why": [
+    "no L1",
+    "no L2"
+   ]
+  },
+  "F-unlock": {
+   "labelled_negative": true,
+   "why": [
+    "no L1",
+    "no L2"
+   ]
+  },
+  "F-hardmap": {
+   "labelled_negative": true,
+   "why": [
+    "no L1",
+    "no L2"
+   ]
+  },
+  "F-macro": {
+   "labelled_negative": true,
+   "why": [
+    "no L1",
+    "no L2"
+   ]
+  },
+  "F-story": {
+   "labelled_negative": true,
+   "why": [
+    "no L1",
+    "no L2"
+   ]
+  },
+  "F-rewardhack": {
+   "labelled_negative": true,
+   "why": [
+    "no L1",
+    "no L2"
+   ]
+  },
+  "B3": {
+   "labelled_negative": true,
+   "why": [
+    "no L1",
+    "no L2"
+   ]
+  }
+ },
+ "swaps": {
+  "B1": {
+   "arm": "B1",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.039,
+   "tv_noise": 0.0,
+   "goals_own": 20,
+   "L1_pass": false
+  },
+  "B1+M": {
+   "arm": "B1+M",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.039,
+   "tv_noise": 0.0,
+   "goals_own": 20,
+   "L1_pass": false
+  },
+  "B2": {
+   "arm": "B2",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.438,
+   "tv_noise": 0.354,
+   "goals_own": 25,
+   "L1_pass": true
+  },
+  "B3": {
+   "arm": "B3",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.0,
+   "tv_noise": 0.0,
+   "goals_own": 0,
+   "L1_pass": false
+  },
+  "B4": {
+   "arm": "B4",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.62,
+   "tv_noise": 0.547,
+   "goals_own": 23,
+   "L1_pass": true
+  },
+  "B5": {
+   "arm": "B5",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.62,
+   "tv_noise": 0.547,
+   "goals_own": 23,
+   "L1_pass": true
+  },
+  "F-random": {
+   "arm": "F-random",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.0,
+   "tv_noise": 0.515,
+   "goals_own": 22,
+   "L1_pass": false
+  },
+  "F-scripted": {
+   "arm": "F-scripted",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.0,
+   "tv_noise": 0.0,
+   "goals_own": 0,
+   "L1_pass": false
+  },
+  "F-list": {
+   "arm": "F-list",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.0,
+   "tv_noise": 0.0,
+   "goals_own": 6,
+   "L1_pass": false
+  },
+  "F-inflate": {
+   "arm": "F-inflate",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.03,
+   "tv_noise": 0.069,
+   "goals_own": 10,
+   "L1_pass": false
+  },
+  "F-hindsight": {
+   "arm": "F-hindsight",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.233,
+   "tv_noise": 0.542,
+   "goals_own": 3,
+   "L1_pass": false
+  },
+  "F-scheduler": {
+   "arm": "F-scheduler",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.001,
+   "tv_noise": 0.0,
+   "goals_own": 4,
+   "L1_pass": false
+  },
+  "F-unlock": {
+   "arm": "F-unlock",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.0,
+   "tv_noise": 0.336,
+   "goals_own": 33,
+   "L1_pass": false
+  },
+  "F-hardmap": {
+   "arm": "F-hardmap",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.294,
+   "tv_noise": 0.422,
+   "goals_own": 32,
+   "L1_pass": false
+  },
+  "F-macro": {
+   "arm": "F-macro",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.0,
+   "tv_noise": 0.0,
+   "goals_own": 1,
+   "L1_pass": false
+  },
+  "F-story": {
+   "arm": "F-story",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.039,
+   "tv_noise": 0.0,
+   "goals_own": 20,
+   "L1_pass": false
+  },
+  "F-rewardhack": {
+   "arm": "F-rewardhack",
+   "seed_a": 100,
+   "seed_b": 101,
+   "t": 20000,
+   "horizon": 2000,
+   "tv_swap": 0.281,
+   "tv_noise": 0.159,
+   "goals_own": 16,
+   "L1_pass": false
+  }
+ },
+ "runs": {
+  "B1_alpha_100": {
+   "stem": "B1_alpha_100",
+   "arm": "B1",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 68,
+   "secs": 68.6,
+   "goals": 1913,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1806,
+     "need": 107
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B1_alpha_101": {
+   "stem": "B1_alpha_101",
+   "arm": "B1",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 68,
+   "secs": 68.3,
+   "goals": 1831,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1709,
+     "need": 122
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B1_alpha_102": {
+   "stem": "B1_alpha_102",
+   "arm": "B1",
+   "seed": 102,
+   "steps": 60000,
+   "lives": 45,
+   "secs": 72.7,
+   "goals": 3207,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 2983,
+     "need": 224
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B1_alpha_103": {
+   "stem": "B1_alpha_103",
+   "arm": "B1",
+   "seed": 103,
+   "steps": 60000,
+   "lives": 57,
+   "secs": 297.2,
+   "goals": 1619,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1418,
+     "need": 201
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B1_alpha_104": {
+   "stem": "B1_alpha_104",
+   "arm": "B1",
+   "seed": 104,
+   "steps": 60000,
+   "lives": 49,
+   "secs": 201.7,
+   "goals": 3333,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 3128,
+     "need": 205
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B1+M_alpha_100": {
+   "stem": "B1+M_alpha_100",
+   "arm": "B1+M",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 68,
+   "secs": 127.9,
+   "goals": 1913,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1806,
+     "need": 107
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B1+M_alpha_101": {
+   "stem": "B1+M_alpha_101",
+   "arm": "B1+M",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 68,
+   "secs": 102.7,
+   "goals": 1831,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1709,
+     "need": 122
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B1+M_alpha_102": {
+   "stem": "B1+M_alpha_102",
+   "arm": "B1+M",
+   "seed": 102,
+   "steps": 60000,
+   "lives": 45,
+   "secs": 85.8,
+   "goals": 3207,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 2983,
+     "need": 224
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B1+M_alpha_103": {
+   "stem": "B1+M_alpha_103",
+   "arm": "B1+M",
+   "seed": 103,
+   "steps": 60000,
+   "lives": 57,
+   "secs": 263.4,
+   "goals": 1619,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1418,
+     "need": 201
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B1+M_alpha_104": {
+   "stem": "B1+M_alpha_104",
+   "arm": "B1+M",
+   "seed": 104,
+   "steps": 60000,
+   "lives": 49,
+   "secs": 161.2,
+   "goals": 3333,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 3128,
+     "need": 205
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B2_alpha_100": {
+   "stem": "B2_alpha_100",
+   "arm": "B2",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 58,
+   "secs": 96.6,
+   "goals": 2177,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 2036,
+     "need": 141
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B2_alpha_101": {
+   "stem": "B2_alpha_101",
+   "arm": "B2",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 60,
+   "secs": 103.2,
+   "goals": 1675,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1522,
+     "need": 153
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B2_alpha_102": {
+   "stem": "B2_alpha_102",
+   "arm": "B2",
+   "seed": 102,
+   "steps": 60000,
+   "lives": 47,
+   "secs": 79.3,
+   "goals": 3688,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 3511,
+     "need": 177
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B2_alpha_103": {
+   "stem": "B2_alpha_103",
+   "arm": "B2",
+   "seed": 103,
+   "steps": 60000,
+   "lives": 57,
+   "secs": 242.2,
+   "goals": 1847,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1666,
+     "need": 181
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B2_alpha_104": {
+   "stem": "B2_alpha_104",
+   "arm": "B2",
+   "seed": 104,
+   "steps": 60000,
+   "lives": 53,
+   "secs": 109.5,
+   "goals": 2750,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 2569,
+     "need": 181
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B3_alpha_100": {
+   "stem": "B3_alpha_100",
+   "arm": "B3",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 57,
+   "secs": 293.6,
+   "goals": 236,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "need": 236
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B3_alpha_101": {
+   "stem": "B3_alpha_101",
+   "arm": "B3",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 63,
+   "secs": 280.2,
+   "goals": 182,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 3,
+      "D": 1000000000,
+      "reset": true,
+      "ctx": null,
+      "dctx": 0,
+      "ftype": "appear",
+      "K2": 3,
+      "delta": 4
+     },
+     "t_created": 2000,
+     "trigger": "periodic",
+     "predicates": [
+      "cnt[2]>=1",
+      "cnt[2]>=2"
+     ]
+    }
+   ],
+   "predicates": {
+    "cnt[2]>=1": {
+     "struct": 0,
+     "t_created": 2000,
+     "audit": {
+      "evidence": 8,
+      "matched_judge_effects": 8,
+      "ok": true
+     },
+     "grounded": false,
+     "class": null,
+     "precision": 0.845,
+     "recall": 0.929
+    },
+    "cnt[2]>=2": {
+     "struct": 0,
+     "t_created": 2000,
+     "audit": {
+      "evidence": 8,
+      "matched_judge_effects": 8,
+      "ok": true
+     },
+     "grounded": false,
+     "class": null,
+     "precision": 1.0,
+     "recall": 0.493
+    }
+   },
+   "goals_by_class": {
+    "S0": {
+     "need": 182
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B3_alpha_102": {
+   "stem": "B3_alpha_102",
+   "arm": "B3",
+   "seed": 102,
+   "steps": 60000,
+   "lives": 53,
+   "secs": 202.3,
+   "goals": 267,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "need": 267
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B3_alpha_103": {
+   "stem": "B3_alpha_103",
+   "arm": "B3",
+   "seed": 103,
+   "steps": 60000,
+   "lives": 56,
+   "secs": 241.2,
+   "goals": 246,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "need": 246
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B3_alpha_104": {
+   "stem": "B3_alpha_104",
+   "arm": "B3",
+   "seed": 104,
+   "steps": 60000,
+   "lives": 67,
+   "secs": 259.0,
+   "goals": 155,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M3",
+     "params": {
+      "K": 5
+     },
+     "t_created": 2000,
+     "trigger": "periodic",
+     "predicates": [
+      "memnear[5]"
+     ]
+    }
+   ],
+   "predicates": {
+    "memnear[5]": {
+     "struct": 0,
+     "t_created": 2000,
+     "audit": {
+      "evidence": 2,
+      "matched_judge_effects": 2,
+      "ok": false
+     },
+     "grounded": false,
+     "class": null,
+     "precision": 0.0,
+     "recall": 0.0
+    }
+   },
+   "goals_by_class": {
+    "S0": {
+     "need": 155
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B4_alpha_100": {
+   "stem": "B4_alpha_100",
+   "arm": "B4",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 58,
+   "secs": 97.7,
+   "goals": 1448,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1300,
+     "need": 148
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B4_alpha_101": {
+   "stem": "B4_alpha_101",
+   "arm": "B4",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 60,
+   "secs": 121.8,
+   "goals": 1309,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1156,
+     "need": 153
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B4_alpha_102": {
+   "stem": "B4_alpha_102",
+   "arm": "B4",
+   "seed": 102,
+   "steps": 60000,
+   "lives": 43,
+   "secs": 89.8,
+   "goals": 3137,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 2949,
+     "need": 188
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B4_alpha_103": {
+   "stem": "B4_alpha_103",
+   "arm": "B4",
+   "seed": 103,
+   "steps": 60000,
+   "lives": 55,
+   "secs": 201.5,
+   "goals": 1179,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1004,
+     "need": 175
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B4_alpha_104": {
+   "stem": "B4_alpha_104",
+   "arm": "B4",
+   "seed": 104,
+   "steps": 60000,
+   "lives": 59,
+   "secs": 48.7,
+   "goals": 1509,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1362,
+     "need": 147
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B5_alpha_100": {
+   "stem": "B5_alpha_100",
+   "arm": "B5",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 58,
+   "secs": 75.0,
+   "goals": 1448,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1300,
+     "need": 148
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B5_alpha_101": {
+   "stem": "B5_alpha_101",
+   "arm": "B5",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 60,
+   "secs": 113.8,
+   "goals": 1309,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1156,
+     "need": 153
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B5_alpha_102": {
+   "stem": "B5_alpha_102",
+   "arm": "B5",
+   "seed": 102,
+   "steps": 60000,
+   "lives": 43,
+   "secs": 76.8,
+   "goals": 3137,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 2949,
+     "need": 188
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B5_alpha_103": {
+   "stem": "B5_alpha_103",
+   "arm": "B5",
+   "seed": 103,
+   "steps": 60000,
+   "lives": 55,
+   "secs": 269.8,
+   "goals": 1179,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1004,
+     "need": 175
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "B5_alpha_104": {
+   "stem": "B5_alpha_104",
+   "arm": "B5",
+   "seed": 104,
+   "steps": 60000,
+   "lives": 59,
+   "secs": 102.6,
+   "goals": 1509,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1362,
+     "need": 147
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-random_alpha_100": {
+   "stem": "F-random_alpha_100",
+   "arm": "F-random",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 59,
+   "secs": 100.5,
+   "goals": 1025,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 755,
+     "need": 188
+    },
+    "ungrounded": {
+     "top": 82
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-random_alpha_101": {
+   "stem": "F-random_alpha_101",
+   "arm": "F-random",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 62,
+   "secs": 83.3,
+   "goals": 990,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "ungrounded": {
+     "top": 56
+    },
+    "S0": {
+     "top": 767,
+     "need": 167
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-scripted_alpha_100": {
+   "stem": "F-scripted_alpha_100",
+   "arm": "F-scripted",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 55,
+   "secs": 62.9,
+   "goals": 260,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "need": 260
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-scripted_alpha_101": {
+   "stem": "F-scripted_alpha_101",
+   "arm": "F-scripted",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 48,
+   "secs": 61.0,
+   "goals": 312,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "need": 312
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-list_alpha_100": {
+   "stem": "F-list_alpha_100",
+   "arm": "F-list",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 56,
+   "secs": 113.5,
+   "goals": 1072,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 844,
+     "need": 228
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-list_alpha_101": {
+   "stem": "F-list_alpha_101",
+   "arm": "F-list",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 62,
+   "secs": 234.9,
+   "goals": 908,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 738,
+     "need": 170
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-inflate_alpha_100": {
+   "stem": "F-inflate_alpha_100",
+   "arm": "F-inflate",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 66,
+   "secs": 79.1,
+   "goals": 29567,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 29403,
+     "need": 164
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-inflate_alpha_101": {
+   "stem": "F-inflate_alpha_101",
+   "arm": "F-inflate",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 63,
+   "secs": 115.5,
+   "goals": 9687,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 9493,
+     "need": 194
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-hindsight_alpha_100": {
+   "stem": "F-hindsight_alpha_100",
+   "arm": "F-hindsight",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 54,
+   "secs": 143.5,
+   "goals": 529,
+   "late_goal_records": 410,
+   "goal_log_valid": false,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 410,
+     "need": 119
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-hindsight_alpha_101": {
+   "stem": "F-hindsight_alpha_101",
+   "arm": "F-hindsight",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 61,
+   "secs": 134.8,
+   "goals": 421,
+   "late_goal_records": 320,
+   "goal_log_valid": false,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 320,
+     "need": 101
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-scheduler_alpha_100": {
+   "stem": "F-scheduler_alpha_100",
+   "arm": "F-scheduler",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 57,
+   "secs": 75.4,
+   "goals": 32314,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 32100,
+     "need": 214
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-scheduler_alpha_101": {
+   "stem": "F-scheduler_alpha_101",
+   "arm": "F-scheduler",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 53,
+   "secs": 75.7,
+   "goals": 29915,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 29686,
+     "need": 229
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-unlock_alpha_100": {
+   "stem": "F-unlock_alpha_100",
+   "arm": "F-unlock",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 58,
+   "secs": 107.4,
+   "goals": 1954,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 3,
+      "D": 25,
+      "reset": true,
+      "ctx": 1,
+      "dctx": 2,
+      "ftype": "appear",
+      "K2": 3
+     },
+     "t_created": 0,
+     "trigger": "hardcoded",
+     "predicates": [
+      "cnt[2]>=1",
+      "cnt[2]>=2"
+     ]
+    },
+    {
+     "struct_id": 1,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 150,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "t_created": 0,
+     "trigger": "hardcoded",
+     "predicates": [
+      "bit[4]"
+     ]
+    }
+   ],
+   "predicates": {
+    "cnt[2]>=1": {
+     "struct": 0,
+     "t_created": 0,
+     "audit": {
+      "evidence": 0,
+      "matched_judge_effects": 0,
+      "ok": false
+     },
+     "grounded": true,
+     "class": "LATENT:stone.charge:(1, 2, 3)",
+     "precision": 0.975,
+     "recall": 0.986
+    },
+    "cnt[2]>=2": {
+     "struct": 0,
+     "t_created": 0,
+     "audit": {
+      "evidence": 0,
+      "matched_judge_effects": 0,
+      "ok": false
+     },
+     "grounded": true,
+     "class": "LATENT:stone.charge:(2, 3)",
+     "precision": 0.927,
+     "recall": 0.994
+    },
+    "bit[4]": {
+     "struct": 1,
+     "t_created": 0,
+     "audit": {
+      "evidence": 0,
+      "matched_judge_effects": 0,
+      "ok": false
+     },
+     "grounded": true,
+     "class": "LATENT:lamp.armed:(1,)",
+     "precision": 1.0,
+     "recall": 1.0
+    }
+   },
+   "goals_by_class": {
+    "LATENT:stone.charge:(2, 3)": {
+     "top": 44,
+     "top_after_structure": 44,
+     "top_achieved": 40
+    },
+    "S0": {
+     "top": 1679,
+     "need": 152
+    },
+    "LATENT:stone.charge:(1, 2, 3)": {
+     "top": 55,
+     "top_after_structure": 55,
+     "top_achieved": 50
+    },
+    "LATENT:lamp.armed:(1,)": {
+     "top": 24,
+     "top_after_structure": 24,
+     "top_achieved": 14
+    }
+   },
+   "L2": {
+    "LATENT:stone.charge:(2, 3)": {
+     "top_after_structure": 44,
+     "top_achieved": 40,
+     "achieved_per_10k": 6.67,
+     "twin_incidental_per_10k": 8.5,
+     "provenance_ok": false,
+     "event": false
+    },
+    "LATENT:stone.charge:(1, 2, 3)": {
+     "top_after_structure": 55,
+     "top_achieved": 50,
+     "achieved_per_10k": 8.33,
+     "twin_incidental_per_10k": 18.83,
+     "provenance_ok": false,
+     "event": false
+    },
+    "LATENT:lamp.armed:(1,)": {
+     "top_after_structure": 24,
+     "top_achieved": 14,
+     "achieved_per_10k": 2.33,
+     "twin_incidental_per_10k": 2.67,
+     "provenance_ok": false,
+     "event": false
+    }
+   },
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-unlock_alpha_101": {
+   "stem": "F-unlock_alpha_101",
+   "arm": "F-unlock",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 58,
+   "secs": 144.4,
+   "goals": 1969,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 3,
+      "D": 25,
+      "reset": true,
+      "ctx": 1,
+      "dctx": 2,
+      "ftype": "appear",
+      "K2": 3
+     },
+     "t_created": 0,
+     "trigger": "hardcoded",
+     "predicates": [
+      "cnt[2]>=1",
+      "cnt[2]>=2"
+     ]
+    },
+    {
+     "struct_id": 1,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 150,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "t_created": 0,
+     "trigger": "hardcoded",
+     "predicates": [
+      "bit[4]"
+     ]
+    }
+   ],
+   "predicates": {
+    "cnt[2]>=1": {
+     "struct": 0,
+     "t_created": 0,
+     "audit": {
+      "evidence": 0,
+      "matched_judge_effects": 0,
+      "ok": false
+     },
+     "grounded": true,
+     "class": "LATENT:stone.charge:(1, 2, 3)",
+     "precision": 0.975,
+     "recall": 0.986
+    },
+    "cnt[2]>=2": {
+     "struct": 0,
+     "t_created": 0,
+     "audit": {
+      "evidence": 0,
+      "matched_judge_effects": 0,
+      "ok": false
+     },
+     "grounded": true,
+     "class": "LATENT:stone.charge:(2, 3)",
+     "precision": 0.927,
+     "recall": 0.994
+    },
+    "bit[4]": {
+     "struct": 1,
+     "t_created": 0,
+     "audit": {
+      "evidence": 0,
+      "matched_judge_effects": 0,
+      "ok": false
+     },
+     "grounded": true,
+     "class": "LATENT:lamp.armed:(1,)",
+     "precision": 1.0,
+     "recall": 1.0
+    }
+   },
+   "goals_by_class": {
+    "S0": {
+     "top": 1655,
+     "need": 169
+    },
+    "LATENT:stone.charge:(1, 2, 3)": {
+     "top": 47,
+     "top_after_structure": 47,
+     "top_achieved": 42
+    },
+    "LATENT:lamp.armed:(1,)": {
+     "top": 56,
+     "top_after_structure": 56,
+     "top_achieved": 27
+    },
+    "LATENT:stone.charge:(2, 3)": {
+     "top": 42,
+     "top_after_structure": 42,
+     "top_achieved": 24
+    }
+   },
+   "L2": {
+    "LATENT:stone.charge:(1, 2, 3)": {
+     "top_after_structure": 47,
+     "top_achieved": 42,
+     "achieved_per_10k": 7.0,
+     "twin_incidental_per_10k": 25.17,
+     "provenance_ok": false,
+     "event": false
+    },
+    "LATENT:lamp.armed:(1,)": {
+     "top_after_structure": 56,
+     "top_achieved": 27,
+     "achieved_per_10k": 4.5,
+     "twin_incidental_per_10k": 3.0,
+     "provenance_ok": false,
+     "event": false
+    },
+    "LATENT:stone.charge:(2, 3)": {
+     "top_after_structure": 42,
+     "top_achieved": 24,
+     "achieved_per_10k": 4.0,
+     "twin_incidental_per_10k": 7.0,
+     "provenance_ok": false,
+     "event": false
+    }
+   },
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-hardmap_alpha_100": {
+   "stem": "F-hardmap_alpha_100",
+   "arm": "F-hardmap",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 56,
+   "secs": 122.1,
+   "goals": 2302,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 3,
+      "D": 25,
+      "reset": true,
+      "ctx": 1,
+      "dctx": 2,
+      "ftype": "appear",
+      "K2": 3
+     },
+     "t_created": 5000,
+     "trigger": "periodic",
+     "predicates": [
+      "cnt[2]>=1",
+      "cnt[2]>=2"
+     ]
+    },
+    {
+     "struct_id": 1,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 150,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "t_created": 5000,
+     "trigger": "periodic",
+     "predicates": [
+      "bit[4]"
+     ]
+    }
+   ],
+   "predicates": {
+    "cnt[2]>=1": {
+     "struct": 0,
+     "t_created": 5000,
+     "audit": {
+      "evidence": 1,
+      "matched_judge_effects": 0,
+      "ok": false
+     },
+     "grounded": true,
+     "class": "LATENT:stone.charge:(1, 2, 3)",
+     "precision": 0.975,
+     "recall": 0.986
+    },
+    "cnt[2]>=2": {
+     "struct": 0,
+     "t_created": 5000,
+     "audit": {
+      "evidence": 1,
+      "matched_judge_effects": 0,
+      "ok": false
+     },
+     "grounded": true,
+     "class": "LATENT:stone.charge:(2, 3)",
+     "precision": 0.927,
+     "recall": 0.994
+    },
+    "bit[4]": {
+     "struct": 1,
+     "t_created": 5000,
+     "audit": {
+      "evidence": 1,
+      "matched_judge_effects": 0,
+      "ok": false
+     },
+     "grounded": true,
+     "class": "LATENT:lamp.armed:(1,)",
+     "precision": 1.0,
+     "recall": 1.0
+    }
+   },
+   "goals_by_class": {
+    "S0": {
+     "top": 2028,
+     "need": 156
+    },
+    "LATENT:stone.charge:(1, 2, 3)": {
+     "top": 48,
+     "top_after_structure": 48,
+     "top_achieved": 43
+    },
+    "LATENT:lamp.armed:(1,)": {
+     "top": 34,
+     "top_after_structure": 34,
+     "top_achieved": 14
+    },
+    "LATENT:stone.charge:(2, 3)": {
+     "top": 36,
+     "top_after_structure": 36,
+     "top_achieved": 27
+    }
+   },
+   "L2": {
+    "LATENT:stone.charge:(1, 2, 3)": {
+     "top_after_structure": 48,
+     "top_achieved": 43,
+     "achieved_per_10k": 7.17,
+     "twin_incidental_per_10k": 19.33,
+     "provenance_ok": false,
+     "event": false
+    },
+    "LATENT:lamp.armed:(1,)": {
+     "top_after_structure": 34,
+     "top_achieved": 14,
+     "achieved_per_10k": 2.33,
+     "twin_incidental_per_10k": 2.0,
+     "provenance_ok": false,
+     "event": false
+    },
+    "LATENT:stone.charge:(2, 3)": {
+     "top_after_structure": 36,
+     "top_achieved": 27,
+     "achieved_per_10k": 4.5,
+     "twin_incidental_per_10k": 6.83,
+     "provenance_ok": false,
+     "event": false
+    }
+   },
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-hardmap_alpha_101": {
+   "stem": "F-hardmap_alpha_101",
+   "arm": "F-hardmap",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 61,
+   "secs": 131.3,
+   "goals": 2137,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [
+    {
+     "struct_id": 0,
+     "form": "M1",
+     "params": {
+      "K": 2,
+      "E": "poke",
+      "theta": 3,
+      "D": 25,
+      "reset": true,
+      "ctx": 1,
+      "dctx": 2,
+      "ftype": "appear",
+      "K2": 3
+     },
+     "t_created": 5000,
+     "trigger": "periodic",
+     "predicates": [
+      "cnt[2]>=1",
+      "cnt[2]>=2"
+     ]
+    },
+    {
+     "struct_id": 1,
+     "form": "M2",
+     "params": {
+      "K": 4,
+      "E": "poke",
+      "Kq": 2,
+      "dq": 1,
+      "q_pred": "cnt[2]>=2",
+      "q_struct": 0,
+      "q_v": 2,
+      "T": 150,
+      "ftype": "appear",
+      "K2": 5
+     },
+     "t_created": 5000,
+     "trigger": "periodic",
+     "predicates": [
+      "bit[4]"
+     ]
+    }
+   ],
+   "predicates": {
+    "cnt[2]>=1": {
+     "struct": 0,
+     "t_created": 5000,
+     "audit": {
+      "evidence": 1,
+      "matched_judge_effects": 0,
+      "ok": false
+     },
+     "grounded": true,
+     "class": "LATENT:stone.charge:(1, 2, 3)",
+     "precision": 0.975,
+     "recall": 0.986
+    },
+    "cnt[2]>=2": {
+     "struct": 0,
+     "t_created": 5000,
+     "audit": {
+      "evidence": 1,
+      "matched_judge_effects": 0,
+      "ok": false
+     },
+     "grounded": true,
+     "class": "LATENT:stone.charge:(2, 3)",
+     "precision": 0.927,
+     "recall": 0.994
+    },
+    "bit[4]": {
+     "struct": 1,
+     "t_created": 5000,
+     "audit": {
+      "evidence": 1,
+      "matched_judge_effects": 0,
+      "ok": false
+     },
+     "grounded": true,
+     "class": "LATENT:lamp.armed:(1,)",
+     "precision": 1.0,
+     "recall": 1.0
+    }
+   },
+   "goals_by_class": {
+    "S0": {
+     "top": 1849,
+     "need": 138
+    },
+    "LATENT:lamp.armed:(1,)": {
+     "top": 58,
+     "top_after_structure": 58,
+     "top_achieved": 20
+    },
+    "LATENT:stone.charge:(1, 2, 3)": {
+     "top": 46,
+     "top_after_structure": 46,
+     "top_achieved": 38
+    },
+    "LATENT:stone.charge:(2, 3)": {
+     "top": 46,
+     "top_after_structure": 46,
+     "top_achieved": 20
+    }
+   },
+   "L2": {
+    "LATENT:lamp.armed:(1,)": {
+     "top_after_structure": 58,
+     "top_achieved": 20,
+     "achieved_per_10k": 3.33,
+     "twin_incidental_per_10k": 3.17,
+     "provenance_ok": false,
+     "event": false
+    },
+    "LATENT:stone.charge:(1, 2, 3)": {
+     "top_after_structure": 46,
+     "top_achieved": 38,
+     "achieved_per_10k": 6.33,
+     "twin_incidental_per_10k": 27.67,
+     "provenance_ok": false,
+     "event": false
+    },
+    "LATENT:stone.charge:(2, 3)": {
+     "top_after_structure": 46,
+     "top_achieved": 20,
+     "achieved_per_10k": 3.33,
+     "twin_incidental_per_10k": 6.17,
+     "provenance_ok": false,
+     "event": false
+    }
+   },
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-macro_alpha_100": {
+   "stem": "F-macro_alpha_100",
+   "arm": "F-macro",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 53,
+   "secs": 89.4,
+   "goals": 37145,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [
+    {
+     "struct_id": 99,
+     "form": "MACRO",
+     "params": {
+      "seq": [
+       "POKE",
+       "POKE",
+       "POKE"
+      ]
+     },
+     "t_created": 1000,
+     "trigger": null,
+     "predicates": [
+      "macro[poke3]"
+     ]
+    }
+   ],
+   "predicates": {
+    "macro[poke3]": {
+     "struct": 99,
+     "t_created": 1000,
+     "audit": {
+      "evidence": 0,
+      "matched_judge_effects": 0,
+      "ok": false
+     },
+     "grounded": false,
+     "class": null,
+     "precision": null,
+     "recall": null
+    }
+   },
+   "goals_by_class": {
+    "S0": {
+     "top": 36868,
+     "need": 277
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-macro_alpha_101": {
+   "stem": "F-macro_alpha_101",
+   "arm": "F-macro",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 58,
+   "secs": 101.5,
+   "goals": 31454,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [
+    {
+     "struct_id": 99,
+     "form": "MACRO",
+     "params": {
+      "seq": [
+       "POKE",
+       "POKE",
+       "POKE"
+      ]
+     },
+     "t_created": 1000,
+     "trigger": null,
+     "predicates": [
+      "macro[poke3]"
+     ]
+    }
+   ],
+   "predicates": {
+    "macro[poke3]": {
+     "struct": 99,
+     "t_created": 1000,
+     "audit": {
+      "evidence": 0,
+      "matched_judge_effects": 0,
+      "ok": false
+     },
+     "grounded": false,
+     "class": null,
+     "precision": null,
+     "recall": null
+    }
+   },
+   "goals_by_class": {
+    "S0": {
+     "top": 31227,
+     "need": 227
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-story_alpha_100": {
+   "stem": "F-story_alpha_100",
+   "arm": "F-story",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 68,
+   "secs": 100.7,
+   "goals": 1913,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1806,
+     "need": 107
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": true
+  },
+  "F-story_alpha_101": {
+   "stem": "F-story_alpha_101",
+   "arm": "F-story",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 68,
+   "secs": 93.6,
+   "goals": 1831,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1709,
+     "need": 122
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": true
+  },
+  "F-rewardhack_alpha_100": {
+   "stem": "F-rewardhack_alpha_100",
+   "arm": "F-rewardhack",
+   "seed": 100,
+   "steps": 60000,
+   "lives": 59,
+   "secs": 119.3,
+   "goals": 1108,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "ungrounded": {
+     "top": 277,
+     "need": 62
+    },
+    "S0": {
+     "top": 612,
+     "need": 157
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  },
+  "F-rewardhack_alpha_101": {
+   "stem": "F-rewardhack_alpha_101",
+   "arm": "F-rewardhack",
+   "seed": 101,
+   "steps": 60000,
+   "lives": 69,
+   "secs": 76.0,
+   "goals": 1960,
+   "late_goal_records": 0,
+   "goal_log_valid": true,
+   "structures": [],
+   "predicates": {},
+   "goals_by_class": {
+    "S0": {
+     "top": 1272,
+     "need": 92
+    },
+    "ungrounded": {
+     "top": 571,
+     "need": 25
+    }
+   },
+   "L2": {},
+   "L2_any": false,
+   "self_report_ignored": false
+  }
+ }
+}
