@@ -1,0 +1,94 @@
+{
+ "probes": 783,
+ "class_positives": {
+  "OBS:tree:None": 176,
+  "OBS:stone:None": 608,
+  "LATENT:stone.charge:(1, 2, 3)": 351,
+  "LATENT:stone.charge:(2, 3)": 167,
+  "LATENT:stone.charge:(3,)": 37,
+  "OBS:fruit:None": 114,
+  "OBS:lamp:None": 450,
+  "LATENT:lamp.armed:(1,)": 20,
+  "OBS:spring:None": 5,
+  "PLACE:spring:None": 292,
+  "OBS:puddle:None": 106
+ },
+ "oracle": {
+  "bit[4]": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "grounded": true,
+   "n": 783,
+   "class": [
+    "LATENT",
+    "lamp.armed",
+    [
+     1
+    ]
+   ],
+   "positives_judge": 20,
+   "agent_true": 20
+  },
+  "cnt[2]>=1": {
+   "precision": 0.9746478873239437,
+   "recall": 0.9857549857549858,
+   "grounded": true,
+   "n": 783,
+   "class": [
+    "LATENT",
+    "stone.charge",
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   "positives_judge": 351,
+   "agent_true": 355
+  },
+  "cnt[2]>=2": {
+   "precision": 0.9273743016759777,
+   "recall": 0.9940119760479041,
+   "grounded": true,
+   "n": 783,
+   "class": [
+    "LATENT",
+    "stone.charge",
+    [
+     2,
+     3
+    ]
+   ],
+   "positives_judge": 167,
+   "agent_true": 179
+  }
+ },
+ "fake": {
+  "cnt[1]>=1": {
+   "precision": 0.6875,
+   "recall": 0.125,
+   "grounded": false,
+   "n": 783,
+   "class": [
+    "OBS",
+    "tree",
+    null
+   ],
+   "positives_judge": 176,
+   "agent_true": 32
+  },
+  "cnt[1]>=2": {
+   "precision": 0.8888888888888888,
+   "recall": 0.045454545454545456,
+   "grounded": false,
+   "n": 783,
+   "class": [
+    "OBS",
+    "tree",
+    null
+   ],
+   "positives_judge": 176,
+   "agent_true": 9
+  }
+ }
+}
