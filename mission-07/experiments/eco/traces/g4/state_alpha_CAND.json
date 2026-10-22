@@ -1,0 +1,77 @@
+{
+ "arm": "CAND",
+ "family": "alpha",
+ "passes": 6,
+ "runs": {
+  "200": {
+   "arm": "CAND",
+   "seed": 200,
+   "tv_state": 0.0,
+   "tv_noise": 0.409,
+   "pass": false
+  },
+  "201": {
+   "arm": "CAND",
+   "seed": 201,
+   "tv_state": 0.514,
+   "tv_noise": 0.488,
+   "pass": true
+  },
+  "202": {
+   "arm": "CAND",
+   "seed": 202,
+   "tv_state": 0.345,
+   "tv_noise": 0.285,
+   "pass": true
+  },
+  "203": {
+   "arm": "CAND",
+   "seed": 203,
+   "tv_state": 0.474,
+   "tv_noise": 0.37,
+   "pass": true
+  },
+  "204": {
+   "arm": "CAND",
+   "seed": 204,
+   "tv_state": 0.313,
+   "tv_noise": 0.287,
+   "pass": true
+  },
+  "205": {
+   "arm": "CAND",
+   "seed": 205,
+   "tv_state": 0.425,
+   "tv_noise": 0.5,
+   "pass": false
+  },
+  "206": {
+   "arm": "CAND",
+   "seed": 206,
+   "tv_state": 0.425,
+   "tv_noise": 0.476,
+   "pass": false
+  },
+  "207": {
+   "arm": "CAND",
+   "seed": 207,
+   "tv_state": 0.619,
+   "tv_noise": 0.551,
+   "pass": true
+  },
+  "208": {
+   "arm": "CAND",
+   "seed": 208,
+   "tv_state": 0.866,
+   "tv_noise": 0.734,
+   "pass": true
+  },
+  "209": {
+   "arm": "CAND",
+   "seed": 209,
+   "tv_state": 0.393,
+   "tv_noise": 0.606,
+   "pass": false
+  }
+ }
+}

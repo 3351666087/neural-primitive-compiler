@@ -56,8 +56,17 @@ def run(s, idx):
     import craft_run as CR
     spec = json.loads((out_dir(s) / "jobs.jsonl").read_text().splitlines()[idx])
     stem = f"{spec['arm']}_craftax_{spec['key']}{spec.get('tag', '')}"
+    if spec.get("skip"):                                   # amendment A5 budget stop (G4_NOTES.md section 6)
+        print(json.dumps({"skipped": stem, "reason": spec["skip"]}), flush=True)
+        return
     if (out_dir(s) / f"{stem}.judge.json.gz").exists():
         print(json.dumps({"exists": stem}), flush=True)
+        return
+    import os
+    try:                                                   # one worker per run (several workers share the list)
+        os.close(os.open(out_dir(s) / f"{stem}.running", os.O_CREAT | os.O_EXCL))
+    except FileExistsError:
+        print(json.dumps({"running_elsewhere": stem}), flush=True)
         return
     print(json.dumps(CR.run(spec["arm"], spec["key"], spec["steps"], str(out_dir(s)), dict(spec.get("opts") or {}),
                             spec.get("tag", ""), checkpoint=spec.get("checkpoint"))), flush=True)

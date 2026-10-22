@@ -1,0 +1,757 @@
+{
+ "family": "gamma",
+ "arms": {
+  "B3": {
+   "C2": "LATENT:k1.tune",
+   "C3": "LATENT:k1.tune",
+   "L1": 0,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     -0.0,
+     0.278
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 74.1,
+   "seeds_grounded_any": 0,
+   "seeds_s1": 0,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "400": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "401": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "402": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "403": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "404": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "405": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "406": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "407": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "408": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "409": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "B4": {
+   "C2": "LATENT:k1.tune",
+   "C3": "LATENT:k1.tune",
+   "L1": 10,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.722,
+     1.0
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 73.3,
+   "seeds_grounded_any": 0,
+   "seeds_s1": 0,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "400": {
+     "L1": [
+      0.552,
+      0.389,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "401": {
+     "L1": [
+      1.0,
+      0.457,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "402": {
+     "L1": [
+      0.7,
+      0.532,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "403": {
+     "L1": [
+      0.769,
+      0.533,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "404": {
+     "L1": [
+      0.889,
+      0.673,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "405": {
+     "L1": [
+      0.5,
+      0.456,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "406": {
+     "L1": [
+      0.666,
+      0.37,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "407": {
+     "L1": [
+      0.821,
+      0.739,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "408": {
+     "L1": [
+      0.532,
+      0.403,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "409": {
+     "L1": [
+      0.719,
+      0.4,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "B5": {
+   "C2": "LATENT:k1.tune",
+   "C3": "LATENT:k1.tune",
+   "L1": 10,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.722,
+     1.0
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 73.3,
+   "seeds_grounded_any": 0,
+   "seeds_s1": 0,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "400": {
+     "L1": [
+      0.552,
+      0.389,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "401": {
+     "L1": [
+      1.0,
+      0.457,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "402": {
+     "L1": [
+      0.7,
+      0.532,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "403": {
+     "L1": [
+      0.769,
+      0.533,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "404": {
+     "L1": [
+      0.889,
+      0.673,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "405": {
+     "L1": [
+      0.721,
+      0.456,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "406": {
+     "L1": [
+      0.578,
+      0.529,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "407": {
+     "L1": [
+      0.821,
+      0.739,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "408": {
+     "L1": [
+      0.532,
+      0.403,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "409": {
+     "L1": [
+      0.719,
+      0.4,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "CAND": {
+   "C2": "LATENT:k1.tune",
+   "C3": "LATENT:k1.tune",
+   "L1": 7,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.397,
+     0.892
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 73.4,
+   "seeds_grounded_any": 0,
+   "seeds_s1": 0,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "400": {
+     "L1": [
+      0.826,
+      0.611,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "401": {
+     "L1": [
+      0.936,
+      0.556,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "402": {
+     "L1": [
+      0.889,
+      0.319,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "403": {
+     "L1": [
+      1.0,
+      0.714,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "404": {
+     "L1": [
+      0.833,
+      0.633,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "405": {
+     "L1": [
+      0.8,
+      0.413,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "406": {
+     "L1": [
+      0.547,
+      0.653,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "407": {
+     "L1": [
+      0.857,
+      0.812,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "408": {
+     "L1": [
+      0.463,
+      0.5,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "409": {
+     "L1": [
+      0.571,
+      0.603,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "OC1": {
+   "C2": "LATENT:k1.tune",
+   "C3": "LATENT:k1.tune",
+   "L1": 7,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.397,
+     0.892
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 70.8,
+   "seeds_grounded_any": 0,
+   "seeds_s1": 0,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "400": {
+     "L1": [
+      0.857,
+      0.974,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "401": {
+     "L1": [
+      0.615,
+      0.778,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "402": {
+     "L1": [
+      0.396,
+      0.228,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "403": {
+     "L1": [
+      0.904,
+      0.282,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "404": {
+     "L1": [
+      0.783,
+      0.646,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "405": {
+     "L1": [
+      0.417,
+      0.332,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "406": {
+     "L1": [
+      0.905,
+      0.311,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "407": {
+     "L1": [
+      0.633,
+      0.433,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "408": {
+     "L1": [
+      0.475,
+      0.5,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "409": {
+     "L1": [
+      0.802,
+      0.304,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  }
+ },
+ "state_intervention": {},
+ "interventions": null
+}

@@ -1,0 +1,77 @@
+{
+ "arm": "F-STATE-off",
+ "family": "alpha",
+ "passes": 2,
+ "runs": {
+  "200": {
+   "arm": "F-STATE-off",
+   "seed": 200,
+   "tv_state": 0.406,
+   "tv_noise": 0.314,
+   "pass": true
+  },
+  "201": {
+   "arm": "F-STATE-off",
+   "seed": 201,
+   "tv_state": 0.557,
+   "tv_noise": 0.571,
+   "pass": false
+  },
+  "202": {
+   "arm": "F-STATE-off",
+   "seed": 202,
+   "tv_state": 0.205,
+   "tv_noise": 0.434,
+   "pass": false
+  },
+  "203": {
+   "arm": "F-STATE-off",
+   "seed": 203,
+   "tv_state": 0.344,
+   "tv_noise": 0.482,
+   "pass": false
+  },
+  "204": {
+   "arm": "F-STATE-off",
+   "seed": 204,
+   "tv_state": 0.295,
+   "tv_noise": 0.21,
+   "pass": false
+  },
+  "205": {
+   "arm": "F-STATE-off",
+   "seed": 205,
+   "tv_state": 0.373,
+   "tv_noise": 0.431,
+   "pass": false
+  },
+  "206": {
+   "arm": "F-STATE-off",
+   "seed": 206,
+   "tv_state": 0.545,
+   "tv_noise": 0.61,
+   "pass": false
+  },
+  "207": {
+   "arm": "F-STATE-off",
+   "seed": 207,
+   "tv_state": 0.436,
+   "tv_noise": 0.6,
+   "pass": false
+  },
+  "208": {
+   "arm": "F-STATE-off",
+   "seed": 208,
+   "tv_state": 0.435,
+   "tv_noise": 0.717,
+   "pass": false
+  },
+  "209": {
+   "arm": "F-STATE-off",
+   "seed": 209,
+   "tv_state": 0.568,
+   "tv_noise": 0.386,
+   "pass": true
+  }
+ }
+}

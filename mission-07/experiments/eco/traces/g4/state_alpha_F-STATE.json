@@ -1,0 +1,77 @@
+{
+ "arm": "F-STATE",
+ "family": "alpha",
+ "passes": 4,
+ "runs": {
+  "200": {
+   "arm": "F-STATE",
+   "seed": 200,
+   "tv_state": 0.0,
+   "tv_noise": 0.409,
+   "pass": false
+  },
+  "201": {
+   "arm": "F-STATE",
+   "seed": 201,
+   "tv_state": 0.337,
+   "tv_noise": 0.295,
+   "pass": true
+  },
+  "202": {
+   "arm": "F-STATE",
+   "seed": 202,
+   "tv_state": 0.5,
+   "tv_noise": 0.429,
+   "pass": true
+  },
+  "203": {
+   "arm": "F-STATE",
+   "seed": 203,
+   "tv_state": 0.474,
+   "tv_noise": 0.37,
+   "pass": true
+  },
+  "204": {
+   "arm": "F-STATE",
+   "seed": 204,
+   "tv_state": 0.169,
+   "tv_noise": 0.121,
+   "pass": false
+  },
+  "205": {
+   "arm": "F-STATE",
+   "seed": 205,
+   "tv_state": 0.047,
+   "tv_noise": 0.184,
+   "pass": false
+  },
+  "206": {
+   "arm": "F-STATE",
+   "seed": 206,
+   "tv_state": 0.0,
+   "tv_noise": 0.311,
+   "pass": false
+  },
+  "207": {
+   "arm": "F-STATE",
+   "seed": 207,
+   "tv_state": 0.619,
+   "tv_noise": 0.551,
+   "pass": true
+  },
+  "208": {
+   "arm": "F-STATE",
+   "seed": 208,
+   "tv_state": 0.293,
+   "tv_noise": 0.27,
+   "pass": false
+  },
+  "209": {
+   "arm": "F-STATE",
+   "seed": 209,
+   "tv_state": 0.0,
+   "tv_noise": 0.313,
+   "pass": false
+  }
+ }
+}

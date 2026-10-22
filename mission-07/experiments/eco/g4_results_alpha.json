@@ -1,0 +1,3787 @@
+{
+ "family": "alpha",
+ "arms": {
+  "B1+M": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 1,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.018,
+     0.404
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 52.4,
+   "seeds_grounded_any": 0,
+   "seeds_s1": 0,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.065,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.116,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.005,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "203": {
+     "L1": [
+      0.083,
+      0.033,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.059,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "205": {
+     "L1": [
+      0.048,
+      0.002,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "206": {
+     "L1": [
+      0.312,
+      0.0,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.072,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.042,
+      0.03,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "209": {
+     "L1": [
+      0.078,
+      0.074,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "B1": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 1,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.018,
+     0.404
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 52.4,
+   "seeds_grounded_any": 0,
+   "seeds_s1": 0,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.065,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.116,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.005,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "203": {
+     "L1": [
+      0.083,
+      0.033,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.059,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "205": {
+     "L1": [
+      0.048,
+      0.002,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "206": {
+     "L1": [
+      0.312,
+      0.0,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.072,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.042,
+      0.03,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "209": {
+     "L1": [
+      0.078,
+      0.074,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "B2": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 3,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.108,
+     0.603
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 52.8,
+   "seeds_grounded_any": 0,
+   "seeds_s1": 0,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.424,
+      0.512,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.467,
+      0.467,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.28,
+      0.309,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "203": {
+     "L1": [
+      0.39,
+      0.347,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.555,
+      0.556,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "205": {
+     "L1": [
+      0.309,
+      0.348,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "206": {
+     "L1": [
+      0.592,
+      0.74,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.0,
+      0.65,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.287,
+      0.246,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "209": {
+     "L1": [
+      0.442,
+      0.432,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "B3": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 0,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     -0.0,
+     0.278
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 57.3,
+   "seeds_grounded_any": 1,
+   "seeds_s1": 1,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "203": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "205": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)"
+     ],
+     "s1": [
+      2000,
+      0
+     ],
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "206": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "209": {
+     "L1": [
+      0.0,
+      0.0,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "B4": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 5,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.237,
+     0.763
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 53.3,
+   "seeds_grounded_any": 0,
+   "seeds_s1": 0,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.605,
+      0.394,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.52,
+      0.492,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.431,
+      0.241,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "203": {
+     "L1": [
+      0.41,
+      0.41,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.302,
+      0.375,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "205": {
+     "L1": [
+      0.55,
+      0.555,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "206": {
+     "L1": [
+      0.527,
+      0.717,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.659,
+      0.566,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.319,
+      0.363,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "209": {
+     "L1": [
+      0.446,
+      0.371,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "B5": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 5,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.237,
+     0.763
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 52.7,
+   "seeds_grounded_any": 0,
+   "seeds_s1": 0,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.605,
+      0.394,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.67,
+      0.492,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.504,
+      0.315,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "203": {
+     "L1": [
+      0.41,
+      0.41,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.302,
+      0.375,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "205": {
+     "L1": [
+      0.55,
+      0.555,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "206": {
+     "L1": [
+      0.527,
+      0.717,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.659,
+      0.566,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.319,
+      0.363,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "209": {
+     "L1": [
+      0.446,
+      0.371,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "CAND": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 8,
+   "L2": 1,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.49,
+     0.943
+    ],
+    "L2": [
+     0.018,
+     0.404
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 53.1,
+   "seeds_grounded_any": 4,
+   "seeds_s1": 4,
+   "seeds_s2": 1,
+   "L2_events": {
+    "205": [
+     "LATENT:lamp.armed:(1,)"
+    ]
+   },
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.562,
+      0.409,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.606,
+      0.295,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.591,
+      0.354,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)"
+     ],
+     "s1": [
+      2492,
+      13
+     ],
+     "s2": null,
+     "C2_goals": 281,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       281,
+       254,
+       42.33,
+       16.33,
+       false
+      ]
+     }
+    },
+    "203": {
+     "L1": [
+      0.791,
+      0.437,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.423,
+      0.287,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      50966,
+      368
+     ],
+     "s2": null,
+     "C2_goals": 55,
+     "L2": {
+      "LATENT:stone.charge:(2, 3)": [
+       27,
+       23,
+       3.83,
+       5.67,
+       false
+      ],
+      "LATENT:stone.charge:(1, 2, 3)": [
+       28,
+       28,
+       4.67,
+       15.33,
+       false
+      ]
+     }
+    },
+    "205": {
+     "L1": [
+      0.795,
+      0.536,
+      true
+     ],
+     "grounded": [
+      "LATENT:lamp.armed:(1,)",
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      1796,
+      3
+     ],
+     "s2": [
+      12685,
+      24
+     ],
+     "C2_goals": 33,
+     "L2": {
+      "LATENT:stone.charge:(2, 3)": [
+       17,
+       14,
+       2.33,
+       5.0,
+       false
+      ],
+      "LATENT:stone.charge:(1, 2, 3)": [
+       16,
+       15,
+       2.5,
+       17.67,
+       false
+      ],
+      "LATENT:lamp.armed:(1,)": [
+       29,
+       9,
+       1.5,
+       0.5,
+       true
+      ]
+     }
+    },
+    "206": {
+     "L1": [
+      0.499,
+      0.631,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.987,
+      0.546,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.635,
+      0.409,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)"
+     ],
+     "s1": [
+      49343,
+      197
+     ],
+     "s2": null,
+     "C2_goals": 21,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       21,
+       21,
+       3.5,
+       11.17,
+       false
+      ]
+     }
+    },
+    "209": {
+     "L1": [
+      0.431,
+      0.606,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "F-CX-off": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 8,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.49,
+     0.943
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 51.6,
+   "seeds_grounded_any": 3,
+   "seeds_s1": 3,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.562,
+      0.409,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.606,
+      0.295,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.591,
+      0.354,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)"
+     ],
+     "s1": [
+      2492,
+      13
+     ],
+     "s2": null,
+     "C2_goals": 281,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       281,
+       254,
+       42.33,
+       16.33,
+       false
+      ]
+     }
+    },
+    "203": {
+     "L1": [
+      0.791,
+      0.437,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.589,
+      0.287,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      42234,
+      208
+     ],
+     "s2": null,
+     "C2_goals": 36,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       15,
+       15,
+       2.5,
+       15.33,
+       false
+      ],
+      "LATENT:stone.charge:(2, 3)": [
+       21,
+       21,
+       3.5,
+       5.67,
+       false
+      ]
+     }
+    },
+    "205": {
+     "L1": [
+      0.813,
+      0.317,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      1796,
+      3
+     ],
+     "s2": null,
+     "C2_goals": 45,
+     "L2": {
+      "LATENT:stone.charge:(2, 3)": [
+       22,
+       16,
+       2.67,
+       5.0,
+       false
+      ],
+      "LATENT:stone.charge:(1, 2, 3)": [
+       23,
+       21,
+       3.5,
+       17.67,
+       false
+      ]
+     }
+    },
+    "206": {
+     "L1": [
+      0.499,
+      0.631,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.926,
+      0.546,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.776,
+      0.486,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "209": {
+     "L1": [
+      0.431,
+      0.606,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "F-MB-fast": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 10,
+   "L2": 1,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.722,
+     1.0
+    ],
+    "L2": [
+     0.018,
+     0.404
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 50.5,
+   "seeds_grounded_any": 4,
+   "seeds_s1": 4,
+   "seeds_s2": 1,
+   "L2_events": {
+    "205": [
+     "LATENT:lamp.armed:(1,)"
+    ]
+   },
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.562,
+      0.409,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.632,
+      0.295,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.624,
+      0.567,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)"
+     ],
+     "s1": [
+      2492,
+      13
+     ],
+     "s2": null,
+     "C2_goals": 13,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       13,
+       11,
+       1.83,
+       16.33,
+       false
+      ]
+     }
+    },
+    "203": {
+     "L1": [
+      0.543,
+      0.437,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.586,
+      0.289,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      35053,
+      102
+     ],
+     "s2": null,
+     "C2_goals": 57,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       39,
+       33,
+       5.5,
+       15.33,
+       false
+      ],
+      "LATENT:stone.charge:(2, 3)": [
+       18,
+       7,
+       1.17,
+       5.67,
+       false
+      ]
+     }
+    },
+    "205": {
+     "L1": [
+      0.739,
+      0.397,
+      true
+     ],
+     "grounded": [
+      "LATENT:lamp.armed:(1,)",
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      1796,
+      3
+     ],
+     "s2": [
+      35738,
+      74
+     ],
+     "C2_goals": 172,
+     "L2": {
+      "LATENT:stone.charge:(2, 3)": [
+       44,
+       33,
+       5.5,
+       5.0,
+       false
+      ],
+      "LATENT:stone.charge:(1, 2, 3)": [
+       128,
+       117,
+       19.5,
+       17.67,
+       false
+      ],
+      "LATENT:lamp.armed:(1,)": [
+       59,
+       39,
+       6.5,
+       0.5,
+       true
+      ]
+     }
+    },
+    "206": {
+     "L1": [
+      0.665,
+      0.434,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.71,
+      0.546,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.66,
+      0.238,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      26900,
+      162
+     ],
+     "s2": null,
+     "C2_goals": 66,
+     "L2": {
+      "LATENT:stone.charge:(2, 3)": [
+       36,
+       30,
+       5.0,
+       5.5,
+       false
+      ],
+      "LATENT:stone.charge:(1, 2, 3)": [
+       30,
+       29,
+       4.83,
+       11.17,
+       false
+      ]
+     }
+    },
+    "209": {
+     "L1": [
+      0.509,
+      0.32,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "F-MB-slow": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 8,
+   "L2": 1,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.49,
+     0.943
+    ],
+    "L2": [
+     0.018,
+     0.404
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 49.4,
+   "seeds_grounded_any": 3,
+   "seeds_s1": 3,
+   "seeds_s2": 1,
+   "L2_events": {
+    "205": [
+     "LATENT:lamp.armed:(1,)"
+    ]
+   },
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.562,
+      0.409,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.926,
+      0.295,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.987,
+      0.039,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)"
+     ],
+     "s1": [
+      2492,
+      13
+     ],
+     "s2": null,
+     "C2_goals": 6,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       6,
+       6,
+       1.0,
+       16.33,
+       false
+      ]
+     }
+    },
+    "203": {
+     "L1": [
+      0.745,
+      0.437,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.581,
+      0.378,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      18252,
+      99
+     ],
+     "s2": null,
+     "C2_goals": 75,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       42,
+       41,
+       6.83,
+       15.33,
+       false
+      ],
+      "LATENT:stone.charge:(2, 3)": [
+       33,
+       28,
+       4.67,
+       5.67,
+       false
+      ]
+     }
+    },
+    "205": {
+     "L1": [
+      0.883,
+      0.165,
+      true
+     ],
+     "grounded": [
+      "LATENT:lamp.armed:(1,)",
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      1796,
+      3
+     ],
+     "s2": [
+      8482,
+      47
+     ],
+     "C2_goals": 113,
+     "L2": {
+      "LATENT:stone.charge:(2, 3)": [
+       57,
+       42,
+       7.0,
+       5.0,
+       false
+      ],
+      "LATENT:stone.charge:(1, 2, 3)": [
+       56,
+       50,
+       8.33,
+       17.67,
+       false
+      ],
+      "LATENT:lamp.armed:(1,)": [
+       41,
+       24,
+       4.0,
+       0.5,
+       true
+      ]
+     }
+    },
+    "206": {
+     "L1": [
+      0.499,
+      0.631,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.792,
+      0.546,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.605,
+      0.302,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "209": {
+     "L1": [
+      0.431,
+      0.606,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "F-STATE-off": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 10,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.722,
+     1.0
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 54.0,
+   "seeds_grounded_any": 4,
+   "seeds_s1": 4,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.715,
+      0.495,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.586,
+      0.41,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.535,
+      0.339,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)"
+     ],
+     "s1": [
+      2811,
+      13
+     ],
+     "s2": null,
+     "C2_goals": 2,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       2,
+       2,
+       0.33,
+       17.33,
+       false
+      ]
+     }
+    },
+    "203": {
+     "L1": [
+      0.636,
+      0.363,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.67,
+      0.372,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)"
+     ],
+     "s1": [
+      17960,
+      33
+     ],
+     "s2": null,
+     "C2_goals": 8,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       8,
+       7,
+       1.17,
+       13.33,
+       false
+      ]
+     }
+    },
+    "205": {
+     "L1": [
+      0.854,
+      0.426,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      1693,
+      4
+     ],
+     "s2": null,
+     "C2_goals": 13,
+     "L2": {
+      "LATENT:stone.charge:(2, 3)": [
+       8,
+       6,
+       1.0,
+       5.67,
+       false
+      ],
+      "LATENT:stone.charge:(1, 2, 3)": [
+       5,
+       4,
+       0.67,
+       13.33,
+       false
+      ]
+     }
+    },
+    "206": {
+     "L1": [
+      0.672,
+      0.61,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.854,
+      0.317,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.946,
+      0.393,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      26671,
+      142
+     ],
+     "s2": null,
+     "C2_goals": 58,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       29,
+       29,
+       4.83,
+       14.17,
+       false
+      ],
+      "LATENT:stone.charge:(2, 3)": [
+       29,
+       26,
+       4.33,
+       6.0,
+       false
+      ]
+     }
+    },
+    "209": {
+     "L1": [
+      0.519,
+      0.495,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "F-STATE": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 9,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.596,
+     0.982
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 52.7,
+   "seeds_grounded_any": 3,
+   "seeds_s1": 3,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.61,
+      0.409,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.662,
+      0.477,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.806,
+      0.549,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)"
+     ],
+     "s1": [
+      2492,
+      13
+     ],
+     "s2": null,
+     "C2_goals": 4,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       4,
+       3,
+       0.5,
+       16.33,
+       false
+      ]
+     }
+    },
+    "203": {
+     "L1": [
+      0.853,
+      0.437,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.622,
+      0.121,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "205": {
+     "L1": [
+      0.744,
+      0.956,
+      false
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      1796,
+      3
+     ],
+     "s2": null,
+     "C2_goals": 11,
+     "L2": {
+      "LATENT:stone.charge:(2, 3)": [
+       5,
+       2,
+       0.33,
+       5.0,
+       false
+      ],
+      "LATENT:stone.charge:(1, 2, 3)": [
+       6,
+       3,
+       0.5,
+       17.67,
+       false
+      ]
+     }
+    },
+    "206": {
+     "L1": [
+      0.383,
+      0.311,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.722,
+      0.546,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.667,
+      0.273,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      9582,
+      82
+     ],
+     "s2": null,
+     "C2_goals": 79,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       50,
+       48,
+       8.0,
+       11.17,
+       false
+      ],
+      "LATENT:stone.charge:(2, 3)": [
+       29,
+       25,
+       4.17,
+       5.5,
+       false
+      ]
+     }
+    },
+    "209": {
+     "L1": [
+      0.567,
+      0.313,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "OC1": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 9,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.596,
+     0.982
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 50.8,
+   "seeds_grounded_any": 3,
+   "seeds_s1": 3,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.619,
+      0.409,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.667,
+      0.375,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.467,
+      0.348,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "203": {
+     "L1": [
+      0.5,
+      0.437,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.515,
+      0.33,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      42000,
+      98
+     ],
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "205": {
+     "L1": [
+      0.475,
+      0.395,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      1789,
+      4
+     ],
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "206": {
+     "L1": [
+      0.678,
+      0.5,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.852,
+      0.546,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.603,
+      0.348,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      18196,
+      142
+     ],
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "209": {
+     "L1": [
+      0.385,
+      0.456,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "OC2": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 8,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.49,
+     0.943
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 53.1,
+   "seeds_grounded_any": 0,
+   "seeds_s1": 0,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.687,
+      0.409,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.462,
+      0.395,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.601,
+      0.336,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "203": {
+     "L1": [
+      0.42,
+      0.437,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.53,
+      0.546,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "205": {
+     "L1": [
+      0.684,
+      0.297,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "206": {
+     "L1": [
+      0.678,
+      0.5,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.588,
+      0.546,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.552,
+      0.302,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "209": {
+     "L1": [
+      0.515,
+      0.407,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  },
+  "OC3": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 10,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.722,
+     1.0
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 51.3,
+   "seeds_grounded_any": 3,
+   "seeds_s1": 3,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.763,
+      0.409,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.526,
+      0.375,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.773,
+      0.486,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "203": {
+     "L1": [
+      0.55,
+      0.437,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.61,
+      0.262,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      28000,
+      11
+     ],
+     "s2": null,
+     "C2_goals": 35,
+     "L2": {
+      "LATENT:stone.charge:(2, 3)": [
+       19,
+       11,
+       1.83,
+       5.67,
+       false
+      ],
+      "LATENT:stone.charge:(1, 2, 3)": [
+       15,
+       13,
+       2.17,
+       15.33,
+       false
+      ]
+     }
+    },
+    "205": {
+     "L1": [
+      0.846,
+      0.318,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)",
+      "LATENT:stone.charge:(2, 3)"
+     ],
+     "s1": [
+      4000,
+      2
+     ],
+     "s2": null,
+     "C2_goals": 157,
+     "L2": {
+      "LATENT:stone.charge:(2, 3)": [
+       80,
+       58,
+       9.67,
+       5.0,
+       false
+      ],
+      "LATENT:stone.charge:(1, 2, 3)": [
+       77,
+       72,
+       12.0,
+       17.67,
+       false
+      ]
+     }
+    },
+    "206": {
+     "L1": [
+      0.678,
+      0.5,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.981,
+      0.546,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.956,
+      0.053,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "209": {
+     "L1": [
+      0.556,
+      0.434,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)"
+     ],
+     "s1": [
+      46000,
+      5
+     ],
+     "s2": null,
+     "C2_goals": 70,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       70,
+       68,
+       11.33,
+       14.5,
+       false
+      ]
+     }
+    }
+   }
+  },
+  "OC4": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 10,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.722,
+     1.0
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 70.1,
+   "seeds_grounded_any": 3,
+   "seeds_s1": 3,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.59,
+      0.448,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.62,
+      0.376,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.743,
+      0.601,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)"
+     ],
+     "s1": [
+      1018,
+      2
+     ],
+     "s2": null,
+     "C2_goals": 56,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       56,
+       47,
+       7.83,
+       18.5,
+       false
+      ]
+     }
+    },
+    "203": {
+     "L1": [
+      0.722,
+      0.315,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.63,
+      0.447,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "205": {
+     "L1": [
+      0.746,
+      0.481,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)"
+     ],
+     "s1": [
+      1612,
+      6
+     ],
+     "s2": null,
+     "C2_goals": 10,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       10,
+       9,
+       1.5,
+       18.33,
+       false
+      ]
+     }
+    },
+    "206": {
+     "L1": [
+      0.685,
+      0.431,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.804,
+      0.48,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.727,
+      0.667,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "209": {
+     "L1": [
+      0.528,
+      0.234,
+      true
+     ],
+     "grounded": [
+      "LATENT:stone.charge:(1, 2, 3)"
+     ],
+     "s1": [
+      34605,
+      63
+     ],
+     "s2": null,
+     "C2_goals": 103,
+     "L2": {
+      "LATENT:stone.charge:(1, 2, 3)": [
+       103,
+       94,
+       15.67,
+       19.5,
+       false
+      ]
+     }
+    }
+   }
+  },
+  "OC5": {
+   "C2": "LATENT:stone.charge",
+   "C3": "LATENT:lamp.armed",
+   "L1": 4,
+   "L2": 0,
+   "L3": 0,
+   "wilson": {
+    "L1": [
+     0.168,
+     0.687
+    ],
+    "L2": [
+     -0.0,
+     0.278
+    ],
+    "L3": [
+     -0.0,
+     0.278
+    ]
+   },
+   "runs": 10,
+   "mean_lives": 51.8,
+   "seeds_grounded_any": 0,
+   "seeds_s1": 0,
+   "seeds_s2": 0,
+   "L2_events": {},
+   "L3_posthoc": 0,
+   "per_seed": {
+    "200": {
+     "L1": [
+      0.493,
+      0.456,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "201": {
+     "L1": [
+      0.4,
+      0.45,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "202": {
+     "L1": [
+      0.437,
+      0.371,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "203": {
+     "L1": [
+      0.452,
+      0.312,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "204": {
+     "L1": [
+      0.411,
+      0.436,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "205": {
+     "L1": [
+      0.464,
+      0.519,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "206": {
+     "L1": [
+      0.689,
+      0.706,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "207": {
+     "L1": [
+      0.638,
+      0.471,
+      true
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "208": {
+     "L1": [
+      0.378,
+      0.381,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    },
+    "209": {
+     "L1": [
+      0.481,
+      0.49,
+      false
+     ],
+     "grounded": [],
+     "s1": null,
+     "s2": null,
+     "C2_goals": 0,
+     "L2": {}
+    }
+   }
+  }
+ },
+ "state_intervention": {
+  "CAND": {
+   "passes": 6,
+   "runs": {
+    "200": {
+     "arm": "CAND",
+     "seed": 200,
+     "tv_state": 0.0,
+     "tv_noise": 0.409,
+     "pass": false
+    },
+    "201": {
+     "arm": "CAND",
+     "seed": 201,
+     "tv_state": 0.514,
+     "tv_noise": 0.488,
+     "pass": true
+    },
+    "202": {
+     "arm": "CAND",
+     "seed": 202,
+     "tv_state": 0.345,
+     "tv_noise": 0.285,
+     "pass": true
+    },
+    "203": {
+     "arm": "CAND",
+     "seed": 203,
+     "tv_state": 0.474,
+     "tv_noise": 0.37,
+     "pass": true
+    },
+    "204": {
+     "arm": "CAND",
+     "seed": 204,
+     "tv_state": 0.313,
+     "tv_noise": 0.287,
+     "pass": true
+    },
+    "205": {
+     "arm": "CAND",
+     "seed": 205,
+     "tv_state": 0.425,
+     "tv_noise": 0.5,
+     "pass": false
+    },
+    "206": {
+     "arm": "CAND",
+     "seed": 206,
+     "tv_state": 0.425,
+     "tv_noise": 0.476,
+     "pass": false
+    },
+    "207": {
+     "arm": "CAND",
+     "seed": 207,
+     "tv_state": 0.619,
+     "tv_noise": 0.551,
+     "pass": true
+    },
+    "208": {
+     "arm": "CAND",
+     "seed": 208,
+     "tv_state": 0.866,
+     "tv_noise": 0.734,
+     "pass": true
+    },
+    "209": {
+     "arm": "CAND",
+     "seed": 209,
+     "tv_state": 0.393,
+     "tv_noise": 0.606,
+     "pass": false
+    }
+   }
+  },
+  "F-STATE-off": {
+   "passes": 2,
+   "runs": {
+    "200": {
+     "arm": "F-STATE-off",
+     "seed": 200,
+     "tv_state": 0.406,
+     "tv_noise": 0.314,
+     "pass": true
+    },
+    "201": {
+     "arm": "F-STATE-off",
+     "seed": 201,
+     "tv_state": 0.557,
+     "tv_noise": 0.571,
+     "pass": false
+    },
+    "202": {
+     "arm": "F-STATE-off",
+     "seed": 202,
+     "tv_state": 0.205,
+     "tv_noise": 0.434,
+     "pass": false
+    },
+    "203": {
+     "arm": "F-STATE-off",
+     "seed": 203,
+     "tv_state": 0.344,
+     "tv_noise": 0.482,
+     "pass": false
+    },
+    "204": {
+     "arm": "F-STATE-off",
+     "seed": 204,
+     "tv_state": 0.295,
+     "tv_noise": 0.21,
+     "pass": false
+    },
+    "205": {
+     "arm": "F-STATE-off",
+     "seed": 205,
+     "tv_state": 0.373,
+     "tv_noise": 0.431,
+     "pass": false
+    },
+    "206": {
+     "arm": "F-STATE-off",
+     "seed": 206,
+     "tv_state": 0.545,
+     "tv_noise": 0.61,
+     "pass": false
+    },
+    "207": {
+     "arm": "F-STATE-off",
+     "seed": 207,
+     "tv_state": 0.436,
+     "tv_noise": 0.6,
+     "pass": false
+    },
+    "208": {
+     "arm": "F-STATE-off",
+     "seed": 208,
+     "tv_state": 0.435,
+     "tv_noise": 0.717,
+     "pass": false
+    },
+    "209": {
+     "arm": "F-STATE-off",
+     "seed": 209,
+     "tv_state": 0.568,
+     "tv_noise": 0.386,
+     "pass": true
+    }
+   }
+  },
+  "F-STATE": {
+   "passes": 4,
+   "runs": {
+    "200": {
+     "arm": "F-STATE",
+     "seed": 200,
+     "tv_state": 0.0,
+     "tv_noise": 0.409,
+     "pass": false
+    },
+    "201": {
+     "arm": "F-STATE",
+     "seed": 201,
+     "tv_state": 0.337,
+     "tv_noise": 0.295,
+     "pass": true
+    },
+    "202": {
+     "arm": "F-STATE",
+     "seed": 202,
+     "tv_state": 0.5,
+     "tv_noise": 0.429,
+     "pass": true
+    },
+    "203": {
+     "arm": "F-STATE",
+     "seed": 203,
+     "tv_state": 0.474,
+     "tv_noise": 0.37,
+     "pass": true
+    },
+    "204": {
+     "arm": "F-STATE",
+     "seed": 204,
+     "tv_state": 0.169,
+     "tv_noise": 0.121,
+     "pass": false
+    },
+    "205": {
+     "arm": "F-STATE",
+     "seed": 205,
+     "tv_state": 0.047,
+     "tv_noise": 0.184,
+     "pass": false
+    },
+    "206": {
+     "arm": "F-STATE",
+     "seed": 206,
+     "tv_state": 0.0,
+     "tv_noise": 0.311,
+     "pass": false
+    },
+    "207": {
+     "arm": "F-STATE",
+     "seed": 207,
+     "tv_state": 0.619,
+     "tv_noise": 0.551,
+     "pass": true
+    },
+    "208": {
+     "arm": "F-STATE",
+     "seed": 208,
+     "tv_state": 0.293,
+     "tv_noise": 0.27,
+     "pass": false
+    },
+    "209": {
+     "arm": "F-STATE",
+     "seed": 209,
+     "tv_state": 0.0,
+     "tv_noise": 0.313,
+     "pass": false
+    }
+   }
+  }
+ },
+ "interventions": {
+  "CAND_alpha_202.del": {
+   "L3": {
+    "s1": [
+     2492,
+     13
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": null,
+    "C2_goals": 0,
+    "L3": false
+   },
+   "L2": {}
+  },
+  "CAND_alpha_202.fake": {
+   "L3": {
+    "s1": [
+     2492,
+     13
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": 2937,
+    "C2_goals": 1,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(1, 2, 3)": [
+     1,
+     1,
+     0.17,
+     16.33,
+     false
+    ]
+   }
+  },
+  "CAND_alpha_202.transplant": {
+   "L3": {
+    "s1": [
+     0,
+     1000013
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": 23,
+    "C2_goals": 112,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(1, 2, 3)": [
+     112,
+     104,
+     17.33,
+     16.33,
+     false
+    ]
+   }
+  },
+  "B1+M_alpha_202.giftb1m_CAND": {
+   "L3": {
+    "s1": [
+     2492,
+     1000013
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": null,
+    "C2_goals": 281,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(1, 2, 3)": [
+     0,
+     0,
+     0.0,
+     16.33,
+     false
+    ]
+   }
+  },
+  "CAND_alpha_202.giftcand": {
+   "L3": {
+    "s1": [
+     2492,
+     1000013
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": null,
+    "C2_goals": 281,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(1, 2, 3)": [
+     0,
+     0,
+     0.0,
+     16.33,
+     false
+    ]
+   }
+  },
+  "CAND_alpha_204.del": {
+   "L3": {
+    "s1": [
+     50966,
+     368
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": 51068,
+    "C2_goals": 10,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(2, 3)": [
+     6,
+     6,
+     1.0,
+     5.67,
+     false
+    ],
+    "LATENT:stone.charge:(1, 2, 3)": [
+     4,
+     4,
+     0.67,
+     15.33,
+     false
+    ]
+   }
+  },
+  "CAND_alpha_204.fake": {
+   "L3": {
+    "s1": [
+     50966,
+     368
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": null,
+    "C2_goals": 0,
+    "L3": false
+   },
+   "L2": {}
+  },
+  "CAND_alpha_204.transplant": {
+   "L3": {
+    "s1": [
+     27464,
+     199
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": 27464,
+    "C2_goals": 54,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(1, 2, 3)": [
+     54,
+     53,
+     8.83,
+     15.33,
+     false
+    ]
+   }
+  },
+  "B1+M_alpha_204.giftb1m_CAND": {
+   "L3": {
+    "s1": [
+     50966,
+     1000368
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": null,
+    "C2_goals": 55,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(2, 3)": [
+     0,
+     0,
+     0.0,
+     5.67,
+     false
+    ],
+    "LATENT:stone.charge:(1, 2, 3)": [
+     0,
+     0,
+     0.0,
+     15.33,
+     false
+    ]
+   }
+  },
+  "CAND_alpha_204.giftcand": {
+   "L3": {
+    "s1": [
+     50966,
+     1000368
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": null,
+    "C2_goals": 55,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(2, 3)": [
+     0,
+     0,
+     0.0,
+     5.67,
+     false
+    ],
+    "LATENT:stone.charge:(1, 2, 3)": [
+     0,
+     0,
+     0.0,
+     15.33,
+     false
+    ]
+   }
+  },
+  "CAND_alpha_205.del": {
+   "L3": {
+    "s1": [
+     1796,
+     3
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": null,
+    "C2_goals": 0,
+    "L3": false
+   },
+   "L2": {}
+  },
+  "CAND_alpha_205.fake": {
+   "L3": {
+    "s1": [
+     1796,
+     3
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": 1955,
+    "C2_goals": 1,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(1, 2, 3)": [
+     1,
+     1,
+     0.17,
+     17.67,
+     false
+    ]
+   }
+  },
+  "CAND_alpha_205.transplant": {
+   "L3": {
+    "s1": [
+     1815,
+     8
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": 1857,
+    "C2_goals": 5,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(1, 2, 3)": [
+     5,
+     5,
+     0.83,
+     17.67,
+     false
+    ]
+   }
+  },
+  "B1+M_alpha_205.giftb1m_CAND": {
+   "L3": {
+    "s1": [
+     1796,
+     1000003
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": null,
+    "C2_goals": 16,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(1, 2, 3)": [
+     0,
+     0,
+     0.0,
+     17.67,
+     false
+    ]
+   }
+  },
+  "CAND_alpha_205.giftcand": {
+   "L3": {
+    "s1": [
+     1796,
+     1000003
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": null,
+    "C2_goals": 16,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(1, 2, 3)": [
+     0,
+     0,
+     0.0,
+     17.67,
+     false
+    ]
+   }
+  },
+  "CAND_alpha_208.del": {
+   "L3": {
+    "s1": [
+     49343,
+     197
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": 49745,
+    "C2_goals": 1,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(1, 2, 3)": [
+     1,
+     1,
+     0.17,
+     11.17,
+     false
+    ]
+   }
+  },
+  "CAND_alpha_208.fake": {
+   "L3": {
+    "s1": [
+     49343,
+     197
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": 49745,
+    "C2_goals": 2,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(1, 2, 3)": [
+     2,
+     2,
+     0.33,
+     11.17,
+     false
+    ]
+   }
+  },
+  "CAND_alpha_208.transplant": {
+   "L3": {
+    "s1": [
+     11083,
+     105
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": 11565,
+    "C2_goals": 71,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(2, 3)": [
+     39,
+     33,
+     5.5,
+     5.5,
+     false
+    ],
+    "LATENT:stone.charge:(1, 2, 3)": [
+     32,
+     30,
+     5.0,
+     11.17,
+     false
+    ]
+   }
+  },
+  "B1+M_alpha_208.giftb1m_CAND": {
+   "L3": {
+    "s1": [
+     49343,
+     1000197
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": null,
+    "C2_goals": 21,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(1, 2, 3)": [
+     0,
+     0,
+     0.0,
+     11.17,
+     false
+    ]
+   }
+  },
+  "CAND_alpha_208.giftcand": {
+   "L3": {
+    "s1": [
+     49343,
+     1000197
+    ],
+    "s2": null,
+    "C2_L2": false,
+    "C3_L2": false,
+    "first_C2_top_goal": null,
+    "C2_goals": 21,
+    "L3": false
+   },
+   "L2": {
+    "LATENT:stone.charge:(1, 2, 3)": [
+     0,
+     0,
+     0.0,
+     11.17,
+     false
+    ]
+   }
+  }
+ }
+}
