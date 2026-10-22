@@ -96,9 +96,14 @@ def agent_proc(conn, arm, seed, opts):
             if dele and t == dele["t"]:
                 for sid in [sid for sid, s in ag.structs.items() if s.form == dele["form"] and s.params.get("K") == dele["K"]]:
                     ag.logs.deletions.append({"t": t, "struct_id": sid, "form": dele["form"], "K": dele["K"]})
-                    del ag.structs[sid]
+                    if hasattr(ag, "retire"):                  # the candidate keeps deleted structures in its export
+                        ag.retire(sid, reason="deleted")
+                    else:
+                        del ag.structs[sid]
                 ag.learner.blocked.add((dele["form"], dele["K"]))
                 ag.goal_stack.clear()
+                if hasattr(ag, "plan"):
+                    ag.plan = None
             while gifts and gifts[0][0] <= t:
                 _, formula = gifts.pop(0)
                 ag.obs = payload

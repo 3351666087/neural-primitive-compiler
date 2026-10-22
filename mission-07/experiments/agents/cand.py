@@ -22,8 +22,11 @@ The candidate shares the substrate, the structure meta-language M, the learner a
    mastery goals over L(S) (weight = learning progress, optimistic for new predicates, + explanatory gap of the
    owning structure + 0.05).
 4. Acquisition: after each experiment (at most every 100 steps) and every 2,000 steps (learner.fit, the shared
-   learner); revision of a held M1 structure whose predictions fail (>= 3 failures among its last 8): refit on the
-   last 2,000 steps and replace it when the refit is better by >= 0.15 precision.
+   learner); revision of a held M1 or M2 structure whose predictions fail (>= 3 failures among its last 8): refit
+   its kind on the learner's full window and replace it when the refit is better on the same data (rev1).
+5. Experiment values (rev1): a key whose trials were followed by a timed effect near its targets is replicated up to
+   8 times, other keys 3 times; discriminating designs choose (spacing, number of events) by the number of distinct
+   observable outcomes (how often the effect occurs) among the near-best parameter sets.
 
 Every top-level goal is logged before its first action (prospective); experiment goals carry their plan.
 """
@@ -37,7 +40,9 @@ from agent import GOAL_T, NEED_LOW, Agent
 from structures import ACT, FX, DECAYS, THETAS, W, Bit, Counter as M1Counter, Learner, cheb
 from substrate import frontier_step
 
-N_MAX = 3
+N_MAX = 3                       # trials of a key whose trials showed no effect
+N_REP = 8                       # trials of a key whose trials showed an effect (replicate surprising results)
+NS = (2, 3, 4, 5, 6)
 SPACINGS = (1, 5, 10, 15, 20, 30, 40, 60)
 LIT = {"poke": "poked", "pick": "picked", "consume": "consumed", "drop": "dropped"}
 REST = 100                      # an instance acted upon in the last REST steps is not 'rested'
@@ -106,6 +111,7 @@ class Candidate(Agent):
         super().__init__(seed, kw)
         self.use_structures_in_goals = self.grow_language
         self.tests = Counter()
+        self.effects = Counter()                # experiment key -> trials followed by a timed effect near its targets
         self.boost = defaultdict(float)
         self.preds = []                         # open predictions: [t, frame, cell, ftype, K2, sid]
         self.pred_hist = defaultdict(lambda: deque(maxlen=8))
@@ -143,6 +149,10 @@ class Candidate(Agent):
 
     def rested(self, cell):
         return self.mem.t - self.last_acted.get((self.mem.frame,) + tuple(cell), -10 ** 9) > REST
+
+    def key_value(self, key):
+        n, m = self.tests[key], self.effects[key]
+        return max(0.0, 1.0 - n / (N_REP if m else N_MAX))
 
     def applicable(self, K, E):
         return not (self.act_fail[(K, E)] >= 2 and self.act_ok[(K, E)] == 0)
@@ -269,24 +279,37 @@ class Candidate(Agent):
         self.update_discriminators()
 
     def try_revision(self, sid):
+        """Refit the structure's kind on the full learner window (ignoring that it is held) and replace it when the
+        refit is better on the same data by >= 0.1 precision (or equal precision with at least half as many more
+        confirmations)."""
         s = self.structs.get(sid)
-        if s is None or s.form != "M1" or ("M1", s.params["K"]) in self.learner.blocked:
+        if s is None or s.form not in ("M1", "M2") or (s.form, s.params["K"]) in self.learner.blocked:
             return
         K = s.params["K"]
         t = self.mem.t
-        win = 2000 if self.learner.window > 2000 else self.learner.window
-        ev = [e for e in self.mem.events if e["t"] >= t - win and (e["type"] in FX or e.get("kind") == K)]
-        lr = Learner(window=win, min_prec=self.learner.min_prec, min_support=self.learner.min_support)
-        new = lr.fit_m1(self.mem, ev, set(), t)
-        if new is None or new.params["K"] != K or new.params == s.params:
+        lr = self.learner
+        ev = [e for e in self.mem.events if e["t"] >= t - lr.window]
+        if s.form == "M1":
+            new = lr.fit_m1(self.mem, [e for e in ev if e["type"] in FX or e.get("kind") == K], set(), t)
+            if new is None or new.params["K"] != K or new.params == s.params:
+                return
+            poses = lr._poses_by_t(self.mem)
+            _, test, conf = m1_score(lr, self.mem, ev, s.params, poses)
+            cur, cur_conf = (conf / test if test else 0.0), conf
+            better = new.stats["precision"] >= cur + 0.1 or (new.stats["precision"] >= cur and new.stats["confirmed"] >= 1.5 * max(cur_conf, 1))
+            cls = M1Counter
+        else:
+            others = {k: v for k, v in self.structs.items() if k != sid}
+            new = lr.fit_m2(self.mem, ev, {(f, k) for (f, k) in {(x.form, x.params.get("K")) for x in others.values()} if f != "M2" or k != K},
+                            others, t)
+            if new is None or new.params["K"] != K or new.params == s.params:
+                return
+            cur = s.stats.get("precision", 0.0)
+            better = new.stats["precision"] >= cur + 0.1 or (new.stats["precision"] >= cur and new.stats["positives"] >= 1.5 * max(s.stats.get("positives", 1), 1))
+            cls = Bit
+        if not better:
             return
-        poses = lr._poses_by_t(self.mem)
-        _, test, conf = m1_score(lr, self.mem, ev, s.params, poses)
-        cur = conf / test if test else 0.0
-        if new.stats["precision"] < cur + 0.15:
-            return
-        repl = M1Counter(self.learner.next_sid, new.params, new.stats, new.evidence, t)
-        self.learner.next_sid += 1
+        repl = cls(new.sid, new.params, new.stats, new.evidence, t)
         self.retire(sid, reason="revised")
         for b in self.structs.values():
             if b.form == "M2" and b.params.get("q_struct") == sid:
@@ -303,8 +326,9 @@ class Candidate(Agent):
         self.pred_hist.pop(sid, None)
 
     def update_discriminators(self):
-        """For every held M1: the spacing whose predicted firing pattern differs most among the parameter sets that
-        fit the recent data about equally well."""
+        """For every held M1: the (spacing, number of events) whose observable outcome (how many times the effect
+        occurs) differs most among the parameter sets that fit the learner's data about equally well; keys already
+        tried enough are skipped."""
         self.disc = {}
         if not self.experiments:
             return
@@ -332,13 +356,15 @@ class Candidate(Agent):
                 continue
             best = None
             for sp in SPACINGS:
-                n = 5
-                outs = Counter(simulate_m1(p, sp, n) for p in H)
-                d = len(outs)
-                if best is None or d > best[2]:
-                    best = (sp, n, d)
-            if best and best[2] > 1:
-                self.disc[sid] = best
+                for n in NS:
+                    if self.key_value(("X1s", K, s.params["E"], sp, n)) <= 0:
+                        continue
+                    d = len({len(simulate_m1(p, sp, n)) for p in H})
+                    cost = sp * (n - 1) + n
+                    if d > 1 and (best is None or (d, -cost) > (best[2], -best[3])):
+                        best = (sp, n, d, cost)
+            if best:
+                self.disc[sid] = best[:3]
 
     # ------------------------------------------------------------ goal management
     def manage_goals(self):
@@ -380,6 +406,8 @@ class Candidate(Agent):
                 if plan is not None:
                     self.logs.goals[-1]["plan"] = plan["desc"]
                     plan["gid"] = gid
+                    plan["t0"] = self.mem.t
+                    plan["frame"] = self.mem.frame
                     self.plan = plan
 
     def end_top(self, ok):
@@ -388,7 +416,18 @@ class Candidate(Agent):
             self.goal_fails = 0
             self.goal_stack.pop()
             self.tests[self.plan["key"]] += 1
-            self.logs.goals[gid]["outcome"] = "done" if ok else "aborted"
+            P = self.plan
+            seen = False
+            for e in reversed(self.mem.events):
+                if e["t"] < P["t0"]:
+                    break
+                if e["type"] in FX and e.get("gap", 99) <= 3 and e["frame"] == P["frame"] \
+                        and any(cheb(e["cell"], c) <= 3 for c in P.get("targets", ())):
+                    seen = True
+                    break
+            if seen:
+                self.effects[P["key"]] += 1
+            self.logs.goals[gid]["outcome"] = ("done" if ok else "aborted") + ("+effect" if seen else "")
             self.plan = None
             self.fit_due = True
             return
@@ -464,7 +503,7 @@ class Candidate(Agent):
                     ctx = self.context_kinds(c) or {"none"}
                     for k3 in ctx:
                         key = ("X1", K, E, k3)
-                        v = 1.0 - self.tests[key] / N_MAX
+                        v = self.key_value(key)
                         if v <= 0:
                             continue
                         v += self.boost.get((K, E), 0.0) * 0.5
@@ -479,7 +518,7 @@ class Candidate(Agent):
                 continue
             for k3 in kinds:
                 key = ("X1", K, "drop", k3)
-                v = 1.0 - self.tests[key] / N_MAX
+                v = self.key_value(key)
                 if v > 0:
                     v += self.boost.get((K, "drop"), 0.0) * 0.5
                     opts.append((v / 2, self._x1d_maker(key, K, k3)))
@@ -488,8 +527,8 @@ class Candidate(Agent):
             s = self.structs.get(sid)
             if s is None:
                 continue
-            key = ("X1s", sid, sp)
-            v = 1.0 - self.tests[key] / N_MAX
+            key = ("X1s", s.params["K"], s.params["E"], sp, n)
+            v = self.key_value(key)
             if v <= 0:
                 continue
             cands = [c for c in by_kind.get(s.params["K"], []) if self.rested(c) and s._ctx_ok(self.mem, c)]
@@ -519,8 +558,8 @@ class Candidate(Agent):
                             continue
                         opts_q = [(None, None, None)] + [(p, sid, lev) for (kk, p, sid, lev) in ctx_preds if kk == Kq]
                         for p, sid, lev in opts_q:
-                            key = ("X2", K, E, Kq, p)
-                            v = 1.0 - self.tests[key] / N_MAX
+                            key = ("X2", K, E, Kq, p, sid)
+                            v = self.key_value(key)
                             if v <= 0:
                                 continue
                             v += self.boost.get((K, E), 0.0) * 0.5
@@ -549,7 +588,7 @@ class Candidate(Agent):
         def make(w):
             n = 4 if E == "poke" else 2 if E == "pick" else 1
             ops = self._ops_for(E, c, n) + [("wait", W)]
-            plan = {"key": key, "ops": ops, "i": 0, "k": 0, "w": 0, "tries": 0, "kind": K,
+            plan = {"key": key, "ops": ops, "i": 0, "k": 0, "w": 0, "tries": 0, "kind": K, "targets": [c],
                     "desc": {"type": "X1", "K": K, "E": E, "context": k3, "cell": list(c), "n": n}}
             return ([f"{LIT[E]}:{K}"], "experiment", round(w, 4), plan, ["S0"])
         return make
@@ -566,20 +605,20 @@ class Candidate(Agent):
         def make(w):
             E = s.params["E"]
             ops = self._ops_for(E, c, n, sp) + [("wait", W)]
-            plan = {"key": key, "ops": ops, "i": 0, "k": 0, "w": 0, "tries": 0, "kind": s.params["K"],
+            plan = {"key": key, "ops": ops, "i": 0, "k": 0, "w": 0, "tries": 0, "kind": s.params["K"], "targets": [c],
                     "desc": {"type": "X1s", "struct": s.sid, "spacing": sp, "n": n, "cell": list(c)}}
             return ([f"{LIT[E]}:{s.params['K']}"], "experiment", round(w, 4), plan, ["S0"])
         return make
 
     def _x2_maker(self, key, c, q, sid, lev):
-        _, K, E, Kq, p = key
+        _, K, E, Kq, p, _sid = key
 
         def make(w):
             ops = []
             if p is not None:
                 ops.append(("setup", sid, lev, q, 0))
             ops += self._ops_for(E, c, 1) + [("wait", 3)] + self._ops_for(E, c, 1) + [("wait", W)]
-            plan = {"key": key, "ops": ops, "i": 0, "k": 0, "w": 0, "tries": 0, "kind": K,
+            plan = {"key": key, "ops": ops, "i": 0, "k": 0, "w": 0, "tries": 0, "kind": K, "targets": [c, q],
                     "desc": {"type": "X2", "K": K, "E": E, "Kq": Kq, "context": p, "cell": list(c), "q": list(q)}}
             formula = ([p] if p else []) + [f"{LIT[E]}:{K}"]
             prov = ([f"struct:{sid}"] if p else []) + ["S0"]
