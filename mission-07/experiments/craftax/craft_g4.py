@@ -29,7 +29,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 KEYS = {"dev": range(0, 5), "conf": range(1000, 1010), "devmini": range(0, 2)}
 STEPS = {"dev": 200000, "conf": 200000, "devmini": 3000}   # devmini: pipeline test only
-TWIN_ARMS = {"CAND", "B4"}
+TWIN_ARMS = {"CAND"}                             # amendment A5: B4 has no twin in Craftax
 SWAP_ARMS = {"CAND", "B4"}
 
 
