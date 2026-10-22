@@ -18,3 +18,8 @@
 ## 3. 对冻结的检查工具的更正
 
 - `experiments/craftax/craft_g4.py` 中 `TWIN_ARMS` 原为 {CAND, B4}，与修正案 A5"Craftax 上 B4 不设孪生"不一致；按 A5 改为 {CAND}，任务列表重新生成（在任何 Craftax 确认运行之前）。
+- `experiments/eco/g4_score.py`：分成按分支写出的 `arm_<分支>.json` 与 `merge` 两步（为并行评分；判据不变），并对 β、γ 另外写出第 2 节的 POST-HOC 替代 L3（字段 `L3_posthoc`）。
+
+## 4. 运行时长
+
+`COST_BUDGET.md` 规定单次运行墙钟超过 30 分钟即中止。确认运行在多达 10 个进程争用 10 核的情况下进行；Craftax 的 200,000 步运行在不争用时约 24 分钟，争用下可能超过 30 分钟。这一超出来自争用而非失控，因此不中止，所有超过 30 分钟的运行在结果中逐一列出。

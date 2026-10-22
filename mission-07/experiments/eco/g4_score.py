@@ -3,7 +3,8 @@ Per (arm, seed): L1 (history swap with the next seed of the family's set at step
 the reseeded noise floor), L2 events per R-level class (score_eco2, the run's own twin), L3 (C2 / C3 of the family:
 alpha fixed by PROTOCOL.md section 6.5; beta / gamma by heldout_classes.py). Per arm: passes with Wilson 95 %
 intervals. Candidate vs. the strongest baseline (B1-B5) per layer: difference in passes and exact McNemar p.
-  python3 -I g4_score.py FAMILY ARMS            # writes run/g4_FAMILY/g4_scores.json
+  python3 -I g4_score.py FAMILY ARMS            # writes run/g4_FAMILY/arm_<ARM>.json for each arm
+  python3 -I g4_score.py merge FAMILY           # summaries of all scored arms + comparisons -> g4_scores.json
 """
 
 from __future__ import annotations
@@ -22,6 +23,8 @@ from eco_env import load_family  # noqa: E402
 from g4_jobs import CUSTODIAN, SEEDS, family_path, out_dir  # noqa: E402
 
 BASELINES = ("B1", "B1+M", "B2", "B3", "B4", "B5")
+# POST-HOC (G4_NOTES.md section 2): C3 from the stage-2 rule's written latent (beta) or its second guard latent (gamma)
+POSTHOC_C3 = {"beta": "LATENT:k3.rooted", "gamma": "LATENT:k1.ring"}
 
 
 def wilson(k, n, z=1.96):
@@ -78,7 +81,8 @@ def main(name, arms):
                 sw = SW.swap_test(arm, str(fam_p), seed, seeds[(i + 1) % len(seeds)], 20000, 2000, str(out))
             except Exception as e:
                 sw = {"error": f"{type(e).__name__}: {e}", "L1_pass": False}
-            rows[seed] = {"lives": r["lives"], "goal_log_valid": r["goal_log_valid"], "L1": sw,
+            l3_post = S2.l3(r, c2, POSTHOC_C3[name]) if name in POSTHOC_C3 else None
+            rows[seed] = {"lives": r["lives"], "goal_log_valid": r["goal_log_valid"], "L1": sw, "L3_posthoc": l3_post,
                           "L2": r["L2"], "L2_any": r["L2_any"], "L3": l3,
                           "grounded": sorted({p["class"] for s in r["structures"].values() for p in s["predicates"].values()
                                               if p["grounded"]})}
@@ -92,6 +96,21 @@ def main(name, arms):
             summ[layer] = {"passes": k, "runs": len(ok), "wilson95": wilson(k, len(ok)),
                            "by_seed": {s: f(rows[s]) for s in ok}}
         res["arms"][arm] = {"summary": summ, "runs": rows}
+        (out / f"arm_{arm}.json").write_text(json.dumps({"family": name, "C2": c2, "C3": c3, "arm": arm,
+                                                          "summary": summ, "runs": rows}, indent=1, default=str))
+
+
+def merge(name):
+    out = out_dir(name)
+    seeds = list(SEEDS[name])
+    res = {"family": name, "arms": {}}
+    for f in sorted(out.glob("arm_*.json")):
+        d = json.loads(f.read_text())
+        res["C2"], res["C3"] = d["C2"], d["C3"]
+        summ = d["summary"]
+        for layer in summ.values():
+            layer["by_seed"] = {int(k): v for k, v in layer["by_seed"].items()}
+        res["arms"][d["arm"]] = {"summary": summ, "runs": d["runs"]}
     cmp = {}
     if "CAND" in res["arms"]:
         for layer in ("L1", "L2", "L3"):
@@ -113,4 +132,7 @@ def main(name, arms):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])
+    if sys.argv[1] == "merge":
+        merge(sys.argv[2])
+    else:
+        main(sys.argv[1], sys.argv[2])
