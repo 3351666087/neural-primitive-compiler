@@ -43,6 +43,10 @@ if __name__ == "__main__":
     else:
         import run_eco as R
         spec = json.loads((OUT / "jobs.jsonl").read_text().splitlines()[int(sys.argv[2])])
+        stem = f"{spec['arm']}_alpha_{spec['seed']}{spec.get('tag', '')}"
+        if (Path(spec["out"]) / f"{stem}.judge.json.gz").exists():
+            print(json.dumps({"exists": stem}), flush=True)
+            sys.exit(0)
         try:
             print(json.dumps(R.run_job(spec)), flush=True)
         except Exception as e:

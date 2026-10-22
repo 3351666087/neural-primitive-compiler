@@ -74,7 +74,7 @@ class Memory:
                 x, y = x0 + j - R, y0 + i - R
                 k = self.key(x, y)
                 old = self.cells.get(k)
-                if not reset and old is not None and old[1] != kind and (x, y) != self.pos:
+                if not reset and old is not None and old[1] != kind:      # A4: the own cell counts too
                     if kind and not old[1] and not (fb == "dropped" and (x, y) == self.facing_cell(obs["facing"])):
                         self.events.append({"t": self.t, "type": "appear", "frame": self.frame, "cell": (x, y), "kind": kind,
                                             "gap": self.t - old[3]})

@@ -28,6 +28,8 @@ The candidate shares the substrate, the structure meta-language M, the learner a
    them; discriminating designs use the likelihood table; experiment acts on solid targets are performed from the
    neighbour whose view covers the most cells where effects plausibly appear (vantage); predictions use the
    structure's delay.
+7. rev3 (after amendment A4): only effects that no held structure predicted (anomalies) make a key worth
+   replicating up to 8 times.
 5. Experiment values (rev1): a key whose trials were followed by a timed effect near its targets is replicated up to
    8 times, other keys 3 times; discriminating designs choose (spacing, number of events) by the number of distinct
    observable outcomes (how often the effect occurs) among the near-best parameter sets.
@@ -133,6 +135,7 @@ class Candidate(Agent):
         self.fit_due = False
         self.last_fit = -10 ** 9
         self.revise_due = set()
+        self.anomalies = []                     # rev3: (t, frame, cell) of effects no held structure predicted
         self.act_ok = Counter()                 # (K, E) successes
         self.act_fail = Counter()               # (K, E) failures
         self.last_acted = {}                    # (frame, x, y) -> t of the last own act there
@@ -292,6 +295,9 @@ class Candidate(Agent):
                 self.pred_hist[hit[5]].append(1)
                 self.preds.remove(hit)
                 continue
+            self.anomalies.append((f["t"], f["frame"], tuple(f["cell"])))
+            if len(self.anomalies) > 500:
+                del self.anomalies[:100]
             for a in mem.events[-60:]:                     # anomaly: credit the own acts that preceded it nearby
                 if a["type"] in ACT and a.get("kind") and a["frame"] == f["frame"] and 0 <= f["t"] - a["t"] <= W \
                         and cheb(a["cell"], f["cell"]) <= 3:
@@ -493,14 +499,8 @@ class Candidate(Agent):
             self.goal_stack.pop()
             self.tests[self.plan["key"]] += 1
             P = self.plan
-            seen = False
-            for e in reversed(self.mem.events):
-                if e["t"] < P["t0"]:
-                    break
-                if e["type"] in FX and e.get("gap", 99) <= 3 and e["frame"] == P["frame"] \
-                        and any(cheb(e["cell"], c) <= 3 for c in P.get("targets", ())):
-                    seen = True
-                    break
+            seen = any(t >= P["t0"] and fr == P["frame"] and any(cheb(cell, c) <= 3 for c in P.get("targets", ()))
+                       for (t, fr, cell) in self.anomalies[-50:])        # rev3: only unexplained effects count
             if seen:
                 self.effects[P["key"]] += 1
             self.logs.goals[gid]["outcome"] = ("done" if ok else "aborted") + ("+effect" if seen else "")
