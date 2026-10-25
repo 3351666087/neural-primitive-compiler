@@ -1,0 +1,138 @@
+{
+ "G-STRUCT": {
+  "S-a(R1)": {
+   "passes": 4,
+   "of": 4,
+   "holds": true
+  },
+  "S-a(B3)": {
+   "passes": 4,
+   "of": 4,
+   "holds": true
+  },
+  "S-b(R1)": {
+   "passes": 0,
+   "of": 4,
+   "holds": false
+  },
+  "S-c(R1)": {
+   "passes": 4,
+   "of": 4,
+   "holds": true
+  },
+  "S-c(K2)": {
+   "passes": 4,
+   "of": 4,
+   "holds": true
+  },
+  "S-d": {
+   "W2": false,
+   "W4": false,
+   "holds": false
+  },
+  "S-e": {
+   "rule_retained": 0.9185133088108312,
+   "memory_retained": 0.810039958756527,
+   "rule_retained_vs_W8W7": 0.8191803882875903,
+   "holds": true
+  },
+  "per_target": {
+   "W2": {
+    "S-a(R1)": true,
+    "S-a(B3)": true,
+    "S-b(R1)": false,
+    "S-c(R1)": true,
+    "S-c(K2)": true,
+    "rule_vs_memory_ll": {
+     "diff": -0.08867797746872212,
+     "lo": -0.10206681272271122,
+     "hi": -0.07530446070185129
+    },
+    "dl_bits": {
+     "rule": 13888.0,
+     "memory": 10051.647380119563
+    }
+   },
+   "W4": {
+    "S-a(R1)": true,
+    "S-a(B3)": true,
+    "S-b(R1)": false,
+    "S-c(R1)": true,
+    "S-c(K2)": true,
+    "rule_vs_memory_ll": {
+     "diff": -0.07663377707949653,
+     "lo": -0.08959297182498062,
+     "hi": -0.06359758592115754
+    },
+    "dl_bits": {
+     "rule": 13888.0,
+     "memory": 12915.827238672297
+    }
+   },
+   "JSH": {
+    "S-a(R1)": true,
+    "S-a(B3)": true,
+    "S-b(R1)": false,
+    "S-c(R1)": true,
+    "S-c(K2)": true,
+    "rule_vs_memory_ll": {
+     "diff": -0.08931722517359986,
+     "lo": -0.10173162587005238,
+     "hi": -0.07665524808854697
+    },
+    "dl_bits": {
+     "rule": 13888.0,
+     "memory": 25716.182851079197
+    }
+   },
+   "N2U": {
+    "S-a(R1)": true,
+    "S-a(B3)": true,
+    "S-b(R1)": false,
+    "S-c(R1)": true,
+    "S-c(K2)": true,
+    "rule_vs_memory_ll": {
+     "diff": -0.08967045458374132,
+     "lo": -0.10063860490372382,
+     "hi": -0.07893530415845193
+    },
+    "dl_bits": {
+     "rule": 5472.0,
+     "memory": 76600.0
+    }
+   }
+  },
+  "paths": {
+   "R1": true,
+   "K2": true
+  },
+  "positive_control_dev": true,
+  "layer": "STRUCTURE_ONLY"
+ },
+ "G-FUNCTION worm": {
+  "F-a": false,
+  "F-b": false,
+  "F-c": null,
+  "F-d": null,
+  "F-e": {
+   "wt_gain": -0.27601255069831926,
+   "unc31_gain": -0.19538084300867753,
+   "unc31_greater": true
+  },
+  "layer": "NOT_SUPPORTED",
+  "note": "F-c, F-d and C-a: dependency unmet; development evidence: insufficient power (amendment A1.5)"
+ },
+ "G-FUNCTION fly T4": {
+  "T-a": true,
+  "T-b": false,
+  "T-c": false,
+  "T-d": false,
+  "layer": "REPLICATION_ONLY",
+  "note": "topology fixes the direction, not the magnitude (H0-TOPO in the fly)"
+ },
+ "G-CONSTRUCT": {
+  "layer": "INCONCLUSIVE",
+  "note": "C-a not run: dependency F-c unmet"
+ },
+ "overall": "STRUCTURE_ONLY"
+}

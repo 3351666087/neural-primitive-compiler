@@ -13,6 +13,7 @@
 | 1 | 2026-10-25T01:55Z | `CPU_ONLY` | Agent | Mission 08 开始；Gate 0–1 只有文献、审计与数据核查，无张量负载 | 0 元（未授权） | 继续 CPU；`GPU_RESOURCE_DECISION.md` 记 `CPU_CONTINUE` |
 | 2 | 2026-10-25T04:35Z | `CPU_ONLY` | Agent | Gate 3–4 实测（`GPU_RESOURCE_DECISION.md` D3）：最大单个配置 < 0.2 核时，开发累计约 4.5 核时；确认估计 1–1.5 核时 | 0 元（未授权） | 继续 CPU；冻结并运行 Gate 5 裁判 |
 | 3 | 2026-10-25T04:30Z | `CPU_ONLY` | Agent | 更正第 2 行：时间应为约 04:28Z（原写 04:35Z 是估计）；状态不变 | 0 元（未授权） | 冻结已生成（`FREEZE_MANIFEST.sha256`），按 D3 在 CPU 上运行裁判 |
+| 4 | 2026-10-25T05:00Z | `CPU_ONLY` | Agent | Gate 5 全部确认运行在本机 CPU 完成，0.59 核时（`G5_RESOURCE_LEDGER.md`） | 0 元（未授权） | Gate 6 文档；无 GPU 需求 |
 
 ## 会话清单
 
