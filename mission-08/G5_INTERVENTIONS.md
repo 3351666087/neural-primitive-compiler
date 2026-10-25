@@ -21,3 +21,18 @@
 
 1. **F-e 的区间没有计算。** §3.2 要求 F-e"报告差值与区间"；冻结的功能裁判只计算了两个品系上 A-real 相对 A-none 的 AUPRC 增益之差（点估计），没有区间。由于两个品系上 A-real 都远低于 A-none（增益 −0.276 与 −0.195），这一比较在 F-a 不成立时没有解释价值，因此不事后补算；如实记为偏离。
 2. **T-d 对照组的选择。** 作者在图 4 中只保留有输入电阻数据的 GFP 细胞；我们按预注册使用所有有电压记录的 GFP 细胞（33 个）。冻结之前已经记录（`DATA_SPLITS_AND_CUSTODY.md` §4）。
+
+## 4. 冻结文件与只追加记录中的数字勘误
+
+Gate 6 由一个独立的复核代理把各文档中的数字与结果 JSON 逐条对照（约 640 条）。非冻结文档中的不一致已直接更正。`G4_PILOT_RESULTS.md` 在冻结清单中，改动它会使 `custody.frozen()` 失败；`GPU_RESOURCE_DECISION.md` 与 `GPU_SESSION_LEDGER.md` 只追加。这些文件中的错误在此更正，原文不改：
+
+| 文件与位置 | 原文 | 更正 | 出处 |
+|---|---|---|---|
+| `G4_PILOT_RESULTS.md` §4 表，k = 16 一行 | AUROC 0.82–0.84，AUPRC 0.32 | AUROC 0.82–0.83，AUPRC 0.31–0.32 | `results/g4/selection.json` `B3_k.per_proxy.16` |
+| 同表，B4 一行 | 与 1 只差 0.0001 | 与 1 只差约 0.00001 | `B4_C.mean_ll_gain` |
+| §4 读法第 3 条 | 模型的互惠比例从 0.07（γ = 1）升到 0.15 | 从 0.07–0.08 升到 0.15–0.16 | `R1_gamma.fits[].model_reciprocity` |
+| §4 第 4 条后的读法 | 成年上的增益略大（+0.008 → +0.010–0.012） | +0.008 → +0.010–0.011 | `results/g4/ablation_selected.json` |
+| §5 资源 | 开发累计约 4.5 核时 | 约 4.3 核时（有记录的 3.94 加上估计的约 0.4） | `results/g3`、`results/g4` 的 `cpu_s` |
+| `GPU_RESOURCE_DECISION.md` D3、`GPU_SESSION_LEDGER.md` 第 2 行 | 开发累计约 4.5 核时 | 约 4.3 核时（同上）；判定不受影响 | 同上 |
+
+这些错误都不影响任何判据或判决（判决只读 `results/g5/*.json`）。

@@ -18,3 +18,11 @@
 ## 会话清单
 
 尚无 GPU 会话。每次真实会话另附 `GPU_SESSION_<nn>_MANIFEST.json`。
+
+## 结题（Gate 6）
+
+- **GPU：未触发。** Mission 08 全程处于 `CPU_ONLY`。没有发出过【需要你唤醒GPU】或【需要你关闭GPU】消息，没有任何 AutoDL 实例被创建、开启、续用或释放，没有 `GPU_SESSION_<nn>_MANIFEST.json`。
+- **费用：0 元。** 用户批准的预算始终为 0（未指定）。
+- **依据：** `GPU_RESOURCE_DECISION.md` D1–D3（全部 `CPU_CONTINUE`）；全任务 CPU 约 4.9 核时（`G5_RESOURCE_LEDGER.md`）。
+- **验收场景：** 场景 ①（无 GPU 需求，全程不请求）在本轮真实发生；场景 ②–⑧ 只以模拟方式验收（`tests/test_gpu_protocol.py`，8 个场景都通过），没有租用实例。
+- **后续：** `NEXT_DECISION_MAP.md` 分叉 C 可能需要 GPU；届时须按任务书 §10A 先在 CPU 上测小样本吞吐与内存，再由用户决定是否开机。

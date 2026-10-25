@@ -19,13 +19,13 @@ python3 -I -m m08.raw check     # 只核对
 | `randi_2023_esm/` | Randi 2023 的 Source Data（图 2、图 3、扩展数据图 7） | Springer 静态内容 | CC BY 4.0 | 2.3 MB |
 | `pathak_2020_si/` | Pathak 2020 S5 表：出生时间 | PLOS 补充材料 s021 | CC BY 4.0 | 22.5 KB |
 | `skuhersky_2022/` | Skuhersky 2022 神经元位置图谱（两个版本） | github.com/bluevex/elegans-atlas（main） | 论文 CC BY 4.0；仓库无许可证 | 13.6 KB |
-| `brittin_2021_zenodo4383277/` | Brittin 2021 接触组邻接（L4、成年，XML；压缩包解到 `adjacency_x/`） | Zenodo 4383277 | CC BY 4.0 | 0.9 MB（压缩） |
+| `brittin_2021_zenodo4383277/` | Brittin 2021 接触组邻接（L4、成年，XML；裁判在冻结之后解到 `adjacency_extracted/`，文件为 `adjacency_l4.xml`、`adjacency_adult.xml`） | Zenodo 4383277 | CC BY 4.0 | 0.9 MB（压缩） |
 | `brainbuilding_d762ed07/` | Richter & Schneidman 2025 仓库的四个输入文件（位置、出生时间、Cook 细胞类别、突触计数矩阵） | schneidmanlab/BrainBuildingPaper，提交 `d762ed07` | **无许可证**：只在本地用于核对输入一致，不复制其代码 | 0.8 MB |
 
 | `flyvis_1.2.0/` | flyvis 共识连接组 `fib25-fib19_v2.2.json`、文献标签 `groundtruth_utils.py`（存为 `.txt`，不导入） | TuragaLab/flyvis main（以哈希为版本） | MIT | 0.63 MB |
 | `groschner_2022_edmond/` | Groschner et al. 2022 的输入神经元记录 `fig3_{Mi1,Tm3,Mi4,Mi9,C3}.npy`、`fig3_led.npy`、`readme.txt`（MD5 与 Edmond 的列表一致） | Edmond doi:10.17617/3.8G | CC BY 4.0 | 13.1 MB |
 
-T4 的记录（`fig3_T4v.npy`、`fig3_T4r.npy`、`fig4_T4_*`）是留出数据，冻结之前不下载（`DATA_SPLITS_AND_CUSTODY.md` §3）；Edmond 文件编号已写在 `src/m08/raw.py` 的 `EDMOND_ID`。所有 `.npy` 以 `allow_pickle=False` 读取。
+T4 的记录（`fig3_T4v.npy`、`fig3_T4r.npy`、`fig4_T4_*`）是留出数据，冻结之前不下载（`DATA_SPLITS_AND_CUSTODY.md` §3）；冻结之后裁判只下载了 `fig3_T4v.npy`、`fig4_T4_vm_gfp.npy`、`fig4_T4_vm_gluclarnai.npy`，MD5 与 Edmond 列表一致，SHA-256 见 `results/g5/t4.json`；Edmond 文件编号已写在 `src/m08/raw.py` 的 `EDMOND_ID`。所有 `.npy` 以 `allow_pickle=False` 读取。
 
 ## 核对过的一致性
 
