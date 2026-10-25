@@ -66,6 +66,29 @@ def judge(strain, cells):
     return d
 
 
+def split_half(strain, cells, columns):
+    """Reliability reference of PRE_REGISTRATION.md section 3.2: for every pair (i responder, j stimulated) with j in
+    `columns` (bool over cells) and at least two trials, the means of the odd and of the even trials of dFF_all;
+    returns the two arrays. Reading a held-out column needs the judge's custody."""
+    if (columns & column_split(cells)).any():
+        custody.allow("randi_heldout")
+    names = ids()
+    ix = [names.index(c) for c in cells]
+    a, b = [], []
+    with h5py.File(path("funatlas"), "r") as f:
+        ds, occ = f[strain]["dFF_all"], f[strain]["occ1"]
+        for jj in np.where(columns)[0]:
+            for ii in range(len(cells)):
+                if ii == jj or occ[ix[ii], ix[jj]] < 2:
+                    continue
+                v = np.asarray(ds[ix[ii], ix[jj]], dtype=float)
+                v = v[np.isfinite(v)]
+                if len(v) >= 2:
+                    a.append(v[0::2].mean())
+                    b.append(v[1::2].mean())
+    return np.array(a), np.array(b)
+
+
 def labels(d, columns):
     """Pairs (i, j), j in `columns`, i != j, measured: y = 1 if q < 0.05, 0 if q_eq < 0.05, else excluded."""
     n = d["q"].shape[0]

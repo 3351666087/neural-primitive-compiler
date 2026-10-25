@@ -25,10 +25,11 @@ class Conn:
     age_h: float
     counts: np.ndarray            # n x n synapse counts (chemical), 0 on the diagonal
     present: np.ndarray           # n booleans
+    min_syn: int = 1              # binarisation threshold (PRE_REGISTRATION.md section 1: 1, sensitivity 3)
 
     @property
     def A(self):
-        return (self.counts > 0).astype(float)
+        return (self.counts >= self.min_syn).astype(float)
 
 
 @dataclass
@@ -267,8 +268,8 @@ class CountCopy:
 class RS:
     """Single-epoch R1 on adult training sets; types fixed (Cook codes) or inferred on the training adjacency."""
 
-    def __init__(self, types=None, k_inferred=None, beta0_grid=None, sminus_grid=None, iters=30, name=None):
-        self.types0, self.k_inferred = types, k_inferred
+    def __init__(self, types=None, k_inferred=None, beta0_grid=None, sminus_grid=None, iters=30, name=None, gamma=1.0):
+        self.types0, self.k_inferred, self.gamma = types, k_inferred, float(gamma)
         self.beta0_grid = np.linspace(0, 0.05, 11)[:-1] if beta0_grid is None else beta0_grid
         self.sminus_grid = np.linspace(0, 0.05, 11)[:-1] if sminus_grid is None else sminus_grid
         self.iters = iters
@@ -286,17 +287,26 @@ class RS:
         ys = [ctx.flat(t.A) for t in train]
         ms = [ctx.pair_mask(t.present) for t in train]
         target = sum(rs.expected_counts_masked(S, y, m) for y, m in zip(ys, ms)) / len(train)
-        best = None
+        best, self.table, self.count_err = None, [], 0.0
         for b in self.beta0_grid:
             for s in self.sminus_grid:
-                sp = rs.fit_splus_masked(S, target, b, s, ms, self.iters)
-                p = S.final_prob(sp[S.tp], b, s)
-                ll = sum(rs.loglik(p[m], y[m]) for y, m in zip(ys, ms))
+                if self.gamma == 1.0:
+                    sp = rs.fit_splus_masked(S, target, b, s, ms, self.iters)
+                    p = S.final_prob(sp[S.tp], b, s)
+                    ll = sum(rs.loglik(p[m], y[m]) for y, m in zip(ys, ms))
+                else:                                      # reciprocity model: dyad likelihood (amendment A4.1)
+                    sp, err = rs.fit_splus_dyad(S, target, b, s, self.gamma, ms, self.iters)
+                    st = S.final_states(sp[S.tp], b, s, self.gamma)
+                    p = S.marginals(st)
+                    ll = sum(rs.dyad_loglik(S, st, y, m) for y, m in zip(ys, ms))
+                self.table.append((float(b), float(s), float(ll)))
                 if best is None or ll > best[0]:
                     best = (ll, b, s, sp, p)
+                    if self.gamma != 1.0:
+                        self.count_err = err
         self.ll, self.beta0, self.sminus, self.splus, self.p = best
         self.k = k
-        self.n_params = k * k + 2
+        self.n_params = k * k + 2 + (self.gamma != 1.0)
         self.label_bits = len(self.types) * np.log2(k) if self.k_inferred else 0.0
         return self
 
@@ -304,7 +314,16 @@ class RS:
         if rs.minutes(age_h) == self.t_end:
             return self.p
         S = rs.Setup(ctx.pos, ctx.birth, self.types, rs.minutes(age_h))
+        if self.gamma != 1.0:
+            return S.final_prob_dyad(self.splus[S.tp], self.beta0, self.sminus, self.gamma)
         return S.final_prob(self.splus[S.tp], self.beta0, self.sminus)
+
+    def reciprocal(self, ctx, age_h):
+        """Expected number of reciprocal ordered pairs per dyad (P(R) over dyads Setup.u), or None if gamma = 1."""
+        if self.gamma == 1.0:
+            return None
+        S = rs.Setup(ctx.pos, ctx.birth, self.types, rs.minutes(age_h))
+        return S.final_states(self.splus[S.tp], self.beta0, self.sminus, self.gamma)[3]
 
 
 class RSDev:
@@ -313,8 +332,8 @@ class RSDev:
     earlier epochs fixed; (beta0, S-) by the summed log-likelihood of all constraint data sets. `constraints` is a list
     of lists of Conn, one list per epoch, in time order; their (common) age ends the epoch."""
 
-    def __init__(self, types, beta0_grid, sminus_grid, iters=20, name="R1-dev"):
-        self.types = np.asarray(types)
+    def __init__(self, types, beta0_grid, sminus_grid, iters=20, name="R1-dev", gamma=1.0):
+        self.types, self.gamma = np.asarray(types), float(gamma)
         self.beta0_grid, self.sminus_grid, self.iters, self.name = beta0_grid, sminus_grid, iters, name
 
     def fit(self, ctx, constraints):
@@ -331,15 +350,22 @@ class RSDev:
                     ys = [ctx.flat(c.A) for c in cs]
                     ms = [ctx.pair_mask(c.present) for c in cs]
                     target = sum(rs.expected_counts_masked(S, y, mk) for y, mk in zip(ys, ms)) / len(cs)
-                    sp = self._fit_epoch(S, target, b, s, ms, fixed, bounds[:m])
-                    fixed.append(sp)
-                    p = S.final_prob(np.vstack([f[S.tp] for f in fixed]), b, s, bounds[:m] if m else None)
-                    ll += sum(rs.loglik(p[mk], y[mk]) for y, mk in zip(ys, ms))
+                    ep = bounds[:m] if m else None
+                    if self.gamma == 1.0:
+                        sp = self._fit_epoch(S, target, b, s, ms, fixed, bounds[:m])
+                        fixed.append(sp)
+                        p = S.final_prob(np.vstack([f[S.tp] for f in fixed]), b, s, ep)
+                        ll += sum(rs.loglik(p[mk], y[mk]) for y, mk in zip(ys, ms))
+                    else:
+                        sp, _ = rs.fit_splus_dyad(S, target, b, s, self.gamma, ms, self.iters, ep, fixed or None)
+                        fixed.append(sp)
+                        st = S.final_states(np.vstack([f[S.tp] for f in fixed]), b, s, self.gamma, ep)
+                        ll += sum(rs.dyad_loglik(S, st, y, mk) for y, mk in zip(ys, ms))
                 if best is None or ll > best[0]:
                     best = (ll, b, s, [f.copy() for f in fixed])
         self.ll, self.beta0, self.sminus, self.splus = best
         self.bounds = bounds
-        self.n_params = len(self.splus) * k * k + 2
+        self.n_params = len(self.splus) * k * k + 2 + (self.gamma != 1.0)
         return self
 
     def _fit_epoch(self, S, target, b, s, masks, fixed, bounds):
@@ -361,6 +387,8 @@ class RSDev:
         S = rs.Setup(ctx.pos, ctx.birth, self.types, t)
         m = int(np.searchsorted(self.bounds, t, side="right"))
         sp = np.vstack([f[S.tp] for f in self.splus[:m + 1]])
+        if self.gamma != 1.0:
+            return S.final_prob_dyad(sp, self.beta0, self.sminus, self.gamma, self.bounds[:m] if m else None)
         return S.final_prob(sp, self.beta0, self.sminus, self.bounds[:m] if m else None)
 
 

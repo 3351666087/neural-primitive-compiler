@@ -8,10 +8,19 @@ probability S-. beta_t = beta0 * L(t) / L(0), L(t) the worm length interpolated 
 given by the authors: 50 um at fertilisation, 250 um at hatching, 370 / 500 / 635 um at hatching + 12 / 20 / 28 h,
 800 um in the adult at 3500 min); positions are fixed adult coordinates divided by 800 um. Each S+ is set by
 bisection so that the expected number of synapses of its type pair equals the training data; (beta0, S-) by maximum
-likelihood on a grid. The order "form, then prune" within a step is our reading; the paper's formula is an image.
+likelihood on a grid. Within a step this single-pair model forms, then prunes; the paper's recursion (an image in
+the Methods, read at Gate 4) applies both to the previous state. The two differ only by S+ -> S+ (1 - S-), which the
+bisection absorbs (amendment A4.2; the reciprocity model below follows the paper's order).
 
 Multiple epochs: S+ may differ between epochs [0, e1), [e1, e2), ...; epoch m's S+ is fitted (with the earlier
 epochs fixed) so that expected counts per type pair at the end of epoch m match the data set given for that epoch.
+
+Reciprocity (paper, Methods "Reciprocity-dependent models"; PRE_REGISTRATION.md amendment A4.1): every unordered pair
+{a, b} is a four-state chain (E none, U a->b only, L b->a only, R both). Within a step formation and pruning act on
+the previous state: an absent synapse forms with min{S+ e^{-beta_t d}, 1}, or min{gamma S+ e^{-beta_t d}, 1} when the
+reverse synapse exists; an existing one survives with 1 - S-. gamma = 1 gives independent pairs with the marginal
+recursion p' = p (1 - S-) + (1 - p) f, which is the single-pair model above with S+ replaced by S+ (1 - S-) (the
+step order of amendment A4.2; tests/test_rs.py checks the identity).
 """
 
 from __future__ import annotations
@@ -48,6 +57,8 @@ class Setup:
         self.set_types(types)
         self.steps = np.arange(0.0, t_end, DT)               # step k covers [steps[k], steps[k] + DT)
         self.growth = length(self.steps) / LENGTH_KNOTS[0][1]
+        self.u = np.where(I < J)[0]                           # dyads: the pair (a, b), a < b ...
+        self.r = J[self.u] * (n - 1) + I[self.u]              # ... and the index of its reverse pair (b, a)
 
     def set_types(self, types):
         types = np.asarray(types)
@@ -65,6 +76,39 @@ class Setup:
             f = np.minimum(1.0, sp[min(e, len(sp) - 1)] * np.exp(-beta0 * self.growth[k] * self.d))
             p = np.where(on, (p + (1.0 - p) * f) * (1.0 - sminus), p)
         return p
+
+    def final_states(self, splus_pair, beta0, sminus, gamma, epochs=None):
+        """Dyad state probabilities (E, U, L, R) at the end, over dyads self.u (U: the pair self.u exists alone)."""
+        sp = np.atleast_2d(splus_pair)
+        u, r = self.u, self.r
+        d, tb = self.d[u], self.tb[u]
+        E, U, L, R = np.ones(len(u)), np.zeros(len(u)), np.zeros(len(u)), np.zeros(len(u))
+        s, q = sminus, 1.0 - sminus
+        for k, t in enumerate(self.steps):
+            e = 0 if epochs is None else int(np.searchsorted(epochs, t, side="right"))
+            on = tb <= t
+            if not on.any():
+                continue
+            row = sp[min(e, len(sp) - 1)]
+            base = np.exp(-beta0 * self.growth[k] * d)
+            a, b = row[u] * base, row[r] * base
+            fa, fb = np.minimum(1.0, a), np.minimum(1.0, b)
+            ga, gb = np.minimum(1.0, gamma * a), np.minimum(1.0, gamma * b)
+            nE = E * (1 - fa) * (1 - fb) + U * s * (1 - gb) + L * s * (1 - ga) + R * s * s
+            nU = E * fa * (1 - fb) + U * q * (1 - gb) + L * s * ga + R * q * s
+            nL = E * (1 - fa) * fb + U * s * gb + L * q * (1 - ga) + R * s * q
+            nR = E * fa * fb + U * q * gb + L * q * ga + R * q * q
+            E, U, L, R = (np.where(on, x, y) for x, y in ((nE, E), (nU, U), (nL, L), (nR, R)))
+        return E, U, L, R
+
+    def marginals(self, states):
+        E, U, L, R = states
+        p = np.zeros(len(self.I))
+        p[self.u], p[self.r] = U + R, L + R
+        return p
+
+    def final_prob_dyad(self, splus_pair, beta0, sminus, gamma, epochs=None):
+        return self.marginals(self.final_states(splus_pair, beta0, sminus, gamma, epochs))
 
 
 def expected_counts(setup, p):
@@ -109,6 +153,51 @@ def fit_splus_masked(setup, target, beta0, sminus, masks, iters=40):
     s = np.exp(0.5 * (lo + hi))
     s[target <= 0] = 0.0
     return s
+
+
+def fit_splus_dyad(setup, target, beta0, sminus, gamma, masks, iters=40, epochs=None, fixed=None, refine=40,
+                   tol=1e-3):
+    """S+ for every type pair of the reciprocity model. The two directions of a dyad are coupled, so all type pairs
+    are first bisected together (each against its own expected count), then refined by damped log-ratio steps
+    log S+ += 0.8 log(target / count) (counts are close to proportional to S+ at these rates) until every count is
+    within `tol` (relative). Returns (S+ (k*k,), max relative count error)."""
+    kk = setup.k * setup.k
+    lo, hi = np.full(kk, -30.0), np.zeros(kk)
+    pos = target > 0
+
+    def counts(logs):
+        rows = [] if fixed is None else [f[setup.tp] for f in fixed]
+        sp = np.vstack(rows + [np.exp(logs)[setup.tp]])
+        p = setup.final_prob_dyad(sp, beta0, sminus, gamma, epochs)
+        return sum(expected_counts_masked(setup, p, m) for m in masks) / len(masks)
+
+    def rel_err(c):
+        return float(np.max(np.abs(c - target)[pos] / target[pos])) if pos.any() else 0.0
+
+    for _ in range(iters):
+        mid = 0.5 * (lo + hi)
+        up = counts(mid) < target
+        lo, hi = np.where(up, mid, lo), np.where(up, hi, mid)
+    est = np.where(pos, 0.5 * (lo + hi), -30.0)
+    c = counts(est)
+    for _ in range(refine):
+        if rel_err(c) < tol:
+            break
+        step = np.where(pos, 0.8 * np.log(np.maximum(target, 1e-12) / np.maximum(c, 1e-12)), 0.0)
+        est = np.minimum(0.0, est + np.clip(step, -2.0, 2.0))
+        c = counts(est)
+    s = np.exp(est)
+    s[~pos] = 0.0
+    return s, rel_err(c)
+
+
+def dyad_loglik(setup, states, y, mask, eps=1e-12):
+    """Log-likelihood of the observed dyad states (both directions of every dyad whose neurons are present)."""
+    E, U, L, R = (np.clip(x, eps, 1.0) for x in states)
+    m = mask[setup.u]
+    a, b = y[setup.u][m] > 0, y[setup.r][m] > 0
+    ll = np.where(a & b, np.log(R[m]), np.where(a, np.log(U[m]), np.where(b, np.log(L[m]), np.log(E[m]))))
+    return float(ll.sum())
 
 
 def loglik(p, y, eps=1e-12):

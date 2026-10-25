@@ -1,0 +1,76 @@
+{
+ "gate": "g3",
+ "name": "structure_dev_positive_grid40",
+ "meta": {
+  "grid": 40
+ },
+ "commit": "65af74ca06acec0528f32eb0ff61c8ebc2f382d1",
+ "python": "3.12.13",
+ "platform": "macOS-26.6.2-arm64-arm-64bit",
+ "inputs": {
+  "pathak_s5": "7389fcffc5c3f11df20e1a8443623ab281b548b304e530983fafee867f3247a7",
+  "rs_celltypes": "cf442a285c43f6fd95fbaa6b50b3e0696187cdf39242377d95a5446354ae2244",
+  "sku_hires": "bb45477c58f1a6a920fb7a9dcf800bd1d0b2c0e347311fa6745eed6c923f49d7",
+  "witvliet_7": "d0fd2dd32adbe5f04ce90a2e5b74c01c9a831876527b0a2b8bd5b94edc86b037",
+  "witvliet_8": "fdead89606257c1b26e57069fbe1de14c7696633b75b59b79e74c0bcc3497e62",
+  "wormatlas_names": "b69c0e994270493535994a69a47210dda04319592697eec2f4a65a9df8886195"
+ },
+ "wall_s": 2531.12,
+ "cpu_s": 4980.63,
+ "peak_rss_mb": 158.1,
+ "results": {
+  "n_neurons": 180,
+  "n_pairs": 32220,
+  "R1": [
+   {
+    "ll_bits_per_pair": -0.2955119900812639,
+    "auroc": 0.7767057795819203,
+    "auprc": 0.17409232654616102,
+    "brier": 0.05280709771757208,
+    "ece": 0.0029717272114534415,
+    "n_pairs": 32220,
+    "n_pos": 1933,
+    "ll_gain_bits_per_pair": 0.03190828782092014,
+    "variant": "cook",
+    "train": "W7",
+    "test": "W8",
+    "beta0": 0.035,
+    "sminus": 0.0225,
+    "n_params": 171,
+    "label_bits": 0.0,
+    "cpu_s_worker": 2489.604683
+   },
+   {
+    "ll_bits_per_pair": -0.2771980038999872,
+    "auroc": 0.7935228493762492,
+    "auprc": 0.23325793505659692,
+    "brier": 0.05096500819930652,
+    "ece": 0.002837156223345402,
+    "n_pairs": 32220,
+    "n_pos": 1933,
+    "ll_gain_bits_per_pair": 0.05022227400219679,
+    "variant": "inferred8",
+    "train": "W7",
+    "test": "W8",
+    "beta0": 0.01125,
+    "sminus": 0.01375,
+    "n_params": 66,
+    "label_bits": 540.0,
+    "cpu_s_worker": 2488.305246
+   }
+  ],
+  "published": {
+   "cook13_auroc_w8": 0.78,
+   "inferred8_auroc_w8": 0.81,
+   "tolerance": 0.03
+  },
+  "positive_control": {
+   "cook_ok": true,
+   "inferred8_ok": true,
+   "values": {
+    "cook": 0.7767057795819203,
+    "inferred8": 0.7935228493762492
+   }
+  }
+ }
+}

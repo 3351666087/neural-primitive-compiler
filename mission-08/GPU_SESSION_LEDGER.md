@@ -11,6 +11,7 @@
 | # | 时间（UTC） | 状态 | 操作者 | 证据 | 预算余量 | 下一步 |
 |---|---|---|---|---|---|---|
 | 1 | 2026-10-25T01:55Z | `CPU_ONLY` | Agent | Mission 08 开始；Gate 0–1 只有文献、审计与数据核查，无张量负载 | 0 元（未授权） | 继续 CPU；`GPU_RESOURCE_DECISION.md` 记 `CPU_CONTINUE` |
+| 2 | 2026-10-25T04:35Z | `CPU_ONLY` | Agent | Gate 3–4 实测（`GPU_RESOURCE_DECISION.md` D3）：最大单个配置 < 0.2 核时，开发累计约 4.5 核时；确认估计 1–1.5 核时 | 0 元（未授权） | 继续 CPU；冻结并运行 Gate 5 裁判 |
 
 ## 会话清单
 

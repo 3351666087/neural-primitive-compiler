@@ -54,6 +54,9 @@ T4 的数据文件在冻结之前不下载；冻结之后下载，下载时核�
 | 本会话 | 读取了 `funatlas.h5` 的数据集名称与形状；读取了 Randi Source Data 的工作表名称与尺寸 | 无数值 |
 | Gate 1 对抗性复核代理 | 在 Richter & Schneidman 仓库自带的 8 个连接组上计算了复制基线：W7 → W8、W8 → W7、W6 → W8（AUROC 0.761、AP 0.511）、W1 → W8（0.643、0.302），以及"计数 + 反向计数"的 W7 → W8（0.855、0.643） | W6 的逐对信息以汇总形式进入上下文：**W6 改为开发**。W1、W7、W8 本来就是开发数据。W2、W4 没有被任何代理在逐对层面使用 |
 | Gate 1 Richter 审阅代理 | 下载 Europe PMC 补充材料压缩包时超过 5 MB 的子代理上限，被截断后删除，未打开 | 违反了子代理的下载规则（不是任务书的 10 GB 上限），没有读取内容；记录在此 |
+| Gate 4（本会话） | 为写 Brittin 接触组的读取器，读取了 Zenodo 4383277 的说明与作者的 `parsetrakem2` 代码（`measure_adjacency.py`、`xml2csv.py`）；没有打开 `adjacency.tar.bz2` | 只有格式说明，无数值（修正案 A4.3） |
+| Gate 4（本会话） | 读取了 Richter & Schneidman 预印本 JATS 中互惠模型的两个公式图片（形成概率与二元组递推） | 文献，无数据（修正案 A4.1、A4.2） |
+| Gate 4（本会话） | 为核对 T4 记录的数组轴，读取了 Edmond 的 `readme.txt` 与 `fig3.ipynb`、`fig4.ipynb` 中含 `np.load` 的代码单元（只打印代码单元，不显示输出单元；随后删除本地副本） | 只有约定：轴为（细胞，极性 ON / OFF，方向 PD / ND，时间），与 `t4.observed_dsi` 的假设一致；作者在图 4 中只保留有输入电阻数据的 GFP 细胞，我们按预注册用所有有电压记录的 GFP 细胞（差别写入 `LIMITATIONS.md`） |
 | 已发表文献 | Richter & Schneidman 报告了 W8 上的结果；Randi 等报告了解剖与功能的比较；Creamer 等报告了约束模型的表现；Groschner 报告了 T4 的方向选择性与 RNAi 效应 | 公开结论为本会话所知。留出检验检验的是本轮冻结的模型在新划分上的表现，不是这些数据"未知" |
 
 ## 5. 读取顺序

@@ -76,15 +76,16 @@ def present_in(k=None, key=None):
     return (set(df.pre) | set(df.post)) & names
 
 
-def conn(cells, k=None, key=None, age_h=None, name=None):
-    """models.Conn for Witvliet data set k (cect xlsx) or a NemaNode key, over the reference list `cells`."""
+def conn(cells, k=None, key=None, age_h=None, name=None, min_syn=1):
+    """models.Conn for Witvliet data set k (cect xlsx) or a NemaNode key, over the reference list `cells`; an edge
+    needs at least `min_syn` synapses."""
     from .models import Conn
     df = witvliet(k) if k is not None else nemanode(key)
     pres = present_in(k=k, key=key)
     mask = np.array([c in pres for c in cells])
     if age_h is None:
         age_h = WITVLIET_AGE_H[k]
-    return Conn(name or (f"W{k}" if k is not None else key), float(age_h), matrix(df, cells), mask)
+    return Conn(name or (f"W{k}" if k is not None else key), float(age_h), matrix(df, cells), mask, min_syn)
 
 
 # ---- features measured independently of the connectomes (BIOLOGICAL_ASSUMPTIONS.md section 2) ----
@@ -142,3 +143,51 @@ def matrix(df, cells):
 
 def offdiag(n):
     return ~np.eye(n, dtype=bool)
+
+
+class Blocked(Exception):
+    """A registered analysis cannot be run on the data as found (recorded as BLOCKED, PRE_REGISTRATION.md A4.3)."""
+
+
+def brittin_contacts(cells):
+    """Membrane contact of every unordered neuron pair in Brittin et al. 2021 (Zenodo 4383277, adjacency.tar.bz2),
+    {"JSH": n x n, "N2U": n x n}. The format was not inspected before the freeze; the reader follows the authors'
+    parsetrakem2 (scripts/measure_adjacency.py, xml2csv.py): <layer name> elements holding <area> elements with
+    <cell1>, <cell2> and <adjacency> (boundary length in pixels); contact = adjacency summed over layers. Files are
+    assigned to animals by name ('jsh' or 'l4' -> JSH; 'n2u' or 'adult' -> N2U). Raises Blocked otherwise."""
+    import tarfile
+    import xml.etree.ElementTree as ET
+    src = path("brittin_adjacency")
+    out_dir = src.parent / "adjacency_extracted"
+    if not out_dir.exists():
+        out_dir.mkdir()
+        with tarfile.open(src, "r:bz2") as tf:
+            tf.extractall(out_dir, filter="data")
+    xmls = sorted(p for p in out_dir.rglob("*.xml") if not p.name.startswith("._"))
+    pick = {}
+    for animal, keys in (("JSH", ("jsh", "l4")), ("N2U", ("n2u", "adult"))):
+        hits = [p for p in xmls if any(k in p.name.lower() for k in keys)]
+        if len(hits) != 1:
+            raise Blocked(f"{animal}: {len(hits)} matching files among {[p.name for p in xmls]}")
+        pick[animal] = hits[0]
+    ix = {c: i for i, c in enumerate(cells)}
+    out = {}
+    for animal, p in pick.items():
+        M = np.zeros((len(cells), len(cells)))
+        n_area, names = 0, set()
+        for layer in ET.parse(p).getroot().iter("layer"):
+            for area in layer.iter("area"):
+                c1, c2, adj = area.findtext("cell1"), area.findtext("cell2"), area.findtext("adjacency")
+                if c1 is None or c2 is None or adj is None:
+                    continue
+                n_area += 1
+                names.update((c1, c2))
+                if c1 in ix and c2 in ix and c1 != c2:
+                    M[ix[c1], ix[c2]] += float(adj)
+                    M[ix[c2], ix[c1]] += float(adj)
+        found = len(names & set(cells))
+        if n_area == 0 or found < 0.5 * len(cells):
+            raise Blocked(f"{animal} ({p.name}): {n_area} area records, {found} of {len(cells)} neurons named")
+        out[animal] = M
+    out["files"] = {a: p.name for a, p in pick.items()}
+    return out
