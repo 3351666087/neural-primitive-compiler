@@ -1,0 +1,215 @@
+{
+ "contradictions": [
+  {
+   "item": "Shiu 2024 split-GAL4 screen: confusion matrix and base rate (shiu reader vs fly_function_data reader)",
+   "detail": "The shiu reader reports 14/106 positive types, always-negative 92/106 = 86.8%, and LIF at 50 Hz on the left MN9 column TP10 FP1 FN4 TN91 = 95.3%. The fly_function_data reader reports 13/106 positive (PER >= 0.2), predict-none 0.877, and LIF TP10 FP3 FN3 TN90 = 0.943. I parsed Supplementary Table 3 myself (41586_2024_7763_MOESM2_ESM.xlsx, 2,539,037 B). The paper's own tally (11 predicted positive, 10 true; 4 of 95 negatives positive) is reproduced only when a positive means any rostrum extension and the left-MN9 50 Hz column is read: TP10 FP1 FN4 TN91. The fly_function reader's numbers are the right-MN9 column at a >= 0.2 threshold. Balanced accuracy: LIF 50 Hz left 0.852, right 0.841, 200 Hz left 0.825. Shortest path <= 1 scores 0.858 accuracy and 0.585 balanced; path <= 2 scores 0.594 accuracy and 0.736 balanced. Both readers' numbers are arithmetically correct for the definitions they chose, but only the shiu reader's match the paper.",
+   "how_to_resolve": "Preregister the positive threshold (any extension, as in the paper), the MN9 side, the stimulation frequency and the >0 Hz rule before any rescoring. Report balanced accuracy and AUPRC against the 14/106 base rate. My script is /private/tmp/claude-501/-Users-null3351-Code-neural-primitive-research/67758993-59ff-487e-8108-e1cc3e5b2603/scratchpad/critic/scripts/shiu_conf.py."
+  },
+  {
+   "item": "Shiu 2024 headline 150/164: G2N-1 water-silencing prediction",
+   "detail": "I confirmed the shiu reader's finding. Supp Table 10 lists G2N-1 among the correct predictions for 'Neurons required for water feeding initiation' (10/11). The main text says the sixth neuron, G2N-1, did not decrease proboscis extension to water. The raw counts in Supp Table 9B agree with the text: 41>Acr1 light on 37/50 vs light off 44/50, with the empty-split light-on control at 32/50.",
+   "how_to_resolve": "Score any re-evaluation from the raw ST9B counts with a preregistered test, not from ST10. If the text is right, the totals are 149/164 (90.9%) and 48/58 (82.8%)."
+  },
+  {
+   "item": "Randi 2023 as a G-FUNCTION target: the anatomy baseline is not a 'low bar'",
+   "detail": "The celegans_data reader says that because Randi's anatomy-derived model fits measured amplitudes poorly (R^2 < 0), 'beating anatomy' is a low bar. That reader missed Creamer, Leifer & Pillow (bioRxiv 10.1101/2024.09.22.614271, v4 2026-05-18). Creamer et al. fit a connectome-constrained linear dynamical model to the Randi perturbation recordings, training on 80 animals and testing on 30 held-out animals. Its weights are non-zero only on anatomical edges, using the summed JSH, N2U and Witvliet 7 and 8 connectomes, with signs learned. It captures causal interactions at 82% of the data's own reproducibility. A row/column-permuted connectome performed much worse, and adding non-connectome edges did not help. The code is MIT-licensed (github.com/Nondairy-Creamer/Creamer_LDS_2026).",
+   "how_to_resolve": "Treat Creamer's real-connectome LDS as the reference model and the permuted connectome as the lower reference. Any M08 claim must compare generated-connectome performance with real-connectome performance under identical dynamics fitting and held-out animals. Note that animal-level splits need the per-animal OSF exports (>= 85 MB, no declared licence), not the aggregated Source Data matrices."
+  },
+  {
+   "item": "Where the leakage actually is in Richter & Schneidman's design (generative reader vs richter reader)",
+   "detail": "The generative reader lists 'random synapse halves shared across all stages' as an H0-PRIOR leakage pattern. The richter reader's account is more accurate. Using one dyad split for every stage keeps a dyad's state at one stage from leaking into another stage's test. The real problems are three: (a) no whole stage is ever held out; (b) the inferred types come from worm 7's full adjacency, including test-half dyads; (c) the compression level is chosen on the test worm. I verified (c) in compact_model_representaion.py at commit d762ed07, lines 94-129. find_compact_representation_within_performance_tolerance binary-searches the quantization threshold against roc_auc_score on test_data_path = Dataset8. That AUROC is computed on flatten() with the diagonal included. find_compact_representations() in train_c_elegans_independent_model.py passes Dataset7 as train and Dataset8 as test.",
+   "how_to_resolve": "In FAILURE_TAXONOMY and the Richter-replication protocol, classify (b) and (c) as leakage and the shared dyad split as not leakage. Select compression on a validation split inside the training individual(s)."
+  },
+  {
+   "item": "Did Richter & Schneidman omit a copy-the-other-worm baseline, and does memorization beat them?",
+   "detail": "The generative reader says only that no such baseline appears in the main text. The richter reader computed one. I recomputed it independently with my own stdlib parser on the bundled synapse_count_matrices.xlsx (764,283 B): 180 neurons, 32,220 ordered off-diagonal pairs. My numbers match the richter reader exactly. Worm 7 to worm 8: binary copy AUROC 0.8200 / AP 0.4581; synapse-count copy 0.8242 / 0.5960; count plus reverse-count tie-break 0.8545 / 0.6425. Worm 8 to worm 7: 0.8200 binary, 0.8241 count. Dataset 6 to 8 (count): 0.7605 / 0.5107. Dataset 1 to 8: 0.6426 / 0.3021. Both adults have exactly 1,933 binarized edges, with 1,279 shared. They are not duplicates: the synapse totals are 6,575 vs 7,099, and 2,186 pair counts differ. The paper's own AUROCs are 0.78 (13 types) and 0.81 (8 inferred types), so copying worm 7 matches or beats the published compact model on AUROC. The PNAS SI was not read by anyone, so whether the SI contains a copy baseline is unverified.",
+   "how_to_resolve": "Read the PNAS SI Appendix (915 KB) before saying in PRIOR_ART that Richter 'did not' run this baseline. In any case, make the copy baseline mandatory and compare models on an accuracy vs description-length Pareto front. My script is /private/tmp/claude-501/-Users-null3351-Code-neural-primitive-research/67758993-59ff-487e-8108-e1cc3e5b2603/scratchpad/critic/scripts/copy_baseline.py."
+  },
+  {
+   "item": "Reciprocity magnitude in the Richter data",
+   "detail": "The paper says observed reciprocity is about 4.5 times the ER value of about 0.0036. On worm 8 of the bundled file I get a reciprocated-ordered-pair fraction of 0.01862, which is 5.17 times density^2 (0.00360). The gap probably comes from the definition used or from worm 7 vs worm 8.",
+   "how_to_resolve": "Preregister one reciprocity definition and name the worm it is computed on. This matters for the gamma = 7 replication."
+  },
+  {
+   "item": "Haber 2023 AUROC 0.84 vs Richter 0.78 described as 'similar'",
+   "detail": "The generative reader reports Haber's C. elegans AUROC of 0.84 from random within-connectome neuron splits. Richter reports 0.78-0.81 for a cross-individual test (worm 7 to worm 8) and calls the two similar. The split designs differ, so the numbers are not comparable. Haber's number has not been verified beyond 'abstract and parts'.",
+   "how_to_resolve": "Re-run a Haber-style MaxEnt model on the same cross-individual split and metrics before ranking either model."
+  },
+  {
+   "item": "Witvliet stage labels",
+   "detail": "I confirmed in the PMC8756380 text that the paper says it 'reconstructed three L1, two L2, and one L3 animals'. NemaNode /api/datasets, which I queried, labels datasets 1-4 as L1, 5 as L2 and 6 as L3, at roughly 0, 5, 8, 16, 23, 27, 50 and 50 h. The Zenodo 5637219 README mentions an 'L5'.",
+   "how_to_resolve": "Define stages by hours after birth (NemaNode) and pin the dataset IDs. Do not use stage names as covariates."
+  },
+  {
+   "item": "Treating White N2U/JSH as clean out-of-lab held-out individuals",
+   "detail": "The celegans_data reader recommends JSH and N2U as out-of-lab test animals. In Witvliet's own text, which I located, the Cook 2019 re-annotation of N2U 'added 1109 new connections' and the authors suggest the annotation criteria differ. Richter's 863-edge 'backbone' across three adults therefore mixes biological variability with annotation shift. Creamer et al. also put JSH and N2U into their connectome constraint, as did Randi's anatomy baseline.",
+   "how_to_resolve": "Report White-animal transfer as a separate annotation-shift condition, pin the annotation version (White/NemaNode vs Cook 2019), and do not pool it with the same-pipeline worm 7/8 test."
+  },
+  {
+   "item": "FlyWire data licence",
+   "detail": "I verified through the API that the Zenodo deposits 10676866, 10877326, 10593546, 12588557 and 17030629 are cc-by-4.0. The flywire reader quotes the FlyWire Principles as saying published data are CC BY-NC 4.0. The hemibrain has a similar conflict: the Janelia page says CC BY, while figshare 11676099 says CC BY-NC.",
+   "how_to_resolve": "Use the stricter CC BY-NC reading, keep use non-commercial, and cite according to the FlyWire citation guidelines. No one has read that Google Doc."
+  },
+  {
+   "item": "FlyWire bulk access: the anonymous GCS bucket vs the 'login required' classification",
+   "detail": "The flywire reader listed gs://flywire-data/codex/data anonymously, and it mirrors exports that Codex puts behind Google sign-in and an api_token. The fly_function_data reader classifies FlyWire access as login_or_token_required. The bucket has no licence or terms, and no one found documentation saying it is sanctioned.",
+   "how_to_resolve": "Use only the CC-BY Zenodo copies (the flywire reader MD5-matched several to bucket files), or ask the user. Do not depend on the bucket, because that would get around the Codex sign-in gate in spirit."
+  },
+  {
+   "item": "'No fly developmental connectome series' (flywire and fly_function_data readers)",
+   "detail": "That holds for FlyWire, but Gerhard et al. 2017 (eLife 6:e29089, which I verified) compared nociceptive circuits reconstructed in an L1 and an L3 larva. They report roughly 5-fold growth with the fraction of input from each presynaptic partner conserved. It is a small developmental comparison in the fly.",
+   "how_to_resolve": "Mention it in DATASET_FEASIBILITY as a possible fly stage-transfer source. Its data access and licence (CATMAID) are unverified."
+  },
+  {
+   "item": "Rule deviations during Gate 1",
+   "detail": "(1) The richter reader's curl of the Europe PMC supplementary zip downloaded 5,000,000 bytes of a file larger than 5 MB, then truncated and deleted it. That is an attempted download over the cap. (2) The flyvis pretrained-model downloader authenticates to Google Drive with an API key hard-coded in the package. Running it would mean using a credential, which the readers correctly avoided.",
+   "how_to_resolve": "Record (1) in the Gate-1 audit. Before any large fetch, check size with HEAD and abort above the cap. Leave (2) to the user."
+  },
+  {
+   "item": "Bibliographic corrections",
+   "detail": "(a) Pentek & Ercsey-Ravasz is published: Network Neuroscience 9:869-895 (2025), doi 10.1162/netn_a_00455, verified in Crossref. The generative reader listed only the arXiv version. (b) The final version of Akarca et al. eLife 85300 is eLife 14, issued 2025-07-08 (Crossref); the reader had marked the year unverified. (c) Kovacs, Barabasi & Barabasi 2020 is PNAS 117(52):33570-33577 (Crossref), which confirms the volume and pages the richter reader gave from memory. (d) Lappalainen reports 604 type-pair edges while the JSON has 605, and gives r = 0.60 in one place and -0.60 in another; both inconsistencies are unresolved.",
+   "how_to_resolve": "Correct these in PRIOR_ART_AND_NOVELTY.md and keep the Lappalainen inconsistencies listed as open."
+  },
+  {
+   "item": "Node sets for C. elegans edge counts",
+   "detail": "From NemaNode (all cells, muscles included), the celegans_data reader counts 2,202 chemical edges for D7 and 2,186 for D8. Richter's 180-neuron nerve-ring subset has 1,933 for each. Both counts are right for their own node sets.",
+   "how_to_resolve": "Preregister one node set (the 180 nerve-ring neurons, to compare with Richter), one synapse type (chemical, with gap junctions separate), binarization and autapse handling."
+  }
+ ],
+ "missing_prior_art": [
+  {
+   "citation": "Creamer MS, Leifer AM, Pillow JW. Bridging the gap between the connectome and whole-brain activity in C. elegans. bioRxiv 10.1101/2024.09.22.614271 (v1 2024-09-23; v4 2026-05-18; bioRxiv API: published NA, licence cc_by_nc). Code: github.com/Nondairy-Creamer/Creamer_LDS_2026 (MIT LICENSE file). Read level: bioRxiv API abstract, plus the v4 full text through an automated extractor (first 100k of ~110k characters).",
+   "url": "https://www.biorxiv.org/content/10.1101/2024.09.22.614271v4",
+   "verified": true,
+   "why_it_matters": "This directly pre-empts the C. elegans 'structure to function' claim on the Randi 2023 atlas. Authors' measurement: a connectome-constrained LDS fit on 80 animals and tested on 30 held-out animals reaches 82% of data reproducibility, and a permuted connectome does much worse. It becomes the mandatory real-connectome reference for any M08 G-FUNCTION test on Randi data. What it did not do (per the parts read): generated or rule-sampled connectomes, or degree-preserving nulls. That substitution test is still open."
+  },
+  {
+   "citation": "Cook SJ, Kalinski CA, Hobert O (2023). Neuronal contact predicts connectivity in the C. elegans brain. Curr Biol 33:2315-2320.e2. doi 10.1016/j.cub.2023.04.071. Preprint bioRxiv 10.1101/2022.11.13.516316. Read level: preprint abstract, plus preprint full text through an automated extractor; the Curr Biol version was not read.",
+   "url": "https://doi.org/10.1016/j.cub.2023.04.071",
+   "verified": true,
+   "why_it_matters": "A Peters'-rule model (path-length-dependent adjacency plus brain strata) predicts nerve-ring connectivity. The preprint reports ROC-AUC 0.93 +/- 0.02 (10-fold CV) and PR-AUC 0.80, with r = 0.682 between adjacency and weight. Caution: both predictor and target are pooled across EM series (mean adjacency over 9 series, median weight over 10 samples), and CV is over random neuron-class pairs, so the test animals leak into the predictor. Even so, contact or strata is a mandatory G-STRUCT baseline, and it is far stronger than the AUROC 0.78-0.81 reported by Richter."
+  },
+  {
+   "citation": "Salova A, Kovacs IA (2024). Combined topological and spatial constraints are required to capture the structure of neural connectomes. arXiv:2405.06110 (no journal reference listed). Read level: abstract only.",
+   "url": "https://arxiv.org/abs/2405.06110",
+   "verified": true,
+   "why_it_matters": "Scalable maximum-entropy generative models that combine a degree sequence with spatial or contactome constraints, applied to fly, mouse and human connectomes. The authors say these models predict properties beyond their inputs, such as synaptic weights and graphlet statistics. This pre-empts 'distance plus degree MaxEnt generates the fly connectome' and makes it a required fly G-STRUCT baseline."
+  },
+  {
+   "citation": "Lin A, Yang R, Dorkenwald S, et al. (2024). Network statistics of the whole-brain connectome of Drosophila. Nature 634:153-165. doi 10.1038/s41586-024-07968-y. PMC11446825. Read level: Europe PMC full text, searched for the null-model and reciprocity passages only.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11446825/",
+   "verified": true,
+   "why_it_matters": "Published FlyWire null and generative baselines: ER, directed configuration, a two-zone neuron-neuron distance model (NND) and a neuropil-connection model (NPC). Reciprocity in the fly is 0.138 and clustering 0.0463, both above all of these nulls. Any fly rule must beat these exact nulls, and a 'reciprocity or clustering exceeds spatial nulls' finding is already published."
+  },
+  {
+   "citation": "Pospisil DA, Aragon MJ, Dorkenwald S, et al. (2024). The fly connectome reveals a path to the effectome. Nature 634:201-209. doi 10.1038/s41586-024-07982-0. PMC11446844. Read level: abstract and searched passages.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11446844/",
+   "verified": true,
+   "why_it_matters": "Proposes a connectome-prior linear dynamical model and eigenmode analysis of the FlyWire connectome. It is validated only on simulations, with no real perturbation data. It supplies the signed-linear-propagation and eigenmode baselines for fly function claims, and it pre-empts 'sparse dominant circuits from connectome eigenmodes'."
+  },
+  {
+   "citation": "Zhao M, Wang N, Jiang X, et al. (2024). An integrative data-driven model simulating C. elegans brain, body and environment interactions (BAAIWorm; preprint 'MetaWorm', bioRxiv 10.1101/2024.02.22.581686). Nature Computational Science 4:978-990. doi 10.1038/s43588-024-00738-w. Read level: secondary only (search results and Crossref).",
+   "url": "https://doi.org/10.1038/s43588-024-00738-w",
+   "verified": true,
+   "why_it_matters": "A closed-loop connectome plus multicompartment-neuron plus body model of C. elegans. It is prior art for 'connectome-constrained worm model produces behaviour' and a possible readout for G-FUNCTION or G-CONSTRUCT on worms. Its validation content is unverified."
+  },
+  {
+   "citation": "Cook SJ, Kalinski CA, Loer CM, et al., Hobert O (2025). Comparative connectomics of two distantly related nematode species reveals patterns of nervous system evolution. Science 389, doi 10.1126/science.adx2143. PMC12330220. Read level: abstract and search summary.",
+   "url": "https://doi.org/10.1126/science.adx2143",
+   "verified": true,
+   "why_it_matters": "A Pristionchus pacificus brain connectome with one-to-one homologs to C. elegans. It is the obvious cross-species transfer test for frozen C. elegans rules (H4). It is also a warning: M08 must not claim cross-species laws without testing on it. Data access and licence are unverified."
+  },
+  {
+   "citation": "Gerhard S, Andrade I, Fetter RD, Cardona A, Schneider-Mizell CM (2017). Conserved neural circuit structure across Drosophila larval development revealed by comparative connectomics. eLife 6:e29089. PMC5662290. Read level: abstract and search summary.",
+   "url": "https://elifesciences.org/articles/29089",
+   "verified": true,
+   "why_it_matters": "A fly developmental connectome comparison (L1 vs L3 nociceptive circuit). Circuit size and synaptic input grow about 5-fold while each partner's fractional input is conserved. It is prior art for 'growth preserves fractional connectivity' rules, and it contradicts the readers' statement that no fly developmental data exist."
+  },
+  {
+   "citation": "Mark B, Lai S-L, Zarin AA, et al., Doe CQ (2021). A developmental framework linking neurogenesis and circuit formation in the Drosophila CNS. eLife 10:e67510. Read level: abstract and peer-review summary from search.",
+   "url": "https://elifesciences.org/articles/67510",
+   "verified": true,
+   "why_it_matters": "In the larval TEM connectome (160 interneurons from 7 neuroblast lineages), hemilineage and temporal cohort predict shared synaptic targeting, and the authors argue proximity alone cannot explain it. This pre-empts the flywire reader's proposed open test 'does hemilineage predict connectivity beyond cell type and space'. Reviewers asked the authors to soften that claim."
+  },
+  {
+   "citation": "Betzel RF, Puxeddu MG, Seguin C, et al. (2024). Hierarchical communities in the larval Drosophila connectome: links to cellular annotations and network topology. PNAS 121:e2320177121. doi 10.1073/pnas.2320177121. Read level: search snippet only.",
+   "url": "https://doi.org/10.1073/pnas.2320177121",
+   "verified": true,
+   "why_it_matters": "According to the search summary (unverified), it reports that an exponential distance rule does not hold at single-neuron resolution in the larval connectome, only after coarse-graining. Distance-only rules are therefore a weak baseline at the neuron level, and a 'distance rule' finding at the neuron level would contradict published work."
+  },
+  {
+   "citation": "Talpir T, Schneidman E (2026). Identifying structural design principles shaping the computational abilities of recurrent neural networks. arXiv:2606.23874. Read level: abstract only.",
+   "url": "https://arxiv.org/abs/2606.23874",
+   "verified": true,
+   "why_it_matters": "From the same lab as Richter and Haber: exhaustive catalogs of small RNNs computing Boolean functions. Local 2- and 3-cycles, plus sparse 'biologically inspired interneurons', raise computational capacity over acyclic and reachability-matched controls, and a few structural statistics predict performance. This pre-empts 'reciprocity or short cycles as a structure-to-capability law' at ANN level, which is directly relevant to G-CONSTRUCT and to Richter's reciprocity factor gamma."
+  },
+  {
+   "citation": "Dhawan A (2026). FlyHack: Stress-Testing Mechanistic Claims in a Connectome-Constrained Visual Model. arXiv:2610.13018. Read level: abstract only.",
+   "url": "https://arxiv.org/abs/2610.13018",
+   "verified": true,
+   "why_it_matters": "Already ran task-matched causal CNN controls and intervention replication on the released flyvis 50-model ensemble. The reported reverse-phi behaviour also appears in CNNs, and the T4/T5 circuit conclusions depend on ensemble member and representation. This pre-empts some of the 'CNN or task-swap control' gaps the lappalainen reader listed as open, and it supplies a required baseline protocol."
+  },
+  {
+   "citation": "Simeon Q, Kashyap A, Kording KP, Boyden ES (2024). Homogenized C. elegans Neural Activity and Connectivity Data. arXiv:2411.12091 (data on HuggingFace). Read level: abstract only.",
+   "url": "https://arxiv.org/abs/2411.12091",
+   "verified": true,
+   "why_it_matters": "A harmonized release of 12 C. elegans imaging datasets (~900 worms) and 9 connectome annotations. It may answer the celegans_data reader's unresolved question of where the Kato 2015 and Uzel 2022 data are. It is also prior art for cross-lab and cross-animal structure-to-function benchmarking. The licence and HuggingFace terms are unverified."
+  },
+  {
+   "citation": "Jin Z, Zhu Y, Zhang C, Sui Y, et al. (2026). Whole-Brain Connectomic Graph Model Enables Whole-Body Locomotion Control in Fruit Fly. arXiv:2602.17997 (the search result says NeurIPS 2025). Read level: title and search snippet only.",
+   "url": "https://arxiv.org/abs/2602.17997",
+   "verified": true,
+   "why_it_matters": "Uses the real FlyWire graph as the recurrent controller for a body model. It partly pre-empts 'connectome-structured network constructs a capability' (the G-CONSTRUCT framing), but with real rather than generated wiring. It should be cited as a construct-side baseline. Its content is unverified."
+  },
+  {
+   "citation": "Liew J-N, Lin S, Chen B, Zhang W (2026). Connectome-Based Modelling Reveals Orientation Maps in the Drosophila Optic Lobe. arXiv:2609.01330. Read level: abstract only.",
+   "url": "https://arxiv.org/abs/2609.01330",
+   "verified": true,
+   "why_it_matters": "A FlyWire spiking model in which orientation-map-like structure emerges from connectome-constrained dynamics. It is another 'structure alone yields visual function' claim (along with the Correig-Fraga 2026 Zenodo record), so this space in the fly optic lobe is crowded."
+  },
+  {
+   "citation": "Pentek B, Ercsey-Ravasz M (2025), published version of the arXiv preprint the readers cited: The exponential distance rule-based network model predicts topology and reveals functionally relevant properties of the Drosophila projectome. Network Neuroscience 9:869-895. doi 10.1162/netn_a_00455. PMC12543305. Read level: Crossref metadata.",
+   "url": "https://doi.org/10.1162/netn_a_00455",
+   "verified": true,
+   "why_it_matters": "Correction of status: this is peer-reviewed prior art for an exponential-distance generative rule in the fly, at neuropil scale."
+  }
+ ],
+ "claims_needing_primary_verification": [
+  "Whether the Richter & Schneidman PNAS SI Appendix (pnas.2504913122.sapp.pdf, about 915 KB) contains a copy-other-worm, SBM or DC-SBM baseline, the exact (S-, beta0) grid, or the normalized-Hamming variability figures (0.04 vs 0.105). Nobody read the SI.",
+  "The published Current Biology figures for Cook, Kalinski & Hobert 2023 (ROC-AUC 0.93-0.95 and PR-AUC 0.80 come from the bioRxiv preprint as extracted by an automated reader), and whether any split holds out whole animals.",
+  "The held-out design behind Creamer et al.'s '82% of reproducibility' (v4 abstract) and whether earlier versions report a different number. A search snippet mentioned 92% versus held-out animals and could not be attributed to a version. Also what the shuffled-connectome score is (Fig. S3).",
+  "Haber et al. 2023: C. elegans AUROC 0.84 with cell type + reciprocity + distance + rich-club, and the 'Pearson 0.03, p < 1e-6' figure; the generative reader read parts and the richter reader only the abstract. The preprint is still unpublished per bioRxiv and Crossref.",
+  "Whether Groschner et al. 2022 is among the 26 validation studies of Lappalainen et al. (Supplementary Data 5/6, inside a 26.5 MB zip). This decides whether the T4 recordings are truly held out from the flyvis benchmark.",
+  "The data licence and redistribution terms for the Witvliet connectivity tables (NemaNode, WormWiring, Nature SI MOESM4), the dwitvliet/nature2021 contact data, the White/Cook digitisations, the CeNGEN downloads, OSF e2syt (the per-animal Randi data), and the Skuhersky atlas repo. All are open to download, but none declares a licence.",
+  "The FlyWire licence conflict: CC BY-NC 4.0 in the FlyWire Principles vs cc-by-4.0 on the Zenodo deposits (which I verified). Also the FlyWire citation-guidelines Google Doc, which no one read.",
+  "The content of the 2026 third-party Zenodo deposits (Correig-Fraga, Guimera & Sales-Pardo 21549559, 'Structure alone supports efficient visual computation', with four randomized FlyWire graphs; and Liu et al. 23497175, the site-of-addition birth-order rule across MCNS, FlyWire and BANC, 'submitted to Biology Letters'). I verified the metadata exists, but no manuscript was found.",
+  "The Shiu third-party GitHub issue claims: il3LN6 signed excitatory in Connectivity_783.parquet causing an ~8,300-neuron runaway state, and the CB0216 latch. Neither has been reproduced.",
+  "Lappalainen internal inconsistencies: 604 vs 605 type-pair edges, 32/32 vs 29/31 significant polarity calls, the sign of r = 0.60 / -0.60, and the provenance of signs attributed to personal communications (NernPC2018, ReiserPC2017).",
+  "The size of the flyvis pretrained archive and the licence scope of the weights. MIT for the weights rests only on a maintainer's comment in GitHub issue #26.",
+  "The DevoTG numbers (lineage AUC 0.839 vs static GNN 0.577) and the NCPNet within-network accuracy of 91.88% / 93.79%. Only abstracts were read.",
+  "Whether Lappalainen ran an ablation with a randomized or shuffled connectome plus task training. The lappalainen reader says no, but only from the main text and Methods; the SI was unread.",
+  "Betzel et al. 2024 PNAS: the claim that an exponential distance rule fails at neuron-level resolution in the larval connectome, which came from a search summary only.",
+  "Mark et al. 2021 and Wang et al. 2023 (eLife): the strength of the temporal-cohort connectivity claims after review. Reviewers asked for the conclusions to be softened."
+ ],
+ "novelty_verdict": "After this prior art, most first-order M08 claims are REPLICATION_ONLY or H0-KNOWN.\n\nAt G-STRUCT on C. elegans, the following are already published:\n- Compact developmental generators: Richter & Schneidman 2025.\n- MaxEnt feature generators: Haber 2023; Salova & Kovacs 2024.\n- Contact/Peters'-rule predictors: Cook, Kalinski & Hobert 2023 (preprint ROC-AUC 0.93, pooled); Witvliet 2021.\n- Genetic-label rules: Kovacs 2020; Barabasi 2020; Qiao 2024.\n- Birth-time and economical-growth rules: Varier & Kaiser 2011; Nicosia 2013.\n- SBM and IRM type discovery: Pavlovic 2014; Jonas & Kording 2015.\n- Generator program search: Menezes & Roth 2014.\n\nAt G-STRUCT in the fly, the following already exist:\n- Spatial, configuration and neuropil nulls: Lin 2024.\n- A distance-plus-degree MaxEnt model: Salova & Kovacs 2024.\n- An exponential distance rule: Pentek 2025.\n- Hemisphere SBM tests: Pedigo 2023.\n- Hemilineage and temporal-cohort wiring: Mark 2021.\n- L1 to L3 developmental conservation: Gerhard 2017.\n\nAt G-FUNCTION, real-connectome models with independent validation exist for the C. elegans signal-propagation atlas (Creamer et al. 2024-2026, with a permuted-connectome control), for fly feeding and grooming (Shiu 2024), and for fly motion (Lappalainen 2024, already stress-tested by FlyHack 2026). The only published generated-circuit-to-function check found is Haber 2023, in the zebrafish olfactory bulb, simulated, with no perturbation. At G-CONSTRUCT, the ANN-level work is extensive (genomic bottleneck, GEM, NDP, NEAT/HyperNEAT, RandWire, WANN, Talpir & Schneidman 2026), and none of it is validated against biology.\n\nWhat still appears new, though absence is not proven:\n\n(1) A benchmark, not a law. I computed that copying another adult worm already reaches AUROC 0.820-0.855 and AUPRC 0.458-0.643, at or above Richter's published 0.78-0.81. Those numbers match the richter reader's. A defensible G-STRUCT contribution would therefore be a held-out evaluation of whether any compact rule Pareto-dominates memorization and contact on accuracy versus full description length. The test conditions would be: both directions between the two adults; leave-one-stage-out in temporal order; the annotation-shifted White JSH/N2U animals; and the dauer. Description length must include type labels, about 540 bits for 180 neurons at 8 types (our arithmetic), plus positions and birth times. For scale, coding worm 7's binary adjacency costs roughly 10.5 kbit (our arithmetic: 32,220 x H(0.06)).\n\n(2) A substitution test at G-FUNCTION. Under frozen dynamics, replace the real connectome with rule-sampled connectomes and measure how much validated functional prediction survives. On C. elegans this means the Creamer LDS on held-out Randi animals, plus unc-31. In the fly it means the Shiu SEZ screen, or the Groschner T4 recordings with the flyvis or Groschner models. The reference points are the real connectome as the upper bound and permuted and degree-preserving graphs as the lower bound. No published work found does this with biologically fitted generative rules.\n\n(3) G-CONSTRUCT that uses rules learned from biology as the construction prior and is checked against biology.\n\nIf (1) shows no compact rule beats copy plus contact on the Pareto front, the honest outcome is 'no independent advantage' at G-STRUCT.",
+ "hard_exit_assessment": "G-STRUCT: MET, with caveats.\n\nLegal real-circuit subset:\n- The 8 Witvliet developmental connectomes, from NemaNode (0.79 MB, ages 0-50 h, which I verified via /api/datasets) or the 764 KB copy bundled by Richter, which I parsed myself.\n- Brittin 2021 contact adjacency (Zenodo 4383277, cc-by-4.0, which I verified).\n- White JSH (L4) and N2U (adult).\n- Pathak birth times (CC BY) and Skuhersky positions.\n- Yim 2024 dauer (CC BY), optional.\n\nIndependent validation paths:\n- Cross-individual: adult worm 7 vs worm 8, in both directions.\n- Leave-one-stage-out across Witvliet datasets 1-6.\n- Out-of-lab: JSH/N2U, as an annotation-shift condition.\n- Out-of-distribution stage: the dauer.\n\nCaveats:\n- The core Witvliet and White tables have no declared licence. They can be fetched without login but should not be redistributed, so keep fetch scripts plus hashes, not copies.\n- There is only one same-age replicate pair, and it shares a lab pipeline. Stage is confounded with EM technique.\n- White N2U annotations differ systematically: the Cook 2019 re-annotation added 1,109 connections.\n- Contact maps leak the test animal's geometry.\n- Confirmatory claims must be labelled 'independent holdout', not blind, because every dataset is public and prior work used them.\n\nG-FUNCTION: MET in the narrow sense required by the brief: a legal subset plus an independent validation path exists. It is not BLOCKED, but each path carries strong pre-emption, and the decisive files exceed the Gate-1 5 MB cap.\n\nPath A, C. elegans:\n- Randi 2023 Source Data. MOESM5 (WT, 996,970 B) and MOESM15 (unc-31, 287,807 B) are CC BY under the article licence; I confirmed both sizes by HEAD.\n- These are independent animals, an independent modality and a genetic perturbation.\n- However, Creamer et al. already fit connectome-constrained dynamics to these data, with held-out animals and a permuted-connectome control.\n- An animal-level split needs the per-animal OSF exports (85 MB to 1.1 GB, no declared licence).\n- A split by stimulated neuron or pair on the aggregated matrices is feasible within the cap.\n\nPath B, fly T4:\n- The flyvis connectome JSON (MIT; I verified the licence file) plus the Groschner 2022 patch-clamp and RNAi recordings (Edmond doi:10.17617/3.8G; I verified CC BY 4.0 via the Dataverse API, 74 files, 5,913,513,920 B in total).\n- The minimal subset is about 26.9 MB, and fig3_T4v.npy alone is 8,448,128 B, so it needs Gate-3 download approval.\n- The mechanism is already known, and the Mi9 sign is built into the labels.\n\nPath C, fly feeding:\n- Shiu ST3/ST9/ST10 outcomes (CC BY SI xlsx, 2.5 MB, which I parsed) plus the MIT model.\n- The real connectome parquet is 100.8 MB.\n- The base rate is 14/106 and the LIF balanced accuracy is 0.852.\n\nUnder any path, a G-FUNCTION claim is admissible only as a generated-vs-real substitution test against these published real-connectome models. Agreement with known mechanisms counts as replication.",
+ "recommended_design_implications": [
+  "Mandatory G-STRUCT baseline (memorization): copy another individual's binary adjacency and synapse counts, in both directions, plus nearest-stage copy. Reference values I recomputed on the 180-neuron nerve ring: 7 to 8 AUROC 0.820 / AUPRC 0.458 (binary), 0.824 / 0.596 (count), 0.855 / 0.643 (count plus reverse-count); dataset 6 to 8, 0.761 / 0.511; dataset 1 to 8, 0.643 / 0.302. Treat these as the empirical inter-individual ceiling, and judge compact rules on an accuracy vs description-length Pareto front, not on AUROC alone.",
+  "Mandatory published-model baselines because prior art ran them: a vectorized reimplementation of Richter & Schneidman (positive control; their repo has no licence, so re-implement and do not copy); Haber-style MaxEnt features; Salova & Kovacs degree plus spatial/contactome MaxEnt; Cook 2023 contact plus strata (Peters' rule); Witvliet contact-at-birth; SBM and directed DC-SBM with blocks inferred on training data only; Kovacs SCM and Qiao bilinear genetic models; Nicosia ESTG without adult-degree hidden variables; Varier-Kaiser / Pathak birth-time homophily; Jonas-Kording IRM; a GNN link predictor trained on one individual.",
+  "Mandatory fly G-STRUCT nulls: Lin 2024's ER, directed configuration, two-zone neuron-neuron distance (NND) and neuropil-connection (NPC) models; Pedigo 2023 hemisphere SBM tests; Pentek 2025 exponential distance rule. Use Schlegel 2024 edge persistence (53% of hemibrain edges reappear in FlyWire; about 99% persistence above 2.6% input or 31 synapses) as the cross-brain ceiling, and stratify every metric by edge strength.",
+  "Mandatory G-FUNCTION references: real-connectome models with identical dynamics (Creamer LDS for Randi, MIT; Shiu LIF, MIT; flyvis ensemble, MIT; Groschner's conductance model); permuted and degree-preserving connectomes (Creamer and Shiu used only permutation or global weight shuffles); task-matched CNN controls as in FlyHack 2026; zero-training sign-propagation (polarity) and signed-path baselines; for the Shiu screen, always-negative and shortest-path baselines, reported as balanced accuracy and AUPRC (LIF 0.852 balanced; path <= 2 0.736 balanced; always-negative 0.868 accuracy); Yan 2017 control-theory predictions for worm locomotion.",
+  "Mandatory G-CONSTRUCT baselines: genomic bottleneck g-network, GEM, NDP, NEAT/HyperNEAT/CPPN, RandWire ER/WS/BA generators, WANN, direct NAS/evolution under a matched budget, and Talpir & Schneidman's finding that cycle statistics predict capability. A 'short cycles or reciprocity raise capability' result is already H0-KNOWN at ANN level.",
+  "Circularity trap (types): Richter's inferred types are an SBM fit to worm 7's full adjacency, and Cook 2019 types were partly re-assigned using connectivity. Re-infer types only on training dyads or training animals, and charge the type labels (about 540 bits at 8 types for 180 neurons) in the MDL.",
+  "Circularity trap (model selection on the test individual): the Richter code selects the compression level by AUROC on worm 8, with the diagonal included (compact_model_representaion.py, lines 94-129, which I verified). Lock every hyperparameter, compression level and gamma on validation data inside the training individuals before opening the held-out individual or stage.",
+  "Circularity trap (geometry): neuron positions can be predicted from connectivity (Chen 2006); adult positions applied to L1-L3 stages are anachronistic; same-individual contact maps, and Cook 2023's pooled cross-animal adjacency, include the test animal. Report contact-free, own-contact and pooled-contact conditions separately.",
+  "Circularity trap (labels derived from all datasets): Witvliet's stable, variable and dynamic labels and Brittin's pooled M-delta graphs are computed from the very animals to be predicted. They may never be inputs, and evaluation strata built from them must be recomputed without the test animal.",
+  "Splits: hold out whole stages (leave-one-stage-out in temporal order) and whole individuals, not only random dyad halves. Report both directions between worm 7 and worm 8, with bootstrap CIs. State explicitly that one replicate pair gives very little power for individual-level variance, so CIs that bootstrap over dyads understate uncertainty.",
+  "Annotation shift: treat White N2U/JSH and Cook 2019 as a separate annotation-shift condition (the Cook re-annotation added 1,109 N2U connections), and pin the annotation source. The dauer (Yim 2024) is a synapse-detection pipeline shift (automated CNN, no gap junctions) as well as a stage shift.",
+  "Randi/Creamer protocol: do not score signal propagation as monosynaptic edges. Freeze the dynamics-fitting procedure first. Split by animal (this needs the OSF per-animal data, licence undeclared, which requires a user decision) or else by stimulated neuron on the aggregated CC-BY matrices. Use unc-31 only as a confirmatory perturbation holdout. Declare that Creamer, Randi and M08 share the same JSH/N2U/Witvliet 7-8 connectome inputs.",
+  "Fly function protocol: preregister the MN9 side, stimulation frequency, positive threshold (any extension) and the >0 Hz rule; score from the raw ST9B counts (G2N-1); reproduce on v630 before v783 (third-party sign-error and runaway reports); treat transmitter sign as a latent variable with Eckstein's confusion priors, run glutamate-sign sensitivity, and run a sign-resampling ablation. For T4, confirm Groschner is outside Lappalainen's 26 benchmark studies before calling it held out, and treat agreement with the Mi1/Tm3 excitation plus Mi4/Mi9/C3 offset-inhibition mechanism as replication.",
+  "Metrics: lead with AUPRC and held-out log-likelihood, add calibration and per-neuron degree error (Oldham 2022 showed distribution matching is not node-level prediction), and report AUROC with the diagonal handled consistently.",
+  "Pin versions and checksums: the NemaNode API has no version tag, so hash at every fetch; fix the node set (the 180 nerve-ring neurons for Richter comparability), synapse type, binarization and autapse rule; for FlyWire, pin release 783, the synapse generation (Buhmann vs Princeton/Yu) and the flywire_annotations tag.",
+  "Process: use only CC-BY Zenodo copies of FlyWire, not the unsanctioned GCS bucket; do not run the flyvis pretrained downloader, which uses an embedded API key, without the user's decision; check size with HEAD before any download and abort above the cap; record in the Gate-1 audit the truncated over-5 MB Europe PMC zip download.",
+  "Wording: a structural result can at most be 'compact connectome generative rule with independent-holdout transfer'; G-FUNCTION requires the generated-vs-real substitution design; nothing licenses claims about cross-species laws (Pristionchus, Cook 2025, is the only valid H4 cross-species test, and it is not yet assessed) or about 'laws of intelligence'."
+ ]
+}
