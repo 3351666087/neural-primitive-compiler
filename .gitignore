@@ -20,3 +20,8 @@ mission-06/experiments/g4b/run/
 # Mission 07 isolated environments and judge-only artifacts (not committed)
 mission-07/env/
 mission-07/experiments/**/run/
+
+# Mission 08 isolated environment and third-party raw data (not committed; see mission-08/data/README.md)
+mission-08/env/
+mission-08/data/raw/
+mission-08/**/run/

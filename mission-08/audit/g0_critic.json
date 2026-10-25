@@ -1,0 +1,303 @@
+{
+ "checks": [
+  {
+   "mission": "M01",
+   "extracted_statement": "evidence-ledger.md:57 says every searcher got 240 s per task, but compose_dag, enumerate and synapse minimisation got budget/2 = 120 s.",
+   "source_says": "Ledger line 57 says '所有搜索的预算都是每个搜索器每个任务 240 s'. In run_experiments.py, minimize_synapses (:111), compose_dag (:122), enumerate_params (:136) and the same-template cegis (:141) all use timeout_s=budget/2. Only search_neurons and compose_cyclic get the full budget.",
+   "accurate": true,
+   "refs": "evidence-ledger.md:57; experiments/run_experiments.py:107-141"
+  },
+  {
+   "mission": "M01",
+   "extracted_statement": "evidence-ledger.md:274 says theory.md Prop 6.2 and limitations section 6 were not changed, but commit 93ba95f updated both.",
+   "source_says": "Ledger :274 says '…本次没有改动这两个文件'. But `git show 93ba95f` modifies theory.md (Prop 6.2 gains a '后续更新' on k-induction/PDR) and limitations.md section 6 (adds the k-induction/PDR sentence). Both were changed in the same commit as the ledger.",
+   "accurate": true,
+   "refs": "evidence-ledger.md:274; git show 93ba95f -- theory.md limitations.md (theory.md:124, limitations.md:43)"
+  },
+  {
+   "mission": "M01",
+   "extracted_statement": "The B1 spec is literally the counter(k=3) contract, so the ledger's 'CEGIS 重新发现了 counter' only restates the spec.",
+   "source_says": "The B1 guarantee is `y <-> prev(a & !r & modcount[3](a; r) == 0)`. The counter(k=3) contract is `out <-> prev(in & !rst & modcount[$k](in; rst) == 0)`, which is identical up to renaming the ports. The ledger row for B1 says '已证（重新发现了 counter）'.",
+   "accurate": true,
+   "refs": "experiments/tasks.npc:26-32; src/npc/lib/primitives.npc (primitive counter contract); evidence-ledger.md:64"
+  },
+  {
+   "mission": "M01",
+   "extracted_statement": "LOG.md lists 32 choices for C2_llm1, but abc_results.json records 16.",
+   "source_says": "In LOG.md's A-C table the C2_llm1 choice space is '32 / 0'. abc_results.json gives C2_llm1 choice_space = 16 (candidates 1, solved on the first try).",
+   "accurate": true,
+   "refs": "experiments/llm_sketches/LOG.md:15-20; experiments/llm_sketches/abc_results.json (C2_llm1.choice_space)"
+  },
+  {
+   "mission": "M01",
+   "extracted_statement": "D group: 21 rows, 17 COMPILED and 4 UNREALIZABLE. CEGIS was UNREALIZABLE only on D13/D14 and timed out on D05/D12. H2 had predicted UNREALIZABLE at every size, yet was marked 支持.",
+   "source_says": "results.json has 21 rows: 17 COMPILED, 4 UNREALIZABLE. CEGIS status is TIMEOUT for D05 and D12 and UNREALIZABLE for D13 and D14. research-hypotheses.md H2 predicts that CEGIS '在每个尝试的神经元数上都返回 UNREALIZABLE'. The ledger section 9 H2 row reads '支持' and calls the timeouts '无结论，不矛盾'. All unrealisable D specs have m = 2 inputs, so the bound-64 completeness issue does not apply to them.",
+   "accurate": true,
+   "refs": "experiments/D_unseen/results.json; research-hypotheses.md:28-36; evidence-ledger.md section 9 H2 row; mission-02/G0-audit.md:9-16"
+  },
+  {
+   "mission": "M01",
+   "extracted_statement": "Mission 07's G0 audit wrongly says M01's D group was written by the blind session.",
+   "source_says": "mission-07/G0_AUDIT.md:11 says 'D 组由盲测会话按同一语言写出'. D_unseen/PROTOCOL.md and results.json show the 20 D tasks came from the seeded generator and D-hand from the author. The blind session (REPORT.md) only wrote sketches.",
+   "accurate": true,
+   "refs": "mission-07/G0_AUDIT.md:11; experiments/D_unseen/PROTOCOL.md; experiments/blind_skill_eval/REPORT.md:3"
+  },
+  {
+   "mission": "M01",
+   "extracted_statement": "C3 'n=1 UNREALIZABLE' is a template artifact: the blind session found a 1-neuron C3 network with |w| = 5 and delay 4.",
+   "source_says": "SUMMARY_ABC.md:34 gives 'C3 n=1:UNREALIZABLE' for both IF and memoryless. In blind REPORT.md:36, C3 has 1 neuron, 5 synapses, max|w| 5, max delay 4. REPORT.md:199 lists 'self +3, a +1 each, r −5'. Both values lie outside the CEGIS template (|w| ≤ 3, delays {1,2,3}).",
+   "accurate": true,
+   "refs": "experiments/results/SUMMARY_ABC.md:34; experiments/blind_skill_eval/REPORT.md:36,199; src/npc/synth.py:81-105"
+  },
+  {
+   "mission": "M02",
+   "extracted_statement": "The N-LEARN-1 figures (passive learning 3/6, A6 cell query, B4×3, 2,921 probes at N = 6) match no committed run. The committed discovery.json gives passive 2/3 and active 3/3, with 1,747 probes.",
+   "source_says": "run_discovery.py:31-44 defines 7 design tasks (A2, A3, A4, B2x2, B3x3, A3cond, A3invert), none with N = 6 and no A6 or B4x3. In discovery.json, passive_construction_correct is A2 True, A3 False, A4 True, and null for the other four. active_construction_correct is True for all 3 constructible tasks. The active_probes sum to 1,747. A grep for 2,921 / B4×3 finds only negative-results.md:9. discovery.json has a single commit (57bee20).",
+   "accurate": true,
+   "refs": "mission-02/negative-results.md:9; mission-02/experiments/discovery/run_discovery.py:31-44; mission-02/experiments/discovery/discovery.json rows; mission-02/SCIENTIFIC_VERDICT.md (发现 bullet)"
+  },
+  {
+   "mission": "M02",
+   "extracted_statement": "P4 hard-codes delay D = 3, while all 4 unseen conditional commands use D = 4. P1 is proved only for n = 1..4 letters.",
+   "source_says": "In the p4_cond_loop docstring the GATE is 'iA(t) = cond(t-3) and top(t-1)', and the claim concerns M(tau+3). The offset variants shift only the region read, not D. In tasks.json, UA0/UA2/UA3/UA4 have cond tuples ending in 4, and the interface shows cond_delay 4. all_proofs() runs p1_cmr_step for n in (1,2,3,4) only. SCIENTIFIC_VERDICT itself states 'n = 1..4' and 'P3（7 种映射）'.",
+   "accurate": true,
+   "refs": "src/cog/proofs.py:126-169,195-207; mission-02/experiments/unseen/tasks.json (UA0 params.cond, interface_smallest.letters[CMD3].cond_delay)"
+  },
+  {
+   "mission": "M02",
+   "extracted_statement": "The A-LLM route's input tasks.json contains the generator's ground-truth params, so the 'opaque command names' are moot.",
+   "source_says": "write_llm_programs.py:3 says 'Written after reading only experiments/unseen/tasks.json'. tasks.json stores per-task params, e.g. UA0 {'commands': [['CMD0', ['DOWN','ROT90']], …], 'cond': ['CMD3','top',['LEFT'],['DILATE'],4]}, next to the interface and description.",
+   "accurate": true,
+   "refs": "mission-02/experiments/unseen/write_llm_programs.py:1-8; mission-02/experiments/unseen/tasks.json"
+  },
+  {
+   "mission": "M02",
+   "extracted_statement": "HP-1 ran once at n = 4 and timed out at 600 s. The loop stops on TIMEOUT, so n = 5..7 never ran. Its 'elimination' rests on a prediction that counts a timeout as confirmation.",
+   "source_says": "hp1.json has a single search row: n=4, TIMEOUT, 30 iterations, 600 s, 76 holes. In run_hp1.py the loop `for n in range(4, 8)` breaks on TIMEOUT. M2-H4's support criterion is 'HP-1 的 CEGIS 在 N = 2 上超时或穷尽'. SCIENTIFIC_VERDICT puts HP-1 in the unseen-task route table even though it ran only on a design task.",
+   "accurate": true,
+   "refs": "mission-02/experiments/candidates/hp1.json; mission-02/experiments/candidates/run_hp1.py:55-66; mission-02/hypotheses.md:17; mission-02/SCIENTIFIC_VERDICT.md (route table)"
+  },
+  {
+   "mission": "M03",
+   "extracted_statement": "P1 bans the declared cond_delay, yet the passive traces are paced with exactly cond_delay quiet steps after every conditional letter.",
+   "source_says": "run_p1.py's docstring says it works 'without … the declared conditional delay' and lists only img readout and random injection as privileges. Its observe() calls cog.learn._random_trace(iface, …). That function sets `quiet = t + l['cond_delay']` after a conditional letter, so no letter can occur inside the window. M03's own audit (UNKNOWNNESS_AUDIT.md:15) had already noted that M02's learner aligns with the declared D.",
+   "accurate": true,
+   "refs": "mission-03/experiments/p1_composition/run_p1.py:1-12,44-56; src/cog/learn.py:36-61; mission-03/UNKNOWNNESS_AUDIT.md:15"
+  },
+  {
+   "mission": "M03",
+   "extracted_statement": "Protocol drift: amendment 9 locks M-DISC translations at anchors 0/W/H with offsets −2..2, but the frozen code uses u, v ∈ {0,1,2}, d ∈ −3..3.",
+   "source_says": "CHALLENGE_PROTOCOL.md amendment 9 reads '平移锚定在输入的 0、宽、高上，偏移 −2…2'. m_disc.py's docstring and constants say 'u, v in {0, 1, 2}; d in -3..3' (UV = (0,1,2), DD = range(-3,4)). Amendment 10 does not mention the change.",
+   "accurate": true,
+   "refs": "mission-03/CHALLENGE_PROTOCOL.md:164-189; mission-03/experiments/arc/m_disc.py:1-36"
+  },
+  {
+   "mission": "M03",
+   "extracted_statement": "R6 held-out regions were designed as D4/shift images of the 2 training regions. L_rand pads L_mem with random interval descriptions.",
+   "source_says": "HELDOUT has 'bottom row', 'left column', 'bottom-right 2x2' and 'right column' tagged 'D4', plus 'second row' and 'top-left 2x2 moved right' tagged 'shift'. TRAIN_REGIONS are 'top row' and 'top-left 2x2'. L_rand adds rng.choice(C.INTERVALS) until it reaches len(L_D4). The training tasks' moves come from A_POOL.",
+   "accurate": true,
+   "refs": "mission-03/experiments/p4_closure/run_closure.py:44-53,76-85,240-262"
+  },
+  {
+   "mission": "M03",
+   "extracted_statement": "ARC-AGI-1 held-out results: M-DISC 6/1, MDL 12/4, B-SAME 4/0, B-RICH 6/0. M-DISC and B-RICH share 2 solves. Unions are 14 (non-trivial) and 16 (with trivial).",
+   "source_says": "Recomputed from the arc_evaluation.json rows: M-DISC 6 correct / 1 wrong, MDL 12/4, B-SAME 4/0, B-RICH 6/0, first-output 2/398. |M-DISC ∩ B-RICH| = 2, |M-DISC ∪ B-RICH| = 10, the non-trivial union is 14, and 16 with first-output.",
+   "accurate": true,
+   "refs": "mission-03/experiments/arc/arc_evaluation.json (summary, rows)"
+  },
+  {
+   "mission": "M03",
+   "extracted_statement": "L2: the generic prior got 23/25, and 25/25 after adding box domains. The extension was added after the failures and re-scored on the same commands. The prior is a near-minimal superset of A_POOL.",
+   "source_says": "leakage.json L2 gives generic_family_size 8000, generic_correct 23, vocab_match 25. l2_closure.json gives 25/25 correct and 0 ambiguous. UNIMOD × TRANS (c ∈ {0,1}, d ∈ −2..2) × clip/wrap is the prior. The audit frames the box-domain step as a C1/C2 discriminating experiment on the same 25 commands and notes uniqueness is a lower bound.",
+   "accurate": true,
+   "refs": "mission-03/experiments/p0_leakage/run_leakage.py:116-119; mission-03/experiments/p0_leakage/leakage.json; mission-03/experiments/p0_leakage/l2_closure.json; mission-03/UNKNOWNNESS_AUDIT.md:67-74"
+  },
+  {
+   "mission": "M03",
+   "extracted_statement": "The 6 confirmation tasks drew only the regions top and left. The guard family hand-lists rows and columns 0/1/last/second-last, both diagonals and all.",
+   "source_says": "confirm_tasks.json has 6 tasks whose cond regions are left, top, left, top, left, top. In run_p1.py, regions(N) builds row0/1, row-1/-2, col0/1, col-1/-2, diag, anti and all, and GUARDS is ANY/ALL over them (22 guards).",
+   "accurate": true,
+   "refs": "mission-03/experiments/p1_composition/confirm_tasks.json; mission-03/experiments/p1_composition/run_p1.py:124-137"
+  },
+  {
+   "mission": "M04",
+   "extracted_statement": "Specificity shape confound: law_K returns False whenever shapes differ, and the mismatch is one cyclic shift. DEV 79/11 overall, 33/11 = 3.0x on the 134 shape-compatible tasks. ARC-AGI-2 40/13 overall, 17/13 on the comparable subset.",
+   "source_says": "blocks.py law_K returns False if I.shape != O.shape. run_r1.py specificity builds shuffled = [(train[i][0], train[(i+1)%k][1])], a single derangement. PROTOCOL R6 describes the mismatch as '随机错配'. My independent recomputation from r1.json, confirm_arc2.json and the raw ARC grids gives: DEV 79/11, of which the 134 shape-compatible tasks contribute 33/11; the incompatible tasks contribute 46 true and 0 shuffled. ARC-AGI-2: 40/13 overall, 32 compatible tasks at 17/13.",
+   "accurate": true,
+   "refs": "mission-04/experiments/r1_repr/blocks.py:190-198; mission-04/experiments/r1_repr/run_r1.py:89-95; mission-04/PROTOCOL.md:54; mission-04/experiments/r1_repr/r1.json; mission-04/experiments/c1_arc2/confirm_arc2.json; /private/tmp/claude-501/-Users-null3351-Code-neural-primitive-research/67758993-59ff-487e-8108-e1cc3e5b2603/scratchpad/audit_spec.py"
+  },
+  {
+   "mission": "M04",
+   "extracted_statement": "The post-hoc CP1 diagnosis is contradicted by diagnose_cp1.json: law_holding_only_through_single_block_partitions = 0/40 on ARC-AGI-2 (2/79 on DEV).",
+   "source_says": "diagnose_cp1.json gives ARC-AGI-2: law_holding 40, only_through_single_block 0, with_some_single_block_rule 36. DEV: 79, 2, 27. The M04 text argues from existence ('40 个任务中有 36 个存在整网格单块的分组'; '这不说明机制的任何性质') and does not claim 'only'. So the counts are right and the diagnosis overreaches; it is not literally contradicted. Note also that CP1 failed on the holding-fraction bound (33.3% > 19.75%), while the 3.08x ratio passed.",
+   "accurate": true,
+   "refs": "mission-04/experiments/c1_arc2/diagnose_cp1.json (sets.*.summary); mission-04/CONFIRMATION_ARC2_RESULTS.md:21,42-56"
+  },
+  {
+   "mission": "M04",
+   "extracted_statement": "'Twin solves 5→9' sits under the background row but is the all-class T7 total. The background (a) class alone went 0→3.",
+   "source_says": "scores2.json predictions.T7.twin_solved gives blocks-S0-C0 = 5 and blocks-S0-C4 = 9 (all classes). In table.a, blocks-S0-C0 twin_solved = 0 and C4 = 3. EXPLORATION_LOG.md:149 attaches the 5→9 figure to '背景类', and STATUS.md:16 places it in the background row.",
+   "accurate": true,
+   "refs": "mission-04/experiments/c2_twins/scores2.json (table.a, predictions.T7); mission-04/EXPLORATION_LOG.md:149; mission-04/STATUS.md:16; mission-04/CONFIRMATION_TWINS_RESULTS.md:59"
+  },
+  {
+   "mission": "M04",
+   "extracted_statement": "The two 'independent' exact uniqueness checkers share piece generation, coverage, size rules and test-image prediction.",
+   "source_says": "resolve_unknown.py imports uniqueness as U, with M = U.M, and calls M.size_rules, M.apply_size, M.admissible_pieces, M.translations, M.requirement, M.coverage, M.min_covers and U.test_image. Only the search over covers is independent. AUDIT_M03_UNIQUENESS.md:57-61 calls them '两个独立的程序'.",
+   "accurate": true,
+   "refs": "mission-04/experiments/a0_uniqueness/resolve_unknown.py:22-57; mission-04/AUDIT_M03_UNIQUENESS.md:57-61"
+  },
+  {
+   "mission": "M05",
+   "extracted_statement": "Of the 118 G3 constructions, the 59 in library+specs mode use no held-out achiever, yet 118 is reported as G3 evidence. The extraction marks this as not caught by the mission.",
+   "source_says": "Confirmed: in heldout_run.json the library+specs constructions number 30 + 29 = 59, all with uses_spec = 0 and no g3-* achiever in any plan. The specs-only modes have 30 + 29 = 59, all using held-out achievers. But G3_RESULTS.md:66 does disclose that '库 + 持出的构造与库相同：变体按顺序搜索，库的变体在前'. The numbers are right and the headline A05_SUMMARY.md:69 does inflate. 'caught_by_mission: false' overstates, though: the mechanism is disclosed in G3_RESULTS.",
+   "accurate": false,
+   "refs": "mission-05/experiments/g3/heldout_run.json (constructions.*); mission-05/G3_RESULTS.md:60-66; mission-05/A05_SUMMARY.md:69"
+  },
+  {
+   "mission": "M05",
+   "extracted_statement": "Growth-rule disagreements were pre-committed to be reported separately but are absent from the results: 6 in G3, 16 in G4.",
+   "source_says": "In heldout_run.json, A.soundness.damage_finite_where_truth_grows has 6 entries for G3 (e.g. g3-ord-05 / OOW(X1,G2)) and 16 for G4. G3_DESIGN.md:108 says '增长规则的结果另行报告'. A grep of G3_RESULTS.md and G4_RESULTS.md finds no growth-rule report.",
+   "accurate": true,
+   "refs": "mission-05/experiments/g3/heldout_run.json; mission-05/experiments/g4/heldout_run.json; mission-05/G3_DESIGN.md:107-108"
+  },
+  {
+   "mission": "M05",
+   "extracted_statement": "P1.6 is FALSIFIED. The lock says this refutes A-H3's structural part, but A05_STATUS reports A-H3 as '部分'.",
+   "source_says": "A05_RESULTS.md:72 gives P1.6 **不成立** (A-FSM growth 6.9–9.0x, then 2.2x). A05_PROTOCOL.md:149 says '不成立则 A-H3 的结构部分被驳倒'. A05_STATUS.md lists A-H3 as '部分'.",
+   "accurate": true,
+   "refs": "mission-05/A05_RESULTS.md:72; mission-05/A05_PROTOCOL.md:149; mission-05/A05_STATUS.md:12; mission-05/experiments/pilots/pa1_scores.json (P1.6)"
+  },
+  {
+   "mission": "M05",
+   "extracted_statement": "The applicability half of calibration is identical by construction: both the certificate and the 'truly progressing' denominator use the same applicability_cex from the N ≤ 7 truth.",
+   "source_says": "In a_dsl.py the certificate is `ok = m is not None and tr[k]['applicability_cex'] is None`. truth_progress defines good = `r['applicability_cex'] is None and bool(ms)`. zpp.py (A++) uses the same `ok` line.",
+   "accurate": true,
+   "refs": "mission-05/experiments/g3/a_dsl.py:34-37,49-58; mission-05/experiments/r8/zpp.py:84-87"
+  },
+  {
+   "mission": "M05",
+   "extracted_statement": "PA-1: A-P built 2/7 and A-SAME 6/7 with 0 unseen-size failures, so A-H1 is refuted.",
+   "source_says": "In pa1_scores.json, P1.1 holds only for T1 and M1 (the others are OUT_OF_CLASS), and P1.5 shows A-SAME unseen failures of 0 on 6 targets. Minor point: P1.4 is scored HOLDS although A-FLAT's outcome was NO_CONSISTENT_LIST, not the predicted RESOURCE_LIMIT (600 s).",
+   "accurate": true,
+   "refs": "mission-05/experiments/pilots/pa1_scores.json (P1.1, P1.4, P1.5); mission-05/A05_PROTOCOL.md:146-148"
+  },
+  {
+   "mission": "M06",
+   "extracted_statement": "Monitored episodes total 2,360, not 2,660.",
+   "source_says": "Per-variant counts from the committed judge logs, monitored arms only: G2 G2A-1 60; G3 300 (G2A-1, G3-L, G3-S, G3-LS, G3-LP); G4 dev clean G3-LPR 60; G4 dev pert 300; G4 held-out clean 670 and pert 670 (5 monitored arms × 134 each); G4b dev 120; G4b held-out 180. The total is 2,360. The officiallit file holds 180 re-judged episodes.",
+   "accurate": true,
+   "refs": "mission-06/experiments/{g2/g2alf_judge.jsonl,g3/g3_judge.jsonl,g4/g4_*_judge.jsonl,g4b/g4b_*_judge.jsonl}; mission-07/ERRATA_M05_M06.md:21"
+  },
+  {
+   "mission": "M06",
+   "extracted_statement": "The verdict says 'G4-f' where it means G4b-f.",
+   "source_says": "CONSTRUCTIBILITY_VERDICT.md:27 reads 'G4b：… G4-f 的锁定判定因裁判缺陷无效，POST-HOC 更正后成立'. G4-f is a separate Gate 4 prediction ('监控把沉默失败变成弃权', 56 → 0, 成立; PRE_REG:875,955). The judge defect concerns G4b-f (B2 vs CMP-1).",
+   "accurate": true,
+   "refs": "mission-06/CONSTRUCTIBILITY_VERDICT.md:27; mission-06/RESULTS.md:147; mission-06/EXPERIMENT_PRE_REGISTRATION.md:875,955,1018-1035"
+  },
+  {
+   "mission": "M06",
+   "extracted_statement": "Co-location (H_co) came from a judge-side POST-HOC audit that uses admissible_commands, so B only confirmed a judge-derived answer.",
+   "source_says": "posthoc_alf.py's docstring says 'AUDIT: uses both sides in one process … co-located … (judge-derived: … \"go to r'\" is not legal)'. posthoc_alf.json P_errors_by_colocation is {'co-located receptacle involved': 482}. G3's three hypotheses are designer-written, and KNOWLEDGE_PROVENANCE lists L_co as evidence.",
+   "accurate": true,
+   "refs": "mission-06/experiments/g1/posthoc_alf.py:1-9; mission-06/experiments/g1/posthoc_alf.json; mission-06/KNOWLEDGE_PROVENANCE.md:41"
+  },
+  {
+   "mission": "M06",
+   "extracted_statement": "The G4b goal generator reads judge-side facts and pddl_params. After a win the judge returns 'Nothing happens.'. B1-LPR has no monitor, although the freeze plan promised a PDDL-style planner.",
+   "source_says": "cmp_env.py whitelists object types from training traj_data pddl_params, excludes the original object_target, and keeps only types whose objects start in receptacles (w['inrec']). The revision is disclosed at PRE_REG:1012-1014. judge4.py: `if won: obs = 'Nothing happens.'`. g4_run.py builds B1-LPR with monitor='none', recover=2. FREEZE_PLAN:56 says B1 on ALFWorld is a 'PDDL 风格的规划器' and '所用知识不得弱于构造器'.",
+   "accurate": true,
+   "refs": "mission-06/experiments/g4b/cmp_env.py:58-75; mission-06/experiments/g4/judge4.py:46-50; mission-06/experiments/g4/g4_run.py:57-60; mission-06/MISSION06_FREEZE_PLAN.md:54-58"
+  },
+  {
+   "mission": "M06",
+   "extracted_statement": "H0-CLASSIC: G3-LPR vs B1-LPR clean diff is 0.0, CI [0,0]; CMP-1 vs SEQ is 0.0. Both are close to structural, since goals have at most 2 atoms and A-P returns HTN_ORDER.",
+   "source_says": "g4_heldout_verdicts.json clean.paired gives 'G3-LPR vs B1-LPR' success_diff 0.0, CI [0.0, 0.0]. g4b_scores_heldout.json gives 'CMP-1 vs SEQ' diff 0.0, CI [0,0]. In alf_core.parse_goal every form yields at most 2 atoms ('two' → a single IN2). The PRESERVES permutation search yields the same orders as HTN_ORDER.",
+   "accurate": true,
+   "refs": "mission-06/experiments/g4/g4_heldout_verdicts.json; mission-06/experiments/g4b/g4b_scores_heldout.json; mission-06/experiments/g2/alf_core.py:30-84,225-226"
+  },
+  {
+   "mission": "M07",
+   "extracted_statement": "M's parameter grids contain alpha's exact parameters, and M and alpha were written by the same session.",
+   "source_says": "structures.py:30 sets THETAS = (1,2,3,4) and DECAYS = (10,25,50,100,1e9); :494 sets M2 T ∈ {50,150,300,1e9}. alpha's rules are: charge inc on poke, capped at 3; decay when since(poke) ≥ 25; tree fruits with stone within 2 at charge ≥ 3 (phase 0) or ≥ 2 (phase 1), delay 4; lamp armed if a stone within 1 has charge ≥ 2; armed reset after 150. Phases switch every 4000 steps.",
+   "accurate": true,
+   "refs": "mission-07/experiments/agents/structures.py:30,366,494; mission-07/experiments/eco/family_alpha.json (rules, phase)"
+  },
+  {
+   "mission": "M07",
+   "extracted_statement": "The candidate-only experiment schemas match alpha: X1 pokes 4 times in a row, and X2 sets a predicate at a neighbour within distance 1 and then acts twice, 3 steps apart.",
+   "source_says": "cand.py docstring: X1 'up to 4 times in a row'; _x1_maker uses n = 4 if E == 'poke'. X2 requires cheb(q, c) ≤ 1, and its ops are setup, E, wait 3, E, wait W. This is alpha's arm-then-reveal lamp rule. RECENT = 3000 carries the comment 'alpha's phases last 4,000 steps'.",
+   "accurate": true,
+   "refs": "mission-07/experiments/agents/cand.py:10-19,63,712-722,744-750,776-780"
+  },
+  {
+   "mission": "M07",
+   "extracted_statement": "The only L2 pass (seed 205) sits exactly at the threshold: 1.5 = 3 × 0.5.",
+   "source_says": "score_eco2.py requires `rate >= 3 * inc`. Seed 205 for CAND has LATENT:lamp.armed [29, 9, 1.5, 0.5, True]. Not mentioned by the readers: F-MB-fast (6.5 vs 0.5) and F-MB-slow (4.0 vs 0.5) also pass L2, but only on the same seed 205. Every L2 event in alpha comes from one world instance.",
+   "accurate": true,
+   "refs": "mission-07/experiments/eco/score_eco2.py:176-182; mission-07/experiments/eco/g4_results_alpha.json (arms.CAND/F-MB-fast/F-MB-slow.per_seed.205.L2)"
+  },
+  {
+   "mission": "M07",
+   "extracted_statement": "LIMITATIONS section 4 contradicts the Craftax results. s2 is not 'true-parameter' (T = 50 vs 150), and its q_struct was mutated to a counter created later.",
+   "source_says": "LIMITATIONS.md:29 says '没有学会制作链（工作台、镐）'. G4_HELDOUT_RESULTS reports place-table rules on 8/10 keys and 225 vs 2 tables, 10 vs 0 pickaxes. In the seed-205 export, s2 (sid 24) has T = 50, q_struct = 75, t_created 12685. Sid 75 (M1, D = 50) was created at 20100. cand.py:486-488 rewrites b.params['q_struct'] on revision. alpha's armed timeout is 150.",
+   "accurate": true,
+   "refs": "mission-07/LIMITATIONS.md:29; mission-07/G4_HELDOUT_RESULTS.md:47,131-134; mission-07/experiments/eco/run/g4_alpha/CAND_alpha_205.agent.json.gz (export.structures sid 24, 75; git-ignored); mission-07/experiments/agents/cand.py:480-488"
+  },
+  {
+   "mission": "M07",
+   "extracted_statement": "B5 is a thin variant of B4: its per-seed L1 equals B4's on 7/10 alpha and 8/10 gamma seeds.",
+   "source_says": "B5Meta extends B4LP with relaxed provisional structures and meta tasks. It does not enumerate (goal, structure-change) pairs as PROTOCOL.md:54 specifies. Recounted from g4_results_*.json, B4 and B5 have identical L1 values on 8/10 alpha seeds (not 7), 6/10 beta and 8/10 gamma, and identical pass/fail verdicts on 10/10, 9/10 and 10/10. The substance holds; the alpha count is off by one.",
+   "accurate": false,
+   "refs": "mission-07/experiments/agents/agent.py:384-415; mission-07/PROTOCOL.md:54; mission-07/experiments/eco/g4_results_{alpha,beta,gamma}.json (arms.B4/B5.per_seed.*.L1)"
+  },
+  {
+   "mission": "M07",
+   "extracted_statement": "HYPOTHESES.md:13 predicted that H3 would reach at least L1 on Craftax; L1 was 0/10.",
+   "source_says": "In the H3 row, '在外部生态（Craftax）上至少达到 L1' is the support criterion (支持条件). The prediction column says that new R-level goal classes are likely untestable on Craftax. The criterion failed (L1 0/10), so the verdict '只在能力层面成立' departs from the registered support condition. Calling the criterion a 'prediction' is a mislabel, but the substance holds.",
+   "accurate": false,
+   "refs": "mission-07/HYPOTHESES.md:13; mission-07/AGENCY_VERDICT.md:50; mission-07/PROTOCOL.md:111,136"
+  },
+  {
+   "mission": "M07",
+   "extracted_statement": "H1 is declared to hold although the candidate's L1 failed (p = 0.055). The pre-registered Holm correction is never reported. B6 was never run and its omission is not reported.",
+   "source_says": "PROTOCOL.md:104 requires ≥ 7/10 with sign test p < 0.05, and :112 requires Holm across H1, H2, H3-β and H3-Craftax. G4_HELDOUT_RESULTS gives the candidate L1 as 8/10, p = 0.055. AGENCY_VERDICT:47 says '作为已知现象成立', citing other variants at 9–10/10. 'Holm' appears only in PROTOCOL.md. B6 appears only in PROTOCOL.md:55-57 (to run on 3 dev seeds) and COST_BUDGET.md:22 (1.5M tokens). EVIDENCE_LEDGER's row 'B6' is an unrelated row ID (the seed-205 chain).",
+   "accurate": true,
+   "refs": "mission-07/PROTOCOL.md:55-57,104,112; mission-07/AGENCY_VERDICT.md:47; mission-07/G4_HELDOUT_RESULTS.md:35-39; mission-07/COST_BUDGET.md:22; mission-07/EVIDENCE_LEDGER.md:24"
+  }
+ ],
+ "missing_items": [
+  "Archive-modification precedent. M04 inserted an erratum block into M03's final verdict file (mission-03/SCIENTIFIC_STATUS.md:5-10, commit 463a76a). M07 instead used a separate ERRATA_M05_M06.md and left the archives unchanged. M08 brief principle 7 forbids rewriting M01-M07 files, so M08 must follow the M07 model and should log the M04 edit as a precedent not to repeat.",
+  "M03 relied on M02's unbacked N-LEARN-1 numbers. UNKNOWNNESS_AUDIT L3 argues '被动学习的过度泛化发生在更少的轨迹上', citing N-LEARN-1. The same audit states '没有发现与仓库记录不一致的数字' (UNKNOWNNESS_AUDIT.md:19, :76-80). M03's audit therefore inherited and certified a figure with no committed raw data.",
+  "M03 knew of the cond_delay channel but removed it only partly. UNKNOWNNESS_AUDIT.md:15 notes that M02's learner aligns using the declared delay D (src/cog/learn.py:85). P1 then claims not to use cond_delay, yet still draws traces through _random_trace, which paces by cond_delay (src/cog/learn.py:55-57; run_p1.py:44-56). The leak was known and not plugged, not merely missed.",
+  "M06 G4-h reliability contrast reduces to a policy flag. B1-LPR's recovery re-issues commands and checks `expect in obs`, the same substring check as the monitor (mission-06/experiments/g4/g4_core.py:22-31; alf_core.py:119-122). The '0 vs 5 silent failures' difference is therefore only abstain versus continue after 3 failed attempts. Compositional contracts play no part in it.",
+  "M03: on the ARC-AGI-1 held-out set, M-DISC-MDL's 12 correct answers are exactly the 12 of A3-no-uniqueness (arbitrary first cover). The MDL tie-break added no correct answer over random cover choice (mission-03/experiments/arc/arc_evaluation.json rows).",
+  "M07: all L2 events in alpha occur on the single world seed 205, across CAND, F-MB-fast and F-MB-slow. Those arms are near-identical agents on the same world, so the passes are not independent replications. Seed/world layout is a confound for any 'organisational' reading (g4_results_alpha.json per_seed.205).",
+  "M07: B1 and B1+M have identical summary rows (L1 1, lives 52.4, 0 structures). B1+M learned nothing, so the 'structure for planning only' baseline was never actually exercised (g4_results_alpha.json arms.B1, arms.B1+M).",
+  "M01: E-dev-1 shows a negative claim produced by a bug. compose_dag's observational-equivalence pruning reported a false EXHAUSTED and missed counter(k=3) (evidence-ledger.md:51). Together with M01's bound-64, M04's invalid enumeration pruning bound (a9f96cdd AMBIGUOUS→UNIQUE, AUDIT_M03_UNIQUENESS.md:63-65) and M03's dominance pruning, it shows that negative or uniqueness claims depended on implementation correctness several times. The readers list bound-64 but not E-dev-1.",
+  "M07 G0 audit also misdescribes M03's goal sources. Its M03 row gives only 'ARC-AGI-1 任务（第三方）', but M03's positive results (P1, confirmation 6/6, R6, L2) are all on designer-generated DEV tasks from M02/M03 generators (mission-07/G0_AUDIT.md:13; mission-03/SCIENTIFIC_STATUS.md 'DEV 表示任务由本会话的生成器产生').",
+  "The repository never recorded the origin question. No M01-M06 markdown file contains 生物/biolog/connectome/连接组. README.md:3 frames the project from M01 onward as '能力规格 → 可验证网络'. Biology appears only in M07, as fruit-fly functional hypotheses ('生物相似性本身不计分', HYPOTHESES.md:36), and FlyWire as 'reference only'. The 2026-09-28 question first appears in mission-08/MISSION_08_BRIEF.md:14. The drift therefore began at M01's framing, not mid-series.",
+  "Designer briefs to 'independent' held-out authors steered difficulty in both directions. The M05 G4 brief required at least 2/3 of designs to achieve the atom (G4_DESIGN.md:72), pushing toward success. The M07 beta brief said to avoid simple counters (BETA_AUTHOR_BRIEF.md:39-40), pushing outside M and toward failure. In both cases the held-out set measures the brief's effect rather than an independent distribution.",
+  "M02: the pre-registered M2-H2 threshold of at least 70% failed for the only non-LLM route (A-auto 62.5%) and was scored '部分成立'. The headline Construction row still reads SUPPORTED_IN_TOY_DOMAIN, resting on A-LLM 16/16, which M03 L1 later reproduced with a lookup table (SCIENTIFIC_VERDICT.md:11,52; mission-03/UNKNOWNNESS_AUDIT.md:61-65).",
+  "M05 P1.4 was scored HOLDS although the predicted outcome (A-FLAT RESOURCE_LIMIT at 600 s) did not occur; the actual outcome was NO_CONSISTENT_LIST. This is a verdict rounded up because the falsification clause did not trigger, the same pattern as M01 H2 (pa1_scores.json P1.4; A05_PROTOCOL.md:147).",
+  "M07: M2 composites mutate in place when their counter is revised (cand.py:486-488). Grounding and provenance for any M2 are therefore evaluated against a later structure. This affects s2 on seed 205 and makes the M02-style 'chain' evidence at the structure level time-inconsistent.",
+  "M04 CP1 failed on the upper bound for the law-holding fraction (33.3% against 19.75%); the 3.08x ratio passed. Combined with the shape confound (1.31x on the comparable subset), the ratio criterion also fails once the artefact is removed. The retraction is therefore over-determined (CONFIRMATION_ARC2_RESULTS.md:21,36)."
+ ],
+ "cross_mission_patterns": [
+  "The answer is inside the designer's hypothesis space by construction. Examples: M02's learner can output only OR-disjunctions; M03's G-geo prior is a near-minimal superset of A_POOL, and its 22 guards include the true regions; M05's potential grammar equals the templates, and its rule grammar mirrors model.select; M04's 9-rule grammar; M07's grids contain alpha's exact theta, D, delta, dctx and T. For M08, if the candidate rule family is built from known generative features (cell type, birth time, distance, pruning, as in Richter & Schneidman 2025), recovering it is 复现, not discovery. M08 needs feature-ablated and feature-shuffled controls, plus a generic model of matched capacity (latent-space or SBM) chosen before fitting.",
+  "Held-out sets come from the designer's own generator, its closure, or briefs that steer them. Examples: M01 D from the seeded designer grammar; M02 unseen tasks inside the depth-2 vocabulary closure; M03 confirmation regions limited to top and left; M03 R6 held-out regions built as D4 or shift images of training regions; M05 G3/G4 written in the designer DSL with a brief demanding achieving designs; M06 G4b goals filtered with judge-side facts; M07 beta/gamma steered outside M. For M08, held-out must be independently acquired biological data: other individuals or developmental stages (e.g., a different C. elegans dataset), another dataset or hemisphere for the fly, not random edge or neuron splits of the same graph. Left/right homolog pairs leak structure across such splits.",
+  "Judge truth leaks through data generators, interfaces, labels and co-designed judges. Examples: M02 tasks.json ground-truth params; M03 cond_delay pacing of passive traces; M05 applicability_cex used both in the certificate and in the metric; M06 H_co derived from an admissible_commands audit; the M06 G4b LIT judge co-designed with the constructor's macro, and the after-win 'Nothing happens.' mask. Biological analogues for M08: cell-type annotations and neurotransmitter predictions are partly derived from connectivity or the same EM data, so 'type predicts wiring' can be circular; physiological parameters tuned on the same recordings later used as 'prediction targets'; benchmark metrics chosen after seeing fits.",
+  "Baselines are crippled, mismatched or not run. Examples: M01 compares against a naive one-hot construction; M02 HP-1 got one 600 s run at a single size; M05 A-FLAT is a weak flat baseline; M06 B1 ran without the monitor although the plan required no weaker knowledge; M07 B5 is close to B4 (identical L1 on 8/10 alpha seeds), B6 was never run, Craftax B4 was skipped, and the equal-capacity non-biological fly controls were never built. For M08: run published strong baselines with matched compute (configuration and degree-corrected SBM, distance-only and geometric models, ERGM, the Richter-Schneidman generator, connectome-constrained versus shuffled or random-connectivity dynamical models, and a trained RNN as in Lappalainen 2024). The connectome-based model must beat these to claim G-FUNCTION.",
+  "Bounded or pruned searches get reported as impossibility or uniqueness. Examples: M01 fsm bound 64 and 'no network of any size'; compose_dag's false EXHAUSTED; C3 n=1 UNREALIZABLE as a template artifact; M02 HP-1 timeout read as 'eliminated'; M03/M04 dominance pruning, cap 200, islice 256, and an invalid pruning bound. In M08, claims that 'no compact rule explains X' or 'rule R is uniquely selected' must state the search space and budget and report model-selection uncertainty across individuals (bootstrap or leave-one-animal-out).",
+  "Documented numbers are not regenerated from committed raw files, and errors persist across audits. Examples: M01 LOG 32 vs 16, ledger:57 and ledger:274; M02 N-LEARN-1 (certified by M03's audit); M04 '5→9' credited to background; M06 2,660 vs 2,360 and the 'G4-f' label; M07 LIMITATIONS contradicting the Craftax results and s2 called 'true parameters'. M08 should produce every tabled number from committed outputs by script and have the Gate audit recompute them.",
+  "Positives sit at the threshold edge, have low power, or depend on a single world. Examples: M07's only L2 is exactly 3x and every L2 event is on seed 205; M04 R6 is 3.0x on the comparable subset, and its twin class has 5 pairs; M03 uniqueness is 6/7 vs 12/16; M01's 10/10 has a 95% lower bound of 0.69. Biological connectome samples are tiny (a handful of C. elegans individuals or stages, one whole adult fly brain). M08 must treat animals or datasets as the unit of replication, not synapses or neurons, and pre-register effect sizes.",
+  "Verdicts are rounded up or failed pre-registered tests reframed. Examples: M01 H2 'supported' with D05 and D12 timing out; M02 M2-H2 'partial' while Construction is 'SUPPORTED'; M05 P1.6 falsified but status says '部分', and P1.4 'HOLDS' with a different outcome; M07 H1 '成立' at p = 0.055, the Craftax support condition failed and was relabelled 'capability level', and Holm was never reported. M08 should map pre-registered criteria to verdicts mechanically in code and keep G-STRUCT, G-FUNCTION and G-CONSTRUCT separate.",
+  "The neural substrate is never necessary, and neural or biological vocabulary relabels symbolic machinery. Examples: M02 H6; M03 H-0n; M05/M06 FSM-to-IF compilation, with no external controller ever compiled to a network; M07 plain Python, with fly 'mechanisms' implemented as one-line knobs. For M08 this means the H0-TOPO, H0-KNOWN and principle-4 tests: show that the structure-derived dynamics, not a fitted readout, carry the predictive power, using shuffled-connectome and readout-only controls.",
+  "Operational definitions make claims true by construction. Examples: M07's S0 is memoryless, so latent goal classes are inexpressible by definition; M02's '353 rules, 1 template' follows from the learner class; M05's grammar equals the templates; M04's law_K is false whenever shapes differ. For M08, 'compact generative law' must be measured against a memorisation or description-length baseline (edge list, SBM) under the same coding scheme, or compactness will be guaranteed by the chosen metric.",
+  "Development-time tuning on the evaluation family is followed by 'confirmation' from the same source. Examples: M03 amendments 1, 3 and 4 on the same DEV tasks; M04 amendments 1-3 and 5; M05 A+ and A++ designed from G3 held-out diagnoses; M07's six candidate revisions made with alpha's true D known. M08 should freeze model families, features, metrics and splits before touching held-out individuals or stages, and record custody of held-out data.",
+  "Designer, generator, baseline and proposer are the same model family, so pretraining contamination cannot be excluded. Examples: M01 blind session; M05 G3/G4 authors; M06 B2 (Opus 5.5); M07 beta/gamma authors. M08's executor may already know the published C. elegans and FlyWire analyses, including the Richter-Schneidman features. Rules 'found' must be traced to literature recall versus data, and the knowledge budget must say so.",
+  "The question drifts and designer artifacts substitute for biological structure. Across seven missions 'structure' became FSMs, IR templates, symbolic grids, achiever libraries or meta-language M, and 'capability' became designer specs or benchmark success. The biological question never appears in any M01-M07 document, and the README framing replaced it from M01 onward. M08 Gate 0 must state this explicitly and prevent drift back to designer-written tasks.",
+  "Structural or representational success is reported without functional consequence. Examples: M04 conservation-law specificity gave no coverage gain (10 vs 10); M07 grounded structures left lives unchanged (531 vs 531); M01 neuron-count gaps were measured against a naive baseline. This maps directly to M08's H0-TOPO: structural fit and functional prediction must be reported and judged separately."
+ ]
+}
