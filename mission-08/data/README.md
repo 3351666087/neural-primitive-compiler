@@ -22,7 +22,10 @@ python3 -I -m m08.raw check     # 只核对
 | `brittin_2021_zenodo4383277/` | Brittin 2021 接触组邻接（L4、成年，XML；压缩包解到 `adjacency_x/`） | Zenodo 4383277 | CC BY 4.0 | 0.9 MB（压缩） |
 | `brainbuilding_d762ed07/` | Richter & Schneidman 2025 仓库的四个输入文件（位置、出生时间、Cook 细胞类别、突触计数矩阵） | schneidmanlab/BrainBuildingPaper，提交 `d762ed07` | **无许可证**：只在本地用于核对输入一致，不复制其代码 | 0.8 MB |
 
-计划在 Gate 3 加入（果蝇 T4 支线）：flyvis `fib25-fib19_v2.2.json`（MIT，0.62 MB）与 Groschner et al. 2022 Edmond 数据的最小子集（CC BY 4.0，约 26.9 MB）。
+| `flyvis_1.2.0/` | flyvis 共识连接组 `fib25-fib19_v2.2.json`、文献标签 `groundtruth_utils.py`（存为 `.txt`，不导入） | TuragaLab/flyvis main（以哈希为版本） | MIT | 0.63 MB |
+| `groschner_2022_edmond/` | Groschner et al. 2022 的输入神经元记录 `fig3_{Mi1,Tm3,Mi4,Mi9,C3}.npy`、`fig3_led.npy`、`readme.txt`（MD5 与 Edmond 的列表一致） | Edmond doi:10.17617/3.8G | CC BY 4.0 | 13.1 MB |
+
+T4 的记录（`fig3_T4v.npy`、`fig3_T4r.npy`、`fig4_T4_*`）是留出数据，冻结之前不下载（`DATA_SPLITS_AND_CUSTODY.md` §3）；Edmond 文件编号已写在 `src/m08/raw.py` 的 `EDMOND_ID`。所有 `.npy` 以 `allow_pickle=False` 读取。
 
 ## 核对过的一致性
 

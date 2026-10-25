@@ -1,0 +1,204 @@
+{
+ "gate": "g3",
+ "name": "development_dev_grid10",
+ "meta": {},
+ "commit": "a8e835c284d367778733795e0d5d694dc2b2bc26",
+ "python": "3.12.13",
+ "platform": "macOS-26.6.2-arm64-arm-64bit",
+ "inputs": {
+  "pathak_s5": "7389fcffc5c3f11df20e1a8443623ab281b548b304e530983fafee867f3247a7",
+  "rs_celltypes": "cf442a285c43f6fd95fbaa6b50b3e0696187cdf39242377d95a5446354ae2244",
+  "sku_hires": "bb45477c58f1a6a920fb7a9dcf800bd1d0b2c0e347311fa6745eed6c923f49d7",
+  "witvliet_1": "e988deaa25d290786434a23131c1bf3f144e3ca07980233a6edbfcfb8d4d30be",
+  "witvliet_3": "d94d522af2a64177ebef0dea0951b2a252eb973bbed01a85a19aaafe4ff0244b",
+  "witvliet_5": "011ebda64c379fa066254ddd5c8ff0ab89621e1e85e8d31ffc0b37b9602fc163",
+  "witvliet_6": "9b342751812bf42733ae7c0de8b40f41ea0af0c5c560215d59525631b220b177",
+  "witvliet_7": "d0fd2dd32adbe5f04ce90a2e5b74c01c9a831876527b0a2b8bd5b94edc86b037",
+  "witvliet_8": "fdead89606257c1b26e57069fbe1de14c7696633b75b59b79e74c0bcc3497e62",
+  "wormatlas_names": "b69c0e994270493535994a69a47210dda04319592697eec2f4a65a9df8886195"
+ },
+ "wall_s": 340.12,
+ "cpu_s": 330.68,
+ "peak_rss_mb": 195.6,
+ "results": {
+  "n_cells": 166,
+  "excluded": [
+   "ALNL",
+   "ALNR",
+   "AQR",
+   "AVL",
+   "AVM",
+   "HSNL",
+   "HSNR",
+   "PLNL",
+   "PLNR",
+   "PVNL",
+   "PVNR",
+   "RMFL",
+   "SDQL",
+   "SDQR"
+  ],
+  "R1_fit": {
+   "beta0": 0.04,
+   "sminus": 0.015,
+   "ll": -18473.107471978437,
+   "n_params": 434
+  },
+  "density_trajectory": {
+   "W1": {
+    "age_h": 0.0,
+    "data_density": 0.026203416149068324,
+    "r1_density": 0.023205823074754234
+   },
+   "W3": {
+    "age_h": 8.0,
+    "data_density": 0.034239130434782605,
+    "r1_density": 0.03423919027649213
+   },
+   "W5": {
+    "age_h": 23.0,
+    "data_density": 0.046747967479674794,
+    "r1_density": 0.04441451876617452
+   },
+   "W6": {
+    "age_h": 27.0,
+    "data_density": 0.045052939028842644,
+    "r1_density": 0.045085613085828036
+   },
+   "W7": {
+    "age_h": 50.0,
+    "data_density": 0.061737860533041256,
+    "r1_density": 0.06242560579853808
+   },
+   "W8": {
+    "age_h": 50.0,
+    "data_density": 0.06308871851040526,
+    "r1_density": 0.06242560579853808
+   }
+  },
+  "proxy_W5": {
+   "B0-ER": {
+    "ll_bits_per_pair": -0.27272352315634446,
+    "auroc": 0.5,
+    "auprc": 0.046747967479674794,
+    "brier": 0.04458034731819938,
+    "ece": 0.004213348075499938,
+    "n_pairs": 27060,
+    "n_pos": 1265,
+    "ll_gain_bits_per_pair": 0.0
+   },
+   "B2-block-cook": {
+    "ll_bits_per_pair": -0.23617286382527852,
+    "auroc": 0.7864953912231359,
+    "auprc": 0.14185877797915653,
+    "brier": 0.042076055558922174,
+    "ece": 0.0028398945875679786,
+    "n_pairs": 27060,
+    "n_pos": 1265,
+    "ll_gain_bits_per_pair": 0.036550659331065966
+   },
+   "B4-features": {
+    "ll_bits_per_pair": -0.26012297632323694,
+    "auroc": 0.676139598705819,
+    "auprc": 0.08862308753669701,
+    "brier": 0.043785096826410075,
+    "ece": 0.006751550245171741,
+    "n_pairs": 27060,
+    "n_pos": 1265,
+    "ll_gain_bits_per_pair": 0.012600546833107608
+   },
+   "M1-copy": {
+    "ll_bits_per_pair": -0.1987538643682773,
+    "auroc": 0.8237819934769968,
+    "auprc": 0.47006256117625445,
+    "brier": 0.02931196667338575,
+    "ece": 0.039760129006248736,
+    "n_pairs": 27060,
+    "n_pos": 1265,
+    "ll_gain_bits_per_pair": 0.0739696587880672
+   },
+   "M2-copy-interp": {
+    "ll_bits_per_pair": -0.16969311153914926,
+    "auroc": 0.8515715503893192,
+    "auprc": 0.6013789946000722,
+    "brier": 0.02543381987324518,
+    "ece": 0.03859631441029505,
+    "n_pairs": 27060,
+    "n_pos": 1265,
+    "ll_gain_bits_per_pair": 0.10303041161719524
+   },
+   "R1-dev-cook": {
+    "ll_bits_per_pair": -0.24402493002686435,
+    "auroc": 0.7887541707304553,
+    "auprc": 0.1553656092691294,
+    "brier": 0.04201220781184034,
+    "ece": 0.002727745180339697,
+    "n_pairs": 27060,
+    "n_pos": 1265,
+    "ll_gain_bits_per_pair": 0.02869859312948017
+   }
+  },
+  "proxy_W1": {
+   "B0-ER": {
+    "ll_bits_per_pair": -0.17650878245866727,
+    "auroc": 0.5,
+    "auprc": 0.026203416149068324,
+    "brier": 0.025581369835268698,
+    "ece": 0.008035714285714281,
+    "n_pairs": 25760,
+    "n_pos": 675,
+    "ll_gain_bits_per_pair": 0.0
+   },
+   "B2-block-cook": {
+    "ll_bits_per_pair": -0.1547913453872987,
+    "auroc": 0.8004604788164684,
+    "auprc": 0.0819299863637823,
+    "brier": 0.024885917310677567,
+    "ece": 0.010575725521327708,
+    "n_pairs": 25760,
+    "n_pos": 675,
+    "ll_gain_bits_per_pair": 0.02171743707136863
+   },
+   "B4-features": {
+    "ll_bits_per_pair": -0.16791777459056667,
+    "auroc": 0.6894552890542526,
+    "auprc": 0.048392337820575414,
+    "brier": 0.02531073594269067,
+    "ece": 0.005834991645254062,
+    "n_pairs": 25760,
+    "n_pos": 675,
+    "ll_gain_bits_per_pair": 0.00859100786810066
+   },
+   "M1-copy": {
+    "ll_bits_per_pair": -0.16618005077447087,
+    "auroc": 0.8536281826973475,
+    "auprc": 0.40726603550706375,
+    "brier": 0.0225700682716493,
+    "ece": 0.05037761151891587,
+    "n_pairs": 25760,
+    "n_pos": 675,
+    "ll_gain_bits_per_pair": 0.010328731684196383
+   },
+   "M2-copy-interp": {
+    "ll_bits_per_pair": -0.16618005077447087,
+    "auroc": 0.8536281826973475,
+    "auprc": 0.40726603550706375,
+    "brier": 0.0225700682716493,
+    "ece": 0.05037761151891587,
+    "n_pairs": 25760,
+    "n_pos": 675,
+    "ll_gain_bits_per_pair": 0.010328731684196383
+   },
+   "R1-dev-cook": {
+    "ll_bits_per_pair": -0.1543431424036957,
+    "auroc": 0.8043923548822891,
+    "auprc": 0.08953697462044222,
+    "brier": 0.02460349648365991,
+    "ece": 0.003062386601639697,
+    "n_pairs": 25760,
+    "n_pos": 675,
+    "ll_gain_bits_per_pair": 0.022165640054971604
+   }
+  }
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "gate": "g3",
+ "name": "function_dev",
+ "meta": {},
+ "commit": "a8e835c284d367778733795e0d5d694dc2b2bc26",
+ "python": "3.12.13",
+ "platform": "macOS-26.6.2-arm64-arm-64bit",
+ "inputs": {
+  "funatlas": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975",
+  "pathak_s5": "7389fcffc5c3f11df20e1a8443623ab281b548b304e530983fafee867f3247a7",
+  "randi_fig2": "f02c68c9a2d34fe7b5aa8c7d74d8aca9ea9676d647e794ba99abbbff1b6350e5",
+  "rs_celltypes": "cf442a285c43f6fd95fbaa6b50b3e0696187cdf39242377d95a5446354ae2244",
+  "sku_hires": "bb45477c58f1a6a920fb7a9dcf800bd1d0b2c0e347311fa6745eed6c923f49d7",
+  "witvliet_7": "d0fd2dd32adbe5f04ce90a2e5b74c01c9a831876527b0a2b8bd5b94edc86b037",
+  "witvliet_8": "fdead89606257c1b26e57069fbe1de14c7696633b75b59b79e74c0bcc3497e62",
+  "wormatlas_names": "b69c0e994270493535994a69a47210dda04319592697eec2f4a65a9df8886195"
+ },
+ "wall_s": 12.46,
+ "cpu_s": 12.48,
+ "peak_rss_mb": 183.4,
+ "results": {
+  "n_ref": 180,
+  "n_usable": 178,
+  "source_data_check": {
+   "compared": 6092,
+   "same_orientation": 5836,
+   "transposed": 79
+  },
+  "split": {
+   "dev_classes": 58,
+   "heldout_classes": 38,
+   "dev_cells": 110,
+   "heldout_cells": 68
+  },
+  "inner_split_controls": {
+   "wt": {
+    "A-real": {
+     "g": 0.1,
+     "auprc": 0.11412352400037723,
+     "auroc": 0.5313451736149104
+    },
+    "A-er": {
+     "g": 0.1,
+     "auprc": 0.10732628228127727,
+     "auroc": 0.5060774337090127
+    },
+    "A-rewire": {
+     "auprc_mean": 0.12148707497122366,
+     "auprc_min": 0.1024203939264908,
+     "auprc_max": 0.12622823941205144
+    },
+    "A-none": {
+     "auprc": 0.35683074687762295,
+     "auroc": 0.752754905715432
+    },
+    "n_fit_pairs": 2854,
+    "n_score_pairs": 3124,
+    "pos_rate_score": 0.0998719590268886
+   },
+   "unc31": {
+    "A-real": {
+     "g": 0.9,
+     "auprc": 0.3313046943973972,
+     "auroc": 0.4706282758151249
+    },
+    "A-er": {
+     "g": 0.8,
+     "auprc": 0.3112658851053567,
+     "auroc": 0.48451432850044246
+    },
+    "A-rewire": {
+     "auprc_mean": 0.3512003588051913,
+     "auprc_min": 0.3231356897556093,
+     "auprc_max": 0.38480639525717697
+    },
+    "A-none": {
+     "auprc": 0.6053949739105283,
+     "auroc": 0.7461711251786808
+    },
+    "n_fit_pairs": 307,
+    "n_score_pairs": 260,
+    "pos_rate_score": 0.3192307692307692
+   }
+  }
+ }
+}
