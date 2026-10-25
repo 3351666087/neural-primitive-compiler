@@ -1,6 +1,6 @@
 # Verifiable Neural Primitive Compiler
 
-本仓库研究一个问题：能否由能力规格直接构造出可执行、可验证的神经网络，而不针对每个任务训练权重？研究分七轮进行，每一轮都把上一轮留下的未知作为对象：
+本仓库研究一个问题：生物神经系统的结构与能力之间，是否存在能被发现、组合、迁移和验证的生成规律，使人能有原则地构造具备特定能力的神经系统？这是项目发起人 2026-09-28 的原始问题（[mission-08/MISSION_08_BRIEF.md](mission-08/MISSION_08_BRIEF.md) §0）。Mission 01–07 把它转写为"能否由能力规格直接构造出可执行、可验证的神经网络，而不针对每个任务训练权重"。Mission 08 的审计指出，这一转写把生物结构换成了设计者写的模板，于是回到原问题。研究分八轮进行，每一轮都把上一轮留下的未知作为对象：
 
 - **Mission 01** 以有限状态时序规格为对象，检验"规格 → 网络"的编译路线。
 - **Mission 02** 冻结一组原语，检验能否对此前未见过的认知功能规格直接构造网络。
@@ -9,8 +9,9 @@
 - **Mission 05** 在一个构造的搬运域中检验两个问题：是否存在能高效构造复杂功能的原语与组合规律（问题 A）；这些规律能否从有限观察中发现（问题 B）。
 - **Mission 06** 先独立复核 Mission 05 的可信基，再把它的构造体系带到第三方环境（ALFWorld、AppWorld）。构造器与同知识的经典方法、强 LLM 代理比较，结果在冻结之后的官方持出集上确认。
 - **Mission 07** 换一个问题：没有主体性的计算结构，能否形成自身的目标，修改自身的认知结构，并由此产生新的目标类别？检验在三处进行：一个新写的、带隐藏机制的生态（ECO），两个由隔离会话撰写的留出机制族，以及 Craftax-Classic。候选与已知机制的基线在相同先验下比较。
+- **Mission 08** 回到生物证据：用秀丽隐杆线虫的连接组（Witvliet 的 8 个个体，从出生到成年；White 的 2 个个体）、Randi 等的信号传播图谱与果蝇 T4 的膜片钳记录，检验紧凑的生成规则能否在冻结之后的留出个体上预测结构，以及结构能否预测功能。
 
-Mission 01–05 使用同一个计算模型：离散整数积分发放（IF）神经元，所有突触延迟 ≥ 1。Mission 03、04 的发现过程在符号层完成。Mission 05 的控制器由 Mission 02 的冻结模板编译成网络，并与参考环境闭环运行。Mission 06 在第三方环境中检验构造路线本身，控制器以 Python 执行，不编译成网络；Mission 05 的编译器在 Mission 06 的 Gate 0 中复核。Mission 07 的智能体与裁判都是 Python 程序，不编译成网络，也不调用 LLM；Craftax-Classic 以 JAX 在 CPU 上运行。全部实验都在本机 CPU 上运行；Mission 06 的强基线另外使用 LLM 子 agent。
+Mission 01–05 使用同一个计算模型：离散整数积分发放（IF）神经元，所有突触延迟 ≥ 1。Mission 03、04 的发现过程在符号层完成。Mission 05 的控制器由 Mission 02 的冻结模板编译成网络，并与参考环境闭环运行。Mission 06 在第三方环境中检验构造路线本身，控制器以 Python 执行，不编译成网络；Mission 05 的编译器在 Mission 06 的 Gate 0 中复核。Mission 07 的智能体与裁判都是 Python 程序，不编译成网络，也不调用 LLM；Craftax-Classic 以 JAX 在 CPU 上运行。Mission 08 的模型与裁判是 Python（numpy、scipy、scikit-learn），输入是公开的生物数据。全部实验都在本机 CPU 上运行；Mission 06 的强基线另外使用 LLM 子 agent。Mission 08 的任务书允许按量 GPU，但开机与关机只能由用户本人操作，本轮没有触发。
 
 ## 研究轮次与判定
 
@@ -23,8 +24,9 @@ Mission 01–05 使用同一个计算模型：离散整数积分发放（IF）�
 | Mission 05 | A：是否存在能高效构造复杂功能的原语与组合规律？B：能否从有限观察中发现它们？ | A：组合可靠，但不比同先验搜索更高效；损伤、保持与下降由 Z3 对一切规模证明（相对于编码），适用性只有 N ≤ 7 的穷举；通用推导在两个独立持出集上 0 错误，第二个上校准 41/42。B：在设计者给定的假设空间内，N = 5 的观察足以学到规律与选择规则，推导的合同表相对于 N ≤ 7 的真值 0 危险（勘误 A1、A5） | [mission-05/A05_SUMMARY.md](mission-05/A05_SUMMARY.md) |
 | Mission 06 | 在第三方环境中，能否由原语与组合律直接构造闭环策略，而不逐任务推理？ | 相对同知识的经典方法没有可测优势（H0-CLASSIC 成立）；Mission 05 的组合律只检查原子保持，在达成器的适用性依赖其他达成器的效果时（单手资源）不再充分（勘误 B2）；AppWorld 的目标无法用冻结核心表达（跨域 NOT_SUPPORTED）；在设计者给定的假说之内，隐藏结构可由主动实验发现；带监控时没有沉默失败 | [mission-06/CONSTRUCTIBILITY_VERDICT.md](mission-06/CONSTRUCTIBILITY_VERDICT.md) |
 | Mission 07 | 没有主体性的计算结构，能否经可形式化的组织规律形成自身目标、修改自身结构，并产生新的目标类别？ | 两轮共同演化（H2）NOT_SUPPORTED：所有分支 0/10；新目标类作为顶层目标只在 1/10 个种子上成立；向留出机制族的迁移（H3）NOT_SUPPORTED；外部生态上只有能力提升（10/10 个键）；隐藏结构只在有实验目标与情节记忆的分支上获得（3–4/10 对 0/10，未达显著） | [mission-07/AGENCY_VERDICT.md](mission-07/AGENCY_VERDICT.md) |
+| Mission 08 | 生物神经系统的结构与能力之间，是否存在可发现、可迁移、可验证的生成规律？ | 总体 STRUCTURE_ONLY：已发表的发育模型与类型块模型在 4/4 个留出个体上为记忆补充跨个体信息（AUPRC +0.03 至 +0.08），但单独远不如记忆，在留出的发育阶段上也不如年龄内插的记忆，机制是已知的经验贝叶斯收缩；线虫功能 NOT_SUPPORTED（正对照失败，检验力不足）；果蝇 T4 只复现方向，幅度小一个数量级；构造层 INCONCLUSIVE（未运行） | [mission-08/SCIENTIFIC_VERDICT.md](mission-08/SCIENTIFIC_VERDICT.md) |
 
-**七轮合起来的结论**。
+**八轮合起来的结论**。
 - Mission 01 表明，机制完全给定时，编译是经典问题。
 - Mission 02 表明，机制以坐标映射的形式写在规格里时，"直接构造"实际上是翻译。
 - Mission 03 表明，只给目标级证据时，在设计者给定的假设形式之内可以发现机制，方法就是程序综合。
@@ -32,8 +34,9 @@ Mission 01–05 使用同一个计算模型：离散整数积分发放（IF）�
 - Mission 05 换到一个设计者构造的域，表明原语、组合规律与机器证明的合同可以可靠地构造控制器，并经过两次独立持出检验；规律本身也能从有限观察中学到。
 - Mission 06 把这一体系带到第三方环境。冻结的合同核心在 ALFWorld 上只能靠设计者公理与运行时监控构造；构造出的控制器与同知识的经典方法逐局相同；Mission 05 的组合律在更深的组合上认证了不可执行的顺序；AppWorld 的目标无法用冻结核心的目标语言表达（引理 X1）。强 LLM 代理在全部锁定比较中成功率都不低于构造器；复合目标上的这一结论是 POST-HOC（勘误 B3）。
 - Mission 07 把目标本身交给智能体。在设计者撰写的机制族上，候选由自己的实验在 4/10 个确认种子上得到接地的隐藏结构，已知机制的基线为 0–1/10。新结构主要被用作满足已有需求的手段：新目标类作为顶层目标只在一个种子上通过预定判据，两轮共同演化在所有分支上为 0。在隔离会话撰写的两个机制族上，没有任何分支得到接地的结构。
+- Mission 08 第一次使用生物数据。在冻结之后的四个线虫个体上，类型级连接率可以跨个体与实验室迁移，并为单个个体的连接表补充信息；在成年个体上，这一补充来自 1–2 个突触的弱连接。规则本身是已知的块模型与发育模型。结构对功能的预测没有得到证据：线虫的功能检验没有检验力，果蝇 T4 的连接组只给出方向。
 
-前六轮都没有给出的，是假设形式本身（并集映射、区域占据、对象、计数、势函数文法、规则文法）如何从证据中产生。Mission 03–06 的所有成功都发生在设计者给定的形式之内：Mission 06 中 B 发现的同址规律，是三个预写假说中的一个；修复组合律所需的"手"这一资源，由设计者写入。Mission 07 问的是智能体能否以自己的目标与实验在给定形式之内获得新结构，再由它形成新的目标；结构的形式仍由设计者给定（元语言 M），在 M 之外的留出机制族上所有分支都没有学到接地的结构。各轮的开放问题见 [mission-03/OPEN_QUESTIONS.md](mission-03/OPEN_QUESTIONS.md)、[mission-04/STATUS.md](mission-04/STATUS.md) 第 9 节、[mission-05/A05_SUMMARY.md](mission-05/A05_SUMMARY.md) 第 7 节、[mission-06/CONSTRUCTIBILITY_VERDICT.md](mission-06/CONSTRUCTIBILITY_VERDICT.md) 第 8 节与 [mission-07/AGENCY_VERDICT.md](mission-07/AGENCY_VERDICT.md) 第 4 节。
+前六轮都没有给出的，是假设形式本身（并集映射、区域占据、对象、计数、势函数文法、规则文法）如何从证据中产生。Mission 03–06 的所有成功都发生在设计者给定的形式之内：Mission 06 中 B 发现的同址规律，是三个预写假说中的一个；修复组合律所需的"手"这一资源，由设计者写入。Mission 07 问的是智能体能否以自己的目标与实验在给定形式之内获得新结构，再由它形成新的目标；结构的形式仍由设计者给定（元语言 M），在 M 之外的留出机制族上所有分支都没有学到接地的结构。Mission 08 换了证据来源：假设形式仍取自文献（细胞类型、出生时间、距离、修剪），证据第一次来自生物测量。这些已知形式在独立个体上成立，但没有超出已知模型族；结构与能力之间的环节仍然没有证据。各轮的开放问题见 [mission-03/OPEN_QUESTIONS.md](mission-03/OPEN_QUESTIONS.md)、[mission-04/STATUS.md](mission-04/STATUS.md) 第 9 节、[mission-05/A05_SUMMARY.md](mission-05/A05_SUMMARY.md) 第 7 节、[mission-06/CONSTRUCTIBILITY_VERDICT.md](mission-06/CONSTRUCTIBILITY_VERDICT.md) 第 8 节与 [mission-07/AGENCY_VERDICT.md](mission-07/AGENCY_VERDICT.md) 第 4 节；Mission 08 的研究分叉见 [mission-08/NEXT_DECISION_MAP.md](mission-08/NEXT_DECISION_MAP.md)。
 
 ### 各轮之间的关系
 
@@ -46,6 +49,7 @@ Mission 01–05 使用同一个计算模型：离散整数积分发放（IF）�
 5. **Mission 05 对 Mission 04**：Mission 04 报告中的 11 项数字与原始数据一致；孪生任务的确认只凭仓库即可复现，24 个版本重跑全部一致（[mission-05/G0_AUDIT.md](mission-05/G0_AUDIT.md)）。
 6. **Mission 06 对 Mission 05**：构造器读取的唯一真值字段是 `applicability_cex`。它来自构造器自己的宏模型在 N ≤ 7 上的穷举，与裁判无关，所以 Mission 05 的循环依赖在于证据等级，而不在信息泄露。不读真值的证明器 APP-R 证明了全部 122 个真值适用的实例，构造的计划逐个相同；编译器在类 C_K 上由抽样锁步升为证明。声明审计另外发现四处过度表述，勘误建议未在 main 上改动（[mission-06/M05_TRUST_BOUNDARY.md](mission-06/M05_TRUST_BOUNDARY.md)）。
 7. **Mission 07 对 Missions 01–06**：Gate 0 审计了前六轮中每个目标与达成器的来源，全部由设计者或数据集提供（[mission-07/G0_AUDIT.md](mission-07/G0_AUDIT.md)）。Mission 06 声明审计中的 Mission 05 勘误（A1–A7）在 Mission 07 中正式生效，并补充 Mission 06 的四处更正（B1–B4），其中带监控的回合数由 2,660 更正为 2,360（[mission-07/ERRATA_M05_M06.md](mission-07/ERRATA_M05_M06.md)）。本 README 中 Mission 05、06 的相应句子已按勘误改写，两轮的原文件保持原样。
+8. **Mission 08 对 Missions 01–07**：七份独立审计一致确认，前七轮都没有使用生物神经数据，研究对象因此更正为真实的神经证据。对抗性复核在 38 条抽取结论中更正 2 条，另列 20 条勘误（E1–E20），例如：Mission 02 只对 1–4 个字母证明的 P1 被用于有 5–16 个字母的实例；Mission 05 的进度证书与校准共用同一个适用性字段；Mission 07 的 L2 事件全部来自同一个世界种子。勘误只追加在 `mission-08/` 中，前七轮的文件保持原样（[mission-08/G0_ORIGIN_AND_AUDIT.md](mission-08/G0_ORIGIN_AND_AUDIT.md)）。
 
 ## Mission 01：由时序规格编译神经网络
 
@@ -262,6 +266,45 @@ Mission 01–05 使用同一个计算模型：离散整数积分发放（IF）�
 - 迁移的范围受元语言 M 限制：在 M 之外的两个机制族上，候选与所有基线都没有学到接地的结构。这与 Missions 03–06 的结论一致。
 - 过程中的偏差都已登记：开发中两次修改共享底层（学习器、记忆），所有基线随之重跑；预算超出，经修正案 A5 调整，Craftax 的 B4 记为 RESOURCE_LIMIT；β、γ 的一条预先写定的判定规则有缺陷，按原规则报告，替代判定标为 POST-HOC。不作任何关于意识的结论。
 
+## Mission 08：神经生成规律
+
+**问题**。任务书回到 2026-09-28 的原始问题，提出四个可检验的问题：
+- Q1 发现：能否从有限、有噪声的生物证据中归纳出简洁的连接、动力学或发育规则，其预测超越手工结构标签或数据记忆？
+- Q2 生成：这些规则能否产生新的回路，并在未见个体、发育阶段与扰动下保留关键结构性质？
+- Q3 功能：生成的回路能否在约束清楚的动力学下预测生物反应？
+- Q4 可组合性与边界：规则能否复用于不同回路、尺度或任务组合？不能时，失败来自哪一环？
+
+三个层级严格分开：G-STRUCT（只解释或生成结构）、G-FUNCTION（有独立的功能证据）、G-CONSTRUCT（由能力要求生成并验证新功能）。低层级成立不推出高层级。任务书另规定 GPU 的双向人工闸门：执行者判断是否需要按量 GPU，开机与关机只能由用户本人完成。
+
+**方法**。研究按 Gate 0–6 进行。
+
+1. **Gate 0：审计**。七个审计代理与一个对抗性复核代理逐轮核对 Missions 01–07，确认没有一轮使用生物数据，研究对象更正为真实的神经证据。
+2. **Gate 1：文献与数据**。结构用 Witvliet 2021 的 8 个发育个体与 White 1986 的 JSH（L4）、N2U（成年）；功能用 Randi 2023 的信号传播图谱（WT 与 unc-31）；果蝇用 flyvis 的共识连接组与 Groschner 2022 的膜片钳记录。
+3. **Gate 2：预注册与保管**。留出 W2（5 h）、W4（16 h）、JSH、N2U，Randi 图谱中按加盐哈希划分的一半被刺激类别，T4 记录与 Brittin 2021 的接触组。保管写进代码：只有冻结清单的全部哈希一致时，裁判才能读取留出数据。
+4. **Gate 3：复现与对照**。按论文独立实现 Richter & Schneidman（PNAS 2025）的发育生成模型 R1（作者代码没有许可证，未读），在开发数据上运行正、负对照。
+5. **Gate 4：候选**。只用独立测量特征的规则 K1 达到推断类型块模型增益的 39 %，低于事先写下的 40 % 失败线，不进入确认；进入确认的 K2 是记忆与推断类型块模型的组合。冻结前逐条核对判决代码时，发现四个预注册的超参数选择从未执行，选择规则先写入修正案 A4，再运行。
+6. **Gate 5：确认**。冻结清单（50 个文件）推送到远端之后，每个裁判对留出数据只运行一次。
+7. **Gate 6：判决**。判决由代码从确认结果机械计算。
+
+| 问题 | 证据 | 结论 |
+|---|---|---|
+| 已发表的发育模型能否复现？ | R1 在 W7 上训练、W8 上测试：Cook 13 类 AUROC 0.777，推断 8 类 0.793（论文 0.78、0.81）。置乱胞体位置或出生时间后为 0.774、0.777；在留出个体上，R1 与不含发育成分的 Cook 块模型的预测秩相关 0.95–0.98 | 复现 [REP]，但准确度来自类型块：在跨个体预测中，位置与出生时间没有提供类型块之外的信息 |
+| 规则单独能否预测留出个体的连接？ | 4/4 个留出个体上 R1 优于距离模型（+0.015 至 +0.029 比特/对，区间不含 0）；对数似然增益只有记忆（复制训练个体）的 17–28 % | 非平凡，但不压缩记忆 |
+| 规则是否提供记忆之外的信息？ | 与记忆组合后，AUPRC 在 4/4 个个体上提高（R1 +0.03 至 +0.06，推断 16 类块模型 +0.03 至 +0.08）；只重新校准记忆不改变排序。成年个体 N2U 的强连接（≥ 3 个突触）上增益消失，发育目标与 JSH 的强连接上仍有增益 | 是；在成年个体上来自弱连接。机制是已知的经验贝叶斯收缩到块模型 |
+| 多时期规则能否预测未见发育阶段？ | W2、W4 上三时期 R1 不如年龄内插的记忆（−0.089、−0.077 比特/对） | 否 |
+| 规则能否经受另一实验室的注释？ | White N2U 上规则保留开发代理任务增益的 92 %，记忆保留 81 % | 能 |
+| 什么比规则更能预测连接？ | 98–99 % 的化学连接落在只占 31–32 % 的同一动物膜接触对上；接触单独 AUROC 0.93–0.94 | 物理邻接（Peters 规则）；它来自同一动物，不是可迁移的规则 |
+| 结构能否预测线虫的功能连接？ | 留出被刺激类别上，真实连接组经参数无关的传播算子 AUPRC 0.108，同密度随机图 0.091（区间含 0），不用结构的特征模型 0.384；逐次响应的分半可靠性 0.17 | NOT_SUPPORTED；检验力不足，不能写成"结构不决定功能" |
+| 果蝇 T4 的连接组能否预测方向选择性？ | 不拟合 T4 数据的线性整流模型：四个亚型方向都对，偏移镜像后翻转；预测 DSI 0.021，33 个细胞实测中位数 0.286 | 拓扑决定方向，不决定幅度（REPLICATION_ONLY）；GluClα RNAi 的效应在预注册的峰值度量下方向相反；这一度量不检验作者用输入电阻测量的去抑制 |
+| 是否需要 GPU？ | 判定 D1–D3 都是 CPU_CONTINUE；全任务约 4.9 CPU 核时 | 未触发，费用为 0 |
+
+**结论**（详见 [SCIENTIFIC_VERDICT.md](mission-08/SCIENTIFIC_VERDICT.md)、[G5_HELDOUT_RESULTS.md](mission-08/G5_HELDOUT_RESULTS.md) 与 [EVIDENCE_LEDGER.md](mission-08/EVIDENCE_LEDGER.md)）。
+- 总体结局 STRUCTURE_ONLY。线虫神经环的连接图可以分为可迁移的类型级连接率与个体特有的偏离：前者在冻结后的四个个体上提供记忆之外的信息，后者目前只能靠记忆捕获。在成年个体上，前者的补充来自 1–2 个突触的弱连接。这是已知模型族的确认，不是新规律。
+- 结构对功能的预测没有证据。线虫的功能检验在开发阶段就显示没有检验力，确认结果相同；果蝇 T4 的连接组只给出方向。构造层因此没有运行。
+- 留出数据推翻了一条修正案的说法。修正案 A2.1 认为，改用"记忆加密度"的组合作参照只会使判据更严格；在 W2 与 JSH 上，这一参照却比记忆本身还差。判决按冻结规则计算；按预注册原文的参照，结局不变（R1 3/4，块模型 4/4）。
+- T4 裁判有两次下载失败的基础设施重跑，都在计分之前，日志保留（[G5_INTERVENTIONS.md](mission-08/G5_INTERVENTIONS.md)）。
+- 任务书第 11 节的五个问题在 SCIENTIFIC_VERDICT.md 第 6 节逐条回答。下一步的研究分叉列在 [NEXT_DECISION_MAP.md](mission-08/NEXT_DECISION_MAP.md)，不自动生成 Mission 09。
+
 ## 安装、测试与复现
 
 ```bash
@@ -411,7 +454,29 @@ mission-07/env/venv-craft/bin/python -I mission-07/experiments/craftax/craft_g4.
 | `g4_jobs.py jobs` / `run`、`g4_score.py` | 生成并运行确认任务（输出存在时拒绝重跑），按冻结判据评分（接地、L1 交换、L2、L3）；β、γ 的文件在读取前核对哈希 |
 | `craftax/install.sh`、`craft_g4.py` | 在被 git 忽略的虚拟环境中安装 craftax 1.6.1 与 jax 0.12.0；按冻结判据评分 Craftax 的确认运行（需要原始运行） |
 
-已在 Apple M4 MacBook Air（arm64）、Python 3.12.13、z3-solver 5.3.1 上测试；Mission 06 的 ALFWorld 环境使用 Python 3.12 与 TextWorld 1.6.2；Mission 07 的 ECO 使用系统 Python 3.14，Craftax 使用 Python 3.12 与 jax 0.12.0。
+Mission 08 有独立的虚拟环境（Python 3.12，版本锁定在 `mission-08/reproduce/requirements.lock`）。第三方数据按固定来源下载，逐个核对 SHA-256：
+
+```bash
+sh mission-08/reproduce/setup_env.sh
+```
+
+```bash
+sh mission-08/reproduce/run_gate3.sh
+```
+
+```bash
+mission-08/env/venv/bin/python -I -m m08.verdict
+```
+
+| 命令 | 内容 |
+|---|---|
+| `setup_env.sh` | 创建 `mission-08/env/venv`，安装锁定的依赖，下载开发数据并核对哈希，运行 23 个测试 |
+| `run_gate3.sh` | Gate 3 的开发实验，约 2 CPU 核时（含论文的 40 × 40 网格） |
+| `m08.verdict` | 由已提交的 `mission-08/results/g5/*.json` 按预注册映射重新计算判决 |
+
+留出数据只有裁判能读取：`FREEZE_MANIFEST.sha256` 中 50 个文件的哈希全部一致、且设置 `M08_JUDGE=1` 时才放行（`mission-08/src/m08/custody.py`）。确认已经用过一次，重跑 `mission-08/experiments/g5_*.py` 只作复现，并会覆盖 `results/g5/` 中的文件。
+
+已在 Apple M4 MacBook Air（arm64）、Python 3.12.13、z3-solver 5.3.1 上测试；Mission 06 的 ALFWorld 环境使用 Python 3.12 与 TextWorld 1.6.2；Mission 07 的 ECO 使用系统 Python 3.14，Craftax 使用 Python 3.12 与 jax 0.12.0；Mission 08 使用 Python 3.12.13、numpy 2.5.4、scipy 1.18.1、pandas 3.1.0 与 scikit-learn 1.9.1。
 
 ## 快速上手
 
@@ -536,6 +601,17 @@ Mission 07：
 | `mission-07/experiments/craftax/` | Craftax-Classic 的裁判运行器、智能体底层与移植的候选、确认评分、安装脚本 |
 | `mission-07/external/heldout_families/` | 隔离会话撰写的留出机制族 β、γ（确认之后复制进仓库，哈希与保管记录一致） |
 
+Mission 08：
+
+| 路径 | 内容 |
+|---|---|
+| `mission-08/src/m08/` | 数据下载与哈希核对（`raw.py`）、保管（`custody.py`）、线虫读取器（`celegans.py`）、R1 的独立实现（`rs.py`，含互惠二元组模型）、结构模型与记忆基线（`models.py`）、候选（`candidates.py`）、指标与分块自助法（`metrics.py`）、功能算子（`function.py`、`randi.py`）、T4 模型（`t4.py`）、GPU 闸门状态机（`gpu_protocol.py`）、判决映射（`verdict.py`） |
+| `mission-08/experiments/` | Gate 3 的开发实验、Gate 4 的试验与超参数选择、Gate 5 的裁判（`g5_structure.py`、`g5_function.py`、`g5_t4.py`）与一项事后描述 |
+| `mission-08/results/` | 各 Gate 的结果 JSON，记录提交号、输入哈希、CPU 时间与峰值内存 |
+| `mission-08/reproduce/` | 环境脚本、锁定的依赖与 Gate 3 的运行脚本 |
+| `mission-08/data/` | 来源与许可说明；原始数据在被 git 忽略的 `data/raw/` 中 |
+| `mission-08/audit/` | Gate 0、Gate 1 审计代理的原始输出 |
+
 ## 设计决策（以及原因）
 
 1. **所有突触延迟 ≥ 1**。网络因此严格因果：任何反馈环都有良定义的语义，同步更新与神经元顺序无关，循环的假设–保证推理也可以靠对时间的归纳证明是可靠的。代价是网络不能对同一步的输入作出反应，这一点由定理 3 精确刻画。
@@ -555,6 +631,9 @@ Mission 07：
 15. **前瞻目标日志与来源审计**（Mission 07）。目标记录必须写在为它采取第一个动作之前；结构必须列出导致它的经验步，其中至少 3 次与裁判记录的效果事件对应。没有这一审计，把真实结构直接装入的伪造方式会被算作发现。
 16. **判据先用伪造检验，学习器先用正对照检验**（Mission 07）。12 种伪造的"主体性"必须全部被判为阴性，判据才用于候选；共享学习器必须能从脚本化的有信息数据中学到真实结构，否则所有分支的阴性结果都不能归于组织。后一项检查在 Gate 2 缺失，Gate 3 中补做之后共享底层修改了两次，所有基线随之重跑。
 17. **孪生对照**（Mission 07）。每个学习分支都有一个同种子、关闭结构获取的孪生。"新目标类"的达成率必须至少是孪生中同一条件偶然出现率的 3 倍，候选自己的探索因此不能被算作对新目标的追求。
+18. **保管写进代码**（Mission 08）。留出数据集列在 `custody.HELDOUT`，每个读取函数先调用 `custody.allow`；只有冻结清单中的全部哈希一致、并设置 `M08_JUDGE=1` 时才放行。冻结之后改动任何被冻结的文件，裁判都会拒绝读取。Randi 图谱的留出列按双侧类别由加盐哈希划分。
+19. **记忆是必须超过的基线**（Mission 08）。结构规则要与直接复制训练个体的记忆比较；"超越记忆"用组合 C(记忆, 规则) 检验，并以只重新校准记忆的 C(记忆, ER) 作对照，把排序信息与密度校准分开。
+20. **GPU 的双向人工闸门**（Mission 08）。执行者判断是否需要按量 GPU，以固定格式请用户开机或关机。没有得到"GPU已开机"的确认不连接；没有得到关机确认只记 `STOP_UNVERIFIED`，停止脚本不等于停止计费。状态机与八个验收场景在 `mission-08/tests/test_gpu_protocol.py` 中模拟；本轮没有触发。
 
 ## 文档
 
@@ -640,6 +719,18 @@ Mission 07：
 - [G4_NOTES.md](mission-07/G4_NOTES.md)、[G4_HELDOUT_RESULTS.md](mission-07/G4_HELDOUT_RESULTS.md)：确认运行的记录与结果
 - [AGENCY_VERDICT.md](mission-07/AGENCY_VERDICT.md)、[EVIDENCE_LEDGER.md](mission-07/EVIDENCE_LEDGER.md)、[LIMITATIONS.md](mission-07/LIMITATIONS.md)：判决、证据账与局限
 
+Mission 08：
+
+- [MISSION_08_BRIEF.md](mission-08/MISSION_08_BRIEF.md)、[MISSION_08_EXECUTION_PROMPT.md](mission-08/MISSION_08_EXECUTION_PROMPT.md)：任务书与执行和算力调度指令
+- [G0_ORIGIN_AND_AUDIT.md](mission-08/G0_ORIGIN_AND_AUDIT.md)、[KNOWLEDGE_BUDGET.md](mission-08/KNOWLEDGE_BUDGET.md)、[FAILURE_TAXONOMY.md](mission-08/FAILURE_TAXONOMY.md)：初衷与继承审计、勘误 E1–E20、知识预算与失败分类
+- [PRIOR_ART_AND_NOVELTY.md](mission-08/PRIOR_ART_AND_NOVELTY.md)、[DATASET_FEASIBILITY.md](mission-08/DATASET_FEASIBILITY.md)、[BIOLOGICAL_ASSUMPTIONS.md](mission-08/BIOLOGICAL_ASSUMPTIONS.md)：文献、数据可行性与许可、生物学假设
+- [HYPOTHESES.md](mission-08/HYPOTHESES.md)、[PRE_REGISTRATION.md](mission-08/PRE_REGISTRATION.md)、[DATA_SPLITS_AND_CUSTODY.md](mission-08/DATA_SPLITS_AND_CUSTODY.md)、[BASELINE_PARITY.md](mission-08/BASELINE_PARITY.md)、[RESOURCE_BUDGET.md](mission-08/RESOURCE_BUDGET.md)：假说、预注册与修正案 A1–A4、划分与保管、基线对等、资源预算
+- [G3_BASELINE_REPRODUCTION.md](mission-08/G3_BASELINE_REPRODUCTION.md)：复现、正对照与负对照
+- [G4_CANDIDATE_LOG.md](mission-08/G4_CANDIDATE_LOG.md)、[G4_PILOT_RESULTS.md](mission-08/G4_PILOT_RESULTS.md)、[G4_COMPETING_MECHANISMS.md](mission-08/G4_COMPETING_MECHANISMS.md)：候选、开发试验与竞争解释
+- [G5_HELDOUT_RESULTS.md](mission-08/G5_HELDOUT_RESULTS.md)、[G5_INTERVENTIONS.md](mission-08/G5_INTERVENTIONS.md)、[G5_RESOURCE_LEDGER.md](mission-08/G5_RESOURCE_LEDGER.md)：确认结果、重跑与偏离、资源账
+- [SCIENTIFIC_VERDICT.md](mission-08/SCIENTIFIC_VERDICT.md)、[EVIDENCE_LEDGER.md](mission-08/EVIDENCE_LEDGER.md)、[LIMITATIONS.md](mission-08/LIMITATIONS.md)、[NEXT_DECISION_MAP.md](mission-08/NEXT_DECISION_MAP.md)：判决、证据账、局限与研究分叉
+- [GPU_RESOURCE_DECISION.md](mission-08/GPU_RESOURCE_DECISION.md)、[GPU_BENCHMARK_PLAN.md](mission-08/GPU_BENCHMARK_PLAN.md)、[GPU_SESSION_LEDGER.md](mission-08/GPU_SESSION_LEDGER.md)：GPU 判定、标定计划与会话账本（未触发）
+
 ## 版本与冻结记录
 
 开发环境的命令沙箱禁止写入 `.git/config`。经用户明确许可，所有 git 操作都在用户的终端面板中执行（不受沙箱限制）。Mission 02 起，每一轮都在独立分支上开发，完成后快进合并到 main，没有改写历史。
@@ -651,7 +742,8 @@ Mission 07：
 - **Mission 05**（`mission-05` 分支）：G0 审计（`99302c3`）与协议（`08390e3`）；每个修正案都在相关代码之前提交，代码在运行之前提交。G3 冻结（`a3657ab`，清单 `mission-05/G3_FREEZE.json`），生成者报告的哈希先于读取提交（`424b398`），运行一次（`cbca7dd`）。G4 冻结（`b38ce72`，清单 `mission-05/G4_FREEZE.json`），哈希先行（`8f82210`），运行一次（`2391997`）。最终状态（`f39d274`），2026-10-21 经用户同意快进合并到 main。
 - **Mission 06**（`mission-06` 分支）：Gate 0 锁定（`c0f23d8`），代码先于结果（`100e8fe`）；Gate 1 冻结（`902d39d`）；G2-ALF 预注册（`d30d138`）、代码（`608c4e6`）、结果（`100fb2e`）；Gate 3 代码（`81b5177`）、结果（`754e6bc`）；Gate 4 冻结（`0e738dd`），推送之后才解封持出集，结果（`112f7d7`）；G4b 冻结（`72b85a0`）、结果（`c5f7587`），裁判缺陷的登记与更正（`8587eff`、`3cc00b9`）；判决（`da8100e`）。协议偏差逐条记在预注册中。2026-10-21 快进合并到 main。
 - **Mission 07**（`mission-07` 分支）：Gate 0 审计、勘误与定义（`d2d4cbf`）；Gate 1 冻结，协议先于任何智能体代码（`3c9fa05`）；留出族只登记哈希（`44f6f00`）；Gate 2 基线与伪造（`63db5fa`）；候选 rev0 与修正案 A2（`f83c081`），A3 与 rev2（`fd3c4a4`），A4 与 rev3（`f58e399`），rev6（`92eae54`）；Gate 3 冻结（`c5ddc36`），推送之后才核对哈希并读取留出族（`63c7cd6`）；ECO 确认结果（`e7ba3a8`）；Craftax 结果与判决（`b9cc75b`）。修正案与偏差逐条记在 `PROTOCOL.md` 与 `G4_NOTES.md` 中。2026-10-22 快进合并到 main。
+- **Mission 08**（`mission-08` 分支）：Gate 0 审计（`e937066`）；Gate 1 文献与数据（`e02c7a3`、`1607878`）；Gate 2 预注册与保管，推送到远端作为时间戳（`a8e835c`）；Gate 3 代码与开发结果（`b687e99`）；候选日志先于任何试验（`65af74c`）；Gate 4 的试验、修正案与裁判代码（`39b748b`）；冻结清单（`26a41b9`），推送之后裁判才读取留出数据；确认结果（`effc54f`）；判决（`dc68ee2`）。修正案与偏离逐条记在 `PRE_REGISTRATION.md` §10 与 `G5_INTERVENTIONS.md` 中。2026-10-25 快进合并到 main。
 
 ## 许可
 
-代码与文档以 [MIT License](LICENSE) 发布。`mission-03/external/arc-agi-1/` 中的 ARC-AGI-1 任务数据与 `mission-04/external/arc-agi-2/` 中的 ARC-AGI-2 评测数据按其原许可 Apache-2.0 再分发，许可证原文随数据保留。孪生任务（`mission-04/external/arc-prior-twins/`）与 G3、G4 的持出达成器（`mission-05/external/`）由本项目的独立生成会话产生，随仓库以 MIT 许可发布。Mission 06 不再分发任何第三方数据：ALFWorld 与 AppWorld 由安装脚本下载到被 git 忽略的目录；AppWorld 的许可禁止明文再分发，解密后的数据、任务文本与日志都不进入仓库。Mission 07 的留出机制族（`mission-07/external/heldout_families/`）由本项目的隔离会话撰写，随仓库以 MIT 许可发布；Craftax（MIT）由安装脚本装入被 git 忽略的目录，不随仓库分发。
+代码与文档以 [MIT License](LICENSE) 发布。`mission-03/external/arc-agi-1/` 中的 ARC-AGI-1 任务数据与 `mission-04/external/arc-agi-2/` 中的 ARC-AGI-2 评测数据按其原许可 Apache-2.0 再分发，许可证原文随数据保留。孪生任务（`mission-04/external/arc-prior-twins/`）与 G3、G4 的持出达成器（`mission-05/external/`）由本项目的独立生成会话产生，随仓库以 MIT 许可发布。Mission 06 不再分发任何第三方数据：ALFWorld 与 AppWorld 由安装脚本下载到被 git 忽略的目录；AppWorld 的许可禁止明文再分发，解密后的数据、任务文本与日志都不进入仓库。Mission 07 的留出机制族（`mission-07/external/heldout_families/`）由本项目的隔离会话撰写，随仓库以 MIT 许可发布；Craftax（MIT）由安装脚本装入被 git 忽略的目录，不随仓库分发。Mission 08 同样不分发第三方数据：原始数据由 `mission-08/reproduce/setup_env.sh` 按固定来源下载到被 git 忽略的目录并核对哈希。其中 Randi 2023、Brittin 2021、Pathak 2020 与 Groschner 2022 为 CC BY 4.0，flyvis 为 MIT；Witvliet 2021、White 1986（经 NemaNode）、Cook 2019、Skuhersky 2022 与 Richter & Schneidman 的仓库没有开放的数据许可证，只在本地使用。
